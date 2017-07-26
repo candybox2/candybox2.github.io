@@ -1,0 +1,690 @@
+br.mapVillageComment
+Aldeia
+br.mapFortressComment
+Fortaleza do Deserto
+br.mapATreeComment
+Árvore
+br.mapTheDesertComment
+Deserto
+br.mapWishingWellComment
+Poço dos Desejos
+br.mapLonelyHouseComment
+Casa abandonada
+br.mapForestComment
+Floresta
+br.mapCastleEntranceComment
+Portões do castelo
+br.mapCastleComment
+Castelo
+br.mapDragonComment
+Dragão
+br.candyBoxEatCandiesButton
+Comer todos os doces
+br.candyBoxThrowCandiesButton
+Jogar 10 doces no chão
+br.mapVillageAHouseComment
+Casa
+br.mapVillageForgeComment
+Forja
+br.buttonBackToTheMap
+Voltar ao mapa
+br.mapSorceressHutComment
+Cabana da feiticeira
+br.buttonBackToTheVillage
+Voltar à aldeia
+br.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Oi, eu sou o esquilo. Posso lhe dar doces e muitas outras coisas. Eu sei que você ama doces... Mas eu me sinto tão só nessa floresta.
+br.mapATreeIntroductionButton
+Como posso ajudá-lo?
+br.mapATreeFirstQuestion # INFORMAL PRONOUN
+Vou fazer perguntas. Se você acertar, ganhará os doces mais doces! Primeira pergunta: você ama mesmo doces? (responda em inglês)
+br.mapATreeSecondQuestion # INFORMAL PRONOUN
+É isso aí! Tome, 20 doces para você. Agora, complete essa sequência de letras para ganhar outro prêmio: S, E, I, D, N, A, ?
+br.mapATreeThirdQuestion # INFORMAL PRONOUN
+Doces! Fique com mais esses 100 doces. Próxima pergunta: quantos doces a pessoa mais doce do mundo tem?
+br.mapATreeFourthQuestion # INFORMAL PRONOUN
+Aqui, mais 500 doces para você! O próximo prêmio vai ser bem interessante... Lá vai a charada: em uma floresta esquecida, cresce uma árvore muito antiga, onde vivem os animais mais inteligentes do mundo. Dizem que ela tem 60 raízes, 360 galhos e 2160 folhas. Quantas marcas tem o tronco dessa árvore?
+br.mapATreeFifthQuestion # INFORMAL PRONOUN
+Parabéns! Sim, eu estava falando da minha árvore. Fique com esses 3 pirulitos. Faça bom uso deles! Próxima charada, preste atenção: em uma noite de lua cheia, eu jogo um chapéu amarelo no mar vermelho. O que acontece com o chapéu?
+br.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Muito bem! Essa não era tão difícil. Mais três barras de chocolate para você! Já para a próxima recompensa, as regras serão diferentes. Você terá de me vencer em um jogo! Está preparado?
+br.mapATreeTicTacToeIntroButton
+Mas é claro!
+br.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+É o jogo-da-velha. Vamos jogar em um tabuleiro 3 por 3. Você usará o símbolo X e eu o símbolo O. Cada um de uma vez, o objetivo é colocar três símbolos um do lado do outro. Vou deixar que você comece!
+br.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Preenchemos todo o tabuleiro, mas ninguém conseguiu fechar uma sequência... Empatou! Quer tentar novamente?
+br.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Eu consegui três símbolos em sequência! Quer tentar de novo?
+br.mapATreeTicTacToeTryAgainButton
+Sim, claro!
+br.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Nossa, não esperava por essa. Mas não dá para negar: você conseguiu uma sequência de três. Você venceu! Fique com essa chave. Ela abre uma das casas na aldeia ao sul da floresta.
+br.mapATreeTicTacToeAnymoreSweet
+Obrigado, esquilo! Você tem mais algum desafio?
+br.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Infelizmente, não. Acabaram meus desafios... Mas foi legal brincar com você, muito obrigado!
+br.buttonExitQuestKeeping
+Sair da missão (e levar os itens com você)
+br.buttonExitQuestNoKeeping
+Sair da missão (e deixar os itens para trás)
+br.buttonExitQuestNoKeepingBecauseLose
+Sair da missão (e deixar os itens para trás, pois você fracassou)
+br.mapVillageLockedHouseComment
+Casa trancada
+br.mapVillageForgeIntroductionSpeech
+Olá! Eu sou um ferreiro. Tenho muitas armas e equipamentos para vender.
+br.mapVillageForgeIntroductionSpeechNoMoreToSell
+Olá! Eu sou um ferreiro. Infelizmente, não tenho nada para ver. Volte mais tarde.
+br.mapVillageFifthHouseNoWeaponSpeech
+Olá. Meu porão está cheio de ratos, preciso me livrar deles... Se ao menos alguém com uma arma pudesse me ajudar...
+br.mapVillageFifthHouseWeaponSpeech
+Ei, você! Vejo que tem uma arma! Se matar os ratos do meu porão, posso lhe dar uma recompensa!
+br.mapVillageFifthHouseAgree
+Então vamos
+br.mapVillageFifthHouseCellarDone
+Obrigado por se livrar dos ratos! Fique com esta baita recompensa: um mapa do mundo. Aposto que você precisa mais disso do que eu.
+br.mapVillageTheShopComment
+Loja
+br.mapBridgeComment
+Ponte
+br.mapFarmComment
+Fazenda de pirulitos
+br.mapCaveEntranceComment
+br.rada da caverna
+br.mapLighthouseComment
+Farol
+br.mapPierComment
+Cais
+br.mapTheHoleComment
+Buraco
+br.candyBoxRequestStatusBarUnlocked
+Solicitar um novo recurso ao desenvolvedor (30 doces)
+br.candyBoxRequestStatusBarUnlockedCfg
+Solicitar outro recurso (5 doces)
+br.candyBoxRequestStatusBarUnlockedSave
+Solicitar novamente (5 doces)
+br.candyBoxRequestStatusBarUnlockedHealthBar
+Solicitar algo mais emocionante (5 doces)
+br.candyBoxRequestStatusBarUnlockedMap
+Último recurso! Tomara que esse valha a pena. (10 doces)
+br.candyBoxRequestStatusBarUnlockedComment
+Você desbloqueou a barra de status (acima)
+br.candyBoxRequestStatusBarUnlockedCfgComment1
+Agora você pode acessar a guia de configuração.
+br.candyBoxRequestStatusBarUnlockedCfgComment2
+Se quiser, você pode trocar o idioma do jogo.
+br.candyBoxRequestStatusBarUnlockedSaveComment
+Uma guia selvagem aparece!
+br.candyBoxRequestStatusBarUnlockedHealthBarComment
+Fique com esses 100 pontos de vida. Você vai precisar.
+br.cfgChooseLanguage
+Escolha o idioma:
+br.cfgInvertColors
+Inverter cores?
+br.gridItemMainMapName
+Mapa
+br.gridItemMainMapDescription
+Mapa do mundo
+br.gridItemPogoStickName
+Pula-pula
+br.gridItemPogoStickDescription
+Com ele, você poderá pular nas missões!
+br.gridItemTimeRingName
+Anel do Tempo
+br.gridItemTimeRingDescription
+Esse item concede uma nova habilidade nas missões: desacelerar o tempo. Se as coisas estiverem rápidas demais, use o Anel do Tempo!
+br.gridItemThirdHouseKeyName
+Chave da terceira casa
+br.gridItemThirdHouseKeyDescription
+Essa chave abre a terceira casa da aldeia.
+br.gridItemFeatherName
+Pena de ave do deserto
+br.gridItemFeatherDescription
+Essa pena mágica permite que você pule mais alto com o pula-pula!
+br.gridItemFeatherDescriptionNoPogoStick
+Por algum motivo desconhecido, você acha que essa pena seria muito útil se você tivesse um pula-pula...
+br.gridItemSpongeName
+Esponja mágica
+br.gridItemSpongeDescription
+Essa esponja mágica permite que você se esprema como uma esponja, reduzindo o seu tamanho.
+br.gridItemFortressKeyName
+Chave da Fortaleza do Deserto
+br.gridItemFortressKeyDescription
+Essa chave garante acesso à antiga fortaleza que fica ao norte do deserto. O que será que tem lá?
+br.gridItemHeartPendantName
+Pingente de coração
+br.gridItemHeartPendantDescription
+Esse pingente aumentará seus pontos de vida enquanto você usá-lo no pescoço.
+br.gridItemHeartPlugName
+Berloque de coração
+br.gridItemHeartPlugDescription
+Esse berloque feito de ferro, patas de aranha e "fluido cardiológico" envasado no centro aumentará em 20 por cento seus pontos de vida!
+br.gridItemBeginnersGrimoireName
+Grimório do Aprendiz
+br.gridItemBeginnersGrimoireDescription
+Esse grimório contém três feitiços bem fáceis de serem lançados, ideais para iniciantes. 1- Chuva ácida (uma grande quantidade de gotas ácidas caem em seus inimigos). 2- Bola de fogo (lança bola de fogo gigante contra seus inimigos). 3- Teleporte (transporta você para um local aleatório).
+br.gridItemAdvancedGrimoireName
+Grimório Avançado
+br.gridItemAdvancedGrimoireDescription
+Esse grimório contém dois feitiços. 1- Dissipar magia (anula todos os feitiços existentes em uma missão, tanto os seus quanto os dos inimigos). 2- Escudo de espinhos (cria um escudo de espinhos ao seu redor, causando dano aos inimigos que encostarem nele).
+br.gridItemBlackMagicGrimoireName
+Grimório de Magia Negra
+br.gridItemBlackMagicGrimoireDescription
+Você encontrou esse grimório na caverna, em um canto de difícil acesso; e estava lá por um motivo. Ele concede dois feitiços sombrios muito poderosos. O primeiro criará um muro gigante de obsidianas, ideal para impedir o avanço de inimigos. O segundo evocará uma horda de demônios que atacarão todos na missão, inclusive você. Tome cuidado com esse feitiço.
+br.gridItemUnicornHornName
+Chifre de unicórnio
+br.gridItemUnicornHornDescription
+Esse chifre mágico pertencia a um unicórnio. Os poderes de cura dele serão de grande ajuda. Dizem que o unicórnio se chamava Charlie.
+br.gridItemXinopherydonClawName
+Garra de xinoferedonte
+br.gridItemXinopherydonClawDescription
+Essa garra pertenceu a um xinoferedonte, um animal pré-histórico de duas cabeças que muitos acreditam ter existido. Ela dobrará o dano da sua arma.
+br.gridItemPitchforkName
+Forcado
+br.gridItemPitchforkDescription
+Esse forcado especial amacia o solo sem revirá-lo, preservando os ecossistemas subterrâneos. Ele triplica a produção da sua fazenda de pirulitos. 
+br.gridItemShellPowderName
+Pó de conchas
+br.gridItemShellPowderDescription
+Muitos fazendeiros usam pó de conchas para acelerar o crescimento dos pirulitos. Ele triplica a produção da sua fazenda de pirulitos.
+br.gridItemPName
+Pedra P
+br.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+br.gridItemLName
+Pedra L
+br.gridItemLDescription # Don't translate that!
+ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ \  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+br.gridItemAName
+Pedra A
+br.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+br.gridItemYName
+Pedra Y
+br.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+br.gridItemRedSharkFinName
+Barbatana vermelha
+br.gridItemRedSharkFinDescription
+Essa barbatana mágica aumenta consideravelmente o dano do feitiço Bola de fogo. Finalmente ele será útil para alguma coisa.
+br.gridItemGreenSharkFinName
+Barbatana verde
+br.gridItemGreenSharkFinDescription
+Essa barbatana mágica leva o poder da natureza à sua fazenda! Multiplica por 5 a produção de pirulitos.
+br.gridItemPurpleSharkFinName
+Barbatana roxa
+br.gridItemPurpleSharkFinDescription
+Essa barbatana mágica concede um novo feitiço sombrio, que só pode ser usado uma vez por missão. Tome muito cuidado!
+br.gridItemTalkingCandyName
+Doce falante
+br.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Esse doce falante apareceu quando você colocou as quatro pedras no alto da torre do castelo. Talvez ele saiba como abrir a caixa de doces...
+br.inventorySpecialNothingEqItem
+Nada
+br.eqItemWeaponWoodenSwordName
+Espada de madeira
+br.eqItemWeaponWoodenSwordDescription
+Uma espada simples, feita de madeira
+br.eqItemWeaponIronAxeName
+Machado de ferro
+br.eqItemWeaponIronAxeDescription
+Um machado de ferro bem afiado. Mais eficiente que a espada de madeira.
+br.eqItemWeaponPolishedSilverSwordName
+Espada de prata polida
+br.eqItemWeaponPolishedSilverSwordDescription
+Uma espada poderosa, coberta de espinhos.
+br.eqItemWeaponTrollBludgeonName
+Tacape de troll
+br.eqItemWeaponTrollBludgeonDescription
+Você tomou esse tacape do troll que protegia a ponte. Ele é bem lento, mas esmaga inimigos que é uma beleza.
+br.eqItemWeaponTribalSpearName
+Lança tribal
+br.eqItemWeaponTribalSpearDescription
+Você encontrou essa lança no corpo de um guerreiro morto, em um buraco no chão. É um tanto complicado de se manusear, mas é tudo uma questão de costume.
+br.eqItemWeaponSummoningTribalSpearName
+Lança tribal da evocação
+br.eqItemWeaponSummoningTribalSpearDescription
+Essa lança mágica, além de ser ligeiramente mais poderosa que a lança tribal normal, evocará frequentemente guerreiros tribais que ajudarão você nas missões.
+br.eqItemWeaponMonkeyWizardStaffName
+Cajado do macaco mago
+br.eqItemWeaponMonkeyWizardStaffDescription
+Esse cajado pertenceu ao macaco mago que estava pelado na caverna. Ele lança frequentemente feitiços contra seus inimigos.
+br.eqItemWeaponEnchantedMonkeyWizardStaffName
+Cajado do macaco mago (encantado)
+br.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Esse cajado é mais veloz que a versão normal, além de lançar muito mais feitiços.
+br.eqItemWeaponGiantSpoonName
+Colher gigante
+br.eqItemWeaponGiantSpoonDescription
+Essa colher gigante estava em uma chaleira gigante na Fortaleza do Deserto. Se algum dia ela foi usada como uma colher, então essa pessoa devia ser bem grande. Tomara que você não esbarre com ela.
+br.eqItemWeaponGiantSpoonOfDoomName
+Colher gigante da perdição
+br.eqItemWeaponGiantSpoonOfDoomDescription
+Essa colher gigante é ainda mais poderosa que as colheres normais encontradas em chaleiras gigantes, mas é bem lenta.
+br.eqItemWeaponScytheName
+Foice
+br.eqItemWeaponScytheDescription
+Dizem que essa foice pertenceu à própria Morte. Ela é extremamente rápida.
+br.eqItemHatMerchantHatName
+Chapéu do vendedor
+br.eqItemHatMerchantHatDescription
+Você comprou esse chapéu do vendedor de doces. Sabia que ele ama doces? Os doces encontrados em missões serão multiplicados por 7!
+br.eqItemHatSorceressHatName
+Chapéu da feiticeira
+br.eqItemHatSorceressHatDescription
+Você comprou esse chapéu da feiticeira. Ele aprimora os efeitos dos seus feitiços e das suas poções.
+br.eqItemHatOctopusKingCrownName
+Coroa do Rei Polvo
+br.eqItemHatOctopusKingCrownDescription
+Você se sente muito mais confiante com essa coroa. Ela não dá nenhuma vantagem nas missões, mas o importante é ter confiança!
+br.eqItemHatOctopusKingCrownWithJaspersName
+Coroa de jaspes do Rei Polvo
+br.eqItemHatOctopusKingCrownWithJaspersDescription
+Essa coroa encantada é feita de ouro e jaspes vermelhos. Nas missões, ela lançará poderosas bolas de fogo para todos os cantos. Ah, e ela brilha muito!
+br.eqItemHatOctopusKingCrownWithObsidianName
+Coroa de obsidianas do Rei Polvo
+br.eqItemHatOctopusKingCrownWithObsidianDescription
+Essa coroa encantada é feita de ouro e obsidianas. É linda! Nas missões, ela evocará esporadicamente um Rei Polvo para lutar ao seu lado. Tentáculos nunca são demais!
+br.eqItemGlovesLeatherGlovesName
+Luvas de couro
+br.eqItemGlovesLeatherGlovesDescription
+Essas luvas não fazem nada, mas são macias e confortáveis!
+br.eqItemGlovesRedEnchantedGlovesName
+Luvas vermelhas encantadas
+br.eqItemGlovesRedEnchantedGlovesDescription
+Essas luvas emitem um suave brilho vermelho quando está escuro. Nas missões, elas lançam pequenas bolas de fogo contra os inimigos. Não há como negar que isso é bem útil.
+br.eqItemGlovesPinkEnchantedGlovesName
+Luvas rosa encantadas
+br.eqItemGlovesPinkEnchantedGlovesDescription
+Essas luvas deixam uma marca rosa em tudo que tocam. Nas missões, elas curarão você continuamente.
+br.eqItemBootsRocketBootsName
+Botas-foguete
+br.eqItemBootsRocketBootsDescription
+Essas incríveis botas permitem que você pule no ar, ou seja, você pode praticamente voar!
+br.eqItemBootsLeatherBootsName
+Botas de couro
+br.eqItemBootsLeatherBootsDescription
+Botas simples de couro. Nada demais.
+br.eqItemBootsBootsOfIntrospectionName
+Botas da introspecção
+br.eqItemBootsBootsOfIntrospectionDescription
+Tire um tempo para respirar e se acalmar. Com essas botas, você nunca andará enquanto estiver com os pés no chão.
+br.eqItemBodyArmoursLightweightBodyArmourName
+Armadura leve
+br.eqItemBodyArmoursLightweightBodyArmourDescription
+Essa armadura oferece um pouco de proteção. Você ficará mais resistente aos ataques dos inimigos.
+br.eqItemBodyArmoursKnightBodyArmourName
+Armadura de cavaleiro
+br.eqItemBodyArmoursKnightBodyArmourDescription
+Essa pesada armadura oferece mais proteção. Você ficará muito resistente aos ataques dos inimigos.
+br.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Armadura de cavaleiro encantada
+br.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Essa armadura é muito especial. Você ficará MUITO mais resistente aos ataques inimigos, mas o dano da sua arma cairá pela metade.
+br.mapVillageForgeBuyWoodenSwordButton
+Comprar espada de madeira (150 doces)
+br.mapVillageForgeBuyWoodenSwordSpeech
+Obrigado! Essa espada é um tanto fraca, mas é melhor do que nada.
+br.mapVillageForgeBuyIronAxeButton
+Comprar machado de ferro (400 doces)
+br.mapVillageForgeBuyIronAxeSpeech
+Espero que goste do machado. Acabei de afiá-lo para você.
+br.mapVillageForgeBuyPolishedSilverSwordButton
+Comprar espada de prata polida (2.000 doces)
+br.mapVillageForgeBuyPolishedSilverSwordSpeech
+Como demorei para criar essa espada. Garanto que ela vale cada doce gasto.
+br.mapVillageForgeBuyLightweightBodyArmourButton
+Comprar armadura leve (15.000 doces)
+br.mapVillageForgeBuyLightweightBodyArmourSpeech
+Essa armadura vai proteger você dos ataques inimigos.
+br.mapVillageForgeBuyScytheButton
+Comprar foice (5.000.000 doces)
+br.mapVillageForgeBuyScytheSpeech
+Demorei meses para terminar essa foice. É uma verdadeira obra de arte. Aposto que você nunca encontrará arma mais rápida que essa. Boa sorte!
+br.wishingWellThrowFirstCandyButton
+Jogar um doce no poço
+br.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Olá, viajante! Sou o Poço dos Desejos. Concederei desejos em troca de guloseimas! Jogue doces dentro de mim para que eu cure seus ferimentos.
+br.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Seus ferimentos foram curados!
+br.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Você não está ferido!
+br.wishingWellThrowFirstLollipopButton
+Jogar um pirulito no poço
+br.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Olá, viajante! Sou o Poço dos Desejos. Concederei desejos em troca de guloseimas! Jogue pirulitos dentro de mim para que eu os converta em doces.
+br.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Seus pirulitos são transformados em doces! Dois pirulitos por um doce.
+br.wishingWellThrowChocolateBarButton
+Jogar uma barra de chocolate no poço
+br.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Olá, viajante! Sou o Poço dos Desejos. Concederei desejos em troca de guloseimas! Eu amo, AMO chocolate. Para cada chocolate que você jogar em mim, incluindo esse, eu encantarei um item seu.
+br.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Qual objeto você deseja encantar?
+br.wishingWellThrowPainAuChocolatButton
+Jogar um pão de chocolate no poço
+br.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Olá, viajante! Sou o Poço dos Desejos. Concederei desejos em troca de guloseimas! Para cada pão de chocolate que você jogar, eu lhe darei um dom especial. Pense bem antes de escolher!
+br.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Obrigado pelo pão de chocolate! Escolha o seu dom.
+br.wishingWellChooseGift # INFORMAL PRONOUN
+Escolha seu dom!
+br.wishingWellChooseGiftButton
+Escolher
+br.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Pronto! Você ganhou um dom. Ele será exibido nas estatísticas do inventário.
+br.wishingWellNoPossibleEnchantment
+Nenhum encantamento disponível
+br.wishingWellChooseEnchantment
+Escolha o encantamento
+br.wishingWellEnchantButton
+Encantar
+br.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Prontinho! O item foi encantado.
+br.pierLighthouseButton
+Ir de barco ao farol
+br.pierTheSeaButton
+Pular no mar
+br.lonelyHouseOpenBox
+Abrir a caixa
+br.lonelyHouseShakeBox
+Sacudir a caixa
+br.lonelyHouseBreakLock
+Quebrar a fechadura
+br.lonelyHouseKickBox
+Chutar a caixa
+br.lonelyHouseAskTheBoxToOpenItself
+Pedir à caixa para que se abra
+br.lonelyHouseLureTheBoxWithACandy
+Oferecer um doce à caixa
+br.lonelyHouseTakeTheBox
+Levar a caixa embora. Você provavelmente precisará de uma chave.
+br.lonelyHouseOpenBoxResult
+A caixa está trancada.
+br.lonelyHouseShakeBoxResult
+Nada acontece.
+br.lonelyHouseBreakLockResult
+A fechadura é forte.
+br.lonelyHouseKickBoxResult
+Você machuca o pé, mas nada acontece.
+br.lonelyHouseAskTheBoxToOpenItselfResult
+...é uma caixa, você sabe disso, não é?
+br.lonelyHouseLureTheBoxWithACandyResult
+A caixa parece não se importar.
+br.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Deve ter algo de interessante dentro da caixa.
+br.lollipopFarmConstructMill
+Construir um moinho (10.000 pirulitos)
+br.lollipopFarmFeedMill
+Abastecer o moinho
+br.lollipopFarmCurrentCandiesProduction
+Produção atual de doces
+br.lollipopFarmDigPond
+Cavar um lago (100.000 pirulitos)
+br.lollipopFarmBuyLolligator
+Comprar um crocolito (1.200 doces)
+br.lollipopFarmLolligatorsConversionText
+Conversão doces -> pirulitos ativada
+br.lighthouseAskButton
+Perguntar
+br.lighthouseQuestionWho
+Quem é você?
+br.lighthouseQuestionWhoSpeech
+Sou um ciclope muito velho.
+br.lighthouseQuestionWhat
+O que você faz aqui?
+br.lighthouseQuestionWhatSpeech
+Passo os dias aqui, esperando algum barco chegar. Já faz tempo desde o último barco... Mas preciso ficar aqui, olhando o horizonte... Talvez mais algum chegue.
+br.lighthouseQuestionWhyEatCandies
+Por que eu comeria doces?
+br.lighthouseQuestionWhyEatCandiesSpeech
+Porque eles fazem bem para a saúde!
+br.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+O que é uma caixa de doces?
+br.lighthouseQuestionCandyBoxSpeech
+É uma caixa muito antiga... dizem que ela guarda todos os doces do mundo. Segundo a lenda, quem abrir a caixa terá tantos doces que tudo lhe será possível.
+br.lighthouseQuestionDragon
+O dragão me disse para vir aqui em busca de doces.
+br.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Ah, bem... Eu não posso lhe dar doces diretamente, mas posso lhe dar algo essencial para se conseguir MUITOS doces. Mas terei de testá-lo antes disso. O que eu guardo não pode ser dado a qualquer um. Solucione esse quebra-cabeça e ele será seu.
+br.lighthouseFoundStone # INFORMAL PRONOUN
+Parabéns! Você passou no teste e encontrou a pedra. Ela é muito preciosa, mas somente se você tiver outras três pedras como essa. Boa sorte!
+br.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Bom trabalho, você solucionou o quebra-cabeça de novo. Gostou, foi?
+br.saveLocalSaveTitle
+Salvar no navegador
+br.saveLocalSaveWhy
+Escolha salvamento local se quiser continuar jogando no dispositivo e navegador atuais.
+br.saveLocalSaveWarning0
+O navegador não é compatível com HTML5.
+br.saveLocalSaveWarning1
+Atualize o navegador para usar o recurso de salvamento local.
+br.saveLocalSaveChooseSlot
+Escolha um lugar para salvar:
+br.saveLocalSaveAutosaveEnabled
+Salvamento automático ativado
+br.saveLocalSaveChooseWhatToDo
+Escolha o que fazer:
+br.saveLocalSaveSaveButton
+Salvar
+br.saveLocalSaveAutosaveButton
+Salvar a cada 10 minutos
+br.saveLocalSaveDisableAutosaveButton
+Desativar salvamento automático
+br.saveFileSaveTitle
+Salvar em texto
+br.saveFileSaveWhy0
+Escolha salvar em texto se:
+br.saveFileSaveWhy1
+quiser continuar jogando em outro dispositivo ou navegador.
+br.saveFileSaveWhy2
+quiser compartilhar seu jogo salvo com alguém.
+br.saveFileSaveWhy3
+por algum motivo você quiser apagar o cache do navegador
+br.saveFileSaveWhy4
+(isso apagará jogos salvos localmente)
+br.saveFileSaveButton
+Obter jogo atual em texto
+br.saveFileSaveWarning
+Agora copie e cole esse texto em algum lugar (ex.: um arquivo)
+br.saveLocalLoadTitle
+Carregar do navegador
+br.saveLocalLoadYouCan
+É possível carregar um jogo salvo localmente usando um dos links:
+br.saveLocalLoadThanksTo
+Graças à magia do HTML5, é possível usar esses links até mesmo off-line.
+br.saveFileLoadTitle
+Carregar de texto
+br.saveFileLoadPaste
+Cole o texto do jogo salvo e clique em "Carregar".
+br.saveFileLoadButton
+Carregar
+br.mountainsText0
+Você avistou algo nas montanhas!
+br.mountainsText1
+Parece algo interessante. Talvez seja útil.
+br.mountainsTextButton
+Escalar as montanhas até o troço
+br.mountainsTextAfter
+Você achou um pula-pula! Ele foi adicionado ao seu inventário.
+br.secondHouseIntroSpeech
+Olá, sou o vendedor de doces. Eu faço tudo por doces. Como posso ajudá-lo?
+br.secondHouseLollipop1Speech
+Esse pirulito de limão é o meu favorito! Ele custa 60 doces, mas vale a pena.
+br.secondHouseLollipop2Speech
+Esse pirulito de morango é uma delícia! Eu adoro a cor dele. Só custa 60 doces!
+br.secondHouseLollipop3Speech
+Aposto que você nunca experimentou um pirulito de abóbora! 60 doces e será todo seu.
+br.secondHouseLollipopButtonText
+Comprar esse pirulito (60 doces)
+br.secondHouseMerchantHatSpeech
+Eu até poderia vender meu chapéu, mas gosto muito dele. A não ser que seja por... 1 milhão de doces. O que me diz? Uma pechincha, não é mesmo?
+br.secondHouseMerchantHatButtonText
+Comprar o chapéu do vendedor (1.000.000 doces)
+br.secondHouseTimeRingSpeech
+Esse é o Anel do Tempo. Com ele, você poderá desacelerar o tempo quando estiver em apuros.
+br.secondHouseTimeRingButtonText
+Comprar o Anel do Tempo (500 doces)
+br.secondHouseLeatherGlovesSpeech
+Essas luvas são feitas de couro de camelo; altíssima qualidade. Tenho um monte delas no estoque, por isso são tão baratas... apenas 300 doces!
+br.secondHouseLeatherBootsButtonText
+Comprar um par de botas de couro (300 doces)
+br.secondHouseLeatherBootsSpeech
+Essas botas são do mais puro couro de camelo. Seus pés ficarão quentinhos.
+br.secondHouseLeatherGlovesButtonText
+Comprar um par de luvas de couro (300 doces)
+br.secondHouseChocolateBarSpeech
+Isso é uma barra de chocolate. Não sei para que serve, mas é bem rara... e cara! Por 800 doces, ela é sua.
+br.secondHouseChocolateBarButtonText
+Comprar a barra de chocolate (800 doces)
+br.outsideTheHoleButton
+Pular nesse buraco grande no chão
+br.theCaveExitText0
+Você finalmente chegou à saída da caverna.
+br.theCaveExitText1
+Você vê uma enorme floresta lá fora.
+br.theCaveExitButtonText
+Sair da caverna
+br.theCaveFirstSentenceWentStraight
+Você seguiu reto.
+br.theCaveFirstSentenceWentLeft
+Você virou à esquerda.
+br.theCaveFirstSentenceWentRight
+Você virou à direita.
+br.theCaveFirstSentenceYouAre
+Você está em uma caverna. Há três caminho à sua frente.
+br.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Você vê algo estranho no chão à sua frente.
+br.theCavePattern_ChocolateBarNowSeeChocolateBar
+Você vê uma barra de chocolate à sua frente.
+br.theCavePattern_TreasureMapSentence
+Você vê pedrinhas estranhamente dispostas no chão.
+br.theCavePattern_MonkeyWizardSentence
+Você se depara com um macaco mago pelado.
+br.theCavePattern_MonkeyWizardButton
+Desafiá-lo
+br.theCavePattern_OctopusKingSentence
+Você se depara com o Rei Polvo. Ele parece ser durão.
+br.theCavePattern_OctopusKingButton
+Desafiá-lo
+br.fortressInsideText0
+Você está dentro da Fortaleza do Deserto.
+br.fortressInsideText1
+Há três portas à sua frente.
+br.fortressInsideText2
+Cada uma delas leva a uma sala com um tesouro no fim.
+br.fortressInsideEnterRoom1
+br.rar na primeira sala
+br.fortressInsideEnterRoom2
+br.rar na segunda sala
+br.fortressInsideEnterRoom3
+br.rar na terceira sala
+br.treasureButtonDig
+Cavar
+br.treasureButtonYouFound
+Você encontrou três barras de chocolate!
+br.sorceressHutHello
+Olá, sou a feiticeira. Posso lhe ensinar algumas coisinhas sobre magia. Também posso lhe dar coisas interessantes ou criar feitiços para você. Mas tudo tem um preço... pirulitos! Muitos pirulitos!
+br.sorceressHutClickedGrimoire
+Esse é um grimório para aprendizes. Com ele, você poderá lançar feitiços simples porém úteis nas missões. Você vai precisar! Apenas 5.000 pirulitos.
+br.sorceressHutBuyGrimoireButton
+Comprar esse grimório (5.000 pirulitos)
+br.sorceressHutBuyGrimoireSpeech
+Obrigado pela compra! Você poderá lançar três feitiços com esse grimório. Boa sorte!
+br.sorceressHutClickedGrimoire2
+Esse é um grimório avançado. Com ele, você poderá lançar dois feitiços mais poderosos. Eu mesmo os escrevi; não foi nada fácil. Acho que 20.000 pirulitos é um bom preço.
+br.sorceressHutBuyGrimoire2Button
+Comprar esse grimório (20.000 pirulitos)
+br.sorceressHutBuyGrimoire2Speech
+Obrigado pela compra! Você poderá lançar dois feitiços com esse grimório. Use-os com sabedoria!
+br.sorceressHutClickedCauldron
+Esse é o meu caldeirão. É nele onde preparo as poções mágicas. Posso até vendê-lo, mas ele é muito valioso... que tal 100.000 pirulitos?
+br.sorceressHutBuyCauldronButton
+Comprar o caldeirão (100.000 pirulitos)
+br.sorceressHutBuyCauldronSpeech
+Muito obrigada! 100.000 pirulitos para mim! Fique com este livro de receitas. Ele será muito útil.
+br.sorceressHutClickedHat
+Belo chapéu, não acha? Mas não posso vendê-lo; ele é muuuito valioso. É sério, não insista. Não. Não, não posso fazer isso. Ah, tá... Talvez eu o troque por 1.000.000.000 de pirulitos. Você não vai ter como me pagar esse valor mesmo.
+br.sorceressHutBuyHatButton
+Comprar o chapéu (1.000.000.000 pirulitos)
+br.sorceressHutBuyHatSpeech
+Um bilhão de pirulitos para mim! Não tenho mais o chapéu... mas um bilhão de pirulitos, puxa vida! ... Valeu a pena.
+br.cauldronPreviousPageButton
+Página anterior
+br.cauldronNextPageButton
+Próxima página
+br.cauldronWhatYouWantToPut
+O que deseja colocar no caldeirão?
+br.cauldronWhatIsIn
+No caldeirão há:
+br.cauldronWhatYouCanDo
+O que deseja fazer?
+br.castleBigRoomComment
+Sala grande
+br.castleARoomComment
+Sala
+br.castleADarkRoomComment
+Sala escura
+br.castleCastleEntranceComment
+Portões do castelo
+br.castleTowerEntranceComment
+br.rada da torre
+br.castleNougatMonsterComment
+Atacar o monstro de torrone gigante
+br.castleGuardsComment
+Atacar os guardas
+br.castleStairsComment
+Escadaria
+br.buttonBackToTheCastle
+Voltar ao castelo
+br.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Olá! Sou um velho forno à lenha. Eu costumava assar toneladas de pães, mas nunca mais fui usado. Será... Será que você pode me ajudar? Só preciso de algumas das suas guloseimas! Você não vai se arrepender! Eu juro.
+br.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Ah... Você não tem guloseimas suficientes. Não posso fazer nada, sou inútil. Um forno totalmente imprestável, é isso o que sou.
+br.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Oba! Muito obrigado! Usei 100 doces e uma barra de chocolate e preparei... um pão de chocolate! É minha receita predileta. Espero que você goste!
+br.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Ei! Se quiser cozinhar mais, é só falar comigo! Será um prazer ajudar.
+br.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Ah, você não tem guloseimas suficientes. Eu preciso de 100 doces e uma barra de chocolate. Volte quando tiver tudo.
+br.castleBigRoomHovenLetHovenTakeButton
+Deixar que o forno pegue tudo de que precisar.
+br.castleBigRoomHovenThanks
+Obrigado, forno!
+br.dragonStopTickling # INFORMAL PRONOUN
+Ô, você aí! Pare de fazer cócegas, por favor.
+br.dragonStopTicklingButton
+Hã, erh... Desculpe-me. Achei que eu devia derrotar você.
+br.dragonTalking # INFORMAL PRONOUN
+Eu sou um dragão e esse é meu castelo. Você deve ser muito corajoso por ter entrado aqui... Será um prazer ajudar alguém tão destemido. O que você mais deseja?
+br.dragonTalkingChallengeButton
+Desafio
+br.dragonTalkingFameButton
+Fama
+br.dragonTalkingCandiesButton
+Doces
+br.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Ah, então gosta de desafios? O que me diz de dar um pulinho no inferno? Dizem que Satã é um desafio e tanto. Suba nas minhas costas que eu levarei você até lá.
+br.dragonTalkingFameSpeech # INFORMAL PRONOUN
+O melhor jeito de se tornar famoso é desafiar o próprio criador do jogo. Eu sei onde ele mora; posso levar você até lá. Mas não será uma luta fácil.
+br.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+No fim, todos queremos doces, não é mesmo? Tenho um amigo que pode ajudar. É fácil reconhecê-lo... Ele só tem um olho. Diga a ele que você me conhece.
+br.dragonTalkingChallengeAnswer
+Vamos então!
+br.dragonTalkingFameAnswer
+Estou pronto.
+br.dragonTalkingCandiesAnswer
+Está bem, obrigado!
+br.buttonBackToCastle
+Voltar ao castelo
+br.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Ei! Eu sou o doce falante. Você quase terminou o jogo, só falta encontrar a caixa de doces. Ela está em uma casa perto da aldeia. É a última parte!
+br.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Oi! Eu sou o doce falante. Parabéns, você terminou o jogo! Abrirei a caixa de doces para você como recompensa. Posso?
+br.talkingCandySpeech2 # INFORMAL PRONOUN
+Prontinho! Você já pode entrar. Espero que tenha gostado do jogo. :)
+br.talkingCandyButton
+Sim!!
+br.lighthousePuzzleResetButton
+Recomeçar

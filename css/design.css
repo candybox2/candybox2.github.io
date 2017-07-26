@@ -1,0 +1,169 @@
+/* Body */
+
+body{
+    margin: 0; /* No margin ! */
+    overflow-y: scroll; /* In order to always show the vertical scrolling bar */
+    text-align: center;
+}
+
+#aroundStatusBar{
+    z-index: 100; /* With this z-index, the status bar will be displayed over the main content (useful when showing the map) */
+}
+
+#statusBar{
+    /* Other stuff */
+    margin-top: 0; /* This one is to make sure the status bar sticks to the top of the page */
+    margin-bottom: 0; /* To avoid having a gap between the status bar and the main content */
+    display: inline-block;
+    background-color: rgb(255, 255, 255); /* White background */
+    margin: 0 auto; /* Centering */
+}
+
+#mainContent{
+    margin-top: 0; /* To avoid having a gap between the main content and the div around it */
+    margin-bottom: 0;
+    display: inline-block; /* Centering */
+    margin: 0 auto; /* Centering */
+}
+
+#versionNumber{
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    font-size: 10px;
+}
+
+/* Pre tag */
+
+pre{
+    font-family: monospace; /* The pre tag will use the generic "monospace" font family, which should be the default anyway */
+    font-size: 1em;
+}
+
+/* asciiButton class, used for buttons inside ascii art */
+
+.asciiButton{
+    cursor: pointer; /* To change the pointer when we pass the mouse on the link */
+}
+
+/* asciiNinjaButton class, used for buttons hidden inside ascii art */
+
+.asciiNinjaButton{
+    
+}
+
+/* aroundRealButton class, used by the span tag around real buttons */
+
+.aroundRealButton{
+    
+}
+
+/* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
+
+.asciiRealButton{
+    cursor: pointer; /* To change the pointer when we pass the mouse on the button */
+
+    /* The border itself */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #464c54;
+    
+    /* Grey background color */
+    background-color: #dcdad5;
+    
+    /* Position absolute inside the aroundRealButton span */
+    position: absolute;
+}
+
+.asciiRealButton:hover{
+    background-color: #eeebe7; /* New background color, lighter grey */
+    border-width: 1px;
+}
+
+/* Comments */
+
+.aroundComment{
+    display: none; /* The comment must be hidden by default ! */
+    cursor: pointer; /* To change the pointer when we pass the mouse on the comment */
+}
+
+.comment{
+    position: absolute; /* The comment itself has an absolute position relatively to the aroundComment span */
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.englishComment{
+    font-weight: bold;
+}
+
+.translated{
+    font-style: italic;
+}
+
+/* Select */
+
+.aroundSelect{
+   
+}
+
+.asciiSelect{
+    font-family: monospace;
+    position: absolute;
+}
+
+.asciiSelectOption{
+     
+}
+
+/* Text input */
+
+.aroundTextInput{
+    
+}
+
+.asciiTextInput{
+    font-family: monospace;
+    position: absolute;
+}
+
+/* Enigma */
+
+.enigmaWrongMessage{
+    visibility: hidden;
+}
+
+/* Tooltips */
+
+.tooltip{
+    text-decoration: none;
+    display: none;
+    white-space: normal; /* To force breaklines in tooltips */
+    text-align: left;
+    font-style: normal;
+    position: fixed;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid;
+    font-family: monospace;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    z-index: 99999; /* The tooltip must be above everything */
+}
+
+/* Checkboxes */
+
+.aroundCheckbox{
+    position: absolute;
+}
+
+.asciiCheckbox{
+    
+}
+
+/* Textareas */
+
+.textarea{
+    resize: none; /* We must not be able to resize textareas because it would cause many bugs linked to how we handle ascii render areas.. */
+    position: absolute;
+}

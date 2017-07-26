@@ -1,0 +1,26 @@
+8
+              The P potion
+              ¨¨¨¨¨¨¨¨¨¨¨¨
+  The P potion is a strange one. You
+cannot predict what it is going to do.
+It could heal you or damage you, make
+you stronger or weaker, or even turn you
+into someone (something?) else.
+
+  And it's also hard to brew!
+
+  Instructions :
+   - Put 500 candies in your cauldron
+   - Mix for a few seconds
+   - Stop mixing
+   - Add 100 times more candies than the
+number of seconds you mixed. For example
+if you mixed during 4 seconds, you'll
+need to add 400 candies. Do not multiply
+this quantity, even if you want to make
+more than one potion.
+   - Heat up until the water is lukewarm
+   - Stop heating up
+   - Add some lollipops
+   - Mix
+   - Put into bottles!

@@ -1,0 +1,24 @@
+cz.cauldron.page0
+Návod na vaření
+cz.cauldron.page1
+Přehled / Strana 2: Léčivý lektvar / Strana 3: Želví lektvar / Strana 4-5: Lektvar létání / Strana 6-7: Lektvar zběsilosti / Strana 8-9: Lektvar P / Strana 10-11: Lektvar X
+cz.cauldron.page2
+Léčivý lektvar / Tento lektvar je ze všech asi nejjednodušší na uvaření. Jsou k němu zapotřebí pouze bonbóny. Na výpravách ti jednorázově vyléčí 100 bodů zdraví. / Instrukce: - Dej do kotlíku 100 bonbónů - Chvíli míchej - Výslednou směs opatrně nalij do lahviček / stejně jako u každého lektvaru, i tady můžeš znásobit množství. Pokud například použiješ 300 bonbónů, výsledkem budou tři léčivé lektvary.
+cz.cauldron.page3
+Želví lektvar / Želví lektvar už je o trochu složitější, než léčivý lektvar. Budeš potřebovat bonbóny a lízátka. / Pokud tento lektvar vypiješ během výpravy, proměníš se na želvu. Budeš se hýbat pomaleji, zato ale budeš odolnější proti nepřátelským útokům. / Instrukce: - Dej do kotlíku 50 bonbónů - Přidej 500 lízátek - Míchej zhruba 10 vteřin - Přestaň míchat - Přidej 50 bonbónů - Promíchej - Nalij směs do lahviček / POZOR! V želvím stavu se nepřevracej na krunýř, nebudeš se moci zvednout!
+cz.cauldron.page4
+Lektvar létání / Tento lektvar, vynalezený slavným čarodějem Isaacem, ti umožní na několik vteřin odolávat zemské přitažlivosti. / Největší efekt má hned po skoku (pokud neumíš skákat, měl by sis sehnat nějakou skákací tyč). / Není jednoduchý na uvaření, budeš muset pečlivě kontrolovat teplotu kotlíku. / Instrukce: - Do kotlíku nasyp 1000 bonbónů - Zahřej vodu, ať je vlažná - Přestaň zahřívat - Přidej dalších 1000 bonbónů - Zahřívej kotlík až do chvíle, kdy voda začne vřít - nalij do skleniček
+cz.cauldron.page5
+Příklad užití lektvaru létání / "Přeletí přes díru" / *napije se lektvaru*
+cz.cauldron.page6
+Lektvar zběsilosti / Lektvar zběsilosti tě změní na zuřivého berserka. / Nevýhodou je, že sníží tvé zdraví na polovinu. / Výhodou je, že na několik vteřin budeš způsobovat dvojnásobné zranění! / Recept je jednoduchý, ale budeš potřebovat hodně lízátek. / Tady jsou instrukce: Nasyp do kotlíku 20 000 lízátek - Míchej je, dokud tě nezačnou bolet ruce - Nalij směs do skleniček
+cz.cauldron.page7
+Důležité upozornění / Nepřidávej do kotlíku žádné bonbóny. / Myslím to vážně, ani jeden. / Opravdu ne. / Následky by byly nepředvídatelné.
+cz.cauldron.page8
+Lektvar P / Lektvar P je poměrně zvláštní. Nedá se předem odhadnout, co udělá. Může tě vyléčit nebo zranit, může tě posílit nebo oslabit, dokonce tě může změnit v někoho (nebo něco) jiného. / A navíc je velmi složitý na uvaření! / Instrukce: Do kotlíku nasyp 500 bonbónů - Chvíli míchej - Přestaň míchat - Přidej množství bonbónů odpovídající počtu vteřin, po které jsi míchal, krát 100. Pokud jsi například míchal 4 vteřiny, budeš muset přidat 400 bonbónů. Toto množství zůstane stejné, i pokud vaříš několik lektvarů naráz. - Zahřívej kotlík, dokud voda nebude vlažná - Přestaň ohřívat - Přidej pár lízátek Zamíchej - Nalij do skleniček!
+cz.cauldron.page9
+Užívej lektvar P dobře. / Existuje několik pravidel, kterými by ses měl řídit, abys dosáhl co nejlepších účinků. Tyto zákonitosti byly vypozorovány empiricky, ale fungují celkem spolehlivě. / - Čím více používáš lektvar P, tím podivnější účinky má. / - Pokud jsi hodně zraněný, lektvar P bude pravděpodobně mít pozitivní účinek. / - Zvířata tento lektvar snášejí velmi špatně. 
+cz.cauldron.page10
+Lektvar X / Lektvar X je legenda. Říká se, že kdokoliv ho dokáže uvařit a vypít, se ocitne v zemi neznámé, kam předtím ještě nikdo nezavítal. / Nevím, jestli je tento lektvar pouze legenda nebo ne, ale napíšu sem všechno, co o něm vím. / Lektvar X je zmíněný ve mnoha starých legendách a alchymistických knihách. Zde je souhrn informací, které by ti mohly pomoct uvařit lektvar X. Hodně štěstí! / - Říká se, že k uvaření lektvaru X je potřeba 5 kroků. / - Na všechny kroky kromě jednoho jsou prý potřeba lízátka. / - Jedna z pověstí se zmiňuje o tom, že nelze uvařit více lektvarů X naráz.
+cz.cauldron.page11
+- A nakonec říkanka, která se často uvádí, když dojde na lektvar X: / První den byl dán život první Sladkosti. Ale venku bylo chladno. / Druhý den byl Sladkosti dán Otec. Ale venku bylo chladno. / Třetí den byla Sladkosti dán bratr. Ale venku bylo chladno. / Čtvrtý den byl Sladkosti dán kamarád. Ale venku bylo chladno. / Pátý den byl Sladkosti dán milenec. A byť to zní naivně nebo hloupě, Sladkost teď byla šťastná, a venku bylo horko.

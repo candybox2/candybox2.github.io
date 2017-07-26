@@ -1,0 +1,15 @@
+enum LighthousePuzzlePartType{
+    BLANK,
+    SHOW_AROUND,
+    SHOW_LEFT,
+    SHOW_BELOW,
+    SHOW_ABOVE,
+    SHOW_RIGHT,
+    MOVE_BELOW_LINE_TO_THE_RIGHT,
+    MOVE_LEFT_LINE_ABOVE,
+    LIVES,
+    NOTHING_HERE,
+    WHAT,
+    SHOW_LEFT_RIGHT,
+    STONE
+}

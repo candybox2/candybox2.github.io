@@ -1,0 +1,23 @@
+6
+
+
+
+             Berserk potion
+             ¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  The berserk potion transforms you into
+a berserker.
+
+  The drawback is that it consumes half
+of your life.
+
+  The benefit is that it doubles your
+damage for a few seconds!
+
+  Brewing this potions is very simple,
+but you will need a lot of lollipops.
+Here are the instructions :
+   - Put 20 000 lollipops in your
+     cauldron
+   - Mix them until your arms are
+     hurting
+   - Put into bottles

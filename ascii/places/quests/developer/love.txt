@@ -1,0 +1,5 @@
+    Y      BBBBB
+  Y            B
+Y          BBBBB
+  Y            B
+    Y      BBBBB

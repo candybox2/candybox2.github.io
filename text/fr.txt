@@ -1,0 +1,690 @@
+fr.mapVillageComment
+Le Village
+fr.mapFortressComment
+La forteresse du désert
+fr.mapATreeComment
+Un arbre
+fr.mapTheDesertComment
+Le désert
+fr.mapWishingWellComment
+Le puits aux souhaits
+fr.mapLonelyHouseComment
+Une maison solitaire
+fr.mapForestComment
+La forêt
+fr.mapCastleEntranceComment
+Entrée du château
+fr.mapCastleComment
+Le château
+fr.mapDragonComment
+Le dragon
+fr.candyBoxEatCandiesButton
+Manger tous les bonbons
+fr.candyBoxThrowCandiesButton
+Jeter 10 bonbons par terre
+fr.mapVillageLockedHouseComment
+Une maison verrouillée
+fr.mapVillageAHouseComment
+Une maison
+fr.mapVillageForgeComment
+La forge
+fr.buttonBackToTheMap
+Revenir à la carte
+fr.mapSorceressHutComment
+Hutte de la sorcière
+fr.buttonBackToTheVillage
+Revenir au village
+fr.mapATreeIntroductionSpeech
+Bonjour, je suis l'Écureuil. Je peux te fournir des bonbons, et un tas d'autres choses. Je sais à quel point tu aimes les bonbons. Mais je me sens seul dans cette forêt.
+fr.mapATreeIntroductionButton
+Comment puis-je t'aider ?
+fr.mapATreeFirstQuestion
+Je vais te poser des questions. Si tu réponds correctement, les plus douces sucreries seront à toi ! Première question : aimes-tu vraiment les bonbons ? (répondre en anglais)
+fr.mapATreeSecondQuestion
+C'est bon ! Voici 20 bonbons pour toi. Maintenant complète cette suite de lettres : S, E, I, D, N, A, ?
+fr.mapATreeThirdQuestion
+Candies! Voici 100 bonbons pour toi. Question suivante : combien de bonbons possède la personne la plus bonbon du monde ?
+fr.mapATreeFourthQuestion
+Voici 500 bonbons pour toi ! La prochaine récompense devrait être encore plus intéressante... Voici l'énigme : Dans une ancienne forêt pousse un très vieil arbre, sur lequel vivent les animaux les plus intelligents de ce monde. On dit que cet arbre possède 60 racines, 360 branches et 2160 feuilles. Combien de marques peut-on trouver sur son tronc ?
+fr.mapATreeFifthQuestion
+Bravo ! Je parlais de mon arbre, effectivement. Voici 3 sucettes pour toi. Fais-en bon usage ! Prochaine énigme : écoute attentivement : Sous la pleine lune, je jette un chapeau jaune dans la mer rouge. Qu'arrive-t-il au chapeau jaune ?
+fr.mapATreeTicTacToeIntro
+Bien répondu ! Ce n'était pas trop dur. Voici trois barres de chocolat pour toi ! Pour la prochaine récompense, on va changer un peu les règles. Tu vas devoir jouer à un jeu avec moi ! Es-tu prêt ?
+fr.mapATreeTicTacToeIntroButton
+Bien sûr que je le suis !
+fr.mapATreeTicTacToeLetsPlay
+Le jeu est Tic-Tac-Toe. On joue sur un plateau de 3 par 3. Tu utiliseras le signe X et moi le signe O. On place nos signes alternativement, et le but est d'en aligner trois. Je te laisse commencer !
+fr.mapATreeTicTacToeNobodyWins
+Le plateau est entièrement remplit et on a tous les deux échoué à aligner trois signes : personne ne gagne ! Tu veux rejouer ?
+fr.mapATreeTicTacToeYouLose
+J'en ai aligné trois ! J'ai gagné. Tu veux rejouer ?
+fr.mapATreeTicTacToeTryAgainButton
+Oui je veux !
+fr.mapATreeTicTacToeYouWin
+Wow, c'est un coup innatendu. Mais tu en as aligné trois, je ne peux rien dire. Tu as gagné ! Prends cette clé ! Elle ouvre l'une des maisons du village sous la forêt.
+fr.mapATreeTicTacToeAnymoreSweet
+Merci, écureuil ! Un autre défi ?
+fr.mapATreeNoMoreChallenge
+Malheureusement non, je n'ai plus de défi pour toi... Jouer avec toi était vraiment amusant, je t'en remercie !
+fr.buttonExitQuestKeeping
+Quitter la quête (et gardez ce que vous avez trouvé)
+fr.buttonExitQuestNoKeeping
+Quitter la quête (vous ne garderez pas ce que vous avez trouvé)
+fr.buttonExitQuestNoKeepingBecauseLose
+Quitter la quête (vous ne garderez pas ce que vous avez touvé car vous avez écouché)
+fr.mapVillageForgeIntroductionSpeech
+Bonjour ! Je suis un forgeron. Je peux vous vendre diverses armes et pièces d'équipement.
+fr.mapVillageForgeIntroductionSpeechNoMoreToSell
+Bonjour ! Je suis un forgeron. Je n'ai plus rien à vous vendre. Revenez plus tard, peut-être ?
+fr.mapVillageFifthHouseNoWeaponSpeech
+Bonjour. Ma cave est pleine de rats, j'ai besoin de quelqu'un pour m'en débarrasser... si seulement quelqu'un avec une arme pouvait m'aider...
+fr.mapVillageFifthHouseWeaponSpeech
+Eh, vous ! Je vois que vous portez une arme ! Si vous tuez les rats qui infestent ma cave, je vous récompenserai !
+fr.mapVillageFifthHouseAgree
+C'est parti !
+fr.mapVillageFifthHouseCellarDone
+Merci de m'en avoir débarrassé ! Voici quelque chose de très précieux en récompense : une carte du monde. Je pense que vous en aurez plus l'usage que moi.
+fr.mapVillageTheShopComment
+Le magasin
+fr.mapBridgeComment
+Le pont
+fr.mapFarmComment
+La ferme à sucettes
+fr.mapCaveEntranceComment
+L'entrée de la grotte
+fr.mapLighthouseComment
+Le phare
+fr.mapPierComment
+La jetée
+fr.mapTheHoleComment
+Le Trou
+fr.candyBoxRequestStatusBarUnlocked
+Demander une nouvelle fonctionnalité au développeur (30 bonbons)
+fr.candyBoxRequestStatusBarUnlockedCfg
+En demander une autre (5 bonbons)
+fr.candyBoxRequestStatusBarUnlockedSave
+Demander encore (5 bonbons)
+fr.candyBoxRequestStatusBarUnlockedHealthBar
+Demander quelque chose de plus intéressant (5 bonbons)
+fr.candyBoxRequestStatusBarUnlockedMap
+Dernière demande ! Celle-là a intérêt de valoir le coup. (10 bonbons)
+fr.candyBoxRequestStatusBarUnlockedComment
+Vous avez débloqué une barre d'état ! (en haut)
+fr.candyBoxRequestStatusBarUnlockedCfgComment1
+Vous avez maintenant accès à un onglet de configuration.
+fr.candyBoxRequestStatusBarUnlockedCfgComment2
+Vous pouvez changer la langue, si vous le voulez.
+fr.candyBoxRequestStatusBarUnlockedSaveComment
+Un onglet de sauvegarde sauvage apparait !
+fr.candyBoxRequestStatusBarUnlockedHealthBarComment
+Voici 100 points de vie pour vous. Ils vont vous être utiles.
+fr.cfgChooseLanguage
+Choisissez la langue :
+fr.cfgInvertColors
+Inverser les couleurs ?
+fr.gridItemMainMapName
+La Carte
+fr.gridItemMainMapDescription
+Carte du monde
+fr.gridItemPogoStickName
+Bâton sauteur
+fr.gridItemPogoStickDescription
+Cet objet vous permet de sauter pendant les quêtes !
+fr.gridItemTimeRingName
+Un anneau temporel
+fr.gridItemTimeRingDescription
+Cet objet vous donne une nouvelle capacité pendant les quêtes : vous pouvez ralentir le temps. Si les choses vont trop vite pour vous, utilisez votre anneau temporel !
+fr.gridItemThirdHouseKeyName
+La clé de la troisième maison
+fr.gridItemThirdHouseKeyDescription
+Cette clé vous permet d'entrer dans la troisième maison du village
+fr.gridItemFeatherName
+Une plume d'oiseau du désert
+fr.gridItemFeatherDescription
+Cette plume magique vous permet de sauter plus haut quand vous utilisez votre bâton sauteur !
+fr.gridItemFeatherDescriptionNoPogoStick
+Pour une raison inconnue, vous sentez que cette plume pourrait être utile si vous aviez un bâton sauteur...
+fr.gridItemSpongeName
+Une éponge magique
+fr.gridItemSpongeDescription
+Cette éponge magique vous permet de vous presser vous-même comme une éponge, réduisant ainsi votre taille.
+fr.gridItemFortressKeyName
+La clé de la forteresse du désert
+fr.gridItemFortressKeyDescription
+Cette clé vous permet d'entrer dans la très ancienne forteresse située au-dessus du désert. Qui sait ce que vous pourriez y trouver ?
+fr.gridItemHeartPendantName
+Un pendentif en forme de coeur
+fr.gridItemHeartPendantDescription
+Ce pendentif va augmenter vos points de vie tant que vous le garderez autour du cou.
+fr.gridItemHeartPlugName
+Module cardiaque
+fr.gridItemHeartPlugDescription
+Ce module cardiaque, fabriqué à l'aide de fer, de pattes d'araignée et d'une "liqueur cardiaque" spéciale scellée en son centre, va augmenter votre nombre de points de vie de 20 pourcents !
+fr.gridItemBeginnersGrimoireName
+Le grimoire des débutants
+fr.gridItemBeginnersGrimoireDescription
+Ce grimoire vous fournit trois sorts, assez faciles à lancer. Il est vraiment fait pour les débutants. Vous serez capables d'utiliser le sort de pluie d'acide (une importante quantité de gouttes d'acide tombera sur vos ennemis), le sort de boule de feu (une boule magique géante faite de feu volera en direction de vos ennemis) et le sort de téléportation (qui vous téléportera en un endroit imprévisible).
+fr.gridItemAdvancedGrimoireName
+Le grimoire avancé
+fr.gridItemAdvancedGrimoireDescription
+Ce grimoire avancé vous fournit deux sorts : le sort d'effacement de la magie et le sort de bouclier d'épines. Le premier effacera toute la magie d'une quête à un moment donné, y compris les sorts que vous avez lancé et la magie de vos ennemis. Le second créera autour de vous un bouclier d'épines flottantes qui infligeront des dommages à vos ennemis au contact.
+fr.gridItemBlackMagicGrimoireName
+Le grimoire de magie noire
+fr.gridItemBlackMagicGrimoireDescription
+Vous avez trouvé ce grimoire dans une cave, il était très difficile d'accès, et ce n'était pas pour rien. Il vous fournit deux puissants sorts de magie noire. Le premier créera devant vous un mur géant fait de briques d'obsidienne, ce qui peut être utile pour ralentir vos ennemis. Le second invoquera une horde de démons attaquant tout le monde dans la quête, y compris vous. Faites attention avec celui-ci.
+fr.gridItemUnicornHornName
+Une corne de licorne
+fr.gridItemUnicornHornDescription
+Cette corne magique appartenait à une licorne. Ses puissants pouvoirs de guérison vont beaucoup vous aider. On vous a dit que la licorne s'appelait Charlie.
+fr.gridItemXinopherydonClawName
+Une griffe de xinopherydon
+fr.gridItemXinopherydonClawDescription
+Cette griffe appartenait à un xinopherydon, un ancien animal à deux têtes que tout le monde croit éteint. Elle doublera les dommages de l'arme que vous utilisez.
+fr.gridItemPitchforkName
+Une fourche
+fr.gridItemPitchforkDescription
+Cette fourche spéciale vous permet d'ameublir la terre sans avoir à le retourner, préservant ainsi les écosystèmes du sol. Cela triplera la production de votre ferme à sucettes.
+fr.gridItemShellPowderName
+Poudre de coquillage
+fr.gridItemShellPowderDescription
+La poudre de coquillage est souvent utilisée par les paysans pour améliorer la vitesse de pousse de leurs sucettes. Cette poudre multipliera votre production de sucettes par trois !
+fr.gridItemPName
+La pierre P
+fr.gridItemPDescription
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+fr.gridItemLName
+La pierre L
+fr.gridItemLDescription
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+fr.gridItemAName
+La pierre A
+fr.gridItemADescription
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+fr.gridItemYName
+La pierre Y
+fr.gridItemYDescription
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+fr.gridItemRedSharkFinName
+Un aileron de requin magique rouge
+fr.gridItemRedSharkFinDescription
+Cet aileron magique va grandement augmenter les dégâts de votre sort de boule de feu. Cette boule de feu devient enfin utile.
+fr.gridItemGreenSharkFinName
+Un aileron de requin magique vert
+fr.gridItemGreenSharkFinDescription
+Cet aileron magique apportera le pouvoir de la nature à votre ferme à sucettes! Votre production sera multipliée par 5.
+fr.gridItemPurpleSharkFinName
+Un aileron de requin magique violet
+fr.gridItemPurpleSharkFinDescription
+Cet aileron magique vous apportera un nouveau sort de magie noire. Vous ne pouvez l'utiliser qu'une fois par quête. Faites attention avec celui-là !
+fr.gridItemTalkingCandyName
+Un bonbon qui parle
+fr.gridItemTalkingCandyDescription
+Ce bonbon qui parle est apparu après que vous ayez placé les quatre pierres en haut de la tour du château. Il pourrait vous être utile pour ouvrir la candy box...
+fr.inventorySpecialNothingEqItem
+Rien
+fr.eqItemWeaponWoodenSwordName
+Épée en bois
+fr.eqItemWeaponWoodenSwordDescription
+Une simple épée en bois
+fr.eqItemWeaponIronAxeName
+Hache en fer
+fr.eqItemWeaponIronAxeDescription
+Une simple hache en fer. Bien aiguisée. Plus puissante que l'épée en bois.
+fr.eqItemWeaponPolishedSilverSwordName
+Épée en argent travaillée
+fr.eqItemWeaponPolishedSilverSwordDescription
+Une épée puissante, recouverte de piques.
+fr.eqItemWeaponTrollBludgeonName
+Le gourdin du troll
+fr.eqItemWeaponTrollBludgeonDescription
+Vous avez pris ce gourdin au troll gardant le pont. Il est lent, mais écrase vos ennemis assez efficacement.
+fr.eqItemWeaponTribalSpearName
+Une lance tribale
+fr.eqItemWeaponTribalSpearDescription
+Vous avez trouvé cette lance tribale sur le corps d'un guerrier tribal perdu dans un gros trou dans le sol. Elle est un peu difficile à manipuler au début, mais une fois qu'on s'est habitué, c'est une bonne arme.
+fr.eqItemWeaponSummoningTribalSpearName
+Une lance tribale d'invocation
+fr.eqItemWeaponSummoningTribalSpearDescription
+Cette lance tribale magique, en plus d'être un peu plus puissante que la lance tribale normale, va invoquer fréquemment des guerriers tribals pour vous aider pendant pendant vos quêtes.
+fr.eqItemWeaponMonkeyWizardStaffName
+Le bâton du singe-magicien
+fr.eqItemWeaponMonkeyWizardStaffDescription
+Ce bâton appartenait au singe-magicien nu que vous avez trouvé dans la grotte. Il va régulièrement lancer des sorts de lui-même en direction de vos ennemis.
+fr.eqItemWeaponEnchantedMonkeyWizardStaffName
+Le bâton du singe-magicien (enchanté)
+fr.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Ce bâton est plus rapide que la version non enchantée, et va également lancer beaucoup plus de sorts.
+fr.eqItemWeaponGiantSpoonName
+Une cuillère géante
+fr.eqItemWeaponScytheName
+Une faux
+fr.eqItemWeaponScytheDescription
+On dit que cette faux appartenait à la mort elle-même. Elle est extrêmement rapide.
+fr.eqItemWeaponGiantSpoonDescription
+Cette cuillère géante était à l'intérieure d'une théière géante dans la forteresse du désert. Vous ne savez pas si quiconque la déjà utilisée en tant que cuillère, mais si c'est le cas, ça devait quelqu'un d'énorme. Vous ne voulez probablement pas le rencontrer.
+fr.eqItemWeaponGiantSpoonOfDoomName
+La Cuillère géante du Destin
+fr.eqItemWeaponGiantSpoonOfDoomDescription
+Cette cuillère géante est encore plus puissante que la cuillère géante normale que vous pourriez trouver, par exemple, dans une théière. Elle est assez lente, cependant.
+fr.eqItemHatMerchantHatName
+Le chapeau du marchand
+fr.eqItemHatMerchantHatDescription
+Ce chapeau vous a été vendu par le marchand de bonbons. Le marchand de bonbons adore les bonbons. Ce chapeau multipliera par 7 les bonbons que vous trouvez pendant les quêtes !
+fr.eqItemHatSorceressHatName
+Le chapeau de la sorcière
+fr.eqItemHatSorceressHatDescription
+Ce chapeau vous a été vendu par la sorcière. Il améliorera les effets de vos sorts et potions.
+fr.eqItemHatOctopusKingCrownName
+La couronne du Roi Poulpe
+fr.eqItemHatOctopusKingCrownDescription
+Quand vous portez cette couronne, vous vous sentez beaucoup plus confiant. Elle n'apporte aucun avantage en quête, mais la confiance en soi c'est important !
+fr.eqItemHatOctopusKingCrownWithJaspersName
+La couronne du Roi Poulpe surmontée de jaspes
+fr.eqItemHatOctopusKingCrownWithJaspersDescription
+Cette couronne enchantée est faite d'or et de jaspes rouges. Pendant les quêtes, elle va lancer fréquemment de puissantes boules de feu magiques autour de vous. Et en plus, elle brille !
+fr.eqItemHatOctopusKingCrownWithObsidianName
+La couronne du Roi Poulpe surmontée d'obsidienne
+fr.eqItemHatOctopusKingCrownWithObsidianDescription
+Cette couronne enchantée est faite d'or et d'obsidienne. Elle est superbe. Pendant les quêtes, elle invoquera de temps en temps un Roi Poulpe combattant à vos côtés. Quel allié tentaculaire !
+fr.eqItemGlovesLeatherGlovesName
+Gants en cuir
+fr.eqItemGlovesLeatherGlovesDescription
+Ces gants ne font tout simplement rien. Mais ils sont doux et agréables à porter, au moins !
+fr.eqItemGlovesRedEnchantedGlovesName
+Gants enchantés rouges
+fr.eqItemGlovesRedEnchantedGlovesDescription
+Ces gants enchantés émettent une faible lueur rouge quand il fait sombre autour de vous. Pendant les quêtes, ils vont aléatoirement lancer de petites boules de feu en direction de vos enemis, ce qui peut clairement être utile.
+fr.eqItemGlovesPinkEnchantedGlovesName
+Gants enchantés roses
+fr.eqItemGlovesPinkEnchantedGlovesDescription
+Ces gants enchantés laissent une trace rose sur tout ce que vous touchez. Pendant les quêtes, ils vous soigneront continuellement.
+fr.eqItemBootsRocketBootsName
+Bottes roquettes
+fr.eqItemBootsRocketBootsDescription
+Ces bottes roquettes géniales vous permettent de sauter en plein air, comme si vous voliez !
+fr.eqItemBootsLeatherBootsName
+Bottes en cuir
+fr.eqItemBootsLeatherBootsDescription
+De simples bottes en cuir. Rien de spécial.
+fr.eqItemBootsBootsOfIntrospectionName
+Les bottes d'introspection
+fr.eqItemBootsBootsOfIntrospectionDescription
+Prenez le temps de respirer et de vous calmer. Si vous portez ces bottes, vous ne bougerez plus tant que vous toucherez le sol.
+fr.eqItemBodyArmoursLightweightBodyArmourName
+Une armure légère
+fr.eqItemBodyArmoursLightweightBodyArmourDescription
+Cette armure vous offrira une faible protection. Vous serez légèrement plus résistant face aux attaques de vos ennemis.
+fr.eqItemBodyArmoursKnightBodyArmourName
+Une armure de chevalier
+fr.eqItemBodyArmoursKnightBodyArmourDescription
+Cette solide armure vous protégera. Vous serez plus résistant face aux attaques de vos ennemis.
+fr.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Une armure de chevalier enchantée
+fr.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Cette armure est très spéciale. Vous serez BEAUCOUP plus résistant face aux attaques de vos ennemis, mais les dommages de l'arme que vous utilisez seront divisés par deux.
+fr.mapVillageForgeBuyWoodenSwordButton
+Acheter une épée en bois (150 bonbons)
+fr.mapVillageForgeBuyWoodenSwordSpeech
+Merci pour l'achat ! Cette épée en bois est peu puissante, mais c'est un début.
+fr.mapVillageForgeBuyIronAxeButton
+Acheter une hache en fer (400 bonbons)
+fr.mapVillageForgeBuyIronAxeSpeech
+J'espère que vous aimerez cette hache en argent, je viens juste de l'aiguiser pour vous !
+fr.mapVillageForgeBuyPolishedSilverSwordButton
+Acheter une épée en argent travaillée (2 000 bonbons)
+fr.mapVillageForgeBuyPolishedSilverSwordSpeech
+Ça m'a pris beaucoup de temps pour créer cette épée. Je vous assure qu'elle vaut son prix.
+fr.mapVillageForgeBuyLightweightBodyArmourButton
+Acheter une armure légère (15 000 bonbons)
+fr.mapVillageForgeBuyLightweightBodyArmourSpeech
+Cette armure vous apportera une protection contre vos ennemis.
+fr.mapVillageForgeBuyScytheButton
+Acheter une faux (5 000 000 bonbons)
+fr.mapVillageForgeBuyScytheSpeech
+Cela m'a demandé plusieurs mois pour réaliser cette faux. C'est une vraie oeuvre d'art. C'est probablement l'arme la plus rapide que vous serez jamais capable d'utiliser. Bonne chance !
+fr.wishingWellThrowFirstCandyButton
+Jeter un bonbon dans le puits
+fr.wishingWellCandyIntroductionSpeech
+Salut, voyageur ! Je suis le puits aux souhaits. J'exaucerai tes voeux en échange de sucreries ! Quand tu jetteras des bonbons dans moi, je soignerai tes blessures.
+fr.wishingWellThrewCandiesSpeech
+Tes blessures sont soignées !
+fr.wishingWellNoWoundSpeech
+Tu n'as pas de blessure à soigner !
+fr.wishingWellThrowFirstLollipopButton
+Jeter une sucette dans le puits
+fr.wishingWellLollipopIntroductionSpeech
+Salut, voyageur ! Je suis le puits aux souhaits. J'exaucerai tes voeux en échange de sucreries ! Quand tu jetteras des sucettes dans moi, je les convertirai en bonbons.
+fr.wishingWellThrewLollipopsSpeech
+Tes sucettes sont converties en bonbons ! Deux sucettes pour un bonbon.
+fr.wishingWellThrowChocolateBarButton
+Jeter une barre de chocolat dans le puits
+fr.wishingWellChocolateBarIntroductionSpeech
+Salut, voyageur ! Je suis le puits aux souhaits. J'exaucerai tes voeux en échange de sucreries ! J'adore les barres de chocolat. Je les adore vraiment. Pour chaque barre de chocolat que tu jettera en moi, y compris celle-ci, un enchantement magique te sera accordé.
+fr.wishingWellThrewChocolateBarSpeech
+Quel objet souhaites-tu enchanter ?
+fr.wishingWellThrowPainAuChocolatButton
+Jeter un pain au chocolat dans le puits
+fr.wishingWellPainAuChocolatIntroductionSpeech
+Salut, voyageur ! Je suis le puits aux souhaits. J'exaucerai tes voeux en échange de sucreries ! Quand tu jetteras un pain en chocolat dans moi, tu seras doté d'un don très spécial. Choisis sagement.
+fr.wishingWellThrewPainAuChocolatSpeech
+Merci pour la pain au chocolat ! Tu peux maintenant choisir ton don.
+fr.wishingWellChooseGift
+Choisis ton don !
+fr.wishingWellChooseGiftButton
+Choisir
+fr.wishingWellGiftDoneSpeech
+C'est fait ! Tu as maintenant un nouveau don. Il apparaitra dans le panneau de statistiques de ton inventaire.
+fr.wishingWellNoPossibleEnchantment
+Pas d'enchantement possible
+fr.wishingWellChooseEnchantment
+Choisissez l'enchantement
+fr.wishingWellEnchantButton
+Enchanter
+fr.wishingWellEnchantmentDoneSpeech
+Et voilà ! Ton objet est enchanté.
+fr.pierLighthouseButton
+Aller au phare par bateau
+fr.pierTheSeaButton
+Sauter dans la mer
+fr.lonelyHouseOpenBox
+Ouvrir la boîte
+fr.lonelyHouseShakeBox
+Secouer la boîte
+fr.lonelyHouseBreakLock
+Casser le verrou
+fr.lonelyHouseKickBox
+Donner un coup de pied dans la boîte
+fr.lonelyHouseAskTheBoxToOpenItself
+Demander à la boîte de s'ouvrir d'elle-même
+fr.lonelyHouseLureTheBoxWithACandy
+Appâter la boîte avec un bonbon
+fr.lonelyHouseTakeTheBox
+Prendre la boîte avec vous, il faut probablement une clé pour l'ouvrir de toute façon
+fr.lonelyHouseOpenBoxResult
+La boîte est verouillée
+fr.lonelyHouseShakeBoxResult
+Rien ne se passe
+fr.lonelyHouseBreakLockResult
+Le verrou résiste
+fr.lonelyHouseKickBoxResult
+Votre pied vous fait un peu mal, mais rien ne se passe
+fr.lonelyHouseAskTheBoxToOpenItselfResult
+...vous parlez à une boîte, vous savez ?
+fr.lonelyHouseLureTheBoxWithACandyResult
+La boîte n'a pas l'air d'y prêter attention
+fr.lonelyHouseTakeTheBoxResult
+Il y a probablement quelque chose d'intéressant dans cette candy box.
+fr.lollipopFarmConstructMill
+Construire un moulin (10 000 sucettes)
+fr.lollipopFarmFeedMill
+Nourrir le moulin
+fr.lollipopFarmCurrentCandiesProduction
+Production actuelle de bonbons
+fr.lollipopFarmDigPond
+Creuser un bassin (100 000 sucettes)
+fr.lollipopFarmBuyLolligator
+Acheter un lolligator (1200 bonbons)
+fr.lollipopFarmLolligatorsConversionText
+Conversion bonbons -> sucettes activée
+fr.lighthouseAskButton
+Demander
+fr.lighthouseQuestionWho
+Qui êtes-vous ?
+fr.lighthouseQuestionWhoSpeech
+Je suis un très vieux cyclope.
+fr.lighthouseQuestionWhat
+Que faites-vous ici ?
+fr.lighthouseQuestionWhatSpeech
+Je vis ici toute la journée, attendant l'arrivée d'un bateau. Cela fait très longtemps que je n'en ai pas vu, mais je dois rester ici, à fixer la mer, car un bateau pourrait arriver.
+fr.lighthouseQuestionWhyEatCandies
+Pourquoi est-ce que je devrais manger des bonbons ?
+fr.lighthouseQuestionWhyEatCandiesSpeech
+Parce que c'est bon pour la santé !
+fr.lighthouseQuestionCandyBox
+Qu'est-ce qu'une candy box ?
+fr.lighthouseQuestionCandyBoxSpeech
+C'est une très vieille boîte qu'on dit contenir tous les bonbons du monde. D'après les légendes, quiconque arrivera à l'ouvrir possèderait tellement de bonbons que tout serait possible.
+fr.lighthouseQuestionDragon
+Le dragon m'a dit de venir ici parce que je veux des bonbons.
+fr.lighthouseQuestionDragonSpeech
+Oh, je vois... Eh bien, je ne peux peux pas t'en donner directement, mais je peux te donner quelque chose d'indispensable pour qu'au final tu aies BEAUCOUP de bonbons. Je dois juste te tester auparavant. Parce que ce que j'ai ne peut être donné à n'importe qui. Résous ce puzzle et ce sera à toi.
+fr.lighthouseFoundStone
+Bravo! Tu as passé le test et trouvé la pierre. Elle est très précieuse, mais n'est utile que si tu as trois autres pierres du même genre. Bonne chance !
+fr.lighthouseFoundStoneAgain
+Bravo, tu as encore réussi le puzzle. Tu as l'air d'aimer ça.
+fr.saveLocalSaveTitle
+Sauvegarde par navigateur
+fr.saveLocalSaveWhy
+Choisissez la sauvegarde locale si vous voulez continuer de jouer sur cet appareil et ce navigateur.
+fr.saveLocalSaveWarning0
+Votre navigateur ne semble pas supporter le HTML5.
+fr.saveLocalSaveWarning1
+Vous devez mettre à jour votre navigateur pour pouvoir sauvegarder localement.
+fr.saveLocalSaveChooseSlot
+Choisissez un emplacement de sauvegarde :
+fr.saveLocalSaveAutosaveEnabled
+Sauvegarde auto activée
+fr.saveLocalSaveChooseWhatToDo
+Choisissez que faire :
+fr.saveLocalSaveSaveButton
+Sauvegarder
+fr.saveLocalSaveAutosaveButton
+Sauvegarder toutes les 10 minutes
+fr.saveLocalSaveDisableAutosaveButton
+Désactiver la sauvegarde auto
+fr.saveFileSaveTitle
+Sauvegarde sous forme de texte
+fr.saveFileSaveWhy0
+Choisissez la sauvegarde sous forme de texte si :
+fr.saveFileSaveWhy1
+Vous voulez continuer de jouer sur un autre appareil ou navigateur
+fr.saveFileSaveWhy2
+Vous voulez partager votre sauvegarde avec quelqu'un d'autre
+fr.saveFileSaveWhy3
+Pour une raison quelconque vous voulez vider le cache de votre navigateur
+fr.saveFileSaveWhy4
+(ce qui effacerait vos sauvegardes locales)
+fr.saveFileSaveButton
+Obtenir la partie actuelle sous forme de texte
+fr.saveFileSaveWarning
+Maintenant copiez ce texte quelque part ! (dans un fichier, par exemple)
+fr.saveLocalLoadTitle
+Chargement par navigateur
+fr.saveLocalLoadYouCan
+Vous pouvez charger une sauvegarde locale en utilisant les liens suivants :
+fr.saveLocalLoadThanksTo
+Grâce à la magie du HTML5, vous devriez pouvoir utiliser ces liens même hors-ligne.
+fr.saveFileLoadTitle
+Chargement sous forme de texte
+fr.saveFileLoadPaste
+Collez votre sauvegarde ci-dessous, puis cliquez sur le bouton "Load"
+fr.saveFileLoadButton
+Charger
+fr.mountainsText0
+Vous avez repéré un truc dans les montagnes !
+fr.mountainsText1
+Ça a l'air intéressant. Peut-être que ça pourrait être utile.
+fr.mountainsTextButton
+Escalader les montagnes pour récupérer le truc
+fr.mountainsTextAfter
+Vous avez trouvé un bâton sauteur ! Il a été ajouté à votre inventaire.
+fr.secondHouseIntroSpeech
+Bonjour, je suis le marchand de bonbons. Je ferais n'importe quoi contre des bonbons. De quoi avez-vous besoin ?
+fr.secondHouseLollipop1Speech
+C'est une sucette goût citron. Ma préférée ! Elle coûte 60 bonbons, mais ça vaut le coup.
+fr.secondHouseLollipop2Speech
+Celle-ci est une sucette goût fraise. Ça a bon goût. J'aime bien sa couleur rouge. Seulement 60 bonbons !
+fr.secondHouseLollipop3Speech
+C'est une sucette goût citrouille. Je parie que vous n'en avez jamais goûté ! 60 bonbons et elle est à vous.
+fr.secondHouseLollipopButtonText
+Acheter cette sucette (60 bonbons)
+fr.secondHouseMerchantHatSpeech
+Je pourrais vous vendre mon chapeau, mais il est très précieux, vous savez... Vous allez devoir me donner beaucoup de bonbons en échange. Disons un million de bonbons. Ça parait honête, non ?
+fr.secondHouseMerchantHatButtonText
+Acheter le chapeau du marchand (1 000 000 de bonbons)
+fr.secondHouseTimeRingSpeech
+C'est un anneau temporel. Il est un peu magique. Il vous permet de ralentir le temps en cas de problème.
+fr.secondHouseTimeRingButtonText
+Acheter l'anneau temporel (500 bonbons)
+fr.secondHouseLeatherGlovesSpeech
+Ces gants en cuir sont fait avec du cuir de chameau, c'est de la bonne qualité. J'en ai beaucoup en stock, c'est pour ça qu'ils sont si peu chers : seulement 300 bonbons !
+fr.secondHouseLeatherGlovesButtonText
+Acheter une paire de gants en cuir (300 bonbons)
+fr.secondHouseLeatherBootsButtonText
+Acheter une paire de bottes en cuir (300 bonbons)
+fr.secondHouseLeatherBootsSpeech
+Ces bottes en cuir de haute qualité, faites en cuir de chameau, garderont vos pieds au chaud.
+fr.secondHouseChocolateBarSpeech
+C'est une barre de chocolat. Je ne sais pas à quoi ça sert, mais il se trouve que c'est assez rare, ce qui explique le prix. 800 bonbons et elle est à vous !
+fr.secondHouseChocolateBarButtonText
+Acheter la barre de chocolat (800 bonbons)
+fr.outsideTheHoleButton
+Sauter dans ce gros trou dans le sol
+fr.theCaveExitText0
+Vous avez enfin atteint la sortie de la grotte
+fr.theCaveExitText1
+Vous pouvez voir une grande forêt au dehors
+fr.theCaveExitButtonText
+Sortir de la grotte
+fr.theCaveFirstSentenceWentStraight
+Vous êtes allé tout droit.
+fr.theCaveFirstSentenceWentLeft
+You avez choisi le chemin de gauche.
+fr.theCaveFirstSentenceWentRight
+Vous avez choisi le chemin de droite.
+fr.theCaveFirstSentenceYouAre
+Vous êtes dans une grotte. Trois chemins s'offrent à vous.
+fr.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Vous repérez une chose étrange sur le sol en face de vous.
+fr.theCavePattern_ChocolateBarNowSeeChocolateBar
+Vous repérez une barre de chocolat en face de vous.
+fr.theCavePattern_TreasureMapSentence
+Vous voyez des petits cailloux étrangement disposés sur le sol.
+fr.theCavePattern_MonkeyWizardSentence
+Vous tombez sur un singe-magicien nu.
+fr.theCavePattern_MonkeyWizardButton
+Le défier
+fr.theCavePattern_OctopusKingSentence
+Vous tombez sur le Roi Poulpe. Il a l'air méchant.
+fr.theCavePattern_OctopusKingButton
+Le défier
+fr.fortressInsideText0
+Vous êtes à l'intérieur de la forteresse du désert.
+fr.fortressInsideText1
+Vous pouvez choisir entre trois portes, chacune menant à une grande pièce avec un trésor à la clé.
+fr.fortressInsideText2
+Chacune d'elles mène à une grande pièce avec un trésor à la clé.
+fr.fortressInsideEnterRoom1
+Entrer dans la première pièce
+fr.fortressInsideEnterRoom2
+Entrer dans la deuxième pièce
+fr.fortressInsideEnterRoom3
+Entrer dans la troisième pièce
+fr.treasureButtonDig
+Creuser
+fr.treasureButtonYouFound
+Vous avez trouvé trois barres de chocolat !
+fr.sorceressHutHello
+Bonjour, je suis la sorcière. Je pourrais vous apprendre une chose ou deux à propos de la magie. Je pourrais vous donner des choses intéressantes, ou lancer des sorts pour vous. Mais tout a un prix ! Et ce prix sera des sucettes. Beaucoup de sucettes.
+fr.sorceressHutClickedGrimoire
+C'est un grimoire fait pour les débutants. En l'emportant avec vous pendant les quêtes, vous pourrez lancer des sorts simples mais utiles. Vous en avez besoin ! Seulement 5 000 sucettes.
+fr.sorceressHutBuyGrimoireButton
+Acheter ce grimoire (5 000 sucettes)
+fr.sorceressHutBuyGrimoireSpeech
+Merci pour l'achat ! Vous pourrez lancer trois sorts avec ce grimoire. Bonne chance !
+fr.sorceressHutClickedGrimoire2
+C'est un grimoire avancé. En l'emportant avec vous pendant les quêtes, vous pourrez lancer deux sorts avancés. Je l'ai rédigé moi-même, ce qui n'était pas simple. 20 000 sucettes est un prix honnête.
+fr.sorceressHutBuyGrimoire2Button
+Acheter ce grimoire (20 000 sucettes)
+fr.sorceressHutBuyGrimoire2Speech
+Merci de l'achat ! Vous pourrez lancer deux sorts avec ce grimoire. Utilisez-les sagement !
+fr.sorceressHutClickedCauldron
+C'est mon chaudron. Il me permet de préparer des potions magiques. Je pourrais vous le vendre, mais il est très précieux... il vous en coûtera 100 000 sucettes.
+fr.sorceressHutBuyCauldronButton
+Acheter le chaudron (100 000 sucettes)
+fr.sorceressHutBuyCauldronSpeech
+Merci beaucoup ! 100 000 sucettes pour moi ! Je vous ai aussi donné un manuel de préparation de potions. Il va vous être utile.
+fr.sorceressHutClickedHat
+J'ai un beau chapeau, en effet ! Mais je ne peux vraiment pas vous le vendre. Il est bieeeen trop précieux. Vraiment, je ne peux pas. N'insistez pas. Non. Non non non je ne devrais pas faire ça. Oh, bon, je l'échangerai, mais contre 1 000 000 000 de sucettes. Vous ne serez probablement pas capable de payer ça de toute façon.
+fr.sorceressHutBuyHatButton
+Acheter le chapeau (1 000 000 000 de sucettes)
+fr.sorceressHutBuyHatSpeech
+Une milliard de sucettes pour moiiii ! Mais je n'ai plu de chapeau... mais un milliard de sucettes, woah ! .. Ça valait le coup.
+fr.cauldronPreviousPageButton
+Page précédente
+fr.cauldronNextPageButton
+Page suivante
+fr.cauldronWhatYouWantToPut
+Ce que vous voulez mettre dans le chaudron
+fr.cauldronWhatIsIn
+Ce qui est dans le chaudron
+fr.cauldronWhatYouCanDo
+Ce que vous pouvez faire avec
+fr.castleBigRoomComment
+Une grande pièce
+fr.castleARoomComment
+Une pièce
+fr.castleADarkRoomComment
+Une pièce sombre
+fr.castleCastleEntranceComment
+L'entrée du château
+fr.castleTowerEntranceComment
+L'entrée de la tour
+fr.castleNougatMonsterComment
+Attaquer le monstre en nougat géant
+fr.castleGuardsComment
+Attaquer les gardes
+fr.castleStairsComment
+Escaliers
+fr.buttonBackToTheCastle
+Revenir au château
+fr.castleBigRoomHovenSpeechSad
+Salut ! Je suis un très vieux four à pain. J'avais l'habitude de cuire des tas de bonnes pâtisseries, mais plus personne ne m'utilise. Peut-être... peut-être que tu pourrais m'aider ? Laisse-moi juste te prendre quelques sucreries ! Ne t'en fais pas, tu ne vas pas lre regretter. Tu peux me faire confiance.
+fr.castleBigRoomHovenNotEnough
+Oh... tu n'as pas assez de sucreries, je ne peux rien faire. Je suis juste inutile. Je suis le four à pain inutile, c'est comme ça que tu devrais m'appeler.
+fr.castleBigRoomHovenSpeechMadePainAuChocolat
+Yay ! Merci baucoup ! J'ai utilisé 100 bonbons et une barre de chocolat, et je t'ai fait... un pain au chocolat ! C'est ma pâtisserie préférée, j'espère que tu aimes ça aussi !
+fr.castleBigRoomHovenSpeechHappy
+Hey ! Si tu veux que je cuise une autre pâtisserie, dis-le moi ! J'adorerais t'aider.
+fr.castleBigRoomHovenSpeechHappyNotEnough
+Oh, tu n'as pas assez de sucreries, malheureusement. J'ai besoin de 100 bonbons et d'une barre de chocolat. Reviens quand tu auras ça !
+fr.castleBigRoomHovenLetHovenTakeButton
+Laisser le four prendre toutes les sucreries qu'il veut prendre
+fr.castleBigRoomHovenThanks
+Merci, four !
+fr.dragonStopTickling
+Eh, toi ! Arrête de me chatouiller, s'il te plaît.
+fr.dragonStopTicklingButton
+Uh, oh, désolé, j'ai cru que je devais vous attaquer
+fr.dragonTalking
+Je suis le dragon et ceci est mon château. Je vois que vous avez réussi à entrer, vous devez être très courageux... J'adorerais aider quelqu'un comme vous. Que recherchez-vous ?
+fr.dragonTalkingChallengeButton
+Du défi
+fr.dragonTalkingFameButton
+La gloire
+fr.dragonTalkingCandiesButton
+Des bonbons
+fr.dragonTalkingChallengeSpeech
+Oh, comme ça vous voulez du défi ? Je pense que vous devriez faire un tour en enfer, il est de notoriété publique que le diable est un adversaire coriace. Sautez sur mon dos et je vous y emmènerai !
+fr.dragonTalkingFameSpeech
+Le meilleur moyen de devenir célèbre est d'affronter le développeur lui-même. Je sais où il vit que je pourrais vous y emmener. Mais soyez prêt, ce ne sera pas facile.
+fr.dragonTalkingCandiesSpeech
+Au final, la chose que nous voulons tous ce sont des bonbons, n'est-ce pas ? Je pense qu'un des mes amis pourrait vous aider. Vous le reconnaitrez aisément, il n'a qu'un seul oeil. Dites-lui juste que vous me connaissez.
+fr.dragonTalkingChallengeAnswer
+C'est parti !
+fr.dragonTalkingFameAnswer
+Je suis prêt.
+fr.dragonTalkingCandiesAnswer
+D'accord, merci !
+fr.buttonBackToCastle
+Revenir au château
+fr.talkingCandySpeechNoBox
+Hey ! Je suis le bonbon qui parle. Tu as presque terminé le jeu. Tu dois juste trouver la candy box. Elle est dans une maison en dehors du village. C'est la dernière étape !
+fr.talkingCandySpeech1
+Hey ! Je suis le bonbon qui parle. Bravo, tu as terminé le jeu ! Je vais ouvrir ta candy box pour toi, c'est ta récompense. Je peux y aller ?
+fr.talkingCandySpeech2
+C'est fait ! Tu peux y entrer maintenant. J'espère que tu as aimé le jeu :)
+fr.talkingCandyButton
+Oui !!
+fr.lighthousePuzzleResetButton
+Recommencer

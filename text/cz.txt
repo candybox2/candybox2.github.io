@@ -1,0 +1,690 @@
+cz.mapVillageComment
+Vesnice
+cz.mapFortressComment
+Pouštní chrám
+cz.mapATreeComment
+Strom
+cz.mapTheDesertComment
+Poušť
+cz.mapWishingWellComment
+Studna
+cz.mapLonelyHouseComment
+Osamělý barák
+cz.mapForestComment
+Les
+cz.mapCastleEntranceComment
+Vstup do hradu
+cz.mapCastleComment
+Hrad
+cz.mapDragonComment
+Drak
+cz.candyBoxEatCandiesButton
+Sníst všechny bonbónky
+cz.candyBoxThrowCandiesButton
+Hodit 10 bonbónů na zem
+cz.mapVillageAHouseComment
+Dům
+cz.mapVillageForgeComment
+Kovárna
+cz.buttonBackToTheMap
+Zpět na mapu
+cz.mapSorceressHutComment
+Perníková chaloupka
+cz.buttonBackToTheVillage
+Zpátky do vesnice
+cz.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Ahoj, já jsem veverka. Vím, že miluješ sladkosti, a můžu ti jich dát spoustu! Ale v tomhle lese se cítím strašně sama...
+cz.mapATreeIntroductionButton
+Můžu ti pomoct?
+cz.mapATreeFirstQuestion # INFORMAL PRONOUN
+Budu ti dávat hádanky. Pokud odpovíš správně, dostaneš slaďoučkou odměnu! První otázka: Máš opravdu, ale opravdu rád bonbónky? (Odpovídej v angličtině)
+cz.mapATreeSecondQuestion # INFORMAL PRONOUN
+Správně! Tady máš 20 bonbónů. A teď schválně, jak pokračuje série písmen: S, E, I, D, N, A?
+cz.mapATreeThirdQuestion # INFORMAL PRONOUN
+C jako Cukroví! Tady máš 100 bonbónů. Další otázka: Kolik bonbónů má nejbonbónovatější člověk na světě?
+cz.mapATreeFourthQuestion # INFORMAL PRONOUN
+Ano! Tady máš 500 bonbónů! Další odměna bude ještě zajímavější. A teď hádanka: Ve starobylém lese roste velmi starý strom, na kterém žijí nejchytřejší zvířata na světě. Říká se, že onen strom má 60 kořenů, 360 větví a 2160 listů. Kolik má jizev na kmeni?
+cz.mapATreeFifthQuestion # INFORMAL PRONOUN
+Gratuluji! Ano, mluvila jsem o svém stromě. Tady máš 3 lízátka. Dobrou chuť! Další hádanka, poslouchej pozorně: Za úplňku hodím žlutý klobouk do rudého moře. Co se stane se žlutým kloboukem?
+cz.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Správně! To nebylo tak těžké, že? Tady máš tři tabulky čokolády. Ale teď trochu změna. Zahrajeme si hru, co říkáš? 
+cz.mapATreeTicTacToeIntroButton
+Jasně, proč ne!
+cz.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Zahrajeme si piškvorky. Hrát budeme na mřížce o velikosti 3x3. Ty si vezmeš křížky, já kolečka. Budeme se střídat v tazích a cílem je mít tři značky v řadě. Nechám tě táhnout prvního!
+cz.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Tak jsme zaplnili celou herní plochu a nikomu z nás se nepovedlo vyhrát! Chceš to zkusit znova?
+cz.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Mám tři, vyhrála jsem! Chceš to zkusit znova?
+cz.mapATreeTicTacToeTryAgainButton
+Ano, chci!
+cz.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Ups, takový tah jsem teda nečekala. Ale máš tři v řadě, to nemůžu popřít. Vyhrál jsi! Tady máš odměnu; Otevře ti dveře od jednoho z domů ve vesnici.
+cz.mapATreeTicTacToeAnymoreSweet
+Děkuji, veverko! Znáš ještě nějaké hádanky? 
+cz.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Bohužel ne, už jsem vyčerpala celou svoji zásobu... Ale byla s tebou sranda, děkuju moc!
+cz.buttonExitQuestKeeping
+Ukončit výpravu (a nechat si, cos našel)
+cz.buttonExitQuestNoKeeping
+Ukončit výpravu (ale nic nedostaneš) 
+cz.buttonExitQuestNoKeepingBecauseLose
+Ukončit výpravu (umřel jsi, takže nic nedostaneš)
+cz.mapVillageLockedHouseComment
+Zamčený dům
+cz.mapVillageForgeIntroductionSpeech
+Ahoj! Já jsem kovář. Můžu ti prodat všemožné druhy zbraní a výzbroje.
+cz.mapVillageForgeIntroductionSpeechNoMoreToSell
+Ahoj! Já jsem kovář. Bohužel už nemám nic na prodej. Ale když se vrátíš později, možná za tu dobu něco vyrobím. 
+cz.mapVillageFifthHouseNoWeaponSpeech
+Ahoj. Můj sklep je plný krys, potřebuju se jich zbavit... Kdyby tu tak byl někdo, kdo by se o to mohl postarat...
+cz.mapVillageFifthHouseWeaponSpeech
+Hej, ty! Vidím, že u sebe máš zbraň! Mohl bys mě zbavit krys ve sklepě? Odměním se ti!
+cz.mapVillageFifthHouseAgree
+Tak jdeme na to!
+cz.mapVillageFifthHouseCellarDone
+Děkuju, že jsi mě zbavil těch krys! Za odměnu ti dám něco velmi cenného: Mapu světa. Myslím, že ji využiješ víc, než já.
+cz.mapVillageTheShopComment
+Obchod
+cz.mapBridgeComment
+Most
+cz.mapFarmComment
+Farma na lízátka
+cz.mapCaveEntranceComment
+Vstup do jeskyně
+cz.mapLighthouseComment
+Maják
+cz.mapPierComment
+Molo
+cz.mapTheHoleComment
+Díra v zemi
+cz.candyBoxRequestStatusBarUnlocked
+Požádat vývojáře o novou funkci (30 bonbónů)
+cz.candyBoxRequestStatusBarUnlockedCfg
+Požádat o další (5 bonbónů)
+cz.candyBoxRequestStatusBarUnlockedSave
+Požádat ještě o další (5 bonbónů)
+cz.candyBoxRequestStatusBarUnlockedHealthBar
+Požádat o něco zajímavějšího (5 bonbónů)
+cz.candyBoxRequestStatusBarUnlockedMap
+Poslední žádost! Snad to tentokrát bude stát za to. (10 bonbónů)
+cz.candyBoxRequestStatusBarUnlockedComment
+Odemknul jsi stavový řádek! (Nahoře)
+cz.candyBoxRequestStatusBarUnlockedCfgComment1
+Teď máš přístup k nastavení. 
+cz.candyBoxRequestStatusBarUnlockedCfgComment2
+Jestli chceš, můžeš změnit jazyk. 
+cz.candyBoxRequestStatusBarUnlockedSaveComment
+A teď dokonce můžeš uložit! 
+cz.candyBoxRequestStatusBarUnlockedHealthBarComment
+Tady máš 100 bodů zdraví. Budou se ti hodit.
+cz.cfgChooseLanguage
+Výběr jazyka:
+cz.cfgInvertColors
+Invertovat barvy?
+cz.gridItemMainMapName
+Mapa
+cz.gridItemMainMapDescription
+Mapa světa
+cz.gridItemPogoStickName
+Skákací tyč
+cz.gridItemPogoStickDescription
+Tahle tyč ti umožní skákat během výprav!
+cz.gridItemTimeRingName
+Prsten času
+cz.gridItemTimeRingDescription
+Díky tomuhle můžeš během výprav zpomalit čas. Pokud je toho na tebe moc, použij prsten času!
+cz.gridItemThirdHouseKeyName
+Klíč od třetího domu
+cz.gridItemThirdHouseKeyDescription
+Tento klíč ti umožní vstoupit do třetího domu ve vesnici. Jak nečekané!
+cz.gridItemFeatherName
+Supí pírko 
+cz.gridItemFeatherDescription
+Tohle kouzelné pírko ti umožní skákat výš, než normálně.
+cz.gridItemFeatherDescriptionNoPogoStick
+Nevíš proč, ale máš pocit, že by se ti tohle pírko k něčemu hodilo, kdybys měl skákací tyč...
+cz.gridItemSpongeName
+Kouzelná houba
+cz.gridItemSpongeDescription
+Díky tomuhle se můžeš zmáčknout jako houba, takže budeš menší.
+cz.gridItemFortressKeyName
+Klíč od pouštního chrámu
+cz.gridItemFortressKeyDescription
+Odemyká brány starobylé pevnosti na severním kraji pouště. Kdo ví, co tam najdeš?
+cz.gridItemHeartPendantName
+Srdcový náhrdelník
+cz.gridItemHeartPendantDescription
+Tento náhrdelník zvýší tvé zdraví, pokud ho nosíš na krku.
+cz.gridItemHeartPlugName
+Srdeční čip
+cz.gridItemHeartPlugDescription
+Tento čip byl vyroben ze železa, pavoučích nohou a speciální záhadné tekutiny zapečetěné uvnitř. Tvé zdraví je zvýšené o 20 procent!
+cz.gridItemBeginnersGrimoireName
+Kniha kouzel pro začátečníky
+cz.gridItemBeginnersGrimoireDescription
+Tato kniha tě naučí tři poměrně jednoduchá kouzla. První je kyselý déšť, který ti umožní vyvolat obrovské množství kyselinových kapek. Druhé kouzlo je ohnivá koule, kterou můžeš vypustit před sebe a vážně zranit jednoho nepřítele. A třetí je kouzlo teleportace. Dávej pozor, nedá se odhadnout, kde skončíš.
+cz.gridItemAdvancedGrimoireName
+Kniha kouzel pro pokročilé
+cz.gridItemAdvancedGrimoireDescription
+Tato kniha tě naučí dvě pokročilá kouzla: Zničení magie a ostnatý štít. První kouzlo vymaže ostatní kouzla, ať už jsi je vyčaroval ty, nebo tví nepřátelé. Druhé kouzlo kolem tebe vyvolá štít z létajících ostnů, které ublíží každému, kdo se k tobě přiblíží.
+cz.gridItemBlackMagicGrimoireName
+Kniha černé magie
+cz.gridItemBlackMagicGrimoireDescription
+V jeskyni jsi našel knihu černé magie. Bylo hodně těžké ji získat, a to z dobrého důvodu. Obsahuje totiž dvě nebezpečná temná kouzla. První před tebou vytvoří obří zeď z obsidiánových kostek, což může být užitečné pro zpomalení nepřátel. Druhé vyvolá démony, kteří se pokusí zabít všechno, co se hýbe (včetně tebe). Buď s ním opatrný.
+cz.gridItemUnicornHornName
+Roh jednorožce
+cz.gridItemUnicornHornDescription
+Tento kouzelný roh ti pomůže svou léčivou magií. Ten jednorožec se prý jmenoval Charlie.
+cz.gridItemXinopherydonClawName
+Dráp xinopherydona
+cz.gridItemXinopherydonClawDescription
+Tento hrozivý dráp patřil xinopherydonovi, prastarému dvouhlavému zvířeti, které všichni měli za vyhynulé. Tvá zbraň bude dvakrát ničivější.
+cz.gridItemPitchforkName
+Vidle
+cz.gridItemPitchforkDescription
+Tyto speciální vidle ti umožní prohrábnout hlínu, aniž bys narušil podzemní ekosystémy. Produkce lízátek na tvé farmě je třikrát větší.
+cz.gridItemShellPowderName
+Prášek ze škeble
+cz.gridItemShellPowderDescription
+Tento prášek je často používán lízátkovými farmáři jako hnojivo. Produkce tvé lízátkové farmy se díky němu ztrojnásobí!
+cz.gridItemPName
+Kámen P
+cz.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+cz.gridItemLName
+Kámen L
+cz.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+cz.gridItemAName
+Kámen A
+cz.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+cz.gridItemYName
+Kámen Y
+cz.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+cz.gridItemRedSharkFinName
+Červená žraločí ploutev
+cz.gridItemRedSharkFinDescription
+Tato kouzelná ploutev velmi posílí ohnivé koule, které sesíláš. Konečně to kouzlo k něčemu bude.
+cz.gridItemGreenSharkFinName
+Zelená žraločí ploutev
+cz.gridItemGreenSharkFinDescription
+Tato kouzelná ploutev sešle na tvou farmu požehnaní samotné Matky Přírody! Tvá produkce lízátek je pětkrát větší.
+cz.gridItemPurpleSharkFinName
+Fialová žraločí ploutev
+cz.gridItemPurpleSharkFinDescription
+Tato kouzelná ploutev ti umožní sesílat nové temné kouzlo, které můžeš použít pouze jedenkrát za výpravu. Buď s ním sakra opatrný!
+cz.gridItemTalkingCandyName
+Mluvící bonbónek
+cz.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Tento bonbónek se objevil poté, co jsi na vrchol věže donesl všechny čtyři kameny. Možná ti pomůže otevřít truhlu se sladkostmi...
+cz.inventorySpecialNothingEqItem
+Nic
+cz.eqItemWeaponWoodenSwordName
+Dřevěný meč
+cz.eqItemWeaponWoodenSwordDescription
+Jednoduchý meč vyrobený ze dřeva
+cz.eqItemWeaponIronAxeName
+Železná sekera
+cz.eqItemWeaponIronAxeDescription
+Prostá železná sekera, je ale dobře nabroušená. Je samozřejmě účinnější, než dřevěný meč.
+cz.eqItemWeaponPolishedSilverSwordName
+Naleštěný stříbrný meč 
+cz.eqItemWeaponPolishedSilverSwordDescription
+Velmi mocný meč. Na čepeli má výhružně vypadající ostny.
+cz.eqItemWeaponTrollBludgeonName
+Trollův kyj
+cz.eqItemWeaponTrollBludgeonDescription
+Tenhle kyj jsi sebral z rukou trolla, který hlídal most. Je to pomalá zbraň, ale dává slušné rány.
+cz.eqItemWeaponTribalSpearName
+Divošské kopí
+cz.eqItemWeaponTribalSpearDescription
+Tohle kopí jsi sebral mrtvole domorodého válečníka, ztraceného v hlubinách obří díry. Je to skvělá zbraň, když si na ni zvykneš.
+cz.eqItemWeaponSummoningTribalSpearName
+Vyvolávačovo divošské kopí
+cz.eqItemWeaponSummoningTribalSpearDescription
+Tohle kopí bylo očarováno. Je o trochu mocnější, a taky v pravidelných intervalech přivolává domorodé válečníky, kteří ti pomůžou na výpravách.
+cz.eqItemWeaponMonkeyWizardStaffName
+Hůl opičího mága
+cz.eqItemWeaponMonkeyWizardStaffDescription
+Tato hůl patřila nahatému opičímu mágovi. Umí sama kouzlit, vyrábí naváděné fialové výboje.
+cz.eqItemWeaponEnchantedMonkeyWizardStaffName
+Očarovaná hůl opičího mága
+cz.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+S touto holí můžeš mávat o něco rychleji, a taky zvládne vyčarovat daleko více výbojů.
+cz.eqItemWeaponGiantSpoonName
+Obří lžíce
+cz.eqItemWeaponGiantSpoonDescription
+Tuto obří lžíci jsi našel v obřím čajníku v pouštním chrámu. Není jisté, jestli ji někdo vůbec někdy použil jako lžíci, ale jestli jo, tak musel být zatraceně velký. Někoho takového bys nechtěl potkat.
+cz.eqItemWeaponGiantSpoonOfDoomName
+Obří Lžíce Zkázy
+cz.eqItemWeaponGiantSpoonOfDoomDescription
+Tato obří lžíce je ještě mocnější, než obyčejná obří lžíce, kterou jde najít například v obřím čajníku. Je ale docela pomalá.
+cz.eqItemWeaponScytheName
+Kosa
+cz.eqItemWeaponScytheDescription
+Říká se, že tato kosa patřila samotnému Smrťovi. Dá se s ní sekat extrémně rychle.
+cz.eqItemHatMerchantHatName
+Obchodníkův klobouk
+cz.eqItemHatMerchantHatDescription
+Tento klobouk jsi koupil od obchodníka se sladkostmi. Obchodník miluje bonbónky. Pokud máš na sobě tento klobouk, množství bonbónů nalezených na výpravách bude vynásobeno sedmi!
+cz.eqItemHatSorceressHatName
+Špičatý klobouk
+cz.eqItemHatSorceressHatDescription
+Tento klobouk původně patřil čarodějce. Výrazně posílí tvá kouzla a lektvary.
+cz.eqItemHatOctopusKingCrownName
+Koruna krále chobotnic
+cz.eqItemHatOctopusKingCrownDescription
+Při nošení této koruny jsi daleko sebejistější. Při výpravách ti to moc nepomůže, ale sebedůvěra je přece důležitá!
+cz.eqItemHatOctopusKingCrownWithJaspersName
+Koruna krále chobotnic, zdobená jaspisy
+cz.eqItemHatOctopusKingCrownWithJaspersDescription
+Tato očarovaná koruna je vyrobena ze zlata a červených jaspisů. Při výpravách bude kolem sebe metat mocné ohnivé koule. A navíc se nádherně leskne!
+cz.eqItemHatOctopusKingCrownWithObsidianName
+Koruna krále chobotnic, zdobená obsidiánem
+cz.eqItemHatOctopusKingCrownWithObsidianDescription
+Tato očarovaná koruna je vyrobena ze zlata a obsidiánu. Je to přímo skvostný umělecký výtvor. Při výpravách bude pravidelně vyvolávat Krále chobotnic, který ti pomůže v boji.
+cz.eqItemGlovesLeatherGlovesName
+Kožené rukavice
+cz.eqItemGlovesLeatherGlovesDescription
+Tyhle rukavice v podstatě nic nedělají. Ale aspoň jsou pohodlné a měkké!
+cz.eqItemGlovesRedEnchantedGlovesName
+Červené očarované rukavice
+cz.eqItemGlovesRedEnchantedGlovesDescription
+Tyto očarované rukavice rudě svítí ve tmě. Při výpravách budou náhodně vypouštět malé ohnivé koule, což se může hodit, pokud se na tebe sápe nějaká obluda.
+cz.eqItemGlovesPinkEnchantedGlovesName
+Růžové očarované rukavice
+cz.eqItemGlovesPinkEnchantedGlovesDescription
+Tyto očarované rukavice nechají růžovou stopu na čemkoliv, čeho se dotkneš. Na výpravách tě budou průběžně uzdravovat.
+cz.eqItemBootsRocketBootsName
+Raketové boty
+cz.eqItemBootsRocketBootsDescription
+Tyto úžasné raketové boty ti umožní skákat ve vzduchu, takže v podstatě lítáš!
+cz.eqItemBootsLeatherBootsName
+Kožené boty
+cz.eqItemBootsLeatherBootsDescription
+Jednoduché kožené boty. Není na nich nic zvláštního.
+cz.eqItemBootsBootsOfIntrospectionName
+Boty meditace
+cz.eqItemBootsBootsOfIntrospectionDescription
+Uvolni se a zhluboka se nadechni. Pokud nosíš tyto boty, tak se nikdy nebudeš hýbat, pokud stojíš na zemi.
+cz.eqItemBodyArmoursLightweightBodyArmourName
+Lehký hrudní plát
+cz.eqItemBodyArmoursLightweightBodyArmourDescription
+Tato zbroj ti nabídne základní ochranu před nepřátelskými útoky. Budeš o trošku odolnější.
+cz.eqItemBodyArmoursKnightBodyArmourName
+Rytířská zbroj
+cz.eqItemBodyArmoursKnightBodyArmourDescription
+Tato silná zbroj tě spolehlivě ochrání před všemi druhy zbraní. Tvá odolnost proti nepřátelským útokům bude velmi vysoká.
+cz.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Očarovaná rytířská zbroj
+cz.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Tohle je velmi zvláštní druh zbroje. Budeš VELMI odolný proti nepřátelským útokům, ale tvá zbraň bude mít poloviční účinek.
+cz.mapVillageForgeBuyWoodenSwordButton
+Koupit dřevěný meč (150 bonbónů)
+cz.mapVillageForgeBuyWoodenSwordSpeech
+Děkuji za koupi! Tenhle meč je sice poměrně slabý, ale je to začátek.
+cz.mapVillageForgeBuyIronAxeButton
+Koupit železnou sekyru (400 bonbónů)
+cz.mapVillageForgeBuyIronAxeSpeech
+Doufám, že se ti tahle sekyra bude líbit. Zrovna jsem ji pro tebe nabrousil!
+cz.mapVillageForgeBuyPolishedSilverSwordButton
+Koupit naleštěný stříbrný meč (2 000 bonbónů)
+cz.mapVillageForgeBuyPolishedSilverSwordSpeech
+Výroba tohohle meče mi zabrala docela slušnou dobu. Ujišťuji tě, že to za tu cenu stojí.
+cz.mapVillageForgeBuyLightweightBodyArmourButton
+Koupit lehký hrudní plát (15 000 bonbónů) 
+cz.mapVillageForgeBuyLightweightBodyArmourSpeech
+Díky této zbroji budeš odolnější proti nepřátelským útokům.
+cz.mapVillageForgeBuyScytheButton
+Koupit kosu (5 000 000 bonbónů)
+cz.mapVillageForgeBuyScytheSpeech
+Trvalo mi to několik měsíců, než jsem vyrobil tuhle kosu. Tomuhle říkám umění! Je to asi nejrychlejší zbraň, kterou kdy najdeš. Hodně štěstí!
+cz.wishingWellThrowFirstCandyButton
+Hodit do studny bonbón
+cz.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Vítej, poutníku! Jsem kouzelná studna. Výměnou za sladkosti ti splním tvá přání! Když do mě hodíš bonbóny, vyléčím tvá zranění.
+cz.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Tvá zranění byla vyléčena!
+cz.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Ale vždyť jsi úplně zdravý!
+cz.wishingWellThrowFirstLollipopButton
+Hodit do studny lízátko
+cz.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Vítej, poutníku! Jsem kouzelná studna. Výměnou za sladkosti ti splním tvá přání! Když do mě hodíš lízátka, přeměním je na bonbóny.
+cz.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Tvá lízátka byla přeměněna na bonbóny! Dvě lízátka za jeden bonbón.
+cz.wishingWellThrowChocolateBarButton
+Hodit do studny tabulku čokolády
+cz.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Vítej, poutníku! Jsem kouzelná studna. Výměnou za sladkosti ti splním tvá přání! Miluju čokoládu. Ne, přímo ji zbožňuju! Za každou tabulku, kterou do mě hodíš, ti očaruju jednu věc. A ta první se taky počítá!
+cz.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Co bys rád očaroval?
+cz.wishingWellThrowPainAuChocolatButton
+Hodit do studny pain au chocolat
+cz.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Vítej, poutníku! Jsem kouzelná studna. Výměnou za sladkosti ti splním tvá přání! Mňam, co je tohle? Pain au chocolat? Kde jsi to sehnal? Chutná to skvěle! Hmm, za tyhle dobroty ti dám jedno ze tří velmi unikátních požehnání. Vol rozvážně.
+cz.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Děkuju ti za pain au chocolat! Teď si můžeš vybrat požehnání.
+cz.wishingWellChooseGift # INFORMAL PRONOUN
+Zvol si požehnání!
+cz.wishingWellChooseGiftButton
+Zvolit
+cz.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Hotovo! Teď jsi zase o něco mocnější. Mé požehnání se ti zobrazí v panelu statistik ve tvém inventáři. 
+cz.wishingWellNoPossibleEnchantment
+Žádné možné očarování
+cz.wishingWellChooseEnchantment
+Vyber si očarování
+cz.wishingWellEnchantButton
+Očarovat
+cz.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+A je to! Tvůj předmět byl očarován.
+cz.pierLighthouseButton
+Doplout k majáku na lodi
+cz.pierTheSeaButton
+Skočit do moře
+cz.lonelyHouseOpenBox
+Otevřít truhlu
+cz.lonelyHouseShakeBox
+Zatřást truhlou
+cz.lonelyHouseBreakLock
+Vypáčit zámek
+cz.lonelyHouseKickBox
+Kopnout do truhly
+cz.lonelyHouseAskTheBoxToOpenItself
+Poprosit ji, zda by se neotevřela sama
+cz.lonelyHouseLureTheBoxWithACandy
+Nalákat truhlu bonbónem
+cz.lonelyHouseTakeTheBox
+Vzít truhlu s sebou, k jejímu otevření asi bude potřeba klíč
+cz.lonelyHouseOpenBoxResult
+Truhla je zamčená
+cz.lonelyHouseShakeBoxResult
+Nic se nestane
+cz.lonelyHouseBreakLockResult
+Zámek nejde vypáčit
+cz.lonelyHouseKickBoxResult
+Nic se nestane, akorát tě teď trochu bolí noha
+cz.lonelyHouseAskTheBoxToOpenItselfResult
+... mluvíš na blbou krabici, uvědomuješ si to?
+cz.lonelyHouseLureTheBoxWithACandyResult
+Truhlu zřejmě bonbóny nezajímají
+cz.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+V téhle... v téhle... Candy Box bude určitě něco zajímavého.
+cz.lollipopFarmConstructMill
+Postavit mlýn (10 000 lízátek)
+cz.lollipopFarmFeedMill
+Nasypat lízátka do mlýnice
+cz.lollipopFarmCurrentCandiesProduction
+Momentální produkce bonbónů
+cz.lollipopFarmDigPond
+Vykopat rybník (100 000 lízátek)
+cz.lollipopFarmBuyLolligator
+Koupit lízogátora (1200 bonbónů)
+cz.lollipopFarmLolligatorsConversionText
+Konverze z bonbónů na lízátka aktivní
+cz.lighthouseAskButton
+Zeptat se
+cz.lighthouseQuestionWho
+Kdo jsi?
+cz.lighthouseQuestionWhoSpeech
+Jsem velmi starý kyklop.
+cz.lighthouseQuestionWhat
+Co tady děláš?
+cz.lighthouseQuestionWhatSpeech
+Žiju tady roky a roky, a čekám, až připluje loď. Už je to dlouho, co jsem viděl loď, ale musím tady zůstat a čekat, protože jednoho dne možná připluje.
+cz.lighthouseQuestionWhyEatCandies
+Proč bych jedl bonbóny?
+cz.lighthouseQuestionWhyEatCandiesSpeech
+Protože jsou dobré pro tvoje zdraví!
+cz.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Co je  Candy Box?
+cz.lighthouseQuestionCandyBoxSpeech
+Je to velmi stará truhla, ve které podle legendy jsou všechny sladkosti světa. Říká se, že ten, komu se podaří ji otevřít, bude mít k dispozici tolik bonbónů, že by dokázal cokoliv.
+cz.lighthouseQuestionDragon
+Drak mi řekl, abych za tebou přišel, že mi prý pomůžeš dostat více bonbónů.
+cz.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Aha, dobrá... No, nemůžu ti dát bonbóny přímo, ale můžu ti dát něco, co ti pomůže dostat tolik bonbónů, kolik si jen můžeš přát. Ale předtím si tě musím prověřit, protože nemůžu tuhle věc dát jen tak někomu. Vyřeš tenhle hlavolam a bude tvoje.
+cz.lighthouseFoundStone # INFORMAL PRONOUN
+Gratuluji! Prošel jsi mým testem a našel jsi kámen. Je to unikát, ale bude užitečný jenom, pokud najdeš tři další, které k němu patří. Hodně štěstí!
+cz.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Hele, ty jsi ten hlavolam vyřešil i podruhé. Dobrá práce, zdá se, že se ti líbí.
+cz.saveLocalSaveTitle
+Uložit lokálně
+cz.saveLocalSaveWhy
+Vyber si lokální uložení, pokud chceš v budoucnu hrát na stejném počítači a ve stejném prohlížeči. 
+cz.saveLocalSaveWarning0
+Tvůj prohlížeč zřejmě nepodporuje HTML5. 
+cz.saveLocalSaveWarning1
+Pro uložení hry bude potřeba aktualizovat prohlížeč.
+cz.saveLocalSaveChooseSlot
+Zvol si pozici, na kterou chceš hru uložit:
+cz.saveLocalSaveAutosaveEnabled
+Automatické ukládání zapnuto
+cz.saveLocalSaveChooseWhatToDo
+Vyber, co chceš udělat:
+cz.saveLocalSaveSaveButton
+Uložit
+cz.saveLocalSaveAutosaveButton
+Ukládat každých 10 minut
+cz.saveLocalSaveDisableAutosaveButton
+Vypnout automatické ukládání
+cz.saveFileSaveTitle
+Textové ukládání
+cz.saveFileSaveWhy0
+Zvol textové ukládání, pokud:
+cz.saveFileSaveWhy1
+Chceš pokračovat ve hře na jiném počítači nebo v jiném prohlížeči
+cz.saveFileSaveWhy2
+Chceš svou hru sdílet s někým jiným
+cz.saveFileSaveWhy3
+Z nějakého důvodu potřebuješ vymazat cache
+cz.saveFileSaveWhy4
+(čímž se vymažou i lokálně uložené hry)
+cz.saveFileSaveButton
+Vygenerovat ukládací text
+cz.saveFileSaveWarning
+Teď ten text někam zkopíruj a ulož
+cz.saveLocalLoadTitle
+Načíst lokálně uloženou hru
+cz.saveLocalLoadYouCan
+Pro načtení můžeš použít následující odkaz:
+cz.saveLocalLoadThanksTo
+Díky kouzlům, kterých je HTML5 schopný, bys měl být schopný načíst hru i offline.
+cz.saveFileLoadTitle
+Načíst text
+cz.saveFileLoadPaste
+Zkopíruj sem svůj vygenerovaný text a klikni na „Načíst“
+cz.saveFileLoadButton
+Načíst
+cz.mountainsText0
+Zpozoroval jsi něco v horách!
+cz.mountainsText1
+Vypadá to zajímavě. Možná by se to mohlo hodit.
+cz.mountainsTextButton
+Jít do hor a sebrat onu věc
+cz.mountainsTextAfter
+Našel jsi skákací tyč! Byla přidána do tvého inventáře.
+cz.secondHouseIntroSpeech
+Ahoj, jsem obchodník s bonbóny. Pro bonbóny bych udělal cokoliv! Co potřebuješ?
+cz.secondHouseLollipop1Speech
+Tohle je lízátko s citrónovou příchutí. Moje oblíbené! Stojí 60 bonbónů, ale stojí za to.
+cz.secondHouseLollipop2Speech
+Tohle je lízátko s jahodovou příchutí. Je to mňamka, a má krásnou červenou barvu! Jenom za 60 bonbónů!
+cz.secondHouseLollipop3Speech
+Tohle je lízátko s dýňovou příchutí. Vsadím se, že jsi takové ještě neochutnal! 60 bonbónů a je tvoje.
+cz.secondHouseLollipopButtonText
+Koupi toto lízátko (60 bonbónů)
+cz.secondHouseMerchantHatSpeech
+Mohl bych ti prodat i svůj klobouk, ale víš, on je dost vzácný... Budeš mi za něj muset dát hodně bonbónů. Tak třeba jeden milion. To zní jako férová nabídka, ne?
+cz.secondHouseMerchantHatButtonText
+Koupit obchodníkův klobouk (1 000 000 bonbónů)
+cz.secondHouseTimeRingSpeech
+Tohle je prsten času. Je tak trochu kouzelný, umožní ti zpomalit čas, když se ocitneš v nesnázích.
+cz.secondHouseTimeRingButtonText
+Koupit prsten času (500 bonbónů)
+cz.secondHouseLeatherGlovesSpeech
+Tyto rukavice jsou z prvotřídní velbloudí kůže. Mám jich na skladě hodně, proto jsou tak levné: Jenom 300 bonbónů!
+cz.secondHouseLeatherBootsButtonText
+Koupit pár kožených bot (300 bonbónů)
+cz.secondHouseLeatherBootsSpeech
+Tyhle kvalitní boty z velbloudí kůže udrží tvé nohy v teple.
+cz.secondHouseLeatherGlovesButtonText
+Koupit kožené rukavice (300 bonbónů)
+cz.secondHouseChocolateBarSpeech
+Tohle je tabulka čokolády. Nevím, na co je, ale je poměrně dost vzácná, což vysvětluje její cenu. 800 bonbónů a je tvoje!
+cz.secondHouseChocolateBarButtonText
+Koupit tabulku čokolády (800 bonbónů)
+cz.outsideTheHoleButton
+Skočit do velké díry v zemi
+cz.theCaveExitText0
+Konečně ses dostal na druhý konec jeskyně.
+cz.theCaveExitText1
+Venku vidíš velký, hustý les.
+cz.theCaveExitButtonText
+Vyjít ven z jeskyně
+cz.theCaveFirstSentenceWentStraight
+Šel jsi rovně.
+cz.theCaveFirstSentenceWentLeft
+Zahnul jsi doleva.
+cz.theCaveFirstSentenceWentRight
+Zahnul jsi doprava.
+cz.theCaveFirstSentenceYouAre
+Teď jsi v jeskyni. Před sebou vidíš tři možné cesty.
+cz.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Na zemi leží jakási podivná věc. 
+cz.theCavePattern_ChocolateBarNowSeeChocolateBar
+Před tebou leží tabulka čokolády.
+cz.theCavePattern_TreasureMapSentence
+Na zemi vidíš jakýsi podivný shluk kamenů.
+cz.theCavePattern_MonkeyWizardSentence
+Narazil jsi na nahatého opičího mága.
+cz.theCavePattern_MonkeyWizardButton
+Vyzvat ho na souboj
+cz.theCavePattern_OctopusKingSentence
+Narazil jsi na ošklivého Krále Chobotnic. Vypadá hrozivě.
+cz.theCavePattern_OctopusKingButton
+Vyzvat... to na souboj
+cz.fortressInsideText0
+Jsi uvnitř pouštního chrámu.
+cz.fortressInsideText1
+Můžeš si vybrat jedny ze tří dveří.
+cz.fortressInsideText2
+Každé z nich vedou do místnosti s velkým pokladem.
+cz.fortressInsideEnterRoom1
+Vstoupit do první místnosti
+cz.fortressInsideEnterRoom2
+Vstoupit do druhé místnosti
+cz.fortressInsideEnterRoom3
+Vstoupit do třetí místnosti
+cz.treasureButtonDig
+Vykopat díru
+cz.treasureButtonYouFound
+Našel jsi tři tabulky čokolády!
+cz.sorceressHutHello
+Ahoj, já jsem čarodějka. Můžu tě naučit něco o magii. Taky ti můžu prodat pár zajímavých věcí, nebo pro tebe něco vykouzlit. Ale nic není zadarmo! Budu po tobě chtít lízátka. Hodně lízátek.
+cz.sorceressHutClickedGrimoire
+Tohle je kouzelná kniha určená pro začátečníky. Na výpravách budeš moci vyvolat pár jednoduchých, ale užitečných kouzel. Stoprocentně se ti budou hodit! Za pouhých 5 000 lízátek je ta kniha tvoje.
+cz.sorceressHutBuyGrimoireButton
+Koupit tuto knihu (5 000 lízátek)
+cz.sorceressHutBuyGrimoireSpeech
+Děkuji! Teď  budeš moci používat tři jednoduchá kouzla. Hodně štěstí na výpravách!
+cz.sorceressHutClickedGrimoire2
+Tohle je kniha kouzel pro pokročilé. Díky ní budeš moci používat dvě složitá kouzla. Sepsala jsem ji sama, takže funčnost zaručena! Myslím, že 20 000 je férová cena.
+cz.sorceressHutBuyGrimoire2Button
+Koupit tuto knihu (20 000 lízátek)
+cz.sorceressHutBuyGrimoire2Speech
+Dobrý obchod! Do tvého arzenálu přibyla další dvě kouzla, užívej jich moudře!
+cz.sorceressHutClickedCauldron
+Tohle je můj kotlík. Umožňuje mi vařit kouzelné lektvary. Mohla bych ti ho prodat, ale je celkem drahý... Bude tě to stát 100 000 lízátek.
+cz.sorceressHutBuyCauldronButton
+Koupit kotlík (100 000 lízátek)
+cz.sorceressHutBuyCauldronSpeech
+Díky moc! Tady máš kotlík a návod na vaření. A já mám dalších 100 000 lízátek!
+cz.sorceressHutClickedHat
+Mám pěkný klobouk, že? Ale nemůžu ti ho prodat. Je příliš vzácný. Ne, opravdu nemůžu. Netrvej na tom. Ne. Ne ne ne ne, fakt ti ho nemůžu prodat. Éh, tak dobrá, ale dáš mi za něj 1 000 000 000 lízátek. Tohle stejně asi nebudeš schopný zaplatit.
+cz.sorceressHutBuyHatButton
+Koupit špičatý klobouk (1 000 000 000 lízátek)
+cz.sorceressHutBuyHatSpeech
+Miliarda! Miliarda lízátek, hurá! Ale... už nemám svůj klobouk... Ale celá miliarda lízátek, sakra, tohle za to stálo!
+cz.cauldronPreviousPageButton
+Předchozí stránka
+cz.cauldronNextPageButton
+Následující stránka
+cz.cauldronWhatYouWantToPut
+Co chceš dát do kotlíku
+cz.cauldronWhatIsIn
+Co je v kotlíku
+cz.cauldronWhatYouCanDo
+Co můžeš udělat
+cz.castleBigRoomComment
+Velká místnost
+cz.castleARoomComment
+Místnost
+cz.castleADarkRoomComment
+Temná místnost
+cz.castleCastleEntranceComment
+Vchod do hradu
+cz.castleTowerEntranceComment
+Vchod do věže
+cz.castleNougatMonsterComment
+Zaútočit na nugátové monstrum
+cz.castleGuardsComment
+Zaútočit na stráže
+cz.castleStairsComment
+Schody
+cz.buttonBackToTheCastle
+Zpátky do hradu
+cz.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Ahoj! Jsem velmi stará pec. Kdysi jsem pekla spoustu velmi dobrého pečiva, ale dnes už mě nikdo nepoužívá. Možná... možná bys mi mohl pomoct? Můžu si od tebe vzít nějaké ty sladkosti? Neboj, nebudeš litovat! Mně můžeš věřit.
+cz.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... nemáš dost sladkostí, nemůžu udělat nic. Jsem prostě zbytečná. Od teď mi říkej „zbytečná pec“.
+cz.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Yay! Děkuju moc! Použila jsem 100 bonbónů a tabulku čokolády, a koukej, co jsem upekla! Pain au chocolat! Je to moje oblíbené pečivo, doufám, že ti bude taky chutnat!
+cz.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Jestli budeš chtít napéct víc, stačí říct! Ráda ti pomůžu.
+cz.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Ajaj, bohužel nemáš dost sladkostí. Potřebuju 100 bonbónů a tabulku čokolády. Určitě se vrať, až to seženeš!
+cz.castleBigRoomHovenLetHovenTakeButton
+Nechat pec, ať si vezme sladkosti, které potřebuje
+cz.castleBigRoomHovenThanks
+Děkuju!
+cz.dragonStopTickling # INFORMAL PRONOUN
+Hej ty tam dole! To lechtá, nech toho!
+cz.dragonStopTicklingButton
+Eh, promiň, já myslel, že tě mám zabít
+cz.dragonTalking # INFORMAL PRONOUN
+Jsem drak a tenhle hrad patří mně. Vidím, že ses dostal dovnitř, musíš být velmi statečný... Někomu jako ty milerád pomůžu. Po čem nejvíce toužíš?
+cz.dragonTalkingChallengeButton
+Po výzvě
+cz.dragonTalkingFameButton
+Po slávě
+cz.dragonTalkingCandiesButton
+Po bonbónech
+cz.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Aha, takže ty chceš výzvu? A co takhle si to rozdat se samotným ďáblem? Skoč mi na záda a já tě zanesu do pekla!
+cz.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Nejlepší způsob, jak se proslavit, je porazit samotného vývojáře. Vím, kde bydlí, a klidně tě tam dovezu. Ale připrav se, že to nebude snadný boj.
+cz.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+To je to, po čem všichni toužíme. Chceš bonbóny? Můj starý kamarád by ti s tím mohl pomoct. Poznáš ho snadno, má jenom jedno oko. Prostě mu řekni, že mě znáš.
+cz.dragonTalkingChallengeAnswer
+Tak pojďme!
+cz.dragonTalkingFameAnswer
+Jsem připravený.
+cz.dragonTalkingCandiesAnswer
+Dobrá, díky!
+cz.buttonBackToCastle
+Zpátky do hradu
+cz.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Ahojky! Jsem mluvící bonbónek. Už jsi skoro vyhrál hru. Teď už jenom musíš najít Candy Box. Je v osamělém domku na sever od vesnice. Tohle je poslední krok!
+cz.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Ahojky! Jsem mluvící bonbónek. Gratuluji, vyhrál jsi hru! Tvá odměna je následující: Otevřu pro tebe Candy Box. Mám to udělat?
+cz.talkingCandySpeech2 # INFORMAL PRONOUN
+Hotovo! Teď se můžeš podívat dovnitř. Doufám, že se ti hra líbila :)
+cz.talkingCandyButton
+Ano!!
+cz.lighthousePuzzleResetButton
+Reset

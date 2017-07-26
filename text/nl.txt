@@ -1,0 +1,690 @@
+﻿nl.mapVillageComment
+Het Dorp
+nl.mapFortressComment
+De woestijnvesting
+nl.mapATreeComment
+Een boom
+nl.mapTheDesertComment
+De woestijn
+nl.mapWishingWellComment
+De wensput
+nl.mapLonelyHouseComment
+Een afgelegen huis
+nl.mapForestComment
+Het bos
+nl.mapCastleEntranceComment
+Kasteelingang
+nl.mapCastleComment
+Het kasteel
+nl.mapDragonComment
+De draak
+nl.candyBoxEatCandiesButton
+Eet alle snoepjes
+nl.candyBoxThrowCandiesButton
+Gooi 10 snoepjes op de grond
+nl.mapVillageAHouseComment
+Een huis
+nl.mapVillageForgeComment
+De smederij
+nl.buttonBackToTheMap
+Terug naar de kaart
+nl.mapSorceressHutComment
+Hut van de tovenaar
+nl.buttonBackToTheVillage
+Terug naar het dorp
+nl.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Hallo, ik ben de eekhoorn. Ik kan je snoepjes en veel meer dingen geven. Ik weet hoeveel jij van snoepjes houdt. Maar ik voel me alleen in dit woud.
+nl.mapATreeIntroductionButton
+Hoe kan ik je helpen ?
+nl.mapATreeFirstQuestion # INFORMAL PRONOUN
+Ik ga je een paar vragen stellen. Als je ze goed beantwoord, zijn de zoetste zoetjes van jou! Eerste vraag: Hou je echt van snoepjes? (Beantwoord in Engels)
+nl.mapATreeSecondQuestion # INFORMAL PRONOUN
+Dat klopt! Hier zijn 20 snoepjes voor jou. Maak nu deze reeks van letters af en je krijgt een nieuwe prijs: S, E, I, D, N, A, ?
+nl.mapATreeThirdQuestion # INFORMAL PRONOUN
+Snoepjes! Hier zijn 100 snoepjes voor jou. Volgende vraag : Hoeveel snoepjes heeft de snoepigste persoon in zijn bezit?
+nl.mapATreeFourthQuestion # INFORMAL PRONOUN
+Hier zijn 500 snoepjes voor jou! De volgende prijs zal nog interessanter zijn...  Hier is het raadsel: In een oeroud woud groeit een hele oude boom, Waar de meest intelligente dieren wonen. Er wordt verteld dat hij 60 wortels heeft, 360 takken en 2160 bladeren. Hoeveel markeringen kun je vinden op zijn stam? 
+nl.mapATreeFifthQuestion # INFORMAL PRONOUN
+Gefeliciteerd! Ik had het over mijn boom, inderdaad. Hier zijn 3 lollies voor jou. Gebruik ze goed! Volgende raadsel, Luister goed : Onder een volle maan gooi ik een gele hoed in de rode zee. Wat gebeurd er met de gele hoed?
+nl.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Goed geantwoord! Dat was niet zo moeilijk. Hier zijn 3 chocoladerepen voor jou! Voor de volgende prijs zullen we de regels een beetje veranderen. Je moet een spel met mij spelen! Ben je er klaar voor?
+nl.mapATreeTicTacToeIntroButton
+Natuurlijk ben ik dat!
+nl.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Het spel is boter kaas en eieren. We spelen het op een 3 bij 3 bord. Jij zult het X teken gebruiken terwijl ik de O gebruik. We plaatsen onze teken(s) omstebeurt en het doel is om 3 tekens op een rij te krijgen. Ik laat jou eerst gaan!
+nl.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Het bord is helemaal opgevuld en we hebben beiden geen 3 op een rij: Niemand wint! Wil je het weer proberen?
+nl.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Ik heb drie op een rij! Ik win. Wil je het weer proberen?
+nl.mapATreeTicTacToeTryAgainButton
+Ja dat wil ik!
+nl.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Wow, dat was een onverwachte zet. Maar je hebt drie op een rij, daar kan ik niks over zeggen. Jij wint! Neem deze sleutel! Het opent een van de huizen in het dorp.
+nl.mapATreeTicTacToeAnymoreSweet
+Dankjewel eekhoorn! Zijn er nog meer uitdagingen?
+nl.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Helaas niet, ik heb geen uitdagingen meer voor je... Met jou spelen was heel erg leuk, bedankt daarvoor!
+nl.buttonExitQuestKeeping
+Eindig de zoektocht (En houd wat je gevonden hebt)
+nl.buttonExitQuestNoKeeping
+Eindig de zoektocht (Je houdt niet wat je gevonden hebt)
+nl.buttonExitQuestNoKeepingBecauseLose
+Eindig de zoektocht (Je houdt niet wat je hebt gevonden want je faalde)
+nl.mapVillageLockedHouseComment
+Een gesloten huis
+nl.mapVillageForgeIntroductionSpeech
+Hoi! Ik ben een wapensmid. Ik kan je verschillende wapens en uitrustingen verkopen.
+nl.mapVillageForgeIntroductionSpeechNoMoreToSell
+Hoi! Ik ben een wapensmid. Helaas, Ik heb niks meer om te verkopen. Kom later terug misschien?
+nl.mapVillageFifthHouseNoWeaponSpeech
+Hallo. Mijn kelder zit vol met ratten. Ik moet van ze af zien te komen... Was er maar iemand met een wapen die mij kon helpen...
+nl.mapVillageFifthHouseWeaponSpeech
+He, Jij! Ik zie dat je een wapen draagt! Als jij de ratten in mijn kelder doodt, zal ik je een geschenk geven!
+nl.mapVillageFifthHouseAgree
+We gaan er voor!
+nl.mapVillageFifthHouseCellarDone
+Bedankt voor het opruimen van de ratten! Hier is iets heel kostbaars als geschenk : een kaart van de wereld. Ik denk dat jij het meer zult gebruiken dan ik.
+nl.mapVillageTheShopComment
+De winkel
+nl.mapBridgeComment
+De brug
+nl.mapFarmComment
+De lollieboerderij
+nl.mapCaveEntranceComment
+De ingang van de grot
+nl.mapLighthouseComment
+De vuurtoren
+nl.mapPierComment
+De pier
+nl.mapTheHoleComment
+Het gat
+nl.candyBoxRequestStatusBarUnlocked
+Vraag een nieuwe functie aan bij de ontwikkelaar (30 snoepjes)
+nl.candyBoxRequestStatusBarUnlockedCfg
+Vraag nog eens (5 snoepjes)
+nl.candyBoxRequestStatusBarUnlockedSave
+Vraag nog een keer aan (5 snoepjes)
+nl.candyBoxRequestStatusBarUnlockedHealthBar
+Vraag iets spannends aan (5 snoepjes)
+nl.candyBoxRequestStatusBarUnlockedMap
+Laatste aanvraag! Deze zal de snoepjes wel waard zijn. (10 snoepjes)
+nl.candyBoxRequestStatusBarUnlockedComment
+Je hebt een statusbalk ontgrendeld! (boven)
+nl.candyBoxRequestStatusBarUnlockedCfgComment1
+Je hebt nu toegang tot een configuratietabblad.
+nl.candyBoxRequestStatusBarUnlockedCfgComment2
+Je kan de taal veranderen als je wilt.
+nl.candyBoxRequestStatusBarUnlockedSaveComment
+Een wilde opslaan-tab verschijnt!
+nl.candyBoxRequestStatusBarUnlockedHealthBarComment
+Hier zijn 100 levenspunten voor je. Ze zullen goed van pas komen.
+nl.cfgChooseLanguage
+Kies je taal:
+nl.cfgInvertColors
+Kleuren omkeren?
+nl.gridItemMainMapName
+De kaart
+nl.gridItemMainMapDescription
+Kaart van de wereld
+nl.gridItemPogoStickName
+Pogostick
+nl.gridItemPogoStickDescription
+Hiermee kun je springen in zoektochten!
+nl.gridItemTimeRingName
+Een tijdring
+nl.gridItemTimeRingDescription
+Dit zal je een nieuwe vaardigheid geven in zoektochten: Je kunt de tijd vertragen. Als iets te snel voor je gaat, gebruik je de tijdring!
+nl.gridItemThirdHouseKeyName
+De derde huissleutel 
+nl.gridItemThirdHouseKeyDescription
+Met deze sleutel kun je naar het derde huis van het dorp.
+nl.gridItemFeatherName
+Een veer van een woestijnvogel
+nl.gridItemFeatherDescription
+Door deze magische veer kun je hoger springen met je pogostick!
+nl.gridItemFeatherDescriptionNoPogoStick
+Om een of andere reden heb je het gevoel dat deze veer nuttig zou zijn als je een pogostick had...
+nl.gridItemSpongeName
+Een magische spons
+nl.gridItemSpongeDescription
+Door deze magische spons kun je jezelf fijnknijpen als een spons en daardoor dus kleiner worden.
+nl.gridItemFortressKeyName
+De sleutel van de woestijnvesting 
+nl.gridItemFortressKeyDescription
+Door deze sleutel kun je naar het eeuwenoude kasteel boven de woestijn. Wie weet wat je daar kunt vinden?
+nl.gridItemHeartPendantName
+Een harten hangertje
+nl.gridItemHeartPendantDescription
+Dit hangertje zal je levenspunten verhogen zolang je het om je nek draagt.
+nl.gridItemHeartPlugName
+Een hartplug
+nl.gridItemHeartPlugDescription
+Deze hartplug, gemaakt met staal, spinnenpoten en een speciaal "hartdrankje" opgesloten in het midden, zal je levenspunten verhogen met 20 procent!
+nl.gridItemBeginnersGrimoireName
+De beginnersgrimoire
+nl.gridItemBeginnersGrimoireDescription
+Deze grimoire geeft je drie gemakkelijke spreuken. Het is echt gemaakt voor beginners. Je zult in staat zijn een zure regen-spreuk te gebruiken (Een groote hoeveelheid zuur zal op je vijanden vallen), een vuurbalspreuk (een gigantische bal van vuur zal naar je vijanden vliegen) en een teleporteerspreuk (Die zal je teleporterenn naar een onvoorspelbare locatie).
+nl.gridItemAdvancedGrimoireName
+De geavanceerde grimoire
+nl.gridItemAdvancedGrimoireDescription
+Deze geavanceerde grimoire geeft je twee spreuken: de magie verwijder-spreuk en een stekelschildspreuk. De eerste zal alle eerder uitgevoerde magie van een zoektocht verwijderen, inclusief de magie van jezelf en van je vijanden. De tweede roept een zwevend schild van stekels op rondom je, dat schade zal aanrichten wanneer het in contact met vijanden.
+nl.gridItemBlackMagicGrimoireName
+De zwarte magie grimoire
+nl.gridItemBlackMagicGrimoireDescription
+Je vond deze grimoire in een grot. Het was heel moeilijk te bereiken, en dat was met een reden. Het geeft je twee gevaarlijke zwarte magie spreuken. De eerste zal een gigantische muur van obsidiaan creëren, dat handig kan zijn om je vijanden tegen te houden. De tweede zal een zwerm van demonen oproepen die alles aanvallen in de zoektocht, inclusief jou. Wees voorzichtig met deze spreuk.
+nl.gridItemUnicornHornName
+Een eenhoornhoorn
+nl.gridItemUnicornHornDescription
+Deze magische hoorn behoorde eerst tot een eenhoorn. Zijn sterke helende krachten kunnen je goed helpen. Je hoorde dat deze eenhoorn Charlie heette.
+nl.gridItemXinopherydonClawName
+Een xinopherydonklauw.
+nl.gridItemXinopherydonClawDescription
+Deze klauw behoorde eerst tot een xinopherydon, een tweehoofdig eeuwenoud beest waarvan men dacht dat zij uitgestorven waren. Het zal de kracht van het wapen dat je gebruikt verdubbelen.
+nl.gridItemPitchforkName
+Een hooivork
+nl.gridItemPitchforkDescription
+Met deze speciale hooivork kun je de grond losser maken zonder het om te keren, waardoor je het ondergrondse eco-systeem niet stoort. Het zal de productie van je lollieboerderij verdriedubbelen.
+nl.gridItemShellPowderName
+Schelppoeder
+nl.gridItemShellPowderDescription
+Schelppoeder wordt vaak gebruikt door boeren om de groei van hun lollies te versnellen. Dit poeder zal je productie verdriedubbelen!
+nl.gridItemPName
+De P steen
+nl.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "DÂ° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PSÂ°-J (`  /R`yM}  T$`` Â°+-|U(\OL&Y_)T|
+nl.gridItemLName
+De L steen
+nl.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $OÂ°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    Â°M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#Â° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+nl.gridItemAName
+De A steen
+nl.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ ITÂ°#{  Oa$ GM T{Q "S A-\ F KmÂ°& C #Â° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+nl.gridItemYName
+De Y steen
+nl.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  Â°-  AX Y ` Â° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_Â°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`EÂ° I &L- /    K
+nl.gridItemRedSharkFinName
+Een magische rode haaienvin
+nl.gridItemRedSharkFinDescription
+Deze magische vin zal de schade van de vuurbalspreuk versterken. Eindelijk wordt deze vuurbal nuttig.
+nl.gridItemGreenSharkFinName
+Een magische groene haaienvin
+nl.gridItemGreenSharkFinDescription
+Deze magische vin zal de kracht van de natuur aan je lollieboerderij geven! Je productie zal zich vervijfvoudigen.
+nl.gridItemPurpleSharkFinName
+Een magische paarse haaienvin
+nl.gridItemPurpleSharkFinDescription
+Deze magische vin zal je een nieuwe zwarte magie spreuk geven. Je kunt het maar een keer per zoektocht gebruiken. Wees erg voorzichtig met deze!
+nl.gridItemTalkingCandyName
+Een pratend snoepje
+nl.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Dit pratende snoepje verscheen nadat je de vier stenen in de top van de kasteeltoren had gezet. Hij kan je misschien helpen met het openen van de candy box...
+nl.inventorySpecialNothingEqItem
+Niks
+nl.eqItemWeaponWoodenSwordName
+Houten Zwaard	
+nl.eqItemWeaponWoodenSwordDescription
+Een simpel zwaard, gemaakt van hout
+nl.eqItemWeaponIronAxeName
+Ijzeren bijl
+nl.eqItemWeaponIronAxeDescription
+Een simpele ijzeren bijl. Goed geslepen. Sterker dan het houten zwaard.
+nl.eqItemWeaponPolishedSilverSwordName
+Gepolijst zilveren zwaard
+nl.eqItemWeaponPolishedSilverSwordDescription
+Een sterk zwaard bedekt met stekels.
+nl.eqItemWeaponTrollBludgeonName
+De trollenknuppel.
+nl.eqItemWeaponTrollBludgeonDescription
+Je nam deze knuppel van de trol die de brug verdedigde. Het is sloom, maar slaat je vijanden behoorlijk efficient.
+nl.eqItemWeaponTribalSpearName
+Een stamspeer
+nl.eqItemWeaponTribalSpearDescription
+Je vond deze stamspeer op het karkas van een stamkrijger, verdwaald in een groot gat in de grond. Het is best lastig om te gebruiken in het begin, maar als je er aan gewend bent is het een goed wapen.
+nl.eqItemWeaponSummoningTribalSpearName
+Een oproepende stamspeer
+nl.eqItemWeaponSummoningTribalSpearDescription
+Deze magische stamspeer, naast het feit dat het sterker is dan de normale stamspeer, zal vaak stamkrijgers oproepen tijdens je zoektochten.
+nl.eqItemWeaponMonkeyWizardStaffName
+De apentovenaar zijn staf
+nl.eqItemWeaponMonkeyWizardStaffDescription
+Deze staf behoorde toe aan de naakte apentovenaar die je vond in de grot. Het zal vaak spreuken vanzelf gebruiken, gericht op je vijand. 
+nl.eqItemWeaponEnchantedMonkeyWizardStaffName
+De apentovenaar zijn staf (betoverd)
+nl.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Deze staf is sneller dan de niet-betoverde versie en zal ook veel meer spreuken gebruiken.
+nl.eqItemWeaponGiantSpoonName
+Een gigantische lepel
+nl.eqItemWeaponGiantSpoonDescription
+Deze gigantische lepel vond je in een gigantische theepot in de woestijnvesting. Je weet niet of iemand het ooit heeft gebruikt als een lepel, maar als dat wel zo is dan moet het iemand zijn geweest die heel erg groot was.
+nl.eqItemWeaponGiantSpoonOfDoomName
+De gigantische lepel der verdoeming
+nl.eqItemWeaponGiantSpoonOfDoomDescription
+Deze gigantische lepel is nog sterker dan de normale gigantische lepel die je bijvoorbeeld kon vinden in een theepot, maar hij is best sloom.
+nl.eqItemWeaponScytheName
+Een zeis
+nl.eqItemWeaponScytheDescription
+Er word gezegd dat deze zeis toebehoorde aan de dood zelf. Het is extreem snel.
+nl.eqItemHatMerchantHatName
+De handelaarshoed
+nl.eqItemHatMerchantHatDescription
+Deze hoed was verkocht door de snoepjeshandelaar. De snoepjeshandelaar houdt van snoepjes. Deze hoed zal de snoepjes die je vindt in zoektochten vermenigvuldigen met 7.
+nl.eqItemHatSorceressHatName
+De tovenaarshoed
+nl.eqItemHatSorceressHatDescription
+Deze hoed was verkocht door de tovenaar. Het zal het effect van je spreuken en drankjes versterken.
+nl.eqItemHatOctopusKingCrownName
+De kroon van de octopuskoning
+nl.eqItemHatOctopusKingCrownDescription
+Wanneer je deze kroon draagt, voel je veel zelfverzekerder. Het geeft geen voordelen in zoektochten, maar zelfverzekerheid is belangrijk. 
+nl.eqItemHatOctopusKingCrownWithJaspersName
+De kroon van de octopuskoning met jaspis
+nl.eqItemHatOctopusKingCrownWithJaspersDescription
+Deze betoverde kroon is belegd met goud en rode jaspis. In zoektochten schiet het vaak machtige vuurballen om je heen. En het schijnt ook!
+nl.eqItemHatOctopusKingCrownWithObsidianName
+De octopus koning kroon met obsidiaan.
+nl.eqItemHatOctopusKingCrownWithObsidianDescription
+Deze betoverde kroon is gemaakt met goud en obsidiaan. Het is schitterend. In zoektochten zal het af en toe een Octopus Koning oproepen die vecht aan jouw zijde. Wat een vasthoudend hulpje!
+nl.eqItemGlovesLeatherGlovesName
+Leren handschoenen
+nl.eqItemGlovesLeatherGlovesDescription
+Deze handschoenen doen in principe niks. Maar ze zijn tenminste zacht en comfortabel!
+nl.eqItemGlovesRedEnchantedGlovesName
+Rode betoverde handschoenen
+nl.eqItemGlovesRedEnchantedGlovesDescription
+Deze betoverde handschoenen schijnen een zacht rood licht als het donker is. In zoektochten zullen ze willekeurig een kleine vuurbal naar je vijanden schieten, wat behoorlijk nuttig kan zijn.
+nl.eqItemGlovesPinkEnchantedGlovesName
+Roze betoverde handschoenen
+nl.eqItemGlovesPinkEnchantedGlovesDescription
+Deze betoverde handschoenen laten een roze vlek achter op alles wat het aanraakt. In zoektochten zullen ze je de hele tijd genezen. 
+nl.eqItemBootsRocketBootsName
+Raketschoenen
+nl.eqItemBootsRocketBootsDescription
+Door deze geweldige raketschoenen kun je springen in het midden van de lucht en dus in principe vliegen! 
+nl.eqItemBootsLeatherBootsName
+Leren schoenen
+nl.eqItemBootsLeatherBootsDescription
+Simpele leren schoenen. Er is niets bijzonders aan.
+nl.eqItemBootsBootsOfIntrospectionName
+Schoenen der introspectie
+nl.eqItemBootsBootsOfIntrospectionDescription
+Neem de tijd om te ademen en rustig te worden. Als je deze schoenen draagt, zul je niet bewegen zolang je op de grond staat.
+nl.eqItemBodyArmoursLightweightBodyArmourName
+Een lichtgewicht torsopantser
+nl.eqItemBodyArmoursLightweightBodyArmourDescription
+Dit pantser zal je zwakke beveiliging geven. Je zult iets meer bestand zijn tegen de aanvallen van je vijand. 
+nl.eqItemBodyArmoursKnightBodyArmourName
+Het pantser van een krijger.
+nl.eqItemBodyArmoursKnightBodyArmourDescription
+Dit sterke pantser zal je beschermen. Je zult meer bestand zijn tegen de aanvallen van je vijand.
+nl.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Het betoverde pantser van een krijger
+nl.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Dit pantser is erg speciaal. Je zult VEEL meer bestand zijn tegen de aanvallen van je vijand, maar de kracht van het wapen dat je gebruikt zal door tweeën gedeeld zijn.
+nl.mapVillageForgeBuyWoodenSwordButton
+Koop een houten zwaard (150 snoepjes)
+nl.mapVillageForgeBuyWoodenSwordSpeech
+Dankje voor het kopen! Dit houten zwaard is best zwak, maar een goed begin.
+nl.mapVillageForgeBuyIronAxeButton
+Koop een ijzeren bijl (400 snoepjes)
+nl.mapVillageForgeBuyIronAxeSpeech
+Ik hoop dat je blij bent met deze ijzeren bijl. Ik heb het net geslepen voor jou!
+nl.mapVillageForgeBuyPolishedSilverSwordButton
+Een opgepoetst zilveren zwaard (2 snoepjes)
+nl.mapVillageForgeBuyPolishedSilverSwordSpeech
+Het kostte me veel tijd om dit zwaard te maken. Ik kan je garanderen dat het de prijs waard is.
+nl.mapVillageForgeBuyLightweightBodyArmourButton
+Koop een lichtgewicht pantser (15 000 snoepjes)
+nl.mapVillageForgeBuyLightweightBodyArmourSpeech
+Dit pantser zal je bescherming bieden tegen je vijanden. 
+nl.mapVillageForgeBuyScytheButton
+Koop een zeis(5 000 000 snoepjes)
+nl.mapVillageForgeBuyScytheSpeech
+Het kostte me een paar maanden om deze zeis te maken. Het is een echt kunststuk. Het is waarschijnlijk het snelste wapen dat je ooit kunt gebruiken. Veel succes!
+nl.wishingWellThrowFirstCandyButton
+Gooi een snoepje in de put
+nl.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Hallo, dwaler! Ik ben de wensput. Ik zal je wens uit laten komen in ruil voor snoep! Wanneer je snoepjes in mij gooit, zal ik je wonden genezen.
+nl.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Je wonden zijn nu genezen!
+nl.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Je hebt geen wonden om te genezen!
+nl.wishingWellThrowFirstLollipopButton
+Gooi een lollie in de put
+nl.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Hallo, dwaler! Ik ben de wensput. Ik zal je wens uit laten komen in ruil voor snoep! Wanneer je lollies in mij gooit, zal ik ze veranderen in snoepjes.
+nl.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Je lollies zijn nu veranderd in in snoepjes! Twee lollies voor een snoepje. 
+nl.wishingWellThrowChocolateBarButton
+Gooi een chocoladereep in de put
+nl.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Hallo, dwaler! Ik ben de wensput. Ik zal je wens uit laten komen in ruil voor snoep! Ik ben gek op chocoladerepen. Ik ben er echt gek op. Voor elke chocoladereep die je in mij gooit, inclusief deze, krijg je een magische betovering.
+nl.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Welk object wil je betoveren?
+nl.wishingWellThrowPainAuChocolatButton
+Gooi een pain au chocolat in de put
+nl.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Hallo, dwaler! Ik ben de wensput. Ik zal je wens uit laten komen in ruil voor snoep! Wanneer je een pain au chocolat in mij gooit krijg je een heel speciaal geschenk. Kies verstandig. 
+nl.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Bedankt voor de pain au chocolat! Je kunt nu je geschenk kiezen. 
+nl.wishingWellChooseGift # INFORMAL PRONOUN
+Kies je geschenk!
+nl.wishingWellChooseGiftButton
+Kies
+nl.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Klaar! Je hebt nu een nieuw geschenk. Het zal verschijnen in je inventaris statuspaneel.
+nl.wishingWellNoPossibleEnchantment
+Geen mogelijke betoveringen
+nl.wishingWellChooseEnchantment
+Kies de betovering
+nl.wishingWellEnchantButton
+Betover
+nl.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Daar is het! Je object is betoverd
+nl.pierLighthouseButton
+Ga naar de vuurtoren met de boot
+nl.pierTheSeaButton
+Spring in de zee
+nl.lonelyHouseOpenBox
+Open de doos
+nl.lonelyHouseShakeBox
+Schud de doos
+nl.lonelyHouseBreakLock
+Breek het slot
+nl.lonelyHouseKickBox
+Schop de doos
+nl.lonelyHouseAskTheBoxToOpenItself
+Vraag de doos om zichzelf te openen
+nl.lonelyHouseLureTheBoxWithACandy
+Lok de doos met snoep
+nl.lonelyHouseTakeTheBox
+Neem de doos mee, Je hebt waarschijnlijk toch een sleutel nodig om hem te openen
+nl.lonelyHouseOpenBoxResult
+De doos is op slot
+nl.lonelyHouseShakeBoxResult
+Er gebeurt niks
+nl.lonelyHouseBreakLockResult
+Het slot weigert
+nl.lonelyHouseKickBoxResult
+Je voet doet een beetje zeer, maar er gebeurt niks
+nl.lonelyHouseAskTheBoxToOpenItselfResult
+...je praat tegen een doos, weet je dat?
+nl.lonelyHouseLureTheBoxWithACandyResult
+Het lijkt alsof het de doos niks uitmaakt
+nl.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Er zit waarschijnlijk iets interessants in deze candy box
+nl.lollipopFarmConstructMill
+Bouw een molen(10 000 lollies)
+nl.lollipopFarmFeedMill
+Voed de molen
+nl.lollipopFarmCurrentCandiesProduction
+Huidige snoepjesproductie
+nl.lollipopFarmDigPond
+Graaf een vijver (100 000 lollies)
+nl.lollipopFarmBuyLolligator
+Koop een lolliegator (1200 snoepjes)
+nl.lollipopFarmLolligatorsConversionText
+Snoepjes omkeer -> lollies geactiveerd
+nl.lighthouseAskButton
+Vraag
+nl.lighthouseQuestionWho
+Wie ben jij?
+nl.lighthouseQuestionWhoSpeech
+Ik ben een hele oude cycloop.
+nl.lighthouseQuestionWhat
+Wat doe je hier?
+nl.lighthouseQuestionWhatSpeech
+Ik woon hier de hele dag door, wachtend op een boot. Het is heel lang geleden sinds ik een boot heb gezien, maar ik moet hier blijven, starend naar de zee, omdat er mischien een boot komt.
+nl.lighthouseQuestionWhyEatCandies
+Waarom zou ik snoepjes eten?
+nl.lighthouseQuestionWhyEatCandiesSpeech
+Omdat ze goed voor je gezondheid zijn!
+nl.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Wat is candy box?
+nl.lighthouseQuestionCandyBoxSpeech
+Het is een hele oude doos waarover word gezegd dat het alle snoepjes in de wereld bevat. De legende zegt dat wie het voor elkaar krijgt om het open te maken zoveel snoepjes zou hebben dat alles mogelijk is.
+nl.lighthouseQuestionDragon
+De draak zei dat ik hier moest komen omdat ik snoepjes wil.
+nl.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Oh, Op die manier... Nou, ik kan je niet direct snoepjes geven, maar ik kan je iets essensieels geven om in het eind HEEL veel snoepjes  te kunnen krijgen. Maar eerst moet ik je testen, want wat ik heb kan niet gegeven worden aan iedereen. Los deze puzzel op en het zal van jou zijn.
+nl.lighthouseFoundStone # INFORMAL PRONOUN
+Gefeliciteerd! Je hebt de test gehaald en vond de steen. Het is heel erg zeldzaam, maar alleen nuttig als je nog drie stenen zoals deze bezit. Veel succes!
+nl.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Goed gedaan, je hebt de puzzel weer opgelost. Je lijkt het leuk te vinden.
+nl.saveLocalSaveTitle
+Browser opslaan
+nl.saveLocalSaveWhy
+Kies lokaal opslaan als je wilt blijven spelen op je huidige toestel en browser.
+nl.saveLocalSaveWarning0
+Je browser blijkt geen HTML5 te steunen.
+nl.saveLocalSaveWarning1
+Je moet je browser updaten om lokale opslag te kunnen gebruiken.
+nl.saveLocalSaveChooseSlot
+Kies een opslag slot :
+nl.saveLocalSaveAutosaveEnabled
+Automatisch opslaan geactiveerd
+nl.saveLocalSaveChooseWhatToDo
+Kies wat te doen:
+nl.saveLocalSaveSaveButton
+Opslaan
+nl.saveLocalSaveAutosaveButton
+Sla elke 10 minuten op
+nl.saveLocalSaveDisableAutosaveButton
+Deactiveer automatisch opslaan
+nl.saveFileSaveTitle
+Tekst opslaan
+nl.saveFileSaveWhy0
+Kies tekst opslaan als :
+nl.saveFileSaveWhy1
+Je wilt blijven spelen op een ander apparaat of browser
+nl.saveFileSaveWhy2
+Je je progressie wilt delen met iemand anders
+nl.saveFileSaveWhy3
+Voor een of andere reden je je browser cache wilt legen
+nl.saveFileSaveWhy4
+(dit zal je lokale opslag verwijderen)
+nl.saveFileSaveButton
+Krijg het huidige spel als tekst
+nl.saveFileSaveWarning
+Plak de tekst nu ergens!(in een bestand, bijvoorbeeld)
+nl.saveLocalLoadTitle
+Browser laden
+nl.saveLocalLoadYouCan
+Je kunt een lokale opslag laden met de volgende links:
+nl.saveLocalLoadThanksTo
+Dankzij HTML5 magie, kun je deze link zelfs gebruiken als je offline bent
+nl.saveFileLoadTitle
+Tekst laden
+nl.saveFileLoadPaste
+Plak je opslagtekst hier onder en klik dan op het "Laad" knopje
+nl.saveFileLoadButton
+Laad
+nl.mountainsText0
+Je zag iets in de bergen!
+nl.mountainsText1
+He ziet er interessant uit. Misschien is het nuttig.
+nl.mountainsTextButton
+Beklim de bergen om het ding te krijgen
+nl.mountainsTextAfter
+Je vond een pogostick! Het is toegevoegd aan je inventaris.
+nl.secondHouseIntroSpeech
+Hallo, ik ben de snoepjes handelaar. Ik doe alles voor snoepjes. Wat heb je nodig? 
+nl.secondHouseLollipop1Speech
+Dit is een citroenaroma-lollie. Mijn favoriet! Het kost 60 snoepjes, maar het is het waard.
+nl.secondHouseLollipop2Speech
+Dit is een aardbeienaroma-lollie. Het smaakt goed. Ik hou van zijn rode kleur. Maar 60 snoepjes!
+nl.secondHouseLollipop3Speech
+Dit is een pompoenaroma-lollie. Ik wed dat je die nog nooit had geprobeerd! 60 snoepjes en het is van jou.
+nl.secondHouseLollipopButtonText
+Koop deze lollie (60 snoepjes)
+nl.secondHouseMerchantHatSpeech
+Ik kan je mijn hoed verkopen, maar het is heel erg zeldzaam, weet je... Je moet mij er heel veel snoepjes voor in de plaats geven. Laten we zeggen 1 miljoen snoepjes. Lijkt mij eerlijk, toch?
+nl.secondHouseMerchantHatButtonText
+Koop de hoed van de handelaar (1 000 000 snoepjes)
+nl.secondHouseTimeRingSpeech
+Dit is een tijdring. Het is best magisch. Het laat je de tijd vertragen voor wanneer je in de problemen zit.
+nl.secondHouseTimeRingButtonText
+Koop de tijdring (500 snoepjes)
+nl.secondHouseLeatherGlovesSpeech
+Deze leren handschoenen zijn gemaakt met kameelleer van hoge kwaliteit. Ik heb er veel van op voorraad, daarom zijn ze zo goedkoop : maar 300 snoepjes!
+nl.secondHouseLeatherBootsButtonText
+Koop een paar leren laarzen (300 snoepjes)
+nl.secondHouseLeatherBootsSpeech
+Deze hoge kwaliteit leren laarzen, zijn gemaakt met kameel leer, zal je voeten warm houden.
+nl.secondHouseLeatherGlovesButtonText
+Koop een paar handschoenen (300 schoenen)
+nl.secondHouseChocolateBarSpeech
+Dit is een chocladereep. Ik weet niet waar het voor wordt gebruikt, maar het blijkt behoorlijk zeldzaam te zijn, wat de prijs verklaart. 800 snoepjes en het is van jou!
+nl.secondHouseChocolateBarButtonText
+Koop de chocoladereep (800 snoepjes)
+nl.outsideTheHoleButton
+Spring in het grote gat in de grond
+nl.theCaveExitText0
+Je bereikte eindelijk het einde van de grot
+nl.theCaveExitText1
+Je kunt een groot bos zien vanuit hier.
+nl.theCaveExitButtonText
+Ga uit de grot
+nl.theCaveFirstSentenceWentStraight
+Je ging rechtdoor.
+nl.theCaveFirstSentenceWentLeft
+Je nam het pad links van je.
+nl.theCaveFirstSentenceWentRight
+Je nam het pad rechts van je.
+nl.theCaveFirstSentenceYouAre
+Je bent in een grot. Er zijn drie paden voor je.
+nl.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Voor je zie je een vreemd ding op de grond.
+nl.theCavePattern_ChocolateBarNowSeeChocolateBar
+Je ziet een chocoladereep voor je.
+nl.theCavePattern_TreasureMapSentence
+Je ziet kleine stenen in een vreemde manier geordend.
+nl.theCavePattern_MonkeyWizardSentence
+Je stuit op een naakte apentovenaar.
+nl.theCavePattern_MonkeyWizardButton
+Daag het uit
+nl.theCavePattern_OctopusKingSentence
+Je stuit op de octopuskoning. Het ziet er smerig uit.
+nl.theCavePattern_OctopusKingButton
+Daag het uit
+nl.fortressInsideText0
+Je bent in de woestijnvesting.
+nl.fortressInsideText1
+Je kunt kiezen tussen drie deuren.
+nl.fortressInsideText2
+Elk van hun leidt naar een grote kamer met een schat.
+nl.fortressInsideEnterRoom1
+Ga in de eerste kamer
+nl.fortressInsideEnterRoom2
+Ga in de tweede kamer
+nl.fortressInsideEnterRoom3
+Ga in de derde kamer
+nl.treasureButtonDig
+Graaf
+nl.treasureButtonYouFound
+Je vond drie chocolade repen!
+nl.sorceressHutHello
+Hallo, ik ben de tovenaar. Ik kan je het een en ander leren over magie. Ik kan je ook interessante dingen geven, of spreuken gebruiken. Maar alles heeft een prijs! En deze prijs zullen lollies zijn. Heel veel. 
+nl.sorceressHutClickedGrimoire
+Dit is een grimoire voor beginners. Door dit mee te nemen in je zoektochten kun je simpele maar handige spreuken gebruiken. Je hebt dit nodig! Maar 5 000 lollies.
+nl.sorceressHutBuyGrimoireButton
+Koop deze grimoire (5 000 lollies)
+nl.sorceressHutBuyGrimoireSpeech
+Bedankt voor het kopen! Je kunt nu drie spreuken gebruiken met deze grimoire. Veel succes!
+nl.sorceressHutClickedGrimoire2
+Dit is een geavanceerde grimoire. Door dit mee te nemen in je zoektochten, kun je twee geavanceerde spreuken gebruiken. Ik schreef ze zelf, en dat was niet makkelijk. 20 000 lollies is een eerlijke prijs.
+nl.sorceressHutBuyGrimoire2Button
+Koop deze grimoire (20 000 lollies)
+nl.sorceressHutBuyGrimoire2Speech
+Bedankt voor het kopen! Je kunt nu twee spreuken gebruiken met deze grimoire. Gebruik ze verstandig!
+nl.sorceressHutClickedCauldron
+Dit is mijn ketel. Hiermee kan ik magische drankjes brouwen. Ik kan het aan je verkopen, maar het is heel erg kostbaar... het zal je 100 000 lollies kosten.
+nl.sorceressHutBuyCauldronButton
+Koop de ketel (100 000 lollies)
+nl.sorceressHutBuyCauldronSpeech
+Heel erg bedankt! 100 000 lollies voor mij! Ik gaf je ook een brouwhandleiding. Die zal erg handig zijn.
+nl.sorceressHutClickedHat
+Ik heb een mooie hoed, inderdaad! Maar ik kan hem helaas niet aan je verkopen. Het is veeeel te kostbaar. Echt, Ik kan het niet. Niet aandringen. Nee. Nee nee nee ik moet het niet doen. Nou ja, ik verkoop het, maar voor 1 000 000 000 lollies. Je kunt dat waarschijnlijk toch niet betalen.
+nl.sorceressHutBuyHatButton
+Koop de hoed (1 000 000 000 lollies)
+nl.sorceressHutBuyHatSpeech
+Een miljard lollies voor miiiiiiij! Maar ik heb geen hoed meer.. maar een miljard lollies, wow! .. het was het waard.
+nl.cauldronPreviousPageButton
+Vorige pagina
+nl.cauldronNextPageButton
+Volgende pagina
+nl.cauldronWhatYouWantToPut
+Wat je in de ketel wil doen
+nl.cauldronWhatIsIn
+Wat zit er in de ketel
+nl.cauldronWhatYouCanDo
+Wat je er mee kunt doen
+nl.castleBigRoomComment
+Een grote kamer
+nl.castleARoomComment
+Een kamer
+nl.castleADarkRoomComment
+Een donkere kamer
+nl.castleCastleEntranceComment
+De ingang van het kasteel
+nl.castleTowerEntranceComment
+De ingang van de toren
+nl.castleNougatMonsterComment
+Val de gigantische noga aan
+nl.castleGuardsComment
+Val de bewakers aan
+nl.castleStairsComment
+Trap
+nl.buttonBackToTheCastle
+Terug naar het kasteel
+nl.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Hallo, Ik been een hele oude broodoven. Ik bakte vroeger heel veel lekker banket, maar niemand gebruikt mij meer. Misschien... misschien kun jij me helpen? Laat me een paar snoepjes van je gebruiken! Maak je geen zorgen, je zult er geen spijt van krijgen! Je kunt me vertrouwen.
+nl.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... je hebt niet genoeg snoepjes, ik kan niks doen. Ik ben gewoon nutteloos. Ik ben de nuttelozebrood oven, dat is hoe je mij zou moeten noemen.
+nl.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Jeej! Heel erg bedankt! Ik gebruikte 100 snoepjes en een chocoladereep en maakte voor jou... een pain au chocolat! Het is mijn favoriete banket, ik hoop dat jij het ook lekker vind.
+nl.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hey! Als je wil dat ik nog een banket bak, laat het me weten! Ik zou je graag helpen.
+nl.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Oh, je hebt niet genoeg snoepjes, helaas. Ik heb 100 snoepjes en een chocoladereep nodig. Kom terug als je dat hebt!
+nl.castleBigRoomHovenLetHovenTakeButton
+Laat de oven alle snoepjes pakken dat het wil pakken
+nl.castleBigRoomHovenThanks
+Bedankt, oven!
+nl.dragonStopTickling # INFORMAL PRONOUN
+He, jij, stop met kietelen, alsjeblieft
+nl.dragonStopTicklingButton
+Uh, oh, sorry, ik dacht dat ik je moest aanvallen
+nl.dragonTalking # INFORMAL PRONOUN
+Ik ben de draak en dit is mijn kasteel. Ik zie dat het je gelukt is om binnen te komen, je zal vast moedig zijn... Ik zou graag iemand helpen zoals jij. Waar zoek je naar?
+nl.dragonTalkingChallengeButton
+Uitdaging
+nl.dragonTalkingFameButton
+Roem
+nl.dragonTalkingCandiesButton
+Snoepjes
+nl.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Oh, je wilt dus een uitdaging? Ik denk dat je een reis moet maken naar de hel, het is bekend dat de duivel een sterke tegenstander is. Spring op mijn rug en ik breng je er heen!
+nl.dragonTalkingFameSpeech # INFORMAL PRONOUN
+De beste manier om beroemd te worden is door de confrontatie aan te gaan met de ontwikkelaar zelf. Ik weet waar hij woont en ik kan je daar brengen. Maar wees voorbereid, dit zal niet makkelijk zijn. 
+nl.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Hetgene wat wij uiteindelijk allemaal willen zijn snoepjes, of niet? Ik denk dat een vriend van mij je daarmee kan helpen. Je kunt hem makkelijk herkennen, hij heeft maar een oog. Vertel hem maar dat je mij kent.
+nl.dragonTalkingChallengeAnswer
+Laten we gaan!
+nl.dragonTalkingFameAnswer
+Ik ben er klaar voor.
+nl.dragonTalkingCandiesAnswer
+Okay, bedankt!
+nl.buttonBackToCastle
+Terug naar het kasteel
+nl.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hey! Ik ben het pratende snoepje. Je hebt het spel bijna gewonnen. Je moet alleen nog de candy box vinden. Het is in een huis buiten het dorp. Dit is de laatste stap!
+nl.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+He!, Ik ben het pratende snoepje. Je hebt het spel gewonnen! Ik zal je candy box openmaken, dit is je prijs. Zal ik doorgaan?
+nl.talkingCandySpeech2 # INFORMAL PRONOUN
+Klaar! Je kunt er nu in. Ik hoop dat je het spel leuk vond :)
+nl.talkingCandyButton
+Ja!!
+nl.lighthousePuzzleResetButton
+Reset

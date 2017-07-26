@@ -1,0 +1,692 @@
+ru.mapVillageComment
+Деревня
+ru.mapFortressComment
+Пустынная крепость
+ru.mapATreeComment
+Дерево
+ru.mapTheDesertComment
+Пустыня
+ru.mapWishingWellComment
+Колодец желаний
+ru.mapLonelyHouseComment
+Одинокий домик
+ru.mapForestComment
+Лес
+ru.mapCastleEntranceComment
+Вход в замок
+ru.mapCastleComment
+Замок
+ru.mapDragonComment
+Дракон
+ru.candyBoxEatCandiesButton
+Съесть все конфеты
+ru.candyBoxThrowCandiesButton
+Бросить 10 конфет на землю
+ru.mapVillageAHouseComment
+Дом
+ru.mapVillageForgeComment
+Кузница
+ru.buttonBackToTheMap
+Назад к карте
+ru.mapSorceressHutComment
+Хижина колдуньи
+ru.buttonBackToTheVillage
+Назад в деревню
+ru.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Привет, я - белочка. Я могу дать тебе конфет и других вещей. Я знаю, как сильно ты любишь конфеты. Но мне так одиноко в лесу.
+ru.mapATreeIntroductionButton
+Чем я могу тебе помочь?
+ru.mapATreeFirstQuestion # INFORMAL PRONOUN
+Я задам тебе несколько вопросов. Если ответишь верно, самые сладкие сладости станут твоими! Первый вопрос: ты на самом деле любишь конфеты? (отвечай на английском)
+ru.mapATreeSecondQuestion # INFORMAL PRONOUN
+Правильно! Вот 20 конфет. А теперь продолжи этот буквенный ряд, и получишь новую награду: S, E, I, D, N, A, ?
+ru.mapATreeThirdQuestion # INFORMAL PRONOUN
+Конфеты! Держи ещё 100 конфет. Следующий вопрос: сколько конфет у самого конфетного человека в мире?
+ru.mapATreeFourthQuestion # INFORMAL PRONOUN
+Вот тебе ещё 500 конфет! Следующая награда должна быть куда более интересной... Вот загадка: В древнем лесу растёт очень старое дерево, в котором живут самые умные животные в этом мире. Говорят, что у этого дерева 60 корней, 360 веток и 2160 листов. Сколько отметин можно найти на стволе этого дерева?
+ru.mapATreeFifthQuestion # INFORMAL PRONOUN
+Поздравляю! Естественно, я говорила о своём дереве. Вот тебе 3 леденца. Используй их мудро! Следующая загадка, слушай внимательней: В полнолуние я брошу жёлтую шляпу в красное море. Какой станет шляпа?
+ru.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Отлично сказано! Это не было так уж сложно. Вот три шоколадных плитки. Чтобы получить следующую награду, мы слегка поменяем правила игры. Тебе нужно будет сыграть со мною в игру! Ты готов?
+ru.mapATreeTicTacToeIntroButton
+Естественно, готов!
+ru.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Игра называется "крестики-нолики". Мы играем на игровом поле размером 3 на 3. Ты будешь играть крестиками, а я - ноликами. Будем ставить знаки по очереди, и цель - получить три знака в ряд. Ходи первым!
+ru.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Игровое поле заполнено, но у нас обоих не получилось разместить три знака в ряд: никто не победил! Хочешь попробовать снова?
+ru.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Я поставила три знака в ряд! Я выиграла. Хочешь попробовать снова?
+ru.mapATreeTicTacToeTryAgainButton
+Да, хочу
+ru.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Ух, неожиданный ход. Но у тебя три в ряд, я не могу это оспорить. Ты выиграл! Держи ключ, он открывает один из закрытых домов в деревне возле леса.
+ru.mapATreeTicTacToeAnymoreSweet
+Спасибо, белочка. Ещё игры есть?
+ru.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+К сожалению, больше игр для тебя не осталось. Было очень весело играть с тобой, спасибо!
+ru.buttonExitQuestKeeping
+Покинуть квест (и получить то, что Вы нашли)
+ru.buttonExitQuestNoKeeping
+Покинуть квест (Вы не получите то, что нашли)
+ru.buttonExitQuestNoKeepingBecauseLose
+Покинуть квест (Вы не получите то, что нашли, потому что вы проиграли)
+ru.mapVillageLockedHouseComment
+Закрытый дом
+ru.mapVillageForgeIntroductionSpeech
+Привет! Я кузнец. Я могу продать Вам разнообразное оружие и предметы экипировки.
+ru.mapVillageForgeIntroductionSpeechNoMoreToSell
+Привет! Я кузнец. К сожалению, у меня пока нечего Вам продать. Может, вернётесь позже?
+ru.mapVillageFifthHouseNoWeaponSpeech
+Привет. Мой подвал полон крыс, мне нужно от них избавиться... если бы кто-нибудь с оружием мог мне помочь...
+ru.mapVillageFifthHouseWeaponSpeech
+Эй, Вы! Я вижу, у Вас есть оружие! Если Вы убьёте крыс, наводняющих мой подвал, я Вас награжу!
+ru.mapVillageFifthHouseAgree
+Поехали!
+ru.mapVillageFifthHouseCellarDone
+Спасибо за то, что избавили меня от них! Вот что-то очень ценное Вам в награду: карта мира. Я думаю, Вы будете ей пользоваться чаще, чем это делал я.
+ru.mapVillageTheShopComment
+Магазин
+ru.mapBridgeComment
+Мост
+ru.mapFarmComment
+Ферма леденцов
+ru.mapCaveEntranceComment
+Вход в пещеру
+ru.mapLighthouseComment
+Маяк
+ru.mapPierComment
+Пирс
+ru.mapTheHoleComment
+Дыра
+ru.candyBoxRequestStatusBarUnlocked
+Попросить деталь интерфейса у разработчика (30 конфет)
+ru.candyBoxRequestStatusBarUnlockedCfg
+Попросить ещё одну (5 конфет)
+ru.candyBoxRequestStatusBarUnlockedSave
+И попросить ещё раз (5 конфет)
+ru.candyBoxRequestStatusBarUnlockedHealthBar
+Попросить что-нибудь более офигенное (5 конфет)
+ru.candyBoxRequestStatusBarUnlockedMap
+Последняя просьба! Она будет стоить всех потраченных конфет. (10 конфет)
+ru.candyBoxRequestStatusBarUnlockedComment
+Вы разброкировали статус-панель (вверху)
+ru.candyBoxRequestStatusBarUnlockedCfgComment1
+Сейчас у вас есть доступ к панели настроек.
+ru.candyBoxRequestStatusBarUnlockedCfgComment2
+Вы можете сменить язык игры, если хотите.
+ru.candyBoxRequestStatusBarUnlockedSaveComment
+Появилась дикая панель сохранения!
+ru.candyBoxRequestStatusBarUnlockedHealthBarComment
+Вот 100 очков здоровья. Они будут вам полезны.
+ru.cfgChooseLanguage
+Выберите язык:
+ru.cfgInvertColors
+Инвертировать цвета?
+ru.gridItemMainMapName
+Карта
+ru.gridItemMainMapDescription
+Карта мира
+ru.gridItemPogoStickName
+Пого-стик
+ru.gridItemPogoStickDescription
+Этот предмет позволяет Вам прыгать во время квестов!
+ru.gridItemTimeRingName
+Кольцо времени
+ru.gridItemTimeRingDescription
+Этот предмет дарит вам новую возможность во время квестов: вы можете замедлять время. Если всё происходит для вас слишком быстро, используйте кольцо времени!
+ru.gridItemThirdHouseKeyName
+Ключ от третьего дома 
+ru.gridItemThirdHouseKeyDescription
+Этот ключ позволит вам войти в третий дом в деревне.
+ru.gridItemFeatherName
+Перо пустынной птицы
+ru.gridItemFeatherDescription
+Магическое перо позволяет вам прыгать выше, когда вы используете пого-стик!
+ru.gridItemFeatherDescriptionNoPogoStick
+По какой-то неизвестной причине вы чувствуете, что это перо могло бы быть вам полезно, если бы у вас был пого-стик...
+ru.gridItemSpongeName
+Волшебная губка
+ru.gridItemSpongeDescription
+Магическая губка позволяет вам сжиматься, словно губка, что делает возможным изменять ваш собственный рост.
+ru.gridItemFortressKeyName
+Ключ от пустынной крепости
+ru.gridItemFortressKeyDescription
+Этот ключ позволяет вам войти в очень древнюю крепость, расположенную над пустыней. Кто знает, что вы можете там найти?
+ru.gridItemHeartPendantName
+Кулон в виде сердца
+ru.gridItemHeartPendantDescription
+Этот кулон в виде сердца увеличит ваше здоровье, пока вы носите его на шее.
+ru.gridItemHeartPlugName
+Сердечный затвор
+ru.gridItemHeartPlugDescription
+Этот сердечный затвор, сделанный из железа, паучьих ножек и специального "сердечного ликёра" запечатанного в середине, увеличит ваше здоровье на 20 процентов.
+ru.gridItemBeginnersGrimoireName
+Гримуар новичка
+ru.gridItemBeginnersGrimoireDescription
+Гримуар предоставляет вам три заклинания, довольно лёгких для выполнения. Он на самом деле сделан для новичков. Вы сможете использовать кислотный дождь (большое количество капель кислоты обрушится на ваших врагов), заклинание огненных шаров (гигантский волшебный шар из огня полетит в ваших врагов), и заклинание телепорта (которое перенесёт вас в случайное место).
+ru.gridItemAdvancedGrimoireName
+Продвинутый гримуар
+ru.gridItemAdvancedGrimoireDescription
+Этот продвинутый гримуар предоставляет вам два заклинания: магическое заклинания удаления и заклинание шипастого щита. Первое заклинание удалит всю магию в процессе прохождения квеста, т.е. заклинания, сказанные вами и вашим врагом. Второе заклинание создаст вокруг вас щит из летающих шипов, который будет наносить врон вашим врагам во время контакта.
+ru.gridItemBlackMagicGrimoireName
+Черномагический гримуар
+ru.gridItemBlackMagicGrimoireDescription
+Вы нашли этот гримуар в пещере, до него было очень сложно добраться, и на это есть причины. Он предоставляет вам два могущественных черномагических заклинания. Первое создаст перед вами гигантскую обсидиановую стену, которая может быть полезна для замедления ваших врагов. Второе призовёт рой демонов, которые будут атаковать всё вокруг, даже вас. Осторожней с этим заклинанием.
+ru.gridItemUnicornHornName
+Рог единорога
+ru.gridItemUnicornHornDescription
+Этот волшебный рог принадлежал единорогу. Его могущество в исцелении очень вам поможет. Вы слышали, что этого единорога звали Чарли.
+ru.gridItemXinopherydonClawName
+Коготь ксиноферидона
+ru.gridItemXinopherydonClawDescription
+Этот коготь принадлежал ксиноферидону, двуглавому древнему животному, которое, как все полагали, вымерло. Он удвоит урон от оружия, которое вы используете.
+ru.gridItemPitchforkName
+Вилы
+ru.gridItemPitchforkDescription
+Эти особенные вилы позволят вам разрыхлять землю без вспахивания, тем самым сохраняя подземную экосистему. Они утроят производство леденцов на вашей ферме.
+ru.gridItemShellPowderName
+Скорлупная пудра
+ru.gridItemShellPowderDescription
+Скорлупная пудра часто используется фермерами, чтобы улучшить скорость роста их леденцов. Эта пудра увеличит производство леденцов втрое!
+ru.gridItemPName
+Камень P
+ru.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+ru.gridItemLName
+Камень L
+ru.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+ru.gridItemAName
+Камень А
+ru.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+ru.gridItemYName
+Камень Y
+ru.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+ru.gridItemRedSharkFinName
+Волшебный плавник красной рыбы
+ru.gridItemRedSharkFinDescription
+Этот волшебный плавник очень сильно увеличит урон, наносимый вашим заклинанием огненных шаров. Наконец-то эти файерболлы станут полезны.
+ru.gridItemGreenSharkFinName
+Волшебный плавник зелёной рыбы
+ru.gridItemGreenSharkFinDescription
+Этот волшебный плавник призовёт силу природы на вашу ферму леденцов! Производство будет увеличено впятеро.
+ru.gridItemPurpleSharkFinName
+A magical purple shark fin
+Волшебный плавник фиолетовой рыбы
+ru.gridItemPurpleSharkFinDescription
+Этот волшебный плавник предоставит вам новое черномагическое заклинание. Вы можете его использовать лишь один раз за квест. Будьте с ним осторожны!
+ru.gridItemTalkingCandyName
+Говорящая конфета
+ru.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Эта говорящая конфета появилась после того, как вы расположили четыре камня на вершине башни замка. Она может помочь вам открыть ящик с конфетами...
+ru.inventorySpecialNothingEqItem
+Ничего
+ru.eqItemWeaponWoodenSwordName
+Деревянный меч
+ru.eqItemWeaponWoodenSwordDescription
+Простой меч, сделанный из дерева
+ru.eqItemWeaponIronAxeName
+Железная топор
+ru.eqItemWeaponIronAxeDescription
+Простой железный топор. Мощнее, чем деревянный меч.
+ru.eqItemWeaponPolishedSilverSwordName
+Отполированный серебряный меч
+ru.eqItemWeaponPolishedSilverSwordDescription
+Могучий меч, покрытый шипами.
+ru.eqItemWeaponTrollBludgeonName
+Дубинка тролля
+ru.eqItemWeaponTrollBludgeonDescription
+Вы отобрали эту дубинку у тролля, охраняющего мост. Она медленная, но довольно эффективно крошит ваших врагов.
+ru.eqItemWeaponTribalSpearName
+Племенное копьё
+ru.eqItemWeaponTribalSpearDescription
+Вы нашли это племенное копьё на теле воина из племени, которое был глубоко в земляном разломе. Сначала его трудно держать, но как только привыкнешь, из него выходит хорошее оружие.
+ru.eqItemWeaponSummoningTribalSpearName
+Призывающее родовое копьё
+ru.eqItemWeaponSummoningTribalSpearDescription
+Это волшебное родовое копьё, вдобавок к тому, что оно немного могущественнее чем обычное копьё, будет частенько призывать воинов племени, которые помогут вам в прохождении квестов.
+ru.eqItemWeaponMonkeyWizardStaffName
+Посох обезьяньего волшебника
+ru.eqItemWeaponMonkeyWizardStaffDescription
+Этот посох принадлежал голому обезьяньему волшебнику, которого вы нашли в пещере. Он будет часто кастовать заклинания сам-по-себе, нацеливаясь на ваших врагов.
+ru.eqItemWeaponEnchantedMonkeyWizardStaffName
+Посох обезьяньего волшебника(зачарованный)
+ru.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Этот посох быстрее незачарованного, плюс будет кастовать ещё больше заклинаний.
+ru.eqItemWeaponGiantSpoonName
+Гигантская ложка
+ru.eqItemWeaponGiantSpoonDescription
+Эта гигантская ложка была в гигантском чайнике, находящемся в пустынной крепости. Вы не знаете, использовали ли её вообще как ложку, но если так, этот "кто-то" должен был быть очень большим. Возможно, вы не хотите встретиться с ним.
+ru.eqItemWeaponGiantSpoonOfDoomName
+The giant Spoon of Doom
+Гигантская Ложка Погибели
+ru.eqItemWeaponGiantSpoonOfDoomDescription
+Эта гигантская ложка куда более могущественна, чем обыкновенная гигантская ложка, которую вы могли найти, например, в гигантском чайнике. Хотя она довольно медленная.
+ru.eqItemWeaponScytheName
+Коса
+ru.eqItemWeaponScytheDescription
+Говорят, что эта коса принадлежала самой Смерти. Она очень быстрая.
+ru.eqItemHatMerchantHatName
+Шляпа купца
+ru.eqItemHatMerchantHatDescription
+Эту шляпу продал вам конфетный купец. Конфетный купец любит конфеты. Эта шляпа увеличит количество найденных вами во время квестов конфет на 7!
+ru.eqItemHatSorceressHatName
+Шляпа волшебницы
+ru.eqItemHatSorceressHatDescription
+Эту шляпу вам продала волшебница. Она повысит эффекты от ваших заклинаний и зелий.
+ru.eqItemHatOctopusKingCrownName
+Корона Короля Осьминогов
+ru.eqItemHatOctopusKingCrownDescription
+Вы чувствуете себя более уверенным, когда носите эту корону. Она не предоставляет никаких бонусов в квестах, но самооценка же важна!
+ru.eqItemHatOctopusKingCrownWithJaspersName
+Корона Короля Осьминогов, покрытая яшмой
+ru.eqItemHatOctopusKingCrownWithJaspersDescription
+Эта зачарованная корона сделана из золота и красной яшмы. Во время квестов она будет часто кастовать огненные шары вокруг вас. А ещё она сияет!
+ru.eqItemHatOctopusKingCrownWithObsidianName
+Корона Короля Осьминогов, покрытая обсидианом
+ru.eqItemHatOctopusKingCrownWithObsidianDescription
+Эта зачарованная корона сделана из золота и обсидиана. Она прекрасна. Во время квестов она призовёт Короля Осьминогов, который будет сражаться на вашей стороне. Тентаклистый союзник!
+ru.eqItemGlovesLeatherGlovesName
+Кожаные перчатки
+ru.eqItemGlovesLeatherGlovesDescription
+Эти перчатки ничего не делают. Но они мягкие и удобные, как минимум!
+ru.eqItemGlovesRedEnchantedGlovesName
+Красные зачарованные перчатки
+ru.eqItemGlovesRedEnchantedGlovesDescription
+Эти зачарованные перчатки испускают мягкий красный свет, когда вокруг вас темно. Во время квестов они будут кастовать маленькие огненные шары в сторону ваших врагов. Шары определённо могут быть полезны.
+ru.eqItemGlovesPinkEnchantedGlovesName
+Розовые зачарованные перчатки
+ru.eqItemGlovesPinkEnchantedGlovesDescription
+Эти зачарованные перчатки оставляют розовый след на всём, чего вы коснётесь. Во время квестов они будут постоянно вас лечить.
+ru.eqItemBootsRocketBootsName
+Ракетные ботинки
+ru.eqItemBootsRocketBootsDescription
+Эти крутые ракетные ботинки позволят вам прыгать в воздухе, так что вы практически будете летать!
+ru.eqItemBootsLeatherBootsName
+Кожаные ботинки
+ru.eqItemBootsLeatherBootsDescription
+Простые кожаные ботинки. Ничего особенного.
+ru.eqItemBootsBootsOfIntrospectionName
+Ботинки самоанализа
+ru.eqItemBootsBootsOfIntrospectionDescription
+Спокойно вдохните и успокойтесь. Если вы наденете эти ботинки, то никогда не тронетесь с места, если касаетесь земли.
+ru.eqItemBodyArmoursLightweightBodyArmourName
+Лёгкая броня
+ru.eqItemBodyArmoursLightweightBodyArmourDescription
+Эта броня увеличит защиту, но несильно. Вы будете немного устойчивее к атакам врага.
+ru.eqItemBodyArmoursKnightBodyArmourName
+Рыцарская броня
+ru.eqItemBodyArmoursKnightBodyArmourDescription
+Сильная броня, которая защитит вас. Вы будете более устойчивыми к атакам врага.
+ru.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Зачарованная рыцарская броня
+ru.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Это очень особенная броня. Вы будете КУДА БОЛЕЕ устойчивыми к атакам врага, но урон, наносимый вашим оружием, уменьшится вдвое.
+ru.mapVillageForgeBuyWoodenSwordButton
+Купить деревянный меч (150 конфет)
+ru.mapVillageForgeBuyWoodenSwordSpeech
+Спасибо за покупку! Этот деревянный меч довольно слаб, но для начала сойдёт.
+ru.mapVillageForgeBuyIronAxeButton
+Купить железный топор (400 конфет)
+ru.mapVillageForgeBuyIronAxeSpeech
+Надеюсь, вам понравится этот железный топор. Я его только что заточил для вас!
+ru.mapVillageForgeBuyPolishedSilverSwordButton
+Купить полированный серебряный меч (2 000 конфет)
+ru.mapVillageForgeBuyPolishedSilverSwordSpeech
+Я потратил много времени, чтобы сделать этот меч. Я уверяю вас, что он стоит своей цены.
+ru.mapVillageForgeBuyLightweightBodyArmourButton
+Купить лёгкую броню (15 000 конфет)
+ru.mapVillageForgeBuyLightweightBodyArmourSpeech
+Эта броня предоставит вам защиту от ваших врагов.
+ru.mapVillageForgeBuyScytheButton
+Купить косу (5 000 000 конфет)
+ru.mapVillageForgeBuyScytheSpeech
+У меня ушло несколько месяцев, чтобы сделать эту косу. Настоящее произведение искусства. Это, возможно, наибыстрейшее оружие, которым вы когда-либо воспользуетесь. Удачи!
+ru.wishingWellThrowFirstCandyButton
+Бросить конфету в колодец
+ru.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Привет, путешественник! Я - колодец желаний. Я исполню твои желания в обмен на сладости! Если ты бросишь в меня конфету, я исцелю твои раны.
+ru.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Твои раны исцелены!
+ru.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+У тебя нет ран, чтобы их излечить!
+ru.wishingWellThrowFirstLollipopButton
+Бросить леденец в колодец
+ru.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Привет, путешественник. Я - колодец желаний. Я исполню твои желания в обмен на сладости! Если ты бросишь в меня леденец, я превращу его в конфеты.
+ru.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Твои леденцы превращены в конфеты! Два леденца - одна конфета.
+ru.wishingWellThrowChocolateBarButton
+Бросить шоколадную плитку в колодец
+ru.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Привет, путешественник. Я - колодец желаний. Я исполню твои желания в обмен на сладости! Я люблю шоколадные плитки. Очень люблю. За каждую шоколадную плитку, которую ты в меня бросишь, включая эту, ты получишь одно зачарование.
+ru.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Какой предмет ты бы хотел зачаровать?
+ru.wishingWellThrowPainAuChocolatButton
+Бросить шоколадный хлеб в колодец
+ru.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Привет, путешественник. Я - колодец желаний. Я исполню твои желания в обмен на сладости! Когда ты бросишь в меня шоколадный хлеб, я дам тебе особенный подарок. Выбирай с умом.
+ru.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Спасибо за шоколадный хлеб! Теперь ты можешь выбрать себе подарок.
+ru.wishingWellChooseGift # INFORMAL PRONOUN
+Выбирай себе подарок!
+ru.wishingWellChooseGiftButton
+Выбрать
+ru.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Готово! Теперь у тебя есть новый подарок. Он появится в твоём инвентаре.
+ru.wishingWellNoPossibleEnchantment
+Нет доступных зачарований
+ru.wishingWellChooseEnchantment
+Выбери зачарование
+ru.wishingWellEnchantButton
+Зачаровать
+ru.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Воооот! Твой предмет зачарован.
+ru.pierLighthouseButton
+Отправиться на лодке на маяк
+ru.pierTheSeaButton
+Прыгнуть в море
+ru.lonelyHouseOpenBox
+Открыть коробку
+ru.lonelyHouseShakeBox
+Потрясти коробку
+ru.lonelyHouseBreakLock
+Сломать коробку
+ru.lonelyHouseKickBox
+Пнуть коробку
+ru.lonelyHouseAskTheBoxToOpenItself
+Попросить коробку открыться
+ru.lonelyHouseLureTheBoxWithACandy
+Приманить коробку конфетой
+ru.lonelyHouseTakeTheBox
+Взять коробку с собой, возможно, вам понадобится ключ чтобы её открыть
+ru.lonelyHouseOpenBoxResult
+Коробка закрыта
+ru.lonelyHouseShakeBoxResult
+Ничего не произошло
+ru.lonelyHouseBreakLockResult
+Замок устоял
+ru.lonelyHouseKickBoxResult
+Ваша нога немного побаливает, но ничего не произошло
+ru.lonelyHouseAskTheBoxToOpenItselfResult
+...вы разговариваете с коробкой, вы в курсе, да?
+ru.lonelyHouseLureTheBoxWithACandyResult
+Коробке, по-видимому, пофиг
+ru.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Возможно, в этом candy box есть что-то интересное.
+ru.lollipopFarmConstructMill
+Построить мельницу (10 000 леденцов)
+ru.lollipopFarmFeedMill
+Накормить мельницу
+ru.lollipopFarmCurrentCandiesProduction
+Текущее производство конфет
+ru.lollipopFarmDigPond
+Выкопать пруд (100 000 леденцов)
+ru.lollipopFarmBuyLolligator
+Купить конфетодила (1200 конфет)
+ru.lollipopFarmLolligatorsConversionText
+Превращение конфеты -> леденцы активировано
+ru.lighthouseAskButton
+Спросить
+ru.lighthouseQuestionWho
+Вы кто?
+ru.lighthouseQuestionWhoSpeech
+Я очень старый циклоп.
+ru.lighthouseQuestionWhat
+Что вы тут делаете?
+ru.lighthouseQuestionWhatSpeech
+Я сижу тут целыми днями, жду, пока приплывёт лодка. Довольно много времени прошло с того момента, когда я видел лодку в последний раз, но я должен оставаться тут, глядя на море, ибо лодка может приплыть.
+ru.lighthouseQuestionWhyEatCandies
+С чего бы я стал есть конфеты?
+ru.lighthouseQuestionWhyEatCandiesSpeech
+Потому что они полезны для здоровья!
+ru.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Что такое candy box?
+ru.lighthouseQuestionCandyBoxSpeech
+Это очень старая коробка, которая, как говорят, содержит все конфеты в мире. Легенды гласят, что тот, кто сумеет открыть коробку, обретёт так много конфет, что всякое может случиться.
+ru.lighthouseQuestionDragon
+Дракон сказал мне прийти сюда, ибо я люблю конфеты.
+ru.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Ага, ясно... Хорошо, я не могу дать тебе конфет прямо так, но я могу дать тебе что-то ценное, оно поможет тебе добыть МНОГО конфет. Но перед этим я должен тебя испытать. Ибо то, чем я обладаю, не может быть отдано кому попало. Реши эту загадку и вещь будет твоя.
+ru.lighthouseFoundStone # INFORMAL PRONOUN
+Поздравляю! Ты прошёл тест и нашёл камень. Он очень ценный, но может быть использован только если у тебя есть остальные три таких же камня. Удачи!
+ru.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Отлично, ты снова решил загадку. Кажется, тебе нравится её решать.
+ru.saveLocalSaveTitle
+Сохранить в браузере
+ru.saveLocalSaveWhy
+Выберите локальное сохранение, если вы будете и дальше играть в текущем браузере.
+ru.saveLocalSaveWarning0
+Кажется, ваш браузер не поддерживает HTML5.
+ru.saveLocalSaveWarning1
+Вам нужно обновить браузер, чтобы использовать локальные сохранения.
+ru.saveLocalSaveChooseSlot
+Выберите слот сохранения :
+ru.saveLocalSaveAutosaveEnabled
+Автосохранение активно
+ru.saveLocalSaveChooseWhatToDo
+Выберите действие :
+ru.saveLocalSaveSaveButton
+Сохранить
+ru.saveLocalSaveAutosaveButton
+Сохранять каждые 10 минут
+ru.saveLocalSaveDisableAutosaveButton
+Выключить автосохранение
+ru.saveFileSaveTitle
+Текстовое сохранение
+ru.saveFileSaveWhy0
+Выбрать текстовое сохранение, если :
+ru.saveFileSaveWhy1
+Вы хотите продолжить играть на другом устройстве или браузере
+ru.saveFileSaveWhy2
+Вы хотите поделиться сохранением с кем-то ещё
+ru.saveFileSaveWhy3
+По каким-то причинам вы хотите очистить кэш браузера
+ru.saveFileSaveWhy4
+(это действие сотрёт ваши локальные сохранения)
+ru.saveFileSaveButton
+Получить текущую игру в виде текста
+ru.saveFileSaveWarning
+А теперь скопируйте этот текст куда-нибудь! (например, в файл)
+ru.saveLocalLoadTitle
+Загрузка из браузера
+ru.saveLocalLoadYouCan
+Вы можете загрузить локальное сохранение, используя следующие ссылки : 
+ru.saveLocalLoadThanksTo
+Благодаря магии HTML5, вы сможете использовать их даже вне сети.
+ru.saveFileLoadTitle
+Текстовая загрузка
+ru.saveFileLoadPaste
+Вставьте ваше сохранение ниже, затем кликните кнопку "Загрузить"
+ru.saveFileLoadButton
+Загрузить
+ru.mountainsText0
+Вы заметили что-то в горах!
+ru.mountainsText1
+Выглядит интересно. Может быть полезным.
+ru.mountainsTextButton
+Взобраться на горы, чтобы достать вещь
+ru.mountainsTextAfter
+Вы нашли пого-стик! Он появился в вашем инвентаре.
+ru.secondHouseIntroSpeech
+Привет, я конфетный купец. Что угодно сделаю за конфеты. Что вам нужно?
+ru.secondHouseLollipop1Speech
+Это лимонный леденец. Мой любимый! Стоит он 60 конфет, но он того стоит.
+ru.secondHouseLollipop2Speech
+Это клубничный леденец. Он вкусный. Мне нравится его красный цвет. Только 60 конфет!
+ru.secondHouseLollipop3Speech
+Это тыквенный леденец. Спорю, что вы такой никогда не пробовали! 60 конфеток и он ваш.
+ru.secondHouseLollipopButtonText
+Купить этот леденец (60 конфет)
+ru.secondHouseMerchantHatSpeech
+Я мог бы продать вам мою шляпу, но она очень ценная, знаете ли... Вы будете мне должны очень много конфет за неё. Скажем, 1 миллион конфет. Выглядит честно, не так ли?
+ru.secondHouseMerchantHatButtonText
+Купить шляпу купца (1 000 000 конфет)
+ru.secondHouseTimeRingSpeech
+Это кольцо времени. Оно слегка волшебное. Оно позволит вам замедлять время, когда вы в беде.
+ru.secondHouseTimeRingButtonText
+Купить кольцо времени (500 конфет)
+ru.secondHouseLeatherGlovesSpeech
+Эти кожаные перчатки сделаны из высококачественной кожи верблюда. У меня их очень много на складе, поэтому они такие дешёвые: 300 конфет!
+ru.secondHouseLeatherBootsButtonText
+Купить пару кожаных ботинок (300 конфет)
+ru.secondHouseLeatherBootsSpeech
+Эти высококачественные кожаные ботинки, сделанные из верблюжьей кожи. Они сохранят ваши ноги в тепле!
+ru.secondHouseLeatherGlovesButtonText
+Купить пару кожаных перчаток (300 конфет)
+ru.secondHouseChocolateBarSpeech
+Это шоколадная плитка. Я не знаю, для чего она нужна, но она довольно таки редкая, что объясняет её цену. 800 конфет, и она ваша!
+ru.secondHouseChocolateBarButtonText
+Купить шоколадную плитку (800 конфет)
+ru.outsideTheHoleButton
+Прыгнуть в большую дыру в земле
+ru.theCaveExitText0
+Вы наконец достигли выхода из пещеры.
+ru.theCaveExitText1
+Снаружи вы видите большой лес. 
+ru.theCaveExitButtonText
+Выйти из пещеры
+ru.theCaveFirstSentenceWentStraight
+Вы пошли прямо.
+ru.theCaveFirstSentenceWentLeft
+Вы выбрали поворот налево.
+ru.theCaveFirstSentenceWentRight
+Вы выбрали поворот направо.
+ru.theCaveFirstSentenceYouAre
+Вы в пещере. Перед вами три пути.
+ru.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Перед вами вы заметили странную вещь на земле.
+ru.theCavePattern_ChocolateBarNowSeeChocolateBar
+Вы заметили шоколадную плитку перед вами.
+ru.theCavePattern_TreasureMapSentence
+Вы видите маленькие камушки, странно разложенные на полу.
+ru.theCavePattern_MonkeyWizardSentence
+Вы наткнулись на голого обезьяннего волшебника.
+ru.theCavePattern_MonkeyWizardButton
+Сразиться с ним
+ru.theCavePattern_OctopusKingSentence
+Вы наткнулись на Короля Осьминога. Он выглядит противно.
+ru.theCavePattern_OctopusKingButton
+Сразиться с ним
+ru.fortressInsideText0
+Вы внутри пустынной крепости.
+ru.fortressInsideText1
+Перед вами стоит выбор из трёх дверей.
+ru.fortressInsideText2
+Каждая из них ведёт в большую комнату с сокровищем в конце..
+ru.fortressInsideEnterRoom1
+Войти в первую комнату
+ru.fortressInsideEnterRoom2
+Войти вторую комнату
+ru.fortressInsideEnterRoom3
+Войти в третью комнату
+ru.treasureButtonDig
+Копать
+ru.treasureButtonYouFound
+Вы нашли три шоколадных плитки!
+ru.sorceressHutHello
+Привет, я волшебница. Я могла бы обучить вас парочке магических вещей. Также я могу дать несколько интересных вещиц, или кастануть для вас заклинания. Но у всего есть цена! И этой ценой будут леденцы. Много леденцов.
+ru.sorceressHutClickedGrimoire
+Этот гримуар сделан для новичков. Нося его с собой на квесты, вы сможете кастовать простые, но полезные заклинения. Он вам нужен! Только лишь 5 000 леденцов.
+ru.sorceressHutBuyGrimoireButton
+Купить этот гримуар (5 000 конфет)
+ru.sorceressHutBuyGrimoireSpeech
+Спасибо за покупку! Используя этот гримуар, вы сможете кастовать три заклинания. Удачи!
+ru.sorceressHutClickedGrimoire2
+Это продвинутый гримуар. Нося его с собой на квесты, вы сможете кастовать два продвинутых заклинания. Я сама его написала, и это было нелегко. 20 000 леденцов будет честной ценой.
+ru.sorceressHutBuyGrimoire2Button
+Купить этот гримуар (20 000 леденцов)
+ru.sorceressHutBuyGrimoire2Speech
+Спасибо за покупку! Используя этот гримуар, вы сможете кастовать два заклинания. Используте их с мудростью!
+ru.sorceressHutClickedCauldron
+Это мой котёл. С его помощью я варю волшебные зелья. Я могла бы продать его вам, но он очень ценный... он будет стоить 100 000 леденцов.
+ru.sorceressHutBuyCauldronButton
+Купить котёл (100 000 леденцов)
+ru.sorceressHutBuyCauldronSpeech
+Спасибо большое! У меня есть 1000 000 леденцов! Также я дала вам мануал по варке зелий. Он будет полезен.
+ru.sorceressHutClickedHat
+Конечно у меня красивая шляпа! Но я правда не могу продать её вам. Она ооооочень ценная. Правда не могу. Не настаивайте. Нет. Не-не-не-не, я не должна этого делать. Ну хорошо, я продам её, но только за 1 000 000 000 леденцов. Возможно, у вас всё равно не хватит леденцов, чтобы купить её.
+ru.sorceressHutBuyHatButton
+Купить шляпу (1 000 000 000 леденцов)
+ru.sorceressHutBuyHatSpeech
+У меня есть один миллиард леденцоооооооов!  Но теперь у меня больше нет шляпы... но миллиард леденцов, омг!.. Оно того стоило.
+ru.cauldronPreviousPageButton
+Предыдущая страница
+ru.cauldronNextPageButton
+Следующая страница
+ru.cauldronWhatYouWantToPut
+Что вы хотите сложить в котёл
+ru.cauldronWhatIsIn
+Что находится в котле
+ru.cauldronWhatYouCanDo
+Что вы можете из этого сотворить
+ru.castleBigRoomComment
+Большая комната
+ru.castleARoomComment
+Комната
+ru.castleADarkRoomComment
+Тёмная комната
+ru.castleCastleEntranceComment
+Вход в замок
+ru.castleTowerEntranceComment
+Вход в башню
+ru.castleNougatMonsterComment
+Атаковать гигантского монстра из нуги
+ru.castleGuardsComment
+Атаковать стражу
+ru.castleStairsComment
+Лестница
+ru.buttonBackToTheCastle
+Назад в замок
+ru.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Привет, я очень старая хлебопечка. Раньше я пекла тонны хорошей выпечки, но теперь никто меня не использует. Может... может быть ты можешь мне помочь? Просто позволь мне взять несколько твоих сладостей. Не беспокойся, ты не пожалеешь. Ты можешь доверять мне.
+ru.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Оййй... у тебя недостаточно сладостей, я ничего не могу сделать. Я просто бесполезна. Я бесполезная хлебопечка, зови меня теперь так.
+ru.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Вау! Спасибо огромное! Я взяла 100 конфеток и шоколадную плитку, и сделала для тебя... Шоколадный хлеб! Это моя любимая выпечка, надеюсь, тебе она тоже понравится!
+ru.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Эй! Если ты хочешь, чтобы я ещё чего-нибудь испекла, просто скажи. Буду счастлива помочь. 
+ru.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Ой, а у тебя недостаточно сладостей, печально. Мне нужно 100 конфет и шоколадная плитка. Приходи, когда у тебя это всё будет.
+ru.castleBigRoomHovenLetHovenTakeButton
+Позволить хлебопечке взять все сладости, которые ей нужны
+ru.castleBigRoomHovenThanks
+Спасибо, печь!
+ru.dragonStopTickling # INFORMAL PRONOUN
+Эй, ты! Прекрати меня щекотать, ну пожалуйста.
+ru.dragonStopTicklingButton
+Эээ, омг, простите, я думал, мне надо было вас атаковать
+ru.dragonTalking # INFORMAL PRONOUN
+Я - дракон и это мой замок. Вижу, что тебе удалось войти, ты, должно быть, очень храбр... Буду счастлив помочь такому, как ты. Чего ищещь-то?
+ru.dragonTalkingChallengeButton
+Драку
+ru.dragonTalkingFameButton
+Славу
+ru.dragonTalkingCandiesButton
+Конфеты
+ru.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+О, так ты хочешь драку? Думаю, ты должен пойти в ад. Я серьёзно. Общеизвестно, что Дьявол - хороший соперник. Запрыгивай ко мне на спину, я отвезу тебя в ад!
+ru.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Встретить и победить разработчика это наилучший способ стать известным. Я знаю, где он живёт, и я мог бы доставить тебя туда. Но подготовься, это будет нелегко.
+ru.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Абсолютно все хотят конфет, не так ли? Я думаю мой друг может тебе с этим помочь. Ты легко узнаешь его, у него только один глаз. Просто скажи ему, что ты меня знаешь.
+ru.dragonTalkingChallengeAnswer
+Ну поехали!
+ru.dragonTalkingFameAnswer
+Я готов.
+ru.dragonTalkingCandiesAnswer
+Окей, спасибо!
+ru.buttonBackToCastle
+Назад в замок
+ru.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Привет! Я - говорящая конфета. Ты почти прошёл игру. Теперь тебе осталось только найти candy box. Он в доме на окраине деревни. Это последний шаг!
+ru.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Привет! Я - говорящая конфета. Поздравляю, ты прошёл игру! Я открою твой candy box, это станет твоей наградой. Открыть?
+ru.talkingCandySpeech2 # INFORMAL PRONOUN
+Готово! Теперь ты можешь в неё войти. Надеюсь, тебе понравилась игра :)
+ru.talkingCandyButton
+Да!!!
+ru.lighthousePuzzleResetButton
+Сбросить игру

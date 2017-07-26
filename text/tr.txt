@@ -1,0 +1,690 @@
+tr.mapVillageComment
+Köy
+tr.mapFortressComment
+Çöl hisarı
+tr.mapATreeComment
+Bir ağaç
+tr.mapTheDesertComment
+Çöl
+tr.mapWishingWellComment
+Dilek kuyusu
+tr.mapLonelyHouseComment
+Yalnız bir ev
+tr.mapForestComment
+Orman
+tr.mapCastleEntranceComment
+Kalenin girişi
+tr.mapCastleComment
+Kale
+tr.mapDragonComment
+Ejderha
+tr.candyBoxEatCandiesButton
+Bütün şekerleri ye!
+tr.candyBoxThrowCandiesButton
+10 tane şekeri yere at
+tr.mapVillageAHouseComment
+Bir ev
+tr.mapVillageForgeComment
+Demirci ocağı
+tr.buttonBackToTheMap
+Haritaya geri dön
+tr.mapSorceressHutComment
+Sihirbazın kulübesi
+tr.buttonBackToTheVillage
+Köye geri dön
+tr.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Merhaba, ben sincap. Size şeker ve bir sürü şey verebilirim. Şekeri ne kadar çok sevdiğinizi biliyorum. Fakat bu ormanda çok yalnızım.
+tr.mapATreeIntroductionButton
+Nasıl yardımcı olabilirim ?
+tr.mapATreeFirstQuestion # INFORMAL PRONOUN
+Size sorular soracağım. Doğru cevaplarsanız, tatlıların en tatlısı sizin olacak! İlk soru: gerçekten şekerleri seviyor musunuz? (cevaplar ingilizce olacaktır)
+tr.mapATreeSecondQuestion # INFORMAL PRONOUN
+Aynen öyle! Bu 20 şeker senin. Şimdi sıradaki harfi doğru tahmin edip sıralamayı tamamla ve yeni ödülünü al: S, E, I, D, N, A, ?
+tr.mapATreeThirdQuestion # INFORMAL PRONOUN
+Şekerler! Bu 100 şeker senin. Sıradaki soru : Dünyadaki en şeker insanın kaç şekeri var?
+tr.mapATreeFourthQuestion # INFORMAL PRONOUN
+Bu 500 şeker senin! Sıradaki ödül çok daha ilginç olmalı...  Bilmece geliyor : Kadim bir ormanda çok yaşlı bir ağaç büyür, üzerinde dünyanın en zeki hayvanı yaşar. Öyle denir ki bu ağacın 60 kökü, 360 dalı ve 2160 yaprağı vardır. Gövdesinde kaç tane iz bulabilirsin?
+tr.mapATreeFifthQuestion # INFORMAL PRONOUN
+Tebrikler! Tabi ki kendi ağacımdan bahsediyordum. Bu 3 lolipop senin, güzelce kullan! Sıradaki bilmecen geliyor, dikkatli dinle: Dolunayın ışığında, kızıl bir denize sarı bir şapka attım. Sarı şapkaya ne olur?
+tr.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Güzel cevapladın! O kadar da zor değildi. Bu 3 çikolata senin! Sıradaki ödül için, kuralları biraz değiştiriyoruz. Benimle bir oyun oynamak zorundasın!  Hazır mısın?
+tr.mapATreeTicTacToeIntroButton
+Tabi ki öyleyim!
+tr.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Oyunumuzun adı tic-tac-toe. 3e 3lük bir tahtada oynuyorz. Sen X işaretini kullanırken ben O işaretini kullanacağım. İşaretlerimizi değişik şekillerde koyacağız ve amacımız 3 tane işareti yanyana / üstüste / çapraz yaparak üçlü yakalamak. Hadi, ilk sen başla!
+tr.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Tahta ağzına kadar doldu ve ikimiz de üçlü yakalayamadık : kimse kazanamadı! Tekrar denemek ister misin?
+tr.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Üçlü yakaladım! Ben kazandım.Tekrar denemek ister misin?
+tr.mapATreeTicTacToeTryAgainButton
+Evet!
+tr.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Vay, bu hareketi beklemiyordum. Ama üçlüyü yakaladın, orası kesin. Sen kazandın! Bu anahtarı al! Bu anahtar ormanın altındaki evlerden birini açıyor.
+tr.mapATreeTicTacToeAnymoreSweet
+Teşekkürler sincap, başka bilmecen var mı?
+tr.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Malesef hayır, başka bilmecem kalmadı... Senle oynamak çok eğlenceliydi, bunun için teşekkür ederim!
+tr.buttonExitQuestKeeping
+Görevden çık (ve bulduğunu al)
+tr.buttonExitQuestNoKeeping
+Görevden çık (bulduğunu alamayacaksın)
+tr.buttonExitQuestNoKeepingBecauseLose
+Görevden çık (bulduğunu alamayacaksın çünkü başarısız oldun)
+tr.mapVillageLockedHouseComment
+Kilitli bir ev
+tr.mapVillageForgeIntroductionSpeech
+Selam! Ben demirci. Envaiçeşit silah ve ekipmanları satabilirim.
+tr.mapVillageForgeIntroductionSpeechNoMoreToSell
+Selam! Ben demirci. Malesef, satacak birşeyim kalmadı. Sonra gelirsen, belki?
+tr.mapVillageFifthHouseNoWeaponSpeech
+Merhaba. Kilerim farelerle dolup taştı, onlardan kurtulmam lazım... Keşke silahlı biri bana yardım etseydi...
+tr.mapVillageFifthHouseWeaponSpeech
+Şşt, sen! Silahın var! Kilerimi mahveden farelerden kutrulursan, seni ödüllendiririm!
+tr.mapVillageFifthHouseAgree
+O zaman hadi gidelim!
+tr.mapVillageFifthHouseCellarDone
+Onlardan kurtulduğun için teşekkür ederim! Ödül olarak çok kıymetli bişey var : dünyanın bir haritası. Sanırım sen bunu benden fazla kullanacksın.
+tr.mapVillageTheShopComment
+Dükkan
+tr.mapBridgeComment
+Köprü
+tr.mapFarmComment
+Lolipop tarlası
+tr.mapCaveEntranceComment
+Mağara girişi
+tr.mapLighthouseComment
+Deniz feneri
+tr.mapPierComment
+İskele
+tr.mapTheHoleComment
+Çukur
+tr.candyBoxRequestStatusBarUnlocked
+Geliştiriciden yeni bir özellik iste (30 şeker)
+tr.candyBoxRequestStatusBarUnlockedCfg
+Başka bir tane iste (5 şeker)
+tr.candyBoxRequestStatusBarUnlockedSave
+Bir kere daha iste (5 şeker)
+tr.candyBoxRequestStatusBarUnlockedHealthBar
+Daha etkileyici birşeyler iste (5 şeker)
+tr.candyBoxRequestStatusBarUnlockedMap
+Son isteğin! Bunun verdiğin şekerlere değmesi lazım. (10 şeker)
+tr.candyBoxRequestStatusBarUnlockedComment
+Durum çubuğunu açtın! (yukarıda)
+tr.candyBoxRequestStatusBarUnlockedCfgComment1
+Artık ayarlar sekmesine erişebilirsin.
+tr.candyBoxRequestStatusBarUnlockedCfgComment2
+Eğer istersen, dili değiştirebilirsin.
+tr.candyBoxRequestStatusBarUnlockedSaveComment
+Vahşi bir kayıt sekmesi belirdi!
+tr.candyBoxRequestStatusBarUnlockedHealthBarComment
+Bu 100 sağlık puanı senin. Bunlar işine yarayacak.
+tr.cfgChooseLanguage
+Dili seç :
+tr.cfgInvertColors
+Zıt renkler?
+tr.gridItemMainMapName
+Harita
+tr.gridItemMainMapDescription
+Dünyanın haritası
+tr.gridItemPogoStickName
+Pogo çubuğu 
+tr.gridItemPogoStickDescription
+Bu eşya görevlerde zıplamana yarar!
+tr.gridItemTimeRingName
+Zaman yüzüğü
+tr.gridItemTimeRingDescription
+Bu item görevlerde yeni bir yetenek ekler: zamanı yavaşlatabilirsin. Olaylar senin için çok hızlıysa, yüzüğü kullan!
+tr.gridItemThirdHouseKeyName
+Üçüncü evin anahtarı
+tr.gridItemThirdHouseKeyDescription
+Bu anahtar köydeki üçüncü eve girmeni sağlar.
+tr.gridItemFeatherName
+Çöl kuşunun tüyü
+tr.gridItemFeatherDescription
+Bu büyülü tüy pogo çubuğu kullanırken daha yukarı zıplamana yarar!
+tr.gridItemFeatherDescriptionNoPogoStick
+Durup dururken, bu tüyün pogo çubuğun olsa işe yarayacağını hissediyorsun...
+tr.gridItemSpongeName
+Büyülü sünger
+tr.gridItemSpongeDescription
+Bu büyülü sünger kendini sünger gibi sıkmanı sağlar, böylece boyutun küçülür.
+tr.gridItemFortressKeyName
+Çöl hisarının anahtarı
+tr.gridItemFortressKeyDescription
+Bu anahtar çölün üzerindeki  eski kadim hisara girmeni sağlar. Orada ne bulacağını kim bilebilir?
+tr.gridItemHeartPendantName
+Kalpli kolye ucu
+tr.gridItemHeartPendantDescription
+Bu kalpli kolye, boynuna astığın sürece sağlık puanını arttıracak.
+tr.gridItemHeartPlugName
+Kalp tıkacı
+tr.gridItemHeartPlugDescription
+Demirden, örümcek bacaklarından ve merkezinde mühürlü olan "can likörü"nden yapılmış bu can tıkacı can puanlarını yüzde 20 arttıracak!
+tr.gridItemBeginnersGrimoireName
+Acemilerin büyü kitabı
+tr.gridItemBeginnersGrimoireDescription
+Bu büyü kitabı, kullanması kolay üç büyü içerir. Gerçekten acemiler içindir. Asit yağmuru büyüsünü (büyük miktarda asit damlaları düşmanlarının üzerine düşer) Alev topu büyüsünü (alevden oluşan dev bir sihirli top düşmanlarına doğru uçar.) ve ışınlanma büyüsünü (ki seni tamamen rastgele bir yere ışınlar) kullanmanı sağlar. 
+tr.gridItemAdvancedGrimoireName
+Uzmanların büyü kitabı
+tr.gridItemAdvancedGrimoireDescription
+Bu ileri büyü kitabı iki büyü kullanmanı sağlar : sihir silme büyüsü ve ağaç kalkanı büyüsü. Birincisi görev zamanında bütün büyüleri silmeni sağlar, buna senin ve düşmanlarının büyüleri de dahildir. İkincisi ise senin etrafında temas halinde düşmanına hasar veren, ağaçlardan oluşan bir kalkan oluşturur. 
+tr.gridItemBlackMagicGrimoireName
+Kara büyü kitabı
+tr.gridItemBlackMagicGrimoireDescription
+Bu kitabı mağarada buldun, ulaşması çok zordu, ve bunun bir sebebi vardı. Bu kitap sana çok güçlü iki kara büyü bahşeder. Birincisi, önünde obsidyenden oluşan dev bir duvar oluşturur, bunu düşmanlarını yavaşlatmak için kullanabilirsin. İkincisi ise sen dahil görevdeki herkese saldıran bir şeytan güruhu çağırır. Bunu kullanırken dikkatli ol.
+tr.gridItemUnicornHornName
+Tek boynuzlu atın boynuzu
+tr.gridItemUnicornHornDescription
+Bu büyülü boynuz zamanında bir tek boynuzlu atındı. Güçlü iyileştirme özellikleri sana bolca yardım edecek. Bu tek boynuzlu atın adını Mahmut diye duydun.
+tr.gridItemXinopherydonClawName
+Xinopherydon pençesi
+tr.gridItemXinopherydonClawDescription
+Bu pençe bir Xinopherydona aitti -, herkesin soyunun tükendiğine inandığı iki başlı antik bir hayvan. Bu pençe kullandığın silahın hasarını ikiye katlar.
+tr.gridItemPitchforkName
+Dirgen
+tr.gridItemPitchforkDescription
+Bu özel dirgen toprağı ters düz etmeden gevşetmene yarar, böylece toprağın altındaki ekosisteme zarar vermezsin. Dirgen ile lolipop tarlanın üretimi üçe katlanır.
+tr.gridItemShellPowderName
+Kabuk tozu
+tr.gridItemShellPowderDescription
+Kabuk tozları çiftçiler tarafından lolipop tarlalarının üretimini arttırmak amacıyla sıklıkla kullanılır. Bu toz ile lolipop tarlanın üretimi üçe katlanır!
+tr.gridItemPName
+P taşı
+tr.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+tr.gridItemLName
+L taşı
+tr.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+tr.gridItemAName
+A taşı
+tr.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+tr.gridItemYName
+Y taşı
+tr.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+tr.gridItemRedSharkFinName
+Büyülü kırmızı köpekbalığı yüzgeci
+tr.gridItemRedSharkFinDescription
+Bu büyülü yüzgeç  alev toplarının verdiği hasarı yüksek miktarda arttırır. Sonunda şu alev topu bir işe yaramaya başladı.
+tr.gridItemGreenSharkFinName
+Büyülü yeşil köpekbalığı yüzgeci
+tr.gridItemGreenSharkFinDescription
+Bu büyülü yüzgeç lolipop tarlana doğanın gücünü getirir! Üretimin 5e katlandı.
+tr.gridItemPurpleSharkFinName
+Büyülü mor köpekbalığı yüzgeci
+tr.gridItemPurpleSharkFinDescription
+Bu büyülü yüzgeç sana yeni bir kara büyü getirdi. Her görevde bir kere kullanabilirsin, çok dikkatli ol. 
+tr.gridItemTalkingCandyName
+Konuşan bir şeker
+tr.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Bu konuşan şeker, kalenin kulesinin tepesine dört taşı koyunca belirdi. Belki sana candy box'ı açma konusunda yardımcı olabilir... 
+tr.inventorySpecialNothingEqItem
+Hiç bir şey
+tr.eqItemWeaponWoodenSwordName
+Tahta Kılıç
+tr.eqItemWeaponWoodenSwordDescription
+Tahtadan yapılmış basit bir kılıç
+tr.eqItemWeaponIronAxeName
+Demir balta
+tr.eqItemWeaponIronAxeDescription
+Yalnızca demir balta. İyi bilenmiş. Tahta kılıçtan çok daha güçlü. 
+tr.eqItemWeaponPolishedSilverSwordName
+Parlatılmış gümüş kılıç
+tr.eqItemWeaponPolishedSilverSwordDescription
+Güçlü bir kılıç, dikenlerle güçlendirildi. 
+tr.eqItemWeaponTrollBludgeonName
+Troll'ün sopası
+tr.eqItemWeaponTrollBludgeonDescription
+Bu sopayı köprüyü koruyan trollden aldın. Biraz yavaş ama düşmanlarını gayet güzel eziyor. 
+tr.eqItemWeaponTribalSpearName
+Kabile mızrağı 
+tr.eqItemWeaponTribalSpearDescription
+Bu kabile mızrağını yerdeki büyük delikte kaybolmuş kabile savaşçısının cesedinde buldun. Başta kullanması zor gelse de bir kere alışınca güzel bir silah olduğunu anlıyorsun.
+tr.eqItemWeaponSummoningTribalSpearName
+Celbeden kabile mızrağı
+tr.eqItemWeaponSummoningTribalSpearDescription
+Bu büyülü kabile mızrağı normal kabile mızrağından biraz daha güçlü olmasının yanı sıra, görevlerinde sık sık yardıma gelecek kabile savaşçılarını çağırır. 
+tr.eqItemWeaponMonkeyWizardStaffName
+Büyücü maymunun asası
+tr.eqItemWeaponMonkeyWizardStaffDescription
+Bu asa mağarada bulduğun çıplak büyücü maymuna aitti. Düşmanlarını hedef alan, sık sık büyüler gönderir. 
+tr.eqItemWeaponEnchantedMonkeyWizardStaffName
+Büyücü maymunun asası (efsunlu)
+tr.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Bu asa efsunsuz olanından daha hızlı, ayrıca daha fazla büyü gönderiyor.
+tr.eqItemWeaponGiantSpoonName
+Dev bir kaşık
+tr.eqItemWeaponGiantSpoonDescription
+Bu dev kaşık çöl hisarındaki dev çaydanlığın içindeydi. Daha önce biri bunu kaşık olarak kullandı mı, bilmiyorsun ama eğer biri kullandıysa kullanan kişi çok büyük olmalı. Muhtemelen onunla tanışmak istemezsin.
+tr.eqItemWeaponGiantSpoonOfDoomName
+Cehennemin dev kaşığı
+tr.eqItemWeaponGiantSpoonOfDoomDescription
+Bu dev kaşık bulabileceğin normal dev kaşıklardan daha da güçlü, örneğin, çaydanlıkta. Yine de yeteri kadar yavaş.
+tr.eqItemWeaponScytheName
+Tırpan
+tr.eqItemWeaponScytheDescription
+Derler ki bu tırpan bizzat Ölümün kendisine aitti. Fazlasıyla hızlı. 
+tr.eqItemHatMerchantHatName
+Tüccarın şapkası 
+tr.eqItemHatMerchantHatDescription
+Bu şapka sana şeker tüccarı tarafından satıldı. Şeker tüccarı şekerleri sever. Bu şapkayla görevlerde bulacağın şekerler 7ye katlandı! 
+tr.eqItemHatSorceressHatName
+Sihirbazın şapkası
+tr.eqItemHatSorceressHatDescription
+Bu şapka sana sihirbaz tarafından satıldı. Bu büyülerinin ve iksirlerinin etkilerini güçlendirecek.
+tr.eqItemHatOctopusKingCrownName
+Ahtapot Kralın tacı
+tr.eqItemHatOctopusKingCrownDescription
+Bu tacı giydiğinde kendinden daha emin hissediyorsun. Tacın sana görevlerde bir artısı yok fakat kendine güven önemlidir.
+tr.eqItemHatOctopusKingCrownWithJaspersName
+Ahtapot Kralın yeşim taşlı tacı
+tr.eqItemHatOctopusKingCrownWithJaspersDescription
+Bu efsunlu tac, altından ve kırmızı yeşim taşından yapılmış. Görevlerde etrafına güçlü alev topları gönderir. Ve ayrıca, parlıyor.
+tr.eqItemHatOctopusKingCrownWithObsidianName
+Ahtapot Kralın obsidyenli tacı
+tr.eqItemHatOctopusKingCrownWithObsidianDescription
+Bu efsunlu tac, altından ve obsidyenden yapılmış ve çok güzel görünüyor. Görevlerde bir süreliğine yardımına gelecek Ahtapot Kralı çağırır. Ne sarılgan müttefik ama!
+tr.eqItemGlovesLeatherGlovesName
+Deri eldivenler
+tr.eqItemGlovesLeatherGlovesDescription
+Bu eldivenler basitçe hiç bişey yapmıyor. Ama en azından yumuşak ve rahatlar!
+tr.eqItemGlovesRedEnchantedGlovesName
+Kırmızı efsunlu eldivenler
+tr.eqItemGlovesRedEnchantedGlovesDescription
+Bu efsunlu eldivenler etraf karanlık olduğunda kırmızı ve yumuşak bir ışık yayar. Görevlerde düşmanlarına doğru küçük alev topları yollar, yani kesinlikle işe yarar.
+tr.eqItemGlovesPinkEnchantedGlovesName
+Pembe efsunlu eldivenler
+tr.eqItemGlovesPinkEnchantedGlovesDescription
+Bu efsunlu eldivenler dokunduğun her şeye pembe bir iz bırakır. Görevlerde canını durmaksızın arttırır. 
+tr.eqItemBootsRocketBootsName
+Roket botlar
+tr.eqItemBootsRocketBootsDescription
+Bu mükemmel roket botlar havada zıplamana yarar, böylece aslında uçuyor oluyorsun!
+tr.eqItemBootsLeatherBootsName
+Deri botlar
+tr.eqItemBootsLeatherBootsDescription
+Sadece deri botlar. Hiçbirşeyleri özel değil.
+tr.eqItemBootsBootsOfIntrospectionName
+Oturaklı botlar
+tr.eqItemBootsBootsOfIntrospectionDescription
+Nefes al ve sakinleş. Bu botları giydiysen yere dokunduğun sürece asla hareket edemeyeceksin.
+tr.eqItemBodyArmoursLightweightBodyArmourName
+Hafif vücut zırhı
+tr.eqItemBodyArmoursLightweightBodyArmourDescription
+Bu vücut zırhı sana zayıf bir koruma sunar. Düşmanların saldırılarına karşı biraz daha dayanıklı olursun.
+tr.eqItemBodyArmoursKnightBodyArmourName
+Şövalyenin vücut zırhı
+tr.eqItemBodyArmoursKnightBodyArmourDescription
+Bu güçlü vücut armoru seni korur. Düşman saldırılarına daha fazla dayanırsın.
+tr.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Şövalyenin efsunlu vücut zırhı 
+tr.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Bu zırh çok özeldir. Düşmanların saldırılarına karşı ÇOK daha fazla dayanıklı olursun ama silahının verdiği hasar yarıya iner.
+tr.mapVillageForgeBuyWoodenSwordButton
+Tahta bir kılıç al (150 şeker) 
+tr.mapVillageForgeBuyWoodenSwordSpeech
+Aldığın için teşekkürler! Bu tahta kılıç baya zayıf ama başlangıç başlangıçtır. 
+tr.mapVillageForgeBuyIronAxeButton
+Demir bir balta al (400 şeker)
+tr.mapVillageForgeBuyIronAxeSpeech
+Umarum bu demir baltayı seversin. Senin için daha yeni biledim!
+tr.mapVillageForgeBuyPolishedSilverSwordButton
+Parlatılmış gümüş bir kılıç al (2 000 şeker)
+tr.mapVillageForgeBuyPolishedSilverSwordSpeech
+Bu silahı oluşturmak benim için çok fazla zamana mal oldu. Ücretine değeceğine garanti veriyorum. 
+tr.mapVillageForgeBuyLightweightBodyArmourButton
+Hafif bir vücut zırhu al (15 000 şeker) 
+tr.mapVillageForgeBuyLightweightBodyArmourSpeech
+Bu vücut zırhı düşmanlarına karşı koruma sunar. 
+tr.mapVillageForgeBuyScytheButton
+Bir tırpan al (5 000 000 şeker)
+tr.mapVillageForgeBuyScytheSpeech
+Bu tırpanı yapmak bir kaç ay sürdü. Gerçek bir sanat eseridir. Muhtemelen kullanabileceğin en hızlı silah bu silahtır. İyi şanslar!
+tr.wishingWellThrowFirstCandyButton
+Kuyuya bir şeker at
+tr.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Merhaba, gezgin! Ben dilek kuyusuyum! Ben sana tatlılar karşılığında dilekler bahşedeceğim! Bana şeker attığında yaralarını iyileştiririm.
+tr.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Yaraların iyileşti !
+tr.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+İyileşecek yaran yok!
+tr.wishingWellThrowFirstLollipopButton
+Kuyuya bir lolipop at
+tr.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Merhaba, gezgin! Ben dilek kuyusuyum! Ben sana tatlılar karşılığında dilekler bahşedeceğim! Bana lolipop attığında onları şekere dönüştürürüm.
+tr.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Lolipopların şekere dönüştü! Bir şekere iki lolipop. 
+tr.wishingWellThrowChocolateBarButton
+Kuyuya bir çikolata barı at
+tr.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Merhaba, gezgin! Ben dilek kuyusuyum! Ben sana tatlılar karşılığında dilekler bahşedeceğim! Çikolata barlarını çok severim. Gerçekten, çok severim. Bana attığın her çikolata barı için, bu da dahil, büyülü bir efsunla ödüllendirileceksin. 
+tr.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Hangi nesneyi efsunlamak istersin?
+tr.wishingWellThrowPainAuChocolatButton
+Kuyuya bir pain au chocolat at 
+tr.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Merhaba, gezgin! Ben dilek kuyusuyum! Ben sana tatlılar karşılığında dilekler bahşedeceğim! Bana bir pain au chocolat attığın zaman çok özel bir hediye alacaksın. Dikkatlice seç.
+tr.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Pain au chocolat için teşekkürler! Şimdi hediyeni seçebilirsin. 
+tr.wishingWellChooseGift # INFORMAL PRONOUN
+Hediyeni seç!
+tr.wishingWellChooseGiftButton
+Seç
+tr.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Tamamdır! Artık yeni bir hediyen var. Hediyen envanter durumu ekranında belirecektir. 
+tr.wishingWellNoPossibleEnchantment
+Efsunlanacak şey yok.
+tr.wishingWellChooseEnchantment
+Efsunu seç
+tr.wishingWellEnchantButton
+Efsunla
+tr.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Oldu! Eşyan efsunlandı.
+tr.pierLighthouseButton
+Deniz fenerine botla git 
+tr.pierTheSeaButton
+Denize atla 
+tr.lonelyHouseOpenBox
+Kutuyu aç
+tr.lonelyHouseShakeBox
+Kutuyu salla
+tr.lonelyHouseBreakLock
+Kilidi kır
+tr.lonelyHouseKickBox
+Kutuyu tekmele
+tr.lonelyHouseAskTheBoxToOpenItself
+Kutudan kendi kendine açılmasını iste
+tr.lonelyHouseLureTheBoxWithACandy
+Kutuyu şekerle cezbet
+tr.lonelyHouseTakeTheBox
+Kutuyu yanına al, zaten açmak için muhtemelen bir anahtara ihtiyacın var 
+tr.lonelyHouseOpenBoxResult
+Kutu kilitli
+tr.lonelyHouseShakeBoxResult
+Hiçbirşey olmadı.
+tr.lonelyHouseBreakLockResult
+Kilit direniyor 
+tr.lonelyHouseKickBoxResult
+Ayağın biraz acıdı fakat hiçbirşey olmadı.
+tr.lonelyHouseAskTheBoxToOpenItselfResult
+...kutuyla konuştuğunun farkında mısın?
+tr.lonelyHouseLureTheBoxWithACandyResult
+Kutunun umrunda değil
+tr.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Candy box muhtemelen içinde çok ilginç şeyler barındırıyor.
+tr.lollipopFarmConstructMill
+Değirmen inşa et (10 000 lolipop)
+tr.lollipopFarmFeedMill
+Değirmeni besle
+tr.lollipopFarmCurrentCandiesProduction
+Anlık şeker üretimi
+tr.lollipopFarmDigPond
+Yapay göl kaz (100 000 lolipop)
+tr.lollipopFarmBuyLolligator
+Bir lolimsah al (1200 şeker)
+tr.lollipopFarmLolligatorsConversionText
+Şeker -> Lolipop dönüşümü aktif
+tr.lighthouseAskButton
+Sor
+tr.lighthouseQuestionWho
+Siz kimsiniz?
+tr.lighthouseQuestionWhoSpeech
+Ben çok yaşlı bir tek gözlü devim.
+tr.lighthouseQuestionWhat
+Burada napıyorsunuz?
+tr.lighthouseQuestionWhatSpeech
+Burada yaşayıp bütün gün bir botun gelmesini beklerim. Daha önce bir bot göreli uzun zaman oldu, ama burada beklemeliyim, denize gözlerimi dikip, çünkü o bot gelecektir...
+tr.lighthouseQuestionWhyEatCandies
+Neden şeker yemeliyim?
+tr.lighthouseQuestionWhyEatCandiesSpeech
+Çünkü şekerler sağlığa faydalıdır!
+tr.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Candy box nedir biliyor musunuz?
+tr.lighthouseQuestionCandyBoxSpeech
+Dünyadaki bütün şekerleri içerdiği söylenen çok eski bir kutudur. Efsaneye göre kutuyu açmayı başaran her kimse o kadar fazla şekere sahip olur ki onun için her şey mümkündür.
+tr.lighthouseQuestionDragon
+Buraya gelmemi ejderha söyledi çünkü şeker istiyorum.
+tr.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Hmm, anlıyorum... Yani, sana şekerleri direk veremem ama sana çok fazla şeker elde etmen için gerekli temel bir şey verebilirim. Vermeden önce sadece seni test etmem gerekiyor. Çünkü elimdeki şey herkese verilemez. Bu bulmacayı çöz ve senin olsun.
+tr.lighthouseFoundStone # INFORMAL PRONOUN
+Tebrikler! Testi geçtin ve taşı buldun. Bu çok kıymetli, ama sadece bunun gibi diğer üç taşı bulduktan sonra. İyi şanslar!
+tr.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+İyi iş, bulmacayı bir kere daha yaptın. Bunu seviyorsun gibi görünüyor. 
+tr.saveLocalSaveTitle
+Tarayıcıyı kaydet
+tr.saveLocalSaveWhy
+Bu aygıtta ve tarayıcıda oynamaya devam etmek için kayıtları seçin. 
+tr.saveLocalSaveWarning0
+Tarayıcın HTML5i desteklemiyor gibi görünüyor. 
+tr.saveLocalSaveWarning1
+Yerel kayıt özelliğini kullanmak için tarayıcını güncellemelisin.
+tr.saveLocalSaveChooseSlot
+Kayıt yeri seç :
+tr.saveLocalSaveAutosaveEnabled
+Otomatik kayıt aktif
+tr.saveLocalSaveChooseWhatToDo
+Yapmak istediğini seç :
+tr.saveLocalSaveSaveButton
+Kaydet
+tr.saveLocalSaveAutosaveButton
+Her 10 dakikada bir kaydet
+tr.saveLocalSaveDisableAutosaveButton
+Otomatik kaydı devre dışı bırak
+tr.saveFileSaveTitle
+Metin kaydı
+tr.saveFileSaveWhy0
+Metin kaydını şunun için yap :
+tr.saveFileSaveWhy1
+Oyuna başka bir tarayıcıda ya da aygıtta devam etmek istiyorsan
+tr.saveFileSaveWhy2
+Kaydını başka birisiyle paylaşmak istiyorsan
+tr.saveFileSaveWhy3
+Herhangi bir sebepten dolayı tarayıcı önbelleğini boşaltmak istiyorsan
+tr.saveFileSaveWhy4
+(Yerel kayıtların silinecek)
+tr.saveFileSaveButton
+Geçerli oyunu metin olarak al
+tr.saveFileSaveWarning
+Bu metni başka bir yere kopyala! (örneğin bir dosyaya)
+tr.saveLocalLoadTitle
+Tarayıcıya yükle
+tr.saveLocalLoadYouCan
+Bu linkleri kullanarak yerel bir kayedı yükleyebilirsin: 
+tr.saveLocalLoadThanksTo
+HTML5 sağolsun,bu linkleri offline iken bile kullanabilmen lazım.
+tr.saveFileLoadTitle
+Metin yükle
+tr.saveFileLoadPaste
+Kaydını aşağıya yapıştır, sonra Yükle tuşuna tıkla
+tr.saveFileLoadButton
+Yükle
+tr.mountainsText0
+Dağlarda bir şeye rastladın!
+tr.mountainsText1
+İlginç görünüyor. Belki işe yarayabilir.
+tr.mountainsTextButton
+Dağlara tırmanıp şeyi al. 
+tr.mountainsTextAfter
+Pogo çubuğu buldun! Envanterine eklendi. 
+tr.secondHouseIntroSpeech
+Merhaba, ben şeker tüccarıyım. Şekerler için herşeyi yaparım. Neye ihtiyacın var? 
+tr.secondHouseLollipop1Speech
+Bu limon aromalı lolipop. Benim favorim! Fiyatı 60 şeker ama buna değer. 
+tr.secondHouseLollipop2Speech
+Bu çilek aromalı lolipop. Tadı güzeldir. Kırmızı rengini seviyorum. Sadece 60 şeker! 
+tr.secondHouseLollipop3Speech
+Bu balkabağı aromalı lolipop. İddiaya girerim daha önce hiç denemedin! 60 şeker ver ve senin olsun. 
+tr.secondHouseLollipopButtonText
+Bu lolipopu al (60 şeker)
+tr.secondHouseMerchantHatSpeech
+Sana şapkamı satardım, ama bilirsin, çok değerlidir. Bunun için bana çok fazla şeker vermen lazım. Diyelim ki fiyatı 1 milyon şeker olsun. Adil, değil mi?
+tr.secondHouseMerchantHatButtonText
+Tüccarın şapkasını al (1 000 000 şeker)
+tr.secondHouseTimeRingSpeech
+Bu bir zaman yüzüğü. Bir şekilde büyülü bir yüzük. Tehlike içindeyken zamanı yavaşlatmana yarar. 
+tr.secondHouseTimeRingButtonText
+Zaman yüzüğünü al (500 şeker)
+tr.secondHouseLeatherGlovesSpeech
+Bu deri eldivenler deve derisinden yapılma, yüksek kalitededir. Depomda bunlardan çok var, bu yüzden bu kadar ucuzlar : sadece 300 şeker! 
+tr.secondHouseLeatherBootsButtonText
+Bir çift deri bot al  (300 şeker)
+tr.secondHouseLeatherBootsSpeech
+Bu yüksek kalite deri botlar, deve derisinden yapılmalar, ayaklarını sıcak tutarlar. 
+tr.secondHouseLeatherGlovesButtonText
+Bir çift deri eldiven al (300 şeker)
+tr.secondHouseChocolateBarSpeech
+Bu çikolata. Ne için kullanıldığını bilmiyorum ama baya nadirler, ki fiyatını açıklıyor: 800 şeker ver ve senin olsun! 
+tr.secondHouseChocolateBarButtonText
+Çikolata al (800 şeker)
+tr.outsideTheHoleButton
+Yerdeki büyük deliğe atla
+tr.theCaveExitText0
+Sonunda mğaradanın çıkışına ulaştın.
+tr.theCaveExitText1
+Dışarıda büyük bir orman görüyorsun. 
+tr.theCaveExitButtonText
+Mağaradan çık 
+tr.theCaveFirstSentenceWentStraight
+Düz gittin. 
+tr.theCaveFirstSentenceWentLeft
+Soldaki yolu seçtin.
+tr.theCaveFirstSentenceWentRight
+Sağdaki yolu seçtin.
+tr.theCaveFirstSentenceYouAre
+Mağaradasın. Önünde üç tane yol var.
+tr.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Yerde, önünde ilginç bir şeye dikkat ettin. 
+tr.theCavePattern_ChocolateBarNowSeeChocolateBar
+Önünde bir tane çikolata var.
+tr.theCavePattern_TreasureMapSentence
+Yerdeki küçük taşların garip bir şekilde düzenlendiğini görüyorsun. 
+tr.theCavePattern_MonkeyWizardSentence
+Çıplak büyücü maymun karşına çıktı.
+tr.theCavePattern_MonkeyWizardButton
+Meydan oku
+tr.theCavePattern_OctopusKingSentence
+Ahtapot Kral karşına çıktı. Tehlikeli görünüyor.
+tr.theCavePattern_OctopusKingButton
+Meydan oku
+tr.fortressInsideText0
+Çöl hisarının içindesin.
+tr.fortressInsideText1
+Üç kapıdan birini seçebilirsin.
+tr.fortressInsideText2
+Her biri, seni sonunda hazine olan büyük bir odaya götürüyor.
+tr.fortressInsideEnterRoom1
+İlk odaya gir
+tr.fortressInsideEnterRoom2
+İkinci odaya gir
+tr.fortressInsideEnterRoom3
+Üçüncü odaya gir
+tr.treasureButtonDig
+Kaz
+tr.treasureButtonYouFound
+Üç tane çikolata buldun!
+tr.sorceressHutHello
+Merhaba, ben büyücüyüm. Sana sihir hakkında bir iki şey öğretebilirim. Sana ilginç şeyler de verebilirim, ya da sana büyüler veririm. Ama her şeyin bir ücreti var! Ve bu ücret de lolipoplar. Çok fazla.
+tr.sorceressHutClickedGrimoire
+Bu amatörler için büyü kitabı. Görevlerde bunu taşıyarak basit ama kullanışlı büyüler yapabilirsin. Buna ihtiyacın var! Sadece 5 000 lolipop.
+tr.sorceressHutBuyGrimoireButton
+Bu kitabı al (5 000 lolipop)
+tr.sorceressHutBuyGrimoireSpeech
+Aldığın için teşekkürler! Bu kitapla üç tane büyü yapabileceksin. İyi şanslar! 
+tr.sorceressHutClickedGrimoire2
+Bu bir ileri büyü kitabı. Görevlerde bunu taşıyarak iki tane ileri büyü yapabilirsin. Bizzat kendim yazdım, hiç kolay olmadı. 20 000 lolipop adil bir fiyat olur. 
+tr.sorceressHutBuyGrimoire2Button
+Bu kitabı al (20 000 lolipop)
+tr.sorceressHutBuyGrimoire2Speech
+Aldığın için teşekkürler! Bu kitapla üç tane büyü yapabileceksin. Dikkatli kullan!
+tr.sorceressHutClickedCauldron
+Bu benim kazanım. Benim büyülü iksirler yapmamı sağlıyor. Sana satardım, ama bu çok değerli... sana 100 000 lolipopa patlar. 
+tr.sorceressHutBuyCauldronButton
+Kazanı al (100 000 lolipop)
+tr.sorceressHutBuyCauldronSpeech
+Çok teşekkürler! 100 000 lolipopum oldu! Ayrıca sana iksir yapma rehberini verdim. İşine yarayacaktır. 
+tr.sorceressHutClickedHat
+Güzel bir şapkam var, evet! Ama cidden sana bunu satamam. Çünkü çoook değerli. Cidden, olmaz. Israr etme. Hayır. hayırhayırhayır bunu yapmamalıyım. Amaan, neyse, satabilirim ama fiyatı 1 000 000 000 lolipop olur. Muhtemelen bu kadarını zaten ödeyemezsin.
+tr.sorceressHutBuyHatButton
+Buy the hat (1 000 000 000 lollipops)
+tr.sorceressHutBuyHatSpeech
+Bir milyar lolipopum olduuuuuu! Ama artık şapkam yok.. ama bir milyar lolipop, vay! Sonuna kadar değdi.
+tr.cauldronPreviousPageButton
+Önceki sayfa
+tr.cauldronNextPageButton
+Sonraki sayfa
+tr.cauldronWhatYouWantToPut
+Kazana koymak istediklerin
+tr.cauldronWhatIsIn
+Kazanın içindekiler
+tr.cauldronWhatYouCanDo
+Bunlarla yapabileceklerin
+tr.castleBigRoomComment
+Büyük bir oda
+tr.castleARoomComment
+Bir oda
+tr.castleADarkRoomComment
+Karanlık bir oda
+tr.castleCastleEntranceComment
+Kalenin girişi
+tr.castleTowerEntranceComment
+Kulenin girişi
+tr.castleNougatMonsterComment
+Dev nuga canavarına saldır
+tr.castleGuardsComment
+Gardiyanlara saldır
+tr.castleStairsComment
+Merdivenler
+tr.buttonBackToTheCastle
+Kaleye geri dön
+tr.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Merhaba! Ben çok eski bir ekmek fırınıyım. Önceden tonlarca güzel hamurişleri pişirirdim, ama artık kimse beni kullanmıyor. Belki... belki sen bana yardım edebilirsin. Sadece senden biraz tatlı almama izin ver. Telaşlanma, pişman olmayacaksın! Bana güvenebilirsin.  
+tr.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... sende yeteri kadar tatlı yok, ben birşey yapamam. Ben sadece işe yaramazım. Ben işe yaramaz ekmek fırınıyım, beni böyle anmalısın.
+tr.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Oley! Çok teşekkürler! 100 şeker ve bir çikolata kullandım ve sana... pain au chocolat yaptım! Benim favori hamurişimdir, umarım sen de seversin! 
+tr.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hey! eğer başka bir hamurişi pişirmemi istersen sadece söyle! Seve seve yardımcı olurum.
+tr.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Oh, sende yeteri kadar tatlı yok, maalesef. 100 şekere ve bir çikolataya ihtiyacım var. Bunları bulduğunda geri gel!
+tr.castleBigRoomHovenLetHovenTakeButton
+Fırının almak istediği tatlıları almasına izin ver 
+tr.castleBigRoomHovenThanks
+Teşekkürler, fırın!
+tr.dragonStopTickling # INFORMAL PRONOUN
+Hey, sen! Beni gıdıklamaktan vazgeç lütfen.
+tr.dragonStopTicklingButton
+Uh, oh, üzgünüm, Ben de sana saldırdığımı düşünüyordum.
+tr.dragonTalking # INFORMAL PRONOUN
+Ben bir ejderhayım ve bursaı da benim kalem. Girmeyi başardığını görüyorum, çok cesur olmalısın... Senin gibi birine seve seve yardımcı olurum. Ne ile ilgileniyorsun? 
+tr.dragonTalkingChallengeButton
+Meydan okuma
+tr.dragonTalkingFameButton
+Ün
+tr.dragonTalkingCandiesButton
+Şekerler
+tr.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Demek meydan okumak istiyorsun? Bence cehennemin kendisine gitmelisin, şeytan zorlu bir rakip olarak bilinir. Sırtımı atla ve seni götüreyim! 
+tr.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Ünlü olmanın en iyi yolu geliştiricinin kendisiyle yüzleşmektir. Nerede yaşadığını biliyorum ve seni oraya götürebilirim. Ama hazırlıklı ol, bu hiç kolay olmayacak. 
+tr.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Eninde sonunda, hepimizin istediği şey şekerler, değil mi? Sanırım bir arkadaşım bu konuda sana yardımcı olabilir. Onu kolayca farkedebilirsin, sadece tek gözü var. Ona beni tanıdığını söyle.
+tr.dragonTalkingChallengeAnswer
+O zaman hadi gidelim!
+tr.dragonTalkingFameAnswer
+Ben hazırım.
+tr.dragonTalkingCandiesAnswer
+Tamam, teşekkürler!
+tr.buttonBackToCastle
+Kaleye geri dön
+tr.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hey! Ben konuşan şeker. Neredeyse oyunu kazandın. Sadece candy box'ı bulman lazım. Köyün dışındaki evin içinde. Bu son adım! 
+tr.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hey! Ben konuşan şeker. Tebrikler, oyunu kazandın! ISenin için Candy box'ı açacağım, ödülün bu. Devam edeyim mi?
+tr.talkingCandySpeech2 # INFORMAL PRONOUN
+Tamamdır! Artık girebilirsin. Umarım oyunu sevmişsindir :)
+tr.talkingCandyButton
+Evet!!
+tr.lighthousePuzzleResetButton
+Reset

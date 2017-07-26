@@ -1,0 +1,12 @@
+YYYYY  Y  YY YY      YYYYY   Y       YYYYY   YYY        O   O   OOOOO   O   O
+  Y       Y Y Y      Y       Y       Y   Y   Y  YY       O O    O   O   O   O
+  Y       Y   Y      Y  YY   Y       YYYYY   Y   Y        O     O   O   O   O
+  Y       Y   Y      Y   Y   Y       Y   Y   Y  YY        O     O   O   O   O
+YYYYY     Y   Y      YYYYY   YYYYY   Y   Y   YYY          O     OOOOO   OOOOO
+
+
+YY YY   YYYYY   YYY     YYYYY      YYYYY   YYYYY      YYYYY   YYYYY      YYYYY   YYYYY   YYYYY
+Y Y Y   Y   Y   Y  YY   Y            Y       Y        Y       Y   Y      Y       Y   Y   Y   Y
+Y   Y   YYYYY   Y   Y   YYYYY        Y       Y        YYYYY   Y   Y      YYYYY   YYYYY   YYYYY
+Y   Y   Y   Y   Y  YY   Y            Y       Y            Y   Y   Y      Y       Y   Y   Y  Y
+Y   Y   Y   Y   YYY     YYYYY      YYYYY     Y        YYYYY   YYYYY      Y       Y   Y   Y   Y

@@ -1,0 +1,690 @@
+es.mapVillageComment
+El Pueblo
+es.mapFortressComment
+La Fortaleza del desierto
+es.mapATreeComment
+Un árbol
+es.mapTheDesertComment
+El Desierto
+es.mapWishingWellComment
+El Pozo de los Deseos
+es.mapLonelyHouseComment
+Una casa solitaria
+es.mapForestComment
+El Bosque
+es.mapCastleEntranceComment
+Entrada del Castillo
+es.mapCastleComment
+El Castillo
+es.mapDragonComment
+El Dragón
+es.candyBoxEatCandiesButton
+Comerse los caramelos
+es.candyBoxThrowCandiesButton
+Tirar 10 caramelos al suelo
+es.mapVillageAHouseComment
+Una casa
+es.mapVillageForgeComment
+La Herrería
+es.buttonBackToTheMap
+Volver al mapa
+es.mapSorceressHutComment
+La Cabaña de la Hechicera
+es.buttonBackToTheVillage
+Volver al Pueblo
+es.mapATreeIntroductionSpeech
+Hola, soy la Ardilla. Puedo conseguirte caramelos y un montón de cosas. Sé cuánto te gustan los caramelos... pero estoy muy sola en este bosque.
+es.mapATreeIntroductionButton
+¿En qué puedo ayudarte?
+es.mapATreeFirstQuestion
+Voy a hacerte preguntas. Si respondes correctamente, te daré los mejores caramelos del mundo. Primera pregunta: ¿de verdad te gustan los caramelos? (Responde en español y sin tildes)
+es.mapATreeSecondQuestion
+¡Correcto! Aquí tienes 20 caramelos. Ahora debes completar esta secuencia de letras para conseguir otra recompensa: S, O, L, E, M, A, R, A, ?
+es.mapATreeThirdQuestion
+¡C A R A M E L O S, sí! Toma 100 caramelos. Siguiente pregunta: ¿cuántos caramelos tiene la persona más caramelada del mundo?
+es.mapATreeFourthQuestion
+¡Otros 500 caramelos! Quizá la próxima recompensa sea aún más jugosa... Esta es la adivinanza: En un antiguo bosque crece un árbol muy anciano, donde viven los animales más inteligentes del mundo. Dicen que tiene 60 raíces, 360 ramas y 2160 hojas. ¿Cuántas marcas hay en su tronco?
+es.mapATreeFifthQuestion
+¡Felicidades! Por supuesto, estaba hablando de mi árbol. Toma 3 piruletas, ¡úsalas bien! Escucha con atención, que viene otra adivinanza: Bajo la luna llena, lanzo un sombrero amarillo al mar Rojo. ¿Qué le pasa al sombrero?
+es.mapATreeTicTacToeIntro
+¡Respuesta correcta! No era tan difícil... Toma 3 tabletas de chocolate. Para la recompensa que viene ahora vamos a cambiar las reglas: tienes que jugar conmigo. ¿Estás listo?
+es.mapATreeTicTacToeIntroButton
+Vamos allá
+es.mapATreeTicTacToeLetsPlay
+El juego es tres en raya. Vamos a jugar en un tablero de 3 por 3, tú pones las X y yo los O. Cada vez le toca a uno, y hay que ocupar tres casillas seguidas. ¡Te dejo empezar!
+es.mapATreeTicTacToeNobodyWins
+Hemos llenado el tablero y ninguno ha hecho tres en raya... ¡Quedamos en tablas! ¿Quieres volver a intentarlo?
+es.mapATreeTicTacToeYouLose
+¡Tengo tres en raya! He ganado. ¿Quieres volver a intentarlo?
+es.mapATreeTicTacToeTryAgainButton
+Venga
+es.mapATreeTicTacToeYouWin
+Vaya, eso ha sido un movimiento inesperado. Pero tienes tres en raya, no puedo quejarme. ¡Has ganado, toma esta llave! Abre una casa del pueblo que está más allá del bosque.
+es.mapATreeTicTacToeAnymoreSweet
+¡Gracias, Ardilla! ¿Tienes más pruebas para mí?
+es.mapATreeNoMoreChallenge
+Pues ya no me quedan pruebas... Pero lo he pasado muy bien jugando contigo, gracias :-)
+es.buttonExitQuestKeeping
+Salir de la misión (se guardará lo que has encontrado)
+es.buttonExitQuestNoKeeping
+Salir de la misión (sin guardar lo que has encontrado)
+es.buttonExitQuestNoKeepingBecauseLose
+Salir de la misión (sin guardar, porque has perdido)
+es.mapVillageLockedHouseComment
+Una casa cerrada
+es.mapVillageForgeIntroductionSpeech
+¡Hola! Soy el Herrero, vendo armas y equipamiento.
+es.mapVillageForgeIntroductionSpeechNoMoreToSell
+¡Hola! Soy el Herrero. Lamentablemente, no puedo venderte nada más. ¿Qué tal si vuelves luego?
+es.mapVillageFifthHouseNoWeaponSpeech
+Hola. Mi sótano está lleno de ratas, necesito librarme de ellas... Ojalá alguien con un arma pudiera ayudarme...
+es.mapVillageFifthHouseWeaponSpeech
+Eh, ¡pero si tú llevas una! Si matas a las que tengo en el sótano, te recompensaré como es debido.
+es.mapVillageFifthHouseAgree
+¡A por ellas!
+es.mapVillageFifthHouseCellarDone
+¡Gracias por acabar con las ratas! Aquí tienes una valiosa recompensa: un Mapa del mundo. Seguro que lo usas más que yo.
+es.mapVillageTheShopComment
+La Tienda
+es.mapBridgeComment
+El Puente
+es.mapFarmComment
+La Granja de piruletas
+es.mapCaveEntranceComment
+Entrada de la Cueva
+es.mapLighthouseComment
+El Faro
+es.mapPierComment
+El Puerto
+es.mapTheHoleComment
+El Hoyo
+es.candyBoxRequestStatusBarUnlocked
+Pedir una opción nueva al desarrollador (30 caramelos)
+es.candyBoxRequestStatusBarUnlockedCfg
+Pedir otra (5 caramelos)
+es.candyBoxRequestStatusBarUnlockedSave
+Pedir otra más (5 caramelos)
+es.candyBoxRequestStatusBarUnlockedHealthBar
+Pedir algo aún mejor (5 caramelos)
+es.candyBoxRequestStatusBarUnlockedMap
+¡Última petición! Seguro que vale la pena. (10 caramelos)
+es.candyBoxRequestStatusBarUnlockedComment
+¡Has desbloqueado la barra de estado! (Mira arriba)
+es.candyBoxRequestStatusBarUnlockedCfgComment1
+Ahora puedes acceder a la configuración.
+es.candyBoxRequestStatusBarUnlockedCfgComment2
+Si quieres, puedes cambiar el idioma.
+es.candyBoxRequestStatusBarUnlockedSaveComment
+¡Una pestaña salvaje apareció!
+es.candyBoxRequestStatusBarUnlockedHealthBarComment
+Has ganado 100 puntos de vida. Te serán útiles.
+es.cfgChooseLanguage
+Elige el idioma:
+es.cfgInvertColors
+¿Invertir colores?
+es.gridItemMainMapName
+El Mapa
+es.gridItemMainMapDescription
+Mapa del mundo
+es.gridItemPogoStickName
+Pogo
+es.gridItemPogoStickDescription
+Este objeto te permite saltar en las misiones.
+es.gridItemTimeRingName
+Anillo del tiempo
+es.gridItemTimeRingDescription
+Con este objeto tendrás una nueva habilidad: podrás ralentizar el tiempo. Si te parece que el juego va demasiado deprisa, úsalo.
+es.gridItemThirdHouseKeyName
+Llave de la tercera casa
+es.gridItemThirdHouseKeyDescription
+Con esta llave puedes entrar en la tercera casa del Pueblo.
+es.gridItemFeatherName
+Pluma de pájaro del desierto
+es.gridItemFeatherDescription
+Esta pluma mágica te hará saltar más alto cuando uses el Pogo.
+es.gridItemFeatherDescriptionNoPogoStick
+Por alguna razón, te parece que esta pluma sería útil si tuvieras un pogo...
+es.gridItemSpongeName
+Esponja mágica
+es.gridItemSpongeDescription
+Con esta esponja mágica te escurrirás (como una esponja) y reducirás tu tamaño.
+es.gridItemFortressKeyName
+Llave de la Fortaleza del desierto
+es.gridItemFortressKeyDescription
+Esta llave te permite entrar en la remota fortaleza que se encuentra al norte del Desierto. ¿Quién sabe lo que podrías encontrar allí?
+es.gridItemHeartPendantName
+Colgante corazón
+es.gridItemHeartPendantDescription
+Este colgante de corazón aumenta tus puntos de salud mientras lo lleves puesto.
+es.gridItemHeartPlugName
+Sello corazón
+es.gridItemHeartPlugDescription
+Este sello de hierro, patas de araña y \"cardioesencia\" en su núcleo aumentará tus puntos de salud en un 20 %.
+es.gridItemBeginnersGrimoireName
+Grimorio para principiantes
+es.gridItemBeginnersGrimoireDescription
+Este grimorio contiene tres hechizos bastante sencillos; es un libro especialmente pensado para principiantes. Permite usar Lluvia ácida (una capa de ácido caerá sobre tus enemigos), Bola de fuego (una enorme bola de fuego mágica irá volando hacia ellos) y Teletransporte (que te transportará a un lugar aleatorio).
+es.gridItemAdvancedGrimoireName
+Grimorio avanzado
+es.gridItemAdvancedGrimoireDescription
+El Grimorio avanzado consta de dos hechizos: Borramagia y Escudo de Espinas. El primero eliminará la magia en una misión en el momento en que lo uses, y con ella los hechizos que lanzaste y los poderes mágicos de tu adversario; el segundo formará un escudo de espinas flotantes a tu alrededor que daña a los enemigos que lo toquen.
+es.gridItemBlackMagicGrimoireName
+Grimorio de magia negra
+es.gridItemBlackMagicGrimoireDescription
+Encontraste este grimorio en una cueva, y por algo está tan bien escondido: contiene dos poderosos hechizos de magia negra. El primero levanta un muro gigantesco de bloques de obsidiana entre tú y tus enemigos, puedes utilizarlo para ganar tiempo; el segundo invoca a una hueste de demonios que atacará a cualquiera, también a ti... así que piénsatelo bien.
+es.gridItemUnicornHornName
+Cuerno de unicornio
+es.gridItemUnicornHornDescription
+Este cuerno mágico pertenecía a un unicornio. Su gran poder curativo te será de gran ayuda. Por lo visto, el unicornio se llamaba Charlie :-/
+es.gridItemXinopherydonClawName
+Zarpa de xinopherydon
+es.gridItemXinopherydonClawDescription
+Pertenece a un xinopherydon, animal primitivo de dos cabezas que se creía extinto. Puede doblar la potencia del arma que utilices.
+es.gridItemPitchforkName
+Horquilla
+es.gridItemPitchforkDescription
+Una horquilla especial para ahuecar la tierra sin necesidad de retirarla, conservando así los ecosistemas del subsuelo. Triplica la producción de tu granja de piruletas.
+es.gridItemShellPowderName
+Shell powder
+es.gridItemShellPowderDescription
+Los granjeros lo utilizan para acelerar el crecimiento de las piruletas. ¡Multiplicará tu producción por tres!
+es.gridItemPName
+Piedra P
+es.gridItemPDescription
+-\\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \\P  FFp(N/X \"D° (D ~ -Z DI}I \"  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\\OL&Y_)T|
+es.gridItemLName
+Piedra L
+es.gridItemLDescription
+\"ED^S~\\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ \"\\  - }XuX  IFHS Z(V~\\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & \" $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \\}+HeQ=IM Y +NJD  EF}t /-
+es.gridItemAName
+Piedra A
+es.gridItemADescription
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K \"G L+eIN#J(|RE TRL- \\ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q \"S A-\\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\\M=_VTM\\W-e_VEQ  {
+es.gridItemYName
+Piedra Y
+es.gridItemYDescription
+IK  OA#  U   \\ }CY!NBX^(  U\\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\\ G  UV ) QLT K O_ AN{QG U(PG_°\" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+es.gridItemRedSharkFinName
+Escama mágica de tiburón (roja)
+es.gridItemRedSharkFinDescription
+Aumenta sustancialmente el daño de Bola de fuego (por fin sirve para algo...)
+es.gridItemGreenSharkFinName
+Escama mágica de tiburón (verde)
+es.gridItemGreenSharkFinDescription
+Siente el poder de la naturaleza con esta escama mágica, que multiplica por 5 la producción de tu granja de piruletas.
+es.gridItemPurpleSharkFinName
+Escama mágica de tiburón (violeta)
+es.gridItemPurpleSharkFinDescription
+Te proporciona un nuevo hechizo de magia negra que solo puedes usar una vez por misión. ¡Ten mucho cuidado!
+es.gridItemTalkingCandyName
+Caramelo parlante
+es.gridItemTalkingCandyDescription
+Apareció cuando colocaste las cuatro piedras en lo alto de la Torre del Castillo. Podría ayudarte a abrir la Candy Box...
+es.inventorySpecialNothingEqItem
+Nada
+es.eqItemWeaponWoodenSwordName
+Espada de madera
+es.eqItemWeaponWoodenSwordDescription
+No es más que una espada de madera
+es.eqItemWeaponIronAxeName
+Hacha de hierro
+es.eqItemWeaponIronAxeDescription
+Un hacha de hierro. Bien afilada y más poderosa que la Espada de madera.
+es.eqItemWeaponPolishedSilverSwordName
+Espada pulida de plata
+es.eqItemWeaponPolishedSilverSwordDescription
+Una poderosa espada cubierta de púas.
+es.eqItemWeaponTrollBludgeonName
+Cachiporra del Troll
+es.eqItemWeaponTrollBludgeonDescription
+Se la quitaste al troll que vigilaba el puente. Es lenta, pero aplastará a tus enemigos.
+es.eqItemWeaponTribalSpearName
+Lanza tribal
+es.eqItemWeaponTribalSpearDescription
+La encontraste en el cuerpo sin vida de un guerrero que murió en un gran hoyo. Al principio es difícil manejarla, pero en cuanto te acostumbres será un arma eficaz.
+es.eqItemWeaponSummoningTribalSpearName
+Lanza tribal de invocación
+es.eqItemWeaponSummoningTribalSpearDescription
+Además de ser un poco más poderosa que la normal, esta lanza tribal permite invocar guerreros de la tribu para que te ayuden en las misiones.
+es.eqItemWeaponMonkeyWizardStaffName
+Cetro del Mono Mago
+es.eqItemWeaponMonkeyWizardStaffDescription
+Pertenecía al mono mago desnudo que encontraste en la Cueva. Por sí solo, lanza hechizos que alcanzarán a tus enemigos.
+es.eqItemWeaponEnchantedMonkeyWizardStaffName
+Centro encantado del Mono Mago
+es.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Es más rápido que la versión no encantada, y lanza muchos más hechizos.
+es.eqItemWeaponGiantSpoonName
+Cuchara gigante
+es.eqItemWeaponGiantSpoonDescription
+Esta cuchara estaba en una tetera gigante en la Fortaleza del desierto. No sabes si la habrán utilizado como tal alguna vez, pero si es así, debía tratarse de alguien MUY grande. Y no quieres conocerlo.
+es.eqItemWeaponGiantSpoonOfDoomName
+Cuchara gigante del Destino
+es.eqItemWeaponGiantSpoonOfDoomDescription
+Es aún más poderosa que la cuchara gigante normal. Sin embargo, es bastante lenta.
+es.eqItemWeaponScytheName
+Guadaña
+es.eqItemWeaponScytheDescription
+Cuentan que esta Guadaña pertenecía a la mismísima Muerte. Es extremadamente rápida.
+es.eqItemHatMerchantHatName
+Sombrero del Mercader
+es.eqItemHatMerchantHatDescription
+El Mercader te vendió este sombrero. Y como le encanta el dulce, este sombrero multiplica por 7 el número de caramelos que consigas en las misiones.
+es.eqItemHatSorceressHatName
+Sombrero de la Hechicera
+es.eqItemHatSorceressHatDescription
+La Hechicera te vendió este sombrero. Incrementa el poder de tus hechizos y pociones.
+es.eqItemHatOctopusKingCrownName
+Corona del Rey Pulpo
+es.eqItemHatOctopusKingCrownDescription
+Cuando llevas esta corona, confías mucho más en tus posibilidades. Puede que no dé ninguna ventaja estratégica, ¡pero la confianza en uno mismo es importante!
+es.eqItemHatOctopusKingCrownWithJaspersName
+Corona del Rey Pulpo jaspeada
+es.eqItemHatOctopusKingCrownWithJaspersDescription
+Esta corona encantada está hecha de oro y jaspe rojo. En las misiones, te permite lanzar poderosas bolas de fuego mágicas. ¡Y encima brilla!
+es.eqItemHatOctopusKingCrownWithObsidianName
+Corona del Rey Pulpo de obsidiana
+es.eqItemHatOctopusKingCrownWithObsidianDescription
+Esta corona encantada está hecha de oro y obsidiana, es una belleza. En las misiones, permite invocar al Rey Pulpo cada cierto tiempo para que luche a tu lado. ¡A más brazos, más espadas!
+es.eqItemGlovesLeatherGlovesName
+Guantes de cuero
+es.eqItemGlovesLeatherGlovesDescription
+No hacen nada especial. Por lo menos son suavitos, y cómodos.
+es.eqItemGlovesRedEnchantedGlovesName
+Guantes rojos encantados
+es.eqItemGlovesRedEnchantedGlovesDescription
+Estos guantes encantados desprenden una suave luz roja en la oscuridad. En las misiones, lanzan pequeñas bolas de fuego a tus enemigos de forma aleatoria, te resultarán muy útiles.
+es.eqItemGlovesPinkEnchantedGlovesName
+Guantes rosas encantados
+es.eqItemGlovesPinkEnchantedGlovesDescription
+Estos guantes encantados dejan una marca roja en todo lo que toques. Durante las misiones, no dejarán de curarte.
+es.eqItemBootsRocketBootsName
+Botas-cohete
+es.eqItemBootsRocketBootsDescription
+Estas botas son geniales, porque te permiten saltar en el aire. ¡Prácticamente volarás!
+es.eqItemBootsLeatherBootsName
+Botas de cuero
+es.eqItemBootsLeatherBootsDescription
+Unas simples botas de cuero.
+es.eqItemBootsBootsOfIntrospectionName
+Botas de introspección
+es.eqItemBootsBootsOfIntrospectionDescription
+Respira hondo y cálmate. Si llevas estas botas, no te moverás mientras estés tocando el suelo.
+es.eqItemBodyArmoursLightweightBodyArmourName
+Armadura ligera
+es.eqItemBodyArmoursLightweightBodyArmourDescription
+Ofrece una protección reducida. Serás un poco más resistente a los ataques.
+es.eqItemBodyArmoursKnightBodyArmourName
+Armadura de caballero
+es.eqItemBodyArmoursKnightBodyArmourDescription
+Es una armadura fuerte con la que estarás protegido. Serás más resistente a los ataques.
+es.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Armadura de caballero encantada
+es.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Esta armadura es muy especial. Serás MUCHO más resistente a los ataques de tus rivales, pero la potencia de tu arma se reducirá a la mitad.
+es.mapVillageForgeBuyWoodenSwordButton
+Comprar Espada de madera (150 caramelos)
+es.mapVillageForgeBuyWoodenSwordSpeech
+¡Gracias por tu compra! Es una espada bastante floja, pero no está mal para empezar.
+es.mapVillageForgeBuyIronAxeButton
+Comprar Hacha de hierro (400 caramelos)
+es.mapVillageForgeBuyIronAxeSpeech
+Espero que te guste esta Hacha de hierro. ¡La acabo de afilar!
+es.mapVillageForgeBuyPolishedSilverSwordButton
+Comprar Espada pulida de plata (2000 caramelos)
+es.mapVillageForgeBuyPolishedSilverSwordSpeech
+Fabricar esta espada me llevó mucho tiempo. Te aseguro que vale lo que cuesta.
+es.mapVillageForgeBuyLightweightBodyArmourButton
+Comprar Armadura ligera (15 000 caramelos)
+es.mapVillageForgeBuyLightweightBodyArmourSpeech
+Esta armadura te protegerá de los enemigos.
+es.mapVillageForgeBuyScytheButton
+Comprar Guadaña (5 000 000 caramelos)
+es.mapVillageForgeBuyScytheSpeech
+He tardado años en forjar esta Guadaña. Es una verdadera obra maestra. Es probablemente el arma más rápida que jamás podrás blandir. ¡Buena suerte!
+es.wishingWellThrowFirstCandyButton
+Tirar un caramelo al pozo
+es.wishingWellCandyIntroductionSpeech
+¡Hola, caminante! Soy el Pozo de los deseos. ¡Te concederé deseos a cambio de dulces! Cuando tires caramelos dentro de mí, curaré tus heridas.
+es.wishingWellThrewCandiesSpeech
+¡Tus heridas están curadas!
+es.wishingWellNoWoundSpeech
+¡No tienes heridas que curar!
+es.wishingWellThrowFirstLollipopButton
+Tirar una piruleta al pozo
+es.wishingWellLollipopIntroductionSpeech
+¡Hola, caminante! Soy el Pozo de los deseos. ¡Te concederé deseos a cambio de dulces! Cuando tires piruletas dentro de mí, las convertiré en caramelos.
+es.wishingWellThrewLollipopsSpeech
+¡Tus piruletas se convierten en caramelos! ¡Dos piruletas por caramelo.
+es.wishingWellThrowChocolateBarButton
+Tirar una tableta de chocolate al pozo
+es.wishingWellChocolateBarIntroductionSpeech
+¡Hola, caminante! Soy el Pozo de los deseos. ¡Te concederé deseos a cambio de dulces! Me encantan las tabletas de chocolate. Me pirran. Por cada tableta que tires dentro de mí, incluida esta, te concederé un encantamiento mágico.
+es.wishingWellThrewChocolateBarSpeech
+¿Qué objeto te gustaría encantar?
+es.wishingWellThrowPainAuChocolatButton
+Tirar un pain au chocolat al pozo
+es.wishingWellPainAuChocolatIntroductionSpeech
+¡Hola, caminante! Soy el Pozo de los deseos. ¡Te concederé deseos a cambio de dulces! Cuando tires un pain au chocolat dentro de mí, te daré un don muy especial. Elige sabiamente.
+es.wishingWellThrewPainAuChocolatSpeech
+¡Gracias por el pain au chocolat! Puedes escoger tu don.
+es.wishingWellChooseGift
+¡Escoge tu don!
+es.wishingWellChooseGiftButton
+Escoger
+es.wishingWellGiftDoneSpeech
+¡Listo! Ahora tienes un nuevo don. Aparecerá en el panel de estadísticas de tu inventario.
+es.wishingWellNoPossibleEnchantment
+No se puede encantar
+es.wishingWellChooseEnchantment
+Elige el encantamiento
+es.wishingWellEnchantButton
+Encantar
+es.wishingWellEnchantmentDoneSpeech
+¡Ya está! Tu objeto está encantado.
+es.pierLighthouseButton
+Ir al Faro en barca
+es.pierTheSeaButton
+Saltar al mar
+es.lonelyHouseOpenBox
+Abrir la caja
+es.lonelyHouseShakeBox
+Agitar la caja
+es.lonelyHouseBreakLock
+Romper la cerradura
+es.lonelyHouseKickBox
+Pegar una patada a la caja
+es.lonelyHouseAskTheBoxToOpenItself
+Pedir a la caja que se abra sola
+es.lonelyHouseLureTheBoxWithACandy
+Tentar a la caja con un caramelo
+es.lonelyHouseTakeTheBox
+Llevarte la caja, seguramente necesites una llave de todas formas
+es.lonelyHouseOpenBoxResult
+La caja está cerrada con llave
+es.lonelyHouseShakeBoxResult
+No ocurre nada
+es.lonelyHouseBreakLockResult
+La cerradura resiste
+es.lonelyHouseKickBoxResult
+El pie te duele un poco, pero no ocurre nada
+es.lonelyHouseAskTheBoxToOpenItselfResult
+... sabes que estás hablando con una caja, ¿verdad?
+es.lonelyHouseLureTheBoxWithACandyResult
+A la caja parece no importarle
+es.lonelyHouseTakeTheBoxResult
+Probablemente hay algo interesante en esta Candy Box.
+es.lollipopFarmConstructMill
+Construir un molino (10 000 piruletas)
+es.lollipopFarmFeedMill
+Surtir al molino
+es.lollipopFarmCurrentCandiesProduction
+Producción de caramelos actual
+es.lollipopFarmDigPond
+Cavar un estanque (100 000 piruletas)
+es.lollipopFarmBuyLolligator
+Comprar un piruledrilo (1200 caramelos)
+es.lollipopFarmLolligatorsConversionText
+Conversión caramelos -> piruletas activada
+es.lighthouseAskButton
+Preguntar
+es.lighthouseQuestionWho
+¿Quién eres?
+es.lighthouseQuestionWhoSpeech
+Soy un cíclope muy viejo.
+es.lighthouseQuestionWhat
+¿Qué haces aquí?
+es.lighthouseQuestionWhatSpeech
+Siempre vivo aquí, esperando a que un barco venga. Ha pasado mucho tiempo desde que viese un barco, pero debo quedarme aquí, mirando al mar, porque mi barco podría llegar.
+es.lighthouseQuestionWhyEatCandies
+¿Por qué querría comer caramelos?
+es.lighthouseQuestionWhyEatCandiesSpeech
+¡Porque son buenos para la salud!
+es.lighthouseQuestionCandyBox
+¿Qué es una Candy Box?
+es.lighthouseQuestionCandyBoxSpeech
+Es una caja muy antigua. Dicen que contiene todos los caramelos del mundo. La leyenda cuenta que quien consiga abrirla tendrá tantos caramelos que cualquier cosa sería posible.
+es.lighthouseQuestionDragon
+El Dragon me dijo que viniera aquí porque quiero caramelos.
+es.lighthouseQuestionDragonSpeech
+Ah, ya veo... Bueno, no puedo darte caramelos de forma directa, pero sí algo que es esencial para conseguir un MONTÓN de caramelos. Pero primero hay que ponerte a prueba. Porque lo que tengo no se le puede dar a cualquiera. Resuelve este puzle y será tuyo.
+es.lighthouseFoundStone
+¡Enhorabuena! Has pasado la prueba y encontrado la piedra. Es muy valiosa, pero solo es útil si tienes las otras tres piedras como esta. ¡Buena suerte!
+es.lighthouseFoundStoneAgain
+Buen trabajo, has resuelto el puzle de nuevo. Parece que te gusta.
+es.saveLocalSaveTitle
+Guardar por el navegador
+es.saveLocalSaveWhy
+Elige el guardado local si quieres seguir jugando en tu dispositivo y navegador actuales.
+es.saveLocalSaveWarning0
+Parece que tu navegador no soporta HTML5.
+es.saveLocalSaveWarning1
+Deberías actualizar tu navegador para poder usar la función de guardado local.
+es.saveLocalSaveChooseSlot
+Elige un slot para guardar:
+es.saveLocalSaveAutosaveEnabled
+Autoguardado activado
+es.saveLocalSaveChooseWhatToDo
+Elige qué hacer:
+es.saveLocalSaveSaveButton
+Guardar
+es.saveLocalSaveAutosaveButton
+Guardar cada 10 minutos
+es.saveLocalSaveDisableAutosaveButton
+Desactivar autoguardado
+es.saveFileSaveTitle
+Guardar por texto
+es.saveFileSaveWhy0
+Elige guardado por texto si:
+es.saveFileSaveWhy1
+Quieres seguir jugando en otro dispositivo o navegador
+es.saveFileSaveWhy2
+Si quieres compartir tu partida con alguien
+es.saveFileSaveWhy3
+Por alguna razón quieres vaciar la caché de tu navegador
+es.saveFileSaveWhy4
+(borrará tus partidas guardadas locales)
+es.saveFileSaveButton
+Obtener la partida actual en texto
+es.saveFileSaveWarning
+Ahora copia este texto en algún sitio (en un archivo, por ejemplo)
+es.saveLocalLoadTitle
+Cargar por navegador
+es.saveLocalLoadYouCan
+Puedes cargar una partida guardada local usando los enlaces siguientes:
+es.saveLocalLoadThanksTo
+Gracias a la magia de HTML5, deberías poder usar estos enlaces incluso sin estar conectado.
+es.saveFileLoadTitle
+Cargar por texto
+es.saveFileLoadPaste
+Pega el texto de la partida debajo y pulsa el botón \"Cargar\"
+es.saveFileLoadButton
+Cargar
+es.mountainsText0
+¡Has visto algo en las montañas!
+es.mountainsText1
+Parece interesante. Podría ser útil.
+es.mountainsTextButton
+Escalar la montaña para conseguirlo
+es.mountainsTextAfter
+¡Has encontrado un Pogo! Se ha añadido a tu inventario.
+es.secondHouseIntroSpeech
+Hola, soy el Mercader de caramelos. Haría cualquier cosa por caramelos. ¿Qué necesitas?
+es.secondHouseLollipop1Speech
+Esta es una piruleta con sabor a limón. ¡Mi favorita! Cuesta 60 caramelos, pero los merece.
+es.secondHouseLollipop2Speech
+Esta es una piruleta con sabor a fresa. Está rica. Me gusta su color rojo. ¡Solo 60 caramelos!
+es.secondHouseLollipop3Speech
+Esta piruleta sabe a calabaza. ¡Apuesto a que nunca has probado una! 60 caramelos y es tuya.
+es.secondHouseLollipopButtonText
+Comprar esta piruleta (60 caramelos)
+es.secondHouseMerchantHatSpeech
+Podría venderte mi sombrero, pero es bastante valioso, ¿sabes? Tendrás que darme un montón de caramelos por él. Digamos 1 millón de caramelos. Parece justo, ¿no?
+es.secondHouseMerchantHatButtonText
+Comprar el Sombrero del Mercader (1 000 000 caramelos)
+es.secondHouseTimeRingSpeech
+Este es un Anillo del tiempo. Es mágico. Te permite ralentizar el tiempo cuando estás en apuros.
+es.secondHouseTimeRingButtonText
+Comprar el Anillo del tiempo (500 caramelos)
+es.secondHouseLeatherGlovesSpeech
+Estos guantes de cuero están hechos de piel de camello, son de buena calidad. Tengo muchas existencias, por eso están tan baratos: ¡solo 300 caramelos!
+es.secondHouseLeatherBootsButtonText
+Comprar un par de Botas de cuero (300 caramelos)
+es.secondHouseLeatherBootsSpeech
+Estas botas de cuero de buena calidad están hechas de piel de camello. Mantendrán tus pies calientes.
+es.secondHouseLeatherGlovesButtonText
+Comprar un par de Guantes de cuero (300 caramelos)
+es.secondHouseChocolateBarSpeech
+Esta es una tableta de chocolate. No sé para qué sirve, pero resulta que es bastante rara, lo que explica su precio. ¡800 caramelos y es tuya!
+es.secondHouseChocolateBarButtonText
+Comprar la tableta de chocolate (800 caramelos)
+es.outsideTheHoleButton
+Saltar en este gran hoyo que hay en el suelo
+es.theCaveExitText0
+Por fin llegaste a la salida de la cueva.
+es.theCaveExitText1
+Se ve un gran bosque desde aquí.
+es.theCaveExitButtonText
+Salir de la cueva
+es.theCaveFirstSentenceWentStraight
+Sigues de frente.
+es.theCaveFirstSentenceWentLeft
+Tomas el camino de la izquierda.
+es.theCaveFirstSentenceWentRight
+Tomas el camino de la derecha.
+es.theCaveFirstSentenceYouAre
+Estás en una cueva. Hay tres caminos frente a ti.
+es.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Ves algo raro en el suelo delante de ti.
+es.theCavePattern_ChocolateBarNowSeeChocolateBar
+Ves una tableta de chocolate delante de ti.
+es.theCavePattern_TreasureMapSentence
+Ves pequeñas rocas dispuestas de una forma extraña.
+es.theCavePattern_MonkeyWizardSentence
+Te topas con un mono mago desnudo.
+es.theCavePattern_MonkeyWizardButton
+Desafiarlo
+es.theCavePattern_OctopusKingSentence
+Te topas con el Rey Pulpo. Parece repugnante.
+es.theCavePattern_OctopusKingButton
+Desafiarlo
+es.fortressInsideText0
+Estás dentro de la Fortaleza del desierto.
+es.fortressInsideText1
+Puedes elegir entre tres puertas.
+es.fortressInsideText2
+Cada una de ellas lleva a una gran sala con un tesoro al final.
+es.fortressInsideEnterRoom1
+Entrar en la primera sala
+es.fortressInsideEnterRoom2
+Entrar en la segunda sala
+es.fortressInsideEnterRoom3
+Entrar en la tercera sala
+es.treasureButtonDig
+Cavar
+es.treasureButtonYouFound
+¡Has encontrado tres tabletas de chocolate!
+es.sorceressHutHello
+Hola, soy la Hechicera. Podría enseñarte un par de cosas de magia. También te puedo dar algún objeto interesante o lanzar un hechizo para ti. ¡Pero todo tiene un precio! Y el precio serán piruletas. Un montón de piruletas.
+es.sorceressHutClickedGrimoire
+Este es un Grimorio hecho para principiantes. Si lo llevas en tus misiones, podrás lanzar hechizos simples pero útiles. ¡Lo necesitas! Solo 5000 piruletas.
+es.sorceressHutBuyGrimoireButton
+Comprar este Grimorio (5 000 piruletas)
+es.sorceressHutBuyGrimoireSpeech
+¡Gracias por comprarlo! Con este Grimorio podrás lanzar tres hechizos. ¡Mucha suerte!
+es.sorceressHutClickedGrimoire2
+Este es un Grimorio avanzado. Si lo llevas en tus misiones, podrás lanzar dos hechizos avanzados. Lo escribí yo misma y no fue fácil. 20 000 piruletas es un precio justo.
+es.sorceressHutBuyGrimoire2Button
+Comprar este Grimorio (20 000 piruletas)
+es.sorceressHutBuyGrimoire2Speech
+¡Gracias por comprarlo! Con este Grimorio podrás lanzar dos hechizos. ¡Úsalos sabiamente!
+es.sorceressHutClickedCauldron
+Este es mi caldero. Me permite preparar pociones mágicas. Podría vendértelo, pero es muy valioso... Te costará 100 000 piruletas.
+es.sorceressHutBuyCauldronButton
+Comprar el Caldero (100 000 piruletas)
+es.sorceressHutBuyCauldronSpeech
+¡Muchas gracias! ¡100 000 piruletas para mí! También te he dado un manual de preparación de pociones. Te será útil.
+es.sorceressHutClickedHat
+¡La verdad es que mi sombrero es muy chulo! Pero no te lo puedo vender. Es muyyyyy valioso. En serio, no puedo. No insistas. No. No, no, no debería hacerlo. Venga, te lo cambiaré, pero por 1 000 000 000 piruletas. De todas formas, probablemente no puedas pagar eso.
+es.sorceressHutBuyHatButton
+Comprar el Sombrero de la Hechicera (1 000 000 000 piruletas)
+es.sorceressHutBuyHatSpeech
+¡Mil millones de piruletas para mííííí! Pero ya no tengo ese sombrero... pero mil millones de piruletas, ¡guau...! Ha merecido la pena.
+es.cauldronPreviousPageButton
+Página anterior
+es.cauldronNextPageButton
+Página siguiente
+es.cauldronWhatYouWantToPut
+Cosas que quieres meter en el caldero
+es.cauldronWhatIsIn
+Cosas que hay en el caldero
+es.cauldronWhatYouCanDo
+Lo que puedes hacer con ellas
+es.castleBigRoomComment
+Una sala grande
+es.castleARoomComment
+Una sala
+es.castleADarkRoomComment
+Una sala oscura
+es.castleCastleEntranceComment
+La entrada al Castillo
+es.castleTowerEntranceComment
+La entrada a la Torre
+es.castleNougatMonsterComment
+Atacar al Monstruo de guirlache gigante
+es.castleGuardsComment
+Atacar a los guardias
+es.castleStairsComment
+Escaleras
+es.buttonBackToTheCastle
+Volver al Castillo
+es.castleBigRoomHovenSpeechSad
+¡Hola! Soy un horno de pan muy viejo. Solía hornear miles de pasteles muy ricos, pero ya no me usa nadie. Quizás... quizás puedas ayudarme. ¡Simplemente dame unos pocos dulces! No te preocupes, ¡no te arrepentirás! Puedes confiar en mí.
+es.castleBigRoomHovenNotEnough
+Vaya... No tienes suficientes dulces, no puedo hacer nada. Así soy inútil. Soy el horno de pan inútil, así es como deberías llamarme.
+es.castleBigRoomHovenSpeechMadePainAuChocolat
+¡Sí! ¡Muchas gracias! He usado 100 caramelos y una tableta de chocolate, y te he hecho... ¡un pain au chocolat! Es mi dulce preferido. ¡Espero que a ti tambien te guste!
+es.castleBigRoomHovenSpeechHappy
+Si quieres que te haga más dulces, ¡solo dímelo! Me encantaría ayudarte.
+es.castleBigRoomHovenSpeechHappyNotEnough
+Vaya, es una pena que no tengas suficientes dulces. Necesito 100 caramelos y una Tableta de chocolate. ¡Vuelve cuando lo tengas!
+es.castleBigRoomHovenLetHovenTakeButton
+Darle al Horno los dulces que quiera
+es.castleBigRoomHovenThanks
+¡Gracias, Horno!
+es.dragonStopTickling
+¡Eh, tú! Por favor, deja de hacerme cosquillas.
+es.dragonStopTicklingButton
+Oh, vaya, perdona. Pensaba que debía atacarte.
+es.dragonTalking
+Soy el Dragón y este es mi castillo. Veo que has conseguido entrar, debes de ser muy valiente... Me encantaría ayudar a alguien como tú. ¿Qué estás buscando?
+es.dragonTalkingChallengeButton
+Desafío
+es.dragonTalkingFameButton
+Fama
+es.dragonTalkingCandiesButton
+Caramelos
+es.dragonTalkingChallengeSpeech
+Ah, ¿así que quieres un desafío? Creo que deberías viajar al mismo Infierno. Por todos es sabido que el Diablo es un oponente duro. ¡Súbete a mi espalda y te llevaré!
+es.dragonTalkingFameSpeech
+La mejor forma de hacerse famoso es enfrentarse al mismo desarrollador. Sé dónde vive y te puedo llevar allí. Pero prepárate, no será fácil.
+es.dragonTalkingCandiesSpeech
+Últimamente, todo lo que queremos son caramelos, ¿no? Creo que un amigo mío podría ayudarte con eso. Lo reconocerás fácilmente: solo tiene un ojo. Simplemente dile que me conoces.
+es.dragonTalkingChallengeAnswer
+¡Entonces vamos!
+es.dragonTalkingFameAnswer
+Estoy listo
+es.dragonTalkingCandiesAnswer
+¡Vale, gracias!
+es.buttonBackToCastle
+Volver al Castillo
+es.talkingCandySpeechNoBox
+¡Ey! Soy el Caramelo parlante. Casi te pasas el juego. Solo te falta encontrar la Candy Box. Está en una casa fuera del Pueblo. ¡Este es el último paso!
+es.talkingCandySpeech1
+¡Ey! Soy el Caramelo parlante. Enhorabuena, ¡te has pasado el juego! Abriré la Candy Box por ti. Este es tu premio. ¿Quieres que continúe?
+es.talkingCandySpeech2
+¡Hecho! Ahora puedes entrar en ella. Espero que el juego te haya gustado :)
+es.talkingCandyButton
+¡¡Sí!!
+es.lighthousePuzzleResetButton
+Reiniciar

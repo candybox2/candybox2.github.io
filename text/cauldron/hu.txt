@@ -1,0 +1,24 @@
+hu.cauldron.page0
+Főzési útmutató
+hu.cauldron.page1
+Összefoglaló / 2. oldal : Gyógyító ital / 3. oldal : Teknős ital / 4.-5. oldal : Anti-gravitációs ital / 6.-7. oldal : Őrjítő ital / 8.-9. oldal : A P ital / 10.-11. oldal : Az X ital
+hu.cauldron.page2
+Gyógyító ital / A gyógyító italt a legkönnyebb kifőzni, de tényleg. Csak cukorka kell hozzá. A küldetések közben felgyógyít téged 100 életerő ponttal. / Elkészítés : - Rakj 100 cukorkát az üstbe - Keverd pár másodpercig - Rakd bele üvegekbe / Akárcsak a többi italnál, ennek mennyiségét is többszörözheted. Például ha 300 cukorkát használsz 100 helyett, akkor 3 életerő italt fogsz kapni.
+hu.cauldron.page3
+Teknős ital / A teknős italt egy kicsit nehezebb elkészíteni, mint a gyógyító italt. Ehhez cukorkákra és nyalókákra is szükséged lesz. / Ha ezt megiszod egy küldetés közben, akkor teknőssé változol. Lassabban fogsz mozogni, de ugyanakkor jobban ellenállsz majd az ellenség támadásainak. / Elkészítés : - Rakj 50 cukorkát az üstbe - Adj hozzá 500 nyalókát - Keverd meg több vagy kevesebb mint 10 másodpercig - Hagyd abba a keverést - Adj hozzá 50 cukorkát - Keverd meg újra egy pár pillanatig - Rakd bele üvegekbe / És most jön a legfontosabb, amit nem feledhetsz el : Ha teknősbéka lettél, NEHOGY felfordulj. Nem fogsz tudni felkelni.
+hu.cauldron.page4
+Anti-gravitációs ital / Ez az ital, amit a híres Isaac varázsló talált fel, ellenállóvá tesz téged pár másodpercre a Föld gravitációs erejének. / Nagyon hasznos lehet egy ugrás után (ha nem tudsz ugrani, akkor jobban teszed, ha sürgősen beszerzel egy pogo rudat). / Nem könnyű elkészíteni, mivel fel kell hevíteni az üstöt, és figyelemmel kell kísérni a hőmérsékletét. / Elkészítés : - Rakj 1000 cukorkát az üstbe - Hevítsd fel, amíg langyos nem lesz - Hagyd abba a melegítését - Adj hozzá 1000 cukorkát - Hevítsd addig az üstöt, amíg el nem kezd forrni benne a víz - Rakd bele üvegekbe
+hu.cauldron.page5
+Anti-gravitációs ital : példa a használatra / "Átrepül a szakadék felett" / *megissza az italt*
+hu.cauldron.page6
+Őrjítő ital / Az őrjítő ital egy őrült harcossá változtat téged. / A hátránya az, hogy elhasználja a fél életerődet. / Az előnye viszont, hogy kétszer többet fogsz sebezni pár másodpercig! / A kifőzése nagyon egyszerű, de rengeteg nyalókába kerül. / Itt az elkészítése : - Rakj 20 000 nyalókát az üstbe - Addig keverd őket, amíg bele nem fájdul a karod - Rakd bele üvegekbe
+hu.cauldron.page7
+Fontos tudnivaló az őrjítő itallal kapcsolatban / NE adj hozzá cukorkát az ital kifőzése közben. / Komolyan, egyet se. / De tényleg. / Az eredmény váratlan lehet.
+hu.cauldron.page8
+A P ital / A P ital eléggé fura. Sose tudhatod, hogy mit fog csinálni. Felgyógyíthat, vagy sebezhet is téged, erősebbé vagy gyengébbé válhatsz, vagy akár valakivé (valamivé?) változtathat. / És nehéz kifőzni! / Elkészítés : - Rakj 500 cukorkát az üstbe - Keverd pár másodpercig - Hagyd abba a keverést - Rakj százszor annyi cukorkát az üstbe, mint amennyi ideig keverted. Tehát ha 4 másodpercen át keverted, akkor 400 cukorkára lesz szükséged. Ezt a mennyiséget ne szorozd be, még akkor sem, ha több mint egy italt szeretnél kifőzni. - Hevítsd fel a vizet, amíg langyos nem lesz - Hagyd abba a melegítését - Adj hozzá pár nyalókát - Keverd meg - Rakd bele üvegekbe!
+hu.cauldron.page9
+Hogy kihasználd a P italt / Sok szabály van, amit követhetsz, hogy jobb eredményt kapj a P ital elfogyasztásakor. Habár ezen szabályokat empirikusan kell értelmezni, úgy tűnik egész jól működnek. / - Minél töbhet fogyasztasz el a P italból, annál furább hatásokat kaphatsz. / - Ha kevés az életerőd, akkor talán meg kellene innod egy P italt. / - Azon állatok amik P italt fogyasztanak általában nagyon rosszul reagálnak rá.
+hu.cauldron.page10
+Az X ital / Az X ital egy legenda. Állítólag bárkinek is sikerül kifőznie és meginnia ezt, az eljutna egy olyan helyre ahol még senki se járt azelőtt. / Nem tudom, hogy ez most tényleg legenda vagy sem, de leírok róla mindent ebbe a könyvbe, amit csak tudok róla. / Az X italt rengeteg régi legendában és alkímiai könyvben megemlítik. Itt egy összegzés az információkról, amik segítségével talán te magad is kifőzheted. Sok szerencsét! / - Állítólag 5 lépés kell az X ital elkészítéséhez. / - Állítólag nem kell nyalókát használni, kivéve az egyik lépéshez. / - Állítólag a többi itallal ellentétben az X italból nem lehet egyszerre többet készíteni.
+hu.cauldron.page11
+- Végezetül ezt a mondókát szokták felhozni az X itallal kapcsolatban : / Az első napon egy nagyon Édes dolognak adott életet. De odakint hideg volt. / A második napon az Édeset odaadta egy apának. De odakint hideg volt. / A harmadik napon az Édeset odaadta egy testvérnek. De odakint hideg volt. / A negyedik napon az Édeset odaadta egy barátnak. De odakint hideg volt. / Az ötödik napon az Édeset odaadta egy szeretőnek, és egyszerűnek, vagy butának tűnhet, de az Édes most boldog volt, és odakint forróság volt.

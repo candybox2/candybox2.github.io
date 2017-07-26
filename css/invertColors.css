@@ -1,0 +1,40 @@
+/* Body */
+
+body, #centeredContent{
+    background-color: black;
+    color: white;
+}
+
+#statusBar{
+    background-color: rgb(0, 0, 0);
+}
+
+/* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
+
+.asciiRealButton{
+    border-color: rgb(185, 179, 171);
+    background-color: rgb(35, 37, 42);
+}
+
+.asciiRealButton:hover{
+    background-color: rgb(17, 20, 24);
+}
+
+/* Tooltips */
+
+.tooltip{
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Comments */
+
+.comment{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Special class needed when we invert colors, used by elements which want to keep the normal black text when colors are inverted (the buttons to cast spells while questing, for example) */
+
+.keepBlackTextWhenInverted{
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,25 @@
+4
+
+
+           Anti-gravity potion
+           ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+  This potion, which was invented by the
+well-known sorcerer Isaac, allows you to
+resist to the earth's gravitation force
+for a few seconds.
+
+  It is especially useful after jumping
+(if you can't jump, you should seriously
+consider obtaining a pogo stick).
+
+  It isn't very easy to brew, you will
+need to heat up your cauldron and watch
+the temperature carefully.
+
+  Instructions :
+   - Put 1000 candies in your cauldron
+   - Heat up until the water is lukewarm
+   - Stop heating up
+   - Add 1000 candies
+   - Heat up until the water is boiling
+   - Put into bottles

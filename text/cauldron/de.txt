@@ -1,0 +1,24 @@
+de.cauldron.page0
+Brauhandbuch
+de.cauldron.page1
+Inhaltsverzeichnis / Seite 2 : Heiltrank / Seite 3 : Schildkröten-Trank / Seiten 4-5 : Schwebetrank / Seiten 6-7 : Berserker-Trank / Seiten 8-9 : Der P-Trank / Seiten 10-11 : Der X-Trank
+de.cauldron.page2
+Heiltrank / Der Heiltrank gehört zu denen, die sich am einfachsten brauen lassen. In Quests wird er dich mit 100 Lebenspunkten heilen. / Zubereitung : - 100 Bonbons in den Kessel geben - Für einige Sekunden umrühren - In Flaschen abfüllen / Wie bei jedem Trank kannst du die Mengen anheben. Für 300 Bonbons bekommst du beispielsweise 3 Heiltränke.
+de.cauldron.page3
+Schildkröten-Trank / Der Schildkröten-Trank ist ein wenig komplizierter zu brauen als der Heiltrank. Du wirst Bonbons und Lutscher benötigen. / In einem Quest verwandelt er dich in eine Schildkröte. Du wirst dich langsamer bewegen, aber dafür widerstandsfähiger sein. / Zubereitung : - 50 Bonbons in den Kessel geben - 500 Lutscher in den Kessel geben - Etwa 10 Sekunden umrühren - Aufhören, umzurühren - 50 Bonbons hinzugeben - Für einige Sekunden umrühren - In Flaschen abfüllen / Was du nie vergessen solltest : Drehe dich als Schildkröte NIE auf den Rücken. Du würdest nicht wieder aufstehen können.
+de.cauldron.page4
+Schwebetrank / Dieser Trank, erfunden vom bekannten Hexenmeister Isaac, erlaubt es dir, die Gravitationsgesetze für einige Sekunden außer Kraft zu setzen. / Er ist besonders nach dem Springen hilfreich (und falls du nicht springen kannst, solltest du erwägen, dir einen Springstock anzuschaffen). / Er ist nicht einfach zu brauen, du wirst die Temperatur deines Kessels ganz genau überwachen müssen. / Zubereitung : - 1000 Bonbons in den Kessel geben - Wasser erhitzen, bis es lauwarm ist - Aufhören, zu erhitzen - 1000 Bonbons hinzugeben - Wasser erhitzen, bis es lauwarm ist - In Flaschen abfüllen
+de.cauldron.page5
+Schwebetrank : Fallbeispiel / "Über die Schlucht fliegen" / *trinkt den Trank*
+de.cauldron.page6
+Berserker-Trank / Der Berserker-Trank verwandelt dich in einen Berserker. / Der Nachteil ist, dass du die Hälfte deiner Lebenspunkte verlierst. / Der Vorteil ist, dass du für einige Sekunden doppelten Schaden austeilst! / Diesen Trank zu brauen ist sehr einfach, aber du wirst eine Menge Lutscher benötigen. / Zubereitung : - 20 000 Lutscher in den Kessel geben - Umrühren, bis die Arme schmerzen - In Flaschen abfüllen
+de.cauldron.page7
+Wichtiger Hinweis bezüglich des Berserker-Tranks / Gib während des Brauvorgangs KEINE Bonbons hinzu. / Kein einziges. / Wirklich. / Die Folgen wären von ungeahntem Ausmaß.
+de.cauldron.page8
+Der P-Trank / Der P-Trank ist seltsam. Du kannst nicht voraussagen, was er auslösen wird. Er könnte dich heilen, oder die Schaden zufügen, dich stärker oder schwächer machen, oder dich sogar in etwas anderes verwandeln. / Außerdem ist es schwierig, ihn zu brauen! / Zubereitung : - 500 Bonbons in den Kessel geben - Für einige Sekunden umrühren - Aufhören, umzurühren - 100 Bonbons für jede Sekunde, in der du umgerührt hast, hinzugeben. Bei 4 Sekunden umrühren wären das 400 Bonbons. Die Mengen hier nicht abändern. - Wasser erhitzen, bis es lauwarm ist - Aufhören, zu erhitzen - Einige Lutscher hinzugeben - Umrühren - In Flaschen abfüllen!
+de.cauldron.page9
+Nutze den P-Trank weise / Es gibt einige Regeln, denen du folgen kannst, um alles aus P-Tränken herauszuholen. Diese Regeln scheinen gut zu funktionieren, obgleich sie nur auf Erfahrungswerten beruhen. / - Je mehr P-Tränke du trinkst, desto merkwürdigere Auswirkungen scheinen sie zu haben. / - Wenn deine Gesundheit sehr niedrig ist, solltest du am besten einen P-Trank trinken. / - Tiere scheinen auf P-Tränke sehr negativ zu reagieren.
+de.cauldron.page10
+Der X-Trank / Um den X-Trank rankt sich eine Legende. Es wird gesagt, dass ein jeder, der imstande ist, ihn zu brauen, an einen Ort reisen würde, den noch keiner zuvor gesehen hätte. / Ich weiß nicht, ob dieser Trank wirklich nur eine Legende ist oder nicht, aber ich werde in dieses Buch alles schreiben, was ich über ihn weiß. / Der X-Trank wird vielen alten Legenden und Alchemiebüchern erwähnt. Es folgt eine Zusammenfassung über den Brauvorgang. Viel Glück! / - Für das Brauen des X-Tranks scheinen 5 Schritte notwendig zu sein. / - Bis auf einen Schritt sollen keine Lutscher verwendet werden. / - Angeblich ist es unmöglich, mehrere X-Tränke gleichzeitig zu brauen.
+de.cauldron.page11
+- Das folgende Gedicht wird häufig zitiert, wenn es um den X-Trank geht: / Am ersten Tag wurde das allererste Bonbon geboren. Aber draußen war es kalt. / Am zweiten Tag bekam das Bonbon einen Vater. Aber draußen war es kalt. / Am dritten Tag bekam das Bonbon einen Bruder. Aber draußen war es kalt. / Am vierten Tag bekam das Bonbon einen Freund. Aber draußen war es kalt. / Am fünften Tag bekam das Bonbon einen Liebhaber, und das mag schlicht oder naiv klingen, aber jetzt war das Bonbon glücklich. Und draußen war es warm.

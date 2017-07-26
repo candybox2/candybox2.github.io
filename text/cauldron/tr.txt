@@ -1,0 +1,24 @@
+tr.cauldron.page0
+İksir rehberi
+tr.cauldron.page1
+Özet / Sayfa 2 : Can iksiri / Sayfa 3 : Kaplumbağa iksiri / Sayfa 4-5 : Yer çekimini yenme iksiri / Sayfa 6-7: Kudurma iksiri / Sayfa 8-9 : P iksiri / Sayfa 10-11 : X iksiri
+tr.cauldron.page2
+Can iksiri / Can iksiri yapması en kolaylarından biri, gerçekten. Sadece şeker kullanıyorsun. Görevlerde kullanıldığında sana 100 can puanı vererek iyileştirir. / Açıklama: - Kazana 100 tane şeker koy - Bir kaç saniyeliğine karıştır.  -Şişeye koy / Herhangi bir iksir gibi, miktarları tabii ki katlayabilirsin. Örneğin 100 şeker yerine 300 şeker kullanırsan 3 tane can iksiri elde edersin.
+tr.cauldron.page3
+Kaplumbağa iksiri / Kaplumbağa iksirini yapmak can iksirini yapmaktan bir tık daha zor. Hem şekere hem lolipopa ihtiyacın var. / Bu iksiri görevlerde içersen, seni bir kaplumbağaya çevirir. Daha yavaş hareket edersin ama düşmanlarının saldırılarına daha dayanıklı olursun. / Açıklama: -Kazana 50 şeker koy. -Kazana 500 lolipop ekle -Aşağı yukarı 10 saniye karıştır -Karıştırmayı durdur -50 şeker ekle -Bir kaç saniye tekrar karıştır -Şişelere koy. / Ve şimdi unutmaman gereken en önemli şey: kaplumbağa olduğun zaman ters dönME. Bir daha kalkamayabilirsin.
+tr.cauldron.page4
+Yer çekimini yenme iksiri / Bu iksir, meşhur sihirbaz Isaac tarafından icat edilmiş, bir kaç saniyeliğine Dünyanın yer çekimine karşı direnmeni sağlar. / Özellikle zıpladıktan sonra kullanışlıdır (eğer zıplayamıyorsan, cidden bir pogo çubuğu bulmayı düşünmelisin). / Yapması çok kolay değil, kazanını ısıtmalı ve sıcaklığa dikkatlice bakmalısın. / Açıklama :-Kazana 1000 şeker koy -Su ılık olana kadar ısıt -Isıtmayı durdur -1000 şeker ekle -Su kaynayana kadar ısıt -Şişelere koy
+tr.cauldron.page5
+Yer çekimini yenme iksiri : kullanma durumları / "Boşluğun üzerinden uçarken" / *iksiri içer*
+tr.cauldron.page6
+Kudurma iksiri / Kudurma iksiri seni vahşi bir savaşçıya çevirir. / Dezavantajları, canının yarısını tüketir. / Avantajları, hasarını birkaç saniyeliğine iki katına çıkarır! / Bu iksiri yapmak çok basit, fakat çok miktarda lolipopa ihtiyacın olacak. / Açıklamalar şöyle: -20 000 lolipopu kazana koy -Kolların acıyana kadar karıştır -Şişelere koy
+tr.cauldron.page7
+Kudurma iksiriyle ilgili önemli bir bildiri / Bu iksiri yaparken SAKIN şeker eklemeyin. / Yani, tek bir tane bile. / Gerçekten / Sonuçlar beklenmedik olacaktır.  
+tr.cauldron.page8
+P iksiri /P iksiri ilginçtir. Ne yapacağını tahmin edemezsin. Seni iyileştirebilir ya da hasar verebilir, seni güçlendirir ya da zayıflatabilir, hatta seni başka birine (bişeye?) çevirebilir. / Yapması da zordur! / Açıklamalar: -Kazana 500 şeker koy -Bir kaç saniye karıştır -Karıştırmayı durdur -Kaç saniye karıştırdıysan onun 100 katı şeker ekle. Örneğin 4 saniye karıştırdıysan 40 şeker eklemelisin. Bu miktarı katlama, eğer birden fazla iksir yapmak istiyorsan bile değiştirme. Suyu ılık olana kadar ısıt -Isıtmayı durdur -Biraz lolipop ekle -Karıştır -Şişelere koy!
+tr.cauldron.page9
+P iksirini kullanma durumları / P iksirini kullanırken daha iyi sonuçlar alman için uygulaman gereken bir kaç kural var. Bu kurallar deneysel olarak tanımlansa da, gayet iyi işliyor gibi görünüyor. / -Ne kadar P iksiri kullanırsan, o kadar ilginç etkileri olurmuş. / -Eğer canın azsa muhtemelen P iksiri içmelisin. / -P iksirini içen hayvanlar çok kötü bir şekilde etkileniyormuş. 
+tr.cauldron.page10
+X iksiri / X iksiri bir efsanedir. Derler ki, iksiri yapıp içmeye mazhar olan kişi kimsenin daha önce gitmediği bir yere seyahat eder. / Bu iksirin efsane olup olmadığını bilmiyorum ama hakkında bildiğin her şeyi buraya yazacağım. / X iksirinden eski alşimi kitaplarında çokça bahsedilmektedir. Burada yapmana yardım edebilecek bilgilerin özeti var. İyi şanslar! / Bu iksiri yapmak için gerekli 5 temel aşama vardır. / -Denir ki, hiç lolipop gerekmez, bir aşama hariç. / -Denir ki, diğer iksirler gibi tek seferde birden çok X iksiri yapamazsın. 
+tr.cauldron.page11
+-Son olarak, konu X iksiri olduğunda sıradaki şiir anılır: / Günlerden birincisinde,O, ilk Tatlıyı doğurdu. Ama dışarısı soğuktu. / Günlerden ikincisinde, O, tatlıya bir baba verdi. Ama dışarısı soğuktu. / Günlerden üçüncüsünde, O, tatlıya bir kardeş verdi. Ama dışarısı soğuktu. / Günlerden dördüncüsünde, O, şekere bir arkadaş verdi. Ama dışarısı soğuktu. / Günlerden beşincisinde, O, şekere bir sevgili verdi, ve belki basit veya saçma görünse de, Tatlı artık mutluydu, ve dışarısı sıcaktı.

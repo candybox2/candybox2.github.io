@@ -1,0 +1,690 @@
+hu.mapVillageComment
+A falu
+hu.mapFortressComment
+A sivatagi erőd
+hu.mapATreeComment
+Egy fa
+hu.mapTheDesertComment
+A sivatag
+hu.mapWishingWellComment
+Egy kívánságkút
+hu.mapLonelyHouseComment
+Egy magányos ház
+hu.mapForestComment
+Az erdő
+hu.mapCastleEntranceComment
+A kastély bejárata
+hu.mapCastleComment
+A kastély
+hu.mapDragonComment
+Egy sárkány
+hu.candyBoxEatCandiesButton
+Minden cukrot megesz
+hu.candyBoxThrowCandiesButton
+10 cukrot a földre dob
+hu.mapVillageAHouseComment
+Egy ház
+hu.mapVillageForgeComment
+A kohó
+hu.buttonBackToTheMap
+Vissza a térképre
+hu.mapSorceressHutComment
+Egy banya kunyhója
+hu.buttonBackToTheVillage
+Vissza a faluba
+hu.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Üdv, én vagyok a mókus. Tudok neked cukorkát és rengeteg egyebet adni. Tudom, hogy mennyire szereted a cukorkát. De én olyan magányos vagyok ebben az erdőben.
+hu.mapATreeIntroductionButton
+Hogyan segíthetek neked?
+hu.mapATreeFirstQuestion # INFORMAL PRONOUN
+Kérdéseket fogok feltenni neked. Ha helyesen válaszolsz, megkapod a legédesebb édességeket! Az első : tényleg szereted a cukorkákat? (angolul válaszolj)
+hu.mapATreeSecondQuestion # INFORMAL PRONOUN
+Pontosan! Tessék, itt van 20 cukorka. Egészítsd ki ezt a betűsorozatot és egy újabb jutalmat kapsz: A, K, R, O, K, U, ?
+hu.mapATreeThirdQuestion # INFORMAL PRONOUN
+Cukorka! Már kapsz is tőlem 100 darabot. Következő kérdés : hány cukorkája van a világ legcukrosabb emberének?
+hu.mapATreeFourthQuestion # INFORMAL PRONOUN
+Tessék, 500 cukorka neked! A következő jutalom még érdekesebb lesz... Itt egy rejtvény : Egy ősi erdőben nő egy nagyon öreg fa, amin a világ leginteligensebb állatai élnek. Állítólag ennek a fának 60 gyökere, 360 ága és 2160 levele van. Hány jelölés van a fa törzsén?
+hu.mapATreeFifthQuestion # INFORMAL PRONOUN
+Gratulálok! Valóban a saját fámról beszéltem. Itt van neked 3 nyalóka. Okosan használd fel őket! Itt a következő rejtvény : Ha teliholdkor beledobom a sárga sapkámat a vörös tengerbe, mi történik a sárga sapkámmal? (angolul válaszolj)
+hu.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Helyes a válasz! Nem is volt annyira nehéz. Adok neked három csokoládé rudat! A következő jutalomhoz kissé megváltoztatjuk a szabályokat. Játszanod kell velem! Készen állsz?
+hu.mapATreeTicTacToeIntroButton
+Naná!
+hu.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Amőbázni fogunk, háromszor hármas táblán. Te leszel az X, és én leszek a O. Felváltva fogunk játszani, és a cél az, hogy három jelet rakjunk le egymás után egy sorba. Te kezdesz elsőként!
+hu.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Teljesen betelt a tábla, és egyikünk se tudott hármat sorba rakni: senki se nyert! Újra akarod próbálni?
+hu.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Hármat raktam egy sorba! Én győztem. Újra akarod próbálni?
+hu.mapATreeTicTacToeTryAgainButton
+Igen, akarom!
+hu.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Váó, hát ez egy nem várt mozdulat volt. De nem ellenkezhetek, hiszen hármat raktál egy sorba. Győztél! Fogd ezt a kulcsot! Ez a falu egyik házának ajtaját nyitja.
+hu.mapATreeTicTacToeAnymoreSweet
+Köszönöm mókus! Van még kihívásod a számomra?
+hu.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Sajnos nincs már számodra más kihívásom... De jó móka volt játszani veled, köszönöm!
+hu.buttonExitQuestKeeping
+Kilépsz a küldetésből (és megtartod amit találtál)
+hu.buttonExitQuestNoKeeping
+Kilépsz a küldetésből (és nem tartod meg amit találtál)
+hu.buttonExitQuestNoKeepingBecauseLose
+Kilépsz a küldetésből (és nem tartod meg amit találtál mert elbuktál)
+hu.mapVillageLockedHouseComment
+Egy bezárt ház
+hu.mapVillageForgeIntroductionSpeech
+Üdv! Én egy kovács vagyok. Eladhatok neked pár fegyvert és felszerelést.
+hu.mapVillageForgeIntroductionSpeechNoMoreToSell
+Üdv! Én egy kovács vagyok. Sajnos nincs mit eladnom a számodra. Talán gyere vissza később!
+hu.mapVillageFifthHouseNoWeaponSpeech
+Üdv. A pincém tele van patkányokkal, és el kellene intéznem őket... bárcsak valaki akinél fegyver van segíthetne nekem...
+hu.mapVillageFifthHouseWeaponSpeech
+Hé, te! Úgy látom nálad van fegyver! Ha megölöd a patkányokat akik a pincémben ólálkodnak, akkor megjutalmazlak!
+hu.mapVillageFifthHouseAgree
+Menjünk hát!
+hu.mapVillageFifthHouseCellarDone
+Köszönöm, hogy elintézted őket! Itt van egy nagyon értékes jutalom a számodra : a világ térképe. Szerintem te többet fogod használni mint én.
+hu.mapVillageTheShopComment
+A bolt
+hu.mapBridgeComment
+A híd
+hu.mapFarmComment
+A nyalóka farm
+hu.mapCaveEntranceComment
+Egy barlang bejárata
+hu.mapLighthouseComment
+A világítótorony
+hu.mapPierComment
+A kikötő
+hu.mapTheHoleComment
+A gödör
+hu.candyBoxRequestStatusBarUnlocked
+Kérj egy új dolgot a készítőtől (30 cukorka)
+hu.candyBoxRequestStatusBarUnlockedCfg
+Kérj még egyet (5 cukorka)
+hu.candyBoxRequestStatusBarUnlockedSave
+Kérj újra egyet (5 cukorka)
+hu.candyBoxRequestStatusBarUnlockedHealthBar
+Kérj valami sokkal izgalmasabbat (5 cukorka)
+hu.candyBoxRequestStatusBarUnlockedMap
+Az utolsó kérés! Ez meg fogja érni a cukorkákat. (10 cukorka)
+hu.candyBoxRequestStatusBarUnlockedComment
+Elérhető lett a státusz fül! (fent)
+hu.candyBoxRequestStatusBarUnlockedCfgComment1
+Mostantól eléred a konfigurációs fület.
+hu.candyBoxRequestStatusBarUnlockedCfgComment2
+Megváltoztathatod a játék nyelvét, ha akarod.
+hu.candyBoxRequestStatusBarUnlockedSaveComment
+Hirtelen felbukkant egy mentés fül!
+hu.candyBoxRequestStatusBarUnlockedHealthBarComment
+Itt van 100 életerő pont. Nagyon hasznosak lesznek.
+hu.cfgChooseLanguage
+Válassz nyelvet :
+hu.cfgInvertColors
+Megfordítod a színeket?
+hu.gridItemMainMapName
+A térkép
+hu.gridItemMainMapDescription
+Egy térkép a világról
+hu.gridItemPogoStickName
+Pogo rúd
+hu.gridItemPogoStickDescription
+Ezzel a tárggyal ugrálni tudsz a küldetéseken!
+hu.gridItemTimeRingName
+Egy idő gyűrű
+hu.gridItemTimeRingDescription
+Ez a tárgy egy új képességgel ruház fel a küldetéseken : le tudod lassítani az időt. Ha túl gyors számodra az akció, használd az idő gyűrűt!
+hu.gridItemThirdHouseKeyName
+A harmadik ház kulcsa
+hu.gridItemThirdHouseKeyDescription
+Ezzel a kulccsal bejuthatsz a falu harmadik házába.
+hu.gridItemFeatherName
+Egy sivatagi madár tolla
+hu.gridItemFeatherDescription
+hu.ek a varázslatos tollnak a segítségével magasabbra ugorhatsz a pogo rúddal!
+hu.gridItemFeatherDescriptionNoPogoStick
+Valamilyen furcsa oknál fogva úgy érzed, hogy ez a toll nagyon hasznos lehet számodra, ha lenne pogo rudad...
+hu.gridItemSpongeName
+Egy varázslatos szivacs
+hu.gridItemSpongeDescription
+hu.ek a varázslatos szivacsnak a segítségével összenyomhatod magadat, akárcsak egy szivacs, így kisebb leszel.
+hu.gridItemFortressKeyName
+A sivatagi erőd kulcsa
+hu.gridItemFortressKeyDescription
+Ezzel a kulccsal beléphetsz a nagyon ősi erődbe, ami a sivatag felett található. Ki tudja, hogy mit találsz ott?
+hu.gridItemHeartPendantName
+Egy szív alakú nyakék
+hu.gridItemHeartPendantDescription
+Ez a szív alakú nyakék megnöveli a maximális életerő pontjaidat amíg hordod.
+hu.gridItemHeartPlugName
+Egy szív alakú dugó
+hu.gridItemHeartPlugDescription
+Ez egy szív alakú dugó, ami vasból, póklábakból és speciális "szív likőrből" készült, és megnöveli a maximális életerő pontjaidat 20 százalékkal!
+hu.gridItemBeginnersGrimoireName
+Kezdők varázskönyve
+hu.gridItemBeginnersGrimoireDescription
+Ez a varázskönyv három varázslattal ruház fel téged, amiket könnyű varázsolni. Valójában kezdőknek készült. Használhatod a sav eső varázslatot (rengeteg savas esőcsepp esik rá az ellenfeleidre), a tűzgolyó varázslatot (egy óriási tűzgolyó repül az ellenfeleid felé), valamint a teleportálás varázslatot (amivel kiszámíthatatlan helyre teleportálhatsz).
+hu.gridItemAdvancedGrimoireName
+Haladók varázskönyve
+hu.gridItemAdvancedGrimoireDescription
+A haladók varázskönyve két varázslattal ruház fel téged : a törlés mágiával és a tüskés pajzs mágiával. Az első mindenféle mágiát eltöröl a küldetésben, még azt is, amit te és ellenfeled használt. A második lebegő tüskés pajzsot alkot körülötted, amik érintésre megsebzik az ellenfeleidet.
+hu.gridItemBlackMagicGrimoireName
+Fekete mágiás varázskönyv
+hu.gridItemBlackMagicGrimoireDescription
+Ezt a varázskönyvet egy barlangban találtad, egy nagyon nehezen elérhető helyen, és érthető, hogy miért. Ez két erős fekete mágiát tartalmaz. Az elsővel elédvarázsol egy óriási obszidián falat, ami hasznos lehet ellenfeleid lelassítására. A második egy démon rajt idéz meg, akik mindenkit megtámadnak a küldetésen belül, még téged is. Ezzel légy óvatos.
+hu.gridItemUnicornHornName
+Egy unikornis szarva
+hu.gridItemUnicornHornDescription
+Ez a varázslatos szarv valaha egy unikornisé volt. Erős gyógyító hatalma van, ami sokat fog segíteni neked. Úgy hallottad, hogy ezt az unikornist valaha Charlienak hívták.
+hu.gridItemXinopherydonClawName
+Egy xinopherydon karma
+hu.gridItemXinopherydonClawDescription
+Ez a karom valaha egy xinopherydoné volt, ami egy kétfejű ősi állat, amire mindenki azt hitte, hogy már kihalt. Megduplázza a jelenlegi fegyvered sebzését.
+hu.gridItemPitchforkName
+Egy vasvilla
+hu.gridItemPitchforkDescription
+Ezzel a speciális vasvillával úgy is meglazíthatod a talajt, hogy nem forgatod fel, így megtartod a földalatti ökoszisztémát. Ez megháromszorozza a nyalóka farmod termelését.
+hu.gridItemShellPowderName
+Kagylópor
+hu.gridItemShellPowderDescription
+A földművesek gyakran használnak kagylóport, hogy megnöveljék a nyalóka farmjuk hatékonyságát. Ez a por megháromszorozza a nyalóka farmod termelését!
+hu.gridItemPName
+A P kő
+hu.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+hu.gridItemLName
+Az L kő
+hu.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+hu.gridItemAName
+Az A kő
+hu.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+hu.gridItemYName
+Az Y kő
+hu.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+hu.gridItemRedSharkFinName
+Egy varázslatos piros cápauszony
+hu.gridItemRedSharkFinDescription
+Ez a varázslatos uszony nagyban megnöveli a tűzgolyó varázslatod sebzését. Végre ez a tűzgolyó hasznos is lesz.
+hu.gridItemGreenSharkFinName
+Egy varázslatos zöld cápauszony
+hu.gridItemGreenSharkFinDescription
+Ez a varázslatos uszony elhozza a természet erejét a nyalóka farmodra! A termelésedet megötszörözi.
+hu.gridItemPurpleSharkFinName
+Egy varázslatos lila cápauszony
+hu.gridItemPurpleSharkFinDescription
+Ez a varázslatos uszony egy új fekete mágiával ruház fel téged. Egy küldetésen belül csak egyszer használhatod fel. Ezzel légy óvatos!
+hu.gridItemTalkingCandyName
+Egy beszélő cukorka
+hu.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Ez a beszélő cukorka akkor jelent meg, mikor beraktál négy követ a kastély tornyának tetejébe. Ő talán tud segíteni kinyitni a candy box-ot...
+hu.inventorySpecialNothingEqItem
+Semmi
+hu.eqItemWeaponWoodenSwordName
+Fa kard
+hu.eqItemWeaponWoodenSwordDescription
+Egy egyszerű, fából készült kard
+hu.eqItemWeaponIronAxeName
+Vas balta
+hu.eqItemWeaponIronAxeDescription
+Egy egyszerű vas balta. Jól megcsiszolt. Erősebb, mint a fa kard.
+hu.eqItemWeaponPolishedSilverSwordName
+Megcsiszolt ezüst kard
+hu.eqItemWeaponPolishedSilverSwordDescription
+Egy erős kard, ami tüskékkel van tele.
+hu.eqItemWeaponTrollBludgeonName
+A troll bunkósbotja
+hu.eqItemWeaponTrollBludgeonDescription
+Ezt a bunkósbotot a hidat őrző trolltól vetted el. Lassú, de elég hatékonyan lapítja szét ellenfeleidet.
+hu.eqItemWeaponTribalSpearName
+Egy törzsi lándzsa
+hu.eqItemWeaponTribalSpearDescription
+Ezt a törzsi lándzsát egy nagy gödörben találtad egy elveszett törzsi harcos hullájánál. Először nehéz kezelni, de amint belejössz jó fegyver lesz.
+hu.eqItemWeaponSummoningTribalSpearName
+Egy idézős törzsi lándzsa
+hu.eqItemWeaponSummoningTribalSpearDescription
+Ez a varázslatos törzsi lándzsa az mellett, hogy kissé erősebb mint a normál törzsi lándzsa, képes megidézni törzsi harcosokat, akik segítenek neked a küldetések során.
+hu.eqItemWeaponMonkeyWizardStaffName
+A majom varázsló botja
+hu.eqItemWeaponMonkeyWizardStaffDescription
+Ez a bot valaha a barlangban található majom varázslóé volt. Gyakran idéz meg magától varázslatokat, amik az ellenfeleidet célozzák meg.
+hu.eqItemWeaponEnchantedMonkeyWizardStaffName
+A majom varázsló botja (elbűvölt)
+hu.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Ez a bot gyorsabb, mint a nem elbűvölt változat, és sokkalta többet varázsol.
+hu.eqItemWeaponGiantSpoonName
+Egy óriási kanál
+hu.eqItemWeaponGiantSpoonDescription
+Ez az óriási kanál a sivatagi erődben volt egy nagy teáskannában. Nem tudsz arról, hogy valaki ezt kanálként használta volna, de ha igen, akkor az nagyon nagy lehetett. Valószínűleg nem szeretnél találkozni vele.
+hu.eqItemWeaponGiantSpoonOfDoomName
+A Végzet óriási kanala
+hu.eqItemWeaponGiantSpoonOfDoomDescription
+Ez az óriási kanál még erősebb, mint az átlagos változat amit találhatsz, mondjuk egy teáskannában. Bár ez mellett eléggé lassú.
+hu.eqItemWeaponScytheName
+Egy kasza
+hu.eqItemWeaponScytheDescription
+Azt mondják, hogy ez a kasza valaha magához a Halálhoz tartozott. Extrém gyors.
+hu.eqItemHatMerchantHatName
+Az árus sapkája
+hu.eqItemHatMerchantHatDescription
+Ezt a sapkát a cukorka árus adta el neked. A cukorka árus imádja a cukorkákat. Ez a sapka meghétszerezi a küldetéseken szerzett cukorkák mennyiségét!
+hu.eqItemHatSorceressHatName
+A banya sapkája
+hu.eqItemHatSorceressHatDescription
+Ezt a sapkát a banya adta el neked. Ez megnöveli a varázslataid és italaid hatását.
+hu.eqItemHatOctopusKingCrownName
+A polip király koronája
+hu.eqItemHatOctopusKingCrownDescription
+Hogyha ez a korona rajtad van, akkor magabiztosabb vagy. Nem ad semmilyen előnyt a küldetéseken, de az önbizalom fontos dolog!
+hu.eqItemHatOctopusKingCrownWithJaspersName
+Jáspisköves polip király korona
+hu.eqItemHatOctopusKingCrownWithJaspersDescription
+Ez az elbűvölt korona aranyból és vörös jáspisból van. A küldetéseken belül gyakran varázsol tűzgolyókat köréd. És még ragyog is!
+hu.eqItemHatOctopusKingCrownWithObsidianName
+Obszidiános polip király korona
+hu.eqItemHatOctopusKingCrownWithObsidianDescription
+Ez az elbűvolt korona aranyból és obszidiánból van. Csodálatos. A küldetéseken belül megidéz egy polip királyt, hogy segítsen neked a harcokban. Micsoda csápos társ!
+hu.eqItemGlovesLeatherGlovesName
+Bőr kesztyű
+hu.eqItemGlovesLeatherGlovesDescription
+Ezek a kesztyűk semmit se csinálnak. De legalább puhák és kényelmesek!
+hu.eqItemGlovesRedEnchantedGlovesName
+Vörös elbűvölt kesztyű
+hu.eqItemGlovesRedEnchantedGlovesDescription
+Ezek az elbűvölt kesztyűk halvány piros fényt árasztanak köréd a sötétben. A küldetéseken véletlenszerű tűzgolyókat dobálnak az ellenfeleid felé, ami biztosan hasznos lehet.
+hu.eqItemGlovesPinkEnchantedGlovesName
+Rózsaszín elbűvölt kesztyű
+hu.eqItemGlovesPinkEnchantedGlovesDescription
+Ezek az elbűvölt kesztyűk mindenen amihez hozzáérsz rózsaszín jelet hagynak. A küldetéseken belül folyamatosan gyógyítanak téged.
+hu.eqItemBootsRocketBootsName
+Rakéta cipők
+hu.eqItemBootsRocketBootsDescription
+Ezek a menő rakéta cipők engedélyezik a levegőben való ugrálást, szóval ezekkel gyakorlatilag repülhetsz!
+hu.eqItemBootsLeatherBootsName
+Bőr cipők
+hu.eqItemBootsLeatherBootsDescription
+Egyszerű bőr cipők. Semmi különös nincs bennük.
+hu.eqItemBootsBootsOfIntrospectionName
+A betekintés cipői
+hu.eqItemBootsBootsOfIntrospectionDescription
+Csak lazulj el egy kicsit és lélegezz mélyeket. Hogyha ezek a cipők vannak rajtad, akkor addig nem mozdulsz előre, amíg a földet éri a lábad.
+hu.eqItemBodyArmoursLightweightBodyArmourName
+Egy könnyű páncél
+hu.eqItemBodyArmoursLightweightBodyArmourDescription
+Ez a páncél gyenge védelmet nyújt. Kissé ellenállóbb leszel a támadásokkal szemben.
+hu.eqItemBodyArmoursKnightBodyArmourName
+Egy lovag páncélja
+hu.eqItemBodyArmoursKnightBodyArmourDescription
+Ez az erős páncél alaposan megvéd téged. Ellenállóvá tesz a támadásokkal szemben.
+hu.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Egy elbűvölt lovagi páncél
+hu.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Ez a páncél nagyon különleges. Ez NAGYON ellenállóvá tesz a támadásokkal szemben, de ugyanakkor a fegyvered sebzését felezi.
+hu.mapVillageForgeBuyWoodenSwordButton
+Fa kard megvétele (150 cukorka)
+hu.mapVillageForgeBuyWoodenSwordSpeech
+Köszönöm, hogy megvetted! Ez a fa kard eléggé gyenge, de kezdetnek megteszi.
+hu.mapVillageForgeBuyIronAxeButton
+Vas balta megvétele (400 cukorka)
+hu.mapVillageForgeBuyIronAxeSpeech
+Remélem, hogy tetszik neked ez a vas balta. Még meg is csiszoltam neked!
+hu.mapVillageForgeBuyPolishedSilverSwordButton
+Megcsiszolt ezüst kard megvétele (2 000 cukorka)
+hu.mapVillageForgeBuyPolishedSilverSwordSpeech
+Rengeteg időmbe telt elkészíteni ezt a kardot. Biztosíthatlak, hogy megéri az árát.
+hu.mapVillageForgeBuyLightweightBodyArmourButton
+Könnyű páncél megvétele (15 000 cukorka)
+hu.mapVillageForgeBuyLightweightBodyArmourSpeech
+Ez a páncélzat meg fog védeni téged az ellenfeleidtől.
+hu.mapVillageForgeBuyScytheButton
+Kasza megvétele (5 000 000 cukorka)
+hu.mapVillageForgeBuyScytheSpeech
+Több hónapomba telt mire elkészítettem ezt a kaszát. Igazi művészeti alkotás. Ez talán a leggyorsabb fegyver, amit valaha is használni tudsz majd. Sok sikert!
+hu.wishingWellThrowFirstCandyButton
+Dobj egy cukorkát a kútba
+hu.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Üdv, vándor! Én vagyok a kívánságkút. Az édességekért cserébe teljesítem a kívánságaidat! Ha cukorkákat dobsz belém, akkor meggyógyítom a sebeidet.
+hu.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+A sebeid begyógyultak!
+hu.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Nincsenek meggyógyítandó sebeid!
+hu.wishingWellThrowFirstLollipopButton
+Dobj egy nyalókát a kútba
+hu.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Üdv, vándor! Én vagyok a kívánságkút. Az édességekért cserébe teljesítem a kívánságaidat! Ha nyalókákat dobsz belém, akkor azokat cukorkákra váltom be.
+hu.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+A nyalókáidat beváltottam cukorkákra! Két nyalóka egy cukorkáért.
+hu.wishingWellThrowChocolateBarButton
+Dobj egy csokoládé rudat a kútba
+hu.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Üdv, vándor! Én vagyok a kívánságkút. Az édességekért cserébe teljesítem a kívánságaidat! Szeretem a csokoládé rudakat. Nagyon szeretem őket. Minden egy csokoládé rúdért cserébe, még ezért is, elbűvölheted az egyik felszerelésedet.
+hu.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Melyik tárgyat akarod elbűvölni?
+hu.wishingWellThrowPainAuChocolatButton
+Dobj egy pain au chocolatot a kútba
+hu.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Üdv, vándor! Én vagyok a kívánságkút. Az édességekért cserébe teljesítem a kívánságaidat! Hogyha egy pain au chocolatot dobsz belém, akkor egy nagyon speciális ajándékot kapsz. Bölcsen dönts.
+hu.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Köszönöm a pain au chocolatot! Most kiválaszthatod az ajándékodat.
+hu.wishingWellChooseGift # INFORMAL PRONOUN
+Válaszd ki az ajándékodat!
+hu.wishingWellChooseGiftButton
+Válassz
+hu.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Kész! Most megszerezted az új ajándékodat. A tárgymenüdben lesz a statisztikák részlegnél.
+hu.wishingWellNoPossibleEnchantment
+Nincs elérhető bűvölés
+hu.wishingWellChooseEnchantment
+Válassz bűvölést
+hu.wishingWellEnchantButton
+Bűvölés
+hu.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+És már kész is! A tárgyat elbűvöltem.
+hu.pierLighthouseButton
+Menj a világítótoronyhoz hajóval
+hu.pierTheSeaButton
+Ugorj bele a tengerbe
+hu.lonelyHouseOpenBox
+Nyisd ki a ládát
+hu.lonelyHouseShakeBox
+Rázd meg a ládát
+hu.lonelyHouseBreakLock
+Törd szét a zárat
+hu.lonelyHouseKickBox
+Rúgj bele a ládába
+hu.lonelyHouseAskTheBoxToOpenItself
+Kérd meg a ládát, hogy magától nyíljon ki
+hu.lonelyHouseLureTheBoxWithACandy
+Csalogasd a ládát cukorkával
+hu.lonelyHouseTakeTheBox
+Vidd magaddal a ládát, mert biztos kulcs kell majd a kinyitásához
+hu.lonelyHouseOpenBoxResult
+A láda zárva van
+hu.lonelyHouseShakeBoxResult
+Semmi se történik
+hu.lonelyHouseBreakLockResult
+A zár ellenáll
+hu.lonelyHouseKickBoxResult
+A lábad megfájdult egy kicsit, de semmi más nem történt
+hu.lonelyHouseAskTheBoxToOpenItselfResult
+...ugye tudod, hogy most egy ládához beszélsz?
+hu.lonelyHouseLureTheBoxWithACandyResult
+Úgy tűnik, hogy ez a ládát nem érdekli
+hu.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Úgy tűnik van valami érdekes ebben a candy box-ban.
+hu.lollipopFarmConstructMill
+Építs egy malmot (10 000 nyalóka)
+hu.lollipopFarmFeedMill
+Töltsd fel a malmot
+hu.lollipopFarmCurrentCandiesProduction
+Jelenlegi cukorka gyártás
+hu.lollipopFarmDigPond
+Áss egy tavat (100 000 nyalóka)
+hu.lollipopFarmBuyLolligator
+Vegyél egy lolligátort (1200 cukorka)
+hu.lollipopFarmLolligatorsConversionText
+Átalakítás cukorkából -> nyalókába aktiválva
+hu.lighthouseAskButton
+Kérdezz
+hu.lighthouseQuestionWho
+Te meg ki vagy?
+hu.lighthouseQuestionWhoSpeech
+Én egy nagyon öreg küklopsz vagyok.
+hu.lighthouseQuestionWhat
+Mit keresel itt?
+hu.lighthouseQuestionWhatSpeech
+Egész nap itt élek, és várok egy hajóra. Régóta láttam már hajót, de itt kell maradnom és bámulnom a tengert, hátha erre jár egy hajó.
+hu.lighthouseQuestionWhyEatCandies
+Miért ennék cukorkákat?
+hu.lighthouseQuestionWhyEatCandiesSpeech
+Mert jót tesznek az egészségednek!
+hu.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Mi az a candy box?
+hu.lighthouseQuestionCandyBoxSpeech
+Az egy nagyon öreg láda, amiben állítólag a világ minden cukorkája megtalálható. A legenda szerint bárki is nyitja ki, annak annyi cukorkája lesz amennyi csak lehetséges.
+hu.lighthouseQuestionDragon
+A sárkány azt mondta, hogy jöjjek ide, ha cukorkát akarok.
+hu.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Ó, értem... Nos, én nem adhatok neked cukorkákat, csak valami fontosat, amivel végül RENGETEG cukorkát szerezhetsz. De először le kell tesztelnelek. Nem adhatom ezt csak úgy oda bárkinek. Oldd meg ezt a rejtvényt és a tiéd lehet.
+hu.lighthouseFoundStone # INFORMAL PRONOUN
+Gratulálok! Átmentél a teszten és megtaláltad a követ. Nagyon értékes darab, de csak akkor van számodra haszna, ha találsz még három hasonló követ. Sok szerencsét!
+hu.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Szép munka, ismét teljesítetted a rejtvényt. Úgy látom ez tetszik neked.
+hu.saveLocalSaveTitle
+Böngésző mentés
+hu.saveLocalSaveWhy
+Válaszd a helyi mentést, hogyha a jelenlegi eszközödön és böngésződben szeretnél játszani.
+hu.saveLocalSaveWarning0
+Úgy tűnik, hogy a böngésződ nem támogatja a HTML5-öt.
+hu.saveLocalSaveWarning1
+Frissítened kellene a böngésződet, hogyha használni szeretnéd a helyi mentés funkciót.
+hu.saveLocalSaveChooseSlot
+Válassz a mentésednek helyet :
+hu.saveLocalSaveAutosaveEnabled
+Automentés bekapcsolva
+hu.saveLocalSaveChooseWhatToDo
+Válaszd ki, hogy mit akarsz :
+hu.saveLocalSaveSaveButton
+Mentés
+hu.saveLocalSaveAutosaveButton
+Mentés 10 percenként
+hu.saveLocalSaveDisableAutosaveButton
+Automentés kikapcsolása
+hu.saveFileSaveTitle
+Szöveges mentés
+hu.saveFileSaveWhy0
+Válaszd a szöveges mentést, ha :
+hu.saveFileSaveWhy1
+Egy másik eszközről vagy böngészővel akarod folytatni tovább a játékot
+hu.saveFileSaveWhy2
+Meg akarod osztani a mentésedet mással
+hu.saveFileSaveWhy3
+Valami oknál fogva törölni akarod a böngésződ sütijeit
+hu.saveFileSaveWhy4
+(ami törli a helyi mentéseidet)
+hu.saveFileSaveButton
+Szerezd meg a jelenlegi játékot szövegként
+hu.saveFileSaveWarning
+Most másold le ezt a szöveget valahová! (például egy fájlba)
+hu.saveLocalLoadTitle
+Böngésző betöltés
+hu.saveLocalLoadYouCan
+Betölthetsz egy helyi mentést az alábbi linkekkel :
+hu.saveLocalLoadThanksTo
+Hála a HTML5 varázsának, mostantól ezeket a linkeket offline is használhatod.
+hu.saveFileLoadTitle
+Szöveges betöltés
+hu.saveFileLoadPaste
+Illeszd be alulra a mentésedet, majd kattints a "Betöltés" gombra
+hu.saveFileLoadButton
+Betöltés
+hu.mountainsText0
+Megláttál valamit a hegyekben!
+hu.mountainsText1
+Érdekesnek tűnik. Lehet, hogy a hasznodra válhat.
+hu.mountainsTextButton
+Mássz fel a hegyre, hogy megszerezd a tárgyat
+hu.mountainsTextAfter
+Találtál egy pogo rudat! Belekerült a tárgymenüdbe.
+hu.secondHouseIntroSpeech
+Üdv, én vagyok a cukorka árus. Bármit megtennék a cukorkákért. Mire van szükséged?
+hu.secondHouseLollipop1Speech
+Ez egy citrom-ízű nyalóka. A kedvencem! 60 cukorkába kerül, de megéri az árát.
+hu.secondHouseLollipop2Speech
+Ez egy eper-ízű nyalóka. Jó az íze. Tetszik a piros színe. Csak 60 cukorkába kerül!
+hu.secondHouseLollipop3Speech
+Ez egy tök-ízű nyalóka. Fogadok, hogy ilyent még nem próbáltál! 60 cukorkáért a tiéd.
+hu.secondHouseLollipopButtonText
+Vedd meg ezt a nyalókát (60 cukorka)
+hu.secondHouseMerchantHatSpeech
+Eladhatom neked a sapkámat, de ez nagyon drága, tudod... Rengeteg cukorkát kellene adnod érte. Mondjuk úgy 1 millió cukorkát. Ez egy fair ár, ugye?
+hu.secondHouseMerchantHatButtonText
+Vedd meg az árus sapkáját (1 000 000 cukorka)
+hu.secondHouseTimeRingSpeech
+Ez egy idő gyűrű. Olyan varázs-fajta. Segítségével lelassíthatod az időt ha bajban lennél.
+hu.secondHouseTimeRingButtonText
+Vedd meg az idő gyűrűt (500 cukorka)
+hu.secondHouseLeatherGlovesSpeech
+Ezek a bőr kesztyűk tevebőrből készültek, így nagyon jó a minőségük. Rengeteg van belőle raktáron, azért ilyen olcsók : csak 300 cukorka darabja!
+hu.secondHouseLeatherBootsButtonText
+Vegyél egy pár bőr cipőt (300 cukorka)
+hu.secondHouseLeatherBootsSpeech
+Ezek a jó minőségű bőr cipők, amik tevebőrből készültek, melegen fogják tartani a lábaidat.
+hu.secondHouseLeatherGlovesButtonText
+Vegyél egy pár bőr kesztyűt (300 cukorka)
+hu.secondHouseChocolateBarSpeech
+Ez egy csokoládé rúd. Nem tudom, hogy ezt mire használják, de úgy tűnik, hogy ez nagyon ritka dolog, ami megmagyarázza az árát. 800 cukorkáért a tiéd!
+hu.secondHouseChocolateBarButtonText
+Vegyél csokoládé rudat (800 cukorka)
+hu.outsideTheHoleButton
+Ugorj bele ebbe a gödörbe a földön
+hu.theCaveExitText0
+Végre elérted a barlang kijáratát.
+hu.theCaveExitText1
+Látsz egy hatalmas erdőt odakint.
+hu.theCaveExitButtonText
+Lépj ki a barlangból
+hu.theCaveFirstSentenceWentStraight
+Tovább mentél egyenesen.
+hu.theCaveFirstSentenceWentLeft
+Balra mentél.
+hu.theCaveFirstSentenceWentRight
+Jobbra mentél.
+hu.theCaveFirstSentenceYouAre
+Egy barlangban vagy. Három út van előtted.
+hu.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Valami furcsa dolgot látsz a földön előtted.
+hu.theCavePattern_ChocolateBarNowSeeChocolateBar
+Egy csokoládé rudat látsz előtted.
+hu.theCavePattern_TreasureMapSentence
+Kisebb köveket látsz a földön előtted.
+hu.theCavePattern_MonkeyWizardSentence
+Találkozol egy meztelen majom varázslóval.
+hu.theCavePattern_MonkeyWizardButton
+Kűzdj meg vele
+hu.theCavePattern_OctopusKingSentence
+Belebotlasz a Polip Királyba. Durvának tűnik.
+hu.theCavePattern_OctopusKingButton
+Kűzdj meg vele
+hu.fortressInsideText0
+Egy sivatagi erődben vagy.
+hu.fortressInsideText1
+Három ajtó közül választhatsz.
+hu.fortressInsideText2
+Mindegyik egy nagy szobába vezet, aminek a végén egy kincs vár.
+hu.fortressInsideEnterRoom1
+Lépj be az első szobába
+hu.fortressInsideEnterRoom2
+Lépj be a második szobába
+hu.fortressInsideEnterRoom3
+Lépj be a harmadik szobába
+hu.treasureButtonDig
+Áss
+hu.treasureButtonYouFound
+Három csokoládé rudat találtál!
+hu.sorceressHutHello
+Üdv, én egy banya vagyok. Taníthatok egy-két dolgot a mágiáról neked. Adhatok még pár érdekességet is, vagy varázsolhatok a számodra. De mindennek ára van! És a fizetőeszköz nyalóka. Jó sok darab.
+hu.sorceressHutClickedGrimoire
+Ez egy varázskönyv kezdőknek. A küldetések során ennek segítségével egyszerű, de hasznos varázslatokat használhatsz. Erre szükséged van! Csak 5 000 nyalóka.
+hu.sorceressHutBuyGrimoireButton
+Vedd meg ezt a varázskönyvet (5 000 nyalóka)
+hu.sorceressHutBuyGrimoireSpeech
+Köszönöm a vásárlást! Ezzel a varázskönyvvel három varázslatot használhatsz. Sok szerencsét!
+hu.sorceressHutClickedGrimoire2
+Ez egy varázskönyv haladóknak. A küldetések során két erősebb varázslatot használhatsz. Én magam írtam a könyvet, és nem volt könnyű dolgom. 20 000 nyalóka fair ár érte.
+hu.sorceressHutBuyGrimoire2Button
+Vedd meg ezt a varázskönyvet (20 000 nyalóka)
+hu.sorceressHutBuyGrimoire2Speech
+Köszönöm a vásárlást! Ezzel a varázskönyvvel két varázslatot használhatsz. Használd őket okosan!
+hu.sorceressHutClickedCauldron
+Ez az üstöm. Ezzel készítem a varázsitalaimat. Eladhatom neked, de ez túl értékes számomra... de 100 000 nyalókáért a tiéd lehet.
+hu.sorceressHutBuyCauldronButton
+Vedd meg az üstöt (100 000 nyalóka)
+hu.sorceressHutBuyCauldronSpeech
+Köszönöm! 100 000 nyalóka az enyém! Adok még neked egy főzési útmutatót. Jól fog jönni.
+hu.sorceressHutClickedHat
+Igen, tényleg szép a sapkám! De tényleg nem adhatom el neked. Túúúlságosan értékes számomra. Nagyon, így nem tehetem. Ne erőlködj. Nem. Nem nem nem, nem tehetem! Nah, jól van, eladhatom, de 1 000 000 000 nyalóka az ára. Valószínűleg annyit úgyse tudsz fizetni.
+hu.sorceressHutBuyHatButton
+Vedd meg a sapkát (1 000 000 000 nyalóka)
+hu.sorceressHutBuyHatSpeech
+Egy billió nyalóka nekeeeeem! De már nincsen többé sapkám... de egy billió nyalóka, váó! ...teljesen megérte.
+hu.cauldronPreviousPageButton
+Előző oldal
+hu.cauldronNextPageButton
+Következő oldal
+hu.cauldronWhatYouWantToPut
+Mit akarsz belerakni az üstbe
+hu.cauldronWhatIsIn
+Mi van az üstben
+hu.cauldronWhatYouCanDo
+Mit csinálhatsz vele
+hu.castleBigRoomComment
+Egy nagy szoba
+hu.castleARoomComment
+Egy szoba
+hu.castleADarkRoomComment
+Egy sötét szoba
+hu.castleCastleEntranceComment
+A kastély bejárata
+hu.castleTowerEntranceComment
+A torony bejárata
+hu.castleNougatMonsterComment
+Támadd meg az óriási nugát szörnyet
+hu.castleGuardsComment
+Támadd meg az őröket
+hu.castleStairsComment
+Lépcső
+hu.buttonBackToTheCastle
+Vissza a kastélyba
+hu.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Üdv! Én egy nagyon öreg kenyérsütő vagyok. Régen tonnaszámra készítettem süteményeket, de manapság senki se használ engem. Talán... talán te segítenél nekem? Csak hadd vegyek el pár édességet tőled! Ne aggódj, nem fogod megbánni! Bízhatsz bennem.
+hu.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Óh... nincs nálad elég édesség, nem tehetek semmit. Haszontalan vagyok. Én vagyok a haszontalan kenyérsütő, így kellene hívnod engem.
+hu.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Jupí! Köszönöm! 100 cukorkát és egy csokoládé rudat használtam el, és készítettem neked... egy pain au chocolatot! Ez a kedvenc sütim, és remélem neked is tetszeni fog!
+hu.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hé! Ha akarod, hogy újabb süteményt készítsek, csak szólj! Szívesen segítek neked.
+hu.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Óh, nincs nálad elég édesség, sajnos. 100 cukorka és egy csokoládé rúd kellene nekem. Gyere vissza, ha van nálad pár!
+hu.castleBigRoomHovenLetHovenTakeButton
+Hadd vegye el a sütő azt az édességet amit szeretne
+hu.castleBigRoomHovenThanks
+Köszönöm, sütő!
+hu.dragonStopTickling # INFORMAL PRONOUN
+Hé, te! Kérlek ne csikizz tovább.
+hu.dragonStopTicklingButton
+Ó, jaj, elnézést, azt hittem, hogy meg kellene támadni téged
+hu.dragonTalking # INFORMAL PRONOUN
+Én egy sárkány vagyok, és ez az én kastélyom. Láttam, hogy sikerült bejutnod, biztosan nagyon bátor vagy... szívesen segítenék olyannak, mint amilyen te vagy. Mit keresel?
+hu.dragonTalkingChallengeButton
+Kihívást
+hu.dragonTalkingFameButton
+Hírnevet
+hu.dragonTalkingCandiesButton
+Cukorkákat
+hu.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Ó, szóval kihívást akarsz? Akkor azt hiszem el kellene menned a pokolba, mivel az ördögről jól ismert, hogy nehéz legyőzni őt. Pattanj a hátamra, és elviszlek oda!
+hu.dragonTalkingFameSpeech # INFORMAL PRONOUN
+A leggyorsabb módon úgy lehetsz híres, hogyha legyőzöd magát a fejlesztőt. Tudom, hogy hol lakik és elvihetlek hozzá. De készülj fel, mert nem lesz könnyű menet.
+hu.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+A legvégén mindenki csak cukorkát akar, nemde? Azt hiszem az egyik barátom tud segíteni neked ebben. Elég könnyen fel fogod ismerni őt, mivel csak egy szeme van. Csak szólj neki, hogy ismersz engem.
+hu.dragonTalkingChallengeAnswer
+Menjünk hát!
+hu.dragonTalkingFameAnswer
+Készen állok.
+hu.dragonTalkingCandiesAnswer
+Rendben, köszönöm!
+hu.buttonBackToCastle
+Vissza a kastélyba
+hu.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hé! Én egy beszélő cukorka vagyok. Már majdnem megnyerted a játékot. Csak meg kell találnod a candy box-ot. Valahol a falun kívül van egy házban. Ez az utolsó lépés!
+hu.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hé! Én vagyok a beszélő cukorka. Gratulálok, megnyerted a játékot! Most kinyitom neked a candy box-ot, ez a jutalmad. Továbbmehetünk?
+hu.talkingCandySpeech2 # INFORMAL PRONOUN
+Kész! Most már beléphetsz. Remélem tetszett a játék :)
+hu.talkingCandyButton
+Igen!!
+hu.lighthousePuzzleResetButton
+Újrakezd

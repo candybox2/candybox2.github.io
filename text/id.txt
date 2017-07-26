@@ -1,0 +1,690 @@
+id.mapVillageComment
+Desa
+id.mapFortressComment
+Benteng gurun
+id.mapATreeComment
+Sebuah pohon
+id.mapTheDesertComment
+Gurun pasir
+id.mapWishingWellComment
+Sumur permohonan
+id.mapLonelyHouseComment
+Rumah yang terpencil
+id.mapForestComment
+Hutan
+id.mapCastleEntranceComment
+Pintu masuk istana
+id.mapCastleComment
+Istana
+id.mapDragonComment
+Sang naga
+id.candyBoxEatCandiesButton
+Makan semua permen
+id.candyBoxThrowCandiesButton
+Lempar 10 permen ke tanah
+id.mapVillageAHouseComment
+Sebuah rumah
+id.mapVillageForgeComment
+Bengkel pandai besi
+id.buttonBackToTheMap
+Kembali ke peta
+id.mapSorceressHutComment
+Pondok penyihir wanita
+id.buttonBackToTheVillage
+Kembali ke desa
+id.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Halo, saya adalah si tupai. Saya dapat memberikan kamu permen, dan banyak benda. Saya tau seberapa banyak kamu menyukai permen. Tetapi saya merasa kesepian di hutan ini.
+id.mapATreeIntroductionButton
+Bagaimana saya bisa membantumu?
+id.mapATreeFirstQuestion # INFORMAL PRONOUN
+Saya akan memberimu pertanyaan. Jika kamu menjawab dengan benar, penganan termanis akan menjadi milikmu! Pertanyaan pertama : apakah kamu benar-benar menyukai permen? (jawab dalam Bahasa Inggris)
+id.mapATreeSecondQuestion # INFORMAL PRONOUN
+Betul! 20 permen ini untukmu. Sekarang lengkapi urutan huruf ini dan kamu akan mendapatkan hadiah baru : S, E, I, D, N, A, ?
+id.mapATreeThirdQuestion # INFORMAL PRONOUN
+Candies (permen)! 100 permen ini untukmu. Pertanyaan selanjutnya : berapa banyak permen yang dimiliki oleh orang yang "paling permen"?
+id.mapATreeFourthQuestion # INFORMAL PRONOUN
+500 permen ini untukmu! hadiah selanjutnya seharusnya menjadi lebih menarik...  Ini teka-tekinya : Di sebuah hutan kuno tumbuhlah sebuah pohon yang sangat tua, diamana binatang-binatang paling pintar di dunia ini tinggal. Katanya pohon ini memiliki 60 akar, 360 cabang dan 2160 daun. Berapa banyak tanda yang dapat kamu temukan di batangnya?
+id.mapATreeFifthQuestion # INFORMAL PRONOUN
+Selamat! Memang, saya sedang berbicara tentang pohonku. 3 lollipop ini untukmu. Gunakan emreka sebaik-baiknya! Teka-teki selanjutnya, dengar dengan teliti : Dibawah bulan purnama, Saya melempar sebuah topi kuning kedalam laut merah. Apa yang terjadi dengan topi kuning?
+id.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Terjawab dengan baik! Pertanyaan tadi tidak terlalu susah. 3 batang coklat ini untukmu! Untuk hadiah selanjutnya, kita akan merubah aturannya sedikit. Kamu akan bermain sebuah permainan dengan saya! Siap?
+id.mapATreeTicTacToeIntroButton
+Aku siap!
+id.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Permainannya adalah Tic-Tac-Toe. Kita bermain di papan permainan berukuran 3 kali 3. Kamu akan menggunakan tanda X sementara saya akan menggunakan tanda O. Kita menaruh tanda kita secara bergiliran, dan tujuannya adalah menaruh 3 tanda secara berderet. Saya akan membiarkanmu mulai duluan!
+id.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Papannya sudah penuh dan kita berdua gagal mendapatkan tiga tanda secara berderet : tidak ada yang menang! Apakah kamu ingin mencoba lagi?
+id.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Saya mendapat tiga tanda secara berderet! Saya menang. Apakah kamu ingin mencoba lagi?
+id.mapATreeTicTacToeTryAgainButton
+Ya, aku mau!
+id.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Wow, itu adalah langkah yang tidak terduga. Tapi kamu mendapat tiga tanda secara berderet, Saya tidak dapat membantah. Kamu menang! Ambil kunci ini! Kunci ini membuka salah satu rumah di desa yang berada di bawah hutan.
+id.mapATreeTicTacToeAnymoreSweet
+Terimakasih tupai! Ada tantangan yang lain?
+id.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Sayangnya tidak, Saya tidak punya tantangan lagi untukmu... Bermain denganmu itu sangat menyenangkan, terimakasih atas itu!
+id.buttonExitQuestKeeping
+Keluar dari pencarian (quest) (dan simpan apa yang kamu dapatkan)
+id.buttonExitQuestNoKeeping
+Keluar dari pencarian (quest) (kamu tidak akan menyimpan apa yang kamu dapat)
+id.buttonExitQuestNoKeepingBecauseLose
+Keluar dari pencarian (quest) (kamu tidak akan menyimpan apa yang kamu dapat karena kamu gagal)
+id.mapVillageLockedHouseComment
+Sebuah rumah yang terkunci
+id.mapVillageForgeIntroductionSpeech
+Hai! Saya adalah pandai besi. Saya menjual berbagai macam senjata dan peralatan untukmu.
+id.mapVillageForgeIntroductionSpeechNoMoreToSell
+Hai! Saya adalah pandai besi. Sayang, Saya sudah tidak mempunyai apapun untuk dijual. Datang lagi nanti, mungkin?
+id.mapVillageFifthHouseNoWeaponSpeech
+Halo. Gudang bawah tanahku penuh dengan tikus, Saya butuh menyingkirkan mereka... hanya saja seseorang dengan senjata dapat membantu saya...
+id.mapVillageFifthHouseWeaponSpeech
+Hei kamu! Saya melihat kamu membawa sebuah senjata! Jika kamu membunuh tikus-tikus yang mengganggu gudang bawah tanahku, Saya kan memberim uhadiah!
+id.mapVillageFifthHouseAgree
+Ayo pergi!
+id.mapVillageFifthHouseCellarDone
+Terimakasih sudah menyingkirkan mereka! Benda yang sangat berharga ini adalah hadiahnya : sebuah peta dunia. Saya rasa kamu akan menggunakannya lebih banyak dari saya.
+id.mapVillageTheShopComment
+Toko
+id.mapBridgeComment
+Jembatan
+id.mapFarmComment
+Ladang lollipop
+id.mapCaveEntranceComment
+Pintu masuk gua
+id.mapLighthouseComment
+Mercusuar
+id.mapPierComment
+Dermaga
+id.mapTheHoleComment
+Lubang
+id.candyBoxRequestStatusBarUnlocked
+Ajukan fitur baru kepada developer (30 permen)
+id.candyBoxRequestStatusBarUnlockedCfg
+Ajukan satu lagi (5 permen)
+id.candyBoxRequestStatusBarUnlockedSave
+Ajukan satu kali lagi (5 permen)
+id.candyBoxRequestStatusBarUnlockedHealthBar
+Ajukan untuk sesuatu yang lebih menyenangkan (5 permen)
+id.candyBoxRequestStatusBarUnlockedMap
+Permintaan terakhir! Untuk yang ini permennya harus bermanfaat. (10 candies)
+id.candyBoxRequestStatusBarUnlockedComment
+Kamu mendapatkan status bar! (diatas) #This one is a bit difficult to translate :(
+id.candyBoxRequestStatusBarUnlockedCfgComment1
+Kamu sekarang mempunyai akses ke tab konfigurasi.
+id.candyBoxRequestStatusBarUnlockedCfgComment2
+Kamu dapat mengubah bahasanya, jika kamu mau.
+id.candyBoxRequestStatusBarUnlockedSaveComment
+Tab "save" yang liar muncul!
+id.candyBoxRequestStatusBarUnlockedHealthBarComment
+100 poin nyawa ini untukmu. Mereka akan menjadi berguna.
+id.cfgChooseLanguage
+Pilih bahasa :
+id.cfgInvertColors
+Balikkan warna?
+id.gridItemMainMapName
+Peta
+id.gridItemMainMapDescription
+Peta dunia
+id.gridItemPogoStickName
+Tongkat pogo
+id.gridItemPogoStickDescription
+Benda ini membuat kamu dapat melompat didalam pencarian (quest)!
+id.gridItemTimeRingName
+Sebuah cincin waktu
+id.gridItemTimeRingDescription
+Benda ini memberikan kamu kemampuan baru di dalam pencarian (quest) : kamu dapat memperlambat waktu. Jika semuanya terlalu cepat bagi kamu, gunakan cincin waktumu!
+id.gridItemThirdHouseKeyName
+Kunci rumah ketiga
+id.gridItemThirdHouseKeyDescription
+Kunci ini memungkinkan kamu untuk masuk ke rumah ketiga di desa.
+id.gridItemFeatherName
+Bulu burung gurun
+id.gridItemFeatherDescription
+Bulu ajaib ini memungkinkan kamu untuk melompat lebih tinggi ketika kamu menggunakan tongkat pogo!
+id.gridItemFeatherDescriptionNoPogoStick
+Untuk alasan yang tidak diketahui, kamu merasa bulu ini dapat menjadi lebih berguna jika kamu punya tongkat pogo...
+id.gridItemSpongeName
+Spon ajaib
+id.gridItemSpongeDescription
+Spon ajaib ini memungkinkan kamu untuk memeras dirimu seperti spon, oleh karena itu, ukuranmu menjadi lebih kecil.
+id.gridItemFortressKeyName
+Kunci benteng gurun
+id.gridItemFortressKeyDescription
+Kunci ini memungkinkan kamu untuk masuk ke benteng yang sangat kuno yang terletak diatas padang pasir. Siapa tahu apa yang dapat kamu dapatkan disana?
+id.gridItemHeartPendantName
+Sebuah liontin hati
+id.gridItemHeartPendantDescription
+Liontin hati ini akan menambah poin nyawamu selama kamu membiarkannya di dekat lehermu.
+id.gridItemHeartPlugName
+Penyumbat hati
+id.gridItemHeartPlugDescription
+Penyumbat hati ini, dibuat dengan besi, kaki laba-laba, dan sebuah "cairan hati" spesial yang tersegel di tengahnya, akan menambah poin nyawamu sebanyak 20 persen!
+id.gridItemBeginnersGrimoireName
+Buku mantera tingkat pemula
+id.gridItemBeginnersGrimoireDescription
+Buku mantera ini memberimu 3 mantera, cukup mudah untuk dilemparkan. Buku ini betul-betul dibuat untuk pemula. Kamu akan bisa menggunakan mantera hujan asam (banyak tetesan cairan asam akan jatuh ke musuhmu), mantera bola api (bola raksasa ajaib yang terbuat dari api yang akan terbang menuju musuhmu), dan mantera 'teleport' (yang akan men-'teleport'mu ke tempat yang tak terduga).
+id.gridItemAdvancedGrimoireName
+Buku mantera tingkat lanjut
+id.gridItemAdvancedGrimoireDescription
+Buku mantera tingkat lanjut ini memberimu dua mantera : mantera penghapus sihir dan mantera perisai duri. Mantera yang pertama akan menghapus semua sihir dari suatu pencarian (quest) pada titik tertentu, termasuk mantera mantera yang kamu keluarkan dan sihir dari musuh. Yang kedua akan membuat perisai dari duri melayang yang akan memberikan serangan (damage) terhadap musuhmu jika disentuh.
+id.gridItemBlackMagicGrimoireName
+Buku mantera ilmu hitam
+id.gridItemBlackMagicGrimoireDescription
+Kamu mendapatkan buku mantera ini di gua, buku mantera ini sangat susah untuk didapatkan, dan itu karena sebuah alasan. Buku mantera ini memberimu dua mantera ilmu hitam yang kuat. Yang pertama akan membuat sebuah tembok raksasa di depanmu yang terbuat dari obsidian, yang sangat berguna untuk memperlambat musuhmu. Yang kedua akan memanggil gerombolan setan menyerang semua dalam pencarian (quest), termasuk kamu. Berhati-hatilah dengan yang satu ini.
+id.gridItemUnicornHornName
+Tanduk unicorn
+id.gridItemUnicornHornDescription
+Tanduk ajaib ini punya sebuah unicorn. Kekuatan menyembuhkan yang kuatnya akan sangat membantumu. Kamu mendengar kalau unicorn ini bernama Charlie.
+id.gridItemXinopherydonClawName
+Cakar xinopherydon
+id.gridItemXinopherydonClawDescription
+Cakar ini milik xinopherydon, binatang kuno berkepala dua yang dipercaya semua orang ada. Cakar ini membuat senjata yang kamu gunakan lebih kuat sebanyak dua kali lipat.
+id.gridItemPitchforkName
+Sebuah garpu rumput
+id.gridItemPitchforkDescription
+Garpu rumput spesial ini memungkinkan kamu untuk melonggarkan tanah without turning it over, therefore preserving below-ground soil ecosystems. Garpu rumput ini akan membuat produksi ladang lollipopmu bertambah sebanyak 3 kali lipat.
+id.gridItemShellPowderName
+Bubuk kerang
+id.gridItemShellPowderDescription
+Bubuk kerang biasa digunakan untuk petani untuk meningkatkan kecepatan pertumbuhan dari lollipop mereka. Bubuk ini akan membuat produksi ladang lollipopmu bertambah sebanyak 3 kali lipat!
+id.gridItemPName
+Batu P
+id.gridItemPDescription # Don't translate that! ( You don't say ;) )
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+id.gridItemLName
+Batu L
+id.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+id.gridItemAName
+Batu A
+id.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+id.gridItemYName
+Batu Y
+id.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+id.gridItemRedSharkFinName
+Sirip ikan hiu merah ajaib
+id.gridItemRedSharkFinDescription
+Sirip ajaib ini akan menambah serangan (damage) dari mantera bola api dengan sangat. Akhirnya bola api ini menjadi berguna.
+id.gridItemGreenSharkFinName
+Sirip ikan hiu hijau ajaib
+id.gridItemGreenSharkFinDescription
+Sirip ajaib ini akan membawa kekuatan alam dari ke ladang lollipopmu! Produksimu akan bertambah 5 kali lipat.
+id.gridItemPurpleSharkFinName
+Sirip ikan hiu ungu ajaib
+id.gridItemPurpleSharkFinDescription
+Sirip ajaib ini akan memberimu sihir ilmu hitam baru. Kamu hanya dapat menggunakannya satu kali dalam setiap pencarian (quest). Sangat berhati-hatilah dengan yang satu ini
+id.gridItemTalkingCandyName
+Permen yang bisa berbicara
+id.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Permen yang bisa berbicara ini muncul setelah kamu meletakkan keempat batu di puncak menara istana. Dia mungkin dapat membantumu untuk membuka candy box...
+id.inventorySpecialNothingEqItem
+Tidak ada
+id.eqItemWeaponWoodenSwordName
+Pedang kayu
+id.eqItemWeaponWoodenSwordDescription
+Sebuah pedang sederhana terbuat dari kayu
+id.eqItemWeaponIronAxeName
+Kapak besi
+id.eqItemWeaponIronAxeDescription
+Sebuah kapak besi sederhana. Diitajamkan dengan baik. Lebih kuat dari pedang kayu.
+id.eqItemWeaponPolishedSilverSwordName
+Pedang perak yang dipoles
+id.eqItemWeaponPolishedSilverSwordDescription
+Sebuah pedang yang kuat, ditutupi oleh duri.
+id.eqItemWeaponTrollBludgeonName
+Gada sang troll
+id.eqItemWeaponTrollBludgeonDescription
+Kamu mengambil gada ini dari sang troll yang menjaga jembatan ini. Gada ini lambat, tapi menghantam musuhmu dengan cukup efektif.
+id.eqItemWeaponTribalSpearName
+Sebuah tombak kesukuan
+id.eqItemWeaponTribalSpearDescription
+Kamu menemukan tombak kesukuan ini di mayat seorang prajurit suku yang tersesat di dalam sebuah lubang besar di tanah. Tombak ini agak susah untuk digunakan pertama kali, tapi sekali kamu sudah terbiasa, ini adalah senjata yang bagus.
+id.eqItemWeaponSummoningTribalSpearName
+Sebuah tombak kesukuan yang memanggil
+id.eqItemWeaponSummoningTribalSpearDescription
+Tombak kesukuan ajaib ini, selain lebih kuat sedikit dari tombak kesukuan yang biasa, akan memanggil prajurit suku dengan sangat sering yang akan membantumu dalam pencarian (quest).
+id.eqItemWeaponMonkeyWizardStaffName
+Tongkat monyet penyihir
+id.eqItemWeaponMonkeyWizardStaffDescription
+Tongkat ini milik monyet penyihir tak berbusana yang kamu temukan di gua. Tongkat ini akan melemparkan mantera dengan sendirinya, dengan musuhmu sebagai targetnya.
+id.eqItemWeaponEnchantedMonkeyWizardStaffName
+Tongkat monyet penyihir (sudah disihir)
+id.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Tongkat ini lebih cepat dari yang belum di berikan sihir, dan juga akan melemparkan lebih banyak mantera.
+id.eqItemWeaponGiantSpoonName
+Sebuah sendok raksasa
+id.eqItemWeaponGiantSpoonDescription
+Sendok raksasa ini ada di dalam teko raksasa di benteng gurun. Kamu tidak tahu jika seseorang pernah menggunakannya sebagai sendok, tapi jika ada, dia pasti seseorang yang sangat besar. Kamu mungkin tidak ingin bertemu dengannya.
+id.eqItemWeaponGiantSpoonOfDoomName
+Sendok raksasa malapetaka
+id.eqItemWeaponGiantSpoonOfDoomDescription
+Sendok raksasa ini lebih kuat dari sendok raksasa biasa yang dapat kamu temukan, misalnya, didalam teko. Namun, sendok ini cukup lama.
+id.eqItemWeaponScytheName
+Sebuah sabit
+id.eqItemWeaponScytheDescription
+Katanya sabit ini dimiliki oleh kematian itu sendiri. Sabit ini sangat cepat
+id.eqItemHatMerchantHatName
+Topi si pedagang
+id.eqItemHatMerchantHatDescription
+Topi ini dijual kepadamu oleh pedagang permen. Si pedagang permen ini menyukai permen. Topi ini akan menambah 7 kali lipat permen yang kamu dapat di dalam pencarian (quest)!
+id.eqItemHatSorceressHatName
+Topi sang penyihir wanita
+id.eqItemHatSorceressHatDescription
+Topi ini dijual kepadamu oleh sang penyihir wanita. Topi ini akan menambah efek dari mantera dan obat (potion) mu.
+id.eqItemHatOctopusKingCrownName
+Mahkota sang raja gurita
+id.eqItemHatOctopusKingCrownDescription
+ketika kamu menggunakan mahkota ini, kamu merasa lebih percaya diri. Mahkota ini tidak memberikan keuntungan apapun dalam pencarian (quest), tapi percaya diri itu penting!
+id.eqItemHatOctopusKingCrownWithJaspersName
+Mahkota sang raja gurita dengan yasper
+id.eqItemHatOctopusKingCrownWithJaspersDescription
+Mahkota yang disihir ini terbuat dari emas dan yasper merah. Dalam pencarian (quest), mahkota ini akan melemparkan bola api ajaib yang kuat disekitarmu dengan sering. Dan juga, mahkota ini berkilau!
+id.eqItemHatOctopusKingCrownWithObsidianName
+Mahkota sang raja gurita dengan obsidian
+id.eqItemHatOctopusKingCrownWithObsidianDescription
+Mahkota yang disihir ini terbuat dari emas dan obsidian. Mahktoa ini indah. Dalam pencarian (quest), mahkota ini akan memanggil sang raja gurita menggantikanmu bertarung selama beberapa saat. Sekutu yang "tentaculous"!
+id.eqItemGlovesLeatherGlovesName
+Sarung tangan kulit
+id.eqItemGlovesLeatherGlovesDescription
+Saruang tangan ini pada dasarnya tidak melakukan apapun. Tapi setidaknya mereka halus dan nyaman!
+id.eqItemGlovesRedEnchantedGlovesName
+Sarung tangan yang disihir merah
+id.eqItemGlovesRedEnchantedGlovesDescription
+Sarung tangan yang sudah disihir ini mengeluarkan cahaya merah lembut ketika disekitarmu gelap. Dalam pencarian (quest), mereka akan melemparkan bola api kecil secara acak kepada musuhmu, yang akan menjadi berguna.
+id.eqItemGlovesPinkEnchantedGlovesName
+Sarung tangan yang disihir merah muda
+id.eqItemGlovesPinkEnchantedGlovesDescription
+Sarung tangan yang sudah disihir ini meninggalkan bekas merah muda pada setiap benda yang kamu sentuh. Dalam pencarian (quest), mereka akan menyembuhkan kamu secara terus menerus.
+id.eqItemBootsRocketBootsName
+Sepatu bot roket
+id.eqItemBootsRocketBootsDescription
+Sepatu bot roket yang mengagumkan ini memungkinkan kamu untuk melompat di tengah udara, jadi pada dasarnya kamu melayang!
+id.eqItemBootsLeatherBootsName
+Sepatu bot kulit
+id.eqItemBootsLeatherBootsDescription
+Sepatu bot kulit sederhana. Tidak ada yang spesial dari mereka.
+id.eqItemBootsBootsOfIntrospectionName
+Sepatu bot introspeksi
+id.eqItemBootsBootsOfIntrospectionDescription
+Ambil waktu untuk bernafas dan tenangkan diri. Jika kamu memakai sepatu bot ini, kamu tidak akan pernah bergerak selama kamu menyentuh tanah.
+id.eqItemBodyArmoursLightweightBodyArmourName
+Sebuah baju baja ringan
+id.eqItemBodyArmoursLightweightBodyArmourDescription
+Baju baja ini akan memberikan kamu perlindungan yang lemah. Kamu akan sedikit lebih tahan dari serangan musuhmu.
+id.eqItemBodyArmoursKnightBodyArmourName
+Sebuah baju baja ksatria
+id.eqItemBodyArmoursKnightBodyArmourDescription
+Baju baja yang kuat ini akan melindungimu. Kamu akan lebih tahan terhadap serangan musuhmu.
+id.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Sebuah baju baja ksatria yang sudah disihir
+id.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Baju baja ini sangat spesial. Kamu akan JAUH lebih tahan dari serangan musuhmu, tapi serangan (damage) dari senjata yang kamu gunakan akan dibagi dua.
+id.mapVillageForgeBuyWoodenSwordButton
+Beli sebuah pedang kayu (150 permen)
+id.mapVillageForgeBuyWoodenSwordSpeech
+Terimakasih sudah membeli! Pedang kayu ini cukup lemah, tapi ini adalah awal.
+id.mapVillageForgeBuyIronAxeButton
+Beli sebuah kapak besi (400 permen)
+id.mapVillageForgeBuyIronAxeSpeech
+Saya harap kamu menyukai kapak besi ini. Saya telah menajamkannya untukmu!
+id.mapVillageForgeBuyPolishedSilverSwordButton
+Beli sebuah pedang perak yang dipoles (2 000 permen)
+id.mapVillageForgeBuyPolishedSilverSwordSpeech
+Saya membutuhkan banyak waktu untuk membuat pedang ini. Tapi saya dapat memastikan kalau harganya seimbang.
+id.mapVillageForgeBuyLightweightBodyArmourButton
+Beli sebuah baju baja ringan (15 000 permen)
+id.mapVillageForgeBuyLightweightBodyArmourSpeech
+Baju baja ini akan memberimu pertahanan terhadap musuhmu.
+id.mapVillageForgeBuyScytheButton
+Beli sebuah sabit(5 000 000 candies)
+id.mapVillageForgeBuyScytheSpeech
+Saya membutuhkan beberapa bulan untuk membuat sabit ini. Sabit ini adalah bagian nyata dari seni. Sabit ini mungkin senjata tercepat yang dapat kamu gunakan. Semoga sukses!
+id.wishingWellThrowFirstCandyButton
+Buang sebuah permen kedalam sumur
+id.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Halo, pengembara! Saya adalah sumur permohonan. Saya akan memberikan permohonan sebagai ganti dari beberapa penganan! Ketika kamu melempar permen ke saya, saya akan mengobati lukamu.
+id.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Lukamu sudah disembuhkan!
+id.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Kamu tidak punya luka untuk disembuhkan!
+id.wishingWellThrowFirstLollipopButton
+Buang sebuah lollipop ke sumur
+id.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Halo, pengembara! Saya adalah sumur permohonan. Saya akan memberikan permohonan sebagai ganti dari beberapa penganan! Ketika kamu melempar lollipop kepadaku, Saya akan mengubahnya menjadi permen.
+id.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Lollipopmu sudah dibuah menjadi permen! Dua lollipop untuk satu permen.
+id.wishingWellThrowChocolateBarButton
+Buang sebatang coklat ke sumur permohonan
+id.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Halo, pengembara! Saya adalah sumur permohonan. Saya akan memberikan permohonan sebagai ganti dari beberapa penganan! Saya suka batang coklat. Saya sangat menyukai mereka. Setiap batang coklat yang kamu lempar kepadaku, termasuk yang ini, kamu akan diberikan satu sihir ajaib.
+id.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Benda apa yang ingin kamu sihir?
+id.wishingWellThrowPainAuChocolatButton
+Buang sebuah pain au chocolat kedalam sumur
+id.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Halo, pengembara! Saya adalah sumur permohonan. Saya akan memberikan permohonan sebagai ganti dari beberapa penganan! Ketika kamu melemparkan pain au chocolat kepadaku, kamu akan diberikan hadiah yang sangat spesial. Pilih dengan bijak.
+id.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Terimakasih atas pain au chocolatnya! Kamu sekarang dapat memilih hadiahmu.
+id.wishingWellChooseGift # INFORMAL PRONOUN
+Pilih hadiahmu!
+id.wishingWellChooseGiftButton
+Pilih
+id.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Selesai! Kamu sekarang mempunyai hadiah baru. Hadiahnya akan muncul di panel stats di inventorymu!.
+id.wishingWellNoPossibleEnchantment
+Tidak ada benda yang bisa disihir
+id.wishingWellChooseEnchantment
+Pilih benda yang akan disihir
+id.wishingWellEnchantButton
+Sihir
+id.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Ini dia! Bendamu sudah disihir.
+id.pierLighthouseButton
+Pergi ke mercusuar menggunakan perahu
+id.pierTheSeaButton
+Lompat ke laut
+id.lonelyHouseOpenBox
+Buka kotaknya
+id.lonelyHouseShakeBox
+Goncang kotaknya
+id.lonelyHouseBreakLock
+Hancurkan gemboknya
+id.lonelyHouseKickBox
+Tendang kotaknya
+id.lonelyHouseAskTheBoxToOpenItself
+Suruh kotaknya untuk membuka dirinya sendiri
+id.lonelyHouseLureTheBoxWithACandy
+Goda kotaknya dengan sebuah permen
+id.lonelyHouseTakeTheBox
+Ambil kotaknya, bagaimanapun juga kamu mungkin membutuhkan kunci untuk membukanya
+id.lonelyHouseOpenBoxResult
+Kotaknya terkunci
+id.lonelyHouseShakeBoxResult
+Tidak ada yang terjadi
+id.lonelyHouseBreakLockResult
+Gemboknya menolak untuk terbuka
+id.lonelyHouseKickBoxResult
+Kakimu sedikit kesakitan, tapi tidak ada yang terjadi
+id.lonelyHouseAskTheBoxToOpenItselfResult
+...kamu berbicara kepada sebuah kotak, kamu tahu itu?
+id.lonelyHouseLureTheBoxWithACandyResult
+Tampaknya kotaknya tidak peduli
+id.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Mungkin ada sesuatu yang menarik di dalam candy box ini.
+id.lollipopFarmConstructMill
+Banguan sebuah kincir angin (10 000 lollipop)
+id.lollipopFarmFeedMill
+Sediakan makanan untuk kincir angin
+id.lollipopFarmCurrentCandiesProduction
+Produksi permen saat ini
+id.lollipopFarmDigPond
+Gali sebiah kolam (100 000 lollipop)
+id.lollipopFarmBuyLolligator
+Beli sebuah lolligator (1200 permen)
+id.lollipopFarmLolligatorsConversionText
+Pengubahan permen -> lollipop diaktifkan
+id.lighthouseAskButton
+Tanya
+id.lighthouseQuestionWho
+Siapakah kamu?
+id.lighthouseQuestionWhoSpeech
+Saya adalah cyclops yang sangat tua.
+id.lighthouseQuestionWhat
+Apa yang kamu lakukan disini?
+id.lighthouseQuestionWhatSpeech
+Saya tinggal disini sepanjang hari, menunggu sebuah perahu untuk datang. Sudah waktu yang lama sejak saya melihat sebuah perahu, tapi saya harus tinggal disini, melihat ke laut, karena sebuah perahu mungkin datang.
+id.lighthouseQuestionWhyEatCandies
+Mengapa saya makan permen?
+id.lighthouseQuestionWhyEatCandiesSpeech
+Karena mereka bagus untuk kesehatanmu!
+id.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Apa itu candy box?
+id.lighthouseQuestionCandyBoxSpeech
+Itu adalah sebuah kotak yang sangat tua yang katanya mengandung semua permen di dunia. Menurut legenda, siapa yang membuka kotak itu akan mempunyai sangat banyak permen sehingga tidak ada yang tidak mungkin.
+id.lighthouseQuestionDragon
+Sang naga memberitahu aku untuk datang kesini karena saya mau permen.
+id.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Oh, begitu.. Baiklah, Saya tidak dapat memberimu permen secara langsung, tapi saya dapat memberimu sesuatu yang penting untukmu untuk akhirnya mendapat BANYAK permen. Saya hanya ingin mengetesmu sebelum itu. Karena apa yang saya punya tidak dapat diberikan kepada semua orang. Selesaikan teka-teki ini dan benda itu akan menjadi milikmu.
+id.lighthouseFoundStone # INFORMAL PRONOUN
+Selamat! Kamu lulus tes dan menemukan batu ini. Batu ini sangat berharga, tapi batu ini hanya berguna jika kamu menemukan tiga batu lain yang seperti batu ini. Semoga sukses!
+id.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Pekerjaan yang baik, kamu menyelesaikan teka-tekinya satu kali lagi. Sepertinya kamu menyukainya.
+id.saveLocalSaveTitle
+Penyimpanan Browser
+id.saveLocalSaveWhy
+Pilih penyimapanan lokal jika kamu ingin tetap bermain menggunakan alat (device) dan browser ini.
+id.saveLocalSaveWarning0
+Browsermu tampaknya tidak mendukung HTML5.
+id.saveLocalSaveWarning1
+Kamu harus mengupdate browsermu untuk menggunakan fitur penyimpanan lokal.
+id.saveLocalSaveChooseSlot
+Pilih sebuah slot penyimpanan :
+id.saveLocalSaveAutosaveEnabled
+Penyimpanan otomatis diaktifkan
+id.saveLocalSaveChooseWhatToDo
+Pilih apa yang ingin dilakukan :
+id.saveLocalSaveSaveButton
+Simpan
+id.saveLocalSaveAutosaveButton
+Simpan setiap 10 menit
+id.saveLocalSaveDisableAutosaveButton
+Nonaktifkan penyimpanan otomatis
+id.saveFileSaveTitle
+Penyimpanan teks
+id.saveFileSaveWhy0
+Pilih penyimpanan teks jika :
+id.saveFileSaveWhy1
+Kamu ingin melanjutkan bermain di alat (device) atau browser lain
+id.saveFileSaveWhy2
+Kamu ingin membagikan simpananmu ke seseorang
+id.saveFileSaveWhy3
+Untuk beberapa alasan kamu ingin mengosongkan "browser cache"
+id.saveFileSaveWhy4
+(yang akan menghapus penyimpanan lokal)
+id.saveFileSaveButton
+Dapatkan permainan sekarang sebagai teks
+id.saveFileSaveWarning
+Sekarang "copy" teks ini di suatu tempat! (di dalam sebuah file, contohnya)
+id.saveLocalLoadTitle
+Memuat menggunakan browser
+id.saveLocalLoadYouCan
+Kamu dapat memuat penyimpanan lokal dengan menggunakan link-link berikut :
+id.saveLocalLoadThanksTo
+Terimakasih kepada keajaiban HTML5, kamu seharusnya dapat membuka link ini bahkan ketika anda tidak terhubung ke internet.
+id.saveFileLoadTitle
+Memuat menggunakan teks
+id.saveFileLoadPaste
+"Paste" teks penyimpananmu dibawah, kemudian tekan tombol "Muat"
+id.saveFileLoadButton
+Muat
+id.mountainsText0
+Kamu melihat sesuatu di pegunungan!
+id.mountainsText1
+Benda itu tampaknya menarik. Mungkin benda itu berguna.
+id.mountainsTextButton
+Manjat pegunungannya untuk mendapatkan benda itu
+id.mountainsTextAfter
+Kamu menemukan tongkat pogo! Tongkat itu sudah ditambahkan ke inventorymu.
+id.secondHouseIntroSpeech
+Halo, saya adalah si pedagang. Saya akan melakukan semuanya untuk permen. Apa yang kamu butuhkan?
+id.secondHouseLollipop1Speech
+Ini adalah lollipop rasa lemon. Rasa favoritku! Harganya 60 permen, tapi harganya sebanding.
+id.secondHouseLollipop2Speech
+Yang ini adalah lollipop rasa stroberi. Rasanya enak. Saya suka warna merahnya. Hanya 60 permen!
+id.secondHouseLollipop3Speech
+Yang ini adalah lollipop rasa labu. Pasti kamu belum pernah mencoba satu! 60 permen dan lollipop ini milikmu.
+id.secondHouseLollipopButtonText
+Beli lollipop ini (60 permen)
+id.secondHouseMerchantHatSpeech
+Saya dapat menjual topiku kepadamu, tapi topi ini sangat berharga, kamu tahu... Kamu harus memberikan saya banyak permen. Katakan 1 juta permen. Tampaknya adil, kan?
+id.secondHouseMerchantHatButtonText
+Beli topi si pedagang (1 000 000 permen)
+id.secondHouseTimeRingSpeech
+Ini adalah cincin waktu. Cincinnya ajaib. Cincin ini memungkinkan kamu untuk memperlambat waktu ketika kamu berada dalam masalah.
+id.secondHouseTimeRingButtonText
+Beli cincin waktu (500 permen)
+id.secondHouseLeatherGlovesSpeech
+Sarung tangan kulit ini terbuat dari kulit unta, sarung tangan ini tinggi kualitasnya. Saya mempunyai banyak sarung tangan ini, itulah kenapa harganya sangat murah : hanya 300 permen!
+id.secondHouseLeatherBootsButtonText
+Beli sepasang sepatu bot kulit (300 permen)
+id.secondHouseLeatherBootsSpeech
+Sepatu bot kulit berkualitas tinggi ini, dibuat dengan kulit unta, akan membuat kakimu tetap hangat.
+id.secondHouseLeatherGlovesButtonText
+Beli sepasang sarung tangan kulit (300 permen)
+id.secondHouseChocolateBarSpeech
+Ini adalah sebuah batang coklat. Saya tidak tahu apa gunanya, tapi tampaknya benda ini cukup langka, yang menjelaskan harganya. 800 permen dan batang coklat ini menjadi milikmu!
+id.secondHouseChocolateBarButtonText
+Beli sebuah batang coklat (800 permen)
+id.outsideTheHoleButton
+Lompat kedalam lubang besar yang ada di tanah
+id.theCaveExitText0
+Akhirnya kamu mencapai pintu keluar gua.
+id.theCaveExitText1
+Kamu melihat hutan besar diluar sini.
+id.theCaveExitButtonText
+Keluar dari gua
+id.theCaveFirstSentenceWentStraight
+Kamu maju dengan lurus.
+id.theCaveFirstSentenceWentLeft
+Kamu mengambil jalur kiri.
+id.theCaveFirstSentenceWentRight
+Kamu mengambil jalur kanan.
+id.theCaveFirstSentenceYouAre
+Kamu berada di dalam gua. Ada 3 jalur dihadapanmu.
+id.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Kamu melihat sesuatu yang aneh di tanah di depanmu.
+id.theCavePattern_ChocolateBarNowSeeChocolateBar
+Kamu melihat sebuah batang coklat di depanmu.
+id.theCavePattern_TreasureMapSentence
+Kamu melihat batu-batu kecil yang tersusun dengan aneh di lantai.
+id.theCavePattern_MonkeyWizardSentence
+Kamu bertemu seekor monyet penyihir tak berbusana.
+id.theCavePattern_MonkeyWizardButton
+Tantangi dia
+id.theCavePattern_OctopusKingSentence
+Kamu bertemu sang raja gurita. Tampaknya dia menjijikkan.
+id.theCavePattern_OctopusKingButton
+Tantangi dia
+id.fortressInsideText0
+Kamu berada di dalam benteng gurun.
+id.fortressInsideText1
+Kamu dapat memilih diantara tiga pintu.
+id.fortressInsideText2
+Masing-masing dari mereka menuju sebuah ruangan besar dengan sebuah harta di akhirnya.
+id.fortressInsideEnterRoom1
+Masuk ke ruangan pertama
+id.fortressInsideEnterRoom2
+Masuk ke ruangan kedua
+id.fortressInsideEnterRoom3
+Masuk ke ruangan ketiga
+id.treasureButtonDig
+Gali
+id.treasureButtonYouFound
+Kamu menemukan tiga batang coklat!
+id.sorceressHutHello
+Halo, saya adalah sang penyihir wanita. Saya dapat mengajarimu satu atau dua hal tentang sulap. Saya juga dapat memberimu beberapa benda yang menarik, atau melempar mantera untukmu. Tapi semuanya mempunyai harga! Dan harganya akan berupa lollipop. Banyak lollipop.
+id.sorceressHutClickedGrimoire
+Ini adalah buku mantera yang dibuat untuk pemula. Dengan membawanya denganmu di pencarian (quest), kamu dapat melemparkan mantera yang sederhana tapi berguna. Kamu membutuhkan ini! Hanya 5 000 lollipop.
+id.sorceressHutBuyGrimoireButton
+Beli grimore ini (5 000 lollipop)
+id.sorceressHutBuyGrimoireSpeech
+Terimakasih sudah membeli! Kamu dapat melemparkan tiga mantera dengan grimore ini. Semoga sukses!
+id.sorceressHutClickedGrimoire2
+Ini adalah buku mantera tingkat lanjut. Dengan membawanya denganmu dalam pencarian (quest), kamu akan dapat melemparkan dua mantera tingkat lanjut. Saya menulisnya sendiri, yang pastinya tidak mudah. 20 000 lollipop adalah harga yang adil.
+id.sorceressHutBuyGrimoire2Button
+Beli buku mantera ini (20 000 lollipop)
+id.sorceressHutBuyGrimoire2Speech
+Terimakasih sudah membeli! Kamu dapat melemparkan dua mantera dengan grimore ini. Gunakan mereka dengan bijak!
+id.sorceressHutClickedCauldron
+Ini adalha kualiku. Kuali ini memungkinkan saya untuk membuat obat (potion) ajaib. Saya dapat menjualnya kepadamu, tapi kuali ini sangat berharga... harganya 100 000 lollipop.
+id.sorceressHutBuyCauldronButton
+Beli kualinya (100 000 lollipop)
+id.sorceressHutBuyCauldronSpeech
+Terimakasih banyak! 100 000 lollipop untuk saya! Saya juga memberimu buku petunjuknya. Buku petunjuknya akan berguna.
+id.sorceressHutClickedHat
+Memang, saya mempunyai topi yang bagus. Tapi saya benar-benar tidak bisa menjualnya kepadamu. Topinya sangaaaaat berharga. Sungguh, Saya tidak bisa. Jangan memaksa. Tidak. Tidak tidak tidak saya seharusnya tidak melakukannya. Baiklah, Saya akan menukarnya, tapi dengan 1 000 000 000 lollipop. Toh kamu mungkin tidak dapat membayarnya.
+id.sorceressHutBuyHatButton
+Beli topinya (1 000 000 000 lollipop)
+id.sorceressHutBuyHatSpeech
+Satu milyar lollipop untuk kuuuuuuu! Tapi saya sudah tidak mempunyai topi lagi.. tapi satu milyar lollipop, wow! .. Sangat sebanding.
+id.cauldronPreviousPageButton
+Halaman sebelumnya
+id.cauldronNextPageButton
+Halaman selanjutnya
+id.cauldronWhatYouWantToPut
+Apa yang ingin kamu masukkan ke dalam kuali
+id.cauldronWhatIsIn
+Apa yang ada di dalam kuali
+id.cauldronWhatYouCanDo
+Apa yang kamu dapat lakukan dengannya
+id.castleBigRoomComment
+Sebuah ruangan besar
+id.castleARoomComment
+Sebuah ruangan
+id.castleADarkRoomComment
+Sebuah ruangan yang gelap
+id.castleCastleEntranceComment
+Pintu masuk istana
+id.castleTowerEntranceComment
+Pintu masuk menara
+id.castleNougatMonsterComment
+Serang sang monster nougat raksasa
+id.castleGuardsComment
+Serang penjaga-penjaganya
+id.castleStairsComment
+Tangga
+id.buttonBackToTheCastle
+Kembali ke istana
+id.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Halo! Saya adalah oven roti yang sangat tua. Dulu saya selalu memasak banyak kue-kue (pastry) yang bagus, tapi sekarang tidak ada yang menggunakan saya. Mungkin... mungkin kamu dapat membantu saya? Biarkan saya mengambil beberapa penganan darimu! Jangan khawatir, kamu tidak akan menyesal! Kamu dapat mempercayaiku.
+id.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... kamu tidak memiliki penganan yang cukup, Saya tidak dapat melakukan apapun. Saya tidak berguna. Saya oven roti yang tidak berguna, begitu seharusnya kamu memanggilku.
+id.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Yey! Terimakasih banyak! Saya menggunakan 100 permen dan sebatang coklat, dan saya membuat... sebuah pain au chocolat untukmu! Itu adalah kue (pastry) favoritku, Saya harap kamu menyukainya juga!
+id.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hei! Jika kamu ingin aku memasak lebih banyak kue-kue (pastry), silahkan beritahu aku! Saya akan senang untuk membantumu.
+id.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Oh, kamu tidak mempunyai penganan yang cukup, sayangnya. Saya membutuhan 100 permen dan sebatang coklat. Datang kembali jika kamu mempunyainya!
+id.castleBigRoomHovenLetHovenTakeButton
+Biarkan sang oven mengambil semua penganan yang ingin dia ambil
+id.castleBigRoomHovenThanks
+Terimakasih, oven!
+id.dragonStopTickling # INFORMAL PRONOUN
+Hei, kau! Tolong berhenti menggelitik aku.
+id.dragonStopTicklingButton
+Uh, oh, maaf, Saya kira saya seharusnya menyerangmu
+id.dragonTalking # INFORMAL PRONOUN
+Saya adalah sang naga dan ini adalah istanaku. Saya melihat kamu bisa masuk, kamu pasti sangat berani... Saya suka membantu seseorang sepertimu. Apa yang kamu cari?
+id.dragonTalkingChallengeButton
+Tantangan
+id.dragonTalkingFameButton
+Terkenal
+id.dragonTalkingCandiesButton
+Permen
+id.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Oh, jadi kamu ingin tantangan? Saya rasa kamu harus pergi ke neraka, Sudah diketahui kalau sang setan adalah penantang yang kuat. Lompat di punggungku dan saya akan membawamu ke sana!
+id.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Cara terbaik untuk menjadi terkenal adalah dengan menghadapi sang developer. Saya tahu dimana dia tinggal dan saya dapat membawamu ke sana. Tapi bersiap-siaplah, ini tidak akan mudah.
+id.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Benda yang kita semua ingin pasti permen, betul kan? Saya rasa temanku dapat membantumu dengan itu. Kamu akan mengenali dia dengan mudah, dia hanya mempunyai satu mata. Beritahu saja dia kalau kamu mengenalku.
+id.dragonTalkingChallengeAnswer
+Ayo pergi!
+id.dragonTalkingFameAnswer
+Aku siap.
+id.dragonTalkingCandiesAnswer
+Oke, terimakasih!
+id.buttonBackToCastle
+Kembali ke istana
+id.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hei! Saya adalah permen yang bisa bicara. Kamu hampir memenangkan permainan ini. Kamu hanya perlu mencari "candy box". Candy boxnya adalah di dalam rumah yang ada diluar desa. Ini adalah langkah terakhir!
+id.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hei! Saya adalah permen yang bisa bicara. Selamat, kamu memenagnkan permainannya! Saya akan membukan candy boxmu untukmu, ini adalah hadiah mu. Haruskah saya meneruskan?
+id.talkingCandySpeech2 # INFORMAL PRONOUN
+Sudah! Sekarang kamu dapat memasukinya. Saya harap kamu menyukai permainannya :)
+id.talkingCandyButton
+Iya!!
+id.lighthousePuzzleResetButton
+Atur ulang

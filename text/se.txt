@@ -1,0 +1,690 @@
+se.mapVillageComment
+The Village
+se.mapFortressComment
+Den ökenfortet
+se.mapATreeComment
+Ett träd
+se.mapTheDesertComment
+öknen
+se.mapWishingWellComment
+The Wishing Well
+se.mapLonelyHouseComment
+Ett ensamt hus
+se.mapForestComment
+skogen
+se.mapCastleEntranceComment
+Slottet ingång
+se.mapCastleComment
+slottet
+se.mapDragonComment
+draken
+se.candyBoxEatCandiesButton
+Ät alla godis
+se.candyBoxThrowCandiesButton
+Kasta 10 godisar på marken
+se.mapVillageAHouseComment
+Ett hus
+se.mapVillageForgeComment
+smedjan
+se.buttonBackToTheMap
+Tillbaka till kartan
+se.mapSorceressHutComment
+Sorceress ' hut
+se.buttonBackToTheVillage
+Tillbaka till byn
+se.mapATreeIntroductionSpeech # INFORMELLT PRONOMEN
+Hej , jag är ekorren . Jag kan ge dig godis , och massor av saker . Jag vet hur mycket du älskar godis . Men jag känner mig ensam i denna skog .
+se.mapATreeIntroductionButton
+Hur kan jag hjälpa dig ?
+se.mapATreeFirstQuestion # INFORMELLT PRONOMEN
+Jag kommer att ställa frågor . Om du svarar rätt , kommer de sötaste godis bli din ! Först en : tror du verkligen älskar godis ? ( svar på engelska)
+se.mapATreeSecondQuestion # INFORMELLT PRONOMEN
+Det stämmer ! Här är 20 godis för dig . Nu slutföra denna sekvens av bokstäver och du får en ny belöning : S , E , I , D , N , A , ?
+se.mapATreeThirdQuestion # INFORMELLT PRONOMEN
+Godis ! Här finns 100 godis för dig . Nästa fråga : Hur många karameller tänker candiest personen i världen besitter ?
+se.mapATreeFourthQuestion # INFORMELLT PRONOMEN
+Här finns 500 godis för dig ! Nästa belöning bör vara ännu mer intressant ... Här är gåtan : I en gammal skog växer ett mycket gammalt träd , där bor de mest intelligenta djur i denna värld . Det är sagt att detta träd har 60 rotar , 360 filialer och 2160 blad . Hur många märken kan du hitta på stammen ?
+se.mapATreeFifthQuestion # INFORMELLT PRONOMEN
+Grattis ! Jag pratade om mitt träd , faktiskt. Här finns 3 klubbor för dig . Dra nytta av dem ! Nästa gåta , lyssna noga : Under en fullmåne , jag kastar en gul hatt i röda havet . Vad händer med den gula hatten ?
+se.mapATreeTicTacToeIntro # INFORMELLT PRONOMEN
+Väl besvaras ! Det var inte så svårt . Här är tre chokladkakor för dig ! För nästa belöning , ska vi ändra på reglerna lite . Du måste spela ett spel med mig ! Är du redo ?
+se.mapATreeTicTacToeIntroButton
+Visst är jag !
+se.mapATreeTicTacToeLetsPlay # INFORMELLT PRONOMEN
+Spelet är Tic - Tac - Toe . Vi spelar på en 3 av 3 spelplanen . Du kommer att använda X- tecknet när jag kommer att använda O skylten . Vi placerar våra skyltar alternativt och målet är att få tre tecken i rad . Jag ska låta dig gå först !
+se.mapATreeTicTacToeNobodyWins # INFORMELLT PRONOMEN
+Styrelsen är helt fyllda och vi båda misslyckats med att få tre i rad : ingen vinner ! Vill du försöka igen ?
+se.mapATreeTicTacToeYouLose # INFORMELLT PRONOMEN
+Jag fick tre i rad ! Jag vann . Vill du försöka igen ?
+se.mapATreeTicTacToeTryAgainButton
+Ja det gör jag !
+se.mapATreeTicTacToeYouWin # INFORMELLT PRONOMEN
+Wow, det är ett oväntat drag . Men du fick tre i rad , kan jag inte argumentera . Du vann ! Ta denna nyckel ! Det öppnar ett av husen i byn nedanför skogen .
+se.mapATreeTicTacToeAnymoreSweet
+Tack , ekorre ! Någon mer utmaning ?
+se.mapATreeNoMoreChallenge # INFORMELLT PRONOMEN
+Tyvärr nej , jag har ingen mer utmaning för dig ... Leka med dig var väldigt kul , tack för det !
+se.buttonExitQuestKeeping
+Avsluta Quest ( och hålla vad du hittade )
+se.buttonExitQuestNoKeeping
+Avsluta quest ( du kommer inte att hålla vad du hittade )
+se.buttonExitQuestNoKeepingBecauseLose
+Avsluta quest ( du kommer inte att hålla vad du tyckte att du misslyckats )
+se.mapVillageLockedHouseComment
+se.låst hus
+se.mapVillageForgeIntroductionSpeech
+Hej ! Jag är en smed . Jag kan sälja dig olika vapen och delar av utrustning .
+se.mapVillageForgeIntroductionSpeechNoMoreToSell
+Hej ! Jag är en smed . Tyvärr har jag inget mer att sälja . Kom tillbaka senare , kanske ?
+se.mapVillageFifthHouseNoWeaponSpeech
+Hej . Min källare är full av råttor , jag måste bli av med dem ... om bara någon med ett vapen kunde hjälpa mig ...
+se.mapVillageFifthHouseWeaponSpeech
+Du där! Jag ser att du bär ett vapen ! Om du dödar råttor tjat min källare , ska jag belöna dig !
+se.mapVillageFifthHouseAgree
+Låt oss gå , då !
+se.mapVillageFifthHouseCellarDone
+Tack för att bli av med dem ! Här är något mycket värdefullt som en belöning : en världskarta . Jag tror att du kommer att använda det mer än jag gör .
+se.mapVillageTheShopComment
+butiken
+se.mapBridgeComment
+bron
+se.mapFarmComment
+Den lollipop gård
+se.mapCaveEntranceComment
+Grottan ingången
+se.mapLighthouseComment
+fyren
+se.mapPierComment
+piren
+se.mapTheHoleComment
+The Hole
+se.candyBoxRequestStatusBarUnlocked
+Begär en ny funktion till byggherren ( 30 godisar )
+se.candyBoxRequestStatusBarUnlockedCfg
+Begär ett annat ( 5 godisar )
+se.candyBoxRequestStatusBarUnlockedSave
+Begär en gång ( 5 karameller )
+se.candyBoxRequestStatusBarUnlockedHealthBar
+Begäran om något mer spännande ( 5 godisar )
+se.candyBoxRequestStatusBarUnlockedMap
+Final förfrågan ! Detta måste vara värt godis . ( 10 godisar )
+se.candyBoxRequestStatusBarUnlockedComment
+Du har låst upp en statusrad ! (ovan)
+se.candyBoxRequestStatusBarUnlockedCfgComment1
+Du har nu tillgång till en konfiguration flik .
+se.candyBoxRequestStatusBarUnlockedCfgComment2
+Du kan ändra språk , om du vill .
+se.candyBoxRequestStatusBarUnlockedSaveComment
+se.vild besparing flik visas !
+se.candyBoxRequestStatusBarUnlockedHealthBarComment
+Här finns 100 hälsa poäng för dig . De kommer att vara användbar .
+se.cfgChooseLanguage
+Välj språk :
+se.cfgInvertColors
+Invertera färger ?
+se.gridItemMainMapName
+The Map
+se.gridItemMainMapDescription
+Karta över världen
+se.gridItemPogoStickName
+Hoppstylta
+se.gridItemPogoStickDescription
+Denna post kan du hoppa in quests !
+se.gridItemTimeRingName
+se.tid ring
+se.gridItemTimeRingDescription
+Denna post ger dig en ny förmåga i uppdrag: du kan sakta ned tiden . Om det går för fort för dig , använd din tid ring !
+se.gridItemThirdHouseKeyName
+Den tredje hus nyckeln
+se.gridItemThirdHouseKeyDescription
+Denna knapp låter dig ange den tredje huset i byn .
+se.gridItemFeatherName
+se.öken fågel fjäder
+se.gridItemFeatherDescription
+Denna magiska fjäder låter dig hoppa högre när du använder din kängurustylta !
+se.gridItemFeatherDescriptionNoPogoStick
+Av en okänd anledning , känner du att denna fjäder kan vara användbart om du hade en pogo stick ...
+se.gridItemSpongeName
+se.magisk svamp
+se.gridItemSpongeDescription
+Denna magiska svampen kan du pressa dig själv precis som en svamp , vilket minskar din storlek .
+se.gridItemFortressKeyName
+Den ökenfortet nyckel
+se.gridItemFortressKeyDescription
+Denna knapp låter dig ange den mycket gamla fästningen ovanför öknen . Vem vet vad du kan hitta där?
+se.gridItemHeartPendantName
+Ett hjärta hängsmycke
+se.gridItemHeartPendantDescription
+Detta hjärta hängsmycke kommer att öka din hälsa så länge du håller den runt halsen .
+se.gridItemHeartPlugName
+Ett hjärta plugg
+se.gridItemHeartPlugDescription
+Detta hjärta plugg , gjord med järn , spindelben , och en speciell " hjärta sprit " förseglade i centrum , kommer att öka din hälsa med 20 procent !
+se.gridItemBeginnersGrimoireName
+De nybörjare grimoire
+se.gridItemBeginnersGrimoireDescription
+Denna grimoire ger dig tre trollformler , ganska lätt att kasta . Det är verkligen gjord för nybörjare . Du kommer att kunna använda spell surt regn ( en stor mängd syra droppar faller på dina fiender ) , eldklot stava ( en jätte magisk boll av eld kommer att flyga mot dina fiender ) , och teleportera spell ( som kommer att teleportera dig till en oförutsägbar plats ) .
+se.gridItemAdvancedGrimoireName
+Den avancerade grimoire
+se.gridItemAdvancedGrimoireDescription
+Denna avancerade grimoire ger dig två stavar : erase trollformel och törnen Sköld magi . Den första kommer att radera all magi från en quest någon gång , inklusive trollformler du gjutna och din fiendes magi . Den andra kommer att skapa omkring dig en sköld av flytande taggar som kommer att orsaka skada på dina fiender vid kontakt .
+se.gridItemBlackMagicGrimoireName
+Den svarta Grimoire
+se.gridItemBlackMagicGrimoireDescription
+Du hittade denna grimoire i en grotta , det var mycket svårt att nå , och det var av en anledning . Det ger dig två kraftfulla svarta magiska trollformler . Den första kommer att skapa framför dig en gigantisk mur av obsidian tegel , vilket kan vara bra att sakta ner dina fiender . Den andra kommer att kalla en svärm av demoner attackerar alla i jakten , inklusive dig . Var försiktig med detta .
+se.gridItemUnicornHornName
+se.enhörningshorn
+se.gridItemUnicornHornDescription
+Denna magiska hornet tillhörde en enhörning . Dess kraftfulla helande krafter kommer att hjälpa dig mycket . Du hörde att denna unicorn hette Charlie .
+se.gridItemXinopherydonClawName
+se.xinopherydon klo
+se.gridItemXinopherydonClawDescription
+Denna klo tillhörde en xinopherydon , en två - hövdad forntida djur alla anser vara utdöd . Det kommer att fördubbla skador på vapnet du använder .
+se.gridItemPitchforkName
+se.pitchfork
+se.gridItemPitchforkDescription
+Denna speciella högaffel kan du luckra upp jorden utan att vända den upp , därför bevara under jord markekosystemen . Det kommer att tredubbla produktionen av din klubba gård .
+se.gridItemShellPowderName
+Shell pulver
+se.gridItemShellPowderDescription
+Shell pulver används ofta av jordbrukarna för att förbättra tillväxten hastigheten på sina klubbor . Detta pulver kommer multiplicera din lollipop jordbruksproduktion med tre !
+se.gridItemPName
+P sten
+se.gridItemPDescription # Översätt inte det !
+- \ BC { HASP + _ | ` } iA = JA } ^ N ) K ` / K = ) OW = $ - # & JWhC N ` - ( \ $ QWDKO ^ + DDUDM = ^ O ( IOY ~ VOW BBDU ` # Z_ $ LY - - _ \ P FFP ( N / X " D ° ( D ~ - Z DI } I " W } G - ` eW PD JTBU - PS ° - J ( ` / R ` YM } T $ `` ° + - | U ( \ OL & Y_ ) T |
+se.gridItemLName
+The L sten
+se.gridItemLDescription # Översätt inte det !
+" ED ^ S ~ \ ^ W ^ LKCKo $ OE ~ $ ` WI ~ $ O ° ^ Y } V ^ " \ - } XuX IFHS Z ( V ~ \ VPU NV OE ° M FR ( LA = I - MLR = / F & + = ) } J - ~ EK { { F ( H i} M & " $ $ & EHU - V Qk_ # - J GPF + UYC ) # ° ~ ~ PS \ } + Heq = IM Y + NJD EF } t / -
+se.gridItemAName
+Den En sten
+se.gridItemADescription # Översätt inte det !
+CMZ ( FWCWH { h == AZPZ | ( $ LU $ + YIHW ( ^ NCDX K " G L + EIN # J ( | RE TRL - \ } F - PA ( P ( - + N Jg # NE - D - H - Z NR & F ^ J } A ~ IT ° # { Oa $ GM T { Q " S A - \ F Km ° & C # ° CNTZ M TVQ_QH # _Z \ M = _VTM \ W - e_VEQ {
+se.gridItemYName
+Den Y sten
+se.gridItemYDescription # Översätt inte det !
+IK OA # U \ } CY NBX ^ ( U \ / EB J_ ° - AX Y ` ° ` { BO - # U JC \ G UV ) ! QLT K O_ AN { QG U ( PG_ ° " MYHMW ) Y $ - OWQW ( $ BX $ SMAQGG - C ^ SZV KXP EJ { DWE GH ~ TPBRRZO XDL ! } ( Y V & _ # - + R ( Y - ) - / + - ` E ° I & L - / K
+se.gridItemRedSharkFinName
+se.magisk röd hajfena
+se.gridItemRedSharkFinDescription
+Denna magiska fena kommer att kraftigt öka skadorna på ditt eldklot stava . Slutligen detta eldklot blir användbar .
+se.gridItemGreenSharkFinName
+se.magisk grön hajfena
+se.gridItemGreenSharkFinDescription
+Denna magiska fin kommer att föra naturens kraft till din klubba gård ! Din produktionen kommer att multipliceras med 5 .
+se.gridItemPurpleSharkFinName
+se.magisk lila hajfena
+se.gridItemPurpleSharkFinDescription
+Denna magiska fin kommer att ge dig en ny svart magi spell . Du kan bara använda det en gång per quest . Var mycket försiktig med detta !
+se.gridItemTalkingCandyName
+se.talande godis
+se.gridItemTalkingCandyDescription # Översätt inte " godis låda " , hålla det så
+Detta talar godis dök upp efter att du lagt de fyra stenar på toppen av slottets torn . Han kan hjälpa dig att öppna godis låda ...
+se.inventorySpecialNothingEqItem
+Ingenting
+se.eqItemWeaponWoodenSwordName
+Wooden Sword
+se.eqItemWeaponWoodenSwordDescription
+se.enkel svärd av trä
+se.eqItemWeaponIronAxeName
+Järn yxa
+se.eqItemWeaponIronAxeDescription
+se.enkel järn yxa. Välslipade . Mer kraftfull än den träsvärd .
+se.eqItemWeaponPolishedSilverSwordName
+Polerat silver svärd
+se.eqItemWeaponPolishedSilverSwordDescription
+se.kraftfull svärd , återvinnas av spikar .
+se.eqItemWeaponTrollBludgeonName
+Trollets bludgeon
+se.eqItemWeaponTrollBludgeonDescription
+Du tog denna påk från troll vaktar bron . Det är långsam, men slår dina fiender ganska effektivt.
+se.eqItemWeaponTribalSpearName
+se.tribal spjut
+se.eqItemWeaponTribalSpearDescription
+Du hittade denna stam spjut på liket av en stam krigare vilse i ett stort hål i marken . Det är lite svårt att hantera i början, men när du är van vid det , det är ett bra vapen .
+se.eqItemWeaponSummoningTribalSpearName
+se.kalla stam spjut
+se.eqItemWeaponSummoningTribalSpearDescription
+Denna magiska stam spjut , förutom att vara slighty mer kraftfull än den normala stam spjut, kommer ofta kalla stam krigare som hjälper dig under ditt uppdrag .
+se.eqItemWeaponMonkeyWizardStaffName
+Apan Guiden personal
+se.eqItemWeaponMonkeyWizardStaffDescription
+Denna personal tillhörde den nakna apan guiden du hittade i grottan . Det kommer ofta trollformler av sig själv , rikta dina fiender .
+se.eqItemWeaponEnchantedMonkeyWizardStaffName
+Apan guiden personal ( förtrollad )
+se.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Denna personal är snabbare än den icke - förtrollade version , och kommer också att kasta en hel del fler trollformler .
+se.eqItemWeaponGiantSpoonName
+se.jätte sked
+se.eqItemWeaponGiantSpoonDescription
+Denna jätte sked var i en gigantisk tekanna i öknen fästningen . Du vet inte om någon någonsin använde det som en sked , men om så är fallet , måste det ha varit någon riktigt stor . Du vill antagligen inte att träffa honom .
+se.eqItemWeaponGiantSpoonOfDoomName
+Jätten Spoon of Doom
+se.eqItemWeaponGiantSpoonOfDoomDescription
+Denna jätte sked är ännu mer kraftfull än den vanliga jätte sked du kan hitta , till exempel i en tekanna . Det är ganska långsamt , dock .
+se.eqItemWeaponScytheName
+se.lie
+se.eqItemWeaponScytheDescription
+Det sägs att denna lie tillhörde Döden själv . Den är extremt snabb .
+se.eqItemHatMerchantHatName
+Handlaren hatt
+se.eqItemHatMerchantHatDescription
+Denna hatt såldes till dig av godis handlaren . Godis köpman älskar godis . Denna hatt kommer att öka med 7 godis du hittar i uppdrag !
+se.eqItemHatSorceressHatName
+Sorceressen hatt
+se.eqItemHatSorceressHatDescription
+Denna hatt såldes till dig av trollkvinna . Det kommer att förstärka effekten av dina trollformler och potions .
+se.eqItemHatOctopusKingCrownName
+Octopus Kung krona
+se.eqItemHatOctopusKingCrownDescription
+När du bär denna krona , känner dig mycket mer självsäker . Det ger inte någon fördel i uppdrag, men självförtroende är viktigt !
+se.eqItemHatOctopusKingCrownWithJaspersName
+Octopus kung krona med Jaspers
+se.eqItemHatOctopusKingCrownWithJaspersDescription
+Denna förtrollade krona är gjord med guld och röda Jaspers . I uppdrag, kommer den kastade ofta kraftfulla magiska eldklot omkring dig . Och dessutom , det är lysande !
+se.eqItemHatOctopusKingCrownWithObsidianName
+Octopus kung krona med obsidian
+se.eqItemHatOctopusKingCrownWithObsidianDescription
+Denna förtrollade krona är gjord med guld och obsidian . Det är vackert . I uppdrag, kommer det kalla ett fighting Octopus kung på din sida då och då . Vilken tentaculous bundsförvant !
+se.eqItemGlovesLeatherGlovesName
+läderhandskar
+se.eqItemGlovesLeatherGlovesDescription
+Dessa handskar gör i princip ingenting . Men de är mjuka och bekväma , minst !
+se.eqItemGlovesRedEnchantedGlovesName
+Röda förtrollade handskar
+se.eqItemGlovesRedEnchantedGlovesDescription
+Dessa förtrollade handskar avger ett mjukt rött ljus när det är mörkt omkring dig . I uppdrag, kommer de kasta slumpmässigt små eldklot mot dina fiender , vilket definitivt kan vara användbart .
+se.eqItemGlovesPinkEnchantedGlovesName
+Rosa förtrollade handskar
+se.eqItemGlovesPinkEnchantedGlovesDescription
+Dessa förtrollade handskar inga rosa prägel på allt du rör . I uppdrag kommer de att läka dig hela tiden .
+se.eqItemBootsRocketBootsName
+Rocket stövlar
+se.eqItemBootsRocketBootsDescription
+Dessa grymma raket stövlar kan du hoppa i luften , så att du i princip flyger !
+se.eqItemBootsLeatherBootsName
+Läder stövlar
+se.eqItemBootsLeatherBootsDescription
+se.la läderstövlar . Inget speciellt med dem .
+se.eqItemBootsBootsOfIntrospectionName
+Stövlar av introspektion
+se.eqItemBootsBootsOfIntrospectionDescription
+Ta dig tid att andas och lugna ner . Om du bär dessa stövlar , kommer du flyttar aldrig så länge du vidrör marken .
+se.eqItemBodyArmoursLightweightBodyArmourName
+se.lätt kroppsskydd
+se.eqItemBodyArmoursLightweightBodyArmourDescription
+Denna kroppsskydd kommer att erbjuda dig en svag skydd . Du kommer att vara slighty mer resistent mot dina fiender attacker .
+se.eqItemBodyArmoursKnightBodyArmourName
+se.riddare kroppsskydd
+se.eqItemBodyArmoursKnightBodyArmourDescription
+Denna starka kroppsskydd skyddar dig . Du kommer att vara mer resistent mot dina fiender attacker .
+se.eqItemBodyArmoursEnchantedKnightBodyArmourName
+se.förtrollad riddare kroppsskydd
+se.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Denna rustning är mycket speciell . Du kommer att vara mycket mer resistent mot dina fiender attacker , men skadan på vapnet du använder delas med två .
+se.mapVillageForgeBuyWoodenSwordButton
+Köp ett träsvärd ( 150 karameller )
+se.mapVillageForgeBuyWoodenSwordSpeech
+Tack för köpande ! Denna träsvärd är ganska svag , men det är en början .
+se.mapVillageForgeBuyIronAxeButton
+Köp ett järn yxa ( 400 karameller )
+se.mapVillageForgeBuyIronAxeSpeech
+Jag hoppas att du gillar detta järn yxa. Jag har just skärpt det för dig !
+se.mapVillageForgeBuyPolishedSilverSwordButton
+Köp ett polerat silver svärd ( 2 000 karameller )
+se.mapVillageForgeBuyPolishedSilverSwordSpeech
+Det tog mig en hel del tid att skapa detta svärd . Jag försäkrar er att det är värt sitt pris .
+se.mapVillageForgeBuyLightweightBodyArmourButton
+Köp en lätt kroppsskydd ( 15 000 karameller )
+se.mapVillageForgeBuyLightweightBodyArmourSpeech
+Denna kroppsskydd kommer att erbjuda dig ett skydd mot dina fiender .
+se.mapVillageForgeBuyScytheButton
+Köp en lie ( 5 000 000 karameller )
+se.mapVillageForgeBuyScytheSpeech
+Det tog mig flera månader att göra detta lie . Det är ett riktigt konstverk . Detta är förmodligen den snabbaste vapnet du någonsin kommer att kunna använda . Lycka till !
+se.wishingWellThrowFirstCandyButton
+Kasta en godis i brunnen
+se.wishingWellCandyIntroductionSpeech # INFORMELLT PRONOMEN
+Hej , vandrare ! Jag är önskebrunn . Jag ska ge dig önskar i utbyte mot lite godis ! När du kastar godis till mig , kommer jag att läka dina sår .
+se.wishingWellThrewCandiesSpeech # INFORMELLT PRONOMEN
+Dina sår är nu läkt !
+se.wishingWellNoWoundSpeech # INFORMELLT PRONOMEN
+Du har inga sår att läka !
+se.wishingWellThrowFirstLollipopButton
+Kasta en klubba i brunnen
+se.wishingWellLollipopIntroductionSpeech # INFORMELLT PRONOMEN
+Hej , vandrare ! Jag är önskebrunn . Jag ska ge dig önskar i utbyte mot lite godis ! När du ska kasta klubbor i mig , kommer jag att omvandla dem till godis .
+se.wishingWellThrewLollipopsSpeech # INFORMELLT PRONOMEN
+Dina klubbor omvandlas till godis! Två klubbor för en godis.
+se.wishingWellThrowChocolateBarButton
+Kasta en chokladkaka i brunnen
+se.wishingWellChocolateBarIntroductionSpeech # INFORMELLT PRONOMEN
+Hej , vandrare ! Jag är önskebrunn . Jag ska ge dig önskar i utbyte mot lite godis ! Jag älskar chokladkakor . Jag älskar verkligen dem . För varje chokladkaka du kommer att kasta in mig , inklusive denna , kommer du att få en magisk förtrollning .
+se.wishingWellThrewChocolateBarSpeech # INFORMELLT PRONOMEN
+Vilket objekt vill du förtrolla ?
+se.wishingWellThrowPainAuChocolatButton
+Kasta en smärta au chocolat i brunnen
+se.wishingWellPainAuChocolatIntroductionSpeech # INFORMELLT PRONOMEN
+Hej , vandrare ! Jag är önskebrunn . Jag ska ge dig önskar i utbyte mot lite godis ! När du kastar en smärta au chocolat till mig , kommer du att få en mycket speciell gåva . Välj klokt .
+se.wishingWellThrewPainAuChocolatSpeech # INFORMELLT PRONOMEN
+Tack för smärta au chocolat ! Du kan nu välja din gåva .
+se.wishingWellChooseGift # INFORMELLT PRONOMEN
+Välj din gåva !
+se.wishingWellChooseGiftButton
+Välj
+se.wishingWellGiftDoneSpeech # INFORMELLT PRONOMEN
+Done ! Du har nu en ny gåva . Den kommer att visas i din inventering statistik panel .
+se.wishingWellNoPossibleEnchantment
+Någon eventuell förtrollning
+se.wishingWellChooseEnchantment
+Välj förtrollning
+se.wishingWellEnchantButton
+Förtrolla
+se.wishingWellEnchantmentDoneSpeech # INFORMELLT PRONOMEN
+Där är det ! Din objektet är förtrollad .
+se.pierLighthouseButton
+Gå till fyren med båt
+se.pierTheSeaButton
+Hoppa i havet
+se.lonelyHouseOpenBox
+Öppna lådan
+se.lonelyHouseShakeBox
+Skaka rutan
+se.lonelyHouseBreakLock
+Bryta låset
+se.lonelyHouseKickBox
+Sparka rutan
+se.lonelyHouseAskTheBoxToOpenItself
+Be rutan för att öppna sig
+se.lonelyHouseLureTheBoxWithACandy
+Lure lådan med en godis
+se.lonelyHouseTakeTheBox
+Ta lådan med dig , behöver du förmodligen en nyckel för att öppna det i alla fall
+se.lonelyHouseOpenBoxResult
+Lådan är låst
+se.lonelyHouseShakeBoxResult
+inget händer
+se.lonelyHouseBreakLockResult
+Låset motstår
+se.lonelyHouseKickBoxResult
+Din fot gör ont lite , men ingenting händer
+se.lonelyHouseAskTheBoxToOpenItselfResult
+... du pratar med en låda , vet du det ?
+se.lonelyHouseLureTheBoxWithACandyResult
+Boxen verkar inte bry sig
+se.lonelyHouseTakeTheBoxResult # Översätt inte " godis låda " , hålla det så
+Det finns nog något intressant i detta godis låda .
+se.lollipopFarmConstructMill
+Bygg en kvarn ( 10 000 klubbor )
+se.lollipopFarmFeedMill
+Mata bruket
+se.lollipopFarmCurrentCandiesProduction
+Aktuellt godis produktion
+se.lollipopFarmDigPond
+Gräv en damm ( 100 000 klubbor )
+se.lollipopFarmBuyLolligator
+Köp en lolligator ( 1200 godisar )
+se.lollipopFarmLolligatorsConversionText
+Konvertering godis - > klubbor aktiveras
+se.lighthouseAskButton
+Fråga
+se.lighthouseQuestionWho
+Vem är du ?
+se.lighthouseQuestionWhoSpeech
+Jag är en mycket gammal cyklop .
+se.lighthouseQuestionWhat
+Vad gör du här ?
+se.lighthouseQuestionWhatSpeech
+Jag bor här hela dagen , väntar på en båt för att komma . Det har varit en lång tid sedan jag har sett en båt , men jag måste stanna här , stirrar på havet , eftersom en båt kan komma .
+se.lighthouseQuestionWhyEatCandies
+Varför skulle jag äta godis ?
+se.lighthouseQuestionWhyEatCandiesSpeech
+Eftersom de är bra för din hälsa !
+se.lighthouseQuestionCandyBox # Översätt inte " godis låda " , hålla det så
+Vad är en godis låda ?
+se.lighthouseQuestionCandyBoxSpeech
+Det är en mycket gammal låda som sägs innehålla alla godis i världen . Legenderna säger att den som lyckas öppna det skulle ha så mycket godis som allt är möjligt .
+se.lighthouseQuestionDragon
+Draken berättade för mig att komma hit eftersom jag vill ha godis .
+se.lighthouseQuestionDragonSpeech # INFORMELLT PRONOMEN
+Åh , ser jag ... Tja , kan jag inte ge dig godis direkt , men jag kan ge dig något viktigt för dig att i slutändan få en massa godis . Jag behöver bara testa dig innan dess . För vad jag har kan inte ges till alla . Lösa detta pussel och det kommer att bli din .
+se.lighthouseFoundStone # INFORMELLT PRONOMEN
+Grattis ! Du klarade provet och fann stenen . Det är mycket värdefullt , men är bara användbar om du har tre andra stenar som denna . Lycka till !
+se.lighthouseFoundStoneAgain # INFORMELLT PRONOMEN
+Bra jobbat , du gjorde pusslet igen . Du verkar gilla det .
+se.saveLocalSaveTitle
+browser spara
+se.saveLocalSaveWhy
+Välj lokala spara om du vill fortsätta spela på din nuvarande enhet och webbläsare .
+se.saveLocalSaveWarning0
+Din webbläsare verkar inte stödja HTML5 .
+se.saveLocalSaveWarning1
+Du bör uppdatera din webbläsare för att kunna använda den lokala energibesparande funktion .
+se.saveLocalSaveChooseSlot
+Välj Spara spår :
+se.saveLocalSaveAutosaveEnabled
+Spara automatiskt aktiverat
+se.saveLocalSaveChooseWhatToDo
+Välj vad du vill göra :
+se.saveLocalSaveSaveButton
+Spara
+se.saveLocalSaveAutosaveButton
+Spara varje 10 minuter
+se.saveLocalSaveDisableAutosaveButton
+inaktivera autospara
+se.saveFileSaveTitle
+Text spara
+se.saveFileSaveWhy0
+Välj text sparar om :
+se.saveFileSaveWhy1
+Du vill fortsätta spela på en annan enhet eller webbläsare
+se.saveFileSaveWhy2
+Du vill dela dina spara med någon annan
+se.saveFileSaveWhy3
+Av någon anledning vill tömma webbläsarens cache
+se.saveFileSaveWhy4
+( vilket raderar din lokala sparar )
+se.saveFileSaveButton
+Få aktuell spelet som text
+se.saveFileSaveWarning
+Nu kopiera denna text någonstans ! (i en fil , till exempel)
+se.saveLocalLoadTitle
+browser belastning
+se.saveLocalLoadYouCan
+Du kan läsa in en lokal spara med hjälp av följande länkar :
+se.saveLocalLoadThanksTo
+Tack vare HTML5 magi , bör du kunna använda dessa länkar även offline .
+se.saveFileLoadTitle
+text belastning
+se.saveFileLoadPaste
+Klistra dina save nedan , klicka sedan på " Load " -knappen
+se.saveFileLoadButton
+Ladda
+se.mountainsText0
+Du såg något i fjällen !
+se.mountainsText1
+Det ser intressant . Kanske det kan vara nyttigt .
+se.mountainsTextButton
+Klättra i bergen för att få saken
+se.mountainsTextAfter
+Du hittade en pogo stick ! Det har lagts till i ditt lager .
+se.secondHouseIntroSpeech
+Hej , jag är godis köpman . Jag skulle göra vad som helst för godis . Vad behöver du ?
+se.secondHouseLollipop1Speech
+Detta är en citron - smaksatt slickepinne . Min favorit ! Det kostar 60 godisar , men det är värt det .
+se.secondHouseLollipop2Speech
+Den här är en jordgubbssmak slickepinne . Det smakar gott . Jag gillar den röda färgen . Endast 60 godis!
+se.secondHouseLollipop3Speech
+Detta är en pumpa - smaksatt slickepinne . Jag slår vad om att du aldrig provat en! 60 godisar och dess Yours.
+se.secondHouseLollipopButtonText
+Köp denna lollipop ( 60 godisar )
+se.secondHouseMerchantHatSpeech
+Jag skulle kunna sälja dig min hatt , men det är mycket värdefullt , du vet ... Du måste ge mig en hel del godis mot det . Låt oss säga 1 miljon godis . Det verkar rimligt , eller hur?
+se.secondHouseMerchantHatButtonText
+Köp handlarens hatten ( 1 000 000 karameller )
+se.secondHouseTimeRingSpeech
+Detta är en tid ring . Det finns en slags magisk . Det gör att du kan sakta ner tiden när du är i trubbel .
+se.secondHouseTimeRingButtonText
+Köp tiden ringen ( 500 karameller )
+se.secondHouseLeatherGlovesSpeech
+Dessa läderhandskar är gjorda med kamel läder , det är hög kvalitet . Jag har en hel del av dem i lager , det är därför de är så billiga : endast 300 godis!
+se.secondHouseLeatherBootsButtonText
+Köp ett par läderstövlar ( 300 karameller )
+se.secondHouseLeatherBootsSpeech
+Dessa högkvalitativa läderstövlar , gjorda med kamel läder , kommer att hålla fötterna varma .
+se.secondHouseLeatherGlovesButtonText
+Köp ett par läderhandskar ( 300 karameller )
+se.secondHouseChocolateBarSpeech
+Detta är en chokladkaka . Jag vet inte vad det används för , men det råkar vara ganska ovanligt , vilket förklarar priset . 800 godis och det är ditt!
+se.secondHouseChocolateBarButtonText
+Köp chokladkaka ( 800 karameller )
+se.outsideTheHoleButton
+Hoppa i detta stora hål i marken
+se.theCaveExitText0
+Du äntligen nått grottans utgång .
+se.theCaveExitText1
+Du kan se en stor skog utanför här .
+se.theCaveExitButtonText
+Lämna grottan
+se.theCaveFirstSentenceWentStraight
+Du gick rakt på .
+se.theCaveFirstSentenceWentLeft
+Du tog den vänstra vägen .
+se.theCaveFirstSentenceWentRight
+Du tog rätt väg .
+se.theCaveFirstSentenceYouAre
+Du är i en grotta . Det finns tre vägar framför dig.
+se.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Du ser en konstig sak på marken framför dig .
+se.theCavePattern_ChocolateBarNowSeeChocolateBar
+Du ser en chokladkaka framför dig .
+se.theCavePattern_TreasureMapSentence
+Du ser små stenar konstigt arrangerade på golvet .
+se.theCavePattern_MonkeyWizardSentence
+Du snubblar på en naken apa guiden .
+se.theCavePattern_MonkeyWizardButton
+utmana honom
+se.theCavePattern_OctopusKingSentence
+Du snubblar på Octopus King. Det verkar otäckt .
+se.theCavePattern_OctopusKingButton
+utmana det
+se.fortressInsideText0
+Du är inne i öknen fästningen .
+se.fortressInsideText1
+Du kan välja mellan tre dörrar .
+se.fortressInsideText2
+Var och en av dem leder till ett stort rum med en skatt på slutet.
+se.fortressInsideEnterRoom1
+Ange första rummet
+se.fortressInsideEnterRoom2
+Ange det andra rummet
+se.fortressInsideEnterRoom3
+Ange det tredje rummet
+se.treasureButtonDig
+Gräv
+se.treasureButtonYouFound
+Du hittade tre chokladkakor !
+se.sorceressHutHello
+Hej , jag är häxa . Jag kan lära dig en sak eller två om magi . Jag kan också ge dig några intressanta saker , eller trollformler för dig . Men allt har ett pris ! Och detta pris kommer att bli klubbor . En hel del av dem .
+se.sorceressHutClickedGrimoire
+Detta är en grimoire gjord för nybörjare . Genom att bära den med dig i uppdrag , kommer du att kunna kasta enkla men användbara trollformler . Du behöver det här ! Endast 5 000 klubbor .
+se.sorceressHutBuyGrimoireButton
+Köp denna grimoire ( 5 000 klubbor )
+se.sorceressHutBuyGrimoireSpeech
+Tack för köpande ! Du kommer att kunna kasta tre pass med denna grimoire . Lycka till !
+se.sorceressHutClickedGrimoire2
+Detta är en avancerad grimoire . Genom att bära den med dig i uppdrag , kommer du att kunna kasta två avancerade besvärjelser . Jag skrev det själv , vilket inte var lätt . 20 000 klubbor är ett rimligt pris .
+se.sorceressHutBuyGrimoire2Button
+Köp denna grimoire ( 20 000 klubbor )
+se.sorceressHutBuyGrimoire2Speech
+Tack för köpande ! Du kommer att kunna kasta två pass med denna grimoire . Använd dem klokt !
+se.sorceressHutClickedCauldron
+Detta är min kittel . Det tillåter mig att brygga magiska drycker . Jag kan sälja den till dig , men det är mycket dyrbar ... det kommer att kosta 100 000 klubbor .
+se.sorceressHutBuyCauldronButton
+Köp kitteln ( 100 000 klubbor )
+se.sorceressHutBuyCauldronSpeech
+Tack så mycket! 100 000 klubbor för mig ! Jag gav dig också en bryggning manual . Det kommer att vara användbar .
+se.sorceressHutClickedHat
+Jag har en fin hatt , verkligen! Men jag kan verkligen inte sälja den till dig . Det är waaaay för dyrbar . Egentligen kan jag inte . Insistera inte . Nej nej nej jag ska inte göra det . Nåja , jag ska byta det , men för 1 000 000 000 klubbor . Du förmodligen inte kommer att kunna betala det ändå .
+se.sorceressHutBuyHatButton
+Köp hatten (1 000 000 000 klubbor )
+se.sorceressHutBuyHatSpeech
+se.miljard klubbor för meeeeee ! Men jag har inte en hatt längre .. men en miljard klubbor , wow ! .. Det var värt det .
+se.cauldronPreviousPageButton
+Föregående sida
+se.cauldronNextPageButton
+Nästa sida
+se.cauldronWhatYouWantToPut
+Vad du vill sätta i kitteln
+se.cauldronWhatIsIn
+Vad finns i kitteln
+se.cauldronWhatYouCanDo
+Vad du kan göra med det
+se.castleBigRoomComment
+Ett stort rum
+se.castleARoomComment
+Ett rum
+se.castleADarkRoomComment
+Ett mörkt rum
+se.castleCastleEntranceComment
+Slottets entré
+se.castleTowerEntranceComment
+Tornet hänrycker
+se.castleNougatMonsterComment
+Attack jätten nougat monster
+se.castleGuardsComment
+Attack vakterna
+se.castleStairsComment
+Trappa
+se.buttonBackToTheCastle
+Tillbaka till slottet
+se.castleBigRoomHovenSpeechSad # INFORMELLT PRONOMEN
+Hej ! Jag är en mycket gammal bakugn . Jag brukade laga massor av goda bakverk , men ingen använder mig längre . Kanske ... kanske du kan hjälpa mig ? Låt mig bara ta några sötsaker från dig ! Oroa dig inte , du kommer inte ångra det ! Du kan lita på mig .
+se.castleBigRoomHovenNotEnough # INFORMELLT PRONOMEN
+Oh ... du inte har tillräckligt med godis , kan jag inte göra något . Jag är bara värdelös . Jag är värdelös bakugn , det är hur du ska ringa mig .
+se.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMELLT PRONOMEN
+Yay! Tack så mycket! Jag använde 100 godis och en chokladkaka , och jag gjorde du ... en smärta au chocolat ! Det är min favorit bakverk , hoppas jag att du kommer att gilla det också!
+se.castleBigRoomHovenSpeechHappy # INFORMELLT PRONOMEN
+Hey ! Om du vill att jag ska laga en annan bakelse , bara berätta ! Jag skulle gärna hjälpa dig .
+se.castleBigRoomHovenSpeechHappyNotEnough # INFORMELLT PRONOMEN
+Åh , har du inte tillräckligt med godis , tyvärr . Jag behöver 100 godis och en chokladkaka . Kom tillbaka när du har det !
+se.castleBigRoomHovenLetHovenTakeButton
+Låt ugnen ta alla sötsaker man vill ta
+se.castleBigRoomHovenThanks
+Tack , ugn !
+se.dragonStopTickling # INFORMELLT PRONOMEN
+Du där! Sluta kittla mig , snälla .
+se.dragonStopTicklingButton
+Uh , oh , sorry , jag trodde jag skulle attackera dig
+se.dragonTalking # INFORMELLT PRONOMEN
+Jag är draken och detta är min borg . Jag ser att du lyckats komma in , måste du vara väldigt modig ... Jag vill gärna hjälpa någon som du. Vad letar du efter ?
+se.dragonTalkingChallengeButton
+utmana
+se.dragonTalkingFameButton
+Fame
+se.dragonTalkingCandiesButton
+Candies
+se.dragonTalkingChallengeSpeech # INFORMELLT PRONOMEN
+Åh , så du vill utmaning ? Jag tycker du ska göra en resa till helvetet självt , är det känt att djävulen är en tuff utmanare . Hoppa på min rygg och jag tar dig dit !
+se.dragonTalkingFameSpeech # INFORMELLT PRONOMEN
+Det bästa sättet att bli berömd är att möta utvecklaren själv . Jag vet var han bor och jag kan ta dig dit . Men var beredd , kommer detta inte vara lätt .
+se.dragonTalkingCandiesSpeech # INFORMELLT PRONOMEN
+Ytterst är det vi alla vill ha godis , inte är det ? Jag tror att en av mina vänner kan hjälpa dig med det . Du kommer att känna igen honom lätt , han har bara ett öga . Bara berätta för honom att du känner mig .
+se.dragonTalkingChallengeAnswer
+Låt oss då !
+se.dragonTalkingFameAnswer
+Jag är redo .
+se.dragonTalkingCandiesAnswer
+Okej , tack !
+se.buttonBackToCastle
+Tillbaka till slottet
+se.talkingCandySpeechNoBox # INFORMELLT PRONOMEN # Översätt inte " godis låda " , hålla det så
+Hey ! Jag är talande godis . Du vann nästan matchen . Du behöver bara hitta godis låda . Det är i ett hus utanför byn . Detta är det sista steget !
+se.talkingCandySpeech1 # INFORMELLT PRONOMEN # Översätt inte " godis låda " , hålla det så
+Hey ! Jag är talande godis . Grattis , du vann matchen ! Jag kommer att öppna ditt godis låda för dig , det här är din belöning . Ska jag fortsätta?
+se.talkingCandySpeech2 # INFORMELLT PRONOMEN
+Done ! Du kan nu skriva in det . Jag hoppas att du gillade spelet :)
+se.talkingCandyButton
+Yes !
+se.lighthousePuzzleResetButton
+Återställ

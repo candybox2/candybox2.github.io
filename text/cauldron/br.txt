@@ -1,0 +1,24 @@
+br.cauldron.page0
+Receita de poções
+br.cauldron.page1
+Índice / Pág. 2 : Poção de cura / Pág. 3 : Poção Tartaruga / Pág. 4-5 : Poção Antigravidade / Pág. 6-7 : Poção Berserk / Pág. 8-9 : Poção P / Pág. 10-11 : Poção X
+br.cauldron.page2
+Poção de cura / A poção de cura é uma das mais fáceis de ser preparada. Só precisa de doces. Quando usada em missões, ela recuperará 100 pontos de vida. / Instruções : - Coloque 100 doces no caldeirão - Misture por alguns segundos - Coloque em garrafas / Assim como toda poção, você pode preparar várias de uma só vez. Exemplo: se você usar 300 doces em vez de 100, 3 poções de cura serão preparadas.
+br.cauldron.page3
+Poção Tartaruga / A poção Tartaruga é um pouco mais difícil do que a de vida. Você precisará de doces e pirulitos. / Você será transformado em uma tartaruga se bebê-la em uma missão. Você ficará mais lento, mas também muito mais resistente a ataques. / Instruções : - Coloque 50 doces no caldeirão - Adicione 500 pirulitos - Misture por cerca de 10 segundos - Pare de mexer - Adicione 50 doces - Misture novamente por alguns segundos - Coloque em garrafas / E agora, a coisa mais importante que você não pode esquecer: NUNCA vire de costas! Ou você nunca mais vai conseguir ficar de pé.
+br.cauldron.page4
+Poção Antigravidade / Essa poção, inventada pelo ilustre feiticeiro Isaac, permite que você resista à força gravitacional da Terra por alguns segundos. / Ela é extremamente útil depois de um pulo (se você não sabe pular, devia pensar em obter um pula-pula). / Não é muito fácil de ser preparada. Você terá que controlar cuidadosamente a temperatura do caldeirão. / Instruções : - Coloque 1000 doces no caldeirão - Aqueça a água até ficar morna - Pare de aquecer - Adicione 1000 doces - Aqueça a água até ferver - Coloque em garrafas
+br.cauldron.page5
+Poção Antigravidade : exemplo de uso / "Voar por um buraco" / *beba a poção*
+br.cauldron.page6
+Poção Berserker / A poção Berserker transforma você em um berserker. / O problema é que metade da sua saúde é consumida. / O bom é que ela dobra o dano causado por alguns segundos! / É muito fácil preparar essa poção, mas são precisos muitos pirulitos. / Instruções : - Coloque 20.000 pirulitos no caldeirão - Misture até que seus braços comecem a doer - Coloque em garrafas
+br.cauldron.page7
+Aviso importante sobre a poção Berserker / NÃO use doces durante o preparo dessa poção. / É sério, nem um sequer. / É sério. / Os resultados são imprevisíveis.
+br.cauldron.page8
+Poção P / A poção P é bem estranha. Não dá para saber qual será o efeito. Ela pode curar ou causar dano a você, aumentar ou reduzir sua força, e até mesmo transformá-lo em outra pessoa (ou coisa). / E é muito difícil de ser preparada! / Instruções : - Coloque 500 doces no caldeirão - Misture por alguns segundos - Pare de mexer - Adicione 100 vezes mais doces que o número de segundos que você mexeu. Exemplo: se mexeu por 4 segundos, adicione 400 doces. Não multiplique essa quantidade, mesmo se quiser preparar mais de uma poção. - Aqueça a água até ficar morna - Pare de aquecer - Adicione alguns pirulitos - Misture- Coloque em garrafas!
+br.cauldron.page9
+Saiba como usar a poção P / Existem algumas regras a serem seguidas para se obter os melhores resultados com a poção P. Embora elas tenham sido definidas empiricamente, parecem funcionar muito bem. / - Quanto mais você usar poções P, mais efeitos estranhos elas terão. / - Se a sua saúde estiver baixa, recomenda-se beber uma poção P. / - A poção P costuma ter reações bem estranhas quando ingeridas por animais.
+br.cauldron.page10
+Poção X / A poção X não passa de uma lenda. Dizem que quem prepará-la e bebê-la, será levado a um lugar onde ninguém jamais esteve. / Seja uma lenda ou não, escreverei nesse livro tudo que sei sobre ela. / A poção X é citada em diversas histórias e livros de alquimia. Eis um apanhado de todas as informações sobre como prepará-la. Boa sorte! / - Dizem que são precisos 5 passos para preparar a poção X. / - Dizem que não são precisos pirulitos, exceto em um dos passos. / - Dizem que, diferente das outras poções, não é possível preparar mais de uma poção X de uma só vez.
+br.cauldron.page11
+- Por fim, há poema que dizem ter relação com a poção X : / No primeiro dia, ele deu vida ao primeiro dos doces. Mas estava frio lá fora. / No segundo dia, ele deu um pai ao doce. Mas estava frio lá fora. / No terceiro dia, ele deu um irmão ao doce. Mas estava frio lá fora. / No quarto dia, ele deu um amigo ao doce. Mas estava frio lá fora. / No quinto dia, ele deu uma amante ao doce. Isso pode parecer bobo, mas o doce estava feliz agora. E estava quente lá fora.

@@ -1,0 +1,24 @@
+en.cauldron.page0
+Brewing manual
+en.cauldron.page1
+Summary / Page 2 : Health potion / Page 3 : Turtle potion / Pages 4-5 : Anti-gravity potion / Pages 6-7 : Berserk potion / Pages 8-9 : The P potion / Pages 10-11 : The X potion
+en.cauldron.page2
+Health potion / The health potion is one of the easiest to brew, really. It only requires candies. Used in quests, it will heal you by giving you back 100 health points. / Instructions : - Put 100 candies in your cauldron - Mix for a few seconds - Put into bottles / Just like for any potion, you can of course multiply the quantities. For example, if you use 300 candies instead of 100, you will get 3 health potions.
+en.cauldron.page3
+Turtle potion / The turtle potion is a bit harder to brew than the health potion. You will need both candies and lollipops. / If you drink this potion in a quest, it will turn you into a turtle. You will move slower, but you will also be more resistant to you enemies attacks. / Instructions : - Put 50 candies in your cauldron - Add 500 lollipops in your cauldron - Mix for more or less 10 seconds - Stop mixing - Add 50 candies - Mix again for a few seconds - Put into bottles / And now the most important thing you should never forget : once you will be a turtle, do NOT turn over. You wouldn't be able to get up.
+en.cauldron.page4
+Anti-gravity potion / This potion, which was invented by the well-known sorcerer Isaac, allows you to resist to the earth's gravitation force for a few seconds. / It is especially useful after jumping (if you can't jump, you should seriously consider obtaining a pogo stick). / It isn't very easy to brew, you will need to heat up your cauldron and watch the temperature carefully. / Instructions : - Put 1000 candies in your cauldron - Heat up until the water is lukewarm - Stop heating up - Add 1000 candies - Heat up until the water is boiling - Put into bottles
+en.cauldron.page5
+Anti-gravity potion : use case / "Fly above a gap" / *drinks the potion*
+en.cauldron.page6
+Berserk potion / The berserk potion transforms you into a berserker. / The drawback is that it consumes half of your life. / The benefit is that it doubles your damage for a few seconds! / Brewing this potions is very simple, but you will need a lot of lollipops. / Here are the instructions : - Put 20 000 lollipops in your cauldron - Mix them until your arms are hurting - Put into bottles
+en.cauldron.page7
+Important notice concerning the berserk potion / Do NOT add any candy when brewing this potion. / I mean, not a single one. / Really. / Results would be unexpected.
+en.cauldron.page8
+The P potion / The P potion is a strange one. You cannot predict what it is going to do. It could heal you or damage you, make you stronger or weaker, or even turn you into someone (something?) else. / And it's also hard to brew! / Instructions : - Put 500 candies in your cauldron - Mix for a few seconds - Stop mixing - Add 100 times more candies than the number of seconds you mixed. For example if you mixed during 4 seconds, you'll need to add 400 candies. Do not multiply this quantity, even if you want to make more than one potion. - Heat up until the water is lukewarm - Stop heating up - Add some lollipops - Mix - Put into bottles!
+en.cauldron.page9
+Make a good use of the P potion / There are some rules which you can follow in order to get better results when drinking the P potion. Although these rules were defined empirically, they seem to work pretty well. / - The more you use P potions, the more they seem to have strange effects. / - If your health is very low, you should probably drink a P potion. / - Animals drinking P potions seem to react in a very bad way.
+en.cauldron.page10
+The X potion / The X potion is a legend. It is said that whoever manage to brew it and drink it would travel to a place where no one have been before. / I don't know if this potion is just a legend or not, but I will write in this book everything I know about it. / The X potion is mentioned in many old legends and alchemy books. Here's a summary of the informations which may help you to brew it. Good luck! / - It is said that 5 steps are necessary to brew the X potion. / - It is said that no lollipops are required, except for one of the steps. / - It is said that, unlike for other potions, you can't brew multiple X potions at once.
+en.cauldron.page11
+- Finally, the following poem is often quoted when it comes to the X potion : / On the first day, it gave birth to the very first Sweet. But it was cold outside. / On the second day, it gave the Sweet a father. But it was cold outside. / On the third day, it gave the Sweet a brother. But it was cold outside. / On the fourth day, it gave the Sweet a friend. But it was cold outside. / On the fifth day, it gave the Sweet a lover, and it may sound simple or silly, but now the Sweet was happy, and it was hot outside.

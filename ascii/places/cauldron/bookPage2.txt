@@ -1,0 +1,22 @@
+2
+
+
+
+              Health potion
+              ¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+  The health potion is one of the
+easiest to brew, really. It only
+requires candies. Used in quests, it
+will heal you by giving you back 100
+health points.
+
+  Instructions :
+   - Put 100 candies in your cauldron
+   - Mix for a few seconds
+   - Put into bottles
+
+  Just like for any potion, you can of
+course multiply the quantities. For
+example, if you use 300 candies instead
+of 100, you will get 3 health potions.

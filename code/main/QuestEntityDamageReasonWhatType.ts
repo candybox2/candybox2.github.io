@@ -1,0 +1,4 @@
+enum QuestEntityDamageReasonWhatType{
+    WEAPON,
+    SPELL
+}

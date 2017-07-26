@@ -1,0 +1,690 @@
+﻿el.mapVillageComment
+Ένα χωριό
+el.mapFortressComment
+Το φρούριο της ερήμου.
+el.mapATreeComment
+Ένα δέντρο
+el.mapTheDesertComment
+Η έρημος
+el.mapWishingWellComment
+Το πηγάδι των ευχών
+el.mapLonelyHouseComment
+Ένα μοναχικό σπίτι
+el.mapForestComment
+Το δάσος
+el.mapCastleEntranceComment
+Η είσοδος του κάστρου
+el.mapCastleComment
+Το κάστρο
+el.mapDragonComment
+Ο δράκος
+el.candyBoxEatCandiesButton
+Φάε όλα τα ζαχαρωτά
+el.candyBoxThrowCandiesButton
+Ρίξε 10 ζαχαρωτά στο έδαφος
+el.mapVillageAHouseComment
+Ένα σπίτι
+el.mapVillageForgeComment
+Το σιδηρουργίο
+el.buttonBackToTheMap
+Πίσω στο χάρτη
+el.mapSorceressHutComment
+Η καλύβα του μάγου
+el.buttonBackToTheVillage
+Πίσω στο χωριό
+el.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Γεια, είμαι ο Σκίουρος. Μπορώ να σου προσφέρω ζαχαρωτά και πολλά άλλα πράγματα. Το ξέρω ότι λατρεύεις τα ζαχαρωτά, αλλά νιώθω μόνος σε αυτό το δάσος.
+el.mapATreeIntroductionButton
+Πώς μπορώ να σε βοηθήσω;
+el.mapATreeFirstQuestion # INFORMAL PRONOUN
+Θα σου κάνω ερωτήσεις. Αν απαντήεις σωστά στις ερωτήσεις θα ανταμειφθείς με τα πιο γλυκά ζαχαρωτα! Πρώτη : Σου αρέσουν πραγματικά τα ζαχαρωτά;(απάντηση στα αγγλικά)
+el.mapATreeSecondQuestion # INFORMAL PRONOUN
+Σωστά! Ορίστε 20 ζαχαρωτά. Τώρα συμπλήρωσε αυτή την ακολουθία γρμμάτων και θα πάρεις ένα νέο βραβείο : S, E, I, D, N, A, ?
+el.mapATreeThirdQuestion # INFORMAL PRONOUN
+Ζαχαρωτά! Ορίστε, 100 ζαχαρωτά για εσένα. Επόμενη ερώτηση : πόσα  ζαχαρωτά έχει ο πιο ζαχαρωτένιος άνθρωπος στον κόσμο;
+el.mapATreeFourthQuestion # INFORMAL PRONOUN
+Να 500 ζαχαρωτά για εσένα! Το επόμενο βραβείο θα είναι ακόμα πιο ενδιαφέρον...  Να ο γρίφος : Σε ένα αρχαίο δάσος,μεγαλώνει ένα πολύ γέρικο δεντρο στο οποίο ζουν τα πιο εφυη ζώα σε αυτόν τον πλανήτη. Λένε ότι αυτό το δέντρο έχει 60 ρίζες, 360 κλαδιά και 2160 φύλλα. Πόσα σημάδια μπορείς να βρείς στον κορμό του;
+el.mapATreeFifthQuestion # INFORMAL PRONOUN
+Συγχαρητήρια! Μιλούσα για αυτό δεντρο, πράγματι. Ορίστε 3 γλειφιτζούρια. Χρησιμοποίησέ τα σωστά! Επόμενος γρίφος, άκου προσεκτικά : Όταν είναι πανσέληνος, ρίχνω ένα κίτρινο καπέλο στην κόκκινη θάλασσα. Τι συμβαίνει στο κίτρινο καπέλο;
+el.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Σωστή απάντηση! Δεν ήταν και πολύ δύσκολο. Να 3 σοκολάτες για εσένα! Για το επόμενο βραβείο θα αλλάξουμε τους κανόνες λίγο. Θα πρέπει να παίξεις ένα παιχνίδι μαζί μου! Είσαι έτοιμος;
+el.mapATreeTicTacToeIntroButton
+Είμαι!
+el.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Το παιχνίδι είναι τρίλιζα. Θα παίξουμε σε ένα 3x3 δάπεδο. Θα χρησιμοποιείς τα σημάδια Χ, ενώ εγω τα σημάδια Ο. Τοποθετούμε τα σημάδια μας εναλλάξ και ο σκοπός είναι να βάλουμε 3 σημάδια στη σειρα. Θα σε αφήσω να ξεκινήσεις πρώτος!
+el.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Το δάπεδο έχει γεμίσει και κανένας μας δεν έβαλε 3 στη σειρά : δεν κερδίζει κανένας! Θέλεις να δοκιμάσεις ξανά;
+el.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Έβαλε 3 στη σειρά! Κέρδισα. Θέλεις να δοκιμάσεις ξανά;
+el.mapATreeTicTacToeTryAgainButton
+Ναι, θέλω!
+el.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Οο, αυτό ήταν και αν ήταν μια απρόβλεπτη κίνηση. Αλλά έβαλες 3 στη σειρά, δεν μπορώ να διαφονήσω. Κέρδισες! Πάρε αυτό το κλειδί! Είναι για ένα από τα σπίτια στο χωριό κάτω από το δάσος.
+el.mapATreeTicTacToeAnymoreSweet
+Ευχαριστώ σκίουρε! Καμία άλλη δοκιμασία;
+el.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Δυστηχώς όχι, δεν έχω άλλες προκλήσεις για εσένα. Το να παίξω μαζί σου είχε πολύ πλάκα, ευχαριστώ!
+el.buttonExitQuestKeeping
+Βγες από την αποστολή (και κράτησε ό,τι βρήκες)
+el.buttonExitQuestNoKeeping
+Βγες από την αποστολή (δεν θα κρατήσεις αυτά που βρήκες)
+el.buttonExitQuestNoKeepingBecauseLose
+Βγες από την αποστολή (δεν θα κρατήσεις αυτά που βρήκες επειδή απέτυχες.)
+el.mapVillageLockedHouseComment
+Ένα κλειδωμένο σπιτι
+el.mapVillageForgeIntroductionSpeech
+Γειά, είμαι ο σιδηρουργος! Μπορώ να σου πουλήσω διάφορα όπλα και εξοπλισμό.
+el.mapVillageForgeIntroductionSpeechNoMoreToSell
+Γειά, είμαι ο σιδηρουργος. Δυστηχώς, δεν έχω τίποτα άλλο να πουλήσω. Έλα αργότερα ίσως.
+el.mapVillageFifthHouseNoWeaponSpeech
+Γεια. Το κελάρι μου είναι γεμάτο αρουραίους, πρέπει να τους ξεφορτωθώ... αν μόνο υπήρχει κάποιος με ένα όπλο για να με βοηθήσει...
+el.mapVillageFifthHouseWeaponSpeech
+Εε, εσυ! Βλέπω πως έχεις ένα όπλο! Αν σκοτώσεις τους αρουραίους που τριγυρνούν το κελάρι θα σε ανταμείψω!
+el.mapVillageFifthHouseAgree
+Πάμε τότε!
+el.mapVillageFifthHouseCellarDone
+Σε ευχαριστώ που τους ξεφορτώθηκες! Ορίστε κάτι πολύ πολύτιμο για ανταμειβή : ένας χάρτης του κόσμου. Πιστεύω πως θα τον χρησιμοποιήσεις περισσότερο απ'ότι εγώ.
+el.mapVillageTheShopComment
+Το μαγαζί
+el.mapBridgeComment
+Η γέφυρα
+el.mapFarmComment
+Η φάρμα γλειφυτζουριών
+el.mapCaveEntranceComment
+Η είσοδος της σπυλιάς
+el.mapLighthouseComment
+Ο φάρος
+el.mapPierComment
+Το λιμάνι
+el.mapTheHoleComment
+Η Τρύπα
+el.candyBoxRequestStatusBarUnlocked
+Ζήτησε ένα νέο χαρακτηριστικό από τον δημιουργό (30 candies)
+el.candyBoxRequestStatusBarUnlockedCfg
+Ζήτησε ακόμα ένα (5 candies)
+el.candyBoxRequestStatusBarUnlockedSave
+Ζήτα για ακόμα μια φορά(5 candies)
+el.candyBoxRequestStatusBarUnlockedHealthBar
+Ζήτα κάτι πιο συναρπαστικό (5 candies)
+el.candyBoxRequestStatusBarUnlockedMap
+Τελευταίο αίτημα! Αυτό πρέπει να κοστίζει πολλά ζαχαρωτά. (10 candies)
+el.candyBoxRequestStatusBarUnlockedComment
+Ξεκλείδωσες μια μπάρα κατάστασης! (από πάνω)
+el.candyBoxRequestStatusBarUnlockedCfgComment1
+Τώρα έχεις πρόσβαση στη καρτέλα ρυθμίσεων
+el.candyBoxRequestStatusBarUnlockedCfgComment2
+Μπορείς να αλλάξεις τη γλώσσα, αν θέλεις.
+el.candyBoxRequestStatusBarUnlockedSaveComment
+Μία άγρια καρτέλα αποθήκευσης εμφανίστηκε!
+el.candyBoxRequestStatusBarUnlockedHealthBarComment
+Ορίστε 100 πόντοι ζωής. Θα ειναι χρήσιμοι.
+el.cfgChooseLanguage
+Διάλεξε γλώσσα :
+el.cfgInvertColors
+Αντιστροφή χρωμάτων;
+el.gridItemMainMapName
+Ο Χάρτης
+el.gridItemMainMapDescription
+Χάρτης του κόσμου
+el.gridItemPogoStickName
+Καλάμι πηδήματος
+el.gridItemPogoStickDescription
+Αυτό το αντικείμενου σου επιτρέπει να αναπηδάς στις αποστολές!
+el.gridItemTimeRingName
+Ένα δαχτηλίδι χρόνου
+el.gridItemTimeRingDescription
+Αυτό το αντικείμενο σου δίνει μια νέα δυνατότητα στις αποστολές : μπορείς να επιβραδύνεις το χρόνο. Αν τα πράγματα συμβαίνουν υπερβολικά γρήγορα για εσένα, χρησιμοποίησε το δαχτυλίδι χρόνου σου!
+el.gridItemThirdHouseKeyName
+Το τρίτο κλειδί σπιτιού
+el.gridItemThirdHouseKeyDescription
+Αυτό το κλειδί σου επιτρέπει να μπείς στο τρίτο σπίτι του χωριού.
+el.gridItemFeatherName
+Ένα φρερό πουλιού της ερήμου
+el.gridItemFeatherDescription
+Το μαγικό φτερό σου επιτρέπει να αναμηδάς ψηλότερα όταν χρησιμοποιείς το Καλάμι Πηδήματος!
+el.gridItemFeatherDescriptionNoPogoStick
+Για έναν ανεξήγητο λόγο, νιώθεις ότι αυτό το φτερό θα ήταν χρήσιμο άμα είχες ένα καλάμι πηδήματος...
+el.gridItemSpongeName
+Ένα μαγικό σφουγγάρι
+el.gridItemSpongeDescription
+Αυτό το μαγικό σφουγγάρι σου επιτρέπει να ζουλάς τον εαυτό σου σαν σπόγκο έτσι ώστε να μικρήνει το μέγεθός σου.
+el.gridItemFortressKeyName
+Το κλειδί του κάστρου της ερήμου
+el.gridItemFortressKeyDescription
+Αυτό το κλειδί σου επιτρέπει να μπεις στο αρχαίο κάστρο πάνω από την έρημο. Ποιός ξέρει τι θα μπορούσες να βρείς εκεί;
+el.gridItemHeartPendantName
+Ένα κολιέ καρδιάς
+el.gridItemHeartPendantDescription
+Αυτό το κολιέ καρδιάς θα αυξήσει τους πόντους ζωής σου εφόσων το φοράς στο λαιμό σου.
+el.gridItemHeartPlugName
+Ένα βήσμα καρδιάς
+el.gridItemHeartPlugDescription
+Αυτό το βήσμα καρδιάς, φτιαγμένο με σίδερο, πόδια αράχνης και ένα ιδιαίτερο "υγρό καρδιάς" κλεισμένο στο κέντρο, θα αυξήσει τους πόντους ζωής σου κατά 20 τοις εκατό!
+el.gridItemBeginnersGrimoireName
+Το μαγικό βιβλίο του πρωτάρη
+el.gridItemBeginnersGrimoireDescription
+Αυτό το μαγικό βιβλίο σου προσφέρει τρία ξόρκια, εύκολα να εκτελεστούν. Είναι πραγματικά φτιαγμένο για πρωτάρηδες. Θα έχεις την δυνατότητα να χρησιμοποιήσεις το ξόρκι όξινης βροχής (μια μεγάλη ποσότητα από οξυ θα πέσει στους εχθρους σου), το ξόρκι φλόγινης μπάλας (μία γιγάντια μαγική μπάλα φτιαγμένη από φωτιά θα πετάξει προς τους εχθρούς σου) και το ξόρκι τηλεμεταφοράς (το οποίο θα σε τηλεμεταφέρει σε μία μη προβλέψιμη τοποθεσία)
+el.gridItemAdvancedGrimoireName
+Το ανώτερο μαγικό βιβλίο
+el.gridItemAdvancedGrimoireDescription
+Αυτό το ανώτερο μαγικό βιβλίο σου προσφέρει δύο ξόρκια : το διαγραφή μαγείας ξόρκι και το ξόρκι αγκαθωτής ασπίδας. Το πρώτο θα διαγράψει όλη τη μαγεία από μία αποστολή σε μία φάση, συμπεριλαμβανομένων όλων των ξώρκιων που εκτέλεσες και τη μαγεία των εχθρών σου. Το δεύτερο θα δημιουργήσει γύρω σου μια ασπίδα από αιωρούμενα αγκάθια η οποία θα προκαλεί ζημιά στους εχθρούς σου, όταν έρχονται σε επαφή με αυτήν.
+el.gridItemBlackMagicGrimoireName
+Το μαύρο μαγικό βιβλίο
+el.gridItemBlackMagicGrimoireDescription
+Βρήκες αυτό το μαγικό βιβλίο σε μία σπυλιά, ήταν πολύ δύσκολο να το πάρεις, για κάποιο λόγο.  Σου προσφέρει δύο δυνατά ξόρκια μαύρης μαγείας. Το πρώτο θα δημιουργήει μπροστά σου έναν γιγάντιο τοίχο φτιαγμένο από τούβλα οψιδιανού, ο οποίος μπορεί να είναι χρήσιμος στο να κάνεις τους αντιπάλους σου πιο αργούς. Το δεύτερο θα καλέσει ένα κοπάδι από δαίμονες οι οποίοι θα επιτίθονται σε όλους στην αποστολή, συμπεριλαμβανομένου και εσένα. Να είσαι προσεχτικός με αυτό.
+el.gridItemUnicornHornName
+Ένα κέρατο μονόκερου
+el.gridItemUnicornHornDescription
+Αυτό το μαγικό κέρατο άνηκε σε έναν μονόκερο.  Οι δυνατές θεραπευτικές δυνάμεις του, θα σε βοηθήσουν πολύ. Άκουσες πως ο μονόκερος ονομαζόταν Charlie.
+el.gridItemXinopherydonClawName
+Μία δαγκάνα xinopherydon
+el.gridItemXinopherydonClawDescription
+Αυτή η δαγκάνα άνηκε σε ένα xinopherydon, ένα αρχαίο δικέφαλο ζώο που όλοι πιστεύουν πως έχει εξαφανιστεί. Θα διπλασιάσει την ζημιά που ασλεί το όπλο που χρησιμοποιείς.
+el.gridItemPitchforkName
+Ένα δίκρανο
+el.gridItemPitchforkDescription
+Αυτό το ιδιαίτερο δίκρανο σου επιτρέπει να λυάνεις το χώμα χωρίς να χρειάζεται να το αναποδογηρήσεις, ως εκ τούτου, διατηρείς υπόγεια οικσυστήματα χώματος. Θα τριπλασιάσει την παραγωγή γλυφειτζουριών σου.
+el.gridItemShellPowderName
+Σκόνη κοχυλιού
+el.gridItemShellPowderDescription
+Η σκόνη κοχυλιού συχνά χρησιμοποιήτε από αγρότες για να βελτιώσει την ανάπτυξη των γλυφειτζουριών τους. Αυτή η σκόνη θα πολλαπλασιάσει την παραγωγή γλειφυτζουριών σου κατά τρία!
+el.gridItemPName
+Η πέτρα P
+el.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+el.gridItemLName
+Η πέτρα L
+el.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+el.gridItemAName
+Η πέτρα Α
+el.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+el.gridItemYName
+Η πέτρα Υ
+el.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+el.gridItemRedSharkFinName
+Ένα μαγικό κόκκινο πτερύγιο καρχαρία
+el.gridItemRedSharkFinDescription
+Αυτό το μαγικό πτερύγιο θα αυξήσει σε μεγάλο βαθμό την ζημιά που ασκεί το ξόρκι φλόγινης σφαίρας σου. Επιτέλους, αυτή η φλόγινη σφαίρα θα γίνει χρήσιμη.
+el.gridItemGreenSharkFinName
+Ένα μαγικό πράσινο πτερύγιο καρχαρία
+el.gridItemGreenSharkFinDescription
+Αυτό το μαγικό πτερύγιο θα φέρει τη δύναμη της φύσεως στη φάρμα γλειφυτζουριών σου! Η παραγωγικότητά σου θα πολλαπλασιαστει κατά 5.
+el.gridItemPurpleSharkFinName
+Ένα μαγικό μωβ πτερύγιο καρχαρία
+el.gridItemPurpleSharkFinDescription
+Αυτό το μαγικό πτερύγιο θα σου προσφέρει ένα νέπ ξόρκι μαύρης μαγείας. Μπορείς να το χρησιμοποιήσεις μόνο μία φορά σε κάθε περιπέτεια. Πρόσεχε με αυτο!
+el.gridItemTalkingCandyName
+Ένα ομιλούντο ζαχαρωτό
+el.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Αυτό το ομιλούντο ζαχαρωτό εμφανίστηκε αφού έβαλες τις τέσσερις πέτρες στην κορυφή του κάστρου. Μπορεί να σε βοηθήσει να ανοίξεις το candy box...
+el.inventorySpecialNothingEqItem
+Τίποτα
+el.eqItemWeaponWoodenSwordName
+Ξύλινο σπαθί
+el.eqItemWeaponWoodenSwordDescription
+Ένα απλό σπαθί φτιαγμένο από ξύλο
+el.eqItemWeaponIronAxeName
+Σιδερένιο τσεκούρι
+el.eqItemWeaponIronAxeDescription
+Ένα απλό σιδερένιο τσεκούρι. Καλά ακονισμένο. Πιο δυνατό από το ξύλινο σπαθί.
+el.eqItemWeaponPolishedSilverSwordName
+Γυαλισμένο ασημένιο σπαθί
+el.eqItemWeaponPolishedSilverSwordDescription
+Ένα δυνατό σπαθί καλυμένο με αγκάθια.
+el.eqItemWeaponTrollBludgeonName
+Το ρόπαλο του Troll
+el.eqItemWeaponTrollBludgeonDescription
+Πήρες αυτό το ρόπαλο από το troll που προστάτευε τη γέφυρα. Είναι αργό, αλλά λιώνει τους εχθρούς σου αρκετά αποτελεσματικά. 
+el.eqItemWeaponTribalSpearName
+Ένα δόρι της φυλής
+el.eqItemWeaponTribalSpearDescription
+Βρήκες αυτό το δόρι στο πτώμα ενός μαχητή της φυλής που ήταν χαμένος σε μία μεγάλη τρύπα στο έδαφος. Έιναι λίγο σύσκολο να το χειριστείς στην αρχή, αλλά μόλις το συνηθήσεις, είναι ένα καλό όπλο.
+el.eqItemWeaponSummoningTribalSpearName
+Ένα κλητευτικό δόρι της φυλής
+el.eqItemWeaponSummoningTribalSpearDescription
+Αυτό το μαγικό δόρι φυλής, πέρα του ότι είναι πιο δυνατό από το κανονικό δόρι φυλής, θα εμφανίζει συχνά μαχητές φυλής οι οποίοι θα σε βοηθήσουν κατά τη διάρκει τψν αποστολών σου.
+el.eqItemWeaponMonkeyWizardStaffName
+Το ραβδί του βασιλιά μαΪμού
+el.eqItemWeaponMonkeyWizardStaffDescription
+Αυτό το ραβδί άνηκε στον γυμνο βασιλιά μαϊμού που βρήκες στη σπηλιά. Εκτελεί συχνά ξώρκια μόνο του, με στόχο τους εχθρούς σου.
+el.eqItemWeaponEnchantedMonkeyWizardStaffName
+Το ραβδί του βασιλιά μαΪμού (μαγεμένο)
+el.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Αυτό το ραβδί είναι πιο γρήγορο από τη μη-μαγεμένη εκδοχή και εκτελεί πιο πολλά ξόρκια.
+el.eqItemWeaponGiantSpoonName
+Ένα γιγάντιο κουτάλι
+el.eqItemWeaponGiantSpoonDescription
+Αυτό το γιγάντιο κουτάλι βρισκόταν σε μία γιγάντια κούπα τσαγιού στο κάστρο της ερήμου. Δεν ξέρεις αν κάποιος το χρησιμοποίησε ποτέ σαν κουτάλι, αν ναι, πρέπει να ήταν κάποιος πολύ μεγάλος. Δεν θέλεις μάλλον να τον γνωρίσεις.
+el.eqItemWeaponGiantSpoonOfDoomName
+Το γιγάντιο Κουτάλι της Καταδίκης
+el.eqItemWeaponGiantSpoonOfDoomDescription
+Αυτό το γιγάντιο κουτάλι είναι ακόμα πιο δυνατό από το κανονικό γιγάντιο κουτάλι που μπορεις να βρεις σε μία κούπα τσαγιού. Είναι αρκετά αργό βέβαια. 
+el.eqItemWeaponScytheName
+Ένα δρεπάνι
+el.eqItemWeaponScytheDescription
+Λένε πως αυτό το δρεπάνι άνηκε στον Χάρο αυτοπροσώπος. Είναι εξαιρετικά γρήγορο.
+el.eqItemHatMerchantHatName
+Το καπέλο του πωλητή
+el.eqItemHatMerchantHatDescription
+Αυτό το καπέλο σου πωλήθηκε από τον πωλητή ζαχαρωτών. Ο πωλητής ζαχαρωτών λατρεύει τα ζαχαρωτά. Αυτό το καπέλο θα πολλαπλασιάζει κατά 7 τα ζαχαρωτά που βρίσκεις στις αποστολές!
+el.eqItemHatSorceressHatName
+Το καπέλο της μάγισσας
+el.eqItemHatSorceressHatDescription
+Αυτό το καπέλο σου πωλήθηκε από την μάγισσα. It will enhance the effects of your spells and potions.
+el.eqItemHatOctopusKingCrownName
+Η κορόνα του βασιλιά Χταποδιού
+el.eqItemHatOctopusKingCrownDescription
+Όταν φοράς αυτή την κορόνα έχεις πιο πολύ αυτοπεποίθηση. Δεν δίνει κανένα πλεονέκτημα στις αποστολές αλλα η αυτοπεποίθηση είναι σημαντική. It doesn't give any advantage in quests, but self-confidence is important!
+el.eqItemHatOctopusKingCrownWithJaspersName
+Η κορόνα του βασιλιά Χταποδιού με πολύτιμους λίθους
+el.eqItemHatOctopusKingCrownWithJaspersDescription
+Αυτή η μαγεμένη κορόνα είναι φτιαγμένη από χρυσό και κόκκινους πολύτιμους λίθους. Σε αποστολές, θα εκτοξεύει συχνά δυνατές μαγικές μπάλες φωτιάς γύρω σου. Και επίσης, λάμπει!
+el.eqItemHatOctopusKingCrownWithObsidianName
+Η κορόνα του βασιλιά Χταποδιού με οψιδιανό
+el.eqItemHatOctopusKingCrownWithObsidianDescription
+Αυτή η μαγεμένη κορόνα είναι φτιαγμένη από χρυσό και οψιδιανό. Είναι πανέμορφη. Σε αποστολές, θα εμφανίζει ένα Βασιλιά Χταπόδι ο οποίος θα μάχεται στο πλευρό σου που. Τι πλοκαμίσιος σύμμαχος!
+el.eqItemGlovesLeatherGlovesName
+Μάλλινα γάντια
+el.eqItemGlovesLeatherGlovesDescription
+Αυτά τα γάντια δεν κάνουν βασικά τίποτα. Άλλα τουλάχιστον είναι μαλακά και άνετα!
+el.eqItemGlovesRedEnchantedGlovesName
+Κόκκινα Μαγεμένα Γάντια
+el.eqItemGlovesRedEnchantedGlovesDescription
+Αυτά τα μαγεμένα γάντια παράγουν ένα απαλό κόκκινο φως όταν είναι σκοτεινά γύρω σου. Σε αποστολές, τυχαία θα εκτοξεύουν πύρινες μπάλες πρως τους εχθρούς σου, το οποίο σίγουρα θα είναι χρήσιμο.
+el.eqItemGlovesPinkEnchantedGlovesName
+Ρόζ μαγεμένα γάντια
+el.eqItemGlovesPinkEnchantedGlovesDescription
+Αυτά τα μαγεμένα γάντια αφήνουν ένα ροζ σημάδι σε ό,τι αγκίζεις. Στις αποστολές, θα σου δίνουν ζωή συνεχώς.
+el.eqItemBootsRocketBootsName
+Μπότες Πυραύλων
+el.eqItemBootsRocketBootsDescription
+Αυτές οι καταπληκτικές μπότες πυραύλων σου επιτρέπουν να πηδάς ενώ βρίσκεσαι στον αέρα, οπότε είναι σαν να πετάς!
+el.eqItemBootsLeatherBootsName
+Μάλλινες Μπότες
+el.eqItemBootsLeatherBootsDescription
+Απλές μάλλινες μπότες. Τίποτα ιδιαίτερο σχετικά με αυτές.
+el.eqItemBootsBootsOfIntrospectionName
+Μπότες της αυτοεξέτασης
+el.eqItemBootsBootsOfIntrospectionDescription
+Ανάπνευσε και ηρέμησε. Αν φοράς αυτές τις μπότες, δεν θα κινήσαι ποτέ αρκεί να ακουμπάς το πάτομα.
+el.eqItemBodyArmoursLightweightBodyArmourName
+Μία ελαφριά πανοπλία 
+el.eqItemBodyArmoursLightweightBodyArmourDescription
+Αυτή η πανοπλία θα σου προσφέρει λίγη προστασία. Θα αντέχεις λίγο παραπάνω απέναντι σε εχθρικές επιθέσεις.
+el.eqItemBodyArmoursKnightBodyArmourName
+Μία πανοπλία ιππότη
+el.eqItemBodyArmoursKnightBodyArmourDescription
+Αυτή η δυνατή πανοπλία θα σε προστατέψει. Θα αντέχεις παραπάνω απέναντι σε εχθρικές επιθέσεις.
+el.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Μία μαγεμένη πανοπλία ιππότη
+el.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Αυτή η πανοπλία είναι πολύ ιδιαίτερη. Θα αντέχεις ΠΟΛΥ παραπανω απέναντι σε εχθρικές απιθέσεις, αλλά η ζημιά που κάνει το όπλο σου θα διαιρεθεί δια δύο.    
+el.mapVillageForgeBuyWoodenSwordButton
+Αγόρασε ένα ξύλινο σπαθί (150 ζαχαρωτά)
+el.mapVillageForgeBuyWoodenSwordSpeech
+Ευχαριστώ για την αγορά! Αυτό το ξύλινο σπαθί είναι αρκετά αδύναμο, αλλα είναι μια αρχή.
+el.mapVillageForgeBuyIronAxeButton
+Αγόρασε ένα σιδερένιο τσεκούρι (400 ζαχαρωτά)
+el.mapVillageForgeBuyIronAxeSpeech
+Ελπίζω να σου αρέσει αυτό το σιδερένιο τσεκούρι. Μόλις σου το ακόνισα!
+el.mapVillageForgeBuyPolishedSilverSwordButton
+Αγόρασε ενα ακονισμένο ασιμένιο σπαθί (2 000 ζαχαρωτά)
+el.mapVillageForgeBuyPolishedSilverSwordSpeech
+Μου πήρε πολύ καιρό να φτιάξω αυτό το σπαθίIt took me a lot of time to create this sword. I assure you that it's worth its price.
+el.mapVillageForgeBuyLightweightBodyArmourButton
+Αγόρασε μία ελαφριά πανοπλία σώματος (15 000 ζαχαρωτά)
+el.mapVillageForgeBuyLightweightBodyArmourSpeech
+Αυτή η πανοπλία σώματος θα σου προσφέρει προστασία απέναντι στους εχθρούς σου.
+el.mapVillageForgeBuyScytheButton
+Αγόρασε ένα δρεπάνι (5 000 000 ζαχαρωτά)
+el.mapVillageForgeBuyScytheSpeech
+Μου πήρε αρκετούς μήνες να φτιάξω αυτό το δρεπάνι. Είναι ενα πραγματικό έργο τέχνης. Αυτό είναι μάλλον το γρηγορότερο όπλο που θα μπορέσεις να χρησιμοποιήσεις. Καλή τύχη!
+el.wishingWellThrowFirstCandyButton
+Πέτα ένα ζαχαρωτό μέσα στο πηγάδι.
+el.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Γεια σου, περιπλνώμενε! Είμαι το πηγάδι των ευχών. Θα σου εκπληρώσω ευχές με αντάλαγμα μερικά γλυκά! Όταν πετάξεις ζαχαρωτά μέσα μου θα θεραπεύσω τα τραύματά σου.
+el.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Τα τραύματά σου θεραπεύτηκαν!
+el.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Δεν έχεις τραύματα για θεραπεία!
+el.wishingWellThrowFirstLollipopButton
+Πέτα ένα γλειφιτζούρι στο πηγάδι
+el.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Γεια σου, περιπλνώμενε! Είμαι το πηγάδι των ευχών. Θα σου εκπληρώσω ευχές με αντάλαγμα μερικά γλυκά! Όταν πετάξεις γλειφιτζούρια μέσα μου θα τα μετατρέψω σε ζαχαρωτά.
+el.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Τα γλειφιτζούρια σου μετατράπηκαν σε ζαχαρωτα! Δύο γλειφιτζούρια για ένα ζαχαρωτό.
+el.wishingWellThrowChocolateBarButton
+Πέτα μία μπάρα σοκολάτας μέσα στο πηγάδι
+el.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Γεια σου, περιπλνώμενε! Είμαι το πηγάδι των ευχών. Θα σου εκπληρώσω ευχές με αντάλαγμα μερικά γλυκά! Λατρεύω τις μπάρες σοκολάτας. Πραγματικά τις λατρεύω. Για κάθε μπάρα σοκολάτας που ρίχνεις μέσα μου, συμπεριλαμβανόμενης και αυτής, θα σου χαρίσω ένα μάγεμα για ένα αντικείμενό σου.
+el.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Ποιο αντικείμενο θα ήθελες να μαγέψεις;
+el.wishingWellThrowPainAuChocolatButton
+Πέτα ένα pain au chocolat στο πηγάδι
+el.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Γεια σου, περιπλνώμενε! Είμαι το πηγάδι των ευχών. Θα σου εκπληρώσω ευχές με αντάλαγμα μερικά γλυκά! Όταν πετάξεις ένα pain au schocolat μέσα μου, θα σου δωθεί ένα πολύ ιδιαίτερο δώρο. Διάλεξε προσεκτικά.
+el.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Ευχαριστώ για το pain au chocolat! Μπορείς τώρα να διαλέξεις το δώρο σου.
+el.wishingWellChooseGift # INFORMAL PRONOUN
+Διάλεξε το δώρο σου!
+el.wishingWellChooseGiftButton
+Διάλεξε
+el.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Έτοιμο! Τώρα μπορείς να έχεις ένα νέο δώρο. Θα εμφανιστεί στον πίνακα στατιστικών στι λίστα αντικεμένων σου.
+el.wishingWellNoPossibleEnchantment
+Κανένα δυνατό μάγεμα
+el.wishingWellChooseEnchantment
+Διάλεξε ένα μάγεμα
+el.wishingWellEnchantButton
+Μάγεψε
+el.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Ορίστε! Το αντικείμενό σου είναι μαγεμένο.
+el.pierLighthouseButton
+Πήγαινε στο φάρο με βάρκα
+el.pierTheSeaButton
+Πήδα στη θάλασαα
+el.lonelyHouseOpenBox
+Άνοιξε το κουτί
+el.lonelyHouseShakeBox
+Κούνα το κουτί
+el.lonelyHouseBreakLock
+Σπάσε το κουτί
+el.lonelyHouseKickBox
+Κλώτσα το κουτί
+el.lonelyHouseAskTheBoxToOpenItself
+Ζήτα από το κουτί να ανοιχτεί
+el.lonelyHouseLureTheBoxWithACandy
+Δελέασε το κουτί με ένα ζαχαρωτό
+el.lonelyHouseTakeTheBox
+Πάρε το κουτί μαζί σου, μάλλον χρειάζεσε ένα κλειδί έτσι κι αλλιώς
+el.lonelyHouseOpenBoxResult
+Το κουτί είναι κλειδωμένο
+el.lonelyHouseShakeBoxResult
+Τίποτα δεν συμβαίνει
+el.lonelyHouseBreakLockResult
+Η κλειδαριά αντιστέκεται
+el.lonelyHouseKickBoxResult
+Το πόδι σου πονάει λίγο άλλα τίποτα δεν συμβαίνει
+el.lonelyHouseAskTheBoxToOpenItselfResult
+...το καταλαβαίνεις ότι μιλας σε ένα κουτι;
+el.lonelyHouseLureTheBoxWithACandyResult
+Το κουτί δεν φαίνεται να ενδιαφέρεται
+el.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Πρέπει να υπάρχει κάτι ενδιαφέρον σε αυτο το candy box.
+el.lollipopFarmConstructMill
+Χτίσε ένα μύλο (10 000 γλειφυτζούρια)
+el.lollipopFarmFeedMill
+Τάισε το μύλο
+el.lollipopFarmCurrentCandiesProduction
+Τωρινή παραγωγή ζαχαρωτών 
+el.lollipopFarmDigPond
+Σκάψε μία λιμνούλα (100 000 γλειφυτζούρια)
+el.lollipopFarmBuyLolligator
+Αγόρασε έναν γλειφιγκάρορα (1200 ζαχαρωτά)
+el.lollipopFarmLolligatorsConversionText
+Μετατροπή ζαχαρωτά -> γλειφυτζούρια ενεργοποιημένη
+el.lighthouseAskButton
+Ρώτα
+el.lighthouseQuestionWho
+Ποιος είσαι;
+el.lighthouseQuestionWhoSpeech
+Είμαι ένας ηλικιωμένος κύκλωπας
+el.lighthouseQuestionWhat
+Τι κάνεις εδώ;
+el.lighthouseQuestionWhatSpeech
+Ζω εδώ όλη μέρα περιμένοντας μία βάρκα να έρθει. Είναι πολύς καιρός από τότε που είδα μία βάρκα, αλλά πρέπει να μείνω εδώ, κοιτόντας την θάλασσα, επειδή μια βάρκα μπορεί να έρθει.
+el.lighthouseQuestionWhyEatCandies
+Γιατί να έτρωγα ζαχαρωτά;
+el.lighthouseQuestionWhyEatCandiesSpeech
+Γιατί είναι καλά για την υγεία σου!
+el.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Τι είναι ένα candy box;
+el.lighthouseQuestionCandyBoxSpeech
+Είναι ένα πολύ παλιό κουτί το οποίο λένε ότι περιέχει όλα τα ζαχαρωτά του κόσμου. Οι θρύλοι λένε ότι όποιος καταφέρει να το ανοίξει θα είχε τόσα πολλά ζαχαρώτα όπου οτιδήποτε θα ήταν δυνατόν.
+el.lighthouseQuestionDragon
+Ο δράκος μου είπε να έρθω εδώ επειδή θέλω ζαχαρωτά.
+el.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Αα, κατάλαβα, Εγώ βέβαια δεν μπορώ να σε προμυθεύσω με ζαχαρωτά απευθείας, αλλά μπορώ να σου δώσω κάτι χρήσιμο το οποίο θα σε βοηθήσει να αποκτήσεις ΠΟΛΛΑ ζαχαρωτά. Απλώς πρέπει να σε τεστάρω πριν στο δώσω. Επειδή αυτό που έχω δεν μπορεί να δωθεί στον καθένα. Λύσε αυτόν το γρύφο και θα είναι δικό σου.
+el.lighthouseFoundStone # INFORMAL PRONOUN
+Συγχαρητήρια! Πέρασες το τεστ και βρήκες την πέτρα. Είναι πολύ πολύτιμη, αλλά είναι χρήσιμη μόνο αν έχεις τρεις άλλες πέτρες σαν κι αυτή. Καλή τύχη!
+el.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Καλή δουλειά, έλυσες το γρύφο κι'άλλη φόρα. Φαίνεται να σου αρέσει αυτό.
+el.saveLocalSaveTitle
+Αποθήκευση φυλομετρυτή
+el.saveLocalSaveWhy
+Διάλεξε τοπική αποθήκευση αν θες να συνεχίζεις να παίζεις στην τωρινή σου συσκευή ή φυλομετρητή.
+el.saveLocalSaveWarning0
+Ο φυλομετρητής σου δεν φαίνεται να υποστηρίζει HTML5.
+el.saveLocalSaveWarning1
+Καλύτερα να αναβαθμίσεις τον φυλομετρητή σου για να χρησιμοποιήσεις τη δυνατότηα τοπικής αποθήκευσης.
+el.saveLocalSaveChooseSlot
+Διάλεξε μια υποδοχή αποθήκευσης :
+el.saveLocalSaveAutosaveEnabled
+Αυτόματη αποθήκευση ενεργοποιημένη
+el.saveLocalSaveChooseWhatToDo
+Διάλεξε τι να κανεις:
+el.saveLocalSaveSaveButton
+Αποθήκευση
+el.saveLocalSaveAutosaveButton
+Αποθήκευση κάθε 10 λεπτά
+el.saveLocalSaveDisableAutosaveButton
+Αυτόματη αποθήκευση απενεργοποιημένη
+el.saveFileSaveTitle
+Αποθήκευση σε μορφή κειμένου
+el.saveFileSaveWhy0
+Διάλεξε την αποθήκευση σε μορφή κειμένου αν :
+el.saveFileSaveWhy1
+Θέλεις να συνεχίσεις σε μία διαφορετική συσκευή ή φυλομετρητή
+el.saveFileSaveWhy2
+Θέλεις να μοιραστείς την πρόοδο σου στο παιχνίδι με κάποιον άλλον
+el.saveFileSaveWhy3
+Για κάποιο λόγο θες να αδειάσεις τη μνήμη του φυλομετρητή σου
+el.saveFileSaveWhy4
+(κάτι το οποία θα διαγράψει τις τοπικές αποθηκεύσεις σου)
+el.saveFileSaveButton
+Πάρε το τωρινό παιχνίδι σε μορφή κειμένου
+el.saveFileSaveWarning
+Τώρα αντέγραψε το κείμενο αυτό κάπου! (σε ένα αρχείο για παράδειγμα)
+el.saveLocalLoadTitle
+Φόρτωση από φυλομετρητή
+el.saveLocalLoadYouCan
+Μπορείς να φορτώσεις μία τοπική αποθήκευση χρησιμοποιώντας έναν από τους παρακάτω συνδέσμους :
+el.saveLocalLoadThanksTo
+Χάρης στη μαγεία του HTML5, θα μπορείς να χρησιμοποιήσεις αυτούς τους συνδέσμους ακόμα και χωρίς σύνδεση στο ιντερνετ.
+el.saveFileLoadTitle
+Φόρτωση παιχνιδιού σε μορφή κειμένου
+el.saveFileLoadPaste
+Επικόλλησε την αποθήκευση σου παρακάτω και κάνε κλικ στο κουμοί "Φόρτωση"
+el.saveFileLoadButton
+Φόρτωση
+el.mountainsText0
+Διέκρινες κάτι στα βουνά!
+el.mountainsText1
+Φαίνεται ενδιαφέρον. Μπορεί να είναι χρήσιμο.
+el.mountainsTextButton
+Ανέβα στα βουνά για να πάρεις το πράγμα 
+el.mountainsTextAfter
+Βρήκες ένα καλάμι πηδήματος! 
+el.secondHouseIntroSpeech
+Γεια, είμαι ο έμπορος ζαχαρωτών. Θα έκανα τα πάντα για ζαχαρωτά. Τι χρειάζεσαι;
+el.secondHouseLollipop1Speech
+Αυτό είναι ένα γλειφυτζούρι με γεύση λεμόνι. Το αγαπημένο μου! Κοστίζει 60 ζαχαρωτά, αλλά αξίζει.
+el.secondHouseLollipop2Speech
+Αυτό είναι ένα γλειφυτζούρι με γεύση φράουλα. Έχει ωραία γεύση. Μου αρέσει το κόκκινο χρώμα του. Μόνο 60 ζαχαρωτά!
+el.secondHouseLollipop3Speech
+Αυτό είναι ένα γέιφυτζούρι με γεύση κολοκύθα. Πάω στοιχήμα πως δεν έχεις δοκιμάσει ποτέ! 60 ζαχαρωτά καιείναι δικό σου.
+el.secondHouseLollipopButtonText
+Αγόρασε αυτό το γλειφυτζούρι. (60 ζαχαρωτά)
+el.secondHouseMerchantHatSpeech
+Θα μπορούσα να σου πουλήσω το καπέλο μου, αλλά είναι πολύ πολύτιμο, ξέρεις... Θα πρέπει να μου δώσεις πολλά ζαχαρωτά για να το πάρεις. Ας πούμε ένα εκατομύριο ζαχαρωτά. Ακούγεται δίκαιο, έτσι;
+el.secondHouseMerchantHatButtonText
+Αγόρασε το καπέλο του εμπόρου. ( 1 000 000 ζαχαρωτά)
+el.secondHouseTimeRingSpeech
+Αυτό είναι το δαχτυλίδι του χρόνου. Είναι κάπως μαγικό. Σου επιτρέπει να κάνεις το χρόνο να κυλά πιο αργά όταν βρίσκεσαι σε κίνδυνο.
+el.secondHouseTimeRingButtonText
+Αγόρασε το δαχτυλίδι του χρόνου (500 ζαχαρωτά)
+el.secondHouseLeatherGlovesSpeech
+Αυτά τα μάλλινα γάντια είναι φτιαγμένα από δέρμα καμήλας, αυτό είναι υψυλής ποιότητας. Έχω πολλά σε διαθεσιμότητα, γι'αυτό είναι τόσο φθηνά: μόνο 300 ζαχαρωτά!
+el.secondHouseLeatherBootsButtonText
+Αγόρασε ένα ζευγάρι μάλλινες μπότες (300 ζαχαρωτά)
+el.secondHouseLeatherBootsSpeech
+Αυτές οι υψυλής ποιότητας μάλλινες μπότες, φτιαγμένες από δέρμα καμήλας, θα κρατήσουν τα πόδια σου ζεστά.
+el.secondHouseLeatherGlovesButtonText
+Αγόρασε ένα ζευγάρι μάλλινα γάντια. (300 ζαχαρωτά)
+el.secondHouseChocolateBarSpeech
+Αυτή είναι μια μπάρα σοκολάτας. Δεν ξέρω για τί χρησιμοποιήτε, αλλά είναι αρκετά σπάνια, κάτι το οποίο εξηγεί την τιμή. 800 ζαχαρωτά και είναι δική σου!
+el.secondHouseChocolateBarButtonText
+Αγόρασε την μπάρα σοκολάτας (800 ζαχαρωτά)
+el.outsideTheHoleButton
+Πήδα σε αυτήν τη μεγάλη τρύπα στο έδαφος
+el.theCaveExitText0
+Τελικά έφτασες στην έξοδο της σπηλιάς.
+el.theCaveExitText1
+Μπορείς να δεις ένα μεγάλο δάσος έξω από εδώ.
+el.theCaveExitButtonText
+Βγές από την σπηλιά
+el.theCaveFirstSentenceWentStraight
+Προχώρησες ευθεία μπροστά.
+el.theCaveFirstSentenceWentLeft
+Πέρασες απο το αριστερό πέρασμα.
+el.theCaveFirstSentenceWentRight
+Πέρασες απο το δεξιό πέρασμα.
+el.theCaveFirstSentenceYouAre
+Είσαι μέσα σε μία σπηλιά. Υπάρχουν τρία μονοπάτια μπροστά σου.
+el.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Βλέπεις ένα παράξενο πράγμα στο έδαφος μπροστά σου.
+el.theCavePattern_ChocolateBarNowSeeChocolateBar
+Βλέπεις μία μπάρα σοκολάτας μπροστά σου.
+el.theCavePattern_TreasureMapSentence
+Βλέπεις μικρούς βράχους στημένους με περίεργο τρόπο στο έδαφος.
+el.theCavePattern_MonkeyWizardSentence
+Βλέπεις έναν γυμνό μάγο μαϊμού.
+el.theCavePattern_MonkeyWizardButton
+Προκάλεσέ τον
+el.theCavePattern_OctopusKingSentence
+Βλέπεις το Βασιλιά Χταπόδι. Φαίνεται απαίσιος.
+el.theCavePattern_OctopusKingButton
+Προκάλεσέ τον
+el.fortressInsideText0
+Είσαι μέσα στο κάστρο της άμμου
+el.fortressInsideText1
+Μπορείς να διαλέξεις μεταξύ τριών πορτών.
+el.fortressInsideText2
+Each of them leads to a big room with a treasure at the end.
+el.fortressInsideEnterRoom1
+Μπες στο πρώτο δωμάτιο
+el.fortressInsideEnterRoom2
+Μπες στο δεύτερο δωμάτιο
+el.fortressInsideEnterRoom3
+Μπες στο τρίτο δωμάτιο
+el.treasureButtonDig
+Σκάψε
+el.treasureButtonYouFound
+Βρήκες τρεις μπάρες σοκολάτας!
+el.sorceressHutHello
+Γεια, είμαι η μάγισσα. Θα μπορούσα να σου μάθω ένα-δυο πράγματα για τη μαγεία. Μπορώ επίσης να σου δώσω μερικά ενδιαφέροντα πράγματα, ή να εκτελέσω ξόρκια για σένα. Αλλά τα πάντα έχουν μία τιμή! Και αυτή η τιμή είναι γλειφυτζούρια. Πολλά από αυτά. 
+el.sorceressHutClickedGrimoire
+Αυτό είναι ένα βιβλίο για ξόρκια φτιαγμένο για πρωτάρηδες. Με το να το κουβαλάς μαζί σου σε αποστολές, θα μπορείς να εκτελείς απλά αλλά χρήσιμα ξόρκια. Το χρειάζεσαι! Μόνο 5 000 γλειφυτζούρια.
+el.sorceressHutBuyGrimoireButton
+Αγόρασε αυτό το βιβλίο για ξόρκια(5 000 γλειφυτζούρια)
+el.sorceressHutBuyGrimoireSpeech
+Ευχαριστώ που το αγόρασες! Θα μπορείς να εκτελέσεις τρία ξόρκια με αυτό το βιβλίο για ξόρκια. Καλή τύχη!
+el.sorceressHutClickedGrimoire2
+Αυτό είναι ένα σύνθετο βιβλίο για ξόρκια. Με το να το κουβαλάς μαζί σου σε αποστολές, θα μπορείς να εκτελείς δύο σύνθετα ξόρκια. Το έγραψα μόνη μου, κάτι το οποίο δεν ήταν εύκολο. 20 000 γλειφυτζούρια είναι μία δίκαια τιμή. 
+el.sorceressHutBuyGrimoire2Button
+Αγόρασε αυτό το βιβλίο για ξόρκια(20 000 γλειφυτζούρια)
+el.sorceressHutBuyGrimoire2Speech
+Ευχαριστώ για την αγορά! Θα μπορείς να εκτελείς δύο ξόρκια με αυτό το βιβλίο για ξόρκια. Χρησιμοποίησε τα σοφά!
+el.sorceressHutClickedCauldron
+Αυτό είναι το καζάνι μου. Μου επιτρέπει να φτιάχνω φίλτρα. Θα μπορούσα να στο πουλήσω, αλλά είναι πολύ πολύτιμο... θα σου κοστίσει 100 000 γλειφυτζούρια.
+el.sorceressHutBuyCauldronButton
+Αγόρασε το καζάνι (100 000 γλειφυτζούρια)
+el.sorceressHutBuyCauldronSpeech
+Ευχαριστώ πολύ! 100 000 γλειφυτζούρια για εμένα! Επίσης σου έδωσα έναν οδηγό. Θα είναι χρήσιμος.
+el.sorceressHutClickedHat
+Έχω ένα ωραίο καπέλο, πράγματι! Αλλά πραγματικά δεν μπορώ να σου το πουλήσω. Είναι υπερβολικάαα πολύτιμο. Πράγματι, δεν μπορώ. Μην επιμένεις. Όχι. Όχι όχι όχι. Δεν θα έπρεπε να το κάνω. Ε σιγά, θα το ανταλλάξω, αλλά για 1 000 000 000 γλειφυτζούρια. Μάλλον δεν θα μπορέσεις να πληρώσεις τόσα πολλά έτσι κι αλλιώς.
+el.sorceressHutBuyHatButton
+Αγόρασε το καπέλο (1 000 000 000 γλειφυτζούρια)
+el.sorceressHutBuyHatSpeech
+Ένα δισεκατομύριο γλειφυτζούρια για εμέεεεενα! Αλλά δεν έχω ένα καπέλο πια.. αλλά ένα δισεκατομύριο ζαχαρωτά, γουάου! .. Άξιζε.
+el.cauldronPreviousPageButton
+Προηγούμενη σελίδα
+el.cauldronNextPageButton
+Επόμενη σελίδα
+el.cauldronWhatYouWantToPut
+Τι θέλεις να βαλεις στο καζάνι
+el.cauldronWhatIsIn
+Τι είναι μέσα στο καζάνι
+el.cauldronWhatYouCanDo
+Τι μπορείς να κάνεις με αυτό
+el.castleBigRoomComment
+Ένα μεγάλο δωμάτιο
+el.castleARoomComment
+Ένα δωμάτιο
+el.castleADarkRoomComment
+Ένα σκοτεινο δωμάτιο
+el.castleCastleEntranceComment
+Η είσοδος του κάστρου.
+el.castleTowerEntranceComment
+Η είσοδος του πύργου.
+el.castleNougatMonsterComment
+Attack the giant nougat monster
+el.castleGuardsComment
+Δείρε τους φύλακες
+el.castleStairsComment
+Σκάλες
+el.buttonBackToTheCastle
+Πίσω στο κάστρο
+el.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Γεια! Είμαι ένας πολύ παλιός φούρνος. Παλιά έψηνα πάρα πολλά αρτοσκευάσματα, αλλά κανένας δεν με χρησιμοποιεί πια. Ίσως...ίσως εσύ μπορείς να με βοηθήσεις. Απλά ασε να πάρω μερικά ζαχαρωτά από εσένα! Μην ανυσυχείς, δεν θα το μετανιώσεις. Μπορείς να με εμπιστευτείς.  
+el.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Α... δεν έχεις αρκετά γλυκά, δεν μπορώ να κάνω τίποτα. Είμαι απλώς άχρηστος. Είμαι ο άχρηστος φούρνος, έτσι θα πρέπει να με λες. 
+el.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Ναι! Ευχαριστώ πολύ. Χρησιμοποίησα 100 ζαχαρωτά και μία μπάρα σοκολάτας, και σου έφτιαξα μία pain au chocolat! Είναι το αγαπημένο μου αρτοσκεύασμα, ελπίζω να σου αρέσει και εσένα! 
+el.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Ε! Αν θες να σου μαγειρέψω κι'άλλο αρτοσκεύασμα, απλώς πες μου. Θα ήθελα πολύ να σε βοηθήσω.
+el.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Α, δεν έχεις αρκετά γλυκά, δυστυχώς. Χρειάζομαι 100 ζαχαρωτά και μία μπάρα σοκολάτας. Γύρνα πίσω όταν τα έχεις αυτά!
+el.castleBigRoomHovenLetHovenTakeButton
+Άσε τον φούρνο να πάρει όσα ζαχαρωτά θέλει
+el.castleBigRoomHovenThanks
+Ευχαριστώ, φούρνε
+el.dragonStopTickling # INFORMAL PRONOUN
+Ε,εσυ! Σταμάτα να με γαργαλάς σε παρακαλω.
+el.dragonStopTicklingButton
+Ωχ, συγνώμη, νόμιζα πως έπρεπε να σου επιτεθώ.
+el.dragonTalking # INFORMAL PRONOUN
+Είμαι ο δράκος και αυτό είναι το κάστρο μου. Βλέπω ότι καταφερες να μπεις, πρέπει να είσαι πολύ γενναίος... θα το ήθελα πολύ να βοηθήσω κάποιθον σαν κι εσένα. Τι ακριβώς ψάχνεις;
+el.dragonTalkingChallengeButton
+Πρόκληση
+el.dragonTalkingFameButton
+Δόξα
+el.dragonTalkingCandiesButton
+Ζαχαρωτά
+el.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Α, οπότε θέλεις μία πρόκλση; Νομίζω ότι πρέπει να πας μία βόλτα στην κόλαση, λέγεται πως ο διάβολος είναι άξιος αντίπαλος. Πήδα στην πλάτη μου και θα σε πάω εκεί!
+el.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Ο καλύτερος τρόπος να γίνεις διάσημος είναι να αντιπετωπίσεις τον προγραμματιστή. Ξέρω που μένει και θα μπορούσα να σε πάω εκεί. Αλλά να είναι προετοιμασμένος, αυτό δεν θα είναι εύκολο.
+el.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Γενικά, το πράγμα που όλοι θέλουμε είναι ζαχαρωτά, έτσι δεν είναι; Πιστεύω ένας φίλος μου θα μπορούσε να σε βοηθήσει με αυτό. Θα τον αναγνωρίσεις εύκολα, έχει μόνο ένα μάτι. Απλώς πες του ότι με ξέρεις.
+el.dragonTalkingChallengeAnswer
+Πάμε τότε!
+el.dragonTalkingFameAnswer
+Είμαι έτοιμος
+el.dragonTalkingCandiesAnswer
+Εντάξει, ευχαριστώ!
+el.buttonBackToCastle
+Πίσω στο κάστρο
+el.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Γεια! Είμαι το ομιλούντο ζαχαρωτό. Έχεις σχεδόν τερματίσει το παιχνίδι. Πρέπει απλώς να βρεις το candy box. Είναι σε ένα σπίτι έξω από το χωριό. Αυτό είναι το τελευταίο βήμα!
+el.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Γεια! Είμαι το ομιλούντο ζαχαρωτό. Συγχαρητήρια, κέρδισες το παιχίδι! Θα ανοίξω το candy box σου, αυτό είναι το βραβείο σου. Να συνεχίσω;
+el.talkingCandySpeech2 # INFORMAL PRONOUN
+Έτοιμο! Μπορείς να μπεις τώρα. Ελπίζω να σου άρεσε το παιχνίδι :)
+el.talkingCandyButton
+Ναι!!
+el.lighthousePuzzleResetButton
+Επαναφορά

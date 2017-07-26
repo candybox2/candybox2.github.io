@@ -1,0 +1,690 @@
+﻿de.mapVillageComment
+Das Dorf
+de.mapFortressComment
+Die Wüstenfestung
+de.mapATreeComment
+Ein Baum
+de.mapTheDesertComment
+Die Wüste
+de.mapWishingWellComment
+Der Wunschbrunnen
+de.mapLonelyHouseComment
+Ein verlassenes Haus
+de.mapForestComment
+Der Wald
+de.mapCastleEntranceComment
+Schlosseingang
+de.mapCastleComment
+Das Schloss
+de.mapDragonComment
+Der Drache
+de.candyBoxEatCandiesButton
+Alle Bonbons aufessen
+de.candyBoxThrowCandiesButton
+10 Bonbons auf den Boden werfen
+de.mapVillageAHouseComment
+Ein Haus
+de.mapVillageForgeComment
+Die Schmiede
+de.buttonBackToTheMap
+Zurück zur Karte
+de.mapSorceressHutComment
+Hexenhütte
+de.buttonBackToTheVillage
+Zurück zum Dorf
+de.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Hallo, ich bin das Eichhörnchen. Ich kann dir Bonbons und viele andere Dinge anbieten. Ich weiß, wie sehr du Süßes magst. Aber ich fühle mich in diesem Wald einsam.
+de.mapATreeIntroductionButton
+Wie kann ich dir helfen?
+de.mapATreeFirstQuestion # INFORMAL PRONOUN
+Ich werde dir Fragen stellen. Wenn du sie korrekt beantwortest, werden die süßesten Süßspeisen deine sein. Die erste : Magst du wirklich Bonbons?? (Antworte auf Englisch)
+de.mapATreeSecondQuestion # INFORMAL PRONOUN
+Das ist richtig! Hier sind 20 Bonbons für dich. Vervollständige nun diese Aneinandereihung von Buchstaben und du wirst eine neue Belohnung erhalten : S, E, I, D, N, A, ?
+de.mapATreeThirdQuestion # INFORMAL PRONOUN
+Candies! Hier hast du 100 Bonbons. Nächste Frage : Wie viele Bonbons besitzt die größte Naschkatze auf der ganzen Welt?
+de.mapATreeFourthQuestion # INFORMAL PRONOUN
+Hier sind 500 Bonbons! Die nächste Belohnung dürfte sogar noch interessanter sein... Hier ist das Rätsel : In einem uralten Wald wächst ein sehr alter Baum, auf dem die intelligentesten Tier dieser Welt leben. Es heißt, dieser Baum habe 60 Wurzeln, 360 Äste und 2160 Blätter. Wie viele Markierungen kannst du auf seinem Stamm finden?
+de.mapATreeFifthQuestion # INFORMAL PRONOUN
+Gratulation! Ich sprach in der Tat von meinem Baum. Hier sind 3 Lutscher für dich. Nütze sie wohlüberlegt! Das nächste Rätsel, hör gut zu : Im Vollmond werfe ich einen gelben Hut ins rote Meer. Was geschieht mit diesem gelben Hut?
+de.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Gute Antwort! Das war nicht allzu schwer. Hier sind 3 Schokoriegel für dich. Für die nächste Belohnung müssen wir die Regeln ein klein wenig ändern. Du wirst ein Spiel mit mir spielen müssen! Bist du bereit?
+de.mapATreeTicTacToeIntroButton
+Na klar!
+de.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Dieses Spiel heißt Tic Tac Toe. Wir spielen auf einem 3×3-Spielbrett. Du wirst das X-Zeichen und ich das O-Zeichen benutzen. Jeder von uns wird seine eigenen Zeichen setzen und das Ziel ist es, 3 gleiche Zeichen in einer Reihe zu haben. Ich werde dich beginnen lassen!
+de.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Das Spielbrett ist komplett gefüllt und wir haben beide nicht drei in einer Reihe : keiner gewinnt! Willst du es erneut versuchen?
+de.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Ich habe drei in einer Reihe! Ich habe gewonnen. Willst du es erneut versuchen?
+de.mapATreeTicTacToeTryAgainButton
+Natürlich will ich das!
+de.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Wow, das war ein unerwarteter Zug. Aber du hast drei in einer Reihe, das kann ich nicht bestreiten. Du hast gewonnen! Nimm diesen Schlüssel! Er öffnet eines der Häuser im Dorf unter dem Wald.
+de.mapATreeTicTacToeAnymoreSweet
+Danke, Eichhörnchen! Noch mehr Herausforderungen?
+de.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Leider nicht, ich habe keine weiteren Herausforderungen für dich... Mit dir zu Spielen war spaßig, danke dafür!
+de.buttonExitQuestKeeping
+Verlasse die Quest (und behalte deine Beute)
+de.buttonExitQuestNoKeeping
+Verlasse die Quest (und verliere deine Beute)
+de.buttonExitQuestNoKeepingBecauseLose
+Verlasse die Quest (und verliere deine Beute, weil du gescheitert bist)
+de.mapVillageLockedHouseComment
+Ein abgeschlossenes Haus
+de.mapVillageForgeIntroductionSpeech
+Hi! Ich bin ein Schmied. Ich kann dir verschiedene Waffen und Ausrüstungsteile verkaufen.
+de.mapVillageForgeIntroductionSpeechNoMoreToSell
+Hi! Ich bin ein Schmied. Leider kann ich gerade nichts zum Verkauf anbieten. Möchtest du vielleicht später wiederkommen?
+de.mapVillageFifthHouseNoWeaponSpeech
+Hallo. Mein Keller ist voller Ratten, die ich loswerden muss... wenn mir nur jemand mit einer Waffe helfen könnte...
+de.mapVillageFifthHouseWeaponSpeech
+He, du! Ich sehe, dass du eine Waffe trägst. Wenn du die Ratten, die mich in meinem Keller belästigen, tötest, werde ich dich belohnen!
+de.mapVillageFifthHouseAgree
+Dann nichts wie los!
+de.mapVillageFifthHouseCellarDone
+Vielen Dank, dass du sie losgeworden bist. Hier ist etwas sehr Wertvolles als Belohnung : eine Weltkarte. Ich denke, dass du mehr damit anfangen kannst als ich.
+de.mapVillageTheShopComment
+Der Laden
+de.mapBridgeComment
+Die Brücke
+de.mapFarmComment
+Die Lutscherfarm
+de.mapCaveEntranceComment
+Der Höhleneingang
+de.mapLighthouseComment
+Der Leuchtturm
+de.mapPierComment
+Der Pier
+de.mapTheHoleComment
+Der Graben
+de.candyBoxRequestStatusBarUnlocked
+Den Entwickler um eine neue Funktion bitten (30 Süßigkeiten)
+de.candyBoxRequestStatusBarUnlockedCfg
+Um eine weitere bitten (5 Süßigkeiten)
+de.candyBoxRequestStatusBarUnlockedSave
+Noch einmal bitten (5 Süßigkeiten)
+de.candyBoxRequestStatusBarUnlockedHealthBar
+Um etwas Aufregenderes bitten (5 Süßigkeiten)
+de.candyBoxRequestStatusBarUnlockedMap
+Der letzte Wunsch! Er muss einfach die Bonbons wert sein. (10 Süßigkeiten)
+de.candyBoxRequestStatusBarUnlockedComment
+Du hast eine Statusleiste freigeschaltet! (siehe oben)
+de.candyBoxRequestStatusBarUnlockedCfgComment1
+Du hast jetzt Zugriff auf den Konfigurations-Tab.
+de.candyBoxRequestStatusBarUnlockedCfgComment2
+Du kannst die Sprache ändern, wenn du das möchtest.
+de.candyBoxRequestStatusBarUnlockedSaveComment
+Ein wildes Speichern-Tab erscheint!
+de.candyBoxRequestStatusBarUnlockedHealthBarComment
+Hier sind 100 Lebenspunkte für dich. Sie werden nützlich sein.
+de.cfgChooseLanguage
+Wähle eine Sprache :
+de.cfgInvertColors
+Farben invertieren?
+de.gridItemMainMapName
+Die Karte
+de.gridItemMainMapDescription
+Karte der Welt
+de.gridItemPogoStickName
+Springstock
+de.gridItemPogoStickDescription
+Dieser Gegenstand erlaubt es dir, in Quests zu springen.
+de.gridItemTimeRingName
+Ein Zeitring
+de.gridItemTimeRingDescription
+Dieser Gegenstand gibt dir eine neue Fähigkeit in Quests : Du kannst die Zeit verlangsamen. Benutze deinen Zeitring, wenn es dir zu schnell geht!
+de.gridItemThirdHouseKeyName
+Der dritte Hausschlüssel
+de.gridItemThirdHouseKeyDescription
+Dieser Schlüssel erlaubt es dir, das dritte Haus im Dorf zu betreten.
+de.gridItemFeatherName
+Eine Wüstenvogelfeder
+de.gridItemFeatherDescription
+Diese magische Feder erlaubt es dir, höher zu springen, wenn du deinen Springstock benutzt!
+de.gridItemFeatherDescriptionNoPogoStick
+Aus irgendeinem Grund hast du das Gefühl, dass diese Feder mit einem Springstock nützlich sein könnte...
+de.gridItemSpongeName
+Ein magischer Schwamm
+de.gridItemSpongeDescription
+Dieser magische Schwamm erlaubt es dir, dich wie ein Schwamm zusammenzuziehen und dadurch zu schrumpfen.
+de.gridItemFortressKeyName
+Der Wüstenfestungsschlüssel
+de.gridItemFortressKeyDescription
+Dieser Schlüssel erlaubt es dir, die antike Festung oberhalb der Wüste zu betreten. Wer weiß schon, was man dort entdecken könnte?
+de.gridItemHeartPendantName
+Ein Herzamulett
+de.gridItemHeartPendantDescription
+Dieses Herzamulett wird deine Lebenspunkte erhöhen, solang du es um deinen Hals trägst.
+de.gridItemHeartPlugName
+Ein Herzstecker
+de.gridItemHeartPlugDescription
+Dieser Herzstecker besteht aus Eisen, Spinnenbeinen und einer speziellen "Herzlauge", die in der Mitte eingeschlossen ist. Er erhöht deine Lebenspunkte um 20 Prozent!
+de.gridItemBeginnersGrimoireName
+Magie für Memmen
+de.gridItemBeginnersGrimoireDescription
+Dieses Buch verleiht dir drei Zaubersprüche, die sich einfach beschwören lassen. Es scheint in der Tat für Anfänger geschrieben worden zu sein. Folgende Zaubersprüche wirst du benutzen können : Saurer Regen (eine große Menge an Säure fällt auf deine Gegner), Feuerball (ein riesiger Magieball aus Feuer fliegt in Richtung deiner Gegner) und Teleport (du wirst an eine zufällige Position teleportiert).
+de.gridItemAdvancedGrimoireName
+Zaubern für Fortgeschrittene
+de.gridItemAdvancedGrimoireDescription
+Dieses Buch für Fortgeschrittene verleiht dir zwei Zaubersprüche : Magie auslöschen und Dornenschild. Der erste wird jegliche Magie von dir oder deinen Gegnern während eines Quests verhindern. Der zweite wird um dich herum einen Schild aus fliegenden Dornen erschaffen, welcher deinen Gegnern bei Kontakt Schaden hinzufügt
+de.gridItemBlackMagicGrimoireName
+Buch der schwarzen Magie
+de.gridItemBlackMagicGrimoireDescription
+Du hast dieses Zauberbuch aus einer Höhle geborgen, was nicht einfach war - und das hat seinen Grund. Es verleiht dir nämlich zwei mächtige dunkle Zaubersprüche. Der erste wird vor dir einen riesigen Wall aus Obsidiansteinen erschaffen, was nützlich sein kann, um Gegner zu verlangsamen. Der zweite wird einen Schwarm von Dämonen heraufbeschwören, die jeden während eines Quests angreifen werden, auch dich. Sei vorsichtig damit.
+de.gridItemUnicornHornName
+Elfenbein des Einhorns
+de.gridItemUnicornHornDescription
+Dieses magische Horn gehörte einst einem Einhorn. Seine mächtigen Heilkräfte werden dir eine große Hilfe sein. Du hast gehört, dass das Einhorn den Namen Charlie hatte.
+de.gridItemXinopherydonClawName
+Klaue eines Xinopherydons
+de.gridItemXinopherydonClawDescription
+Diese Klaue gehörte einem Xinopherydon, einer zweiköpfigen vorzeitlichen Kreatur, die als ausgestorben galt. Sie wird den Schaden deiner ausgerüsteten Waffe verdoppeln.
+de.gridItemPitchforkName
+Eine Heugabel
+de.gridItemPitchforkDescription
+Mit dieser besonderen Heugabel kannst du den Ackerboden auflockern, ohne ihn komplett zu ruinieren. Dadurch wird das unterirdische Ökosystem geschützt. Sie wird die Produktion deiner Lutscherfarm verdreifachen.
+de.gridItemShellPowderName
+Muschelpulver
+de.gridItemShellPowderDescription
+Muschelpulver wird häufig von Bauern benutzt, um das Wachstum von Lutschern zu verbessern. Dieses Pulver wird die Produktion deiner Lutscherfarm verdreifachen!
+de.gridItemPName
+Der P-Stein
+de.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+de.gridItemLName
+Der L-Stein
+de.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+de.gridItemAName
+Der A-Stein
+de.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+de.gridItemYName
+Der Y-Stein
+de.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+de.gridItemRedSharkFinName
+Eine rote magische Haiflosse
+de.gridItemRedSharkFinDescription
+Diese magische Flosse wird den Schaden deines Feuerballs stark erhöhen. Schlussendlich wird Feuerball also doch noch nützlich.
+de.gridItemGreenSharkFinName
+Eine grüne magische Haiflosse
+de.gridItemGreenSharkFinDescription
+Diese magische Flosse verleiht deiner Lutscherfarm die Kraft der Natur! Deine Produktion wird sich verfünffachen.
+de.gridItemPurpleSharkFinName
+Eine violette magische Haiflosse
+de.gridItemPurpleSharkFinDescription
+Diese magische Flosse wird dir einen neuen Spruch der schwarzen Magie verleihen! Du kannst ihn höchsten einmal pro Quest verwenden. Sei vorsichtig damit!
+de.gridItemTalkingCandyName
+Ein sprechendes Bonbon 
+de.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Dieses sprechende Bonbon ist aufgetaucht, nachdem du die vier Steine auf die Spitze des Schlossturms gebracht hast. Es hilft dir vielleicht dabei, die Candy Box zu öffnen...
+de.inventorySpecialNothingEqItem
+Nichts
+de.eqItemWeaponWoodenSwordName
+Hölzernes Schwert
+de.eqItemWeaponWoodenSwordDescription
+Ein einfaches Schwert aus Holz
+de.eqItemWeaponIronAxeName
+Eiserne Axt
+de.eqItemWeaponIronAxeDescription
+Eine simple Axt aus Eisen. Gut geschliffen. Stärker als das hölzerne Schwert.
+de.eqItemWeaponPolishedSilverSwordName
+Poliertes Silberschwert
+de.eqItemWeaponPolishedSilverSwordDescription
+Ein mächtiges Schwert, mit Nägeln besetzt.
+de.eqItemWeaponTrollBludgeonName
+Keule des Trolls
+de.eqItemWeaponTrollBludgeonDescription
+Du hast diese Keule von dem Troll genommen, der die Brücke bewacht hat. Sie ist zwar langsam, aber man kann damit wirkungsvoll Gegner verprügeln.
+de.eqItemWeaponTribalSpearName
+Stammesspeer
+de.eqItemWeaponTribalSpearDescription
+Du hast diesen Speer neben der Leiche eines Stammeskriegers gefunden, der sich in einem großen Graben verirrt hat. Es ist schwierig, sich darauf einzulassen, aber sobald du dich daran gewöhnt hast, ist er sicherlich eine gute Waffe.
+de.eqItemWeaponSummoningTribalSpearName
+Beschwörer-Stammesspeer
+de.eqItemWeaponSummoningTribalSpearDescription
+Dieser magische Stammesspeer ist stärker als ein gewöhnlicher Speer und wird während Quests immer wieder Stammeskrieger beschwören, die dir helfen werden.
+de.eqItemWeaponMonkeyWizardStaffName
+Stab des Affenmagiers
+de.eqItemWeaponMonkeyWizardStaffDescription
+Dieser Stab gehörte einem nackten Affenmagier, dem du in der Höhle begegnet bist. Er wirft automatisch Zaubersprüche gegen deine Gegner.
+de.eqItemWeaponEnchantedMonkeyWizardStaffName
+Stab des Affenmagiers (verzaubert)
+de.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Dieser Stab ist schneller als die nicht-verzauberte Variante, er wird also viel mehr Sprüche zaubern.
+de.eqItemWeaponGiantSpoonName
+Ein riesiger Löffel
+de.eqItemWeaponGiantSpoonDescription
+Dieser riesige Löffel war in einer riesigen Teekanne in der Wüstenfestung. Du kannst nicht sagen, ob er jemals verwendet wurde, aber wenn, dann muss es jemand sehr Großes gewesen sein. Treffen möchtest du ihn eher nicht.
+de.eqItemWeaponGiantSpoonOfDoomName
+Riesiger Löffel des Untergangs
+de.eqItemWeaponGiantSpoonOfDoomDescription
+Dieser riesige Löffel ist sogar noch stärker als ein gewöhnlicher riesiger Löffel, den man beispielsweise in einer riesigen Teekanne finden könnte. Leider ist er ziemlich langsam.
+de.eqItemWeaponScytheName
+Die Sense
+de.eqItemWeaponScytheDescription
+Es wird erzählt, dass diese Sense dem Tod selbst gehört hätte. Sie ist extrem schnell.
+de.eqItemHatMerchantHatName
+Hut des Händlers
+de.eqItemHatMerchantHatDescription
+Dieser Hut wurde dir vom Bonbon-Verkäufer verkauft. Der Bonbon-Verkäufer liebt Bonbons. Dieser Hut wird die Zahl deiner in Quests gefundenen Bonbons versiebenfachen!
+de.eqItemHatSorceressHatName
+Der Hexenhut
+de.eqItemHatSorceressHatDescription
+Dieser Hut wurde dir von der Hexe verkauft. Er wird deine Zaubersprüche und -tränke verstärken.
+de.eqItemHatOctopusKingCrownName
+Krone des Oktopuskönigs
+de.eqItemHatOctopusKingCrownDescription
+Du fühlst dich selbstbewusster, wenn du diese Krone trägst. Sie gibt dir keinerlei Vorteile in Quests, aber Selbstbewusstsein ist wichtig!
+de.eqItemHatOctopusKingCrownWithJaspersName
+Mit Jaspis besetzte Krone des Oktopuskönigs
+de.eqItemHatOctopusKingCrownWithJaspersDescription
+Diese verzauberte Krone wurde aus Gold gefertigt und mit Jaspisperlen besetzt. In Quests wirst du mit ihr mächtige Feuerbälle werfen können. Außerdem funkelt sie so schön!
+de.eqItemHatOctopusKingCrownWithObsidianName
+Mit Obsidian besetzte Krone des Oktopuskönigs
+de.eqItemHatOctopusKingCrownWithObsidianDescription
+Diese verzauberte Krone ist aus Gold und Obsidian gefertigt. Sie ist wunderschön. In Quests wird sie den Oktopuskönig beschwören, der für kurze Zeit an deiner Seite kämpfen wird. Welch ein tentakulöser Verbündeter!
+de.eqItemGlovesLeatherGlovesName
+Lederhandschuhe
+de.eqItemGlovesLeatherGlovesDescription
+Diese Handschuhe bringen eigentlich gar nichts. Aber sie sind immerhin weich und bequem!
+de.eqItemGlovesRedEnchantedGlovesName
+Rote verzauberte Handschuhe
+de.eqItemGlovesRedEnchantedGlovesDescription
+Diese verzauberten Handschuhe strahlen ein rötliches Licht aus, wenn du dich im Dunklen befindest. In Quests werden sie hin und wieder kleinere Feuerbälle gegen deine Gegner werfen, was definitiv hilfreich sein kann.
+de.eqItemGlovesPinkEnchantedGlovesName
+Pinkfarbene verzauberte Handschuhe
+de.eqItemGlovesPinkEnchantedGlovesDescription
+Diese verzauberten Handschuhe hinterlassen eine pinkfarbene Markierung auf allem, was du berührst. In Quests heilen sie dich durchgehend.
+de.eqItemBootsRocketBootsName
+Raketenstiefel
+de.eqItemBootsRocketBootsDescription
+Diese fantastischen Raketenstiefel erlauben es dir, in der Luft zu springen, sodass du im Prinzip fliegst.
+de.eqItemBootsLeatherBootsName
+Lederstiefel
+de.eqItemBootsLeatherBootsDescription
+Einfache Lederstiefel. Nichts besonderes.
+de.eqItemBootsBootsOfIntrospectionName
+Stiefel der Selbstprüfung
+de.eqItemBootsBootsOfIntrospectionDescription
+Nimm dir Zeit, atme durch und beruhige dich. Wenn du diese Stiefel trägst, wirst du dich nicht bewegen, während du den Boden berührst.
+de.eqItemBodyArmoursLightweightBodyArmourName
+Leichter Brustharnisch
+de.eqItemBodyArmoursLightweightBodyArmourDescription
+Dieser Brustharnisch wird dir ein wenig Schutz bieten. Du wirst den Attacken deiner Feinde etwas einfacher standhalten können.
+de.eqItemBodyArmoursKnightBodyArmourName
+Brustpanzer des Ritters
+de.eqItemBodyArmoursKnightBodyArmourDescription
+Dieser starke Brustpanzer wird dich beschützen. Die Angriffe deiner Feinde werden dir weniger anhaben können.
+de.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Verzauberter Brustpanzer des Ritters
+de.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Diese Rüstung ist etwas ganz Besonderes. Du wirst kaum noch Schaden nehmen, aber die Stärke deiner aktiven Waffe wird um die Hälfte reduziert.
+de.mapVillageForgeBuyWoodenSwordButton
+Ein hölzernes Schwert kaufen (150 Bonbons)
+de.mapVillageForgeBuyWoodenSwordSpeech
+Danke für deinen Kauf! Dieses hölzerne Schwert ist relativ schwach, aber für den Anfang reicht es.
+de.mapVillageForgeBuyIronAxeButton
+Eine eiserne Axt kaufen (400 Bonbons)
+de.mapVillageForgeBuyIronAxeSpeech
+Ich hoffe, dass dir diese eiseren Axt gefallen wird. Ich habe sie extra für dich geschliffen!
+de.mapVillageForgeBuyPolishedSilverSwordButton
+Ein poliertes Silberschwert kaufen (2 000 Bonbons)
+de.mapVillageForgeBuyPolishedSilverSwordSpeech
+Es hat mich viel Zeit gekostet, dieses Schwert herzustellen. Ich kann dir versichern, dass es sein Geld wert ist.
+de.mapVillageForgeBuyLightweightBodyArmourButton
+Einen leichten Brustharnisch kaufen (15 000 Bonbons)
+de.mapVillageForgeBuyLightweightBodyArmourSpeech
+Dieser Brustharnisch wird dir Schutz gegen deine Feinde bieten.
+de.mapVillageForgeBuyScytheButton
+Eine Sense kaufen (5 000 000 Bonbons)
+de.mapVillageForgeBuyScytheSpeech
+Es hat mich mehrere Monate gekostet, um diese Sense herzustellen. Sie ist ein wahres Kunstwerk. Sie ist wahrscheinlich die schnellste Waffe, die du jemals benutzen wirst. Viel Glück!
+de.wishingWellThrowFirstCandyButton
+Wirf ein Bonbon in den Brunnen
+de.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Hallo, Fremder! Ich bin der Wunschbrunnen. Im Tausch gegen Süßes gewähre ich dir Wünsche! Wenn du Bonbons in mich wirfst, werde ich deine Wunden heilen.
+de.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Deine Wunden sind nun geheilt!
+de.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Du hast keine Wunden, die geheilt werden müssen!
+de.wishingWellThrowFirstLollipopButton
+Wirf einen Lutscher in den Brunnen
+de.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Hallo, Fremder! Ich bin der Wunschbrunnen. Im Tausch gegen Süßes gewähre ich dir Wünsche! Wenn du Lutscher in mich wirfst, werde ich sie dir in Bonbons umwandeln.  
+de.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Deine Lutscher wurden in Bonbons verwandelt! Zwei Lutscher für ein Bonbon.
+de.wishingWellThrowChocolateBarButton
+Wirf einen Schokoriegel in den Brunnen
+de.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Hallo, Fremder! Ich bin der Wunschbrunnen. Im Tausch gegen Süßes gewähre ich dir Wünsche! Ich liebe Schokoriegel. Das tue ich wirklich. Für jeden Schokoriegel, den du in mich wirfst, inklusive diesem, wirst du mit einer magischen Verzauberung entlohnt werden.
+de.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Welchen Gegenstand möchtest du verzaubern?
+de.wishingWellThrowPainAuChocolatButton
+Wirf ein Schokocrossaint in den Brunnen
+de.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Hallo, Fremder! Ich bin der Wunschbrunnen. Im Tausch gegen Süßes gewähre ich dir Wünsche! Wenn du ein Schokocrossaint in mich wirfst, erhälst du ein ganz besonderes Geschenk. Wähle mit Bedacht.
+de.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Danke für das Schokocrossaint! Du darfst nun dein Geschenk auswählen.
+de.wishingWellChooseGift # INFORMAL PRONOUN
+Wähle dein Geschenk!
+de.wishingWellChooseGiftButton
+Auswählen
+de.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Fertig! Du hast jetzt ein neues Geschenk. Es wird auf dem Statusmonitor deines Inventars erscheinen.
+de.wishingWellNoPossibleEnchantment
+Keine Verzauberung möglich
+de.wishingWellChooseEnchantment
+Wähle eine Verzauberung
+de.wishingWellEnchantButton
+Verzaubern
+de.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Na bitte! Dein Gegenstand wurde verzaubert.
+de.pierLighthouseButton
+Mit dem Boot zum Leuchtturm fahren
+de.pierTheSeaButton
+Ins Meer springen
+de.lonelyHouseOpenBox
+Die Kiste öffnen
+de.lonelyHouseShakeBox
+Die Kiste schüttern
+de.lonelyHouseBreakLock
+Das Schloss zerbrechen
+de.lonelyHouseKickBox
+Die Kiste treten
+de.lonelyHouseAskTheBoxToOpenItself
+Die Kiste bitten, sich selbst zu öffnen
+de.lonelyHouseLureTheBoxWithACandy
+Die Kiste mit Süßigkeiten anlocken
+de.lonelyHouseTakeTheBox
+Nimm die Kiste mit, du wirst vermutlich ohnehin einen Schlüssel brauchen, um sie zu öffnen.
+de.lonelyHouseOpenBoxResult
+Die Kiste ist verschlossen
+de.lonelyHouseShakeBoxResult
+Nichts passiert
+de.lonelyHouseBreakLockResult
+Das Schloss hält stand
+de.lonelyHouseKickBoxResult
+Ihr Fuß schmerzt ein wenig, aber nichts passiert
+de.lonelyHouseAskTheBoxToOpenItselfResult
+...bist du dir darüber im Klaren, dass du mit einer Kiste redest?
+de.lonelyHouseLureTheBoxWithACandyResult
+Es scheint die Kiste nicht zu interessieren
+de.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+In dieser Candy Box ist wahrscheinlich etwas Interessantes.
+de.lollipopFarmConstructMill
+Eine Mühle bauen (10 000 Lutscher)
+de.lollipopFarmFeedMill
+Die Mühle auffüllen
+de.lollipopFarmCurrentCandiesProduction
+Aktuelle Bonbon-Produktion :
+de.lollipopFarmDigPond
+Einen Tümpel graben (100 000 Lutscher)
+de.lollipopFarmBuyLolligator
+Einen Lolligator kaufen (1 200 Bonbons)
+de.lollipopFarmLolligatorsConversionText
+Umwandlung Bonbons -> Lutscher aktiviert
+de.lighthouseAskButton
+Fragen
+de.lighthouseQuestionWho
+Wer bist du?
+de.lighthouseQuestionWhoSpeech
+Ich bin ein sehr alter Zyklop.
+de.lighthouseQuestionWhat
+Was tust du hier?
+de.lighthouseQuestionWhatSpeech
+Ich verbringe hier den ganzen Tag und warte darauf, dass ein Boot kommt. Es ist lange her, dass ich zum letzten Mal ein Boot gesehen habe. Aber ich muss hier bleiben und in das Meer blicken, weil ein Boot kommen könnte.
+de.lighthouseQuestionWhyEatCandies
+Weshalb würde ich Bonbons essen wollen?
+de.lighthouseQuestionWhyEatCandiesSpeech
+Weil sie gut für deine Gesundheit sind!
+de.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Was ist eine Candy Box?
+de.lighthouseQuestionCandyBoxSpeech
+Das ist eine sehr alte Kiste, von der behauptet wird, sie enthielte alle Süßigkeiten dieser Welt. Der Legende nach solle derjenige, der sie öffnen könnte, alle Bonbons bekommen, die er sich vorstellen könne.
+de.lighthouseQuestionDragon
+Der Drache hat mir gesagt, ich solle hier herkommen, wenn ich Bonbons will.
+de.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Oh, ich verstehe... Na ja, ich kann dir die Bonbons nicht direkt anbieten, aber ich kann dir etwas geben, mit dem du letztendlich eine MENGE an Bonbons haben wirst. Ich muss dich zuvor lediglich einem Test unterziehen, weil ich nicht jedem das geben kann, was ich besitze. Löse dieses Puzzle und es wird dein sein.
+de.lighthouseFoundStone # INFORMAL PRONOUN
+Herzlichen Glückwunsch! Du hast den Test bestanden und einen Stein gefunden. Er ist sehr wertvoll, aber du benötigst drei weitere, um etwas damit anfangen zu können. Viel Glück bei der Suche!
+de.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Gut gemacht, du hast das Puzzle erneut gelöst. Es scheint dir zu gefallen.
+de.saveLocalSaveTitle
+Browser-Spielstände
+de.saveLocalSaveWhy
+Wähle einen lokalen Spielstand, wenn du mit deinem jetzigen Gerät oder Browser weiterspielen möchten.
+de.saveLocalSaveWarning0
+Dein Browser scheint HTML5 nicht zu unterstützen.
+de.saveLocalSaveWarning1
+Du solltest deinen Browser updaten, um Unterstützung für lokale Spielstände zu erhalten.
+de.saveLocalSaveChooseSlot
+Wähle einen Spielstand aus :
+de.saveLocalSaveAutosaveEnabled
+Automatisches Speichern aktiviert
+de.saveLocalSaveChooseWhatToDo
+Wähle aus, was du tun möchtest :
+de.saveLocalSaveSaveButton
+Speichern
+de.saveLocalSaveAutosaveButton
+Alle 10 Minuten speichern
+de.saveLocalSaveDisableAutosaveButton
+Automatisches Speichern deaktivieren
+de.saveFileSaveTitle
+Text-Spielstände
+de.saveFileSaveWhy0
+Benutze diese Funktion, wenn :
+de.saveFileSaveWhy1
+Du auf einem anderen Gerät oder Browser weiterspielen möchten
+de.saveFileSaveWhy2
+Du deinen Spielstand mit jemand anderem teilen möchten
+de.saveFileSaveWhy3
+Du aus irgendeinem Grund deinen Browser-Cache leeren möchten
+de.saveFileSaveWhy4
+(was deine lokalen Spielstände löschen wird)
+de.saveFileSaveButton
+Aktuellen Spielstand als Text generieren
+de.saveFileSaveWarning
+Kopiere diesen Text nun irgendwohin! (beispielsweise in eine Datei)
+de.saveLocalLoadTitle
+Browser-Spielstände laden
+de.saveLocalLoadYouCan
+Mithilfe der folgenden Links kannst du einen lokalen Spielstand laden :
+de.saveLocalLoadThanksTo
+Dank HTML5-Magie ist es möglich, diese Links auch offline zu benutzen.
+de.saveFileLoadTitle
+Text-Spielstände laden
+de.saveFileLoadPaste
+Kopiere deinen Text-Spielstand in das untere Feld und klicke dann auf den "Laden"-Button
+de.saveFileLoadButton
+Laden
+de.mountainsText0
+Du hast etwas in den Bergen erblickt!
+de.mountainsText1
+Das sieht interessant aus. Vielleicht könnte es hilfreich sein.
+de.mountainsTextButton
+Die Berge besteigen, um den Gegenstand zu erlangen
+de.mountainsTextAfter
+Du hast einen Springstock gefunden! Er wurde deinem Inventar hinzugefügt.
+de.secondHouseIntroSpeech
+Hallo, ich bin der Bonbon-Verkäufer. Für Bonbons würde ich alles tun. Was brauchst du?
+de.secondHouseLollipop1Speech
+Dies ist ein Lutscher mit Zitronengeschmack. Mein Lieblingslutscher! Er kostet 60 Bonbons, aber er ist es wert.
+de.secondHouseLollipop2Speech
+Dies ist ein Lutscher mit Erdbeergeschmack. Er schmeckt gut. Ich mag seine rote Farbe. Nur 60 Bonbons!
+de.secondHouseLollipop3Speech
+Dies ist ein Lutscher mit Kürbisgeschmack. Ich wette, einen solchen hast du noch nie probiert! 60 Bonbons und es ist deiner.
+de.secondHouseLollipopButtonText
+Diesen Lutscher kaufen (60 Bonbons)
+de.secondHouseMerchantHatSpeech
+Ich könnte dir meinen Hut verkaufen, aber es ist sehr wertvoll, weißt du... Du wirst mir eine Menge Bonbons dafür geben müssen. Sagen wir 1 Million Bonbons. Das erscheint fair, nicht wahr?
+de.secondHouseMerchantHatButtonText
+Hut des Händlers kaufen (1 000 000 Bonbons)
+de.secondHouseTimeRingSpeech
+Dies ist ein Zeitring. Er ist irgendwie magisch. Er erlaubt es dir, die Zeit zu verlangsamen, wenn du dich in Gefahr befindest.
+de.secondHouseTimeRingButtonText
+Zeitring kaufen (500 Bonbons)
+de.secondHouseLeatherGlovesSpeech
+Diese Handschuhe wurden aus Kamelleder gefertigt, sie haben eine hohe Qualität. Ich habe viele von ihnen auf Lager, deshalb sind sie so günstig : nur 300 Bonbons!
+de.secondHouseLeatherBootsButtonText
+Lederstiefel kaufen (300 Bonbons)
+de.secondHouseLeatherBootsSpeech
+Diese hochwertigen Stiefel wurden aus Kamelleder gefertigt und werden deine Füße warmhalten.
+de.secondHouseLeatherGlovesButtonText
+Lederhandschuhe kaufen (300 Bonbons)
+de.secondHouseChocolateBarSpeech
+Dies ist ein Schokoriegel. Ich weiß nicht, wofür er benutzt wird, aber er scheint relativ selten zu sein, was auch den Preis erklärt. 800 Bonbons und er ist deiner.
+de.secondHouseChocolateBarButtonText
+Schokoriegel kaufen (800 candies)
+de.outsideTheHoleButton
+Jump in this big hole in the ground
+de.theCaveExitText0
+Du hast endlich den Ausgang der Höhle erreicht.
+de.theCaveExitText1
+Draußen kannst du einen dichten Wald erkennen.
+de.theCaveExitButtonText
+Höhle verlassen
+de.theCaveFirstSentenceWentStraight
+Du bist geradeaus gegangen.
+de.theCaveFirstSentenceWentLeft
+Du hast den linken Weg genommen.
+de.theCaveFirstSentenceWentRight
+Du hast den rechten Weg genommen.
+de.theCaveFirstSentenceYouAre
+Du bist in einer Höhle. Vor dir erstrecken sich drei Wege.
+de.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Du hast einen merkwürdigen Gegenstand vor dir auf dem Boden erspäht.
+de.theCavePattern_ChocolateBarNowSeeChocolateBar
+Du hast einen Schokoriegel vor dir entdeckt.
+de.theCavePattern_TreasureMapSentence
+Du siehst kleine Steine, die auf dem Boden ungewöhnlich platziert wurden.
+de.theCavePattern_MonkeyWizardSentence
+Du stößt zufällig auf einen nackten Affenmagier.
+de.theCavePattern_MonkeyWizardButton
+Fordere ihn heraus
+de.theCavePattern_OctopusKingSentence
+Du stößt zufällig auf den Oktopuskönig. Er wirkt ekelerregend.
+de.theCavePattern_OctopusKingButton
+Fordere ihn heraus
+de.fortressInsideText0
+Du bist in der Wüstenfestung
+de.fortressInsideText1
+Du kannst zwischen drei Türen wählen.
+de.fortressInsideText2
+Jede von ihnen führt in einen großen Raum mit einem Schatz am Ende.
+de.fortressInsideEnterRoom1
+Ersten Raum betreten
+de.fortressInsideEnterRoom2
+Zweiten Raum betreten
+de.fortressInsideEnterRoom3
+Dritten Raum betreten
+de.treasureButtonDig
+Graben
+de.treasureButtonYouFound
+Du hast drei Schokoriegel gefunden!
+de.sorceressHutHello
+Hallo, ich bin die Hexe. Ich könnte dir ein oder zwei Dinge über die Magie verraten. Außerdem kann ich dir interessante Gegenstände geben oder Zaubersprüche für dich sprechen. Aber alles hat seinen Preis! Und dieser Preis werden Lutscher sein. Viele von ihnen.
+de.sorceressHutClickedGrimoire
+Dieses Zauberbuch ist für blutige Anfänger. Wenn du es in Quests aktiv hast, wirst du eine Reihe einfacher, aber nützlicher Sprüche benutzen können. Du wirst es brauchen! Nur 5 000 Lutscher.
+de.sorceressHutBuyGrimoireButton
+Magie für Memmen kaufen (5 000 Lutscher)
+de.sorceressHutBuyGrimoireSpeech
+Danke für den Kauf! Du wirst drei Sprüche mit diesem Zauberbuch sprechen können. Viel Glück!
+de.sorceressHutClickedGrimoire2
+Dieses Zauberbuch richtet sich an Fortgeschrittene. Wenn du es in Quests aktiv hast, wirst du zwei Sprüche benutzen können. Ich selbst habe es geschrieben, was nicht einfach war. 20 000 Lutscher sind ein fairer Preis.
+de.sorceressHutBuyGrimoire2Button
+Zaubern für Fortgeschrittene kaufen (20 000 Lutscher)
+de.sorceressHutBuyGrimoire2Speech
+Danke für den Kauf! Du wirst zwei Sprüche mit diesem Zauberbuch sprechen können. Wähle sie mit Bedacht!
+de.sorceressHutClickedCauldron
+Dies ist mein Kessel. Er erlaubt es mir, magische Zaubertränke zu brauen. Ich könnte ihn dir verkaufen, aber er ist sehr wertvoll... er wird dich 100 000 Lutscher kosten.
+de.sorceressHutBuyCauldronButton
+Kessel kaufen (100 000 Lutscher)
+de.sorceressHutBuyCauldronSpeech
+Danke vielmals! 100 000 Lutscher für mich! Ich habe dir außerdem eine Anleitung beigelegt. Sie wird nützlich sein.
+de.sorceressHutClickedHat
+Ich habe in der Tat einen schönen Hut. Aber ich kann ihn dir nicht verkaufen, dafür ist er vieeeel zu wertvoll. Wirklich, ich kann nicht. Leg es nicht darauf an. Nein. Nein nein nein, ich sollte das nicht tun. Ach na schön, ich werde ihn dir verkaufen, aber für 1 000 000 000 Lutscher. Das wirst du vermutlich ohnehin nicht bezahlen können.
+de.sorceressHutBuyHatButton
+Hut kaufen (1 000 000 000 Lutscher)
+de.sorceressHutBuyHatSpeech
+Eine Milliarde Lutscher für miiiich! Ich habe den Hut zwar nicht mehr, aber dafür eine Milliarde Lutscher, wow! ... Das war es wert.
+de.cauldronPreviousPageButton
+Vorherige Seite
+de.cauldronNextPageButton
+Nächste Seite
+de.cauldronWhatYouWantToPut
+In den Kessel geben :
+de.cauldronWhatIsIn
+Inhalt des Kessels :
+de.cauldronWhatYouCanDo
+Aktionen :
+de.castleBigRoomComment
+Ein großer Raum
+de.castleARoomComment
+Ein Raum
+de.castleADarkRoomComment
+Ein dunkler Raum
+de.castleCastleEntranceComment
+Der Schlosseingang
+de.castleTowerEntranceComment
+Der Turmeingang
+de.castleNougatMonsterComment
+Das riesige Nougat-Monster angreifen
+de.castleGuardsComment
+Die Wächter angreifen
+de.castleStairsComment
+Treppen
+de.buttonBackToTheCastle
+Zurück ins Schloss
+de.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Hallo! Ich bin ein sehr alter Brotofen! Für gewöhnlich habe ich Tonnen leckerer Teigwaren gebacken, aber es benutzt mich keiner mehr. Vielleicht... vielleicht könntest du mir helfen? Gib mir einfach einige deiner Süßigkeiten. Keine Sorge, du wirst es nicht bereuen. Du kannst mir vertrauen.
+de.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... du hast nicht genügend Bonbons, ich kann nichts für dich tun. Ich bin einfach nutzlos. Den nutzlosen Brotofen, so solltest du mich nennen.
+de.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Juhu! Danke vielmals! Ich habe 100 Bonbons und einen Schokoriegel benutzt, um für dich... ein Schokocroissant gebacken! Das ist mein Lieblingsgebäck. Ich hoffe, dass auch du es magst.
+de.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hey! Wenn ich dir weiteres Gebäck backen soll, sag einfach Bescheid. Ich würde dir gerne helfen.
+de.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Oh, leider hast du nicht genügend Süßigkeiten. Du brauchst 100 Bonbons und einen Schokoriegel. Komm wieder, wenn du das hast.
+de.castleBigRoomHovenLetHovenTakeButton
+Gib dem Ofen alle Süßigkeiten, die er verlangt
+de.castleBigRoomHovenThanks
+Danke, Ofen!
+de.dragonStopTickling # INFORMAL PRONOUN
+Hey, du! Hör bitte auf mich zu kitzeln.
+de.dragonStopTicklingButton
+Äh, öhm, Entschuldigung. Ich dachte, ich solle dich angreifen.
+de.dragonTalking # INFORMAL PRONOUN
+Ich bin der Drache und dies ist mein Schloss. Du musstest sehr tapfer sein, um es überhaupt zu betreten. Jemandem wie dir würde ich gerne helfen. Nach was suchst du?
+de.dragonTalkingChallengeButton
+Herausforderung
+de.dragonTalkingFameButton
+Ruhm
+de.dragonTalkingCandiesButton
+Bonbons
+de.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Oh, du willst also eine Herausforderung? Dann solltest du die Hölle besuchen, es ist nämlich bekannt, dass der Teufel ein harter Gegner ist. Spring auf meinen Rücken und ich werde dich dorthin bringen!
+de.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Der einfachste Weg, um berühmt zu werden, ist es, dem Entwickler selbst entgegenzutreten. Aber gib Acht, das wird nicht einfach sein.
+de.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Letztendlich sind Süßigkeiten das, was wir alle wollen, nicht wahr? Ich denke, ein Freund von mir könnte dir damit helfen. Du wirst ihn leicht erkennen, er hat nämlich nur ein Auge. Sag ihm einfach, dass du mich kennst.
+de.dragonTalkingChallengeAnswer
+Auf geht's!
+de.dragonTalkingFameAnswer
+Ich bin bereit.
+de.dragonTalkingCandiesAnswer
+Okay, danke!
+de.buttonBackToCastle
+Zurück ins Schloss
+de.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hallo, ich bin das sprechende Bonbon. Du hast das Spiel fast gewonnen. Du musst nur noch die Candy Box finden. Sie befindet sich in einem Haus außerhalb des Dorfes. Dies ist der letzte Schritt!
+de.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hallo! Ich bin das sprechende Bonbon. Herzlichen Glückwunsch, du hast das Spiel gewonnen! Ich werde die Candy Box für dich öffnen, dies ist deine Belohnung. Soll ich fortfahren?
+de.talkingCandySpeech2 # INFORMAL PRONOUN
+Fertig! Du steht nun für dich offen. Ich hoffe, dass dir das Spiel gefallen hat :)
+de.talkingCandyButton
+Ja!!
+de.lighthousePuzzleResetButton
+Zurücksetzen

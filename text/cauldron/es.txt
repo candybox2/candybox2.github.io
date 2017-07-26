@@ -1,0 +1,24 @@
+en.cauldron.page0
+Brewing manual
+en.cauldron.page1
+Índice / Pág. 2: Poción de salud / Pág. 3 : Poción tortuga / Págs. 4-5 : Poción antigravedad / Págs. 6-7 : Poción berserk / Págs. 8-9 : La poción P / Págs. 10-11 : La poción X
+en.cauldron.page2
+Poción de salud / La poción de salud es una de las más fáciles de realizar, en serio. Solo hacen falta caramelos. En las misiones, te curará devolviéndote 100 puntos de salud. / Instrucciones: -Pon 100 caramelos en el caldero -Mezcla durante unos segundos -Embotéllalo / Igual que con cualquier poción, puedes multiplicar las cantidades, por supuesto. Por ejemplo, si usas 300 caramelos en lugar de 100, obtendrás 3 pociones de salud.
+en.cauldron.page3
+Poción tortuga / La poción tortuga es un poco más difícil que la poción de salud. Necesitarás caramelos y piruletas. / Si bebes esta poción en una misión, te convertirá en una tortuga. Te moverás más despacio, pero también serás más resistente a los ataques enemigos. / Instrucciones: -Pon 50 caramelos en el caldero -Añade 500 piruletas al caldero -Mezcla durante unos 10 segundos -Deja de mezclar -Añade 50 caramelos -Vuelve a mezclar durante unos seg. -Embotéllalo / Y ahora lo más importante, algo que no debes olvidar nunca: una vez te conviertas en tortuga, NO vuelques. No podrás volver a levantarte.
+en.cauldron.page4
+Poción antigravedad / Esta poción, que fue inventada por el conocido hechicero Isaac, te permite evitar la fuerza gravitatoria de la Tierra durante unos segundos. / Es especialmente útil despues de saltar (si no puedes saltar, deberías plantearte conseguir un pogo). / No es muy fácil de hacer: necesitarás calentar el caldero y tener cuidado con la temperatura. / Instrucciones: -Pon 1000 caramelos en el caldero -Caliéntalo hasta que esté tibio -Deja de calentar -Añade 1000 caramelos -Calienta el agua hasta que hierva -Embotéllalo
+en.cauldron.page5
+Poción antigravedad: ejemplo / "Sobrevolar el hueco" / *se bebe la poción*
+en.cauldron.page6
+Poción berserk / La poción berserk te transforma en un berserker. / El inconveniente es que consume la mitad de tu vida. / ¡La ventaja es que duplica el daño durante unos segundos! / Hacer esta poción es muy sencillo, pero necesitarás un montón de piruletas. / Estas son las instrucciones: -Pon 20 000 piruletas en el caldero -Mezcla hasta que te duelan los brazos -Embotéllalo
+en.cauldron.page7
+Aviso importante sobre la poción berserk / NO añadas caramelos mientras haces esta poción. / En serio, ni uno. / De verdad. / No se conocen los posibles resultados.
+en.cauldron.page8
+Poción P / La poción P es muy rara. No puedes predecir qué efecto tendrá. Podría curarte o herirte, hacerte más fuerte o más débil, o incluso convertirte en otra persona (¿o cosa?). / ¡Y hacerla es difícil! /  Instrucciones : -Pon 500 caramelos en el caldero -Mezcla unos segundos -Para de mezclar -Añade 100 caramelos por cada segundo que hayas mezclado. Por ejemplo, si mezclaste durante 4 segundos, tendrás que añadir 400 caramelos. Si quieres hacer más de una poción, no tienes que multiplicar esta cantidad. -Calienta el agua hasta que esté tibia -Deja de calentar -Añade algunas piruletas -Mezcla -¡Embotéllalo!
+en.cauldron.page9
+Usa la poción P con responsabilidad / Hay ciertas reglas que puedes seguir para tener mejores resultados cuando bebas la poción P. Aunque estas reglas se definieron empíricamente, parece que funcionan bastante bien. / -Cuantas más pociones P uses, los efectos parecen ser más raros. / -Si tu salud está baja, es buena idea que bebas una poción P. / -Los animales parecen reaccionar muy mal cuando beben pociones P.
+en.cauldron.page10
+Poción X / La poción X es una leyenda. Se dice que quien consiga hacerla y bebérsela viajará a un lugar donde nunca ha estado nadie. / No sé si esta poción es una leyenda o no, pero escribiré todo lo que sé sobre ella en este libro. / La poción X se menciona en muchas leyendas y libros de alquimia antiguos. Aquí tienes algunos datos que pueden ayudarte. ¡Buena suerte! / -Dicen que se necesitan 5 pasos para preparar la poción X. / -Dicen que no hacen falta piruletas, excepto para uno de los pasos. / -Dicen que, a diferencia de otras pociones, no puedes hacer varias pociones X de una sola vez.
+en.cauldron.page11
+-Por último, el siguiente poema se suele citar junto a la poción X: / El primer día  dio a luz al Primer Caramelo, pero fuera hacía frío. / El segundo día le dio un padre al Caramelo, pero fuera hacía frío. / El tercer día le dio un hermano al Caramelo, pero fuera hacía frío. /  El cuarto día le dio un amigo al Caramelo, pero fuera hacía frío. / El quinto día le dio una amante al Caramelo, y puede sonar simple o tonto, pero el Caramelo ahora era feliz y hacía calor fuera.

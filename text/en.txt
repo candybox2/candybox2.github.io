@@ -1,0 +1,690 @@
+en.mapVillageComment
+The Village
+en.mapFortressComment
+The desert fortress
+en.mapATreeComment
+A tree
+en.mapTheDesertComment
+The desert
+en.mapWishingWellComment
+The wishing well
+en.mapLonelyHouseComment
+A lonely house
+en.mapForestComment
+The forest
+en.mapCastleEntranceComment
+Castle's entrance
+en.mapCastleComment
+The castle
+en.mapDragonComment
+The dragon
+en.candyBoxEatCandiesButton
+Eat all the candies
+en.candyBoxThrowCandiesButton
+Throw 10 candies on the ground
+en.mapVillageAHouseComment
+A house
+en.mapVillageForgeComment
+The forge
+en.buttonBackToTheMap
+Back to the map
+en.mapSorceressHutComment
+Sorceress' hut
+en.buttonBackToTheVillage
+Back to the village
+en.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Hello, I'm The Squirrel. I can provide you candies, and lots of things. I know how much you love candies. But I feel alone in this forest.
+en.mapATreeIntroductionButton
+How can I help you ?
+en.mapATreeFirstQuestion # INFORMAL PRONOUN
+I will ask you questions. If you answer correctly, the sweetest sweets will be yours! First one : do you really love candies? (answer in english)
+en.mapATreeSecondQuestion # INFORMAL PRONOUN
+That's right! Here's 20 candies for you. Now complete this sequence of letters and you'll get a new reward : S, E, I, D, N, A, ?
+en.mapATreeThirdQuestion # INFORMAL PRONOUN
+Candies! Here's 100 candies for you. Next question : how many candies does the candiest person in the world possess?
+en.mapATreeFourthQuestion # INFORMAL PRONOUN
+Here's 500 candies for you! Next reward should be even more interesting...  Here's the riddle : In an ancient forest grows a very old tree, on which live the most intelligent animals in this world. It is said that this tree has 60 roots, 360 branches and 2160 leaves. How many marks can you find on its trunk?
+en.mapATreeFifthQuestion # INFORMAL PRONOUN
+Congratulations! I was talking about my tree, indeed. Here are 3 lollipops for you. Make good use of them! Next riddle, listen carefully : Under a full moon, I throw a yellow hat into the red sea. What happens to the yellow hat?
+en.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Well answered! That wasn't so hard. Here's three chocolate bars for you! For the next reward, we'll change the rules a little bit. You'll have to play a game with me! Are you ready?
+en.mapATreeTicTacToeIntroButton
+Sure I am!
+en.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+The game is Tic-Tac-Toe. We play on a 3 by 3 game board. You will use the X sign while I will use the O sign. We place our signs alternately, and the goal is to get three signs in a row. I'll let you go first!
+en.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+The board is filled entirely and we both failed to get three in a row : nobody wins! Do you want to try again?
+en.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+I got three in a row! I won. Do you want to try again?
+en.mapATreeTicTacToeTryAgainButton
+Yes I do!
+en.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Wow, that's an unexpected move. But you got three in a row, I can't argue. You won! Take this key! It opens one of the houses in the village below the forest.
+en.mapATreeTicTacToeAnymoreSweet
+Thanks, squirrel! Any more challenge?
+en.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Sadly no, I have no more challenge for you... Playing with you was very fun, thank you for that!
+en.buttonExitQuestKeeping
+Exit the quest (and keep what you found)
+en.buttonExitQuestNoKeeping
+Exit the quest (you won't keep what you found)
+en.buttonExitQuestNoKeepingBecauseLose
+Exit the quest (you won't keep what you found because you failed)
+en.mapVillageLockedHouseComment
+A locked house
+en.mapVillageForgeIntroductionSpeech
+Hi! I'm a blacksmith. I can sell you various weapons and pieces of equipment.
+en.mapVillageForgeIntroductionSpeechNoMoreToSell
+Hi! I'm a blacksmith. Sadly, I have nothing more to sell. Come back later, maybe?
+en.mapVillageFifthHouseNoWeaponSpeech
+Hello. My cellar is full of rats, I need to get rid of them... if only someone with a weapon could help me...
+en.mapVillageFifthHouseWeaponSpeech
+Hey, you! I see you carry a weapon! If you kill the rats pestering my cellar, I'll reward you!
+en.mapVillageFifthHouseAgree
+Let's go, then!
+en.mapVillageFifthHouseCellarDone
+Thank you for getting rid of them! Here's something very precious as a reward : a map of the world. I think you will use it more than I do.
+en.mapVillageTheShopComment
+The shop
+en.mapBridgeComment
+The bridge
+en.mapFarmComment
+The lollipop farm
+en.mapCaveEntranceComment
+The cave entrance
+en.mapLighthouseComment
+The lighthouse
+en.mapPierComment
+The pier
+en.mapTheHoleComment
+The Hole
+en.candyBoxRequestStatusBarUnlocked
+Request a new feature to the developer (30 candies)
+en.candyBoxRequestStatusBarUnlockedCfg
+Request another one (5 candies)
+en.candyBoxRequestStatusBarUnlockedSave
+Request once again (5 candies)
+en.candyBoxRequestStatusBarUnlockedHealthBar
+Request for something more exciting (5 candies)
+en.candyBoxRequestStatusBarUnlockedMap
+Final request! This one has to be worth the candies. (10 candies)
+en.candyBoxRequestStatusBarUnlockedComment
+You've unlocked a status bar! (above)
+en.candyBoxRequestStatusBarUnlockedCfgComment1
+You now have access to a configuration tab.
+en.candyBoxRequestStatusBarUnlockedCfgComment2
+You can change the language, if you want to.
+en.candyBoxRequestStatusBarUnlockedSaveComment
+A wild saving tab appears!
+en.candyBoxRequestStatusBarUnlockedHealthBarComment
+Here's 100 health points for you. They're going to be useful.
+en.cfgChooseLanguage
+Choose the language :
+en.cfgInvertColors
+Invert colors?
+en.gridItemMainMapName
+The Map
+en.gridItemMainMapDescription
+Map of the world
+en.gridItemPogoStickName
+Pogo stick
+en.gridItemPogoStickDescription
+This item allows you to jump in quests!
+en.gridItemTimeRingName
+A time ring
+en.gridItemTimeRingDescription
+This item gives you a new ability in quests : you can slow down the time. If things are going too fast for you, use your time ring!
+en.gridItemThirdHouseKeyName
+The third house key
+en.gridItemThirdHouseKeyDescription
+This key allows you to enter the third house in the village.
+en.gridItemFeatherName
+A desert bird feather
+en.gridItemFeatherDescription
+This magic feather allows you to jump higher when you use your pogo stick!
+en.gridItemFeatherDescriptionNoPogoStick
+For an unknown reason, you feel that this feather could be useful if you had a pogo stick...
+en.gridItemSpongeName
+A magical sponge
+en.gridItemSpongeDescription
+This magical sponge allows you to squeeze yourself just like a sponge, therefore reducing your size.
+en.gridItemFortressKeyName
+The desert fortress key
+en.gridItemFortressKeyDescription
+This key allows you to enter the very ancient fortress located above the desert. Who knows what you could find there?
+en.gridItemHeartPendantName
+A heart pendant
+en.gridItemHeartPendantDescription
+This heart pendant will increase your health points as long as you keep it around your neck.
+en.gridItemHeartPlugName
+A heart plug
+en.gridItemHeartPlugDescription
+This heart plug, made from iron, spider legs, and a special "heart liquor" sealed in the center, will increase your health points by 20 percent!
+en.gridItemBeginnersGrimoireName
+The beginners' grimoire
+en.gridItemBeginnersGrimoireDescription
+This grimoire provides you three spells, quite easy to cast. It is really made for beginners. You will be able to use the acid rain spell (a large quantity of acid drops will fall on your enemies), the fireball spell (a giant magic ball made of fire will fly towards your enemies), and the teleport spell (which will teleport you to an unpredictable location).
+en.gridItemAdvancedGrimoireName
+The advanced grimoire
+en.gridItemAdvancedGrimoireDescription
+This advanced grimoire provides you two spells : the erase magic spell and the thorns shield spell. The first one will erase all the magic from a quest at some point, including the spells you casted and your enemy's magic. The second one will create a shield of floating thorns around you which will inflict damage to your enemies upon contact.
+en.gridItemBlackMagicGrimoireName
+The black magic grimoire
+en.gridItemBlackMagicGrimoireDescription
+You found this grimoire in a cave, it was very hard to reach, and that was for a reason. It provides you two powerful black magic spells. The first one will create a giant wall made of obsidian bricks in front of you, which can be useful to slow down your enemies. The second one will summon a swarm of demons attacking everyone in the quest, including you. Be careful with this one.
+en.gridItemUnicornHornName
+A unicorn horn
+en.gridItemUnicornHornDescription
+This magical horn belonged to a unicorn. Its powerful healing powers will help you a lot. You heard that this unicorn was named Charlie.
+en.gridItemXinopherydonClawName
+A xinopherydon claw
+en.gridItemXinopherydonClawDescription
+This claw belonged to a xinopherydon, a two-headed ancient animal everyone believed to be extinct. It will double the damage of the weapon you're using.
+en.gridItemPitchforkName
+A pitchfork
+en.gridItemPitchforkDescription
+This special pitchfork allows you to loosen the soil without turning it over, therefore preserving below-ground soil ecosystems. It will triple the production of your lollipop farm.
+en.gridItemShellPowderName
+Shell powder
+en.gridItemShellPowderDescription
+Shell powder is often used by farmers to improve the growth speed of their lollipops. This powder will multiply your lollipop farm production by three!
+en.gridItemPName
+The P stone
+en.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+en.gridItemLName
+The L stone
+en.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+en.gridItemAName
+The A stone
+en.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+en.gridItemYName
+The Y stone
+en.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+en.gridItemRedSharkFinName
+A magical red shark fin
+en.gridItemRedSharkFinDescription
+This magical fin will greatly increase the damage of your fireball spell. Finally this fireball becomes useful.
+en.gridItemGreenSharkFinName
+A magical green shark fin
+en.gridItemGreenSharkFinDescription
+This magical fin will bring the power of nature to your lollipop farm! Your production will be multiplied by 5.
+en.gridItemPurpleSharkFinName
+A magical purple shark fin
+en.gridItemPurpleSharkFinDescription
+This magical fin will provide you a new black magic spell. You can only use it once per quest. Be very careful with this one!
+en.gridItemTalkingCandyName
+A talking candy
+en.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+This talking candy appeared after you put the four stones at the top of the castle's tower. He might help you to open the candy box...
+en.inventorySpecialNothingEqItem
+Nothing
+en.eqItemWeaponWoodenSwordName
+Wooden Sword
+en.eqItemWeaponWoodenSwordDescription
+A simple sword made of wood
+en.eqItemWeaponIronAxeName
+Iron axe
+en.eqItemWeaponIronAxeDescription
+A simple iron axe. Well sharpened. More powerful than the wooden sword.
+en.eqItemWeaponPolishedSilverSwordName
+Polished silver sword
+en.eqItemWeaponPolishedSilverSwordDescription
+A powerful sword, covered by spikes.
+en.eqItemWeaponTrollBludgeonName
+The troll's bludgeon
+en.eqItemWeaponTrollBludgeonDescription
+You took this bludgeon from the troll guarding the bridge. It is slow, but smashes your enemies quite efficiently.
+en.eqItemWeaponTribalSpearName
+A tribal spear
+en.eqItemWeaponTribalSpearDescription
+You found this tribal spear on the corpse of a tribe warrior lost in a big hole in the ground. It's a bit hard to handle at first, but once you're used to it, it's a good weapon.
+en.eqItemWeaponSummoningTribalSpearName
+A summoning tribal spear
+en.eqItemWeaponSummoningTribalSpearDescription
+This magical tribal spear, in addition to being slighty more powerful than the normal tribal spear, will frequently summon tribe warriors which will help you during your quests.
+en.eqItemWeaponMonkeyWizardStaffName
+The monkey wizard staff
+en.eqItemWeaponMonkeyWizardStaffDescription
+This staff belonged to the naked monkey wizard you found in the cave. It will frequently cast spells by itself, targeting your enemies.
+en.eqItemWeaponEnchantedMonkeyWizardStaffName
+The monkey wizard staff (enchanted)
+en.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+This staff is faster than the non-enchanted version, and will also cast a lot more spells.
+en.eqItemWeaponGiantSpoonName
+A giant spoon
+en.eqItemWeaponGiantSpoonDescription
+This giant spoon was in a giant teapot in the desert fortress. You don't know if anyone ever used it as a spoon, but if so, it must have been someone really big. You probably don't want to meet him.
+en.eqItemWeaponGiantSpoonOfDoomName
+The giant Spoon of Doom
+en.eqItemWeaponGiantSpoonOfDoomDescription
+This giant spoon is even more powerful than the regular giant spoon you could find, for example, in a teapot. It's quite slow, however.
+en.eqItemWeaponScytheName
+A scythe
+en.eqItemWeaponScytheDescription
+It is said that this scythe belonged to the Death itself. It is extremely fast.
+en.eqItemHatMerchantHatName
+The merchant hat
+en.eqItemHatMerchantHatDescription
+This hat was sold to you by the candy merchant. The candy merchant loves candies. This hat will multiply by 7 the candies you find in quests!
+en.eqItemHatSorceressHatName
+The sorceress hat
+en.eqItemHatSorceressHatDescription
+This hat was sold to you by the sorceress. It will enhance the effects of your spells and potions.
+en.eqItemHatOctopusKingCrownName
+The Octopus King crown
+en.eqItemHatOctopusKingCrownDescription
+When you wear this crown, you feel a lot more confident. It doesn't give any advantage in quests, but self-confidence is important!
+en.eqItemHatOctopusKingCrownWithJaspersName
+The Octopus King crown with jaspers
+en.eqItemHatOctopusKingCrownWithJaspersDescription
+This enchanted crown is made from gold and red jaspers. In quests, it will frequently cast powerful magic fireballs around you. And also, it's shining!
+en.eqItemHatOctopusKingCrownWithObsidianName
+The Octopus King crown with obsidian
+en.eqItemHatOctopusKingCrownWithObsidianDescription
+This enchanted crown is made from gold and obsidian. It is beautiful. In quests, it will summon an Octopus King fighting on your side once in a while. What a tentaculous ally!
+en.eqItemGlovesLeatherGlovesName
+Leather gloves
+en.eqItemGlovesLeatherGlovesDescription
+These gloves basically do nothing. But they're soft and comfortable, at least!
+en.eqItemGlovesRedEnchantedGlovesName
+Red enchanted gloves
+en.eqItemGlovesRedEnchantedGlovesDescription
+These enchanted gloves emit a soft red light when it's dark around you. In quests, they will randomly cast small fireballs towards your enemies, which can definitely be useful.
+en.eqItemGlovesPinkEnchantedGlovesName
+Pink enchanted gloves
+en.eqItemGlovesPinkEnchantedGlovesDescription
+These enchanted gloves leave a pink mark on everything you touch. In quests, they will heal you continuously.
+en.eqItemBootsRocketBootsName
+Rocket boots
+en.eqItemBootsRocketBootsDescription
+These awesome rocket boots allow you to jump in mid-air, so that you're basically flying!
+en.eqItemBootsLeatherBootsName
+Leather boots
+en.eqItemBootsLeatherBootsDescription
+Simple leather boots. Nothing special about them.
+en.eqItemBootsBootsOfIntrospectionName
+Boots of introspection
+en.eqItemBootsBootsOfIntrospectionDescription
+Take the time to breathe and calm down. If you wear these boots, you will never move as long as you touch the ground.
+en.eqItemBodyArmoursLightweightBodyArmourName
+A lightweight body armour
+en.eqItemBodyArmoursLightweightBodyArmourDescription
+This body armour will offer you a weak protection. You will be slighty more resistant to your enemies attacks.
+en.eqItemBodyArmoursKnightBodyArmourName
+A knight body armour
+en.eqItemBodyArmoursKnightBodyArmourDescription
+This strong body armour will protect you. You will be more resistant to your enemies attacks.
+en.eqItemBodyArmoursEnchantedKnightBodyArmourName
+An enchanted knight body armour
+en.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+This armour is very special. You will be a LOT more resistant to your enemies attacks, but the damage of the weapon you are using will be divided by two.
+en.mapVillageForgeBuyWoodenSwordButton
+Buy a wooden sword (150 candies)
+en.mapVillageForgeBuyWoodenSwordSpeech
+Thanks for buying! This wooden sword is quite weak, but it's a start.
+en.mapVillageForgeBuyIronAxeButton
+Buy an iron axe (400 candies)
+en.mapVillageForgeBuyIronAxeSpeech
+I hope you'll like this iron axe. I have just sharpened it for you!
+en.mapVillageForgeBuyPolishedSilverSwordButton
+Buy a polished silver sword (2 000 candies)
+en.mapVillageForgeBuyPolishedSilverSwordSpeech
+It took me a lot of time to create this sword. I assure you that it's worth its price.
+en.mapVillageForgeBuyLightweightBodyArmourButton
+Buy a lightweight body armour (15 000 candies)
+en.mapVillageForgeBuyLightweightBodyArmourSpeech
+This body armour will offer you a protection against your enemies.
+en.mapVillageForgeBuyScytheButton
+Buy a scythe (5 000 000 candies)
+en.mapVillageForgeBuyScytheSpeech
+It took me several months to make this scythe. It's a real piece of art. This is probably the fastest weapon you will ever be able to use. Good luck!
+en.wishingWellThrowFirstCandyButton
+Throw a candy in the well
+en.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Hello, wanderer! I am the wishing well. I shall grant you wishes in exchange of some sweets! When you'll throw candies into me, I will heal your wounds.
+en.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Your wounds are now healed!
+en.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+You have no wounds to heal!
+en.wishingWellThrowFirstLollipopButton
+Throw a lollipop in the well
+en.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Hello, wanderer! I am the wishing well. I shall grant you wishes in exchange of some sweets! When you'll throw lollipops into me, I will convert them into candies.
+en.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Your lollipops are converted into candies! Two lollipops for one candy.
+en.wishingWellThrowChocolateBarButton
+Throw a chocolate bar in the well
+en.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Hello, wanderer! I am the wishing well. I shall grant you wishes in exchange of some sweets! I love chocolate bars. I really love them. For each chocolate bar you will throw into me, including this one, you will be granted one magical enchantment.
+en.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Which object would you like to enchant?
+en.wishingWellThrowPainAuChocolatButton
+Throw a pain au chocolat in the well
+en.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Hello, wanderer! I am the wishing well. I shall grant you wishes in exchange of some sweets! When you throw a pain au chocolat into me, you will be given a very special gift. Choose wisely.
+en.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Thanks for the pain au chocolat! You can now choose your gift.
+en.wishingWellChooseGift # INFORMAL PRONOUN
+Choose your gift!
+en.wishingWellChooseGiftButton
+Choose
+en.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Done! You now have a new gift. It will appear in your inventory stats panel.
+en.wishingWellNoPossibleEnchantment
+No possible enchantment
+en.wishingWellChooseEnchantment
+Choose the enchantment
+en.wishingWellEnchantButton
+Enchant
+en.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+There it is! Your object is enchanted.
+en.pierLighthouseButton
+Go to the lighthouse by boat
+en.pierTheSeaButton
+Jump into the sea
+en.lonelyHouseOpenBox
+Open the box
+en.lonelyHouseShakeBox
+Shake the box
+en.lonelyHouseBreakLock
+Break the lock
+en.lonelyHouseKickBox
+Kick the box
+en.lonelyHouseAskTheBoxToOpenItself
+Ask the box to open itself
+en.lonelyHouseLureTheBoxWithACandy
+Lure the box with a candy
+en.lonelyHouseTakeTheBox
+Take the box with you, you probably need a key to open it anyway
+en.lonelyHouseOpenBoxResult
+The box is locked
+en.lonelyHouseShakeBoxResult
+Nothing happens
+en.lonelyHouseBreakLockResult
+The lock resists
+en.lonelyHouseKickBoxResult
+Your foot hurts a little bit, but nothing happens
+en.lonelyHouseAskTheBoxToOpenItselfResult
+...you're talking to a box, you know that?
+en.lonelyHouseLureTheBoxWithACandyResult
+The box doesn't seem to care
+en.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+There's probably something interesting in this candy box.
+en.lollipopFarmConstructMill
+Build a mill (10 000 lollipops)
+en.lollipopFarmFeedMill
+Feed the mill
+en.lollipopFarmCurrentCandiesProduction
+Current candies production
+en.lollipopFarmDigPond
+Dig a pond (100 000 lollipops)
+en.lollipopFarmBuyLolligator
+Buy a lolligator (1200 candies)
+en.lollipopFarmLolligatorsConversionText
+Conversion candies -> lollipops activated
+en.lighthouseAskButton
+Ask
+en.lighthouseQuestionWho
+Who are you?
+en.lighthouseQuestionWhoSpeech
+I'm a very old cyclops.
+en.lighthouseQuestionWhat
+What are you doing here?
+en.lighthouseQuestionWhatSpeech
+I live here all day long, waiting for a boat to come. It's been a long time since I've seen a boat, but I must stay here, staring at the sea, because a boat may come.
+en.lighthouseQuestionWhyEatCandies
+Why would I eat candies?
+en.lighthouseQuestionWhyEatCandiesSpeech
+Because they're good for your health!
+en.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+What is a candy box?
+en.lighthouseQuestionCandyBoxSpeech
+It is a very old box that is said to contain all the candies in the world. The legends say that whoever manages to open it would have so much candies that anything could be possible.
+en.lighthouseQuestionDragon
+The dragon told me to come here because I want candies.
+en.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Oh, I see... Well, I cannot provide you candies directly, but I can give you something essential for you to ultimately get a LOT of candies. I just need to test you before that. Because what I have can't be given to everyone. Solve this puzzle and it will be yours.
+en.lighthouseFoundStone # INFORMAL PRONOUN
+Congratulations! You passed the test and found the stone. It's very precious, but is only useful if you have three other stones like this one. Good luck!
+en.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Good job, you did the puzzle once again. You seem to like that.
+en.saveLocalSaveTitle
+Browser save
+en.saveLocalSaveWhy
+Choose local save if you want to keep playing on your current device and browser.
+en.saveLocalSaveWarning0
+Your browser does not seem to support HTML5.
+en.saveLocalSaveWarning1
+You should update your browser in order to use the local saving feature.
+en.saveLocalSaveChooseSlot
+Choose a save slot :
+en.saveLocalSaveAutosaveEnabled
+Autosave enabled
+en.saveLocalSaveChooseWhatToDo
+Choose what to do :
+en.saveLocalSaveSaveButton
+Save
+en.saveLocalSaveAutosaveButton
+Save every 10 minutes
+en.saveLocalSaveDisableAutosaveButton
+Disable autosave
+en.saveFileSaveTitle
+Text save
+en.saveFileSaveWhy0
+Choose text save if :
+en.saveFileSaveWhy1
+You want to continue playing on another device or browser
+en.saveFileSaveWhy2
+You want to share your save with someone else
+en.saveFileSaveWhy3
+For some reason you want to empty your browser cache
+en.saveFileSaveWhy4
+(which will erase your local saves)
+en.saveFileSaveButton
+Get the current game as text
+en.saveFileSaveWarning
+Now copy this text somewhere! (in a file, for example)
+en.saveLocalLoadTitle
+Browser load
+en.saveLocalLoadYouCan
+You can load a local save by using the following links :
+en.saveLocalLoadThanksTo
+Thanks to HTML5 magic, you should be able to use these links even offline.
+en.saveFileLoadTitle
+Text load
+en.saveFileLoadPaste
+Paste your save below, then click the "Load" button
+en.saveFileLoadButton
+Load
+en.mountainsText0
+You spotted something in the mountains!
+en.mountainsText1
+It looks interesting. Maybe it could be useful.
+en.mountainsTextButton
+Climb the mountains to get the thing
+en.mountainsTextAfter
+You found a pogo stick! It has been added to your inventory.
+en.secondHouseIntroSpeech
+Hello, I'm the candy merchant. I would do anything for candies. What do you need?
+en.secondHouseLollipop1Speech
+This is a lemon-flavored lollipop. My favourite! It costs 60 candies, but it's worth it.
+en.secondHouseLollipop2Speech
+This one is a strawberry-flavored lollipop. It tastes good. I like its red color. Only 60 candies!
+en.secondHouseLollipop3Speech
+This is a pumpkin-flavored lollipop. I bet you never tried one! 60 candies and it's yours.
+en.secondHouseLollipopButtonText
+Buy this lollipop (60 candies)
+en.secondHouseMerchantHatSpeech
+I could sell you my hat, but it is very precious, you know... You will have to give me a lot of candies for it. Let's say 1 million candies. It seems fair, right?
+en.secondHouseMerchantHatButtonText
+Buy the merchant's hat (1 000 000 candies)
+en.secondHouseTimeRingSpeech
+This is a time ring. It's kind of magical. It allows you to slow down the time when you're in trouble.
+en.secondHouseTimeRingButtonText
+Buy the time ring (500 candies)
+en.secondHouseLeatherGlovesSpeech
+These leather gloves are made from camel leather, this is high quality. I have a lot of them in stock, that's why they are so cheap : only 300 candies!
+en.secondHouseLeatherBootsButtonText
+Buy a pair of leather boots (300 candies)
+en.secondHouseLeatherBootsSpeech
+These high quality leather boots, made from camel leather, will keep your feet warm.
+en.secondHouseLeatherGlovesButtonText
+Buy a pair of leather gloves (300 candies)
+en.secondHouseChocolateBarSpeech
+This is a chocolate bar. I don't know what it is used for, but it happens to be quite rare, which explains the price. 800 candies and it's yours!
+en.secondHouseChocolateBarButtonText
+Buy the chocolate bar (800 candies)
+en.outsideTheHoleButton
+Jump in this big hole in the ground
+en.theCaveExitText0
+You finally reached the cave's exit.
+en.theCaveExitText1
+You can see a big forest outside of here.
+en.theCaveExitButtonText
+Exit the cave
+en.theCaveFirstSentenceWentStraight
+You went straight on.
+en.theCaveFirstSentenceWentLeft
+You took the left path.
+en.theCaveFirstSentenceWentRight
+You took the right path.
+en.theCaveFirstSentenceYouAre
+You are in a cave. There are three paths ahead of you.
+en.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+You spot a strange thing on the ground in front of you.
+en.theCavePattern_ChocolateBarNowSeeChocolateBar
+You spot a chocolate bar in front of you.
+en.theCavePattern_TreasureMapSentence
+You see small rocks strangely arranged on the floor.
+en.theCavePattern_MonkeyWizardSentence
+You stumble upon a naked monkey wizard.
+en.theCavePattern_MonkeyWizardButton
+Challenge him
+en.theCavePattern_OctopusKingSentence
+You stumble upon the Octopus King. It seems nasty.
+en.theCavePattern_OctopusKingButton
+Challenge it
+en.fortressInsideText0
+You are inside the desert fortress.
+en.fortressInsideText1
+You can choose between three doors.
+en.fortressInsideText2
+Each of them leads to a big room with a treasure at the end.
+en.fortressInsideEnterRoom1
+Enter the first room
+en.fortressInsideEnterRoom2
+Enter the second room
+en.fortressInsideEnterRoom3
+Enter the third room
+en.treasureButtonDig
+Dig
+en.treasureButtonYouFound
+You found three chocolate bars!
+en.sorceressHutHello
+Hello, I'm the sorceress. I could teach you one thing or two about magic. I can also give you some interesting things, or cast spells for you. But everything has a price! And this price will be lollipops. A lot of them.
+en.sorceressHutClickedGrimoire
+This is a grimoire made for beginners. By carrying it with you in quests, you will be able to cast simple but useful spells. You need this! Only 5 000 lollipops.
+en.sorceressHutBuyGrimoireButton
+Buy this grimoire (5 000 lollipops)
+en.sorceressHutBuyGrimoireSpeech
+Thanks for buying! You will be able to cast three spells with this grimoire. Good luck!
+en.sorceressHutClickedGrimoire2
+This is an advanced grimoire. By carrying it with you in quests, you will be able to cast two advanced spells. I wrote it myself, which wasn't easy. 20 000 lollipops is a fair price.
+en.sorceressHutBuyGrimoire2Button
+Buy this grimoire (20 000 lollipops)
+en.sorceressHutBuyGrimoire2Speech
+Thanks for buying! You will be able to cast two spells with this grimoire. Use them wisely!
+en.sorceressHutClickedCauldron
+This is my cauldron. It allows me to brew magic potions. I could sell it to you, but it's very precious... it will cost you 100 000 lollipops.
+en.sorceressHutBuyCauldronButton
+Buy the cauldron (100 000 lollipops)
+en.sorceressHutBuyCauldronSpeech
+Thanks a lot! 100 000 lollipops for me! I also gave you a brewing manual. It's going to be useful.
+en.sorceressHutClickedHat
+I have a nice hat, indeed! But I really can't sell it to you. It is waaaay too precious. Really, I can't. Don't insist. No. No no no I shouldn't do that. Oh well, I'll trade it, but for 1 000 000 000 lollipops. You probably won't be able to pay that anyway.
+en.sorceressHutBuyHatButton
+Buy the hat (1 000 000 000 lollipops)
+en.sorceressHutBuyHatSpeech
+One billion lollipops for meeeeee! But I don't have a hat anymore.. but one billion lollipops, wow! .. It was worth it.
+en.cauldronPreviousPageButton
+Previous page
+en.cauldronNextPageButton
+Next page
+en.cauldronWhatYouWantToPut
+What you want to put in the cauldron
+en.cauldronWhatIsIn
+What is in the cauldron
+en.cauldronWhatYouCanDo
+What you can do with it
+en.castleBigRoomComment
+A big room
+en.castleARoomComment
+A room
+en.castleADarkRoomComment
+A dark room
+en.castleCastleEntranceComment
+The castle's entrance
+en.castleTowerEntranceComment
+The tower's entrance
+en.castleNougatMonsterComment
+Attack the giant nougat monster
+en.castleGuardsComment
+Attack the guards
+en.castleStairsComment
+Stairs
+en.buttonBackToTheCastle
+Back to the castle
+en.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Hello! I'm a very old bread oven. I used to cook tons of good pastries, but no one is using me anymore. Maybe... maybe you could help me? Just let me take some sweets from you! Don't worry, you won't regret it! You can trust me.
+en.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Oh... you don't have enough sweets, I can't do anything. I'm just useless. I'm the useless bread oven, that's how you should call me.
+en.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Yay! Thanks a lot! I used 100 candies and a chocolate bar, and I made you... a pain au chocolat! It's my favourite pastry, I hope you'll like it too!
+en.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hey! If you want me to cook another pastry, just tell me! I'd love to help you.
+en.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Oh, you don't have enough sweets, sadly. I need 100 candies and a chocolate bar. Come back when you'll have that!
+en.castleBigRoomHovenLetHovenTakeButton
+Let the oven take all the sweets it wants to take
+en.castleBigRoomHovenThanks
+Thanks, oven!
+en.dragonStopTickling # INFORMAL PRONOUN
+Hey, you! Stop tickling me, please.
+en.dragonStopTicklingButton
+Uh, oh, sorry, I thought I was supposed to attack you
+en.dragonTalking # INFORMAL PRONOUN
+I am the dragon and this is my castle. I see that you managed to enter, you must be very brave... I'd love to help someone like you. What are you looking for?
+en.dragonTalkingChallengeButton
+Challenge
+en.dragonTalkingFameButton
+Fame
+en.dragonTalkingCandiesButton
+Candies
+en.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Oh, so you want challenge? I think you should make a trip to hell itself, it is known that the devil is a tough challenger. Jump on my back and I'll take you there!
+en.dragonTalkingFameSpeech # INFORMAL PRONOUN
+The best way to become famous is to face the developer himself. I know where he lives and I could take you there. But be prepared, this won't be easy.
+en.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Ultimately, the thing we all want is candies, isn't it? I think a friend of mine could help you with that. You will recognise him easily, he has only one eye. Just tell him that you know me.
+en.dragonTalkingChallengeAnswer
+Let's go then!
+en.dragonTalkingFameAnswer
+I am ready.
+en.dragonTalkingCandiesAnswer
+Okay, thanks!
+en.buttonBackToCastle
+Back to the castle
+en.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hey! I'm the talking candy. You almost won the game. You just need to find the candy box. It's in a house outside the village. This is the last step!
+en.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hey! I'm the talking candy. Congratulations, you won the game! I will open your candy box for you, this is your reward. Should I proceed?
+en.talkingCandySpeech2 # INFORMAL PRONOUN
+Done! You can now enter it. I hope you liked the game :)
+en.talkingCandyButton
+Yes!!
+en.lighthousePuzzleResetButton
+Reset

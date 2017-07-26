@@ -1,0 +1,690 @@
+uk.mapVillageComment
+Селище
+uk.mapFortressComment
+Пустельна фортеця
+uk.mapATreeComment
+Дерево
+uk.mapTheDesertComment
+Пустеля
+uk.mapWishingWellComment
+Криниця бажань
+uk.mapLonelyHouseComment
+Самотній будинок
+uk.mapForestComment
+Ліс
+uk.mapCastleEntranceComment
+Вхід у замок
+uk.mapCastleComment
+Замок
+uk.mapDragonComment
+Дракон
+uk.candyBoxEatCandiesButton
+З'їсти усі цукерки
+uk.candyBoxThrowCandiesButton
+Кинути 10 цукерок на землю
+uk.mapVillageAHouseComment
+Будинок
+uk.mapVillageForgeComment
+Ковальня
+uk.buttonBackToTheMap
+Повернутися до мапи
+uk.mapSorceressHutComment
+Хатина чаклунки
+uk.buttonBackToTheVillage
+Повернутися у селище
+uk.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Привіт, я Вивірка. Я можу дати тобі цукерок, та й багато ще чого. Я знаю як сильно ти любиш цукерки. Але я почуваюсь самотньо у цьому лісі.
+uk.mapATreeIntroductionButton
+Як я можу допомогти тобі?
+uk.mapATreeFirstQuestion # INFORMAL PRONOUN
+Я задаватиму тобі питання. Якщо відповідатимеш правильно, найсолодші солодощі будуть твоїми! Перше запитання : ти справді любиш цукерки? (відповідай англійською)
+uk.mapATreeSecondQuestion # INFORMAL PRONOUN
+Це правильно! Ось тобі 20 цукерок. Тепер заверши цю послідовність літер і отримаєш нову винагороду: S, E, I, D, N, A, ?
+uk.mapATreeThirdQuestion # INFORMAL PRONOUN
+Цукерки! Ось 100 цукерок для тебе. Наступне запитання : скільки цукерок у найцукернішої особи у світі?
+uk.mapATreeFourthQuestion # INFORMAL PRONOUN
+Ось тобі 500 цукерок! Наступна винагорода має бути навіть цікавішою...  Ось загадка: У прадавньому лісі росте дуже старе дерево, на якому живуть найрозумніші у світі тварини. Мовиться, що це дерево має 60 коренів, 360 гілок і 2160 листків. Скільки позначок можна знайти на його стовбурі?
+uk.mapATreeFifthQuestion # INFORMAL PRONOUN
+Вітаю! Я справді говорила про своє дерево. Ось тобі 3 льодяники. Смачного! Наступна загадка, слухай уважно: Під місяцем уповні, я кидаю жовтого капелюха у червоне море. Що стається з жовтим капелюхом?
+uk.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Влучно сказано! Це було не так складно. Ось тобі три шоколадні плитки! Задля наступної винагороди, ми трошечки змінимо правила. Ти маєш зіграти зі мною у гру! Готовий?
+uk.mapATreeTicTacToeIntroButton
+Так, звичайно!
+uk.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Ця гра — хрестики-нулики. Ми граємо на полі 3 на 3. Ти будеш ставити X, а я ставитиму O. Ходимо по черзі, мета гри — виставити три своїх знаки у ряд. Я дозволю тобі ходити першим!
+uk.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Поле цілком заповнене і нам обом не вдалося поставити три знаки поспіль: ніхто не переміг! Хочеш спробувати ще раз?
+uk.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Я поставив три поспіль! Я переміг. Хочеш спробувати ще раз?
+uk.mapATreeTicTacToeTryAgainButton
+Так, хочу!
+uk.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Ого, несподіваний хід. Але ти отримав три у ряд, не можу сперечатись. Ти переміг! Візьми цей ключ! Він відкриває один із будинків у селещі перед лісом.
+uk.mapATreeTicTacToeAnymoreSweet
+Дякую, вивірко! Є ще якісь загадки?
+uk.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+На жаль, ні, у мене нема більше загадок для тебе... Пограти з тобою було дуже весело, дякую тобі за це!
+uk.buttonExitQuestKeeping
+Покинути пригоду (і зберегти здобуте)
+uk.buttonExitQuestNoKeeping
+Покинути пригоду (ти не збережеш здобуте)
+uk.buttonExitQuestNoKeepingBecauseLose
+Покинути пригоду (ти не збережеш здобуте, оскільки зазнав невдачі)
+uk.mapVillageLockedHouseComment
+Замкнений будинок
+uk.mapVillageForgeIntroductionSpeech
+Привіт! Я коваль. Я можу продати тобі різноманітне озброєння та деяке спорядження.
+uk.mapVillageForgeIntroductionSpeechNoMoreToSell
+Привіт! Я коваль. На жаль, у мене немає більше нічого на продаж. Може зайдеш пізніше?
+uk.mapVillageFifthHouseNoWeaponSpeech
+Привіт. Мій льох повен щурів, мені необхідно позбутися їх... от якби хтось зі зброєю міг мені допомогти...
+uk.mapVillageFifthHouseWeaponSpeech
+Агов! Я бачу, ти носиш зброю! Якщо ти повбиваєш тих щурів, що капостять у моєму льосі, я винагороджу тебе!
+uk.mapVillageFifthHouseAgree
+Тоді до справи!
+uk.mapVillageFifthHouseCellarDone
+Дякую, що позбувся їх! Ось дещо дуже цінне, як винагорода: мапа світу. Я думаю, тобі вона знадобиться більше, ніж мені.
+uk.mapVillageTheShopComment
+Крамниця
+uk.mapBridgeComment
+Міст
+uk.mapFarmComment
+Льодяникова ферма
+uk.mapCaveEntranceComment
+Вхід у печеру
+uk.mapLighthouseComment
+Маяк
+uk.mapPierComment
+Пристань
+uk.mapTheHoleComment
+Діра в землі
+uk.candyBoxRequestStatusBarUnlocked
+Замовити нову можливість у розробника (30 цукерок)
+uk.candyBoxRequestStatusBarUnlockedCfg
+Замовити ще одну (5 цукерок)
+uk.candyBoxRequestStatusBarUnlockedSave
+Замовити ще раз (5 цукерок)
+uk.candyBoxRequestStatusBarUnlockedHealthBar
+Замовити щось більш вражаюче (5 цукерок)
+uk.candyBoxRequestStatusBarUnlockedMap
+Останнє замовлення! Це мусить вартувати цукерок. (10 цукерок)
+uk.candyBoxRequestStatusBarUnlockedComment
+Ти розблокував рядок стану! (вгорі)
+uk.candyBoxRequestStatusBarUnlockedCfgComment1
+Тепер ти маєш доступ до панелі налаштувань.
+uk.candyBoxRequestStatusBarUnlockedCfgComment2
+Ти можеш змінити мову, якщо хочеш.
+uk.candyBoxRequestStatusBarUnlockedSaveComment
+З'явилась панель пришелепкуватого збереження!
+uk.candyBoxRequestStatusBarUnlockedHealthBarComment
+Ось тобі 100 пунктів здоров'я. Вони будуть корисними.
+uk.cfgChooseLanguage
+Обери мову :
+uk.cfgInvertColors
+Інвертувати кольори?
+uk.gridItemMainMapName
+Мапа
+uk.gridItemMainMapDescription
+Мапа світу
+uk.gridItemPogoStickName
+Ціпок-стрибунок
+uk.gridItemPogoStickDescription
+Цей предмет дозволяє тобі стрибати протягом пригод!
+uk.gridItemTimeRingName
+Кільце часу
+uk.gridItemTimeRingDescription
+Цей предмет надає нову можливість протягом пригод: ти можеш уповільнювати час. Якщо події відбуваються занадто швидко для тебе, застосовуй кільце часу!
+uk.gridItemThirdHouseKeyName
+Ключ від третього будинку
+uk.gridItemThirdHouseKeyDescription
+Цей ключ дозволяє тобі відкривати третій будинок у селищі.
+uk.gridItemFeatherName
+Перо пустельного птаха
+uk.gridItemFeatherDescription
+Це магічне перо дозволяє тобі вище стрибати з ціпком-стрибунком!
+uk.gridItemFeatherDescriptionNoPogoStick
+З невідомих причин, ти відчуваєш, що це перо могло би бути корисним, якби в тебе був ціпок-стрибунок...
+uk.gridItemSpongeName
+Магічна губка
+uk.gridItemSpongeDescription
+Цей магічний предмет дозволяє тобі стискатися як губка, таким чином зменшуючи свої розміри.
+uk.gridItemFortressKeyName
+Ключ від пустельної фортеці
+uk.gridItemFortressKeyDescription
+Цей ключ дозволяє тобі заходити до дуже старовинної фортеці, що знаходиться угорі пустелі. Хтозна, що ти можеш там знайти?
+uk.gridItemHeartPendantName
+Кулон-серце
+uk.gridItemHeartPendantDescription
+Цей кулон у вигляді серця збільшуватиме рівень твого здоров'я доти, доки ти носитимеш його на шиї.
+uk.gridItemHeartPlugName
+Серцевий чіп
+uk.gridItemHeartPlugDescription
+Цей залізний серцевий чіп на павучих лапках, із спеціальним "серцевим трунком", закоркованим усередині, збільшить твоє здоров'я на 20 відсотків!
+uk.gridItemBeginnersGrimoireName
+Книга заклять початківця
+uk.gridItemBeginnersGrimoireDescription
+Ця книга заклять відкриває тобі три заклинання, досить простих для накладання. Вона справді призначена для початківців. Ти зможеш використовувати закляття кислотного дощу (велика кількість крапель кислоти падатиме на твоїх ворогів), закляття вогняної кулі (гігантська магічна куля, зроблена з вогню, полетить в напрямку твоїх ворогів) та закляття телепортації (яке телепортує тебе до непередбаченої локації).
+uk.gridItemAdvancedGrimoireName
+Розширена книга заклять
+uk.gridItemAdvancedGrimoireDescription
+Ця розширена книга заклять відкриває тобі два заклинання: закляття очищення від магії та закляття тернового щита. Перше усуне з пригоди усю магію до поточної миті, включно із тією, яку наклав ти, та магію твоїх ворогів. Друге закляття створить навколо тебе щит із літаючих колючок, що завдаватиме шкоди твоїм ворогам при контакті.
+uk.gridItemBlackMagicGrimoireName
+Книга заклять чорної магії
+uk.gridItemBlackMagicGrimoireDescription
+Ти знайшов цю книгу заклять у печері, її було дуже важко дістатися, і для того була причина. Вона відкриває тобі два потужних закляття чорної магії. Перше зведе перед тобою гігантську стіну обсидіанової цегли, що може бути корисним, аби затримати твоїх ворогів. Друге закляття викличе зграю демонів, що атакуватимуть кожного у цій пригоді, включно з тобою. Будь обережним із ним.
+uk.gridItemUnicornHornName
+Ріг єдинорога
+uk.gridItemUnicornHornDescription
+Цей магічний ріг належав єдинорогу. Його потужні лікувальні властивості дуже тобі допоможуть. Ти чув, що цього єдинорога звали Чарлі.
+uk.gridItemXinopherydonClawName
+Кіготь ксиноперидона
+uk.gridItemXinopherydonClawDescription
+Цей кіготь належав ксиноперидону, древньому двоголовому звіру, у існування якого усі вірять. Він подвоїть пошкодження від твоєї зброї.
+uk.gridItemPitchforkName
+Вила
+uk.gridItemPitchforkDescription
+Ці спеціальні вила дозволяють розпушувати ґрунт, не перекидаючи його, таким чином зберігаючи поверхневу екосистему ґрунту. Це потроїть продуктивність твоєї льодяникової ферми.
+uk.gridItemShellPowderName
+Черепашковий порошок
+uk.gridItemShellPowderDescription
+Порошок із мушель часто використовується фермерами для покращення швидкості росту їхніх льодяників. Цей порошок помножить продуктивність твоєї льодяникової ферми на три!
+uk.gridItemPName
+Камінь P
+uk.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "DВ° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PSВ°-J (`  /R`yM}  T$`` В°+-|U(\OL&Y_)T|
+uk.gridItemLName
+Камінь L
+uk.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $OВ°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    В°M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#В° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+uk.gridItemAName
+Камінь A
+uk.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ ITВ°#{  Oa$ GM T{Q "S A-\ F KmВ°& C #В° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+uk.gridItemYName
+Камінь Y
+uk.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  В°-  AX Y ` В° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_В°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`EВ° I &L- /    K
+uk.gridItemRedSharkFinName
+Магічний плавець червоної акули
+uk.gridItemRedSharkFinDescription
+Цей магічний плавець значно підвищує пошкодження від твого закляття вогняної кулі. Нарешті ця вогняна куля стає корисною.
+uk.gridItemGreenSharkFinName
+Магічний плавець зеленої акули
+uk.gridItemGreenSharkFinDescription
+Цей магічний плавець принесе силу природи у твою льодяникову ферму! Її продуктивність зросте у 5 разів.
+uk.gridItemPurpleSharkFinName
+Магічний плавець багряної акули
+uk.gridItemPurpleSharkFinDescription
+Цей магічний плавець відкриє тобі нове заклинання чорної магії. Ти можеш використовувати його лише раз за пригоду. Будь обережним із ним!
+uk.gridItemTalkingCandyName
+Цукерик, що говорить
+uk.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Цей цукерик, що говорить, з'явився після того, як ти поклав чотири камені на верхівку замкової вежі. Він може допомогти тобі відкрити candy box...
+uk.inventorySpecialNothingEqItem
+Нічого
+uk.eqItemWeaponWoodenSwordName
+Дерев'яний меч
+uk.eqItemWeaponWoodenSwordDescription
+Простий меч, зроблений із дерева
+uk.eqItemWeaponIronAxeName
+Залізна сокира
+uk.eqItemWeaponIronAxeDescription
+Проста залізна сокира. Добре підточена. Більш потужна, ніж дерев'яний меч.
+uk.eqItemWeaponPolishedSilverSwordName
+Полірований срібний меч
+uk.eqItemWeaponPolishedSilverSwordDescription
+Потужний меч із зубцями.
+uk.eqItemWeaponTrollBludgeonName
+Кий троля
+uk.eqItemWeaponTrollBludgeonDescription
+Ти забрав цей кий у троля, що охороняв міст. Він повільний, але змітає ворогів досить ефективно.
+uk.eqItemWeaponTribalSpearName
+Племінний спис
+uk.eqItemWeaponTribalSpearDescription
+Ти знайшов цей племінний спис на тілі воїна племені, що загубився у великій дірі в землі. Ним спершу трохи важко користуватись, але коли ти звикаєш до нього, це гарна зброя.
+uk.eqItemWeaponSummoningTribalSpearName
+Племінний спис прикликання
+uk.eqItemWeaponSummoningTribalSpearDescription
+Цей магічний племінний спис, окрім того, що трохи потужніший, ніж звичайний племінний спис, буде періодично викликати воїнів племені, що допомагатимуть тобі у твоїх пригодах.
+uk.eqItemWeaponMonkeyWizardStaffName
+Патериця мавпячого чаклуна
+uk.eqItemWeaponMonkeyWizardStaffDescription
+Ця патериця належала голому мавпячому чаклуну, якого ти знайшов у печері. Вона сама по собі буде рясно накладати закляття на твоїх ворогів.
+uk.eqItemWeaponEnchantedMonkeyWizardStaffName
+Патериця мавпячого чаклуна (зачарована)
+uk.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+Ця патериця швидша, ніж не зачарована, і накладати закляття буде також значно швидше.
+uk.eqItemWeaponGiantSpoonName
+Велетенська ложка
+uk.eqItemWeaponGiantSpoonDescription
+Ця велетенська ложка була у велетенському чайнику в пустельній фортеці. Ти не знаєш, чи використовував хто-небудь коли-небудь її як ложку, але якщо так, то це мав бути хтось дійсно великий. Тобі, напевне, не хочеться зустрітись із ним.
+uk.eqItemWeaponGiantSpoonOfDoomName
+Велетенська Ложка Долі
+uk.eqItemWeaponGiantSpoonOfDoomDescription
+Ця велетенська ложка навіть потужніша, ніж звичайна велетенська ложка, яку ти міг знайти, наприклад, у чайнику. Вона, проте, доволі повільна.
+uk.eqItemWeaponScytheName
+Коса
+uk.eqItemWeaponScytheDescription
+Подейкують, що ця коса належала самій Смерті. Вона надзвичайно швидка.
+uk.eqItemHatMerchantHatName
+Капелюх цукерника
+uk.eqItemHatMerchantHatDescription
+Цього капелюха продав тобі торговець цукерками. Цукерник любить цукерки. Цей капелюх у 7 разів збільшить кількість цукерок, які ти знаходиш у пригодах!
+uk.eqItemHatSorceressHatName
+Капелюх чаклунки
+uk.eqItemHatSorceressHatDescription
+Цього капелюха продала тобі чаклунка. Він посилить дію твоїх заклять та зілля.
+uk.eqItemHatOctopusKingCrownName
+Корона Короля Восьминогів
+uk.eqItemHatOctopusKingCrownDescription
+Коли ти носиш цю корону, то почуваєшся набагато впевненіше. Вона не надає ніяких переваг у пригодах, але впевненість у собі — це важливо!
+uk.eqItemHatOctopusKingCrownWithJaspersName
+Корона Короля Восьминогів із яшмою
+uk.eqItemHatOctopusKingCrownWithJaspersDescription
+Цю зачаровану корону виготовлено із золота та червоної яшми. Під час пригод вона періодично створюватиме потужні магічні вогняні кулі навколо тебе. А ще вона сяє!
+uk.eqItemHatOctopusKingCrownWithObsidianName
+Корона Короля Восьминогів із обсидіаном
+uk.eqItemHatOctopusKingCrownWithObsidianDescription
+Цю зачаровану корону виготовлено із золота та обсидіану. Вона прекрасна. Під час пригод вона час від часу прикликатиме Короля Восьминогів, що битиметься на твоїй стороні. Ото мацаватий союзник!
+uk.eqItemGlovesLeatherGlovesName
+Шкіряні рукавиці
+uk.eqItemGlovesLeatherGlovesDescription
+Ці рукавиці, по суті, нічого не роблять. Але вони, принаймні, м'які та зручні!
+uk.eqItemGlovesRedEnchantedGlovesName
+Червоні зачаровані рукавиці
+uk.eqItemGlovesRedEnchantedGlovesDescription
+Ці зачаровані рукавиці випромінюють у темряві м'яке червоне світло. Під час пригод вони випускатимуть у твоїх ворогів маленькі вогняні кульки, що, безперечно, може бути корисним.
+uk.eqItemGlovesPinkEnchantedGlovesName
+Рожеві зачаровані рукавиці
+uk.eqItemGlovesPinkEnchantedGlovesDescription
+Ці зачаровані рукавиці залишають рожеві відмітки на усьому, чого ти торкаєшся. Під час пригод вони безперервно лікуватимуть тебе.
+uk.eqItemBootsRocketBootsName
+Ракетні черевики
+uk.eqItemBootsRocketBootsDescription
+Ці пречудові ракетні черевики дозволяють тобі стрибати прямо у повітрі, по суті, це те саме, що і літати!
+uk.eqItemBootsLeatherBootsName
+Шкіряні черевики
+uk.eqItemBootsLeatherBootsDescription
+Прості шкіряні черевики. Нічого особливого.
+uk.eqItemBootsBootsOfIntrospectionName
+Черевики самоспоглядання
+uk.eqItemBootsBootsOfIntrospectionDescription
+Переведи подих та заспокойся. Якщо ти взутий у ці черевики, то не зрушиш із місця, доки твої ноги торкаються землі.
+uk.eqItemBodyArmoursLightweightBodyArmourName
+Легкий обладунок
+uk.eqItemBodyArmoursLightweightBodyArmourDescription
+Цей обладунок забезпечить тобі слабенький захист. Ти будеш трохи менш вразливий до ворожих атак.
+uk.eqItemBodyArmoursKnightBodyArmourName
+Лицарський обладунок
+uk.eqItemBodyArmoursKnightBodyArmourDescription
+Цей міцний обладунок захищатиме тебе. Ти будеш менш вразливий до ворожих атак.
+uk.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Зачарований лицарський обладунок
+uk.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Цей обладунок дуже особливий. Ти будеш НАБАГАТО менш вразливий до ворожих атак, але пошкодження від твоєї зброї, буде поділено навпіл.
+uk.mapVillageForgeBuyWoodenSwordButton
+Купити дерев’яний меч (150 цукерок)
+uk.mapVillageForgeBuyWoodenSwordSpeech
+Дякую за покупку! Цей дерев’яний меч досить слабенький, але це лише початок.
+uk.mapVillageForgeBuyIronAxeButton
+Купити залізний меч (400 цукерок)
+uk.mapVillageForgeBuyIronAxeSpeech
+Я сподіваюсь тобі сподобається цей залізний меч. Я щойно нагострив його для тебе!
+uk.mapVillageForgeBuyPolishedSilverSwordButton
+Купити полірований срібний меч (2 000 цукерок)
+uk.mapVillageForgeBuyPolishedSilverSwordSpeech
+У мене пішло багато часу на створення цього меча. Я запевняю, він вартий своєї ціни.
+uk.mapVillageForgeBuyLightweightBodyArmourButton
+Купити легкий обладунок (15 000 цукерок)
+uk.mapVillageForgeBuyLightweightBodyArmourSpeech
+Цей обладунок забезпечить тобі захист від твоїх ворогів.
+uk.mapVillageForgeBuyScytheButton
+Купити косу (5 000 000 цукерок)
+uk.mapVillageForgeBuyScytheSpeech
+У мене пішло декілька місяців, аби зробити цю косу. Це справжній витвір мистецтва. Це, ймовірно, найшвидша зброя, яку тобі вдасться зустріти. Щасти тобі!
+uk.wishingWellThrowFirstCandyButton
+Кинути у криницю цукерку
+uk.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Привіт, мандрівнику! Я криниця бажань. Я виконаю твої бажання в обмін на трохи солодощів! Коли ти кидатимеш у мене цукерки, я зцілюватиму твої рани.
+uk.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Твої рани зцілено!
+uk.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Ти не потребуєш зцілення!
+uk.wishingWellThrowFirstLollipopButton
+Кинути у криницю льодяник
+uk.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Привіт, мандрівнику! Я криниця бажань. Я виконаю твої бажання в обмін на трохи солодощів! Коли ти кидатимеш у мене льодянки, я перетворюватиму їх на цукерки.
+uk.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Твої льодяники перетворились на цукерки! Два льодяники за цукерку.
+uk.wishingWellThrowChocolateBarButton
+Кинути у криницю плитку шоколаду
+uk.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Привіт, мандрівнику! Я криниця бажань. Я виконаю твої бажання в обмін на трохи солодощів! Я люблю шоколадки. Я справді люблю їх. За кожну шоколадну плитку, що ти вкинеш у мене, включно з цією, ти отримаєш одне магічне зачарування.
+uk.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Який предмет ти хотів би зачарувати?
+uk.wishingWellThrowPainAuChocolatButton
+Кинути у криницю круасан
+uk.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Привіт, мандрівнику! Я криниця бажань. Я виконаю твої бажання в обмін на трохи солодощів! Якщо ти вкинеш у мене круасан, то отримаєш дуже особливий дарунок. Обирай із розумом.
+uk.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Дякую за круасан! Тепер можеш обрати свій дарунок.
+uk.wishingWellChooseGift # INFORMAL PRONOUN
+Обери свій дарунок!
+uk.wishingWellChooseGiftButton
+Обрати
+uk.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Готово! Тепер у тебе є новий дарунок. Він з’явиться у панелі покажчиків твого інвентарю.
+uk.wishingWellNoPossibleEnchantment
+Зачарування неможливе
+uk.wishingWellChooseEnchantment
+Обери зачарування
+uk.wishingWellEnchantButton
+Зачарувати
+uk.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+От і воно! Твій предмет зачаровано.
+uk.pierLighthouseButton
+Дістатися маяка човном
+uk.pierTheSeaButton
+Стрибнути у море
+uk.lonelyHouseOpenBox
+Відкрити скриньку
+uk.lonelyHouseShakeBox
+Потрусити скриньку
+uk.lonelyHouseBreakLock
+Зламати замок
+uk.lonelyHouseKickBox
+Копнути скриньку
+uk.lonelyHouseAskTheBoxToOpenItself
+Попросити скриньку відкритися самій
+uk.lonelyHouseLureTheBoxWithACandy
+Підкупити скриньку цукеркою
+uk.lonelyHouseTakeTheBox
+Взяти скриньку з собою, тобі, ймовірно, потрібен ключ, аби відкрити її
+uk.lonelyHouseOpenBoxResult
+Скринька замкнена
+uk.lonelyHouseShakeBoxResult
+Нічого не відбувається
+uk.lonelyHouseBreakLockResult
+Замок не піддається
+uk.lonelyHouseKickBoxResult
+Твоя нога трохи болить, але нічого не відбувається
+uk.lonelyHouseAskTheBoxToOpenItselfResult
+...ти говориш зі скринькою, ти усвідомлюєш це?
+uk.lonelyHouseLureTheBoxWithACandyResult
+Не схоже, щоб скриньку це хвилювало
+uk.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+Напевне, там щось цікаве у цій candy box.
+uk.lollipopFarmConstructMill
+Збудувати млин (10 000 льодяників)
+uk.lollipopFarmFeedMill
+Подати воду на млин
+uk.lollipopFarmCurrentCandiesProduction
+Поточне виробництво цукерок
+uk.lollipopFarmDigPond
+Викопати ставок (100 000 льодяників)
+uk.lollipopFarmBuyLolligator
+Купити льодяникодила (1200 candies)
+uk.lollipopFarmLolligatorsConversionText
+Перетворення цукерки -> льодяники активовано
+uk.lighthouseAskButton
+Запитати
+uk.lighthouseQuestionWho
+Хто ти?
+uk.lighthouseQuestionWhoSpeech
+Я дуже старий циклоп.
+uk.lighthouseQuestionWhat
+Що ти тут робиш?
+uk.lighthouseQuestionWhatSpeech
+Я сиджу тут увесь день, очікуючи на човен, що припливе. Пройшло уже багато часу з тих пір, коли я бачив човна останній раз, але я мушу залишатися тут, пильнуючи за морем, адже може припливти човен.
+uk.lighthouseQuestionWhyEatCandies
+Навіщо мені їсти цукерки?
+uk.lighthouseQuestionWhyEatCandiesSpeech
+Тому що вони корисні для твого здоров’я!
+uk.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Що таке candy box?
+uk.lighthouseQuestionCandyBoxSpeech
+Це дуже стара скринька, сказано, що в ній лежать усі цукерки світу. Легенди говорять, хто б не спромігся відкрити її, той отримає стільки цукерок, що не залишиться нічого неможливого.
+uk.lighthouseQuestionDragon
+Дракон сказав мені прийти сюди, оскільки я хочу цукерок.
+uk.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+О, я бачу... Добре, я не можу дати тобі цукерок одразу, але я можу дати тобі дещо необхідне, аби зрештою отримати БАГАТО цукерок. Мені лише треба випробувати тебе перед цим. Тому що те, що в мене є, не можна давати абикому. Розв’яжи цю головоломку і це буде твоїм.
+uk.lighthouseFoundStone # INFORMAL PRONOUN
+Вітаю! Ти пройшов випробування і знайшов камінь. Він дуже коштовний, але може бути корисним лише тоді, якщо в тебе є ще три камені, подібних до цього. Щасти тобі!
+uk.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Гарна робота, ти знову вирішив головоломку. Схоже, тобі це подобається.
+uk.saveLocalSaveTitle
+Браузерне збереження
+uk.saveLocalSaveWhy
+Обери локальне збереження, якщо хочеш продовжити грати на поточному пристрої та браузері.
+uk.saveLocalSaveWarning0
+Схоже, твій браузер не підтримує HTML5.
+uk.saveLocalSaveWarning1
+Тобі слід оновити свій браузер, аби використовувати локальне збереження.
+uk.saveLocalSaveChooseSlot
+Обери збереження :
+uk.saveLocalSaveAutosaveEnabled
+Автозбереження увімкнено
+uk.saveLocalSaveChooseWhatToDo
+Обери, що робити :
+uk.saveLocalSaveSaveButton
+Зберегти
+uk.saveLocalSaveAutosaveButton
+Зберігати кожні 10 хвилин
+uk.saveLocalSaveDisableAutosaveButton
+Вимкнути автозбереження
+uk.saveFileSaveTitle
+Текстове збереження
+uk.saveFileSaveWhy0
+Обери текстове збереження, якщо :
+uk.saveFileSaveWhy1
+хочеш продовжити грати на іншому пристрої або браузері.
+uk.saveFileSaveWhy2
+хочеш поділитися своїм збереженням із кимось іншим
+uk.saveFileSaveWhy3
+з якихось причин хочеш очистити кеш браузера
+uk.saveFileSaveWhy4
+(що зітре твої локальні збереження)
+uk.saveFileSaveButton
+Отримати поточну гру у вигляді тексту
+uk.saveFileSaveWarning
+Тепер скопіюй цей текст куди-небудь! (у файл, наприклад)
+uk.saveLocalLoadTitle
+Браузерне завантаження
+uk.saveLocalLoadYouCan
+Ти можеш завантажити локальне збереження, використовуючи наступні посилання :
+uk.saveLocalLoadThanksTo
+Дякуючи чарам HTML5, вони повинні працювати навіть офлайн.
+uk.saveFileLoadTitle
+Текстове завантаження
+uk.saveFileLoadPaste
+Встав своє збереження нижче, тоді клацни кнопку "Завантажити"
+uk.saveFileLoadButton
+Завантажити
+uk.mountainsText0
+Ви помітили щось у горах!
+uk.mountainsText1
+Це виглядає цікаво. Ймовірно, воно може бути корисним.
+uk.mountainsTextButton
+Дертися у гори, аби дістати предмет
+uk.mountainsTextAfter
+Ти знайшов ціпок-стрибунок! Він у твоєму інвентарі.
+uk.secondHouseIntroSpeech
+Привіт, я цукерник. За цукерки, я міг би зробити усе. Що тобі потрібно?
+uk.secondHouseLollipop1Speech
+Це лимонний льодяник. Мій улюблений! Він коштує 60 цукерок, але він вартий того.
+uk.secondHouseLollipop2Speech
+Цей льодяник суничний. Гарний на смак. Мені подобається його червоний колір. Лише 60 цукерок!
+uk.secondHouseLollipop3Speech
+Це гарбузовий льодяник. Б’юсь об заклад, ти ще такого не куштував! 60 цукерок і він твій.
+uk.secondHouseLollipopButtonText
+Купити цей льодяник (60 цукерок)
+uk.secondHouseMerchantHatSpeech
+Я міг би продати тобі свого капелюха, але він дуже цінний, розумієш... Ти мусиш дати мені багато цукерок за нього. Скажімо 1 мільйон цукерок. Це буде справедливо, еге ж?
+uk.secondHouseMerchantHatButtonText
+Купити капелюх цукерника (1 000 000 цукерок)
+uk.secondHouseTimeRingSpeech
+Це кільце часу. Воно свого роду магічне. Воно дозволяє тобі сповільнювати час, коли ти в халепі.
+uk.secondHouseTimeRingButtonText
+Купити кільце часу (500 цукерок)
+uk.secondHouseLeatherGlovesSpeech
+Ці рукавиці виготовлено з верблюжої шкіри, якісна робота. У мене їх багато на продаж, тому вони такі дешеві : лише 300 цукерок!
+uk.secondHouseLeatherBootsButtonText
+Купити пару шкіряних черевиків (300 цукерок)
+uk.secondHouseLeatherBootsSpeech
+Ці високоякісні черевики, зроблені з верблюжої шкіри, збережуть твої ноги у теплі.
+uk.secondHouseLeatherGlovesButtonText
+купити пару шкіряних рукавиць (300 цукерок)
+uk.secondHouseChocolateBarSpeech
+Це шоколадна плитка. Я не знаю, для чого її використовують, але так сталося, що вона досить рідкісна, що пояснює її ціну. 800 цукерок і вона твоя!
+uk.secondHouseChocolateBarButtonText
+Купити шоколадну плитку (800 цукерок)
+uk.outsideTheHoleButton
+Стрибнути у цю велику діру в землі
+uk.theCaveExitText0
+Ти зрештою дістався виходу з печери.
+uk.theCaveExitText1
+Тобі стало видно великий ліс ззовні.
+uk.theCaveExitButtonText
+Вийти з печери
+uk.theCaveFirstSentenceWentStraight
+Ти пішов прямо.
+uk.theCaveFirstSentenceWentLeft
+Ти обрав лівий прохід.
+uk.theCaveFirstSentenceWentRight
+Ти обрав правий прохід.
+uk.theCaveFirstSentenceYouAre
+Ти у печері. Перед тобою три шляхи.
+uk.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Ти помічаєш дивну річ на землі перед собою.
+uk.theCavePattern_ChocolateBarNowSeeChocolateBar
+Ти помічаєш перед собою плитку шоколаду.
+uk.theCavePattern_TreasureMapSentence
+Ти бачиш маленькі камінчики, дивним чином розташовані на підлозі.
+uk.theCavePattern_MonkeyWizardSentence
+Ти натрапляєш на оголеного мавпячого чаклуна.
+uk.theCavePattern_MonkeyWizardButton
+Кинути йому виклик
+uk.theCavePattern_OctopusKingSentence
+Ти натрапляєш на Короля Восьминогів. Він видається огидним.
+uk.theCavePattern_OctopusKingButton
+Кинути йому виклик
+uk.fortressInsideText0
+Ти всередині пустельної фортеці.
+uk.fortressInsideText1
+Ти можеш обрати поміж трьох дверей.
+uk.fortressInsideText2
+Кожна з них веде до великої кімнати зі скарбами в кінці.
+uk.fortressInsideEnterRoom1
+Увійти в першу кімнату
+uk.fortressInsideEnterRoom2
+Увійти в другу кімнату
+uk.fortressInsideEnterRoom3
+Увійти в третю кімнату
+uk.treasureButtonDig
+Копати
+uk.treasureButtonYouFound
+Ти знайшов три шоколадні плитки!
+uk.sorceressHutHello
+Привіт, я чаклунка. Я можу навчити тебе одній або двом магічним штучкам. Я можу також дати тобі трохи цікавих речей, або накладати закляття для тебе. Але усе має свою ціну! І цією ціною будуть льодяники. Багато льодяників.
+uk.sorceressHutClickedGrimoire
+Це книга заклять, написана для початківців. Якщо носитимеш її з собою в пригодах, то зможеш накладати прості, але корисні заклинання. Вона необхідна тобі! Лише 5 000 льодяників.
+uk.sorceressHutBuyGrimoireButton
+Купити цю книгу заклять (5 000 льодяників)
+uk.sorceressHutBuyGrimoireSpeech
+Дякую за покупку! Ти зможеш накладати три закляття з цією книгою. Щасти тобі!
+uk.sorceressHutClickedGrimoire2
+Це розширена книга заклять. Якщо носитимеш її з собою в пригодах, то зможеш накладати два вдосконалених заклинання. Я написала їх сама, і це було непросто. 20 000 льодяників — справедлива ціна.
+uk.sorceressHutBuyGrimoire2Button
+Купити цю книгу заклять (20 000 льодяників)
+uk.sorceressHutBuyGrimoire2Speech
+Дякую за покупку! Ти зможеш накладати два заклинання з цією книгою. Використовуй їх мудро!
+uk.sorceressHutClickedCauldron
+Це мій казан. З його допомогою я варю магічні зілля. Я можу продати його тобі, але він дуже цінний... він коштуватиме тобі 100 000 льодяників.
+uk.sorceressHutBuyCauldronButton
+Купити казан (100 000 льодяників)
+uk.sorceressHutBuyCauldronSpeech
+Красно дякую! 100 000 льодяників для мене! Я також дала тобі книгу зіллєваріння. Вона тобі знадобиться.
+uk.sorceressHutClickedHat
+У мене дійсно чудовий капелюх! Але я справді не можу продати його тобі. Він занаааадто цінний. Справді, я не можу. Не наполягай. Ні. Ні-ні-ні, я не повинна робити цього. Ох, гаразд, я продам його, але за 1 000 000 000 льодяників. Ти, ймовірно, не зможеш заплатити таку ціну у будь-якому випадку.
+uk.sorceressHutBuyHatButton
+Купити капелюх (1 000 000 000 льодяників)
+uk.sorceressHutBuyHatSpeech
+Один більйон льодяників для меееенее! Але у мене більше немає капелюха.. але один більйон льодяників, ого-го! .. Це того варте.
+uk.cauldronPreviousPageButton
+Попередня сторінка
+uk.cauldronNextPageButton
+Наступна сторінка
+uk.cauldronWhatYouWantToPut
+Що ти хочеш покласти у казан
+uk.cauldronWhatIsIn
+Що у казані
+uk.cauldronWhatYouCanDo
+Що ти можеш зробити з цього
+uk.castleBigRoomComment
+Велика кімната
+uk.castleARoomComment
+Кімната
+uk.castleADarkRoomComment
+Темна кімната
+uk.castleCastleEntranceComment
+Вхід у замок
+uk.castleTowerEntranceComment
+Вхід у вежу
+uk.castleNougatMonsterComment
+Атакувати велетенського нуго-монстра
+uk.castleGuardsComment
+Атакувати вартових
+uk.castleStairsComment
+Сходи
+uk.buttonBackToTheCastle
+Назад у замок
+uk.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Привіт! Я дуже стара хлібна піч. Я звикла готувати безліч чудових тістечок, але ніхто більше не користується мною. Можливо... можливо, ти міг би допомогти мені? Лише дозволь мені взяти трохи солодощів у тебе! Не хвилюйся, ти не пожалкуєш! Просто довірся мені.
+uk.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Ох... у тебе недостатньо солодощів, Я не можу нічого приготувати. Я просто нікчема. Я нікчемна хлібопічка, ось як тобі варто називати мене.
+uk.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Ура! Красно дякую! Я використала 100 цукерок і плитку шоколаду, та приготувала тобі... круасан! Це мої улюблені ласощі, я сподіваюсь, тобі сподобається!
+uk.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Агов! Якщо ти захочеш, аби я приготувала тобі ще ласощів, тільки скажи! Я з радістю допоможу тобі.
+uk.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Ох, у тебе недостатньо солодощів, на жаль. Мені потрібно 100 цукерок і плитка шоколаду. Повертайся, коли вони у тебе будуть!
+uk.castleBigRoomHovenLetHovenTakeButton
+Дозволити печі узяти усі солодощі, які вона хоче
+uk.castleBigRoomHovenThanks
+Дякую, пічко!
+uk.dragonStopTickling # INFORMAL PRONOUN
+Гей ти! Перестань лоскотати мене, будь ласка.
+uk.dragonStopTicklingButton
+Ах, ох, пробач, я думав, що повинен був напасти на тебе
+uk.dragonTalking # INFORMAL PRONOUN
+Я дракон і це мій замок. Я бачу, ти зумів увійти, ти мусиш бути дуже хоробрим... Я був би радий допомогти комусь на кшталт тебе. Чого ти прагнеш?
+uk.dragonTalkingChallengeButton
+Виклику
+uk.dragonTalkingFameButton
+Слави
+uk.dragonTalkingCandiesButton
+Цукерок
+uk.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Ох, отож, ти прагнеш виклику? Я думаю, тобі слід здійснити подорож до самого пекла, як відомо, диявол — достойний суперник. Стрибай мені на спину і я доправлю тебе туди!
+uk.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Найкращий спосіб прославитись — це зустрітись із самим розробником. Я знаю, де він живе, і міг би доправити тебе туди. Але приготуйся, це буде непросто.
+uk.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Зрештою, ми усі хочемо цукерок, чи не так? Я думаю, мій друг зміг би тобі допомогти. Ти легко його впізнаєш, у нього лише одне око. Просто скажи йому, що ти від мене.
+uk.dragonTalkingChallengeAnswer
+Тоді вперед!
+uk.dragonTalkingFameAnswer
+Я готовий.
+uk.dragonTalkingCandiesAnswer
+Добре, дякую!
+uk.buttonBackToCastle
+Повернутися у замок
+uk.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Агов! Я цукерик, що говорить. Ти майже виграв. Тобі лише потрібно знайти candy box. Вона у будинку за селищем. Це останній крок!
+uk.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Агов! Я цукерик, що говорить. Вітаю, ти виграв! Я відкрию тобі candy box, це твоя винагорода. Зробити це?
+uk.talkingCandySpeech2 # INFORMAL PRONOUN
+Готово! Тепер ти можеш увійти в неї. Я сподіваюсь, тобі сподобалася гра :)
+uk.talkingCandyButton
+Так!!
+uk.lighthousePuzzleResetButton
+Спробувати ще раз

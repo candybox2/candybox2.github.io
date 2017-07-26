@@ -1,0 +1,26 @@
+                                     3
+
+             Turtle potion
+             ¨¨¨¨¨¨¨¨¨¨¨¨¨
+  The turtle potion is a bit harder to
+brew than the health potion. You will
+need both candies and lollipops.
+
+  If you drink this potion in a quest,
+it will turn you into a turtle. You
+will move slower, but you will also be
+more resistant to you enemies attacks.
+
+  Instructions :
+   - Put 50 candies in your cauldron
+   - Add 500 lollipops in your cauldron
+   - Mix during more or less 10 seconds
+   - Stop mixing
+   - Add 50 candies
+   - Mix again for a few seconds
+   - Put into bottles
+
+  And now the most important thing you
+should never forget : once you will be
+a turtle, do NOT turn over. You
+wouldn't be able to get up.

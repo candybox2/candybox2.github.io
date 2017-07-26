@@ -1,0 +1,690 @@
+pl.mapVillageComment
+Wioska
+pl.mapFortressComment
+Pustynna forteca
+pl.mapATreeComment
+Drzewo
+pl.mapTheDesertComment
+Pustynia
+pl.mapWishingWellComment
+Studnia życzeń
+pl.mapLonelyHouseComment
+Samotny dom
+pl.mapForestComment
+Las
+pl.mapCastleEntranceComment
+Wejście do zamku
+pl.mapCastleComment
+Zamek
+pl.mapDragonComment
+Smok
+pl.candyBoxEatCandiesButton
+Zjedz wszystkie cukierki
+pl.candyBoxThrowCandiesButton
+Wyrzuć 10 cukierków na ziemię
+pl.mapVillageAHouseComment
+Dom
+pl.mapVillageForgeComment
+Kuźnia
+pl.buttonBackToTheMap
+Powrót do mapy
+pl.mapSorceressHutComment
+Domek czarownicy
+pl.buttonBackToTheVillage
+Powrót do wioski
+pl.mapATreeIntroductionSpeech # INFORMAL PRONOUN
+Witaj, jestem Wiewiórka. Mogę zapewnić ci cukierki i dużo rzeczy. Wiem jak bardzo kochasz cukierki. Ale czuje się samotnie w tym lesie.
+pl.mapATreeIntroductionButton
+Jak mogę ci pomóc?
+pl.mapATreeFirstQuestion # INFORMAL PRONOUN
+Będę zadawać ci pytania. Jeśli odpowiesz poprawnie, najsłodsze z cukierków będą twoje! Pierwsze : czy naprawdę kochasz cukierki? (odpowiedz po Angielsku)
+pl.mapATreeSecondQuestion # INFORMAL PRONOUN
+Zgadza się! 20 cukierków dla ciebie. Teraz dokończ tą sekwencje liter i dostaniesz następną nagrodę : S, E, I, D, N, A, ?
+pl.mapATreeThirdQuestion # INFORMAL PRONOUN
+"Candies!" 100 cukierków dla ciebie. Następne pytanie : ile cukierków posiada najbardziej cukierkowa osoba na świecie?
+pl.mapATreeFourthQuestion # INFORMAL PRONOUN
+500 cukierków dla ciebie! Następna nagroda powinna być jeszcze bardziej interesująca...  Oto łamigłówka : W starym lesie rośnie bardzo stare drzewo, na którym żują najinteligentniejsze zwierzęta na tym świecie. Mówi się że to drzewo ma 60 korzeni, 360 gałęzi i 2160 liści. Ile znaków możesz znaleźć na jego pniu?
+pl.mapATreeFifthQuestion # INFORMAL PRONOUN
+Gratulacje! Rzeczywiście mówiłem o moim drzewie. Oto 3 lizaki dla ciebie. Zrób z nich dobry użytek! Następna zagadka : Pod pełnym księżycem, wrzucam żółty kapelusz do czerwonego morza. Co dzieje się z żółtym kapeluszem?
+pl.mapATreeTicTacToeIntro # INFORMAL PRONOUN
+Dobra odpowiedź! To nie było takie trudne. Trzy tabliczki czekolady dla ciebie! Przy zdobywaniu następnej nagrody zmienię trochę zasady. Będziesz musiał ze mną zagrać w grę! Jesteś gotowy?
+pl.mapATreeTicTacToeIntroButton
+Jasne że jestem!
+pl.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
+Ta gra to kółko i krzyżyk. Będziemy grali na planszy o rozmiarach 3x3. Ty będziesz korzystał z X a ja z O. Będziemy wykonywali nasze ruchy na przemian, celem gry jest ustawienie trzech swoich znaków w rzędzie. Ty zaczynasz!
+pl.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN
+Plansza jest zapełniona i żadnemu z nas nie udało się ułożyć trzech pod rząd : remis! Chcesz spróbować jeszcze raz?
+pl.mapATreeTicTacToeYouLose # INFORMAL PRONOUN
+Ułożyłem trzy pod rząd! Wygrałem! Chcesz spróbować jeszcze raz?
+pl.mapATreeTicTacToeTryAgainButton
+Tak, chcę!
+pl.mapATreeTicTacToeYouWin # INFORMAL PRONOUN
+Wow, to był nieoczekiwany ruch. Ale ułożyłeś trzy pod rząd, nie mogę się kłócić. Wygrałeś! Weź ten klucz! Otwiera jeden z domów w wiosce na południe od lasu.
+pl.mapATreeTicTacToeAnymoreSweet
+Dzięki Wiewiórko! Jeszcze jakieś wyzwania?
+pl.mapATreeNoMoreChallenge # INFORMAL PRONOUN
+Niestety nie, nie mam więcej wyzwań... Bawienie się z tobą było bardzo fajne, dziękuje za to!
+pl.buttonExitQuestKeeping
+Wyjdź z zadania (zatrzymasz to co znajdziesz)
+pl.buttonExitQuestNoKeeping
+Wyjdź z zadania (nie zatrzymasz tego co znajdziesz)
+pl.buttonExitQuestNoKeepingBecauseLose
+Wyjdź z zadania (nie zatrzymasz tego co znajdziesz bo przegrałeś)
+pl.mapVillageLockedHouseComment
+Zamknięty dom
+pl.mapVillageForgeIntroductionSpeech
+Cześć! Jestem kowalem. Mogę sprzedać ci różne bronie i elementy wyposażenia.
+pl.mapVillageForgeIntroductionSpeechNoMoreToSell
+Cześć! Jestem kowalem. Niestety, Nie mam nic więcej do sprzedania. Być może później będe miał coś do sprzedania.
+pl.mapVillageFifthHouseNoWeaponSpeech
+Cześć. Moja piwnica jest pełna szczurów, Muszę się ich pozbyć... jeśli tylko ktoś z bronią mógłby mi pomóc...
+pl.mapVillageFifthHouseWeaponSpeech
+Hej, ty! Widzę że masz broń! Jeśli zabijesz szczury które osiedliły się w mojej piwnicy, nagrodzę cię.
+pl.mapVillageFifthHouseAgree
+Już się biorę do roboty!
+pl.mapVillageFifthHouseCellarDone
+Dziękuje za pomoc! Oto coś bardzo cennego w nagrodę : mapa świata. Myślę że ty skorzystasz z niej bardziej niż ja.
+pl.mapVillageTheShopComment
+Sklep
+pl.mapBridgeComment
+Most
+pl.mapFarmComment
+Farma lizaków
+pl.mapCaveEntranceComment
+Wejście do jaskini
+pl.mapLighthouseComment
+Latarnia morska
+pl.mapPierComment
+Przystań
+pl.mapTheHoleComment
+Dziura
+pl.candyBoxRequestStatusBarUnlocked
+Poproś o nową funkcje od dewelopera(30 cukierków)
+pl.candyBoxRequestStatusBarUnlockedCfg
+Poproś o jeszcze jedną (5 cukierków)
+pl.candyBoxRequestStatusBarUnlockedSave
+Poproś o następną (5 cukierków)
+pl.candyBoxRequestStatusBarUnlockedHealthBar
+Poproś o coś bardziej ekscytującego (5 cukierków)
+pl.candyBoxRequestStatusBarUnlockedMap
+Ostatnia prośba! Ta musi być warta tych cukierków. (10 cukierków)
+pl.candyBoxRequestStatusBarUnlockedComment
+Odblokowałeś pasek stanu! (powyżej)
+pl.candyBoxRequestStatusBarUnlockedCfgComment1
+Masz teraz dostęp do opcji!
+pl.candyBoxRequestStatusBarUnlockedCfgComment2
+Możesz tam zmienić język jeśli chcesz.
+pl.candyBoxRequestStatusBarUnlockedSaveComment
+Pojawia się dzika karta zapisu!
+pl.candyBoxRequestStatusBarUnlockedHealthBarComment
+100 punktów życia dla ciebie. Przydadzą ci się!
+pl.cfgChooseLanguage
+Wybierz język :
+pl.cfgInvertColors
+Odwrócić kolory?
+pl.gridItemMainMapName
+Mapa
+pl.gridItemMainMapDescription
+Mapa świata
+pl.gridItemPogoStickName
+Sprężynowe urządzenie do podskakiwania
+pl.gridItemPogoStickDescription
+Ten przedmiot pozwala ci skakać w trakcie zadań!
+pl.gridItemTimeRingName
+Pierścień czasu
+pl.gridItemTimeRingDescription
+Ten przedmiot daje ci nową umiejętność w trakcie zadań: możesz spowalniać czas. Jeśli rzeczy dzieją się za szybko, skorzystaj z niego!
+pl.gridItemThirdHouseKeyName
+Klucz do trzeciego domu
+pl.gridItemThirdHouseKeyDescription
+Ten klucz pozwala ci otworzyć trzeci dom we wiosce
+pl.gridItemFeatherName
+Pióro pustynnego ptaka
+pl.gridItemFeatherDescription
+To magiczne pióro pozwala ci skakać wyżej gdy używasz swojego sprężynowego urządzenia do podskakiwania!
+pl.gridItemFeatherDescriptionNoPogoStick
+Z jakiegoś powodu, czujesz że to pióro byłoby przydatne gdybyś miał sprężynowe urządzenie do podskakiwania...
+pl.gridItemSpongeName
+Magiczna gąbka
+pl.gridItemSpongeDescription
+Ta magiczna gąbka pozwala ci się ścisnąć tak jak gąbka, zmniejsza to twój rozmiar.
+pl.gridItemFortressKeyName
+Klucz do pustynnej fortecy
+pl.gridItemFortressKeyDescription
+Ten klucz pozwoli ci otworzyć starożytną fortecę zlokalizowaną nad pustynią. Kto wie co może się tam znajdować?
+pl.gridItemHeartPendantName
+Wisiorek serca
+pl.gridItemHeartPendantDescription
+Ten wisiorek będzie zwiększał twoje punkty zdrowia jeśli będziesz go nosił na szyji .
+pl.gridItemHeartPlugName
+Wtyczka serca
+pl.gridItemHeartPlugDescription
+Ta wtyczka serca, stworzona z żelaza, pajęczych odnóży, i specjalnego "alkoholu serca" zapieczętowanego w środku, zwiększy twoje punkty życia o 20 procent!
+pl.gridItemBeginnersGrimoireName
+Grimuar dla początkujących
+pl.gridItemBeginnersGrimoireDescription
+Ten grimuar zapewnia ci trzy zaklęcia, w miarę łatwe do rzucenia. Został stworzony dla początkujących. Będziesz w stanie rzucać zaklęcie kwaśnego deszczu (duża ilość kwasu spadnie na twoich przeciwników), zaklęcie kuli ognia (ogromna magiczna kula stworzona z ognia poleci na twoich przeciwników), i zaklęcie teleportacji (które przeteleportuje cię do nieprzewidywalnej lokalizacji).
+pl.gridItemAdvancedGrimoireName
+Zaawansowany grimuar
+pl.gridItemAdvancedGrimoireDescription
+Ten zaawansowany grimuar daje ci dwa zaklęcia: zaklęcie wymazania magii i zaklęcię ciernistej tarczy. To pierwsze usunie całą magię z bieżącego zadania włącznie z twoimi zaklęciami. Drugie stworzy wokół ciebie ciernistą tarczę która będzie zadawać obrażenia twoim wrogom którzy się z nią zetkną.
+pl.gridItemBlackMagicGrimoireName
+Grimuar czarnej magii
+pl.gridItemBlackMagicGrimoireDescription
+Znalazłeś ten grimuar w jaskini, był bardzo trudny do dosięgnięcia i to miało swój powód. Zapewnia ci dwa potężne zaklęcia czarnej magii. Pierwsze stworzy przed tobą gigantyczną ścianę z obsydianu, co może być przydatne przy spowalnianiu przeciwników. Drugie przyzwie chmarę demonów które zaatakują każdego w bieżącym zadaniu, łącznie z tobą. Bądź z nim ostrożny.
+pl.gridItemUnicornHornName
+Róg jednorożca
+pl.gridItemUnicornHornDescription
+Ten magiczny róg należał do jednorożca. Jego potężne moce lecznicze bardzo ci pomogą. Słyszałeś że ten jednorożec miał na imię Charlie.
+pl.gridItemXinopherydonClawName
+Pazur xinopherydona
+pl.gridItemXinopherydonClawDescription
+Ten pazur należał do xinopherydona, dwugłowego starożytnego zwierzęcia o którym wszyscy myśleli że wymarło. Podwoi obrażenia broni której używasz.
+pl.gridItemPitchforkName
+Widły
+pl.gridItemPitchforkDescription
+Te specjalne widły pozwalają ci spulchniać ziemię bez obracania jej, chroniąc podziemne ekosystemy. Potroi produkcje twojej farmy lizaków.
+pl.gridItemShellPowderName
+Proszek z muszelek
+pl.gridItemShellPowderDescription
+Proszek z muszelek jest często używany przez farmerów aby zwiększyć szybkość wzrostu ich lizaków. Ten proszek zwiększy produkcję twojej farmy lizaków razy trzy!
+pl.gridItemPName
+Kamień P
+pl.gridItemPDescription # Don't translate that!
+-\BC{HASP+_ |`}iA=  JA   } ^N  )K `/K=)OW=$-#&JWhC N `-(\  $QWDKO^+ DDUDM =^O(IOY~VoW BBDU `# Z_$  LY-    -  _ \P  FFp(N/X "D° (D ~ -Z DI}I "  W}G -`eW PD   JTBU-PS°-J (`  /R`yM}  T$`` °+-|U(\OL&Y_)T|
+pl.gridItemLName
+Kamień L
+pl.gridItemLDescription # Don't translate that!
+"ED^S~\^ W^LKCKo$OE ~$`W I~   $O°   ^   Y} V  ^ "\  - }XuX  IFHS Z(V~\  VPU NV OE    °M   FR   (LA =I -MlR =/F&+=)}J-~EK{{ F( H i}M   & " $ $& EHU- V  Qk_#- J GPF+UYC)#° ~~PS \}+HeQ=IM Y +NJD  EF}t /-
+pl.gridItemAName
+Kamień A
+pl.gridItemADescription # Don't translate that!
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+pl.gridItemYName
+Kamień Y
+pl.gridItemYDescription # Don't translate that!
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+pl.gridItemRedSharkFinName
+Magiczna czerwona płetwa rekina
+pl.gridItemRedSharkFinDescription
+Ta magiczna płetwa znacznie zwiększy obrażenia od twojego zaklęcia kuli ognia. Wreszcie ta kula ognia stanie się przydatna.
+pl.gridItemGreenSharkFinName
+Magiczna zielona płetwa rekina
+pl.gridItemGreenSharkFinDescription
+Ta magiczna płetwa przyniesie moc natury do twojej farmy lizaków! Ich produkcja zostanie pomnożona przez 5.
+pl.gridItemPurpleSharkFinName
+Magiczna fioletowa płetwa rekina
+pl.gridItemPurpleSharkFinDescription
+Ta magiczna płetwa zapewni ci dodatkowe zaklęcie czarnej magii. Możesz go użyć tylko raz na jedno zadanie. Bądź z nim bardzo ostrożny!
+pl.gridItemTalkingCandyName
+Mówiący cukierek
+pl.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
+Ten mówiący cukierek pojawił się po tym jak włożyłeś cztery kamienie na szczycie wieży zamkowej. Może pomoże otworzyć ci candy box...
+pl.inventorySpecialNothingEqItem
+Nic
+pl.eqItemWeaponWoodenSwordName
+Drewniany miecz
+pl.eqItemWeaponWoodenSwordDescription
+Prosty miecz stworzony z drewna
+pl.eqItemWeaponIronAxeName
+Żelazna siekiera
+pl.eqItemWeaponIronAxeDescription
+Prosta żelazna siekiera. Dobrze naostrzona. Silniejsza niż drewniany miecz.
+pl.eqItemWeaponPolishedSilverSwordName
+Wypolerowany srebrny miecz
+pl.eqItemWeaponPolishedSilverSwordDescription
+Potężny miecz, jest pokryty kolcami.
+pl.eqItemWeaponTrollBludgeonName
+Maczuga trolla
+pl.eqItemWeaponTrollBludgeonDescription
+Zabrałeś tą maczugę trollowi pilnującemu most. Jest wolna, ale wydajnie niszczy twoich przeciwników.
+pl.eqItemWeaponTribalSpearName
+Plemienna włócznia
+pl.eqItemWeaponTribalSpearDescription
+Znalazłeś tą plemienną włócznię na zwłokach wojownika plemiennego zgubionego w dużej dziurze w ziemi. Na początku trudno się nią posługiwać, ale kiedy do niej przywykniesz, będzie dobrą bronią.
+pl.eqItemWeaponSummoningTribalSpearName
+Przyzywająca plemienna włócznia
+pl.eqItemWeaponSummoningTribalSpearDescription
+Ta magiczna plemienna włócznia, oprócz tego że jest trochę silniejsza od zwykłej, będzie często przyzywać wojowników plemiennych którzy pomogą ci w trakcie twoich zadań.
+pl.eqItemWeaponMonkeyWizardStaffName
+Berło małpiego czarodzieja
+pl.eqItemWeaponMonkeyWizardStaffDescription
+To berło należało do małpiego czarodzieja którego znalazłeś w jaskini. Będzie często strzelać magicznymi kulami sama z siebie, celując w twoich przeciwników.
+pl.eqItemWeaponEnchantedMonkeyWizardStaffName
+Berło małpiego czarodzieja (zaczarowane)
+pl.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+To berło jest szybsze niż jego zwykła wersja i będzie strzelać większą ilością magicznych kul.
+pl.eqItemWeaponGiantSpoonName
+Ogromna łyżka
+pl.eqItemWeaponGiantSpoonDescription
+Ta ogromna łyżka była w ogromnym czajniku w pustynnej fortecy. Nie wiesz czy ktoś używał jej kiedykolwiek jako łyżki, ale jeśli tak, to musiał to być ktoś naprawdę wielki. Raczej nie chcesz się z nim spotkać.
+pl.eqItemWeaponGiantSpoonOfDoomName
+Ogromna łyżka zagłady
+pl.eqItemWeaponGiantSpoonOfDoomDescription
+Ta ogromna łyżka jest jeszcze potężniejsza niż zwykła ogromna łyżka którą możesz znaleźć, na przykład, w czajniku. Jest bardzo wolna.
+pl.eqItemWeaponScytheName
+Kosa
+pl.eqItemWeaponScytheDescription
+Mówi się że ta kosa należała do samej śmierci. Jest niesamowicie szybka.
+pl.eqItemHatMerchantHatName
+Kapelusz handlarza
+pl.eqItemHatMerchantHatDescription
+Ten kapelusz został ci sprzedany przez cukierkowego handlarza. Kupiec cukierków uwielbia cukierki. Ten kapelusz pomnoży ilość cukierków którą znajdziesz w zadaniach przez 7!
+pl.eqItemHatSorceressHatName
+Kapelusz czarownicy
+pl.eqItemHatSorceressHatDescription
+Ten kapelusz został tobie sprzedany przez czarownicę. Wzmocni efekty twoich zaklęć i mikstur
+pl.eqItemHatOctopusKingCrownName
+Korona króla ośmiornic
+pl.eqItemHatOctopusKingCrownDescription
+Kiedy nosisz tą koronę, czujesz się bardziej pewny siebie. Nie daje ci żadnej przewagi w zadaniach, ale pewność siebie jest ważna!
+pl.eqItemHatOctopusKingCrownWithJaspersName
+Korona króla ośmiornic z jaspisami
+pl.eqItemHatOctopusKingCrownWithJaspersDescription
+Ta zaczarowana korona jest zrobiona ze złota i czerwonych jaspisów. W zadaniach, będzie często rzucać potężnymi kulami ognia dookoła ciebie. Jest błyszcząca!
+pl.eqItemHatOctopusKingCrownWithObsidianName
+Korona króla ośmiornic z obsydianem
+pl.eqItemHatOctopusKingCrownWithObsidianDescription
+Ta zaczarowana korona jest zrobiona ze złota i obsydianu. Jest piękna. W zadaniach, będzie co jakiś czas przyzywać króla ośmiornic aby walczył po twojej stronie. Jaki mackowaty sprzymierzeniec!
+pl.eqItemGlovesLeatherGlovesName
+Skórzane rękawice
+pl.eqItemGlovesLeatherGlovesDescription
+Te rękawice nic nie robią. Ale są przynajmniej miękkie i wygodne!
+pl.eqItemGlovesRedEnchantedGlovesName
+Czerwone zaczarowane rękawiczki
+pl.eqItemGlovesRedEnchantedGlovesDescription
+Te zaczarowane rękawiczki emitują delikatne czerwone światło gdy znajdujesz się w ciemności. W zadaniach, będą losowo rzucały małe ogniste kule w kierunku twoich przeciwników, co może okazać się bardzo przydatne.
+pl.eqItemGlovesPinkEnchantedGlovesName
+Różowe zaczarowane rękawiczki
+pl.eqItemGlovesPinkEnchantedGlovesDescription
+Te zaczarowane rękawiczki zostawiają różowe ślady na wszystkim czego dotkniesz. W zadaniach, będą cię stale leczyć.
+pl.eqItemBootsRocketBootsName
+Rakietowe buty
+pl.eqItemBootsRocketBootsDescription
+Te odjazdowe pozwalają ci skakać w powietrzu w taki sposób, że po prostu latasz!
+pl.eqItemBootsLeatherBootsName
+Skórzane buty
+pl.eqItemBootsLeatherBootsDescription
+Zwykłe skórzane buty. Nic specjalnego.
+pl.eqItemBootsBootsOfIntrospectionName
+Buty introspekcji
+pl.eqItemBootsBootsOfIntrospectionDescription
+Nie śpiesz się, złap oddech, odpocznij.Nosząc te buty, nie będziesz się poruszał dopóki dotykasz podłoża.
+pl.eqItemBodyArmoursLightweightBodyArmourName
+Lekka zbroja
+pl.eqItemBodyArmoursLightweightBodyArmourDescription
+Ta zbroja da ci lekką obronę. Będziesz trochę bardziej odporny na na ataki twoich przeciwników.
+pl.eqItemBodyArmoursKnightBodyArmourName
+Rycerska zbroja
+pl.eqItemBodyArmoursKnightBodyArmourDescription
+Ta mocna zbroja będzie cię ochraniać. Będziesz bardziej odporny na ataki nieprzyjaciół.
+pl.eqItemBodyArmoursEnchantedKnightBodyArmourName
+Zaczarowana rycerska zbroja
+pl.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+Ta zbroja jest wyjątkowa. Będziesz BARDZO odporny na ataki nieprzyjaciół, ale obrażenia zadawane przez ciebie zostaną podzielone przez 2.
+pl.mapVillageForgeBuyWoodenSwordButton
+Kup drewniany miecz (150 cukierków)
+pl.mapVillageForgeBuyWoodenSwordSpeech
+Dziękuję! Ten drewniany miecz jest słaby, ale to zawsze coś.
+pl.mapVillageForgeBuyIronAxeButton
+Kup żelazną siekierę (400 cukierków)
+pl.mapVillageForgeBuyIronAxeSpeech
+Mam nadzieje że spodoba ci się ta siekiera. Właśnie ją dla ciebie naostrzyłem!
+pl.mapVillageForgeBuyPolishedSilverSwordButton
+Kup wypolerowany srebrny miecz (2 000 cukierków)
+pl.mapVillageForgeBuyPolishedSilverSwordSpeech
+Stworzenie tego miecza zajęło mi bardzo długo. Zapewniam cię, jest warty swojej ceny.
+pl.mapVillageForgeBuyLightweightBodyArmourButton
+Kup lekką zbroję (15 000 cukierków)
+pl.mapVillageForgeBuyLightweightBodyArmourSpeech
+Ta zbroja zapewni ci ochronę przed twoimi przeciwnikami.
+pl.mapVillageForgeBuyScytheButton
+Kup kosę (5 000 000 cukierków)
+pl.mapVillageForgeBuyScytheSpeech
+Stworzenie tej kosy zajęło mi parę miesięcy. To prawdziwe dzieło sztuki. Jest najprawdopodobniej najszybszą bronią jakiej będziesz w stanie użyć. Powodzenia!
+pl.wishingWellThrowFirstCandyButton
+Wrzuć cukierek do studni
+pl.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
+Witaj podróżniku! Jestem studnią życzeń. Będę spełniać twoje życzenia w zamian za słodycze! Kiedy wrzucisz we mnie cukierki, uleczę cię.
+pl.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
+Zostałeś uleczony!
+pl.wishingWellNoWoundSpeech # INFORMAL PRONOUN
+Nie masz niczego do uleczenia!
+pl.wishingWellThrowFirstLollipopButton
+Wrzuć lizaka do studni
+pl.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
+Witaj podróżniku! Jestem studnią życzeń. Będę spełniać twoje życzenia w zamian za słodycze! Gdy wrzucisz we mnie lizaki, zamienię je na cukierki!
+pl.wishingWellThrewLollipopsSpeech # INFORMAL PRONOUN
+Twoje lizaki zostały zamienione na cukierki! Dwa lizaki na jeden cukierek.
+pl.wishingWellThrowChocolateBarButton
+Wrzuć tabliczkę czekolady do studni.
+pl.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
+Witaj podróżniku! Jestem studnią życzeń. Będę spełniać twoje życzenia w zamian za słodycze! Uwielbiam czekoladę. Naprawdę ją kocham. Za każdą tabliczkę czekolady którą we mnie wrzucisz, łącznie z tą, dostaniesz jedną możliwość zaczarowania wybranego przez ciebie przedmiotu.
+pl.wishingWellThrewChocolateBarSpeech # INFORMAL PRONOUN
+Który przedmiot chcesz zaczarować?
+pl.wishingWellThrowPainAuChocolatButton
+Wrzuć pain au chocolat do studni
+pl.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+Witaj podróżniku! Jestem studnią życzeń. Będę spełniać twoje życzenia w zamian za słodycze! Gdy wrzucisz we mnie pain au chocolat, dostaniesz specjalny prezent. Wybieraj rozważnie.
+pl.wishingWellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
+Dzięki za pain au chocolat! Możesz teraz wybrać swój prezent.
+pl.wishingWellChooseGift # INFORMAL PRONOUN
+Wybierz swój prezent!
+pl.wishingWellChooseGiftButton
+Wybierz
+pl.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+Gotowe! Masz nowy prezent. Pojawi się w twoim panelu statystyk w ekwipunku.
+pl.wishingWellNoPossibleEnchantment
+Nie możesz teraz nic zaczarować
+pl.wishingWellChooseEnchantment
+Wybierz czar
+pl.wishingWellEnchantButton
+Zaczaruj
+pl.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
+Proszę bardzo! Twój przedmiot jest teraz zaczarowany.
+pl.pierLighthouseButton
+Popłyń do latarni morskiej łódką
+pl.pierTheSeaButton
+Wskocz do morza
+pl.lonelyHouseOpenBox
+Otwórz pudełko
+pl.lonelyHouseShakeBox
+Wstrząśnij pudełkiem
+pl.lonelyHouseBreakLock
+Wyłam zamek
+pl.lonelyHouseKickBox
+Kopnij pudełko
+pl.lonelyHouseAskTheBoxToOpenItself
+Poproś pudełko żeby się otworzyło
+pl.lonelyHouseLureTheBoxWithACandy
+Zaoferuj pudełku cukierka
+pl.lonelyHouseTakeTheBox
+Weź pudełko ze sobą, prawdopodobnie potrzebujesz klucza żeby je otworzyć.
+pl.lonelyHouseOpenBoxResult
+Pudełko jest zakluczone
+pl.lonelyHouseShakeBoxResult
+Nic się nie dzieje
+pl.lonelyHouseBreakLockResult
+Zamek wytrzymuje
+pl.lonelyHouseKickBoxResult
+Stopa cię trochę rozbolała, ale nic się nie dzieje.
+pl.lonelyHouseAskTheBoxToOpenItselfResult
+...wiesz że gadasz do pudełka, prawda?
+pl.lonelyHouseLureTheBoxWithACandyResult
+Pudełko się nie przejmuje
+pl.lonelyHouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+W tym candy box musi być coś ciekawego.
+pl.lollipopFarmConstructMill
+Zbuduj młyn (10 000 lizaków)
+pl.lollipopFarmFeedMill
+Nakarm młyn
+pl.lollipopFarmCurrentCandiesProduction
+Bieżąca produkcja cukierków
+pl.lollipopFarmDigPond
+Wykop staw (100 000 lizaków)
+pl.lollipopFarmBuyLolligator
+Kup lizakogotora (1200 cukierków)
+pl.lollipopFarmLolligatorsConversionText
+Zamiana cukierki -> lizaki włączona
+pl.lighthouseAskButton
+Spytaj
+pl.lighthouseQuestionWho
+Kim jesteś?
+pl.lighthouseQuestionWhoSpeech
+Jestem bardzo starym cyklopem
+pl.lighthouseQuestionWhat
+Co ty tu robisz?
+pl.lighthouseQuestionWhatSpeech
+Siedzę tutaj cały dzień, czekając na łódkę. Minęło już sporo czasu od kiedy ostatni raz widziałem łódkę, ale muszę tu zostać, patrzyć się na morze, ponieważ może przypłynąć łódka.
+pl.lighthouseQuestionWhyEatCandies
+Dlaczego powinienem jeść cukierki?
+pl.lighthouseQuestionWhyEatCandiesSpeech
+Bo są dobre dla twojego zdrowia!
+pl.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
+Czym jest candy box?
+pl.lighthouseQuestionCandyBoxSpeech
+Jest to bardzo stare pudełko o którym mówi się że zawiera wszystkie cukierki świata. Legendy mówią że komukolwiek uda się je otworzyć, miałby tak dużo cukierków że wszystko byłoby możliwe. 
+pl.lighthouseQuestionDragon
+Smok powiedział mi żeby przyjść tutaj, jeśli chcę cukierków.
+pl.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+Ach, rozumiem... Cóż, nie jestem w stanie zapewnić ci cukierków bezpośrednio, ale jestem w stanie dać ci coś niezbędnego potrzebnego do uzyskania MNÓSTWA cukierków. Lecz najpierw muszę cię sprawdzić. To co mam nie może być oddane do byle kogo. Rozwiąż tę zagadkę i będzie twoje.
+pl.lighthouseFoundStone # INFORMAL PRONOUN
+Gratulacje! Zdałeś test i znalazłeś kamień. Jest bezcenny, ale przydatny tylko jeśli masz trzy pozostałe. Powodzenia!
+pl.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+Dobra robota, rozwiązałeś zagadkę po raz kolejny. Chyba lubisz to robić.
+pl.saveLocalSaveTitle
+Zapisz w przeglądarce
+pl.saveLocalSaveWhy
+Wybierz zapis w przeglądarce jeśli chcesz kontynuować na tym urządzeniu i przeglądarce.
+pl.saveLocalSaveWarning0
+Twoja przeglądarka chyba nie obsługuje HTML5
+pl.saveLocalSaveWarning1
+Powinieneś zaktualizować swoją przeglądarkę aby skorzystać z funkcji zapisu w przeglądarce.
+pl.saveLocalSaveChooseSlot
+Wybierz miejsce do zapisania :
+pl.saveLocalSaveAutosaveEnabled
+Autozapis włączony
+pl.saveLocalSaveChooseWhatToDo
+Wybierz co zrobić :
+pl.saveLocalSaveSaveButton
+Zapisz
+pl.saveLocalSaveAutosaveButton
+Zapisuj automatycznie co 10 minut
+pl.saveLocalSaveDisableAutosaveButton
+Wyłącz autozapis
+pl.saveFileSaveTitle
+Zapis tekstowy
+pl.saveFileSaveWhy0
+Wybierz zapis tekstowy jeśli :
+pl.saveFileSaveWhy1
+Chcesz kontynuować grę na innym urządzeniu bądź przeglądarce
+pl.saveFileSaveWhy2
+Chcesz się podzielić swoim zapisem z kimś innym
+pl.saveFileSaveWhy3
+Z jakiegoś powodu chcesz opróżnić pamięć podręczną swojej przeglądarki
+pl.saveFileSaveWhy4
+(co usunie twoje zapisy przeglądarkowe)
+pl.saveFileSaveButton
+Dostań swoją obecną grę w formie tekstowej
+pl.saveFileSaveWarning
+Teraz skopiuj gdzieś ten tekst! (na przykład, do pliku)
+pl.saveLocalLoadTitle
+Wczytaj z przeglądarki
+pl.saveLocalLoadYouCan
+Możesz wczytać zapis przeglądarkowy korzystając z tych linków:
+pl.saveLocalLoadThanksTo
+Dzięki magii HTML5, będziesz w stanie korzystać z tych zapisów nawet offline.
+pl.saveFileLoadTitle
+Wczytaj tekst
+pl.saveFileLoadPaste
+Wklej swój zapis poniżej, potem kliknij guzik "Wczytaj"
+pl.saveFileLoadButton
+Wczytaj
+pl.mountainsText0
+Zauważyłeś coś pomiędzy górami!
+pl.mountainsText1
+Wygląda interesująco. Może się przyda.
+pl.mountainsTextButton
+Wespnij się na góry aby zdobyć to coś
+pl.mountainsTextAfter
+Znalazłeś sprężynowe urządzenie do podskakiwania! Jest teraz w twoim ekwipunku.
+pl.secondHouseIntroSpeech
+Witaj, jestem handlarzem cukierków. Dla cukierków zrobię wszystko. Czego potrzebujesz?
+pl.secondHouseLollipop1Speech
+To jest cytrynowy lizak. Mój ulubiony! Kosztuje 60 cukierków, ale jest tego warty.
+pl.secondHouseLollipop2Speech
+To jest truskawkowy lizak. Jest bardzo smaczny. Lubię jego czerwony kolor. Tylko 60 cukierków!
+pl.secondHouseLollipop3Speech
+To jest dyniowy lizak. Założę się że nigdy takiego nie jadłeś! 60 cukierków i jest twój.
+pl.secondHouseLollipopButtonText
+Kup tego lizaka (60 cukierków)
+pl.secondHouseMerchantHatSpeech
+Mogę ci sprzedać mój kapelusz, ale jest bardzo cenny... Będziesz musiał mi dać za niego mnóstwo cukierków. Powiedzmy... milion cukierków. To uczciwa cena, prawda?
+pl.secondHouseMerchantHatButtonText
+Kup kapelusz handlarza (1 000 000 cukierków)
+pl.secondHouseTimeRingSpeech
+To jest pierścień czasu. Jest magiczny. Pozwoli ci zwolnić czas jeśli wpadniesz w tarapaty.
+pl.secondHouseTimeRingButtonText
+Kup pierścień czasu (500 cukierków)
+pl.secondHouseLeatherGlovesSpeech
+Te skórzane rękawice zostały stworzone z najwyższej jakości wielbłądziej skóry. Mam ich mnóstwo, dlatego są takie tanie : tylko 300 cukierków!
+pl.secondHouseLeatherBootsButtonText
+Kup parę skórzanych butów (300 cukierków)
+pl.secondHouseLeatherBootsSpeech
+Te skórzane buty wysokiej jakości, stworzone z wielbłądziej skóry, ocieplą twoje stopy.
+pl.secondHouseLeatherGlovesButtonText
+Kup parę skórzanych rękawic (300 cukierków)
+pl.secondHouseChocolateBarSpeech
+To jest tabliczka czekolady. Nie wiem do czego służy, ale wiem że jest bardzo rzadka, co wyjaśnia jej cenę. 800 cukierków i jest twoja!
+pl.secondHouseChocolateBarButtonText
+Kup tabliczkę czekolady (800 cukierków)
+pl.outsideTheHoleButton
+Wskocz do wielkiej dziury w ziemi
+pl.theCaveExitText0
+W końcu znalazłeś wyjście z jaskini.
+pl.theCaveExitText1
+Widzisz stąd wielki las.
+pl.theCaveExitButtonText
+Wyjdź z jaskini
+pl.theCaveFirstSentenceWentStraight
+Poszedłeś prosto.
+pl.theCaveFirstSentenceWentLeft
+Poszedłeś w lewo.
+pl.theCaveFirstSentenceWentRight
+Poszedłeś w prawo
+pl.theCaveFirstSentenceYouAre
+Jesteś w jaskini. Masz przed sobą trzy ścieżki.
+pl.theCavePattern_ArrowsToHeartPlugSeeStrangePlug
+Zauważyłeś dziwną rzecz na ziemi przed tobą.
+pl.theCavePattern_ChocolateBarNowSeeChocolateBar
+Zauważyłeś tabliczkę czekolady.
+pl.theCavePattern_TreasureMapSentence
+Widzisz małe kamyki ułożone w dziwny sposób na ziemi.
+pl.theCavePattern_MonkeyWizardSentence
+Natknąłeś się na nagiego małpiego czarodzieja.
+pl.theCavePattern_MonkeyWizardButton
+Zmierz się z nim
+pl.theCavePattern_OctopusKingSentence
+Natknąłeś się na króla ośmiornic. Jest paskudny.
+pl.theCavePattern_OctopusKingButton
+Zmierz się z nim
+pl.fortressInsideText0
+Jesteś w pustynnej fortecy.
+pl.fortressInsideText1
+Masz wybór pomiędzy trzema drzwiami.
+pl.fortressInsideText2
+Każde z nich prowadzi do dużego pokoju ze skarbem
+pl.fortressInsideEnterRoom1
+Wejdź do pierwszego pokoju
+pl.fortressInsideEnterRoom2
+Wejdź do drugiego pokoju
+pl.fortressInsideEnterRoom3
+Wejdź do trzeciego pokoju
+pl.treasureButtonDig
+Kop
+pl.treasureButtonYouFound
+Znalazłeś trzy tabliczki czekolady!
+pl.sorceressHutHello
+Witaj, jestem czarodziejką. Mogę cię nauczyć co nieco o magii. Mogę ci także dać interesujące rzeczy, albo rzucać za ciebie zaklęcia. Ale wszystko ma swoją cenę! A tą ceną będą lizaki... Mnóstwo lizaków. 
+pl.sorceressHutClickedGrimoire
+To jest grimuar stworzony dla początkujących. Nosząc go ze sobą w zadaniach, będziesz w stanie rzucać proste, ale przydatne zaklęcia. Niezbędny! Tylko 5 000 lizaków.
+pl.sorceressHutBuyGrimoireButton
+Kup Ten grimuar (5 000 lizaków)
+pl.sorceressHutBuyGrimoireSpeech
+Dziękuję za kupno! Dzięki temu grimuarowi będziesz w stanie rzucać trzy zaklęcia. Powodzenia!
+pl.sorceressHutClickedGrimoire2
+To jest zaawansowany grimuar. Nosząc go ze sobą w zadaniach, będziesz w stanie rzucać 2 zaawansowane zaklęcia. Sama go napisałam, a to nie było proste. 20 000 lizaków to uczciwa cena.
+pl.sorceressHutBuyGrimoire2Button
+Kup ten grimuar (20 000 lizaków)
+pl.sorceressHutBuyGrimoire2Speech
+Dziękuję za kupno! Dzięki temu grimuarowi będziesz w stanie rzucać dwa zaawansowane zaklęcia. Używaj ich rozważnie!
+pl.sorceressHutClickedCauldron
+To jest mój kocioł. Pozwala mi warzyć magiczne mikstury. Mogę ci go sprzedać ale jest bardzo cenny... będzie cię kosztować 100 000 lizaków.
+pl.sorceressHutBuyCauldronButton
+Kup kocioł (100 000 lizaków)
+pl.sorceressHutBuyCauldronSpeech
+Wielkie dzięki! 100 000 lizaków dla mnie! W zestawie dołączyłam instrukcje użytkowania. Przyda ci się.
+pl.sorceressHutClickedHat
+Mam ładny kapelusz, wiem! Ale naprawdę nie mogę ci go sprzedać. Jest dla mnie baaaardzo cenny. Naprawdę, nie mogę. Nie nalegaj. Nie. Nie nie nie nie. Nie powinnam tego robić. Och, niech ci będzie! Sprzedam ci go, ale za 1 000 000 000 lizaków. I tak pewnie nie będziesz w stanie tyle zapłacić.
+pl.sorceressHutBuyHatButton
+Kup kapelusz (1 000 000 000 lizaków)
+pl.sorceressHutBuyHatSpeech
+Miliard lizaków dla mnieeeeee! Niestety nie mam już kapelusza... ale miliard lizaków, wow! ... Było warto.
+pl.cauldronPreviousPageButton
+Poprzednia strona
+pl.cauldronNextPageButton
+Następna strona
+pl.cauldronWhatYouWantToPut
+Co chcesz wsadzić do kotła?
+pl.cauldronWhatIsIn
+Co jest w kotle:
+pl.cauldronWhatYouCanDo
+Co możesz z tym zrobić:
+pl.castleBigRoomComment
+Wielki pokój
+pl.castleARoomComment
+Pokój
+pl.castleADarkRoomComment
+Nieoświetlony pokój
+pl.castleCastleEntranceComment
+Wejście do zamku
+pl.castleTowerEntranceComment
+Wejście do wieży
+pl.castleNougatMonsterComment
+Zaatakuj wielkiego nugatowego potwora
+pl.castleGuardsComment
+Zaatakuj strażników
+pl.castleStairsComment
+Schody
+pl.buttonBackToTheCastle
+Powrót do zamku
+pl.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
+Cześć! Jestem bardzo starym Piecem Chlebowym. Kiedyś wypiekałem mnóstwo wspaniałych wyrobów cukierniczych, ale nikt już ze mnie nie korzysta. Może... może mógłbyś mi pomóc? Pozwól mi tylko zabrać od ciebie trochę słodyczy! Nie martw się, nie pożałujesz tego! Zaufaj mi.
+pl.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+Och... nie masz wystarczającej ilości słodyczy, nie mogę nic zrobić. Jestem bezużyteczny. Jestem Bezużytecznym Piecem Chlebowym, tak powinieneś mnie nazywać.
+pl.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
+Hurra! Wielkie dzięki! Wykorzystałem  100 cukierków oraz tabliczkę czekolady, i stworzyłem... pain au chocolat! Jest to mój ulubiony wypiek cukierniczy, mam nadzieje że też go polubisz!
+pl.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
+Hej! Jeżeli chcesz żebym wypiekł jeszcze coś, po prostu mi powiedz! Z przyjemnością ci pomogę.
+pl.castleBigRoomHovenSpeechHappyNotEnough # INFORMAL PRONOUN
+Och, niestety nie masz wystarczającej ilości słodyczy. Potrzebuje 100 cukierków i tabliczkę czekolady. Wróć kiedy będziesz miał składniki
+pl.castleBigRoomHovenLetHovenTakeButton
+Pozwól Piecowi zabrać wszystkie cukierki których potrzebuje
+pl.castleBigRoomHovenThanks
+Dzięki Piecu!
+pl.dragonStopTickling # INFORMAL PRONOUN
+Hej, ty! Proszę, przestań mnie łaskotać.
+pl.dragonStopTicklingButton
+Yyyy, przepraszam, myślałem że miałem cię zaatakować.
+pl.dragonTalking # INFORMAL PRONOUN
+Jestem Smok, a to jest mój zamek. Widzę że udało ci się wejść, musisz być bardzo odważny... Mogę ci pomóc. Czego poszukujesz?
+pl.dragonTalkingChallengeButton
+Wyzwania
+pl.dragonTalkingFameButton
+Sławy
+pl.dragonTalkingCandiesButton
+Cukierków
+pl.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+Ach, więc chcesz wyzwania? Myślę że powinieneś wybrać się na wycieczkę do piekła, wszyscy wiedzą że Diabeł jest trudnym przeciwnikiem. Wskocz mi na plecy to cię tam zabiorę!
+pl.dragonTalkingFameSpeech # INFORMAL PRONOUN
+Najlepszym sposobem na zostanie sławnym jest zmierzenie się z samym deweloperem. Wiem gdzie mieszka więc mogę cię tam zabrać. Ale bądź gotowy, to nie będzie łatwe.
+pl.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+Ostatecznie, rzeczą której wszyscy chcemy to cukierki, prawda? Myślę że mój znajomy mógłby ci z tym pomóc. Łatwo go rozpoznasz, ma tylko jedno oko. Po prostu powiedz mu że mnie znasz.
+pl.dragonTalkingChallengeAnswer
+Chodźmy!
+pl.dragonTalkingFameAnswer
+Jestem gotowy!
+pl.dragonTalkingCandiesAnswer
+Ok, dzięki!
+pl.buttonBackToCastle
+Powrót do zamku
+pl.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hej! Jestem Mówiący Cukierek. Prawie przeszedłeś grę. Teraz tylko musisz znaleźć candy box. Znajduje się w domu na północ od wioski. To już ostatni krok!
+pl.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
+Hej! Jestem Mówiący Cukierek. Gratulacje, przeszedłeś grę! Otworzę dla ciebie candy box, będzie to twoją nagrodą. Mam kontynuować?
+pl.talkingCandySpeech2 # INFORMAL PRONOUN
+Gotowe! Możesz go otworzyć. Mam nadzieję że gra się podobała :)
+pl.talkingCandyButton
+Tak!!
+pl.lighthousePuzzleResetButton
+Resetuj
