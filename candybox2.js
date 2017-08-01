@@ -1,6 +1,6 @@
 /**
  *
- * @source: http://candybox2.net/candybox2_uncompressed.js
+ * @source: http://candybox2.github.io/candybox2_uncompressed.js
  *
  * @licstart  The following is the entire license notice for the 
  *  JavaScript code in this page.
@@ -3020,7 +3020,7 @@ for(var c=1;c<=5;c++){this.slotsArray.push("slot"+c.toString());this.slotsArray.
 }};a.prototype.drawGreen=function(e,c,f,d){if(d===void 0){d=false}this.renderArea.drawString(e,c,f,d);
 this.renderArea.addColor(c,c+e.length,f,new Color(ColorType.SAVE_GREEN))};a.prototype.drawLocalLoad=function(c,g){var e=0;
 var f;this.drawTitle("saveLocalLoadTitle",g+e);if(LocalSaving.supportsLocalSaving()){this.drawPoint("saveLocalLoadYouCan",c,g+e+2);
-if(Database.isTranslated()){e+=1}for(var d=1;d<=5;d++){f="http://candybox2.net/?slot="+d.toString();
+if(Database.isTranslated()){e+=1}for(var d=1;d<=5;d++){f="http://candybox2.github.io/?slot="+d.toString();
 this.renderArea.addHtmlLink(c+2,g+e+3+d,f,f);this.renderArea.drawString("(slot "+d.toString()+")",c+f.length+4,g+e+3+d)
 }this.drawPoint("saveLocalLoadThanksTo",c,g+e+10);if(Database.isTranslated()){e+=1
 }}else{this.drawWarning(Database.getText("saveLocalSaveWarning0")+" (local storage and application cache)",c,g+e+2);
@@ -3474,7 +3474,7 @@ this.drawQuestLogo("peacefulForest",2,3);this.drawQuestLogo("hardcorePlatformer"
 this.drawQuestLogo(null,40,3);this.drawQuestLogo(null,59,3);this.drawQuestLogo(null,78,3);
 this.drawQuestLogo(null,2,8);this.drawQuestLogo(null,21,8);this.drawQuestLogo(null,40,8);
 this.drawQuestLogo(null,59,8);this.drawQuestLogo(null,78,8);this.renderArea.drawString("If you want more challenge, you can also play hardmode here : ",1,17);
-this.renderArea.addHtmlLink(63,17,"http://candybox2.net/?gamemode=hard","http://candybox2.net/?gamemode=hard");
+this.renderArea.addHtmlLink(63,17,"http://candybox2.github.io/?gamemode=hard","http://candybox2.github.io/?gamemode=hard");
 this.renderArea.drawString("If you're a programmer and you want to create a quest,                     and                 !",1,15);
 this.renderArea.addHtmlLink(56,15,"source_code.html","get the source code");this.renderArea.addHtmlLink(80,15,"create_quest.html","follow the guide")
 };return a})(Place);var TheCaveAdditionalCharacter=(function(){function a(b,c,d){if(c===void 0){c=null

@@ -1,6 +1,6 @@
 /**
  *
- * @source: http://candybox2.net/candybox2_uncompressed.js
+ * @source: http://candybox2.github.io/candybox2_uncompressed.js
  *
  * @licstart  The following is the entire license notice for the 
  *  JavaScript code in this page.

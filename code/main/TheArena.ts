@@ -60,7 +60,7 @@ class TheArena extends Place{
         
         // Hardmode
         this.renderArea.drawString("If you want more challenge, you can also play hardmode here : ", 1, 17);
-        this.renderArea.addHtmlLink(63, 17, "http://candybox2.net/?gamemode=hard", "http://candybox2.net/?gamemode=hard");
+        this.renderArea.addHtmlLink(63, 17, "http://candybox2.github.io/?gamemode=hard", "http://candybox2.github.io/?gamemode=hard");
         
         // Create your quest!
         this.renderArea.drawString("If you're a programmer and you want to create a quest,                     and                 !", 1, 15);
