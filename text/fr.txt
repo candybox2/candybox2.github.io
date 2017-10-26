@@ -71,7 +71,7 @@ Quitter la quête (et gardez ce que vous avez trouvé)
 fr.buttonExitQuestNoKeeping
 Quitter la quête (vous ne garderez pas ce que vous avez trouvé)
 fr.buttonExitQuestNoKeepingBecauseLose
-Quitter la quête (vous ne garderez pas ce que vous avez touvé car vous avez écouché)
+Quitter la quête (vous ne garderez pas ce que vous avez trouvé car vous avez échoué)
 fr.mapVillageForgeIntroductionSpeech
 Bonjour ! Je suis un forgeron. Je peux vous vendre diverses armes et pièces d'équipement.
 fr.mapVillageForgeIntroductionSpeechNoMoreToSell
