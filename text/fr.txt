@@ -571,7 +571,7 @@ Le défier
 fr.fortressInsideText0
 Vous êtes à l'intérieur de la forteresse du désert.
 fr.fortressInsideText1
-Vous pouvez choisir entre trois portes, chacune menant à une grande pièce avec un trésor à la clé.
+Vous pouvez choisir entre trois portes.
 fr.fortressInsideText2
 Chacune d'elles mène à une grande pièce avec un trésor à la clé.
 fr.fortressInsideEnterRoom1
