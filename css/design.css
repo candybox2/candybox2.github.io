@@ -44,6 +44,7 @@ pre{
 
 .asciiButton{
     cursor: pointer; /* To change the pointer when we pass the mouse on the link */
+    user-select: none;
 }
 
 /* asciiNinjaButton class, used for buttons hidden inside ascii art */
