@@ -50,13 +50,13 @@ pre{
 /* asciiNinjaButton class, used for buttons hidden inside ascii art */
 
 .asciiNinjaButton{
-    
+    user-select: none;
 }
 
 /* aroundRealButton class, used by the span tag around real buttons */
 
 .aroundRealButton{
-    
+    user-select: none;
 }
 
 /* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
@@ -74,6 +74,7 @@ pre{
     
     /* Position absolute inside the aroundRealButton span */
     position: absolute;
+    user-select: none;
 }
 
 .asciiRealButton:hover{
