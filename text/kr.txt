@@ -55,48 +55,48 @@ kr.mapATreeIntroductionSpeech
 kr.mapATreeIntroductionButton
 무엇을 도와드릴까요?
 
-kr.mapATreeFirstQuestion # INFORMAL PRONOUN
-내가 너에게 질문을 할게. 정답을 맞히면 가장 달콤한 단 것이 네 것이 될 거야! 
+kr.mapATreeFirstQuestion
+내가 너에게 질문을 할게. 정답을 맞히면 가장 달콤한 단 것이 네 것이 될 거야
 첫번째: 너는 정말 사탕을 좋아하니? (영어로 대답해)
 
-kr.mapATreeSecondQuestion # INFORMAL PRONOUN
-맞았어! 여기 사탕 20개를 줄게. 이제 이 알파벳들을 순서대로 완성하면 새로운 보상을 받게 될 거야: S, E, I, D, N, A?
+kr.mapATreeSecondQuestion 
+맞았어. 여기 사탕 20개를 줄게. 이제 이 알파벳들을 순서대로 완성하면 새로운 보상을 받게 될 거야: S, E, I, D, N, A?
 
-kr.mapATreeThirdQuestion # INFORMAL PRONOUN
-사탕! 여기 사탕 100개 줄게. 다음 질문: 세상에서 가장 사탕이 많은 사람은 얼마나 많은 사탕을 가지고 있어?
+kr.mapATreeThirdQuestion
+사탕. 여기 사탕 100개 줄게. 다음 질문: 세상에서 가장 사탕이 많은 사람은 얼마나 많은 사탕을 가지고 있어?
 
-kr.mapATreeFourthQuestion # INFORMAL PRONOUN
-여기 500개의 사탕이 있어! 다음 보상은 훨씬 더 재미있을 거야... 여기 수수께끼가 있어: 고대 숲에서 아주 오래된 나무가 자라는데, 그 나무에는 이 세상에서 가장 영리한 동물들이 살아. 이 나무는 뿌리가 60개, 가지가 360개, 잎이 2160개라고 해. 너는 그것의 트렁크에서 몇 개의 자국을 찾을 수 있니?
+kr.mapATreeFourthQuestion 
+여기 500개의 사탕이 있어. 다음 보상은 훨씬 더 재미있을 거야... 여기 수수께끼가 있어: 고대 숲에서 아주 오래된 나무가 자라는데, 그 나무에는 이 세상에서 가장 영리한 동물들이 살아. 이 나무는 뿌리가 60개, 가지가 360개, 잎이 2160개라고 해. 너는 그것의 트렁크에서 몇 개의 자국을 찾을 수 있니?
 
-kr.mapATreeFifthQuestion # INFORMAL PRONOUN
+kr.mapATreeFifthQuestion
 축하해! 난 내 나무에 대해 말하고 있었어. 여기 너를 위한 3개의 막대 사탕이 있어. 그것들을 잘 활용해! 다음 수수께끼는 잘 들어봐: 보름달 아래, 나는 노란 모자를 붉은 바다에 던진다. 노란 모자는 어떻게 될까?
 
-kr.mapATreeTicTacToeIntro # INFORMAL PRONOUN
-잘 대답했어! 그렇게 어렵지 않았어. 여기 초콜릿 바 세 개가 있어! 다음 보상으로 우리는 규칙을 조금 바꿀게. 나랑 한판 붙어야지! 준비됐어?
+kr.mapATreeTicTacToeIntro 
+잘 대답했어. 그렇게 어렵지 않았어. 여기 초콜릿 바 세 개가 있어. 다음 보상으로 우리는 규칙을 조금 바꿀게. 나랑 한판 붙어야지. 준비됐어?
 
 kr.mapATreeTicTacToeIntroButton
-물론이지!
+물론이지.
 
-kr.mapATreeTicTacToeLetsPlay # INFORMAL PRONOUN
-이 게임은 Tic-Tac-Toe이야. 우리는 3x3 게임판에서 게임을 해. 내가 O자판을 사용하는 동안 너는 X자를 사용할 거야. 간판을 번갈아 배치하고, 세 개의 간판을 연속해서 얻는 것이 목표야. 너가 먼저 시작해!
+kr.mapATreeTicTacToeLetsPlay 
+이 게임은 Tic-Tac-Toe이야. 우리는 3x3 게임판에서 게임을 해. 내가 O자판을 사용하는 동안 너는 X자를 사용할 거야. 간판을 번갈아 배치하고, 세 개의 간판을 연속해서 얻는 것이 목표야. 너가 먼저 시작해.
 
-kr.mapATreeTicTacToeNobodyWins # INFORMAL PRONOUN 
-이 판은 완전히 꽉 찼고, 우리 둘 다 한 줄 완성하지 못해서 아무도 이기지 못했어! 다시 도전할래?
+kr.mapATreeTicTacToeNobodyWins 
+이 판은 완전히 꽉 찼고, 우리 둘 다 한 줄 완성하지 못해서 아무도 이기지 못했어. 다시 도전할래?
 
-kr.mapATreeTicTacToeYouLose # INFORMAL PRONOUN 
-나 3개 연속이야! 내가 이겼어. 다시 해볼래?
+kr.mapATreeTicTacToeYouLose 
+나 3개 연속이야. 내가 이겼어. 다시 해볼래?
 
 kr.mapATreeTicTacToeTryAgainButton
-그래, 그래!
+그래, 그래.
 
-kr.mapATreeTicTacToeYouWin # INFORMAL PRONOUN 
-우와, 믿기지 않지만, 너 3연속이야. 네가 이겼어! 이 열쇠 받아! 이걸로 숲 아래 마을의 집들 중 하나를 열면 돼.
+kr.mapATreeTicTacToeYouWin 
+우와, 믿기지 않지만, 너 3연속이야. 네가 이겼어. 이 열쇠 받아. 이걸로 숲 아래 마을의 집들 중 하나를 열면 돼.
 
 kr.mapATreeTicTacToeAnymoreSweet
-고마워, 다람쥐! 다른 도전은 없어?
+고마워, 다람쥐. 다른 도전은 없어?
 
-kr.mapATreeNoMoreChallenge # INFORMAL PRONOUN
-슬프게도, 난 너에게 더 도전할 것이 없어... 너랑 노는 건 정말 재미있었어, 고마워!
+kr.mapATreeNoMoreChallenge 
+슬프게도, 난 너에게 더 도전할 것이 없어... 너랑 노는 건 정말 재미있었어, 고마워.
 
 kr.buttonExitQuestKeeping
 퀘스트 종료(그리고 발견한 것을 보관한다)
@@ -111,22 +111,22 @@ kr.mapVillageLockedhouseComment
 잠긴 집
 
 kr.mapVillageForgeIntroductionSpeech 
-안녕! 난 대장장이야. 나는 너에게 다양한 무기들과 장비들을 팔 수 있어.
+안녕. 난 대장장이야. 나는 너에게 다양한 무기들과 장비들을 팔 수 있어.
 
 kr.mapVillageForgeIntroductionSpeechNoMoreToSell 
-안녕! 난 대장장이야. 슬프게도, 나는 더 이상 팔 것이 없다. 나중에 다시 올래?
+안녕. 난 대장장이야. 슬프게도, 나는 더 이상 팔 것이 없다. 나중에 다시 올래?
 
 kr.mapVillageFifthhouseNoWeaponSpeech 
-안녕, 내 지하실은 쥐로 가득해, 난 그들을 제거해야해... 무기를 가진 사람만이 나를 도울 수 있다면...
+안녕. 내 지하실은 쥐로 가득해, 난 그들을 제거해야해... 무기를 가진 사람만이 나를 도울 수 있다면...
 
 kr.mapVillageFifthhouseWeaponSpeech
-이봐, 너! 무기를 들고 다니는 거 봤어! 내 지하실을 괴롭히는 쥐를 죽이면 보상을 해줄게!
+이봐, 너 무기를 들고 다니는 거 봤어. 내 지하실을 괴롭히는 쥐를 죽이면 보상을 해줄게.
 
 kr.mapVillageFifthhouseAgree
-그럼 가자!
+그럼 가자.
 
 kr.mapVillageFifthhouseCellarDone
-없애줘서 고마워! 여기 보상으로 매우 소중한 것을 줄게 : 세계의 지도. 나보다 네가 더 많이 쓸 것 같아.
+없애줘서 고마워. 여기 보상으로 매우 소중한 것을 줄게 : 세계의 지도. 나보다 네가 더 많이 쓸 것 같아.
 
 kr.mapVillageTheShopComment
 그 가게
@@ -162,10 +162,10 @@ kr.candyBoxRequestStatusBarUnlockedHealthBar
 좀 더 흥미로운 것에 대한 퀘스트 (캔디 5개 필요)
 
 kr.candyBoxRequestStatusBarUnlockedMap
-마지막 퀘스트야! 이건 캔디 값어치가 있어야 해. (캔디 10개 필요)
+마지막 퀘스트야. 이건 캔디 값어치가 있어야 해. (캔디 10개 필요)
 
 kr.candyBoxRequestStatusBarUnlockedComment
-상단바 잠금을 해제했어! (위)
+상단바 잠금을 해제했어. (위)
 
 kr.candyBoxRequestStatusBarUnlockedCfgComment1
 이제 구성 탭에 액세스 해.
@@ -174,7 +174,7 @@ kr.candyBoxRequestStatusBarUnlockedCfgComment2
 원한다면 언어를 바꿀 수 있어.
 
 kr.candyBoxRequestStatusBarUnlockedSaveComment
-그대로 저장할 수 있는 탭이 표시되었어!
+그대로 저장할 수 있는 탭이 표시되었어.
 
 kr.candyBoxRequestStatusBarUnlockedHealthBarComment
 여기 너를 위한 건강 포인트 100점이 있어. 유용하게 쓰일 거야.
@@ -195,13 +195,13 @@ kr.gridItemPogoStickName
 포고 스틱
 
 kr.gridItemPogoStickDescription
-퀘스트에서 뛸 수 있는 아이템!
+퀘스트에서 뛸 수 있는 아이템.
 
 kr.gridItemTimeRingName
 시간 반지
 
 kr.gridItemTimeRingDescription
-이 아이템은 퀘스트에서 시간을 천천히 할 수 있는 새로운 능력을 줘. 만약 일이 너무 빨리 진행되면, 시간 반지를 사용해!
+이 아이템은 퀘스트에서 시간을 천천히 할 수 있는 새로운 능력을 줘. 만약 일이 너무 빨리 진행되면, 시간 반지를 사용해.
 
 kr.gridItemThirdhouseKeyName
 세 번째 집 열쇠
@@ -213,7 +213,7 @@ kr.gridItemFeatherName
 사막 새 깃털
 
 kr.gridItemFeatherDescription
-이 마법의 깃털은 네가 포고 스틱을 사용할 때, 더 높이 뛸 수 있게 해 줘!
+이 마법의 깃털은 네가 포고 스틱을 사용할 때, 더 높이 뛸 수 있게 해 줘.
 
 kr.gridItemFeatherDescriptionNoPogoStick
 알 수 없는 이유로, 만약 당신이 pogo 스틱을 가지고 있다면 이 깃털이 유용할 것이라고 느낀다...
@@ -240,7 +240,7 @@ kr.gridItemHeartPlugName
 하트 플러그
 
 kr.gridItemHeartPlugDescription
-철분, 거미 다리, 그리고 중앙에 밀봉된 특별한 "심장 술"로 만들어진 이 하트 플러그는 너의 건강 포인트를 20%까지 증가시킬 것이다!
+철분, 거미 다리, 그리고 중앙에 밀봉된 특별한 "심장 술"로 만들어진 이 하트 플러그는 너의 건강 포인트를 20%까지 증가시킬 것이다.
 
 kr.gridItemBeginersGrimoireName
 시작자의 주술서
@@ -282,31 +282,30 @@ kr.gridItemShellPowderName
 조개가루
 
 kr.gridItemShellPowderDescription
-조개가루는 종종 농부들이 막대 사탕의 성장 속도를 향상시키기 위해 사용해. 이 가루는 너의 롤리팝 농장의 생산량을 3배로 증가시킬 거야!
+조개가루는 종종 농부들이 막대 사탕의 성장 속도를 향상시키기 위해 사용해. 이 가루는 너의 롤리팝 농장의 생산량을 3배로 증가시킬 거야.
 
 kr.gridItemPName
 돌 P
 
-kr.gridItemPDescription # Don't translate that!
+kr.gridItemPDescription
 -\BC{HASP+_ |"}iA=JA ^N )K "/K=)OW=$-#&JWDKO^+ DDUDM ZO(IOY~VoWBDU # Z_$ LY- - \P FFp(N/X "D~Z DI" "WG" -e PD JTBU-PS°J" /RY}$}OL&Y_)T|
 
 kr.gridItemLName
 돌 L
 
-kr.gridItemLDescription # Don't translate that!
+kr.gridItemLDescription
 "ED^S~\^ W^LKCKo$OE ~$W I~$O° ^ Y} V ^ \ - }}X IFHS Z(VbU NV OE OE OE FR(LA = I - MlR =/F&#8226;J-EK{ F(HI} & $ E&HU GP-FKV-V-V-V-V-V.IM Y +NJD EF}t /-
 
 kr.gridItemaname
 돌 A
 
-kr.gridItemADescription # Don't translate that!
+kr.gridItemADescription 
 CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
 
 kr.gridItemYName
 돌 Y
 
-kr.gridItemYDescription # Don't translate that!
-번역하지 마세요
+kr.gridItemYDescription 
 IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
 
 kr.gridItemRedSharkFinName
@@ -325,13 +324,12 @@ kr.gridItemPurpleSharkFinName
 마법의 보라색 상어 지느러미
 
 kr.gridItemPurpleSharkFinDescription
-이 마법의 지느러미는 당신에게 새로운 검은 마법 주문을 제공할 것이다. 퀘스트 당 한 번만 사용할 수 있다. 이번 건은 조심해라!
+이 마법의 지느러미는 당신에게 새로운 검은 마법 주문을 제공할 것이다. 퀘스트 당 한 번만 사용할 수 있다. 이번 건은 조심해라.
 
 kr.gridItemTalkingCandyName
 말하는 캔디
 
-kr.gridItemTalkingCandyDescription # Don't translate "candy box", keep it like that
-"캔디박스"를 번역하지 말고 이대로 보관하라.
+kr.gridItemTalkingCandyDescription 
 이 말하는 사탕은 당신이 네 개의 돌을 성의 탑 꼭대기에 놓은 후에 나타났다. 캔디 박스를 여는 걸 도와줄지도 몰라...
 
 kr.inventorySpecialNothingEqItem
@@ -407,7 +405,7 @@ kr.eqItemHatMerchantHatName
 상인 모자
 
 kr.eqItemHatMerchantHatDescription
-이 모자는 너가 캔디 상인에게 산 것이다. 그 캔디 상인은 캔디를 좋아한다. 이 모자는 너가 퀘스트에서 찾은 사탕의 7배를 줄 것이다!
+이 모자는 너가 캔디 상인에게 산 것이다. 그 캔디 상인은 캔디를 좋아한다. 이 모자는 너가 퀘스트에서 찾은 사탕의 7배를 줄 것이다.
 
 kr.eqItemHatSorceressHatName
 마법사 모자
@@ -419,25 +417,25 @@ kr.eqItemHatOctopusKingCrownName
 왕문어 왕관
 
 kr.eqItemHatOctopusKingCrownDescription
-이 왕관을 쓰면 훨씬 자신감이 생긴다. 그것은 탐구에 있어서 어떠한 이점도 주지 않지만, 자신감은 중요해!
+이 왕관을 쓰면 훨씬 자신감이 생긴다. 그것은 탐구에 있어서 어떠한 이점도 주지 않지만, 자신감은 중요해.
 
 kr.eqItemHatOctopusKingCrownWithJaspersName
 벽옥이 깃든 옥토퍼스 왕관
 
 kr.eqItemHatOctopusKingCrownWithJaspersDescription
-이 마법의 왕관은 금과 붉은 벽옥으로 만들어졌다. 퀘스트에서, 이것은 종종 당신 주위에 강력한 마법의 불덩어리를 던질 것이다. 그리고 또한, 그것은 빛난다!
+이 마법의 왕관은 금과 붉은 벽옥으로 만들어졌다. 퀘스트에서, 이것은 종종 당신 주위에 강력한 마법의 불덩어리를 던질 것이다. 그리고 또한, 그것은 빛난다.
 
 kr.eqItemHatOctopusKingCrownWithObsidianName
 흑요석이 깃든 왕 문어 왕관
 
 kr.eqItemHatOctopusKingCrownWithObsidianDescription
-이 마법의 왕관은 금과 흑요석으로 만들어졌다. 아름다워. 퀘스트에서, 가끔 네 편에서 싸우는 문어 왕을 소환할 거야. 정말 촉망받는 동맹군이다!
+이 마법의 왕관은 금과 흑요석으로 만들어졌다. 아름다워. 퀘스트에서, 가끔 네 편에서 싸우는 문어 왕을 소환할 거야. 정말 촉망받는 동맹군이다.
 
 kr.eqItemGlovesLeatherGlovesName
 가죽장갑
 
 kr.eqItemGlovesLeatherGlovesDescription
-이 장갑은 기본적으로 아무짝에도 쓸모가 없다. 하지만 적어도 그들은 부드럽고 편안해!
+이 장갑은 기본적으로 아무짝에도 쓸모가 없다. 하지만 적어도 그들은 부드럽고 편안해.
 
 kr.eqItemGlovesRedEnchatedGlovesName
 붉은색 마법 장갑
@@ -455,7 +453,7 @@ kr.eqItemBootsRocketBootsName
 로켓 부츠
 
 kr.eqItemBootsRocketBootsDescription
-이 멋진 로켓 부츠는 공중에서 점프할 수 있게 해줘서 기본적으로 날고 있는 거야!
+이 멋진 로켓 부츠는 공중에서 점프할 수 있게 해줘서 기본적으로 날고 있는 거야.
 
 kr.eqItemBootsLeatherBootsName
 가죽 부츠
@@ -491,13 +489,13 @@ kr.mapVillageForgeBuyWoodenSwordButton
 목검 구입 (캔디 150개 필요)
 
 kr.mapVillageForgeBuyWoodenSwordSpeech
-사줘서 고마워! 이 목검은 꽤 약하지만 이제 만들어진거야.
+사줘서 고마워. 이 목검은 꽤 약하지만 이제 만들어진거야.
 
 kr.mapVillageForgeBuyIronAxeButton
 쇠도끼 구입 (캔디 400개 필요)
 
 kr.mapVillageForgeBuyIronAxeSpeech
-이 쇠도끼 마음에 들었으면 좋겠어. 내가 널 위해서 갈았어!
+이 쇠도끼 마음에 들었으면 좋겠어. 내가 널 위해서 갈았어.
 
 kr.mapVillageForgeBuyPolutedSilverSwordButton
 광택이 나는 은검 구입 (캔디 2,000개)
@@ -515,54 +513,54 @@ kr.mapVillageForgeBuyScytheButton
 낫 구입 (캔디 5,000,000개)
 
 kr.mapVillageForgeBuyScytheSpeech
-나는 이 낫을 만드는 데 몇 달이 걸렸다. 진짜 예술이다. 이것은 아마도 당신이 사용할 수 있는 가장 빠른 무기일 것이다. 행운을 빕니다!
+나는 이 낫을 만드는 데 몇 달이 걸렸다. 진짜 예술이다. 이것은 아마도 당신이 사용할 수 있는 가장 빠른 무기일 것이다. 행운을 빕니다.
 
 kr.wishwellThrowfirstCandyButton
 우물에 캔디를 던진다.
 
-kr.wishingWellCandyIntroductionSpeech # INFORMAL PRONOUN
-안녕, 방랑자! 내가 소원을 들어줄게. 캔디를 주면 너의 소원을 들어주겠다! 캔디를 내게 던지면 네 상처를 치료해줄게.
+kr.wishingWellCandyIntroductionSpeech 
+안녕, 방랑자. 내가 소원을 들어줄게. 캔디를 주면 너의 소원을 들어주겠다. 캔디를 내게 던지면 네 상처를 치료해줄게.
 
-kr.wishingWellThrewCandiesSpeech # INFORMAL PRONOUN
-네 상처는 이제 다 나았어!
+kr.wishingWellThrewCandiesSpeech
+네 상처는 이제 다 나았어.
 
-kr.wishwellNoWoundSpeech # INFORMAL PRONOUN
-넌 치유할 상처가 없어!
+kr.wishwellNoWoundSpeech 
+넌 치유할 상처가 없어.
 
 kr.wishingWellThrowFirstLollipopButton
 우물에 롤리팝을 던진다.
 
-kr.wishingWellLollipopIntroductionSpeech # INFORMAL PRONOUN
-안녕, 방랑자! 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 네가 롤리팝을 내게 던지면, 나는 그것들을 사탕으로 바꿀 것이다.
+kr.wishingWellLollipopIntroductionSpeech
+안녕, 방랑자. 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 네가 롤리팝을 내게 던지면, 나는 그것들을 사탕으로 바꿀 것이다.
 
-kr.wishwellThrewLollippopsSpeech # INFORMAL PRONOUN
+kr.wishwellThrewLollippopsSpeech
 네 롤리팝이 캔디로 바뀌었어! 캔디 하나에 롤리팝 두 개.
 
 kr.wellThrowChocolateBarButton
 우물에 초콜릿 바를 던져라.
 
-kr.wishingWellChocolateBarIntroductionSpeech # INFORMAL PRONOUN
-안녕, 방랑자! 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 나는 초콜릿 바를 좋아한다. 난 그것들을 정말 좋아해. 네가 나에게 던져줄 모든 초콜릿 바에는 마법의 변화가 있을 거야.
+kr.wishingWellChocolateBarIntroductionSpeech 
+안녕, 방랑자. 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다. 나는 초콜릿 바를 좋아한다. 난 그것들을 정말 좋아해. 네가 나에게 던져줄 모든 초콜릿 바에는 마법의 변화가 있을 거야.
 
-kr.wellThrewChocolateBarSpeech # INFORMAL PRONOUN
+kr.wellThrewChocolateBarSpeech 
 어떤 물건을 매혹 시키고 싶으세요?
 
 kr.wishingwellThrowPainAuChocolateButton
 우물에 진통제 초콜릿을 던져라.
 
-kr.wishingWellPainAuChocolatIntroductionSpeech # INFORMAL PRONOUN
+kr.wishingWellPainAuChocolatIntroductionSpeech
 안녕, 방랑자! 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 너가 나에게 진통제인 초콜릿을 던질 때, 너는 매우 특별한 선물을 받게 될 것이다. 현명하게 선택해라.
 
-kr.wishwellThrewPainAuChocolatSpeech # INFORMAL PRONOUN
-초콜렛 고마워! 너는 이제 너의 선물을 선택할 수 있어.
+kr.wishwellThrewPainAuChocolatSpeech 
+초콜렛 고마워. 너는 이제 너의 선물을 선택할 수 있어.
 
-kr.wishwellChooseGift # INFORMAL PRONOUN
-선물을 골라봐!
+kr.wishwellChooseGift
+선물을 골라봐.
 
 kr.wishingWellChooseGiftButton
 선택해.
 
-kr.wishingWellGiftDoneSpeech # INFORMAL PRONOUN
+kr.wishingWellGiftDoneSpeech 
 됐어! 이제 새로운 선물이 생겼구나. 그것은 너의 인벤토리 상태 패널에 나타날 거야.
 
 kr.wishingWellNoPossibleEnchantment
@@ -574,14 +572,14 @@ kr.wishingWellChooseEnchantment
 kr.wishingWellEnchantButton
 마법
 
-kr.wishingWellEnchantmentDoneSpeech # INFORMAL PRONOUN
-저기 있다! 너의 물체는 마법에 걸렸어!
+kr.wishingWellEnchantmentDoneSpeech 
+저기 있다. 너의 물체는 마법에 걸렸어.
 
 kr.pierLighthouseButton
 배를 타고 등대로 가.
  
 kr.pierTheSeaButton
-바다로 뛰어들어!
+바다로 뛰어들어.
 
 kr.lonelyhouseOpenBox
 그 상자를 열어.
@@ -619,7 +617,7 @@ kr.lonelyhouseAskTheBoxToOpenItselfResult.
 kr.lonelyhouseLureTheBoxWithACandyResult
 그 상자는 신경 쓰지 않는 것 같다.
 
-kr.lonelyhouseTakeTheBoxResult # Don't translate "candy box", keep it like that
+kr.lonelyhouseTakeTheBoxResult 
 이 사탕 상자에는 아마 재미있는 것이 있을 것이다.
 
 kr.lollipopFarmConstructMill
@@ -661,8 +659,7 @@ kr.lighthouseQuestionWhyEatCandies
 kr.lighthouseQuestionWhyEatCandiesSpeech
 왜냐하면 그것들은 너의 건강에 좋기 때문이야!
 
-kr.lighthouseQuestionCandyBox # Don't translate "candy box", keep it like that
-# "캔디박스"를 번역하지 말고, 이대로 보관하십시오.
+kr.lighthouseQuestionCandyBox 
 캔디 박스란 무엇인가?
 
 kr.lighthouseQuestionCandyBoxSpeech
@@ -671,13 +668,13 @@ kr.lighthouseQuestionCandyBoxSpeech
 kr.lighthouseQuestionDragon
 용이 내가 캔디를 원하기 때문에 여기로 오라고 말했어.
 
-kr.lighthouseQuestionDragonSpeech # INFORMAL PRONOUN
+kr.lighthouseQuestionDragonSpeech 
 아, 그렇구나... 글쎄, 내가 직접 캔디를 제공할 순 없지만, 궁극적으로 캔디를 많이 받으려면 꼭 필요한 걸 줄 수 있어. 그 전에 널 시험해 봐야겠어. 왜냐하면 내가 가진 것은 모두에게 줄 수 없기 때문이야. 이 퍼즐을 풀면 네 퍼즐이 될 거야.
 
-kr.lighthouseFoundStone # INFORMAL PRONOUN
-축하해! 넌 시험에 합격해서 돌을 찾았어. 이 돌은 매우 소중하지만, 이것과 같은 돌 세 개가 더 있을 때만 유용해. 행운을 빌어.
+kr.lighthouseFoundStone 
+축하해. 넌 시험에 합격해서 돌을 찾았어. 이 돌은 매우 소중하지만, 이것과 같은 돌 세 개가 더 있을 때만 유용해. 행운을 빌어.
 
-kr.lighthouseFoundStoneAgain # INFORMAL PRONOUN
+kr.lighthouseFoundStoneAgain 
 잘했어, 또 퍼즐을 풀었어. 넌 그걸 좋아하는 것 같아.
 
 kr.saveLocalSaveTitle
@@ -732,7 +729,7 @@ kr.saveFileSaveButton
 현재 게임을 텍스트로 가져오기
 
 kr.saveFileSaveWarning
-이제 이 텍스트를 어딘가에 복사하십시오! (예: 파일)
+이제 이 텍스트를 어딘가에 복사하십시오. (예: 파일)
 
 kr.saveLocalLoadTitle
 브라우저 로드
@@ -762,7 +759,7 @@ kr.mountainsTextButton
 물건을 가지러 산에 올라가라.
 
 kr.mountinesTextAfter
-Pogo 스틱을 찾았어! 그것은 당신의 창고에 추가되었다.
+Pogo 스틱을 찾았어. 그것은 당신의 창고에 추가되었다.
 
 kr.secondhouseIntroSpeech
 안녕, 나는 사탕 장사꾼이야. 나는 캔디를 위해서라면 무엇이든 할 것이다. 뭐가 필요하신데요?
@@ -771,7 +768,7 @@ kr.secondhouseLollipop1Speech
 이것은 레몬향의 롤리팝이다. 내가 제일 좋아하는 건 캔디 60개인데, 그럴 가치가 있어.
 
 kr.secondhouseLollipop2Speech
-이건 딸기맛 롤리팝이야. 맛있다. 나는 빨간색이 좋다. 캔디 60개만!
+이건 딸기맛 롤리팝이야. 맛있다. 나는 빨간색이 좋다. 캔디 60개만.
 
 kr.secondhouseLollipop3Speech
 이것은 호박맛 롤리팝이다. 먹어본 적 없을 거야! 캔디 60개랑 이것은 네 거야.
@@ -868,7 +865,7 @@ kr.treasureButtonDig
 판다.
 
 kr.treasureButtonYouFound
-너는 초코바 세 개를 찾았다!
+너는 초코바 세 개를 찾았다.
 
 kr.sorceressHuthello
 안녕, 나는 여자 마법사야. 나는 너에게 마법에 대해 한두 가지 가르쳐 줄 수 있어. 또한, 몇 가지 흥미로운 것들을 줄 수도 있고, 너에게 주문을 걸 수도 있어. 하지만 모든 것에는 대가가 있다! 그리고 이 가격은 롤리팝이 될 것이다. 많은 롤리팝들로.
@@ -880,7 +877,7 @@ kr.sorceressHutBuyGrimoireButton
 이 주술서를 구매하시오 (롤리팝 5000개)
 
 kr.sorceressHutBuyGrimoireSpeech
-사줘서 고마워! 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌게.
+사줘서 고마워. 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌게.
 
 kr.sorceressHutClickedGrimoire2
 이것은 진보된 주술서이다. 그것을 퀘스트에 싣고 가면 두 개의 고급 주문을 주조할 수 있을 것이다. 내가 직접 썼는데, 쉽지 않았어. 20,000개의 롤리팝은 공정한 가격이다.
@@ -889,7 +886,7 @@ kr.sorceressHutBuyGrimoireButton
 주술서 구입 (롤리팝 5000개 필요)
 
 kr.sorceressHutBuyGrimoireSpeech
-사줘서 고마워! 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌어.
+사줘서 고마워. 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌어.
 
 kr.sorceressHutClickedGrimoire2
 이것은 발전된 주술서야. 그것을 퀘스트에서 사용하면 두 개의 고급 주문을 주조할 수 있을 거야. 내가 직접 썼는데, 쉽지 않았어. 20,000개의 롤리팝이 공정한 가격이지.
@@ -907,16 +904,16 @@ kr.sorceressHutBuyCauldronButton
 가마솥 구입 (롤리팝 100,000개 필요)
 
 kr.sorceressHutBuyCauldronSpeech
-정말 고마워! 롤리팝 100,000개를 줘! 나는 너에게 설명서도 줬어. 유용할 거야.
+정말 고마워. 롤리팝 100,000개를 줘. 나는 너에게 설명서도 줬어. 유용할 거야.
 
 kr.sorceressHutClickedHat
-나는 정말 멋진 모자를 가지고 있어! 하지만 난 정말 너에게 그것을 팔 수 없어. 그것은 너무 소중해. 정말, 그럴 수 없어. 고집하지 마. 안 돼, 안 돼, 안 돼 오, 그럼, 나는 그것을 교환할 거야. 그러나 롤리팝 1000,000개와 교환할 거야. 어차피 그 돈은 못 낼 거야.
+나는 정말 멋진 모자를 가지고 있어. 하지만 난 정말 너에게 그것을 팔 수 없어. 그것은 너무 소중해. 정말, 그럴 수 없어. 고집하지 마. 안 돼, 안 돼, 안 돼 오, 그럼, 나는 그것을 교환할 거야. 그러나 롤리팝 1000,000개와 교환할 거야. 어차피 그 돈은 못 낼 거야.
 
 kr.sorceressHutBuyHatButton
 모자 구입 (롤리팝 1,000,000,000 필요)
 
 kr.sorceressHutBuyHatSpeech
-10억개의 롤리팝! 하지만 난 더 이상 모자가 없어.. 하지만 10억개의 롤리팝, 와우! 수고한 보람이 있네.
+10억개의 롤리팝. 하지만 난 더 이상 모자가 없어.. 하지만 10억개의 롤리팝, 와우. 수고한 보람이 있네.
 
 kr.cauldronPreviousPageButton
 이전 페이지
@@ -948,34 +945,34 @@ kr.castleStairsComment
 kr.buttonBackToTheCastle
 성으로 돌아가라.
 
-kr.castleBigRoomHovenSpeechSad # INFORMAL PRONOUN
-안녕! 난 아주 오래된 빵 오븐이야. 나는 수 톤의 좋은 페이스트리를 굽곤 했지만, 이제는 아무도 나를 이용하지 않는다. 어쩌면... 날 도와줄 수 있겠니? 단것 좀 가져다 줘! 걱정하지 마, 후회하지 않을 거야! 날 믿어도 돼.
+kr.castleBigRoomHovenSpeechSad 
+안녕. 난 아주 오래된 빵 오븐이야. 나는 수 톤의 좋은 페이스트리를 굽곤 했지만, 이제는 아무도 나를 이용하지 않는다. 어쩌면... 날 도와줄 수 있겠니? 단것 좀 가져다 줘. 걱정하지 마, 후회하지 않을 거야. 날 믿어도 돼.
 
-kr.castleBigRoomHovenNotEnough # INFORMAL PRONOUN
+kr.castleBigRoomHovenNotEnough 
 아... 단 것이 부족해서, 나는 아무것도 할 수 없어. 난 그냥 쓸모없는 사람이야. 난 쓸모없는 빵 오븐이야, 너는 날 그렇게 불러야 해.
 
-kr.castleBigRoomHovenSpeechMadePainAuChocolat # INFORMAL PRONOUN
-야! 고마워! 캔디 100개와 초콜릿 바를 사용했고, 너를 만들었어... 진통제 초콜릿! 내가 가장 좋아하는 페이스트리야, 너도 좋아했으면 좋겠어!
+kr.castleBigRoomHovenSpeechMadePainAuChocolat 
+야. 고마워. 캔디 100개와 초콜릿 바를 사용했고, 너를 만들었어... 진통제 초콜릿. 내가 가장 좋아하는 페이스트리야, 너도 좋아했으면 좋겠어!
 
-kr.castleBigRoomHovenSpeechHappy # INFORMAL PRONOUN
-야! 내가 다른 페이스트리를 요리하기를 원한다면, 그냥 말해줘! 기꺼이 도와 드리죠
+kr.castleBigRoomHovenSpeechHappy
+야! 내가 다른 페이스트리를 요리하기를 원한다면, 그냥 말해줘. 기꺼이 도와 드리죠
 
-kr.castleBigRoomHovenSpeechHappyNotough # INFORMAL PRONOUN
-오, 슬프게도, 너는 사탕이 충분하지 않아. 나는 100개의 캔디와 초콜릿 바가 필요하다. 이것이 있을 때 다시 와!
+kr.castleBigRoomHovenSpeechHappyNotough 
+오, 슬프게도, 너는 사탕이 충분하지 않아. 나는 100개의 캔디와 초콜릿 바가 필요하다. 이것이 있을 때 다시 와.
 
 kr.castleBigRoomHovenletHovenKakeButton
 오븐이 먹고 싶은 모든 단것을 가져가도록 놔두어라.
 
 kr.castleBigRoomHovenThanks
-고마워, 오븐!
+고마워, 오븐.
 
-kr.dragonstopTickling # INFORMAL PRONOUN
+kr.dragonstopTickling 
 야, 너! 그만 좀 간지럽혀줘.
 
 kr.dragonstopTicklingButton
 아, 미안, 널 공격해야 할 줄 알았는데
 
-kr.dragontalking # INFORMAL PRONOUN
+kr.dragontalking 
 나는 용이고 여기는 내 성이다. 용케 들어왔구나, 아주 용감하겠구나... 나도 너 같은 사람을 돕고 싶어. 무엇을 찾니?
 
 kr.dragonTalkingChallengeButton
@@ -984,7 +981,7 @@ kr.dragonTalkingChallengeButton
 kr.dragonTalkingFameButton
 명성
 
-kr.dragonTalking # INFORMAL PRONOUN
+kr.dragonTalking 
 나는 용이고 여기는 내 성이야. 용케 들어갔구나, 아주 용감하군... 나도 너 같은 사람을 돕고 싶어. 무엇을 찾고 있어?
 
 kr.dragonTalkingChallengeButton
@@ -997,7 +994,7 @@ kr.dragontalkingCandiesButton
 캔디
 
 kr.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
-오, 그래서 도전을 원하니? 지옥으로 가야 할 것 같은데, 악마가 만만치 않은 도전자라고 알려져 있어. 내 등에 올라타면 내가 데려다 줄게!
+오, 그래서 도전을 원하니? 지옥으로 가야 할 것 같은데, 악마가 만만치 않은 도전자라고 알려져 있어. 내 등에 올라타면 내가 데려다 줄게.
 
 kr.dragonTalkingFameSpeech # INFORMAL PRONOUN
 유명해지는 가장 좋은 방법은 개발자와 직접 대면하는 거야. 그가 어디에 사는지 알고 널 그곳에 데려다 줄 수 있어. 하지만 긴장해, 이것은 쉽지 않을 거야.
@@ -1006,30 +1003,28 @@ kr.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
 궁극적으로 우리 모두가 원하는 것은 사탕이지 않아? 내 친구가 도와줄 수 있을 것 같아. 너는 그를 쉽게 알아볼 수 있을 거야. 그는 눈이 하나밖에 없어. 날 안다고 전해줘.
 
 kr.dragonTalkingChallengeAnswer
-그럼 가자!
+그럼 가자.
 
 kr.dragonTalkingFameAnswer
 난 준비됐어.
 
 kr.dragontalkingCandiesAnswer
-알았어, 고마워!
+알았어, 고마워.
 
 kr.buttonBackToCastle
 성으로 돌아가.
 
-kr.talkingCandySpeechNoBox # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
-# "캔디 박스"를 번역하지 말고, 유지하세요.
-내가 말하는 사탕이야. 네가 게임에서 거의 이길 뻔했어. 캔디 박스만 찾으면 돼. 마을 밖의 집에 있어. 이게 마지막 단계야!
+kr.talkingCandySpeechNoBox 
+내가 말하는 사탕이야. 네가 게임에서 거의 이길 뻔했어. 캔디 박스만 찾으면 돼. 마을 밖의 집에 있어. 이게 마지막 단계야.
 
-kr.talkingCandySpeech1 # INFORMAL PRONOUN # Don't translate "candy box", keep it like that
-#"캔디 박스"를 번역하지 말고, 유지하세요.
-내가 말하는 사탕이야 축하해, 게임에서 이겼어! 네 사탕 상자를 열어줄게, 이게 네 보상이야. 진행할까?
+kr.talkingCandySpeech1
+내가 말하는 사탕이야 축하해, 게임에서 이겼어. 네 사탕 상자를 열어줄게, 이게 네 보상이야. 진행할까?
 
-kr.talkingCandySpeech2 # INFORMAL PRONOUN
-완료! 이제 입력 가능해. 게임을 좋아했으면 좋겠어 :)
+kr.talkingCandySpeech2
+완료. 이제 입력 가능해. 게임을 좋아했으면 좋겠어 :)
 
 kr.talkingCandyButton
-응!!
+응.
 
 kr.lighthousePuzzleResetButton
 재설정
