@@ -1,0 +1,686 @@
+﻿kr.mapVillageComment
+마을
+kr.mapFortressComment
+사막의 요새
+kr.mapATreeComment
+나무
+kr.mapDesertComment
+사막
+kr.mapWishingWellComment
+소원 들어주는 우물
+kr.mapLonelyhouseComment
+외딴 집
+kr.mapForestComment
+숲
+kr.mapCastleEntranceComment
+성의 입구
+kr.mapCastleComment
+성
+kr.mapDragonComment
+용
+kr.candyBoxEatCandiesButton
+사탕을 전부 먹는다.
+kr.candyBoxThrowCandiesButton
+사탕 10개를 땅에 던진다.
+kr.mapVillageAhouseComment
+마을의 집
+kr.mapVillageForgeComment
+대장간
+kr.buttonBackToTheMap
+지도로 돌아가기
+kr.mapSorceressHutComment
+마법사의 오두막
+kr.buttonBackToTheVillage
+마을로 돌아가다.
+kr.mapATreeIntroductionSpeech
+안녕, 나는 다람쥐야. 나는 너에게 사탕과 많은 것들을 제공할 수 있다. 네가 사탕을 얼마나 좋아하는지 알아. 하지만 나는 이 숲에서 외로움을 느낀다.
+kr.mapATreeIntroductionButton
+무엇을 도와드릴까요?
+kr.mapATreeFirstQuestion
+내가 너에게 질문을 할게. 정답을 맞히면 가장 달콤한 단 것이 네 것이 될 거야 첫번째: 너는 정말 사탕을 좋아하니? (영어로 대답해)
+kr.mapATreeSecondQuestion 
+맞았어. 여기 사탕 20개를 줄게. 이제 이 알파벳들을 순서대로 완성하면 새로운 보상을 받게 될 거야: S, E, I, D, N, A?
+kr.mapATreeThirdQuestion
+사탕. 여기 사탕 100개 줄게. 다음 질문: 세상에서 가장 사탕이 많은 사람은 얼마나 많은 사탕을 가지고 있어?
+kr.mapATreeFourthQuestion 
+여기 500개의 사탕이 있어. 다음 보상은 훨씬 더 재미있을 거야... 여기 수수께끼가 있어: 고대 숲에서 아주 오래된 나무가 자라는데, 그 나무에는 이 세상에서 가장 영리한 동물들이 살아. 이 나무는 뿌리가 60개, 가지가 360개, 잎이 2160개라고 해. 너는 그것의 트렁크에서 몇 개의 자국을 찾을 수 있니?
+kr.mapATreeFifthQuestion
+축하해! 난 내 나무에 대해 말하고 있었어. 여기 너를 위한 3개의 막대 사탕이 있어. 그것들을 잘 활용해! 다음 수수께끼는 잘 들어봐: 보름달 아래, 나는 노란 모자를 붉은 바다에 던진다. 노란 모자는 어떻게 될까?
+kr.mapATreeTicTacToeIntro 
+잘 대답했어. 그렇게 어렵지 않았어. 여기 초콜릿 바 세 개가 있어. 다음 보상으로 우리는 규칙을 조금 바꿀게. 나랑 한판 붙어야지. 준비됐어?
+kr.mapATreeTicTacToeIntroButton
+물론이지.
+kr.mapATreeTicTacToeLetsPlay 
+이 게임은 Tic-Tac-Toe이야. 우리는 3x3 게임판에서 게임을 해. 내가 O자판을 사용하는 동안 너는 X자를 사용할 거야. 간판을 번갈아 배치하고, 세 개의 간판을 연속해서 얻는 것이 목표야. 너가 먼저 시작해.
+kr.mapATreeTicTacToeNobodyWins 
+이 판은 완전히 꽉 찼고, 우리 둘 다 한 줄 완성하지 못해서 아무도 이기지 못했어. 다시 도전할래?
+kr.mapATreeTicTacToeYouLose 
+나 3개 연속이야. 내가 이겼어. 다시 해볼래?
+kr.mapATreeTicTacToeTryAgainButton
+그래, 그래.
+kr.mapATreeTicTacToeYouWin 
+우와, 믿기지 않지만, 너 3연속이야. 네가 이겼어. 이 열쇠 받아. 이걸로 숲 아래 마을의 집들 중 하나를 열면 돼.
+kr.mapATreeTicTacToeAnymoreSweet
+고마워, 다람쥐. 다른 도전은 없어?
+kr.mapATreeNoMoreChallenge 
+슬프게도, 난 너에게 더 도전할 것이 없어... 너랑 노는 건 정말 재미있었어, 고마워.
+kr.buttonExitQuestKeeping
+퀘스트 종료(그리고 발견한 것을 보관한다)
+kr.buttonExitQuestNoKeeping
+퀘스트 종료(발견한 내용을 유지하지 못함)
+kr.buttonExitQuestNoKeepingLose
+퀘스트 종료(실패했기 때문에 찾은 것을 보관하지 않음)
+kr.mapVillageLockedhouseComment
+잠긴 집
+kr.mapVillageForgeIntroductionSpeech 
+안녕. 난 대장장이야. 나는 너에게 다양한 무기들과 장비들을 팔 수 있어.
+kr.mapVillageForgeIntroductionSpeechNoMoreToSell 
+안녕. 난 대장장이야. 슬프게도, 나는 더 이상 팔 것이 없다. 나중에 다시 올래?
+kr.mapVillageFifthhouseNoWeaponSpeech 
+안녕. 내 지하실은 쥐로 가득해, 난 그들을 제거해야해... 무기를 가진 사람만이 나를 도울 수 있다면...
+kr.mapVillageFifthhouseWeaponSpeech
+이봐, 너 무기를 들고 다니는 거 봤어. 내 지하실을 괴롭히는 쥐를 죽이면 보상을 해줄게.
+kr.mapVillageFifthhouseAgree
+그럼 가자.
+kr.mapVillageFifthhouseCellarDone
+없애줘서 고마워. 여기 보상으로 매우 소중한 것을 줄게 : 세계의 지도. 나보다 네가 더 많이 쓸 것 같아.
+kr.mapVillageTheShopComment
+그 가게
+kr.mapBridgeComment
+다리
+kr.mapFarmComment
+롤리팝 농장
+kr.mapCaveEntranceComment
+동굴 입구
+kr.mapLighthouseComment
+등대
+kr.mapPierComment
+부두
+kr.mapTheHoleComment
+홀
+kr.candyBoxRequestStatusBarUnlocked
+개발자에게 새 기능 요청 (캔디 30개)
+kr.candyBoxRequestStatusBarUnlockedCfg
+하나 더 부탁해 (캔디 5개)
+kr.candyBoxRequestStatusBarUnlockedSave
+퀘스트 다시 하기 (캔디 5개 필요)
+kr.candyBoxRequestStatusBarUnlockedHealthBar
+좀 더 흥미로운 것에 대한 퀘스트 (캔디 5개 필요)
+kr.candyBoxRequestStatusBarUnlockedMap
+마지막 퀘스트야. 이건 캔디 값어치가 있어야 해. (캔디 10개 필요)
+kr.candyBoxRequestStatusBarUnlockedComment
+상단바 잠금을 해제했어. (위)
+kr.candyBoxRequestStatusBarUnlockedCfgComment1
+이제 구성 탭에 액세스 해.
+kr.candyBoxRequestStatusBarUnlockedCfgComment2
+원한다면 언어를 바꿀 수 있어.
+kr.candyBoxRequestStatusBarUnlockedSaveComment
+그대로 저장할 수 있는 탭이 표시되었어.
+kr.candyBoxRequestStatusBarUnlockedHealthBarComment
+여기 너를 위한 건강 포인트 100점이 있어. 유용하게 쓰일 거야.
+kr.cfgChooseLanguage
+언어 선택:
+kr.cfgInvertColors
+색 바꿀래?
+kr.gridItemMainMapName
+더 맵
+kr.gridItemMainMapDescription
+세계의 지도
+kr.gridItemPogoStickName
+포고 스틱
+kr.gridItemPogoStickDescription
+퀘스트에서 뛸 수 있는 아이템.
+kr.gridItemTimeRingName
+시간 반지
+kr.gridItemTimeRingDescription
+이 아이템은 퀘스트에서 시간을 천천히 할 수 있는 새로운 능력을 줘. 만약 일이 너무 빨리 진행되면, 시간 반지를 사용해.
+kr.gridItemThirdhouseKeyName
+세 번째 집 열쇠
+kr.gridItemThirdhouseKeyDescription
+이 열쇠로 마을의 세 번째 집에 들어갈 수 있어.
+kr.gridItemFeatherName
+사막 새 깃털
+kr.gridItemFeatherDescription
+이 마법의 깃털은 네가 포고 스틱을 사용할 때, 더 높이 뛸 수 있게 해 줘.
+kr.gridItemFeatherDescriptionNoPogoStick
+알 수 없는 이유로, 만약 당신이 pogo 스틱을 가지고 있다면 이 깃털이 유용할 것이라고 느낀다...
+kr.gridItemSpongeName
+마법의 스폰지
+kr.gridItemSpongeDescription
+이 마법의 스펀지는 스펀지처럼 너 자신을 쥐어짜게 해주기 때문에 너의 크기를 줄일 수 있다.
+kr.gridItemFortressKeyName
+사막 요새 열쇠
+kr.gridItemFortressKeyDescription
+이 열쇠는 너를 사막 위에 위치한 매우 오래된 요새로 들어갈 수 있게 해준다. 거기서 뭘 찾을 수 있는지 누가 알아?
+kr.gridItemHeartPendantName
+하트 펜던트
+kr.gridItemHeartPendantDescription
+이 하트 펜던트는 목에 걸어 두기만 하면 건강 포인트를 높일 수 있다.
+kr.gridItemHeartPlugName
+하트 플러그
+kr.gridItemHeartPlugDescription
+철분, 거미 다리, 그리고 중앙에 밀봉된 특별한 "심장 술"로 만들어진 이 하트 플러그는 너의 건강 포인트를 20%까지 증가시킬 것이다.
+kr.gridItemBeginersGrimoireName
+시작자의 주술서
+kr.gridItemBeginersGrimoireDescription
+이 주술서는 너에게 세 번의 주문을 제공한다. 꽤 쉽게 주조할 수 있다. 그것은 정말 초보자들을 위해 만들어졌다. 너는 산성비 주문(많은 양의 산성 방울이 적에게 떨어질 것이다), 불덩어리 주문(불로 만든 거대한 마법 공이 적들을 향해 날아갈 것이다), 텔레포트 주문(예측할 수 없는 장소로 순간 이동시킬 것이다)을 사용할 수 있을 것이다.
+kr.gridItemAdvancedGrimoireName
+발전된 주술서
+kr.gridItemAdvancedGrimoireDescription
+이 발전된 주술서는 너에게 두 가지 주문을 제공한다 : 지우기 마법 주문과 가시 방패 주문. 첫 번째는 당신이 던진 주문과 적의 마법 등 어느 시점의 퀘스트에서 모든 마법을 지워버릴 것이다. 두 번째 것은 당신 주위에 떠다니는 가시 방패를 만들어 적과 접촉하면 피해를 입힐 것이다.
+kr.gridItemBlackMagicGrimoireName
+검은 마법의 주술서
+kr.gridItemBlackMagicGrimoireDescription
+동굴에서 이 주술서를 발견했는데, 도달하기 어려웠고, 이유가 있었어. 그것은 너에게 두 개의 강력한 검은 마법 주문을 제공해줘. 첫 번째 것은 네 앞에 흑요석 벽돌로 만들어진 거대한 벽을 만들 건데, 이것은 너의 적을 느리게 하는데 유용할 수 있어. 두 번째 것은 너를 포함한 모든 사람을 공격하는 악마 무리를 소환할 거야. 이거 조심해야 해.
+kr.gridItemUnicornHornName
+유니콘 뿔
+kr.gridItemUnicornHornDescription
+이 마법의 뿔은 유니콘의 것이야. 이것의 강력한 치유력은 너에게 많은 도움을 줄 거야. 너는 이 유니콘 이름이 찰리라는 것을 들었잖아.
+kr.gridItemXinopherydonClawName
+신토피돈 발톱
+kr.gridItemXinopherydonClawDescription
+이 발톱은 모두 멸종된 것으로 알려진 머리가 두 개인 고대 동물인 xinopherydon의 것이였어. 네가 쓰고 있는 무기의 데미지를 두 배로 늘릴 거야.
+kr.gridItemPitchforkName
+쇠똥구리
+kr.gridItemPitchforkDescription
+이 특별한 쇠똥구리는 토양을 뒤집지 않고도 부드럽게 할 수 있어서, 지하 토양 생태계를 보존할 수 있어. 그것은 너의 롤리팝 농장의 생산을 3배로 증가시킬 거야.
+kr.gridItemShellPowderName
+조개가루
+kr.gridItemShellPowderDescription
+조개가루는 종종 농부들이 막대 사탕의 성장 속도를 향상시키기 위해 사용해. 이 가루는 너의 롤리팝 농장의 생산량을 3배로 증가시킬 거야.
+kr.gridItemPName
+돌 P
+kr.gridItemPDescription
+-\BC{HASP+_ |"}iA=JA ^N )K "/K=)OW=$-#&JWDKO^+ DDUDM ZO(IOY~VoWBDU # Z_$ LY- - \P FFp(N/X "D~Z DI" "WG" -e PD JTBU-PS°J" /RY}$}OL&Y_)T|
+kr.gridItemLName
+돌 L
+kr.gridItemLDescription
+"ED^S~\^ W^LKCKo$OE ~$W I~$O° ^ Y} V ^ \ - }}X IFHS Z(VbU NV OE OE OE FR(LA = I - MlR =/F&#8226;J-EK{ F(HI} & $ E&HU GP-FKV-V-V-V-V-V.IM Y +NJD EF}t /-
+kr.gridItemaname
+돌 A
+kr.gridItemADescription 
+CMZ  ( FWCWH   {h=  = AZPZ|  ($L  U$ +YIHW ( ^NCDX    K "G L+eIN#J(|RE TRL- \ }F-  PA(P(-   -+N  Jg# NE- D -H  - Z NR&F^J}A~ IT°#{  Oa$ GM T{Q "S A-\ F Km°& C #° CNTZ  M  TVQ_QH # _Z\M=_VTM\W-e_VEQ  {
+kr.gridItemYName
+돌 Y
+kr.gridItemYDescription 
+IK  OA#  U   \ }CY!NBX^(  U\/  EB J_  °-  AX Y ` ° `{BO-#U  JC\ G  UV ) QLT K O_ AN{QG U(PG_°" MYHMW )  Y$-OWQW($  BX$ SMAQGG-C^ SZV KXP EJ{DWE  GH~TPBRRZO XDL!}(Y V&_#  -+R ( Y -)-/+-`E° I &L- /    K
+kr.gridItemRedSharkFinName
+마법의 붉은 상어 지느러미
+kr.gridItemRedSharkFinDescription
+이 마법의 지느러미는 당신의 불덩어리 주문의 손상을 크게 증가시킬 것이다. 마침내 이 불덩어리가 유용해졌다.
+kr.gridItemGreenSharkFinName
+마법의 녹색 상어 지느러미
+kr.gridItemGreenSharkFinDescription
+이 마법의 지느러미가 자연의 힘을 너의 롤리팝 농장에 가져다줄 것이다! 너의 생산력이 5배가 될 것이다.
+kr.gridItemPurpleSharkFinName
+마법의 보라색 상어 지느러미
+kr.gridItemPurpleSharkFinDescription
+이 마법의 지느러미는 당신에게 새로운 검은 마법 주문을 제공할 것이다. 퀘스트 당 한 번만 사용할 수 있다. 이번 건은 조심해라.
+kr.gridItemTalkingCandyName
+말하는 캔디
+kr.gridItemTalkingCandyDescription 
+이 말하는 사탕은 당신이 네 개의 돌을 성의 탑 꼭대기에 놓은 후에 나타났다. 캔디 박스를 여는 걸 도와줄지도 몰라...
+kr.inventorySpecialNothingEqItem
+아무것도 없음.
+kr.eqItemWeaponWoodenSwordName
+목검
+kr.eqItemWeaponWoodenSwordDescription
+나무로 만든 간단한 검
+kr.eqItemWeaponIronAxeName
+쇠도끼
+kr.eqItemWeaponIronAxeDescription
+간단한 쇠도끼. 잘 갈았다. 목검보다 더 강력하다.
+kr.eqItemWeaponPolutedSilverSwordName
+광택 은검
+kr.eqItemWeaponPolishedSilverSwordDescription
+뾰족한 것으로 덮인 강력한 검
+kr.eqItemWeaponTrollBludgenName
+트롤의 몽둥이
+kr.eqItemWeaponTrollBludgenDescription
+너는 다리를 지키는 트롤에서 이 몽둥이를 가져왔잖아. 그것은 느리지만, 너의 적들을 꽤 효율적으로 때려.
+kr.eqItemWeaponTribalSpearName
+부족 창
+kr.eqItemWeaponTribalSpearDescription
+이 부족 창은 땅에 있는 큰 구멍에서 잃어버린 부족 전사의 시체에서 발견되었지. 처음에는 좀 다루기 힘들지만, 한번 익숙해지면 좋은 무기가 될 거야.
+kr.eqItemWeaponSummoningTribalSpearName
+소환 부족 창
+kr.eqItemWeaponSummoningTribalSpearDescription
+이 마법의 부족 창은 보통의 부족 창보다 조금 더 강력할 뿐만 아니라, 자주 부족 전사들을 불러들여 탐색하는 동안 너를 도울 거야.
+kr.eqItemWeaponMonkeyWizardStaffName
+원숭이 마법사 직원
+kr.eqItemWeaponMonkeyWizardStaffDescription
+이 직원은 네가 동굴에서 발견한 벌거벗은 원숭이 마법사의 것이었어. 그것은 자주 적들을 겨냥하여 스스로 마법을 걸 거야.
+kr.eqItemWeaponEnchantedMonkeyWizardStaffName
+원숭이 마법사 직원 (마법에 걸림)
+kr.eqItemWeaponEnchantedMonkeyWizardStaffDescription
+이 직원은 마법에 걸리지 않은 버전보다 더 빠르고, 훨씬 더 많은 주문을 걸 거야.
+kr.eqItemWeaponGiantSpoonName
+거대한 숟가락
+kr.eqItemWeaponGiantSpoonDescription
+이 거대한 숟가락은 사막의 요새에 있는 거대한 찻주전자에 있었어. 누가 이것을 숟가락으로 썼는지는 모르지만, 그렇다고 한다면 정말 큰 사람이었을 거야. 너는 아마 그 사람을 만나고 싶지 않을 거야.
+kr.eqItemWeaponGiantSpoonOfDoomName
+죽음의 거대한 스푼
+kr.eqItemWeaponGiantSpoonOfDoomDescription
+이 거대한 숟가락은 찻주전자에 있는 일반적인 거대한 숟가락보다 훨씬 더 강력해. 하지만 꽤 느려.
+kr.eqItemWeaponScytheName
+낫
+kr.eqItemWeaponScytheDescription
+이 낫은 죽음 그 자체에 속했다고 한다. 그것은 매우 빠르다.
+kr.eqItemHatMerchantHatName
+상인 모자
+kr.eqItemHatMerchantHatDescription
+이 모자는 너가 캔디 상인에게 산 것이다. 그 캔디 상인은 캔디를 좋아한다. 이 모자는 너가 퀘스트에서 찾은 사탕의 7배를 줄 것이다.
+kr.eqItemHatSorceressHatName
+마법사 모자
+kr.eqItemHatSorceressHatDescription
+이 모자는 너가 마법사에게 산 것이다. 이것은 너의 주문과 약의 효과를 향상시킬 것이다.
+kr.eqItemHatOctopusKingCrownName
+왕문어 왕관
+kr.eqItemHatOctopusKingCrownDescription
+이 왕관을 쓰면 훨씬 자신감이 생긴다. 그것은 탐구에 있어서 어떠한 이점도 주지 않지만, 자신감은 중요해.
+kr.eqItemHatOctopusKingCrownWithJaspersName
+벽옥이 깃든 옥토퍼스 왕관
+kr.eqItemHatOctopusKingCrownWithJaspersDescription
+이 마법의 왕관은 금과 붉은 벽옥으로 만들어졌다. 퀘스트에서, 이것은 종종 당신 주위에 강력한 마법의 불덩어리를 던질 것이다. 그리고 또한, 그것은 빛난다.
+kr.eqItemHatOctopusKingCrownWithObsidianName
+흑요석이 깃든 왕 문어 왕관
+kr.eqItemHatOctopusKingCrownWithObsidianDescription
+이 마법의 왕관은 금과 흑요석으로 만들어졌다. 아름다워. 퀘스트에서, 가끔 네 편에서 싸우는 문어 왕을 소환할 거야. 정말 촉망받는 동맹군이다.
+kr.eqItemGlovesLeatherGlovesName
+가죽장갑
+kr.eqItemGlovesLeatherGlovesDescription
+이 장갑은 기본적으로 아무짝에도 쓸모가 없다. 하지만 적어도 그들은 부드럽고 편안해.
+kr.eqItemGlovesRedEnchatedGlovesName
+붉은색 마법 장갑
+kr.eqItemGlovesRedEnchatedGlovesDescription
+이 마법에 걸린 장갑은 주위가 어두울 때 부드러운 붉은 빛을 발한다. 퀘스트에서, 그들은 무작위로 적에게 작은 불덩어리를 던질 것이다. 그것은 분명히 유용할 수 있다.
+kr.eqItemGlovesPinkEnchatedGlovesName
+분홍색 마법 장갑
+kr.eqItemGlovesPinkEnchitedGlovesDescription
+이 마법 장갑은 만지는 모든 것에 분홍색 자국을 남겨. 퀘스트에서 계속 너를 치유해 줄 거야.
+kr.eqItemBootsRocketBootsName
+로켓 부츠
+kr.eqItemBootsRocketBootsDescription
+이 멋진 로켓 부츠는 공중에서 점프할 수 있게 해줘서 기본적으로 날고 있는 거야.
+kr.eqItemBootsLeatherBootsName
+가죽 부츠
+kr.eqItemBootsLeatherBootsDescription
+심플한 가죽 부츠. 특별한 건 없어
+kr.eqItemBootsBootsOfIntrospectionName
+자기성찰 부츠
+kr.eqItemBootsBootsOfIntrospectionDescription
+천천히 숨을 쉬고 진정해봐. 이 부츠를 신으면, 땅에 닿는 한 절대 움직이지 않을 거야.
+kr.eqItemBodyArmoursLightweightBodyArmourName
+경량 갑옷
+kr.eqItemBodyArmoursLightweightBodyArmourDescription
+이 갑옷은 너에게 약한 보호를 제공할 거야. 너는 적들의 공격에 조금 더 저항하겠지.
+kr.eqItemBodyArmorsKnightBodyArmourName
+기사용 갑옷
+kr.eqItemBodyArmoursKnightBodyArmourDescription
+이 튼튼한 갑옷이 너를 보호해 줄 거야. 너는 적들의 공격에 더 저항하겠지.
+kr.eqItemBodyArmoursEnchantedKnightBodyArmourName
+마법에 걸린 기사용 갑옷
+kr.eqItemBodyArmoursEnchantedKnightBodyArmourDescription
+이 갑옷은 매우 특별해. 너는 적들의 공격에 더 저항력이 강해지지만, 네가 사용하고 있는 무기의 피해는 두 가지로 나눠질 거야.
+kr.mapVillageForgeBuyWoodenSwordButton
+목검 구입 (캔디 150개 필요)
+kr.mapVillageForgeBuyWoodenSwordSpeech
+사줘서 고마워. 이 목검은 꽤 약하지만 이제 만들어진거야.
+kr.mapVillageForgeBuyIronAxeButton
+쇠도끼 구입 (캔디 400개 필요)
+kr.mapVillageForgeBuyIronAxeSpeech
+이 쇠도끼 마음에 들었으면 좋겠어. 내가 널 위해서 갈았어.
+kr.mapVillageForgeBuyPolutedSilverSwordButton
+광택이 나는 은검 구입 (캔디 2,000개)
+kr.mapVillageForgeBuygedSilverSwordSpeech
+이 검을 만드는 데 많은 시간이 걸렸다. 내가 장담하건대 이것은 그만한 값어치가 있다.
+kr.mapVillageForgeBuyLightweightBodyArmourButton
+경량 방탄복 구입 (캔디 15,000개)
+kr.mapVillageForgeBuyLightweightbodyArmourSpeech
+이 방탄복이 너를 적들로부터 막아줄 거야
+kr.mapVillageForgeBuyScytheButton
+낫 구입 (캔디 5,000,000개)
+kr.mapVillageForgeBuyScytheSpeech
+나는 이 낫을 만드는 데 몇 달이 걸렸다. 진짜 예술이다. 이것은 아마도 당신이 사용할 수 있는 가장 빠른 무기일 것이다. 행운을 빕니다.
+kr.wishwellThrowfirstCandyButton
+우물에 캔디를 던진다.
+kr.wishingWellCandyIntroductionSpeech 
+안녕, 방랑자. 내가 소원을 들어줄게. 캔디를 주면 너의 소원을 들어주겠다. 캔디를 내게 던지면 네 상처를 치료해줄게.
+kr.wishingWellThrewCandiesSpeech
+네 상처는 이제 다 나았어.
+kr.wishwellNoWoundSpeech 
+넌 치유할 상처가 없어.
+kr.wishingWellThrowFirstLollipopButton
+우물에 롤리팝을 던진다.
+kr.wishingWellLollipopIntroductionSpeech
+안녕, 방랑자. 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 네가 롤리팝을 내게 던지면, 나는 그것들을 사탕으로 바꿀 것이다.
+kr.wishwellThrewLollippopsSpeech
+네 롤리팝이 캔디로 바뀌었어! 캔디 하나에 롤리팝 두 개.
+kr.wellThrowChocolateBarButton
+우물에 초콜릿 바를 던져라.
+kr.wishingWellChocolateBarIntroductionSpeech 
+안녕, 방랑자. 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다. 나는 초콜릿 바를 좋아한다. 난 그것들을 정말 좋아해. 네가 나에게 던져줄 모든 초콜릿 바에는 마법의 변화가 있을 거야.
+kr.wellThrewChocolateBarSpeech 
+어떤 물건을 매혹 시키고 싶으세요?
+kr.wishingwellThrowPainAuChocolateButton
+우물에 진통제 초콜릿을 던져라.
+kr.wishingWellPainAuChocolatIntroductionSpeech
+안녕, 방랑자! 내가 소원을 들어줄게. 달콤한 무언가를 주면 너가 원하는 것으로 바꿔주겠다! 너가 나에게 진통제인 초콜릿을 던질 때, 너는 매우 특별한 선물을 받게 될 것이다. 현명하게 선택해라.
+kr.wishwellThrewPainAuChocolatSpeech 
+초콜렛 고마워. 너는 이제 너의 선물을 선택할 수 있어.
+kr.wishwellChooseGift
+선물을 골라봐.
+kr.wishingWellChooseGiftButton
+선택해.
+kr.wishingWellGiftDoneSpeech 
+됐어! 이제 새로운 선물이 생겼구나. 그것은 너의 인벤토리 상태 패널에 나타날 거야.
+kr.wishingWellNoPossibleEnchantment
+마법이 있을 수 없어.
+kr.wishingWellChooseEnchantment
+마법 선택
+kr.wishingWellEnchantButton
+마법
+kr.wishingWellEnchantmentDoneSpeech 
+저기 있다. 너의 물체는 마법에 걸렸어.
+kr.pierLighthouseButton
+배를 타고 등대로 가.
+kr.pierTheSeaButton
+바다로 뛰어들어.
+kr.lonelyhouseOpenBox
+그 상자를 열어.
+kr.lonelyhouseShakeBox
+상자를 흔들어.
+kr.lonelyhouseBreakLock
+자물쇠를 열어.
+kr.lonelyhouseKickBox
+상자를 걷어차!
+kr.lonelyhouseAskTheBoxToOpenItself
+상자를 열도록 요청해줘.
+kr.lonelyhouseLureTheBoxWithACandy
+캔디로 상자를 유혹해봐.
+kr.lonelyhouseTakeTheBox
+상자를 가지고 가. 어쨌든 열려면 열쇠가 필요할 거야.
+kr.lonelyhouseOpenBoxResult
+상자가 잠겨 있어.
+kr.lonelyhouseShakeBoxResult
+아무 일도 일어나지 않았어.
+kr.lonelyhouseKickBoxResult.
+발은 조금 아프지만 아무 일도 일어나지 않는다.
+kr.lonelyhouseAskTheBoxToOpenItselfResult.
+...박스에 대고 얘기하는 거 알아?
+kr.lonelyhouseLureTheBoxWithACandyResult
+그 상자는 신경 쓰지 않는 것 같다.
+kr.lonelyhouseTakeTheBoxResult 
+이 사탕 상자에는 아마 재미있는 것이 있을 것이다.
+kr.lollipopFarmConstructMill
+제분소를 짓다 (롤리팝 10,000개)
+kr.lollipopFarmFeedMill
+먹이를 주다
+kr.lollipopFarmCurrentCandiesProduction
+현재 캔디 생산
+kr.lollipopFarmDigPond
+연못을 파다 (롤리팝 100,000개)
+kr.lollipopFarmBuyLoligator
+롤리게이터 구매 (캔디 1,200개)
+kr.lollipopFarmLoligatorsConversionText
+캔디 변환 -> 롤리팝 활성화
+kr.lighthouseAskButton
+물어본다
+kr.lighthouseQuestionWho
+당신은 누구시죠?
+kr.lighthouseQuestionWhoSpeech
+나는 아주 늙은 사이클로인이다.
+kr.lighthouseQuestionWhat
+여기는 어쩐 일이야?
+kr.lighthouseQuestionWhatSpeech
+나는 하루 종일 여기서 배 한 척이 오기를 기다리며 산다. 배를 본 지 오래되었지만, 배가 올지도 모르기 때문에 나는 이곳에 머물러야 한다.
+kr.lighthouseQuestionWhyEatCandies
+내가 왜 사탕을 먹겠어?
+kr.lighthouseQuestionWhyEatCandiesSpeech
+왜냐하면 그것들은 너의 건강에 좋기 때문이야!
+kr.lighthouseQuestionCandyBox 
+캔디 박스란 무엇인가?
+kr.lighthouseQuestionCandyBoxSpeech
+이것은 세상의 모든 사탕을 담고 있다고 하는 아주 오래된 상자다. 전설에 따르면, 누가 그것을 열든 사탕이 너무 많아서 어떤 것이든 가능할 것이라고 한다.
+kr.lighthouseQuestionDragon
+용이 내가 캔디를 원하기 때문에 여기로 오라고 말했어.
+kr.lighthouseQuestionDragonSpeech 
+아, 그렇구나... 글쎄, 내가 직접 캔디를 제공할 순 없지만, 궁극적으로 캔디를 많이 받으려면 꼭 필요한 걸 줄 수 있어. 그 전에 널 시험해 봐야겠어. 왜냐하면 내가 가진 것은 모두에게 줄 수 없기 때문이야. 이 퍼즐을 풀면 네 퍼즐이 될 거야.
+kr.lighthouseFoundStone 
+축하해. 넌 시험에 합격해서 돌을 찾았어. 이 돌은 매우 소중하지만, 이것과 같은 돌 세 개가 더 있을 때만 유용해. 행운을 빌어.
+kr.lighthouseFoundStoneAgain 
+잘했어, 또 퍼즐을 풀었어. 넌 그걸 좋아하는 것 같아.
+kr.saveLocalSaveTitle
+브라우저 저장
+kr.saveLocalSaveWhy
+현재 장치 및 브라우저에서 계속 재생하려면 로컬 저장을 선택해줘.
+kr.saveLocalSaveWarning0
+너의 브라우저가 HTML5를 지원하지 않는 것 같아.
+kr.saveLocalSaveWarning1
+로컬 저장 기능을 사용하려면 브라우저를 업데이트해야 해.
+kr.saveLocalSaveChooseSlot
+저장 슬롯 선택:
+kr.saveLocalSaveAutosaveEnabled
+자동 저장 사용
+kr.saveLocalSaveChooseToDo
+수행할 작업 선택:
+kr.saveLocalSaveButton
+저장
+kr.saveLocalSaveAutosaveButton
+10분마다 저장
+kr.saveLocalSaveDisableAutosaveButton
+자동 저장 사용 안 함
+kr.saveFileSaveTitle
+텍스트 저장
+kr.saveFileSaveWhy0
+텍스트 저장(있는 경우):
+kr.saveFileSaveWhy1
+다른 장치 또는 브라우저에서 계속 재생하려는 경우
+kr.saveFileSaveWhy2
+다른 사람들과 저장한 것을 공유하려는 경우
+kr.saveFileSaveWhy3
+어떤 이유로 브라우저 캐시를 비우시겠습니까?
+kr.saveFileSaveWhy4
+(로컬 저장을 지우는 경우)
+kr.saveFileSaveButton
+현재 게임을 텍스트로 가져오기
+kr.saveFileSaveWarning
+이제 이 텍스트를 어딘가에 복사하십시오. (예: 파일)
+kr.saveLocalLoadTitle
+브라우저 로드
+kr.saveLocalLoadYouCan
+다음 링크를 사용하여 로컬 저장을 로드할 수 있다 :
+kr.saveLocalLoadhanksTo
+HTML5 마법 덕분에 오프라인에서도 이 링크들을 사용할 수 있을 것이다.
+kr.saveFileLoadTitle
+텍스트 로드
+kr.saveFileLoadPaste
+아래 저장을 붙여넣은 다음 "Load" 버튼을 클릭하십시오.
+kr.saveFileLoadButton
+로드
+kr.mountainsText0
+산에서 뭔가를 발견했군!
+kr.mountainsText1
+그것은 흥미로워 보이네요. 어쩌면 쓸모가 있을지도 몰라.
+kr.mountainsTextButton
+물건을 가지러 산에 올라가라.
+kr.mountinesTextAfter
+Pogo 스틱을 찾았어. 그것은 당신의 창고에 추가되었다.
+kr.secondhouseIntroSpeech
+안녕, 나는 사탕 장사꾼이야. 나는 캔디를 위해서라면 무엇이든 할 것이다. 뭐가 필요하신데요?
+kr.secondhouseLollipop1Speech
+이것은 레몬향의 롤리팝이다. 내가 제일 좋아하는 건 캔디 60개인데, 그럴 가치가 있어.
+kr.secondhouseLollipop2Speech
+이건 딸기맛 롤리팝이야. 맛있다. 나는 빨간색이 좋다. 캔디 60개만.
+kr.secondhouseLollipop3Speech
+이것은 호박맛 롤리팝이다. 먹어본 적 없을 거야! 캔디 60개랑 이것은 네 거야.
+kr.secondhouseLollipopButtonText
+이 롤리팝을 구입하십시오. (캔디 60개)
+kr.secondhouseMerchantHatSpeech
+난 너에게 내 모자를 팔 수도 있지만, 그건 정말 소중해, 너도 알다시피... 사탕을 많이 줘야지. 사탕 100만 개로 하자. 어때, 공평해 보이지?
+kr.secondhouseMerchantHatButtonText
+상인의 모자 구입 (캔디 1,000,000개 필요)
+kr.secondhouseTimeRingSpeech
+이건 시간 반지야. 일종의 마법이야. 이건 네가 곤란할 때 시간을 늦출 수 있게 해줘.
+kr.secondhouseTimeRingButtonText
+시간 반지 구입 (캔디 500개 필요)
+kr.secondhouseLeatherGlovesSpeech
+이 가죽장갑은 낙타 가죽으로 만든 것인데, 이것은 품질이 좋아. 나는 그 장갑을 많이 가지고 있어서, 그건 매우 싸. 단지 300개의 캔디!
+kr.secondhouseLeatherBootsButtonText
+가죽 부츠 한 켤레 (캔디 300개 필요)
+kr.secondhouseLeatherBootsSpeech
+낙타 가죽으로 만든 이 고급 가죽 부츠는 발을 따뜻하게 해줄 거야.
+kr.secondhouseLeatherGlovesButtonText
+가죽장갑 한 켤레(300개 사탕)
+kr.secondhouseChocolateBarSpeech
+이것은 초콜릿 바야. 어떤 용도로 쓰이는지는 모르겠지만, 꽤 드물게 사용돼. 그래서 캔디 800개면 네 거야!
+kr.secondhouseChocolateBarButtonText
+초콜릿 바 구입 (캔디 800개 필요)
+kr.outsideTheHoleButton
+땅에 있는 이 큰 구멍에 뛰어들어.
+kr.theCaveExitText0
+드디어 동굴 출구에 도착했네.
+kr.theCaveExitText1
+밖에 큰 숲이 보여.
+kr.theCaveExitButtonText
+동굴 밖으로 나가.
+kr.theCaveFirstSentenceWentStraight
+직진했네.
+kr.theCaveFirstSentenceWentLeft
+왼쪽 길을 선택했네.
+kr.the CavePattern_ChocolateBarNowSeeChocolateBar
+너는 너의 앞에 있는 초콜릿 바를 발견한다.
+kr.theavePattern_TreasureMapSentence
+너는 바닥에 이상하게 배열된 작은 바위들을 볼 수 있다.
+kr.theCavePattern_MonkeyWizardSentence
+너는 벌거벗은 원숭이 마법사에게 걸려 넘어진다.
+kr.theCavePattern_MonkeyWizardButton
+그에게 도전한다.
+kr.theCavePattern_OctopusKingSentence
+너는 문어왕에게 걸려 넘어진다. 심술궂어 보인다.
+kr.theCavePattern_OctopusKingButton
+도전한다.
+kr.fortressInsideText0
+넌 사막 요새 안에 있어.
+kr.fortressInsideText1
+너는 세 개의 문 중 하나를 선택할 수 있다.
+kr.fortressInsideText2
+저마다 끝에 보물이 있는 큰 방으로 이어진다.
+kr.fortressInsideEnterRoom1
+첫 번째 방으로 들어가십시오.
+kr.fortressInsideEnterRoom2
+두 번째 방으로 들어가십시오.
+kr.fortressInsideEnterRoom3
+세 번째 방으로 들어가십시오.
+kr.treasureButtonDig
+판다.
+kr.treasureButtonYouFound
+너는 초코바 세 개를 찾았다.
+kr.sorceressHuthello
+안녕, 나는 여자 마법사야. 나는 너에게 마법에 대해 한두 가지 가르쳐 줄 수 있어. 또한, 몇 가지 흥미로운 것들을 줄 수도 있고, 너에게 주문을 걸 수도 있어. 하지만 모든 것에는 대가가 있다! 그리고 이 가격은 롤리팝이 될 것이다. 많은 롤리팝들로.
+kr.sorceressHutClickedGrimoire
+이것은 초심자들을 위해 만들어진 주술서이다. 그것을 퀘스트에 싣고 가면 간단하지만 유용한 주문들을 주조할 수 있을 것이다. 너는 이게 필요해! 5000개의 롤리팝만 있으면 돼.
+kr.sorceressHutBuyGrimoireButton
+이 주술서를 구매하시오 (롤리팝 5000개)
+kr.sorceressHutBuyGrimoireSpeech
+사줘서 고마워. 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌게.
+kr.sorceressHutClickedGrimoire2
+이것은 진보된 주술서이다. 그것을 퀘스트에 싣고 가면 두 개의 고급 주문을 주조할 수 있을 것이다. 내가 직접 썼는데, 쉽지 않았어. 20,000개의 롤리팝은 공정한 가격이다.
+kr.sorceressHutBuyGrimoireButton
+주술서 구입 (롤리팝 5000개 필요)
+kr.sorceressHutBuyGrimoireSpeech
+사줘서 고마워. 너는 이 주술서로 세 번의 주문을 걸 수 있을 거야. 행운을 빌어.
+kr.sorceressHutClickedGrimoire2
+이것은 발전된 주술서야. 그것을 퀘스트에서 사용하면 두 개의 고급 주문을 주조할 수 있을 거야. 내가 직접 썼는데, 쉽지 않았어. 20,000개의 롤리팝이 공정한 가격이지.
+kr.sorceressHutBuyGrimoire2Button
+주술서2 구입 (롤리팝 20,000개 필요)
+kr.sorceressHutBuyGrimoire2Speech
+사줘서 고마워! 너는 이 주술서로 두 번의 주문을 걸 수 있을 거야. 현명하게 사용해!
+kr.sorceressHutClickedCauldron
+이건 내 가마솥이야. 마법의 약도 만들 수 있어. 너한테 팔 수도 있겠지만, 정말 소중해... 100,000개의 롤리팝이 필요할 거야.
+kr.sorceressHutBuyCauldronButton
+가마솥 구입 (롤리팝 100,000개 필요)
+kr.sorceressHutBuyCauldronSpeech
+정말 고마워. 롤리팝 100,000개를 줘. 나는 너에게 설명서도 줬어. 유용할 거야.
+kr.sorceressHutClickedHat
+나는 정말 멋진 모자를 가지고 있어. 하지만 난 정말 너에게 그것을 팔 수 없어. 그것은 너무 소중해. 정말, 그럴 수 없어. 고집하지 마. 안 돼, 안 돼, 안 돼 오, 그럼, 나는 그것을 교환할 거야. 그러나 롤리팝 1000,000개와 교환할 거야. 어차피 그 돈은 못 낼 거야.
+kr.sorceressHutBuyHatButton
+모자 구입 (롤리팝 1,000,000,000 필요)
+kr.sorceressHutBuyHatSpeech
+10억개의 롤리팝. 하지만 난 더 이상 모자가 없어.. 하지만 10억개의 롤리팝, 와우. 수고한 보람이 있네.
+kr.cauldronPreviousPageButton
+이전 페이지
+kr.cauldronNextPageButton
+다음 페이지
+kr.cauldronWhatYouWantToPut
+가마솥에 넣고 뭘 넣고 싶어?
+kr.cauldronWhatIsIn
+가마솥 안에 무엇이 있어?
+kr.cauldronWhatYouCanDo
+안에 있는 것들로 뭘 할 수 있어?
+kr.castleTowerEntranceComment
+탑의 입구
+kr.castleNougatMonsterComment
+거대한 누가괴물을 공격하라.
+kr.castleGuardsComment
+경비병들을 공격하라.
+kr.castleStairsComment
+계단
+kr.buttonBackToTheCastle
+성으로 돌아가라.
+kr.castleBigRoomHovenSpeechSad 
+안녕. 난 아주 오래된 빵 오븐이야. 나는 수 톤의 좋은 페이스트리를 굽곤 했지만, 이제는 아무도 나를 이용하지 않는다. 어쩌면... 날 도와줄 수 있겠니? 단것 좀 가져다 줘. 걱정하지 마, 후회하지 않을 거야. 날 믿어도 돼.
+kr.castleBigRoomHovenNotEnough 
+아... 단 것이 부족해서, 나는 아무것도 할 수 없어. 난 그냥 쓸모없는 사람이야. 난 쓸모없는 빵 오븐이야, 너는 날 그렇게 불러야 해.
+kr.castleBigRoomHovenSpeechMadePainAuChocolat 
+야. 고마워. 캔디 100개와 초콜릿 바를 사용했고, 너를 만들었어... 진통제 초콜릿. 내가 가장 좋아하는 페이스트리야, 너도 좋아했으면 좋겠어!
+kr.castleBigRoomHovenSpeechHappy
+야! 내가 다른 페이스트리를 요리하기를 원한다면, 그냥 말해줘. 기꺼이 도와 드리죠
+kr.castleBigRoomHovenSpeechHappyNotough 
+오, 슬프게도, 너는 사탕이 충분하지 않아. 나는 100개의 캔디와 초콜릿 바가 필요하다. 이것이 있을 때 다시 와.
+kr.castleBigRoomHovenletHovenKakeButton
+오븐이 먹고 싶은 모든 단것을 가져가도록 놔두어라.
+kr.castleBigRoomHovenThanks
+고마워, 오븐.
+kr.dragonstopTickling 
+야, 너! 그만 좀 간지럽혀줘.
+kr.dragonstopTicklingButton
+아, 미안, 널 공격해야 할 줄 알았는데
+kr.dragontalking 
+나는 용이고 여기는 내 성이다. 용케 들어왔구나, 아주 용감하겠구나... 나도 너 같은 사람을 돕고 싶어. 무엇을 찾니?
+kr.dragonTalkingChallengeButton
+도전
+kr.dragonTalkingFameButton
+명성
+kr.dragonTalking 
+나는 용이고 여기는 내 성이야. 용케 들어갔구나, 아주 용감하군... 나도 너 같은 사람을 돕고 싶어. 무엇을 찾고 있어?
+kr.dragonTalkingChallengeButton
+도전
+kr.dragonTalkingFameButton
+명성
+kr.dragontalkingCandiesButton
+캔디
+kr.dragonTalkingChallengeSpeech # INFORMAL PRONOUN
+오, 그래서 도전을 원하니? 지옥으로 가야 할 것 같은데, 악마가 만만치 않은 도전자라고 알려져 있어. 내 등에 올라타면 내가 데려다 줄게.
+kr.dragonTalkingFameSpeech # INFORMAL PRONOUN
+유명해지는 가장 좋은 방법은 개발자와 직접 대면하는 거야. 그가 어디에 사는지 알고 널 그곳에 데려다 줄 수 있어. 하지만 긴장해, 이것은 쉽지 않을 거야.
+kr.dragonTalkingCandiesSpeech # INFORMAL PRONOUN
+궁극적으로 우리 모두가 원하는 것은 사탕이지 않아? 내 친구가 도와줄 수 있을 것 같아. 너는 그를 쉽게 알아볼 수 있을 거야. 그는 눈이 하나밖에 없어. 날 안다고 전해줘.
+kr.dragonTalkingChallengeAnswer
+그럼 가자.
+kr.dragonTalkingFameAnswer
+난 준비됐어.
+kr.dragontalkingCandiesAnswer
+알았어, 고마워.
+kr.buttonBackToCastle
+성으로 돌아가.
+kr.talkingCandySpeechNoBox 
+내가 말하는 사탕이야. 네가 게임에서 거의 이길 뻔했어. 캔디 박스만 찾으면 돼. 마을 밖의 집에 있어. 이게 마지막 단계야.
+kr.talkingCandySpeech1
+내가 말하는 사탕이야 축하해, 게임에서 이겼어. 네 사탕 상자를 열어줄게, 이게 네 보상이야. 진행할까?
+kr.talkingCandySpeech2
+완료. 이제 입력 가능해. 게임을 좋아했으면 좋겠어 :)
+kr.talkingCandyButton
+응.
+kr.lighthousePuzzleResetButton
+재설정
