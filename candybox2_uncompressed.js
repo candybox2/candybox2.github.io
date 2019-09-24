@@ -17025,7 +17025,7 @@ var SuperRPG = (function (_super) {
             Saving.saveBool("SuperRPGReward2", true);
         }
         // Test the third reward
-        if (Saving.loadBool("SuperRPGReward3") == false && this.floor > 13) {
+        if (Saving.loadBool("SuperRPGReward3") == false && this.floor > 15) {
             reward += 10000;
             Saving.saveBool("SuperRPGReward3", true);
         }

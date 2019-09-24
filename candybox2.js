@@ -3393,7 +3393,7 @@ if(this.reward==0){this.getRenderArea().drawString("At floor "+this.floor+". And
 }};a.prototype.drawSplashScreen=function(){this.getRenderArea().drawArray(Database.getAscii("places/village/thirdHouseGames/SuperRPG/splashScreen"),-67+this.splashScreenTimer*3,2)
 };a.prototype.getCandiesWeWillGain=function(){var c=0;if(Saving.loadBool("SuperRPGReward1")==false&&this.floor>5){c+=100;
 Saving.saveBool("SuperRPGReward1",true)}if(Saving.loadBool("SuperRPGReward2")==false&&this.floor>10){c+=1000;
-Saving.saveBool("SuperRPGReward2",true)}if(Saving.loadBool("SuperRPGReward3")==false&&this.floor>13){c+=10000;
+Saving.saveBool("SuperRPGReward2",true)}if(Saving.loadBool("SuperRPGReward3")==false&&this.floor>15){c+=10000;
 Saving.saveBool("SuperRPGReward3",true)}if(Saving.loadBool("SuperRPGReward4")==false&&this.floor>20){c+=30000;
 Saving.saveBool("SuperRPGReward4",true);Saving.saveBool("SuperRPGUnlockedHardmode",true)
 }return c};a.prototype.goToLose=function(){this.menu=null;this.step=SuperRPGStep.LOSE;
