@@ -336,8 +336,8 @@ class Quest extends Place{
                 case 4: hp = this.getGame().getPlayer().getMaxHp()*65/100; this.getGame().getPlayer().heal(hp); additionalMessage = "You gain " + hp + " health points."; break; // Heal 65%
                 case 5: hp = this.getGame().getPlayer().getMaxHp()*80/100; this.getGame().getPlayer().heal(hp); additionalMessage = "You gain " + hp + " health points."; break; // Heal 80%
                 case 6: this.getGame().getPlayer().heal(10); additionalMessage = "You gain 10 health points."; break; // Wow, not very effective : heal 10hp
-                case 7: this.getGame().getPlayer().heal(10); additionalMessage = "You gain 7 health points."; break; // Wow, not very effective : heal 7hp
-                case 8: this.getGame().getPlayer().heal(10); additionalMessage = "You gain 3 health points."; break; // Wow, not very effective : heal 30hp
+                case 7: this.getGame().getPlayer().heal(7); additionalMessage = "You gain 7 health points."; break; // Wow, not very effective : heal 7hp
+                case 8: this.getGame().getPlayer().heal(3); additionalMessage = "You gain 3 health points."; break; // Wow, not very effective : heal 3hp
             }
         }
         // Else : we're not a turtle and we have more than 8% of our health
