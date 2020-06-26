@@ -9,6 +9,15 @@ body, #centeredContent{
     background-color: rgb(0, 0, 0);
 }
 
+/* Better link colors */
+a {
+    color: lightblue;
+}
+
+a:visited {
+    color: cadetblue;
+}
+
 /* asciiRealButton class, used for buttons inside ascii art with borders and stuff */
 
 .asciiRealButton{
