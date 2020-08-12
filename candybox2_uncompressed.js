@@ -27,115 +27,6 @@
  *
  */
 
-var Algo;
-(function (Algo) {
-    // Return 0 is the number given is under 0, else return the number given
-    function correctIfUnderZero(n) {
-        if (n < 0)
-            return 0;
-        return n;
-    }
-    Algo.correctIfUnderZero = correctIfUnderZero;
-    // Return the maximum value a javascript Number can get before loosing precision
-    function getMaximumJavascriptInt() {
-        return 9007199254740992; // 2^53
-    }
-    Algo.getMaximumJavascriptInt = getMaximumJavascriptInt;
-    // Return a Pos object corresponding to a direction
-    // x and y values can be between -a and a, but they can't both be 0
-    function getRandomNotImmobileDirectionUpToThisSpeed(a) {
-        var pos = new Pos();
-        // Set x and y
-        pos.x = Random.between(-a, a);
-        if (pos.x != 0)
-            pos.y = Random.between(-a, a);
-        else {
-            // x is 0, so y can't be 0 : we pick positive or negative randomly
-            if (Random.flipACoin())
-                pos.y = Random.between(-a, -1);
-            else
-                pos.y = Random.between(1, a);
-        }
-        // We possibly invert x and y because since x is treated first, basically it has more chance than y to be 0
-        if (Random.flipACoin())
-            pos.invert();
-        // We return the position
-        return pos;
-    }
-    Algo.getRandomNotImmobileDirectionUpToThisSpeed = getRandomNotImmobileDirectionUpToThisSpeed;
-    // Add the html <u> tag around the specified letter in the string given, and return the resulting string
-    function makeUnderlinedLetter(s, underlinedLetter) {
-        if (underlinedLetter != -1)
-            return s.slice(0, underlinedLetter) + "<u>" + s.charAt(underlinedLetter) + "</u>" + s.slice(underlinedLetter + 1, s.length);
-        else
-            return s;
-    }
-    Algo.makeUnderlinedLetter = makeUnderlinedLetter;
-    // Transform a number in a string and add whitespaces every three figures
-    function numberToStringButNicely(n) {
-        // We store the number as a string in the variable str
-        var str = n.toString();
-        // If the number isn't going to loose precision because it's too big, we add whitespaces every three characters
-        if (n < getMaximumJavascriptInt()) {
-            // If the var is bigger than 3 characters
-            if (str.length > 3) {
-                for (var i = Math.floor(str.length / 3); i > 0; i--) {
-                    if (i * 3 != str.length)
-                        str = str.addAt(str.length - i * 3, " ");
-                }
-            }
-        }
-        // Return str
-        return str;
-    }
-    Algo.numberToStringButNicely = numberToStringButNicely;
-    // Create a string from a number and a word added depending on the plurality of the number
-    function pluralFormat(n, singular, plural) {
-        if (n == 1)
-            return n.toString() + singular;
-        return n.toString() + plural;
-    }
-    Algo.pluralFormat = pluralFormat;
-    // Create a string from a number and a word added depending on the plurality of the number (and format the number nicely)
-    function pluralFormatNicely(n, singular, plural) {
-        if (n == 1)
-            return numberToStringButNicely(n) + singular;
-        return numberToStringButNicely(n) + plural;
-    }
-    Algo.pluralFormatNicely = pluralFormatNicely;
-    // Remove all special characters from a string, only let lower-case letters
-    function simplifyString(s) {
-        return s.toLowerCase().replace(/[^\w]|_/g, "");
-    }
-    Algo.simplifyString = simplifyString;
-    // Return the biggest number between two numbers
-    function takeBiggest(a, b) {
-        if (a > b)
-            return a;
-        return b;
-    }
-    Algo.takeBiggest = takeBiggest;
-})(Algo || (Algo = {}));
-var ATreeTicTacToeMinimaxReturnValue = (function () {
-    function ATreeTicTacToeMinimaxReturnValue() {
-        this.bestPosition = null;
-        this.bestScore = null;
-    }
-    return ATreeTicTacToeMinimaxReturnValue;
-})();
-var ATreeTicTacToeSign;
-(function (ATreeTicTacToeSign) {
-    ATreeTicTacToeSign[ATreeTicTacToeSign["NO_SIGN"] = 0] = "NO_SIGN";
-    ATreeTicTacToeSign[ATreeTicTacToeSign["X"] = 1] = "X";
-    ATreeTicTacToeSign[ATreeTicTacToeSign["O"] = 2] = "O";
-})(ATreeTicTacToeSign || (ATreeTicTacToeSign = {}));
-var ATreeTicTacToeStep;
-(function (ATreeTicTacToeStep) {
-    ATreeTicTacToeStep[ATreeTicTacToeStep["PLAYING"] = 0] = "PLAYING";
-    ATreeTicTacToeStep[ATreeTicTacToeStep["NOBODY_WINS"] = 1] = "NOBODY_WINS";
-    ATreeTicTacToeStep[ATreeTicTacToeStep["YOU_LOSE"] = 2] = "YOU_LOSE";
-})(ATreeTicTacToeStep || (ATreeTicTacToeStep = {}));
-// N.B. : the case when the player wins isn't in this enumeration because this case is a new aTreeStep and is therefore handled by the global saving system 
 var Place = (function () {
     // Constructor
     function Place(game) {
@@ -479,7 +370,8 @@ var Saving;
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    __.prototype = b.prototype;
+    d.prototype = new __();
 };
 Saving.registerNumber("aTreeStep", 0);
 var ATree = (function (_super) {
@@ -929,6 +821,115 @@ var ATree = (function (_super) {
     };
     return ATree;
 })(Place);
+var ATreeTicTacToeMinimaxReturnValue = (function () {
+    function ATreeTicTacToeMinimaxReturnValue() {
+        this.bestPosition = null;
+        this.bestScore = null;
+    }
+    return ATreeTicTacToeMinimaxReturnValue;
+})();
+var ATreeTicTacToeSign;
+(function (ATreeTicTacToeSign) {
+    ATreeTicTacToeSign[ATreeTicTacToeSign["NO_SIGN"] = 0] = "NO_SIGN";
+    ATreeTicTacToeSign[ATreeTicTacToeSign["X"] = 1] = "X";
+    ATreeTicTacToeSign[ATreeTicTacToeSign["O"] = 2] = "O";
+})(ATreeTicTacToeSign || (ATreeTicTacToeSign = {}));
+var ATreeTicTacToeStep;
+(function (ATreeTicTacToeStep) {
+    ATreeTicTacToeStep[ATreeTicTacToeStep["PLAYING"] = 0] = "PLAYING";
+    ATreeTicTacToeStep[ATreeTicTacToeStep["NOBODY_WINS"] = 1] = "NOBODY_WINS";
+    ATreeTicTacToeStep[ATreeTicTacToeStep["YOU_LOSE"] = 2] = "YOU_LOSE";
+})(ATreeTicTacToeStep || (ATreeTicTacToeStep = {}));
+// N.B. : the case when the player wins isn't in this enumeration because this case is a new aTreeStep and is therefore handled by the global saving system 
+var Algo;
+(function (Algo) {
+    // Return 0 is the number given is under 0, else return the number given
+    function correctIfUnderZero(n) {
+        if (n < 0)
+            return 0;
+        return n;
+    }
+    Algo.correctIfUnderZero = correctIfUnderZero;
+    // Return the maximum value a javascript Number can get before loosing precision
+    function getMaximumJavascriptInt() {
+        return 9007199254740992; // 2^53
+    }
+    Algo.getMaximumJavascriptInt = getMaximumJavascriptInt;
+    // Return a Pos object corresponding to a direction
+    // x and y values can be between -a and a, but they can't both be 0
+    function getRandomNotImmobileDirectionUpToThisSpeed(a) {
+        var pos = new Pos();
+        // Set x and y
+        pos.x = Random.between(-a, a);
+        if (pos.x != 0)
+            pos.y = Random.between(-a, a);
+        else {
+            // x is 0, so y can't be 0 : we pick positive or negative randomly
+            if (Random.flipACoin())
+                pos.y = Random.between(-a, -1);
+            else
+                pos.y = Random.between(1, a);
+        }
+        // We possibly invert x and y because since x is treated first, basically it has more chance than y to be 0
+        if (Random.flipACoin())
+            pos.invert();
+        // We return the position
+        return pos;
+    }
+    Algo.getRandomNotImmobileDirectionUpToThisSpeed = getRandomNotImmobileDirectionUpToThisSpeed;
+    // Add the html <u> tag around the specified letter in the string given, and return the resulting string
+    function makeUnderlinedLetter(s, underlinedLetter) {
+        if (underlinedLetter != -1)
+            return s.slice(0, underlinedLetter) + "<u>" + s.charAt(underlinedLetter) + "</u>" + s.slice(underlinedLetter + 1, s.length);
+        else
+            return s;
+    }
+    Algo.makeUnderlinedLetter = makeUnderlinedLetter;
+    // Transform a number in a string and add whitespaces every three figures
+    function numberToStringButNicely(n) {
+        // We store the number as a string in the variable str
+        var str = n.toString();
+        // If the number isn't going to loose precision because it's too big, we add whitespaces every three characters
+        if (n < getMaximumJavascriptInt()) {
+            // If the var is bigger than 3 characters
+            if (str.length > 3) {
+                for (var i = Math.floor(str.length / 3); i > 0; i--) {
+                    if (i * 3 != str.length)
+                        str = str.addAt(str.length - i * 3, " ");
+                }
+            }
+        }
+        // Return str
+        return str;
+    }
+    Algo.numberToStringButNicely = numberToStringButNicely;
+    // Create a string from a number and a word added depending on the plurality of the number
+    function pluralFormat(n, singular, plural) {
+        if (n == 1)
+            return n.toString() + singular;
+        return n.toString() + plural;
+    }
+    Algo.pluralFormat = pluralFormat;
+    // Create a string from a number and a word added depending on the plurality of the number (and format the number nicely)
+    function pluralFormatNicely(n, singular, plural) {
+        if (n == 1)
+            return numberToStringButNicely(n) + singular;
+        return numberToStringButNicely(n) + plural;
+    }
+    Algo.pluralFormatNicely = pluralFormatNicely;
+    // Remove all special characters from a string, only let lower-case letters
+    function simplifyString(s) {
+        return s.toLowerCase().replace(/[^\w]|_/g, "");
+    }
+    Algo.simplifyString = simplifyString;
+    // Return the biggest number between two numbers
+    function takeBiggest(a, b) {
+        if (a > b)
+            return a;
+        return b;
+    }
+    Algo.takeBiggest = takeBiggest;
+})(Algo || (Algo = {}));
 var BarType;
 (function (BarType) {
     BarType[BarType["SIMPLE"] = 0] = "SIMPLE";
@@ -1775,12 +1776,6 @@ var Bar = (function (_super) {
     };
     return Bar;
 })(RenderArea);
-var BigSharkFinType;
-(function (BigSharkFinType) {
-    BigSharkFinType[BigSharkFinType["RED"] = 0] = "RED";
-    BigSharkFinType[BigSharkFinType["GREEN"] = 1] = "GREEN";
-    BigSharkFinType[BigSharkFinType["PURPLE"] = 2] = "PURPLE";
-})(BigSharkFinType || (BigSharkFinType = {}));
 var QuestEntity = (function () {
     // Constructor
     function QuestEntity(quest, globalPosition, naming, renderArea, renderAreaPosition, cbc, questEntityMovement, questEntityAnimation) {
@@ -2455,6 +2450,12 @@ var BigShark = (function (_super) {
     };
     return BigShark;
 })(QuestEntity);
+var BigSharkFinType;
+(function (BigSharkFinType) {
+    BigSharkFinType[BigSharkFinType["RED"] = 0] = "RED";
+    BigSharkFinType[BigSharkFinType["GREEN"] = 1] = "GREEN";
+    BigSharkFinType[BigSharkFinType["PURPLE"] = 2] = "PURPLE";
+})(BigSharkFinType || (BigSharkFinType = {}));
 ///<reference path="QuestEntity.ts"/>
 var QuestEntitySpell = (function (_super) {
     __extends(QuestEntitySpell, _super);
@@ -3051,13 +3052,13 @@ var Quest = (function (_super) {
                     additionalMessage = "You gain 10 health points.";
                     break; // Wow, not very effective : heal 10hp
                 case 7:
-                    this.getGame().getPlayer().heal(10);
+                    this.getGame().getPlayer().heal(7);
                     additionalMessage = "You gain 7 health points.";
                     break; // Wow, not very effective : heal 7hp
                 case 8:
-                    this.getGame().getPlayer().heal(10);
+                    this.getGame().getPlayer().heal(3);
                     additionalMessage = "You gain 3 health points.";
-                    break; // Wow, not very effective : heal 30hp
+                    break; // Wow, not very effective : heal 3hp
             }
         }
         else {
@@ -3807,6 +3808,62 @@ var StatusBarResource = (function (_super) {
     return StatusBarResource;
 })(Resource);
 ///<reference path="StatusBarResource.ts"/>
+var Candies = (function (_super) {
+    __extends(Candies, _super);
+    // Constructor
+    function Candies(game, savingPrefix) {
+        _super.call(this, game, savingPrefix);
+    }
+    // Public methods
+    Candies.prototype.getCurrentAsString = function (totalSize) {
+        if (totalSize === void 0) { totalSize = 10; }
+        var n = this.getCurrent();
+        var size = totalSize;
+        var base = "";
+        var prefix = "";
+        var suffix = "";
+        var comment = "";
+        // We set the base or return right now in some special cases
+        if (n < 0)
+            return "What, negative candies?!";
+        else if (n == 1)
+            return "You have 1 candy";
+        else {
+            if (n == 1337)
+                base = "leet";
+            else
+                base = Algo.numberToStringButNicely(n);
+        }
+        // How much space do we still have ?
+        size = totalSize - base.length;
+        // We set the suffix
+        if (size >= 8) {
+            suffix = " candies";
+            // We add a prefix
+            // How much space do we still have ?
+            size = totalSize - base.length - suffix.length;
+            // We set the prefix
+            if (size >= 9)
+                prefix = "You have ";
+            else if (size >= 3)
+                prefix = "-> ";
+        }
+        else if (size >= 4)
+            suffix = " cnd";
+        else if (size >= 2)
+            suffix = " c";
+        // How much space do we still have ?
+        size = totalSize - base.length - prefix.length - suffix.length;
+        // We possibly set a comment
+        if (n == 42 && size >= 4)
+            comment = " \\o/";
+        else if ((n == 65535 || n == 314159) && size >= 1)
+            comment = "!";
+        return prefix + base + suffix + comment;
+    };
+    return Candies;
+})(StatusBarResource);
+///<reference path="StatusBarResource.ts"/>
 var CandiesEaten = (function (_super) {
     __extends(CandiesEaten, _super);
     // Constructor
@@ -3830,132 +3887,6 @@ var CandiesEaten = (function (_super) {
     };
     return CandiesEaten;
 })(StatusBarResource);
-var CandiesThrownSmileyCaveObject = (function () {
-    // Constructor
-    function CandiesThrownSmileyCaveObject(str, position) {
-        this.str = str;
-        this.position = position;
-    }
-    // Public getters
-    CandiesThrownSmileyCaveObject.prototype.getPosition = function () {
-        return this.position;
-    };
-    CandiesThrownSmileyCaveObject.prototype.getStr = function () {
-        return this.str;
-    };
-    return CandiesThrownSmileyCaveObject;
-})();
-var CandiesThrownSmileyCaveStep;
-(function (CandiesThrownSmileyCaveStep) {
-    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["FIRST_ROOM"] = 0] = "FIRST_ROOM";
-    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["SECOND_ROOM"] = 1] = "SECOND_ROOM";
-    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["THIRD_ROOM"] = 2] = "THIRD_ROOM";
-})(CandiesThrownSmileyCaveStep || (CandiesThrownSmileyCaveStep = {}));
-var CandiesThrownSmiley = (function () {
-    // Constructor
-    function CandiesThrownSmiley() {
-    }
-    // Public methods
-    CandiesThrownSmiley.prototype.draw = function (renderArea, x, y, base) {
-        // We're in the mother class, so we just draw nothing and return 0
-        return 0;
-    };
-    return CandiesThrownSmiley;
-})();
-///<reference path="CandiesThrownSmiley.ts"/>
-var CandiesThrownSmileyCave = (function (_super) {
-    __extends(CandiesThrownSmileyCave, _super);
-    // Constructor
-    function CandiesThrownSmileyCave(smiley, smileyPosition, step) {
-        if (step === void 0) { step = CandiesThrownSmileyCaveStep.FIRST_ROOM; }
-        _super.call(this);
-        // Various objects (can be speeches, for example)
-        this.objects = [];
-        // Is the chest open ? (closed by default)
-        this.chestOpened = false;
-        this.smiley = smiley;
-        this.smileyPosition = smileyPosition;
-        this.step = step;
-    }
-    // draw()
-    CandiesThrownSmileyCave.prototype.draw = function (renderArea, x, y, base) {
-        // Draw the base
-        renderArea.drawString(base, x, y);
-        // Draw the cave's walls, depending on the step
-        renderArea.drawVerticalLine("|", 0, y + 2, y + 8); // Left wall
-        renderArea.drawVerticalLine("|", 62, y, y + 8); // Right wall
-        renderArea.drawHorizontalLine("_", 0, 57, y + 1); // Roof
-        renderArea.drawString("|", 56, y + 1); // Additional character
-        switch (this.step) {
-            // Only third room
-            case CandiesThrownSmileyCaveStep.THIRD_ROOM:
-                renderArea.drawHorizontalLine("-", 12, 62, y + 16); // Floor
-                renderArea.drawVerticalLine("|", 62, y + 9, y + 16); // Right wall
-                renderArea.drawArray(Database.getAscii("general/candyRoom"), 12, y + 9); // Content of the room
-            // Second & third room
-            case CandiesThrownSmileyCaveStep.SECOND_ROOM:
-                // Floor of the first room (we must make it in two pieces because there's a hole!)
-                renderArea.drawHorizontalLine("-", 1, 4, y + 8); // Left
-                renderArea.drawHorizontalLine("-", 9, 62, y + 8); // Right
-                // Rest of the room
-                renderArea.drawVerticalLine("|", 0, y + 9, y + 16); // Left wall
-                renderArea.drawVerticalLine("|", 11, y + 9, y + 14); // Right wall
-                renderArea.drawHorizontalLine("-", 1, 12, y + 16); // Floor
-                break;
-            // Only first room
-            case CandiesThrownSmileyCaveStep.FIRST_ROOM:
-                renderArea.drawHorizontalLine("-", 1, 62, y + 8); // Floor
-                break;
-        }
-        // Draw the chest
-        renderArea.drawString("|_|", 1, y + 7);
-        if (this.chestOpened == false)
-            renderArea.drawString("_", 2, y + 6);
-        else
-            renderArea.drawString("(", 1, y + 6);
-        // Draw the smiley
-        renderArea.drawString(this.smiley, x + this.smileyPosition.x, y + this.smileyPosition.y);
-        // Draw objects
-        for (var i = 0; i < this.objects.length; i++) {
-            renderArea.drawString(this.objects[i].getStr(), x + this.objects[i].getPosition().x, y + this.objects[i].getPosition().y);
-        }
-        // Return the cave's height
-        switch (this.step) {
-            case CandiesThrownSmileyCaveStep.FIRST_ROOM:
-                return 8;
-                break;
-            case CandiesThrownSmileyCaveStep.SECOND_ROOM:
-            case CandiesThrownSmileyCaveStep.THIRD_ROOM:
-                return 16;
-                break;
-        }
-    };
-    // Public methods used to add or change stuff (always return ourselves)
-    CandiesThrownSmileyCave.prototype.addObject = function (object) {
-        this.objects.push(object);
-        return this;
-    };
-    CandiesThrownSmileyCave.prototype.openChest = function () {
-        this.chestOpened = true;
-        return this;
-    };
-    return CandiesThrownSmileyCave;
-})(CandiesThrownSmiley);
-///<reference path="CandiesThrownSmiley.ts"/>
-var CandiesThrownSmileyFirstLine = (function (_super) {
-    __extends(CandiesThrownSmileyFirstLine, _super);
-    // Constructor
-    function CandiesThrownSmileyFirstLine(line) {
-        _super.call(this);
-        this.line = line;
-    }
-    // draw()
-    CandiesThrownSmileyFirstLine.prototype.draw = function (renderArea, x, y, base) {
-        renderArea.drawString(base + this.line, x, y);
-        return 0;
-    };
-    return CandiesThrownSmileyFirstLine;
-})(CandiesThrownSmiley);
 ///<reference path="Resource.ts"/>
 Saving.registerBool("candiesThrownGotChocolateBar", false);
 var CandiesThrown = (function (_super) {
@@ -4247,62 +4178,132 @@ var CandiesThrown = (function (_super) {
     };
     return CandiesThrown;
 })(Resource);
-///<reference path="StatusBarResource.ts"/>
-var Candies = (function (_super) {
-    __extends(Candies, _super);
+var CandiesThrownSmiley = (function () {
     // Constructor
-    function Candies(game, savingPrefix) {
-        _super.call(this, game, savingPrefix);
+    function CandiesThrownSmiley() {
     }
     // Public methods
-    Candies.prototype.getCurrentAsString = function (totalSize) {
-        if (totalSize === void 0) { totalSize = 10; }
-        var n = this.getCurrent();
-        var size = totalSize;
-        var base = "";
-        var prefix = "";
-        var suffix = "";
-        var comment = "";
-        // We set the base or return right now in some special cases
-        if (n < 0)
-            return "What, negative candies?!";
-        else if (n == 1)
-            return "You have 1 candy";
-        else {
-            if (n == 1337)
-                base = "leet";
-            else
-                base = Algo.numberToStringButNicely(n);
-        }
-        // How much space do we still have ?
-        size = totalSize - base.length;
-        // We set the suffix
-        if (size >= 8) {
-            suffix = " candies";
-            // We add a prefix
-            // How much space do we still have ?
-            size = totalSize - base.length - suffix.length;
-            // We set the prefix
-            if (size >= 9)
-                prefix = "You have ";
-            else if (size >= 3)
-                prefix = "-> ";
-        }
-        else if (size >= 4)
-            suffix = " cnd";
-        else if (size >= 2)
-            suffix = " c";
-        // How much space do we still have ?
-        size = totalSize - base.length - prefix.length - suffix.length;
-        // We possibly set a comment
-        if (n == 42 && size >= 4)
-            comment = " \\o/";
-        else if ((n == 65535 || n == 314159) && size >= 1)
-            comment = "!";
-        return prefix + base + suffix + comment;
+    CandiesThrownSmiley.prototype.draw = function (renderArea, x, y, base) {
+        // We're in the mother class, so we just draw nothing and return 0
+        return 0;
     };
-    return Candies;
-})(StatusBarResource);
+    return CandiesThrownSmiley;
+})();
+///<reference path="CandiesThrownSmiley.ts"/>
+var CandiesThrownSmileyCave = (function (_super) {
+    __extends(CandiesThrownSmileyCave, _super);
+    // Constructor
+    function CandiesThrownSmileyCave(smiley, smileyPosition, step) {
+        if (step === void 0) { step = CandiesThrownSmileyCaveStep.FIRST_ROOM; }
+        _super.call(this);
+        // Various objects (can be speeches, for example)
+        this.objects = [];
+        // Is the chest open ? (closed by default)
+        this.chestOpened = false;
+        this.smiley = smiley;
+        this.smileyPosition = smileyPosition;
+        this.step = step;
+    }
+    // draw()
+    CandiesThrownSmileyCave.prototype.draw = function (renderArea, x, y, base) {
+        // Draw the base
+        renderArea.drawString(base, x, y);
+        // Draw the cave's walls, depending on the step
+        renderArea.drawVerticalLine("|", 0, y + 2, y + 8); // Left wall
+        renderArea.drawVerticalLine("|", 62, y, y + 8); // Right wall
+        renderArea.drawHorizontalLine("_", 0, 57, y + 1); // Roof
+        renderArea.drawString("|", 56, y + 1); // Additional character
+        switch (this.step) {
+            // Only third room
+            case CandiesThrownSmileyCaveStep.THIRD_ROOM:
+                renderArea.drawHorizontalLine("-", 12, 62, y + 16); // Floor
+                renderArea.drawVerticalLine("|", 62, y + 9, y + 16); // Right wall
+                renderArea.drawArray(Database.getAscii("general/candyRoom"), 12, y + 9); // Content of the room
+            // Second & third room
+            case CandiesThrownSmileyCaveStep.SECOND_ROOM:
+                // Floor of the first room (we must make it in two pieces because there's a hole!)
+                renderArea.drawHorizontalLine("-", 1, 4, y + 8); // Left
+                renderArea.drawHorizontalLine("-", 9, 62, y + 8); // Right
+                // Rest of the room
+                renderArea.drawVerticalLine("|", 0, y + 9, y + 16); // Left wall
+                renderArea.drawVerticalLine("|", 11, y + 9, y + 14); // Right wall
+                renderArea.drawHorizontalLine("-", 1, 12, y + 16); // Floor
+                break;
+            // Only first room
+            case CandiesThrownSmileyCaveStep.FIRST_ROOM:
+                renderArea.drawHorizontalLine("-", 1, 62, y + 8); // Floor
+                break;
+        }
+        // Draw the chest
+        renderArea.drawString("|_|", 1, y + 7);
+        if (this.chestOpened == false)
+            renderArea.drawString("_", 2, y + 6);
+        else
+            renderArea.drawString("(", 1, y + 6);
+        // Draw the smiley
+        renderArea.drawString(this.smiley, x + this.smileyPosition.x, y + this.smileyPosition.y);
+        // Draw objects
+        for (var i = 0; i < this.objects.length; i++) {
+            renderArea.drawString(this.objects[i].getStr(), x + this.objects[i].getPosition().x, y + this.objects[i].getPosition().y);
+        }
+        // Return the cave's height
+        switch (this.step) {
+            case CandiesThrownSmileyCaveStep.FIRST_ROOM:
+                return 8;
+                break;
+            case CandiesThrownSmileyCaveStep.SECOND_ROOM:
+            case CandiesThrownSmileyCaveStep.THIRD_ROOM:
+                return 16;
+                break;
+        }
+    };
+    // Public methods used to add or change stuff (always return ourselves)
+    CandiesThrownSmileyCave.prototype.addObject = function (object) {
+        this.objects.push(object);
+        return this;
+    };
+    CandiesThrownSmileyCave.prototype.openChest = function () {
+        this.chestOpened = true;
+        return this;
+    };
+    return CandiesThrownSmileyCave;
+})(CandiesThrownSmiley);
+var CandiesThrownSmileyCaveObject = (function () {
+    // Constructor
+    function CandiesThrownSmileyCaveObject(str, position) {
+        this.str = str;
+        this.position = position;
+    }
+    // Public getters
+    CandiesThrownSmileyCaveObject.prototype.getPosition = function () {
+        return this.position;
+    };
+    CandiesThrownSmileyCaveObject.prototype.getStr = function () {
+        return this.str;
+    };
+    return CandiesThrownSmileyCaveObject;
+})();
+var CandiesThrownSmileyCaveStep;
+(function (CandiesThrownSmileyCaveStep) {
+    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["FIRST_ROOM"] = 0] = "FIRST_ROOM";
+    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["SECOND_ROOM"] = 1] = "SECOND_ROOM";
+    CandiesThrownSmileyCaveStep[CandiesThrownSmileyCaveStep["THIRD_ROOM"] = 2] = "THIRD_ROOM";
+})(CandiesThrownSmileyCaveStep || (CandiesThrownSmileyCaveStep = {}));
+///<reference path="CandiesThrownSmiley.ts"/>
+var CandiesThrownSmileyFirstLine = (function (_super) {
+    __extends(CandiesThrownSmileyFirstLine, _super);
+    // Constructor
+    function CandiesThrownSmileyFirstLine(line) {
+        _super.call(this);
+        this.line = line;
+    }
+    // draw()
+    CandiesThrownSmileyFirstLine.prototype.draw = function (renderArea, x, y, base) {
+        renderArea.drawString(base + this.line, x, y);
+        return 0;
+    };
+    return CandiesThrownSmileyFirstLine;
+})(CandiesThrownSmiley);
 ///<reference path="Place.ts"/>
 Saving.registerBool("candyBoxBoxOpened", false);
 var CandyBox = (function (_super) {
@@ -4682,6 +4683,136 @@ var CandyMerchantItem_TimeRing = (function (_super) {
     };
     return CandyMerchantItem_TimeRing;
 })(CandyMerchantItem);
+///<reference path="Place.ts"/>
+Saving.registerBool("castleKilledNougatMonster", false);
+var Castle = (function (_super) {
+    __extends(Castle, _super);
+    // Constructor
+    function Castle(game) {
+        _super.call(this, game);
+        // The render area
+        this.renderArea = new RenderArea();
+        this.renderArea.resizeFromArray(Database.getAscii("places/castle/map"), 0, 5);
+        this.update();
+    }
+    // getRenderArea()
+    Castle.prototype.getRenderArea = function () {
+        return this.renderArea;
+    };
+    // Private methods   
+    Castle.prototype.drawBigRoom = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleBigRoomButton", x, x + 1, y, x, x + 1, y + 1);
+        // Comment
+        this.renderArea.addFullComment(x - 9, y, Database.getText("castleBigRoomComment"), Database.getTranslatedText("castleBigRoomComment"), "castleBigRoomComment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleBigRoomButton, .castleBigRoomComment", ".castleBigRoomComment");
+        this.renderArea.addLinkCall(".castleBigRoomButton", new CallbackCollection(this.goToBigRoom.bind(this)));
+    };
+    Castle.prototype.drawCastleEntrance = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton", x, x + 2, y);
+        // Comment
+        this.renderArea.addFullComment(x + 1, y + 1, Database.getText("castleCastleEntranceComment"), Database.getTranslatedText("castleCastleEntranceComment"), "castleCastleEntranceComment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleCastleEntranceButton, .castleCastleEntranceComment", ".castleCastleEntranceComment");
+    };
+    Castle.prototype.drawNougatMonster = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton", x + 1, x + 8, y, x, x + 10, y + 1, x, x + 10, y + 2, x + 1, x + 8, y + 3);
+        // Comment
+        this.renderArea.addFullComment(x + 5, y - 2, Database.getText("castleNougatMonsterComment"), Database.getTranslatedText("castleNougatMonsterComment"), "castleNougatMonsterComment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleNougatMonsterButton, .castleNougatMonsterComment", ".castleNougatMonsterComment");
+        this.renderArea.addLinkCall(".castleNougatMonsterButton", new CallbackCollection(this.goToNougatMonster.bind(this)));
+    };
+    Castle.prototype.drawRoom1 = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleRoom1Button", x, x + 1, y, x, x + 1, y + 1);
+        // Comment
+        this.renderArea.addFullComment(x - 6, y, Database.getText("castleARoomComment"), Database.getTranslatedText("castleARoomComment"), "castleRoom1Comment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleRoom1Button, .castleRoom1Comment", ".castleRoom1Comment");
+        this.renderArea.addLinkCall(".castleRoom1Button, .castleRoom1Comment", new CallbackCollection(this.goToRoom1.bind(this)));
+    };
+    Castle.prototype.drawRoom2 = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleRoom2Button", x, x + 1, y, x, x + 1, y + 1);
+        // Comment
+        this.renderArea.addFullComment(x - 6, y, Database.getText("castleADarkRoomComment"), Database.getTranslatedText("castleADarkRoomComment"), "castleRoom2Comment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleRoom2Button, .castleRoom2Comment", ".castleRoom2Comment");
+        this.renderArea.addLinkCall(".castleRoom2Button, .castleRoom2Comment", new CallbackCollection(this.goToRoom2.bind(this)));
+    };
+    Castle.prototype.drawRoom3 = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleRoom3Button", x, x + 1, y, x, x + 1, y + 1);
+        // Comment
+        this.renderArea.addFullComment(x - 6, y, Database.getText("castleARoomComment"), Database.getTranslatedText("castleARoomComment"), "castleRoom3Comment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleRoom3Button, .castleRoom3Comment", ".castleRoom3Comment");
+        this.renderArea.addLinkCall(".castleRoom3Button, .castleRoom3Comment", new CallbackCollection(this.goToRoom3.bind(this)));
+    };
+    Castle.prototype.drawStairs = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleStairsButton", x, x + 4, y, x, x + 4, y + 1, x, x + 4, y + 2, x, x + 4, y + 3, x, x + 4, y + 4);
+        // Comment
+        this.renderArea.addFullComment(x + 10, y + 2, Database.getText("castleStairsComment"), Database.getTranslatedText("castleStairsComment"), "castleStairsComment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleStairsButton, .castleStairsComment", ".castleStairsComment");
+        this.renderArea.addLinkCall(".castleStairsButton", new CallbackCollection(this.goToStairs.bind(this)));
+    };
+    Castle.prototype.drawTowerEntrance = function (x, y) {
+        // Buttons
+        this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton", x, x + 1, y, x, x + 1, y + 1);
+        // Comment
+        this.renderArea.addFullComment(x + 12, y, Database.getText("castleTowerEntranceComment"), Database.getTranslatedText("castleTowerEntranceComment"), "castleTowerEntranceComment");
+        // Interactions
+        this.renderArea.addLinkOver(".castleTowerEntranceButton, .castleTowerEntranceComment", ".castleTowerEntranceComment");
+        this.renderArea.addLinkCall(".castleTowerEntranceButton", new CallbackCollection(this.goToTowerEntrance.bind(this)));
+    };
+    Castle.prototype.goToBigRoom = function () {
+        this.getGame().setPlace(new CastleBigRoom(this.getGame()));
+    };
+    Castle.prototype.goToNougatMonster = function () {
+        this.getGame().setPlace(new GiantNougatMonsterQuest(this.getGame()));
+    };
+    Castle.prototype.goToRoom1 = function () {
+        this.getGame().setPlace(new CastleRoom1(this.getGame()));
+    };
+    Castle.prototype.goToRoom2 = function () {
+        this.getGame().setPlace(new CastleRoom2(this.getGame()));
+    };
+    Castle.prototype.goToRoom3 = function () {
+        this.getGame().setPlace(new CastleRoom3(this.getGame()));
+    };
+    Castle.prototype.goToStairs = function () {
+        this.getGame().setPlace(new Dragon(this.getGame()));
+    };
+    Castle.prototype.goToTowerEntrance = function () {
+        this.getGame().setPlace(new CastleTower(this.getGame()));
+    };
+    Castle.prototype.update = function () {
+        // Erase everything
+        this.renderArea.resetAllButSize();
+        // Back to the map button
+        this.addBackToMainMapButton(this.renderArea, "castleBackToTheMapButton");
+        // Draw the ascii
+        this.renderArea.drawArray(Database.getAscii("places/castle/map"), 0, 3);
+        // Draw various stuff
+        this.drawCastleEntrance(43, 36);
+        this.drawBigRoom(57, 19);
+        this.drawRoom1(15, 27);
+        this.drawRoom2(15, 21);
+        this.drawRoom3(15, 15);
+        this.drawNougatMonster(68, 15);
+        this.drawStairs(32, 3);
+        if (Saving.loadBool("castleKilledNougatMonster")) {
+            this.drawTowerEntrance(84, 16);
+        }
+    };
+    return Castle;
+})(Place);
 ///<reference path="Place.ts"/>
 var CastleRoom = (function (_super) {
     __extends(CastleRoom, _super);
@@ -5329,177 +5460,6 @@ var CastleTower = (function (_super) {
     return CastleTower;
 })(CastleRoom);
 ///<reference path="Place.ts"/>
-Saving.registerBool("castleKilledNougatMonster", false);
-var Castle = (function (_super) {
-    __extends(Castle, _super);
-    // Constructor
-    function Castle(game) {
-        _super.call(this, game);
-        // The render area
-        this.renderArea = new RenderArea();
-        this.renderArea.resizeFromArray(Database.getAscii("places/castle/map"), 0, 5);
-        this.update();
-    }
-    // getRenderArea()
-    Castle.prototype.getRenderArea = function () {
-        return this.renderArea;
-    };
-    // Private methods   
-    Castle.prototype.drawBigRoom = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleBigRoomButton", x, x + 1, y, x, x + 1, y + 1);
-        // Comment
-        this.renderArea.addFullComment(x - 9, y, Database.getText("castleBigRoomComment"), Database.getTranslatedText("castleBigRoomComment"), "castleBigRoomComment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleBigRoomButton, .castleBigRoomComment", ".castleBigRoomComment");
-        this.renderArea.addLinkCall(".castleBigRoomButton", new CallbackCollection(this.goToBigRoom.bind(this)));
-    };
-    Castle.prototype.drawCastleEntrance = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton", x, x + 2, y);
-        // Comment
-        this.renderArea.addFullComment(x + 1, y + 1, Database.getText("castleCastleEntranceComment"), Database.getTranslatedText("castleCastleEntranceComment"), "castleCastleEntranceComment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleCastleEntranceButton, .castleCastleEntranceComment", ".castleCastleEntranceComment");
-    };
-    Castle.prototype.drawNougatMonster = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton", x + 1, x + 8, y, x, x + 10, y + 1, x, x + 10, y + 2, x + 1, x + 8, y + 3);
-        // Comment
-        this.renderArea.addFullComment(x + 5, y - 2, Database.getText("castleNougatMonsterComment"), Database.getTranslatedText("castleNougatMonsterComment"), "castleNougatMonsterComment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleNougatMonsterButton, .castleNougatMonsterComment", ".castleNougatMonsterComment");
-        this.renderArea.addLinkCall(".castleNougatMonsterButton", new CallbackCollection(this.goToNougatMonster.bind(this)));
-    };
-    Castle.prototype.drawRoom1 = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom1Button", x, x + 1, y, x, x + 1, y + 1);
-        // Comment
-        this.renderArea.addFullComment(x - 6, y, Database.getText("castleARoomComment"), Database.getTranslatedText("castleARoomComment"), "castleRoom1Comment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleRoom1Button, .castleRoom1Comment", ".castleRoom1Comment");
-        this.renderArea.addLinkCall(".castleRoom1Button, .castleRoom1Comment", new CallbackCollection(this.goToRoom1.bind(this)));
-    };
-    Castle.prototype.drawRoom2 = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom2Button", x, x + 1, y, x, x + 1, y + 1);
-        // Comment
-        this.renderArea.addFullComment(x - 6, y, Database.getText("castleADarkRoomComment"), Database.getTranslatedText("castleADarkRoomComment"), "castleRoom2Comment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleRoom2Button, .castleRoom2Comment", ".castleRoom2Comment");
-        this.renderArea.addLinkCall(".castleRoom2Button, .castleRoom2Comment", new CallbackCollection(this.goToRoom2.bind(this)));
-    };
-    Castle.prototype.drawRoom3 = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleRoom3Button", x, x + 1, y, x, x + 1, y + 1);
-        // Comment
-        this.renderArea.addFullComment(x - 6, y, Database.getText("castleARoomComment"), Database.getTranslatedText("castleARoomComment"), "castleRoom3Comment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleRoom3Button, .castleRoom3Comment", ".castleRoom3Comment");
-        this.renderArea.addLinkCall(".castleRoom3Button, .castleRoom3Comment", new CallbackCollection(this.goToRoom3.bind(this)));
-    };
-    Castle.prototype.drawStairs = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleStairsButton", x, x + 4, y, x, x + 4, y + 1, x, x + 4, y + 2, x, x + 4, y + 3, x, x + 4, y + 4);
-        // Comment
-        this.renderArea.addFullComment(x + 10, y + 2, Database.getText("castleStairsComment"), Database.getTranslatedText("castleStairsComment"), "castleStairsComment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleStairsButton, .castleStairsComment", ".castleStairsComment");
-        this.renderArea.addLinkCall(".castleStairsButton", new CallbackCollection(this.goToStairs.bind(this)));
-    };
-    Castle.prototype.drawTowerEntrance = function (x, y) {
-        // Buttons
-        this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton", x, x + 1, y, x, x + 1, y + 1);
-        // Comment
-        this.renderArea.addFullComment(x + 12, y, Database.getText("castleTowerEntranceComment"), Database.getTranslatedText("castleTowerEntranceComment"), "castleTowerEntranceComment");
-        // Interactions
-        this.renderArea.addLinkOver(".castleTowerEntranceButton, .castleTowerEntranceComment", ".castleTowerEntranceComment");
-        this.renderArea.addLinkCall(".castleTowerEntranceButton", new CallbackCollection(this.goToTowerEntrance.bind(this)));
-    };
-    Castle.prototype.goToBigRoom = function () {
-        this.getGame().setPlace(new CastleBigRoom(this.getGame()));
-    };
-    Castle.prototype.goToNougatMonster = function () {
-        this.getGame().setPlace(new GiantNougatMonsterQuest(this.getGame()));
-    };
-    Castle.prototype.goToRoom1 = function () {
-        this.getGame().setPlace(new CastleRoom1(this.getGame()));
-    };
-    Castle.prototype.goToRoom2 = function () {
-        this.getGame().setPlace(new CastleRoom2(this.getGame()));
-    };
-    Castle.prototype.goToRoom3 = function () {
-        this.getGame().setPlace(new CastleRoom3(this.getGame()));
-    };
-    Castle.prototype.goToStairs = function () {
-        this.getGame().setPlace(new Dragon(this.getGame()));
-    };
-    Castle.prototype.goToTowerEntrance = function () {
-        this.getGame().setPlace(new CastleTower(this.getGame()));
-    };
-    Castle.prototype.update = function () {
-        // Erase everything
-        this.renderArea.resetAllButSize();
-        // Back to the map button
-        this.addBackToMainMapButton(this.renderArea, "castleBackToTheMapButton");
-        // Draw the ascii
-        this.renderArea.drawArray(Database.getAscii("places/castle/map"), 0, 3);
-        // Draw various stuff
-        this.drawCastleEntrance(43, 36);
-        this.drawBigRoom(57, 19);
-        this.drawRoom1(15, 27);
-        this.drawRoom2(15, 21);
-        this.drawRoom3(15, 15);
-        this.drawNougatMonster(68, 15);
-        this.drawStairs(32, 3);
-        if (Saving.loadBool("castleKilledNougatMonster")) {
-            this.drawTowerEntrance(84, 16);
-        }
-    };
-    return Castle;
-})(Place);
-var CauldronActionLogEntry = (function () {
-    // Constructor
-    function CauldronActionLogEntry(action, time, candies, lollipops) {
-        this.action = action;
-        this.time = time;
-        this.candies = candies;
-        this.lollipops = lollipops;
-    }
-    // Public getters
-    CauldronActionLogEntry.prototype.getAction = function () {
-        return this.action;
-    };
-    CauldronActionLogEntry.prototype.getCandies = function () {
-        return this.candies;
-    };
-    CauldronActionLogEntry.prototype.getLollipops = function () {
-        return this.lollipops;
-    };
-    CauldronActionLogEntry.prototype.getTime = function () {
-        return this.time;
-    };
-    return CauldronActionLogEntry;
-})();
-var CauldronAction;
-(function (CauldronAction) {
-    CauldronAction[CauldronAction["NOTHING"] = 0] = "NOTHING";
-    CauldronAction[CauldronAction["MIXING"] = 1] = "MIXING";
-    CauldronAction[CauldronAction["BOILING"] = 2] = "BOILING";
-})(CauldronAction || (CauldronAction = {}));
-var CauldronFlame = (function () {
-    // Constructor
-    function CauldronFlame(pos, character) {
-        this.pos = pos;
-        this.character = character;
-    }
-    // Public methods
-    CauldronFlame.prototype.draw = function (renderArea, x, y) {
-        renderArea.drawString(this.character, x + this.pos.x, y + this.pos.y);
-    };
-    return CauldronFlame;
-})();
-///<reference path="Place.ts"/>
 Saving.registerNumber("cauldronBookCurrentPage", 0);
 var Cauldron = (function (_super) {
     __extends(Cauldron, _super);
@@ -5999,6 +5959,47 @@ var Cauldron = (function (_super) {
     };
     return Cauldron;
 })(Place);
+var CauldronAction;
+(function (CauldronAction) {
+    CauldronAction[CauldronAction["NOTHING"] = 0] = "NOTHING";
+    CauldronAction[CauldronAction["MIXING"] = 1] = "MIXING";
+    CauldronAction[CauldronAction["BOILING"] = 2] = "BOILING";
+})(CauldronAction || (CauldronAction = {}));
+var CauldronActionLogEntry = (function () {
+    // Constructor
+    function CauldronActionLogEntry(action, time, candies, lollipops) {
+        this.action = action;
+        this.time = time;
+        this.candies = candies;
+        this.lollipops = lollipops;
+    }
+    // Public getters
+    CauldronActionLogEntry.prototype.getAction = function () {
+        return this.action;
+    };
+    CauldronActionLogEntry.prototype.getCandies = function () {
+        return this.candies;
+    };
+    CauldronActionLogEntry.prototype.getLollipops = function () {
+        return this.lollipops;
+    };
+    CauldronActionLogEntry.prototype.getTime = function () {
+        return this.time;
+    };
+    return CauldronActionLogEntry;
+})();
+var CauldronFlame = (function () {
+    // Constructor
+    function CauldronFlame(pos, character) {
+        this.pos = pos;
+        this.character = character;
+    }
+    // Public methods
+    CauldronFlame.prototype.draw = function (renderArea, x, y) {
+        renderArea.drawString(this.character, x + this.pos.x, y + this.pos.y);
+    };
+    return CauldronFlame;
+})();
 ///<reference path="Quest.ts"/>
 Saving.registerBool("cellarDone", false);
 var Cellar = (function (_super) {
@@ -6357,6 +6358,40 @@ var ChocolateBars = (function (_super) {
     };
     return ChocolateBars;
 })(StatusBarResource);
+var CollisionBox = (function () {
+    // Constructor
+    function CollisionBox(questEntity, position, size) {
+        this.questEntity = questEntity;
+        this.position = position;
+        this.size = size;
+    }
+    // Public methods
+    CollisionBox.prototype.collidesWith = function (collisionBox, pos) {
+        if (pos === void 0) { pos = new Pos(0, 0); }
+        // We return false if we detect that the collision is impossible
+        if (collisionBox.questEntity.getGlobalPosition().x + collisionBox.position.x + collisionBox.size.x <= this.questEntity.getGlobalPosition().x + this.position.plus(pos).x)
+            return false;
+        if (collisionBox.questEntity.getGlobalPosition().x + collisionBox.position.x >= this.questEntity.getGlobalPosition().x + this.position.plus(pos).x + this.size.x)
+            return false;
+        if (collisionBox.questEntity.getGlobalPosition().y + collisionBox.position.y + collisionBox.size.y <= this.questEntity.getGlobalPosition().y + this.position.plus(pos).y)
+            return false;
+        if (collisionBox.questEntity.getGlobalPosition().y + collisionBox.position.y >= this.questEntity.getGlobalPosition().y + this.position.plus(pos).y + this.size.y)
+            return false;
+        // Else, we return true
+        return true;
+    };
+    CollisionBox.prototype.move = function (pos) {
+        this.position.add(pos);
+    };
+    // Public getters
+    CollisionBox.prototype.getPosition = function () {
+        return this.position;
+    };
+    CollisionBox.prototype.getSize = function () {
+        return this.size;
+    };
+    return CollisionBox;
+})();
 var CollisionBoxCollection = (function () {
     // Constructor
     function CollisionBoxCollection() {
@@ -6397,40 +6432,6 @@ var CollisionBoxCollection = (function () {
         return this.boxes;
     };
     return CollisionBoxCollection;
-})();
-var CollisionBox = (function () {
-    // Constructor
-    function CollisionBox(questEntity, position, size) {
-        this.questEntity = questEntity;
-        this.position = position;
-        this.size = size;
-    }
-    // Public methods
-    CollisionBox.prototype.collidesWith = function (collisionBox, pos) {
-        if (pos === void 0) { pos = new Pos(0, 0); }
-        // We return false if we detect that the collision is impossible
-        if (collisionBox.questEntity.getGlobalPosition().x + collisionBox.position.x + collisionBox.size.x <= this.questEntity.getGlobalPosition().x + this.position.plus(pos).x)
-            return false;
-        if (collisionBox.questEntity.getGlobalPosition().x + collisionBox.position.x >= this.questEntity.getGlobalPosition().x + this.position.plus(pos).x + this.size.x)
-            return false;
-        if (collisionBox.questEntity.getGlobalPosition().y + collisionBox.position.y + collisionBox.size.y <= this.questEntity.getGlobalPosition().y + this.position.plus(pos).y)
-            return false;
-        if (collisionBox.questEntity.getGlobalPosition().y + collisionBox.position.y >= this.questEntity.getGlobalPosition().y + this.position.plus(pos).y + this.size.y)
-            return false;
-        // Else, we return true
-        return true;
-    };
-    CollisionBox.prototype.move = function (pos) {
-        this.position.add(pos);
-    };
-    // Public getters
-    CollisionBox.prototype.getPosition = function () {
-        return this.position;
-    };
-    CollisionBox.prototype.getSize = function () {
-        return this.size;
-    };
-    return CollisionBox;
 })();
 var Color = (function () {
     // Constructor
@@ -6880,33 +6881,6 @@ var DemonType;
     DemonType[DemonType["EYES"] = 1] = "EYES";
     DemonType[DemonType["BUBBLES"] = 2] = "BUBBLES";
 })(DemonType || (DemonType = {}));
-///<reference path="QuestEntity.ts"/>
-var DesertBird = (function (_super) {
-    __extends(DesertBird, _super);
-    // Constructor
-    function DesertBird(quest, pos, goingRight) {
-        _super.call(this, quest, pos, new Naming("A desert bird", "a desert bird"), new RenderArea(9, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(9, 4))));
-        // If we're heading to right
-        if (goingRight) {
-            this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
-            this.setQuestEntityAnimation(new QuestEntityAnimation(3, Random.upTo(2), Random.upTo(1), "places/quests/desert/birdRightUp", "places/quests/desert/birdRightDown"));
-        }
-        else {
-            this.setQuestEntityMovement(new QuestEntityMovement(new Pos(-1, 0)));
-            this.setQuestEntityAnimation(new QuestEntityAnimation(3, Random.upTo(2), Random.upTo(1), "places/quests/desert/birdLeftUp", "places/quests/desert/birdLeftDown"));
-        }
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(6);
-        this.setHp(6);
-    }
-    // willDie()
-    DesertBird.prototype.willDie = function () {
-        _super.prototype.willDie.call(this);
-        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "gridItemPossessedFeather", "You found a desert bird feather!", "You gain a desert bird feather"));
-    };
-    return DesertBird;
-})(QuestEntity);
 ///<reference path="Quest.ts"/>
 var Desert = (function (_super) {
     __extends(Desert, _super);
@@ -7047,42 +7021,128 @@ var Desert = (function (_super) {
     };
     return Desert;
 })(Quest);
-var DeveloperEntityText = (function () {
+///<reference path="QuestEntity.ts"/>
+var DesertBird = (function (_super) {
+    __extends(DesertBird, _super);
     // Constructor
-    function DeveloperEntityText(damage, textPos, timeToLive, text) {
-        // Set from parameters
-        this.damage = damage;
-        this.text = text;
-        this.textPos = textPos;
-        this.timeToLive = timeToLive;
-        // Set the default x position
-        this.xPos = 0;
+    function DesertBird(quest, pos, goingRight) {
+        _super.call(this, quest, pos, new Naming("A desert bird", "a desert bird"), new RenderArea(9, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(9, 4))));
+        // If we're heading to right
+        if (goingRight) {
+            this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
+            this.setQuestEntityAnimation(new QuestEntityAnimation(3, Random.upTo(2), Random.upTo(1), "places/quests/desert/birdRightUp", "places/quests/desert/birdRightDown"));
+        }
+        else {
+            this.setQuestEntityMovement(new QuestEntityMovement(new Pos(-1, 0)));
+            this.setQuestEntityAnimation(new QuestEntityAnimation(3, Random.upTo(2), Random.upTo(1), "places/quests/desert/birdLeftUp", "places/quests/desert/birdLeftDown"));
+        }
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(6);
+        this.setHp(6);
+    }
+    // willDie()
+    DesertBird.prototype.willDie = function () {
+        _super.prototype.willDie.call(this);
+        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "gridItemPossessedFeather", "You found a desert bird feather!", "You gain a desert bird feather"));
+    };
+    return DesertBird;
+})(QuestEntity);
+///<reference path="Quest.ts"/>
+var Developer = (function (_super) {
+    __extends(Developer, _super);
+    // Constructor
+    function Developer(game) {
+        _super.call(this, game);
+        // Resize the quest
+        this.resizeQuest(100, 34);
+        // Add collision boxes around
+        this.addPlayerCollisionBoxes(true, true, true, true);
+        // Add the player
+        this.getGame().getPlayer().loadCandyBoxCharacter(this);
+        this.getGame().getPlayer().setGlobalPosition(new Pos(0, 33));
+        this.configPlayerOrClone(this.getGame().getPlayer());
+        this.addEntity(this.getGame().getPlayer());
+        // Add the developer entity
+        this.addDeveloperEntity(new Pos(57, 0));
+        // Add the message
+        this.getGame().getQuestLog().addMessage(new QuestLogMessage("You're attacking the developer."));
     }
     // Public methods
-    DeveloperEntityText.prototype.update = function (dev) {
-        // Iterate over strings
-        for (var i = 0; i < this.text.length; i++) {
-            // If there's a character at the current xPos of this string
-            if (this.xPos < this.text[i].length && this.text[i][this.xPos] != " ") {
-                // Add a magic ball, depending on the character
-                switch (this.text[i][this.xPos]) {
-                    case "B":
-                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_BLUE);
-                        break;
-                    case "Y":
-                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_YELLOW);
-                        break;
-                    case "O":
-                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_ORANGE);
-                        break;
-                }
-            }
-        }
-        // Increase xPos
-        this.xPos += 1;
+    Developer.prototype.castPlayerBlackDemons = function () {
+        _super.prototype.castPlayerBlackDemons.call(this);
+        this.developerEntity.playerUsedBlackMagic();
     };
-    return DeveloperEntityText;
-})();
+    Developer.prototype.castPlayerBlackhole = function () {
+        _super.prototype.castPlayerBlackhole.call(this);
+        this.developerEntity.playerUsedBlackMagic();
+    };
+    Developer.prototype.castPlayerEraseMagic = function () {
+        _super.prototype.castPlayerEraseMagic.call(this);
+        this.developerEntity.playerUsedBlackMagic();
+    };
+    Developer.prototype.castPlayerObsidianWall = function () {
+        _super.prototype.castPlayerObsidianWall.call(this);
+        this.developerEntity.playerUsedBlackMagic();
+    };
+    Developer.prototype.configPlayerOrClone = function (entity) {
+        entity.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
+        entity.getQuestEntityMovement().setGravity(true);
+        entity.getQuestEntityMovement().setWormsLike(true);
+    };
+    Developer.prototype.endQuest = function (win) {
+        // We add some messages
+        if (win) {
+            this.getGame().getQuestLog().addMessage(new QuestLogMessage("You managed to beat me. Congratulations :)"));
+        }
+        else {
+            this.getGame().getQuestLog().addMessage(new QuestLogMessage("You died fighting the developer. Eh, he made this game after all!"));
+        }
+        // We call the endQuest method of our mother class
+        _super.prototype.endQuest.call(this, win);
+    };
+    Developer.prototype.update = function () {
+        if (this.getQuestEnded() == false) {
+            // Test if the player won the quest, if so, end the quest and return
+            if (this.thePlayerWon()) {
+                this.endQuest(true);
+                return;
+            }
+            // Test if the player is dead, if so, end the quest and return
+            if (this.getGame().getPlayer().shouldDie()) {
+                this.endQuest(false);
+                return;
+            }
+            // Update entities
+            this.updateEntities();
+        }
+        // Draw
+        this.preDraw();
+        this.drawEntities();
+        this.drawAroundQuest();
+        if (this.getQuestEnded() == false)
+            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestNoKeeping");
+        else if (this.getQuestEndedAndWeWon() == false)
+            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestNoKeepingBecauseLose");
+        else
+            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestKeeping");
+        this.postDraw();
+    };
+    // Private methods
+    Developer.prototype.addDeveloperEntity = function (pos) {
+        this.developerEntity = new DeveloperEntity(this, pos);
+        this.developerEntity.setHealthBar(new QuestEntityHealthBar(this.developerEntity, new Pos(100, 1), new Pos(0, 0), QuestEntityHealthBarPositionType.FIXED_ON_PAGE, true, true, BarType.HEALTH));
+        this.addEntity(this.developerEntity);
+    };
+    Developer.prototype.thePlayerWon = function () {
+        // If the developer is dead, we return true
+        if (this.developerEntity.shouldDie())
+            return true;
+        // Else we return false
+        return false;
+    };
+    return Developer;
+})(Quest);
 ///<reference path="QuestEntity.ts"/>
 var DeveloperEntity = (function (_super) {
     __extends(DeveloperEntity, _super);
@@ -7164,6 +7224,42 @@ var DeveloperEntity = (function (_super) {
     };
     return DeveloperEntity;
 })(QuestEntity);
+var DeveloperEntityText = (function () {
+    // Constructor
+    function DeveloperEntityText(damage, textPos, timeToLive, text) {
+        // Set from parameters
+        this.damage = damage;
+        this.text = text;
+        this.textPos = textPos;
+        this.timeToLive = timeToLive;
+        // Set the default x position
+        this.xPos = 0;
+    }
+    // Public methods
+    DeveloperEntityText.prototype.update = function (dev) {
+        // Iterate over strings
+        for (var i = 0; i < this.text.length; i++) {
+            // If there's a character at the current xPos of this string
+            if (this.xPos < this.text[i].length && this.text[i][this.xPos] != " ") {
+                // Add a magic ball, depending on the character
+                switch (this.text[i][this.xPos]) {
+                    case "B":
+                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_BLUE);
+                        break;
+                    case "Y":
+                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_YELLOW);
+                        break;
+                    case "O":
+                        dev.addMagicBall(this.textPos.plus(new Pos(this.xPos, i)), this.damage, this.timeToLive - this.xPos, ColorType.DEVELOPER_ORANGE);
+                        break;
+                }
+            }
+        }
+        // Increase xPos
+        this.xPos += 1;
+    };
+    return DeveloperEntityText;
+})();
 ///<reference path="QuestEntitySpell.ts"/>
 var Fireball = (function (_super) {
     __extends(Fireball, _super);
@@ -7309,101 +7405,6 @@ var DeveloperMagicBall = (function (_super) {
     DeveloperMagicBall.prototype.willDie = function () { };
     return DeveloperMagicBall;
 })(Fireball);
-///<reference path="Quest.ts"/>
-var Developer = (function (_super) {
-    __extends(Developer, _super);
-    // Constructor
-    function Developer(game) {
-        _super.call(this, game);
-        // Resize the quest
-        this.resizeQuest(100, 34);
-        // Add collision boxes around
-        this.addPlayerCollisionBoxes(true, true, true, true);
-        // Add the player
-        this.getGame().getPlayer().loadCandyBoxCharacter(this);
-        this.getGame().getPlayer().setGlobalPosition(new Pos(0, 33));
-        this.configPlayerOrClone(this.getGame().getPlayer());
-        this.addEntity(this.getGame().getPlayer());
-        // Add the developer entity
-        this.addDeveloperEntity(new Pos(57, 0));
-        // Add the message
-        this.getGame().getQuestLog().addMessage(new QuestLogMessage("You're attacking the developer."));
-    }
-    // Public methods
-    Developer.prototype.castPlayerBlackDemons = function () {
-        _super.prototype.castPlayerBlackDemons.call(this);
-        this.developerEntity.playerUsedBlackMagic();
-    };
-    Developer.prototype.castPlayerBlackhole = function () {
-        _super.prototype.castPlayerBlackhole.call(this);
-        this.developerEntity.playerUsedBlackMagic();
-    };
-    Developer.prototype.castPlayerEraseMagic = function () {
-        _super.prototype.castPlayerEraseMagic.call(this);
-        this.developerEntity.playerUsedBlackMagic();
-    };
-    Developer.prototype.castPlayerObsidianWall = function () {
-        _super.prototype.castPlayerObsidianWall.call(this);
-        this.developerEntity.playerUsedBlackMagic();
-    };
-    Developer.prototype.configPlayerOrClone = function (entity) {
-        entity.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
-        entity.getQuestEntityMovement().setGravity(true);
-        entity.getQuestEntityMovement().setWormsLike(true);
-    };
-    Developer.prototype.endQuest = function (win) {
-        // We add some messages
-        if (win) {
-            this.getGame().getQuestLog().addMessage(new QuestLogMessage("You managed to beat me. Congratulations :)"));
-        }
-        else {
-            this.getGame().getQuestLog().addMessage(new QuestLogMessage("You died fighting the developer. Eh, he made this game after all!"));
-        }
-        // We call the endQuest method of our mother class
-        _super.prototype.endQuest.call(this, win);
-    };
-    Developer.prototype.update = function () {
-        if (this.getQuestEnded() == false) {
-            // Test if the player won the quest, if so, end the quest and return
-            if (this.thePlayerWon()) {
-                this.endQuest(true);
-                return;
-            }
-            // Test if the player is dead, if so, end the quest and return
-            if (this.getGame().getPlayer().shouldDie()) {
-                this.endQuest(false);
-                return;
-            }
-            // Update entities
-            this.updateEntities();
-        }
-        // Draw
-        this.preDraw();
-        this.drawEntities();
-        this.drawAroundQuest();
-        if (this.getQuestEnded() == false)
-            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestNoKeeping");
-        else if (this.getQuestEndedAndWeWon() == false)
-            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestNoKeepingBecauseLose");
-        else
-            this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())), "buttonExitQuestKeeping");
-        this.postDraw();
-    };
-    // Private methods
-    Developer.prototype.addDeveloperEntity = function (pos) {
-        this.developerEntity = new DeveloperEntity(this, pos);
-        this.developerEntity.setHealthBar(new QuestEntityHealthBar(this.developerEntity, new Pos(100, 1), new Pos(0, 0), QuestEntityHealthBarPositionType.FIXED_ON_PAGE, true, true, BarType.HEALTH));
-        this.addEntity(this.developerEntity);
-    };
-    Developer.prototype.thePlayerWon = function () {
-        // If the developer is dead, we return true
-        if (this.developerEntity.shouldDie())
-            return true;
-        // Else we return false
-        return false;
-    };
-    return Developer;
-})(Quest);
 ///<reference path="QuestEntity.ts"/>
 var Devil = (function (_super) {
     __extends(Devil, _super);
@@ -7536,16 +7537,6 @@ var Devil = (function (_super) {
     };
     return Devil;
 })(QuestEntity);
-var DragonStep;
-(function (DragonStep) {
-    DragonStep[DragonStep["PLAYER_MOVING"] = 0] = "PLAYER_MOVING";
-    DragonStep[DragonStep["PLAYER_ATTACKING"] = 1] = "PLAYER_ATTACKING";
-    DragonStep[DragonStep["STOP_TICKLING"] = 2] = "STOP_TICKLING";
-    DragonStep[DragonStep["TALKING"] = 3] = "TALKING";
-    DragonStep[DragonStep["TALKING_CHALLENGE"] = 4] = "TALKING_CHALLENGE";
-    DragonStep[DragonStep["TALKING_FAME"] = 5] = "TALKING_FAME";
-    DragonStep[DragonStep["TALKING_CANDIES"] = 6] = "TALKING_CANDIES";
-})(DragonStep || (DragonStep = {}));
 ///<reference path="CastleRoom.ts"/>
 Saving.registerBool("dragonDone", false); // If true, it means we began talking to the dragon
 Saving.registerBool("dragonUnlockedCyclops", false); // If true, we can ask the cyclops about the dragon
@@ -7728,6 +7719,16 @@ var Dragon = (function (_super) {
     };
     return Dragon;
 })(CastleRoom);
+var DragonStep;
+(function (DragonStep) {
+    DragonStep[DragonStep["PLAYER_MOVING"] = 0] = "PLAYER_MOVING";
+    DragonStep[DragonStep["PLAYER_ATTACKING"] = 1] = "PLAYER_ATTACKING";
+    DragonStep[DragonStep["STOP_TICKLING"] = 2] = "STOP_TICKLING";
+    DragonStep[DragonStep["TALKING"] = 3] = "TALKING";
+    DragonStep[DragonStep["TALKING_CHALLENGE"] = 4] = "TALKING_CHALLENGE";
+    DragonStep[DragonStep["TALKING_FAME"] = 5] = "TALKING_FAME";
+    DragonStep[DragonStep["TALKING_CANDIES"] = 6] = "TALKING_CANDIES";
+})(DragonStep || (DragonStep = {}));
 ///<reference path="QuestEntity.ts"/>
 var Egg = (function (_super) {
     __extends(Egg, _super);
@@ -7837,32 +7838,6 @@ var EnchantedMonkeyWizardStaff = (function (_super) {
     };
     return EnchantedMonkeyWizardStaff;
 })(MonkeyWizardStaffMotherClass);
-var EnchantmentItem = (function () {
-    // Constructor
-    function EnchantmentItem(game, savingName, type) {
-        this.game = game;
-        this.savingName = savingName;
-        this.type = type;
-    }
-    // Public methods
-    EnchantmentItem.prototype.getText = function () {
-        var text = Database.getText(this.game.getEqItemFromEqItemType(this.savingName, this.type).getDatabaseName());
-        if (Database.isTranslated())
-            text += " (" + Database.getTranslatedText(this.game.getEqItemFromEqItemType(this.savingName, this.type).getDatabaseName()) + ")";
-        return text;
-    };
-    EnchantmentItem.prototype.isPossessed = function () {
-        return Saving.loadBool(this.savingName);
-    };
-    EnchantmentItem.prototype.unequipIfEquipped = function () {
-        this.game.unequipIfEquipped(this.savingName, this.type);
-    };
-    // Public getters
-    EnchantmentItem.prototype.getSavingName = function () {
-        return this.savingName;
-    };
-    return EnchantmentItem;
-})();
 var Enchantment = (function () {
     // Constructor
     function Enchantment(beforeItem, afterItem) {
@@ -7892,6 +7867,32 @@ var Enchantment = (function () {
         return this.beforeItem;
     };
     return Enchantment;
+})();
+var EnchantmentItem = (function () {
+    // Constructor
+    function EnchantmentItem(game, savingName, type) {
+        this.game = game;
+        this.savingName = savingName;
+        this.type = type;
+    }
+    // Public methods
+    EnchantmentItem.prototype.getText = function () {
+        var text = Database.getText(this.game.getEqItemFromEqItemType(this.savingName, this.type).getDatabaseName());
+        if (Database.isTranslated())
+            text += " (" + Database.getTranslatedText(this.game.getEqItemFromEqItemType(this.savingName, this.type).getDatabaseName()) + ")";
+        return text;
+    };
+    EnchantmentItem.prototype.isPossessed = function () {
+        return Saving.loadBool(this.savingName);
+    };
+    EnchantmentItem.prototype.unequipIfEquipped = function () {
+        this.game.unequipIfEquipped(this.savingName, this.type);
+    };
+    // Public getters
+    EnchantmentItem.prototype.getSavingName = function () {
+        return this.savingName;
+    };
+    return EnchantmentItem;
 })();
 // We can't use this class directly, we have to use a daughter class
 var EnigmaAnswer = (function () {
@@ -8802,12 +8803,6 @@ var FourthHouse = (function (_super) {
     };
     return FourthHouse;
 })(House);
-var GalacticWarsStep;
-(function (GalacticWarsStep) {
-    GalacticWarsStep[GalacticWarsStep["SPLASH_SCREEN"] = 0] = "SPLASH_SCREEN";
-    GalacticWarsStep[GalacticWarsStep["GAME"] = 1] = "GAME";
-    GalacticWarsStep[GalacticWarsStep["LOSE"] = 2] = "LOSE";
-})(GalacticWarsStep || (GalacticWarsStep = {}));
 var ThirdHouseGame = (function () {
     // Constructor
     function ThirdHouseGame(thirdHouse) {
@@ -9177,6 +9172,12 @@ var GalacticWars = (function (_super) {
     };
     return GalacticWars;
 })(ThirdHouseGame);
+var GalacticWarsStep;
+(function (GalacticWarsStep) {
+    GalacticWarsStep[GalacticWarsStep["SPLASH_SCREEN"] = 0] = "SPLASH_SCREEN";
+    GalacticWarsStep[GalacticWarsStep["GAME"] = 1] = "GAME";
+    GalacticWarsStep[GalacticWarsStep["LOSE"] = 2] = "LOSE";
+})(GalacticWarsStep || (GalacticWarsStep = {}));
 ///<reference path="./../../libs/jquery.d.ts"/>
 var RenderLocation = (function () {
     // Constructor
@@ -10010,6 +10011,80 @@ var Game = (function () {
     };
     return Game;
 })();
+///<reference path="QuestEntity.ts"/>
+var GiantNougatMonster = (function (_super) {
+    __extends(GiantNougatMonster, _super);
+    // Constructor
+    function GiantNougatMonster(quest, pos) {
+        _super.call(this, quest, pos, new Naming("The giant nougat monster", "the giant nougat monster"), new RenderArea(15, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(1, 0), new Pos(12, 1)), new CollisionBox(this, new Pos(0, 1), new Pos(15, 2)), new CollisionBox(this, new Pos(1, 3), new Pos(12, 1))), new QuestEntityMovement());
+        // Set the default step
+        this.step = GiantNougatMonsterStep.ASLEEP;
+        // Set gravity
+        this.getQuestEntityMovement().setGravity(true);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(2000);
+        this.setHp(2000);
+        // Set the ascii art and the transparent character
+        this.reDrawAscii();
+        this.setTransparency(new RenderTransparency(" ", "%"));
+    }
+    // update()
+    GiantNougatMonster.prototype.update = function () {
+        // Do something different depending on the current step
+        switch (this.step) {
+            case GiantNougatMonsterStep.ASLEEP:
+                // If we have less then 1577 hp (1577 was the number of bytes of the wikipedia article "Nougat" on the fifth of november, 2005 according to the article revision history. See here : https://en.wikipedia.org/w/index.php?title=Nougat&oldid=27465563)
+                if (this.getHp() < 1577) {
+                    // We go to awake mode
+                    this.step = GiantNougatMonsterStep.AWAKE;
+                    this.reDrawAscii(); // Re draw the ascii art
+                    this.addWeapon(); // Add the weapon
+                }
+                break;
+            case GiantNougatMonsterStep.AWAKE:
+                // If we have less than 500 hp
+                if (this.getHp() < 500) {
+                    // We go to angry mode
+                    this.step = GiantNougatMonsterStep.ANGRY;
+                    this.reDrawAscii(); // Re draw the ascii art
+                }
+                // Go towards the player (speed : 1)
+                this.goTowards(this.getGlobalPosition().plus(new Pos(6, 2)), this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1, 0)), 0, new Pos(1, 0));
+                break;
+            case GiantNougatMonsterStep.ANGRY:
+                // Go towards the player (speed : 3)
+                this.goTowards(this.getGlobalPosition().plus(new Pos(6, 2)), this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1, 0)), 0, new Pos(3, 0));
+                break;
+        }
+        // Call the mother class update method
+        _super.prototype.update.call(this);
+    };
+    // willDie()
+    GiantNougatMonster.prototype.willDie = function () {
+        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(Random.upTo(123456)), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
+    };
+    // Private methods
+    GiantNougatMonster.prototype.addWeapon = function () {
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Nougat", "nougat"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(17, 6))), 3000));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(20, 40);
+    };
+    GiantNougatMonster.prototype.reDrawAscii = function () {
+        // Draw a different ascii art depending on the step
+        switch (this.step) {
+            case GiantNougatMonsterStep.ASLEEP:
+                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monster"));
+                break;
+            case GiantNougatMonsterStep.AWAKE:
+                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAwake"));
+                break;
+            case GiantNougatMonsterStep.ANGRY:
+                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAngry"));
+                break;
+        }
+    };
+    return GiantNougatMonster;
+})(QuestEntity);
 ///<reference path="Quest.ts"/>
 var GiantNougatMonsterQuest = (function (_super) {
     __extends(GiantNougatMonsterQuest, _super);
@@ -10103,95 +10178,6 @@ var GiantNougatMonsterStep;
     GiantNougatMonsterStep[GiantNougatMonsterStep["AWAKE"] = 1] = "AWAKE";
     GiantNougatMonsterStep[GiantNougatMonsterStep["ANGRY"] = 2] = "ANGRY";
 })(GiantNougatMonsterStep || (GiantNougatMonsterStep = {}));
-///<reference path="QuestEntity.ts"/>
-var GiantNougatMonster = (function (_super) {
-    __extends(GiantNougatMonster, _super);
-    // Constructor
-    function GiantNougatMonster(quest, pos) {
-        _super.call(this, quest, pos, new Naming("The giant nougat monster", "the giant nougat monster"), new RenderArea(15, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(1, 0), new Pos(12, 1)), new CollisionBox(this, new Pos(0, 1), new Pos(15, 2)), new CollisionBox(this, new Pos(1, 3), new Pos(12, 1))), new QuestEntityMovement());
-        // Set the default step
-        this.step = GiantNougatMonsterStep.ASLEEP;
-        // Set gravity
-        this.getQuestEntityMovement().setGravity(true);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(2000);
-        this.setHp(2000);
-        // Set the ascii art and the transparent character
-        this.reDrawAscii();
-        this.setTransparency(new RenderTransparency(" ", "%"));
-    }
-    // update()
-    GiantNougatMonster.prototype.update = function () {
-        // Do something different depending on the current step
-        switch (this.step) {
-            case GiantNougatMonsterStep.ASLEEP:
-                // If we have less then 1577 hp (1577 was the number of bytes of the wikipedia article "Nougat" on the fifth of november, 2005 according to the article revision history. See here : https://en.wikipedia.org/w/index.php?title=Nougat&oldid=27465563)
-                if (this.getHp() < 1577) {
-                    // We go to awake mode
-                    this.step = GiantNougatMonsterStep.AWAKE;
-                    this.reDrawAscii(); // Re draw the ascii art
-                    this.addWeapon(); // Add the weapon
-                }
-                break;
-            case GiantNougatMonsterStep.AWAKE:
-                // If we have less than 500 hp
-                if (this.getHp() < 500) {
-                    // We go to angry mode
-                    this.step = GiantNougatMonsterStep.ANGRY;
-                    this.reDrawAscii(); // Re draw the ascii art
-                }
-                // Go towards the player (speed : 1)
-                this.goTowards(this.getGlobalPosition().plus(new Pos(6, 2)), this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1, 0)), 0, new Pos(1, 0));
-                break;
-            case GiantNougatMonsterStep.ANGRY:
-                // Go towards the player (speed : 3)
-                this.goTowards(this.getGlobalPosition().plus(new Pos(6, 2)), this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1, 0)), 0, new Pos(3, 0));
-                break;
-        }
-        // Call the mother class update method
-        _super.prototype.update.call(this);
-    };
-    // willDie()
-    GiantNougatMonster.prototype.willDie = function () {
-        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(Random.upTo(123456)), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
-    };
-    // Private methods
-    GiantNougatMonster.prototype.addWeapon = function () {
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Nougat", "nougat"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(17, 6))), 3000));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(20, 40);
-    };
-    GiantNougatMonster.prototype.reDrawAscii = function () {
-        // Draw a different ascii art depending on the step
-        switch (this.step) {
-            case GiantNougatMonsterStep.ASLEEP:
-                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monster"));
-                break;
-            case GiantNougatMonsterStep.AWAKE:
-                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAwake"));
-                break;
-            case GiantNougatMonsterStep.ANGRY:
-                this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAngry"));
-                break;
-        }
-    };
-    return GiantNougatMonster;
-})(QuestEntity);
-///<reference path="EqItem.ts"/>
-var GiantSpoonOfDoom = (function (_super) {
-    __extends(GiantSpoonOfDoom, _super);
-    // Constructor
-    function GiantSpoonOfDoom() {
-        _super.call(this, "eqItemWeaponGiantSpoonOfDoom", "eqItemWeaponGiantSpoonOfDoomName", "eqItemWeaponGiantSpoonOfDoomDescription", "eqItems/weapons/giantSpoonOfDoom");
-    }
-    // Public getters
-    GiantSpoonOfDoom.prototype.getQuestEntityWeapon = function (quest, player) {
-        var qew = new QuestEntityWeapon(quest, player, new Naming("The giant Spoon of Doom", "the giant Spoon of Doom"), player.getClassicCollisionBoxCollection(), 315);
-        qew.getCloseCombatDelay().setFixedDelay(14, 0);
-        return qew;
-    };
-    return GiantSpoonOfDoom;
-})(EqItem);
 ///<reference path="EqItem.ts"/>
 var GiantSpoon = (function (_super) {
     __extends(GiantSpoon, _super);
@@ -10206,6 +10192,21 @@ var GiantSpoon = (function (_super) {
         return qew;
     };
     return GiantSpoon;
+})(EqItem);
+///<reference path="EqItem.ts"/>
+var GiantSpoonOfDoom = (function (_super) {
+    __extends(GiantSpoonOfDoom, _super);
+    // Constructor
+    function GiantSpoonOfDoom() {
+        _super.call(this, "eqItemWeaponGiantSpoonOfDoom", "eqItemWeaponGiantSpoonOfDoomName", "eqItemWeaponGiantSpoonOfDoomDescription", "eqItems/weapons/giantSpoonOfDoom");
+    }
+    // Public getters
+    GiantSpoonOfDoom.prototype.getQuestEntityWeapon = function (quest, player) {
+        var qew = new QuestEntityWeapon(quest, player, new Naming("The giant Spoon of Doom", "the giant Spoon of Doom"), player.getClassicCollisionBoxCollection(), 315);
+        qew.getCloseCombatDelay().setFixedDelay(14, 0);
+        return qew;
+    };
+    return GiantSpoonOfDoom;
 })(EqItem);
 ///<reference path="Quest.ts"/>
 var Hell = (function (_super) {
@@ -10490,32 +10491,6 @@ var InsideFortress = (function (_super) {
     };
     return InsideFortress;
 })(Place);
-var InsideYourBoxSweet = (function () {
-    // Constructor
-    function InsideYourBoxSweet() {
-        // Set the ascii art name
-        this.asciiArt = "general/insideYourBox/" + Random.between(0, 10);
-        // Set the position
-        this.pos = new Pos(-Database.getAsciiWidth(this.asciiArt) + Random.between(0, 99 + Database.getAsciiWidth(this.asciiArt)), -Database.getAsciiHeight(this.asciiArt));
-        // Set the speed
-        this.speed = Random.between(1, 3);
-    }
-    // Public methods
-    InsideYourBoxSweet.prototype.draw = function (renderArea) {
-        // Draw the ascii art at the right position
-        renderArea.drawArray(Database.getAscii(this.asciiArt), this.pos.x, this.pos.y);
-    };
-    InsideYourBoxSweet.prototype.update = function () {
-        // If we're out of the screen, we return true
-        if (this.pos.y >= 40)
-            return true;
-        // Increase the speed
-        this.speed += 0.3;
-        // Increase the position
-        this.pos.y += Math.floor(this.speed);
-    };
-    return InsideYourBoxSweet;
-})();
 ///<reference path="Place.ts"/>
 var InsideYourBox = (function (_super) {
     __extends(InsideYourBox, _super);
@@ -10567,6 +10542,32 @@ var InsideYourBox = (function (_super) {
     };
     return InsideYourBox;
 })(Place);
+var InsideYourBoxSweet = (function () {
+    // Constructor
+    function InsideYourBoxSweet() {
+        // Set the ascii art name
+        this.asciiArt = "general/insideYourBox/" + Random.between(0, 10);
+        // Set the position
+        this.pos = new Pos(-Database.getAsciiWidth(this.asciiArt) + Random.between(0, 99 + Database.getAsciiWidth(this.asciiArt)), -Database.getAsciiHeight(this.asciiArt));
+        // Set the speed
+        this.speed = Random.between(1, 3);
+    }
+    // Public methods
+    InsideYourBoxSweet.prototype.draw = function (renderArea) {
+        // Draw the ascii art at the right position
+        renderArea.drawArray(Database.getAscii(this.asciiArt), this.pos.x, this.pos.y);
+    };
+    InsideYourBoxSweet.prototype.update = function () {
+        // If we're out of the screen, we return true
+        if (this.pos.y >= 40)
+            return true;
+        // Increase the speed
+        this.speed += 0.3;
+        // Increase the position
+        this.pos.y += Math.floor(this.speed);
+    };
+    return InsideYourBoxSweet;
+})();
 ///<reference path="Place.ts"/>
 var Inventory = (function (_super) {
     __extends(Inventory, _super);
@@ -10898,23 +10899,6 @@ var Keyboard;
     }
     Keyboard.isKeyPressed = isKeyPressed;
 })(Keyboard || (Keyboard = {}));
-///<reference path="EqItem.ts"/>
-var KnightBodyArmour = (function (_super) {
-    __extends(KnightBodyArmour, _super);
-    // Constructor
-    function KnightBodyArmour() {
-        _super.call(this, "eqItemBodyArmoursKnightBodyArmour", "eqItemBodyArmoursKnightBodyArmourName", "eqItemBodyArmoursKnightBodyArmourDescription", "eqItems/bodyArmours/knightBodyArmour");
-    }
-    // Special ability
-    KnightBodyArmour.prototype.getSpecialAbility = function () {
-        return "Damage taken reduced by 30% (knight body armour)";
-    };
-    // inflictDamage()
-    KnightBodyArmour.prototype.inflictDamage = function (player, quest, damage, reason) {
-        return Math.ceil(damage - damage * 30 / 100);
-    };
-    return KnightBodyArmour;
-})(EqItem);
 ///<reference path="QuestEntity.ts"/>
 var Knight = (function (_super) {
     __extends(Knight, _super);
@@ -10978,6 +10962,23 @@ var Knight = (function (_super) {
     };
     return Knight;
 })(QuestEntity);
+///<reference path="EqItem.ts"/>
+var KnightBodyArmour = (function (_super) {
+    __extends(KnightBodyArmour, _super);
+    // Constructor
+    function KnightBodyArmour() {
+        _super.call(this, "eqItemBodyArmoursKnightBodyArmour", "eqItemBodyArmoursKnightBodyArmourName", "eqItemBodyArmoursKnightBodyArmourDescription", "eqItems/bodyArmours/knightBodyArmour");
+    }
+    // Special ability
+    KnightBodyArmour.prototype.getSpecialAbility = function () {
+        return "Damage taken reduced by 30% (knight body armour)";
+    };
+    // inflictDamage()
+    KnightBodyArmour.prototype.inflictDamage = function (player, quest, damage, reason) {
+        return Math.ceil(damage - damage * 30 / 100);
+    };
+    return KnightBodyArmour;
+})(EqItem);
 ///<reference path="QuestEntity.ts"/>
 var Lava = (function (_super) {
     __extends(Lava, _super);
@@ -11011,6 +11012,201 @@ var LeatherGloves = (function (_super) {
     }
     return LeatherGloves;
 })(EqItem);
+///<reference path="Place.ts"/>
+Saving.registerBool("lighthousePuzzleDone", false);
+var Lighthouse = (function (_super) {
+    __extends(Lighthouse, _super);
+    // Constructor
+    function Lighthouse(game) {
+        _super.call(this, game);
+        // The render area
+        this.renderArea = new RenderArea();
+        // Selected question id
+        this.selectedQuestionId = "lighthouseQuestionWho";
+        // Speech id
+        this.speechId = null;
+        // Show the puzzle?
+        this.showPuzzle = false;
+        // The puzzle
+        this.puzzle = null;
+        // We create the questions array
+        this.createQuestionsArray();
+        // We resize and update
+        this.renderArea.resizeFromArray(Database.getAscii("places/lighthouse/lighthouse"), 0, 4); // 4 in order to add a space below the lighthouse, so that it looks nicer
+        this.update();
+    }
+    // getRenderArea()
+    Lighthouse.prototype.getRenderArea = function () {
+        return this.renderArea;
+    };
+    // Public methods
+    Lighthouse.prototype.update = function () {
+        // Erase everything
+        this.renderArea.resetAllButSize();
+        // Back to the map button
+        this.addBackToMainMapButton(this.renderArea, "lighthouseBackToTheMapButton");
+        // Draw the lighthouse
+        this.renderArea.drawArray(Database.getAscii("places/lighthouse/lighthouse"), 0, 3);
+        // Add the questions list
+        this.renderArea.addList(1, 55, 7, "lighthouseQuestionsList", new CallbackCollection(this.questionSelected.bind(this)), this.questionsArray);
+        // Add the ask button and the link
+        this.renderArea.addAsciiRealButton(Database.getText("lighthouseAskButton"), 5, 10, "lighthouseAskButton", Database.getTranslatedText("lighthouseAskButton"));
+        this.renderArea.addLinkCall(".lighthouseAskButton", new CallbackCollection(this.ask.bind(this)));
+        // Draw the speech if there's a speech id
+        if (this.speechId != null) {
+            this.renderArea.drawSpeech(Database.getText(this.speechId), 17, 75, 99, "lighthouseSpeech", Database.getTranslatedText(this.speechId));
+        }
+        // If we should show the puzzle
+        if (this.showPuzzle) {
+            // Create the puzzle if it's not done yet
+            if (this.puzzle == null)
+                this.puzzle = new LighthousePuzzle(this);
+            // Draw it
+            this.puzzle.draw(this.renderArea, new Pos(2, 12));
+            // Add the reset button
+            this.renderArea.addAsciiRealButton(Database.getText("lighthousePuzzleResetButton"), 2, 34, "lighthousePuzzleResetButton", Database.getTranslatedText("lighthousePuzzleResetButton"));
+            this.renderArea.addLinkCall(".lighthousePuzzleResetButton", new CallbackCollection(this.resetPuzzle.bind(this)));
+        }
+        // Add the link which will call the selectRightQuestion method after the html dom is created
+        this.renderArea.addLinkCallbackCollection(new CallbackCollection(this.selectRightQuestion.bind(this)));
+    };
+    // Public getters
+    Lighthouse.prototype.getPuzzle = function () {
+        return this.puzzle;
+    };
+    // Public setters
+    Lighthouse.prototype.setSpeechId = function (speechId) {
+        this.speechId = speechId;
+    };
+    // Private methods
+    Lighthouse.prototype.addQuestion = function (id, text, translatedText) {
+        if (translatedText === void 0) { translatedText = null; }
+        this.questionsArray.push(id);
+        if (translatedText == null)
+            this.questionsArray.push(text);
+        else
+            this.questionsArray.push(text + (translatedText != "" ? " (" + translatedText + ")" : ""));
+    };
+    Lighthouse.prototype.ask = function () {
+        this.speechId = this.selectedQuestionId + "Speech";
+        if (this.selectedQuestionId == "lighthouseQuestionDragon")
+            this.showPuzzle = true;
+        else
+            this.showPuzzle = false;
+        this.update();
+        this.getGame().updatePlace();
+    };
+    Lighthouse.prototype.createQuestionsArray = function () {
+        // We empty the array
+        this.questionsArray = [];
+        // Add the first basic questions
+        this.addQuestion("lighthouseQuestionWho", Database.getText("lighthouseQuestionWho"), Database.getTranslatedText("lighthouseQuestionWho"));
+        this.addQuestion("lighthouseQuestionWhat", Database.getText("lighthouseQuestionWhat"), Database.getTranslatedText("lighthouseQuestionWhat"));
+        this.addQuestion("lighthouseQuestionWhyEatCandies", Database.getText("lighthouseQuestionWhyEatCandies"), Database.getTranslatedText("lighthouseQuestionWhyEatCandies"));
+        this.addQuestion("lighthouseQuestionCandyBox", Database.getText("lighthouseQuestionCandyBox"), Database.getTranslatedText("lighthouseQuestionCandyBox"));
+        // Add the question about the dragon is we unlocked it
+        if (Saving.loadBool("dragonUnlockedCyclops")) {
+            this.addQuestion("lighthouseQuestionDragon", Database.getText("lighthouseQuestionDragon"), Database.getTranslatedText("lighthouseQuestionDragon"));
+        }
+    };
+    Lighthouse.prototype.questionSelected = function () {
+        // Get the selected language id
+        this.selectedQuestionId = $("#lighthouseQuestionsList").find(":selected").attr("id");
+        // Update the ligthouse
+        this.update();
+        this.getGame().updatePlace();
+    };
+    Lighthouse.prototype.resetPuzzle = function () {
+        // Re create the puzzle
+        this.puzzle = new LighthousePuzzle(this);
+        // Update
+        this.update();
+        this.getGame().updatePlace();
+    };
+    Lighthouse.prototype.selectRightQuestion = function () {
+        // We select the right question
+        $("#" + this.selectedQuestionId).prop('selected', true);
+    };
+    return Lighthouse;
+})(Place);
+var LighthousePuzzle = (function () {
+    // Constructor
+    function LighthousePuzzle(lighthouse) {
+        // Create the parts
+        this.createParts(lighthouse);
+    }
+    // Public methods
+    LighthousePuzzle.prototype.draw = function (renderArea, pos) {
+        for (var i = 0; i < 7; i++) {
+            for (var j = 4; j >= 0; j--) {
+                if (this.parts[i][j] != null)
+                    this.parts[i][j].draw(renderArea, pos.plus(new Pos(i * 7, j * 4)));
+            }
+        }
+    };
+    // Public getters
+    LighthousePuzzle.prototype.getParts = function () {
+        return this.parts;
+    };
+    // Private methods
+    LighthousePuzzle.prototype.createParts = function (lighthouse) {
+        this.parts = [];
+        // Add the arrays inside the arrays, and set each part to null
+        for (var i = 0; i < 7; i++) {
+            this.parts[i] = [];
+            for (var j = 0; j < 5; j++) {
+                this.parts[i][j] = null;
+            }
+        }
+        // Add the central part, the first shown at first
+        // It will allow use to show up to three other parts around
+        this.parts[3][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_AROUND, 3, new Pos(3, 2), true);
+        // Add the show right, show below move below to the right and show above parts
+        this.parts[3][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(3, 1), false); // above the central part
+        this.parts[4][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(4, 1), false); // top right corner of the central part
+        this.parts[4][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT, 5, new Pos(4, 2), false); // on the right of the central part
+        this.parts[3][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(3, 3), false); // below the central part
+        // Add the lives part
+        this.parts[5][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(5, 2), false);
+        // Add the show below
+        this.parts[4][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(4, 3), false);
+        // Add the cool path
+        this.parts[3][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT_RIGHT, 2, new Pos(3, 4), false);
+        this.parts[4][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(4, 4), false);
+        this.parts[5][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(5, 4), false);
+        this.parts[6][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(6, 4), false);
+        this.parts[0][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 3), false);
+        this.parts[6][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(6, 2), false);
+        this.parts[6][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(6, 1), false);
+        // Add the lives part at the end of the cool path
+        this.parts[5][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(5, 1), false);
+        // Add the path to the second move below line to the right
+        this.parts[2][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(2, 4), false);
+        this.parts[1][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(1, 4), false);
+        this.parts[0][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT, 0, new Pos(0, 4), false);
+        // And the end (9 parts allowing us to give life to the ? ?)
+        this.parts[0][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(0, 0), false);
+        this.parts[0][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 1), false);
+        this.parts[0][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 2), false);
+        this.parts[1][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 0, new Pos(1, 0), false);
+        this.parts[1][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_LEFT_LINE_ABOVE, 0, new Pos(1, 1), false);
+        this.parts[1][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(1, 2), false);
+        this.parts[2][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(2, 0), false);
+        this.parts[2][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(2, 1), false);
+        this.parts[2][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(2, 2), false);
+        // Add three useless parts to fill the blanks
+        this.parts[3][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(3, 0), false);
+        this.parts[4][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(4, 0), false);
+        this.parts[5][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(5, 0), false);
+        this.parts[6][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.WHAT, 0, new Pos(6, 0), true);
+        // Add some more useless parts to fill the blanks
+        this.parts[1][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(1, 3), false);
+        this.parts[2][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.NOTHING_HERE, 0, new Pos(2, 3), false);
+        this.parts[5][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(5, 3), false);
+        this.parts[6][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(6, 3), false);
+    };
+    return LighthousePuzzle;
+})();
 var LighthousePuzzlePart = (function () {
     // Constructor
     function LighthousePuzzlePart(lighthouse, type, lives, arrayPos, shown) {
@@ -11229,201 +11425,6 @@ var LighthousePuzzlePartType;
     LighthousePuzzlePartType[LighthousePuzzlePartType["SHOW_LEFT_RIGHT"] = 11] = "SHOW_LEFT_RIGHT";
     LighthousePuzzlePartType[LighthousePuzzlePartType["STONE"] = 12] = "STONE";
 })(LighthousePuzzlePartType || (LighthousePuzzlePartType = {}));
-var LighthousePuzzle = (function () {
-    // Constructor
-    function LighthousePuzzle(lighthouse) {
-        // Create the parts
-        this.createParts(lighthouse);
-    }
-    // Public methods
-    LighthousePuzzle.prototype.draw = function (renderArea, pos) {
-        for (var i = 0; i < 7; i++) {
-            for (var j = 4; j >= 0; j--) {
-                if (this.parts[i][j] != null)
-                    this.parts[i][j].draw(renderArea, pos.plus(new Pos(i * 7, j * 4)));
-            }
-        }
-    };
-    // Public getters
-    LighthousePuzzle.prototype.getParts = function () {
-        return this.parts;
-    };
-    // Private methods
-    LighthousePuzzle.prototype.createParts = function (lighthouse) {
-        this.parts = [];
-        // Add the arrays inside the arrays, and set each part to null
-        for (var i = 0; i < 7; i++) {
-            this.parts[i] = [];
-            for (var j = 0; j < 5; j++) {
-                this.parts[i][j] = null;
-            }
-        }
-        // Add the central part, the first shown at first
-        // It will allow use to show up to three other parts around
-        this.parts[3][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_AROUND, 3, new Pos(3, 2), true);
-        // Add the show right, show below move below to the right and show above parts
-        this.parts[3][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(3, 1), false); // above the central part
-        this.parts[4][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(4, 1), false); // top right corner of the central part
-        this.parts[4][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT, 5, new Pos(4, 2), false); // on the right of the central part
-        this.parts[3][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(3, 3), false); // below the central part
-        // Add the lives part
-        this.parts[5][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(5, 2), false);
-        // Add the show below
-        this.parts[4][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(4, 3), false);
-        // Add the cool path
-        this.parts[3][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT_RIGHT, 2, new Pos(3, 4), false);
-        this.parts[4][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(4, 4), false);
-        this.parts[5][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(5, 4), false);
-        this.parts[6][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(6, 4), false);
-        this.parts[0][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 3), false);
-        this.parts[6][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(6, 2), false);
-        this.parts[6][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(6, 1), false);
-        // Add the lives part at the end of the cool path
-        this.parts[5][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(5, 1), false);
-        // Add the path to the second move below line to the right
-        this.parts[2][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(2, 4), false);
-        this.parts[1][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(1, 4), false);
-        this.parts[0][4] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT, 0, new Pos(0, 4), false);
-        // And the end (9 parts allowing us to give life to the ? ?)
-        this.parts[0][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_RIGHT, 1, new Pos(0, 0), false);
-        this.parts[0][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 1), false);
-        this.parts[0][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(0, 2), false);
-        this.parts[1][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 0, new Pos(1, 0), false);
-        this.parts[1][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.MOVE_LEFT_LINE_ABOVE, 0, new Pos(1, 1), false);
-        this.parts[1][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(1, 2), false);
-        this.parts[2][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.LIVES, 1, new Pos(2, 0), false);
-        this.parts[2][1] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(2, 1), false);
-        this.parts[2][2] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_ABOVE, 1, new Pos(2, 2), false);
-        // Add three useless parts to fill the blanks
-        this.parts[3][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(3, 0), false);
-        this.parts[4][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(4, 0), false);
-        this.parts[5][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_BELOW, 1, new Pos(5, 0), false);
-        this.parts[6][0] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.WHAT, 0, new Pos(6, 0), true);
-        // Add some more useless parts to fill the blanks
-        this.parts[1][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(1, 3), false);
-        this.parts[2][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.NOTHING_HERE, 0, new Pos(2, 3), false);
-        this.parts[5][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.SHOW_LEFT, 1, new Pos(5, 3), false);
-        this.parts[6][3] = new LighthousePuzzlePart(lighthouse, LighthousePuzzlePartType.BLANK, 0, new Pos(6, 3), false);
-    };
-    return LighthousePuzzle;
-})();
-///<reference path="Place.ts"/>
-Saving.registerBool("lighthousePuzzleDone", false);
-var Lighthouse = (function (_super) {
-    __extends(Lighthouse, _super);
-    // Constructor
-    function Lighthouse(game) {
-        _super.call(this, game);
-        // The render area
-        this.renderArea = new RenderArea();
-        // Selected question id
-        this.selectedQuestionId = "lighthouseQuestionWho";
-        // Speech id
-        this.speechId = null;
-        // Show the puzzle?
-        this.showPuzzle = false;
-        // The puzzle
-        this.puzzle = null;
-        // We create the questions array
-        this.createQuestionsArray();
-        // We resize and update
-        this.renderArea.resizeFromArray(Database.getAscii("places/lighthouse/lighthouse"), 0, 4); // 4 in order to add a space below the lighthouse, so that it looks nicer
-        this.update();
-    }
-    // getRenderArea()
-    Lighthouse.prototype.getRenderArea = function () {
-        return this.renderArea;
-    };
-    // Public methods
-    Lighthouse.prototype.update = function () {
-        // Erase everything
-        this.renderArea.resetAllButSize();
-        // Back to the map button
-        this.addBackToMainMapButton(this.renderArea, "lighthouseBackToTheMapButton");
-        // Draw the lighthouse
-        this.renderArea.drawArray(Database.getAscii("places/lighthouse/lighthouse"), 0, 3);
-        // Add the questions list
-        this.renderArea.addList(1, 55, 7, "lighthouseQuestionsList", new CallbackCollection(this.questionSelected.bind(this)), this.questionsArray);
-        // Add the ask button and the link
-        this.renderArea.addAsciiRealButton(Database.getText("lighthouseAskButton"), 5, 10, "lighthouseAskButton", Database.getTranslatedText("lighthouseAskButton"));
-        this.renderArea.addLinkCall(".lighthouseAskButton", new CallbackCollection(this.ask.bind(this)));
-        // Draw the speech if there's a speech id
-        if (this.speechId != null) {
-            this.renderArea.drawSpeech(Database.getText(this.speechId), 17, 75, 99, "lighthouseSpeech", Database.getTranslatedText(this.speechId));
-        }
-        // If we should show the puzzle
-        if (this.showPuzzle) {
-            // Create the puzzle if it's not done yet
-            if (this.puzzle == null)
-                this.puzzle = new LighthousePuzzle(this);
-            // Draw it
-            this.puzzle.draw(this.renderArea, new Pos(2, 12));
-            // Add the reset button
-            this.renderArea.addAsciiRealButton(Database.getText("lighthousePuzzleResetButton"), 2, 34, "lighthousePuzzleResetButton", Database.getTranslatedText("lighthousePuzzleResetButton"));
-            this.renderArea.addLinkCall(".lighthousePuzzleResetButton", new CallbackCollection(this.resetPuzzle.bind(this)));
-        }
-        // Add the link which will call the selectRightQuestion method after the html dom is created
-        this.renderArea.addLinkCallbackCollection(new CallbackCollection(this.selectRightQuestion.bind(this)));
-    };
-    // Public getters
-    Lighthouse.prototype.getPuzzle = function () {
-        return this.puzzle;
-    };
-    // Public setters
-    Lighthouse.prototype.setSpeechId = function (speechId) {
-        this.speechId = speechId;
-    };
-    // Private methods
-    Lighthouse.prototype.addQuestion = function (id, text, translatedText) {
-        if (translatedText === void 0) { translatedText = null; }
-        this.questionsArray.push(id);
-        if (translatedText == null)
-            this.questionsArray.push(text);
-        else
-            this.questionsArray.push(text + (translatedText != "" ? " (" + translatedText + ")" : ""));
-    };
-    Lighthouse.prototype.ask = function () {
-        this.speechId = this.selectedQuestionId + "Speech";
-        if (this.selectedQuestionId == "lighthouseQuestionDragon")
-            this.showPuzzle = true;
-        else
-            this.showPuzzle = false;
-        this.update();
-        this.getGame().updatePlace();
-    };
-    Lighthouse.prototype.createQuestionsArray = function () {
-        // We empty the array
-        this.questionsArray = [];
-        // Add the first basic questions
-        this.addQuestion("lighthouseQuestionWho", Database.getText("lighthouseQuestionWho"), Database.getTranslatedText("lighthouseQuestionWho"));
-        this.addQuestion("lighthouseQuestionWhat", Database.getText("lighthouseQuestionWhat"), Database.getTranslatedText("lighthouseQuestionWhat"));
-        this.addQuestion("lighthouseQuestionWhyEatCandies", Database.getText("lighthouseQuestionWhyEatCandies"), Database.getTranslatedText("lighthouseQuestionWhyEatCandies"));
-        this.addQuestion("lighthouseQuestionCandyBox", Database.getText("lighthouseQuestionCandyBox"), Database.getTranslatedText("lighthouseQuestionCandyBox"));
-        // Add the question about the dragon is we unlocked it
-        if (Saving.loadBool("dragonUnlockedCyclops")) {
-            this.addQuestion("lighthouseQuestionDragon", Database.getText("lighthouseQuestionDragon"), Database.getTranslatedText("lighthouseQuestionDragon"));
-        }
-    };
-    Lighthouse.prototype.questionSelected = function () {
-        // Get the selected language id
-        this.selectedQuestionId = $("#lighthouseQuestionsList").find(":selected").attr("id");
-        // Update the ligthouse
-        this.update();
-        this.getGame().updatePlace();
-    };
-    Lighthouse.prototype.resetPuzzle = function () {
-        // Re create the puzzle
-        this.puzzle = new LighthousePuzzle(this);
-        // Update
-        this.update();
-        this.getGame().updatePlace();
-    };
-    Lighthouse.prototype.selectRightQuestion = function () {
-        // We select the right question
-        $("#" + this.selectedQuestionId).prop('selected', true);
-    };
-    return Lighthouse;
-})(Place);
 ///<reference path="EqItem.ts"/>
 var LightweightBodyArmour = (function (_super) {
     __extends(LightweightBodyArmour, _super);
@@ -12472,75 +12473,6 @@ var MainMap = (function (_super) {
     };
     return MainMap;
 })(Place);
-///<reference path="Game.ts"/>
-///<reference path="./../../libs/jquery.d.ts"/>
-var Main;
-(function (Main) {
-    // The game
-    var game = null;
-    // Information about loading
-    var loadingType = MainLoadingType.NONE;
-    var loadingString = null;
-    // Information about the game mode
-    var gameMode = null;
-    // Public functions    
-    function documentIsReady() {
-        Keyboard.execute(); // Execute the Kayboard jquery stuff
-        start(); // Start the game
-    }
-    Main.documentIsReady = documentIsReady;
-    function reloadEverythingFromFile(fileContent) {
-        // Clear intervals for the current game
-        game.clearAllIntervals();
-        // Set the loading type
-        loadingType = MainLoadingType.FILE;
-        // Set the loading string
-        loadingString = fileContent;
-        // Set the gamemode (null so that it is set from loading)
-        gameMode = null;
-        // We can't register anymore
-        Saving.canRegister = false;
-        // Finally start (this will erase the current game)
-        start();
-    }
-    Main.reloadEverythingFromFile = reloadEverythingFromFile;
-    function setUrlData(urlData) {
-        // Create some variables
-        var beforeEqual;
-        var afterEqual;
-        // If there's something in the url and we can find an equal sign and this equal sign isn't the last character of the string
-        if (urlData != "" && urlData.indexOf("=") != -1 && urlData.indexOf("=") < urlData.length - 1) {
-            // Strip the question mark
-            urlData = urlData.substr(1);
-            // Separate the data in two parts : before and after the equal sign
-            beforeEqual = urlData.substr(0, urlData.indexOf("="));
-            afterEqual = urlData.substr(urlData.indexOf("=") + 1);
-            // Do different things depending on the value of beforeEqual
-            switch (beforeEqual) {
-                // If we're trying to load a local slot
-                case "slot":
-                    loadingType = MainLoadingType.LOCAL;
-                    loadingString = "slot" + afterEqual;
-                    break;
-                // If we're trying to launch a new game with a special mode
-                case "gamemode":
-                    gameMode = afterEqual;
-                    break;
-            }
-        }
-    }
-    Main.setUrlData = setUrlData;
-    function start() {
-        game = new Game(gameMode);
-        Keyboard.setGame(game);
-        Saving.load(game, loadingType, loadingString);
-        game.postLoad();
-    }
-})(Main || (Main = {}));
-$(document).ready(function () {
-    Main.setUrlData(window.location.search);
-    Main.documentIsReady();
-});
 ///<reference path="QuestEntity.ts"/>
 var MediumFish = (function (_super) {
     __extends(MediumFish, _super);
@@ -12605,6 +12537,139 @@ var MiniShark = (function (_super) {
         this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(50 + 10 * Random.upTo(5)), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
     };
     return MiniShark;
+})(QuestEntity);
+///<reference path="QuestEntity.ts"/>
+var MonkeyWizard = (function (_super) {
+    __extends(MonkeyWizard, _super);
+    // Constructor
+    function MonkeyWizard(quest, pos) {
+        _super.call(this, quest, pos, new Naming("A monkey wizard", "a monkey wizard"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(3, 0), new Pos(1, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(3, 1)), new CollisionBox(this, new Pos(0, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(4, 1))), new QuestEntityMovement());
+        // Set the timers
+        this.timer = 0;
+        this.bigTimer = 0;
+        // At first we're going left
+        this.goingLeft = true;
+        // Set gravity
+        this.getQuestEntityMovement().setGravity(true);
+        this.getQuestEntityMovement().setWormsLike(false);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(300);
+        this.setHp(300);
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawArray(Database.getAscii("places/quests/monkeyWizard/monkeyWizard"));
+        this.setTransparency(new RenderTransparency(" "));
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its staff", "its staff"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(6, 6))), 3));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(1);
+    }
+    // update()
+    MonkeyWizard.prototype.update = function () {
+        _super.prototype.update.call(this);
+        // Is the monkey angry?
+        var angry = (this.getHp() < 70 ? true : false);
+        // Store the player position
+        var playerPos = this.getQuest().getGame().getPlayer().getGlobalPosition();
+        // Handle the timer
+        if (this.timer < 80)
+            this.timer += 1;
+        else
+            this.timer = 0;
+        // Handle the big timer
+        if (this.bigTimer < 350)
+            this.bigTimer += 1;
+        else
+            this.bigTimer = 0;
+        // Cast spells depending on the timer
+        if (this.timer == 80 ||
+            this.timer == 12 ||
+            this.timer == 24 ||
+            this.timer == 36 ||
+            this.timer == 48 ||
+            (angry && this.timer == 6) ||
+            (angry && this.timer == 18) ||
+            (angry && this.timer == 30) ||
+            (angry && this.timer == 42) ||
+            (angry && this.timer == 54)) {
+            this.castSpell(false); // Not stored
+        }
+        else if (this.timer == 60 || this.timer == 64 || this.timer == 68 || this.timer == 72 || this.timer == 76 && this.bigTimer < 300) {
+            this.castSpell(true); // Stored
+        }
+        // If the player is near us (< 9) horizontally
+        if (Math.abs(playerPos.x - this.getGlobalPosition().x) < 9) {
+            // We jump (hoping to jump above the player)
+            this.jump3();
+        }
+        // If the player is even more near us (< 15) horizontally
+        if (Math.abs(playerPos.x - this.getGlobalPosition().x) < 15) {
+            // If we're going left
+            if (this.goingLeft) {
+                // If we're on the right of the quest
+                if (this.getGlobalPosition().x > 25)
+                    this.goLeft();
+                else {
+                    this.goRight();
+                    this.goingLeft = false;
+                }
+            }
+            else {
+                // If the player is on the left
+                if (playerPos.x < this.getGlobalPosition().x) {
+                    // If we're on the left side of the quest
+                    if (this.getGlobalPosition().x < 75)
+                        this.goRight();
+                    else {
+                        this.goLeft();
+                        this.goingLeft = true;
+                    }
+                }
+                else if (this.getGlobalPosition().x > 25) {
+                    // We go left
+                    this.goLeft();
+                }
+                else
+                    this.dontMove();
+            }
+        }
+        else
+            this.dontMove();
+    };
+    // willDie()
+    MonkeyWizard.prototype.willDie = function () {
+        // Candies
+        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(1000), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
+        // The monkey wizard staff
+        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemWeaponMonkeyWizardStaff", "You found a staff.", "You gain the monkey wizard staff."));
+    };
+    // Private methods
+    MonkeyWizard.prototype.castSpell = function (stored) {
+        var ball = new MonkeyWizardMagicalPurpleBall(this.getQuest(), this.getGlobalPosition().plus(new Pos(3, 0)), new Naming("An magical purple ball", "a magical purple ball"), (stored ? new Color(ColorType.MONKEY_WIZARD_BALL_STORED) : new Color(ColorType.MONKEY_WIZARD_BALL)), new Pos(2, 1), 15, this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("An magical purple ball", "a magical purple ball")), (stored ? 350 - this.bigTimer : null));
+        // If we're not going to be stored
+        if (stored == false) {
+            // Target the player
+            ball.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer());
+        }
+        else {
+            // Target the roof
+            ball.setTargetTypeTargetPosition(new Pos(Random.between(1, 99), Random.between(4, 9)));
+        }
+        // Add it to the quest
+        this.getQuest().addEntity(ball);
+    };
+    MonkeyWizard.prototype.dontMove = function () {
+        this.getQuestEntityMovement().setOffset(new Pos(0, 0));
+    };
+    MonkeyWizard.prototype.goLeft = function () {
+        this.getQuestEntityMovement().setOffset(new Pos(-1, 0));
+    };
+    MonkeyWizard.prototype.goRight = function () {
+        this.getQuestEntityMovement().setOffset(new Pos(1, 0));
+    };
+    MonkeyWizard.prototype.jump3 = function () {
+        this.jump(3);
+    };
+    return MonkeyWizard;
 })(QuestEntity);
 ///<reference path="Fireball.ts"/>
 var MonkeyWizardMagicalPurpleBall = (function (_super) {
@@ -12742,139 +12807,6 @@ var MonkeyWizardStaff = (function (_super) {
     };
     return MonkeyWizardStaff;
 })(MonkeyWizardStaffMotherClass);
-///<reference path="QuestEntity.ts"/>
-var MonkeyWizard = (function (_super) {
-    __extends(MonkeyWizard, _super);
-    // Constructor
-    function MonkeyWizard(quest, pos) {
-        _super.call(this, quest, pos, new Naming("A monkey wizard", "a monkey wizard"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(3, 0), new Pos(1, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(3, 1)), new CollisionBox(this, new Pos(0, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(4, 1))), new QuestEntityMovement());
-        // Set the timers
-        this.timer = 0;
-        this.bigTimer = 0;
-        // At first we're going left
-        this.goingLeft = true;
-        // Set gravity
-        this.getQuestEntityMovement().setGravity(true);
-        this.getQuestEntityMovement().setWormsLike(false);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(300);
-        this.setHp(300);
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawArray(Database.getAscii("places/quests/monkeyWizard/monkeyWizard"));
-        this.setTransparency(new RenderTransparency(" "));
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its staff", "its staff"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(6, 6))), 3));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(1);
-    }
-    // update()
-    MonkeyWizard.prototype.update = function () {
-        _super.prototype.update.call(this);
-        // Is the monkey angry?
-        var angry = (this.getHp() < 70 ? true : false);
-        // Store the player position
-        var playerPos = this.getQuest().getGame().getPlayer().getGlobalPosition();
-        // Handle the timer
-        if (this.timer < 80)
-            this.timer += 1;
-        else
-            this.timer = 0;
-        // Handle the big timer
-        if (this.bigTimer < 350)
-            this.bigTimer += 1;
-        else
-            this.bigTimer = 0;
-        // Cast spells depending on the timer
-        if (this.timer == 80 ||
-            this.timer == 12 ||
-            this.timer == 24 ||
-            this.timer == 36 ||
-            this.timer == 48 ||
-            (angry && this.timer == 6) ||
-            (angry && this.timer == 18) ||
-            (angry && this.timer == 30) ||
-            (angry && this.timer == 42) ||
-            (angry && this.timer == 54)) {
-            this.castSpell(false); // Not stored
-        }
-        else if (this.timer == 60 || this.timer == 64 || this.timer == 68 || this.timer == 72 || this.timer == 76 && this.bigTimer < 300) {
-            this.castSpell(true); // Stored
-        }
-        // If the player is near us (< 9) horizontally
-        if (Math.abs(playerPos.x - this.getGlobalPosition().x) < 9) {
-            // We jump (hoping to jump above the player)
-            this.jump3();
-        }
-        // If the player is even more near us (< 15) horizontally
-        if (Math.abs(playerPos.x - this.getGlobalPosition().x) < 15) {
-            // If we're going left
-            if (this.goingLeft) {
-                // If we're on the right of the quest
-                if (this.getGlobalPosition().x > 25)
-                    this.goLeft();
-                else {
-                    this.goRight();
-                    this.goingLeft = false;
-                }
-            }
-            else {
-                // If the player is on the left
-                if (playerPos.x < this.getGlobalPosition().x) {
-                    // If we're on the left side of the quest
-                    if (this.getGlobalPosition().x < 75)
-                        this.goRight();
-                    else {
-                        this.goLeft();
-                        this.goingLeft = true;
-                    }
-                }
-                else if (this.getGlobalPosition().x > 25) {
-                    // We go left
-                    this.goLeft();
-                }
-                else
-                    this.dontMove();
-            }
-        }
-        else
-            this.dontMove();
-    };
-    // willDie()
-    MonkeyWizard.prototype.willDie = function () {
-        // Candies
-        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(1000), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
-        // The monkey wizard staff
-        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemWeaponMonkeyWizardStaff", "You found a staff.", "You gain the monkey wizard staff."));
-    };
-    // Private methods
-    MonkeyWizard.prototype.castSpell = function (stored) {
-        var ball = new MonkeyWizardMagicalPurpleBall(this.getQuest(), this.getGlobalPosition().plus(new Pos(3, 0)), new Naming("An magical purple ball", "a magical purple ball"), (stored ? new Color(ColorType.MONKEY_WIZARD_BALL_STORED) : new Color(ColorType.MONKEY_WIZARD_BALL)), new Pos(2, 1), 15, this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("An magical purple ball", "a magical purple ball")), (stored ? 350 - this.bigTimer : null));
-        // If we're not going to be stored
-        if (stored == false) {
-            // Target the player
-            ball.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer());
-        }
-        else {
-            // Target the roof
-            ball.setTargetTypeTargetPosition(new Pos(Random.between(1, 99), Random.between(4, 9)));
-        }
-        // Add it to the quest
-        this.getQuest().addEntity(ball);
-    };
-    MonkeyWizard.prototype.dontMove = function () {
-        this.getQuestEntityMovement().setOffset(new Pos(0, 0));
-    };
-    MonkeyWizard.prototype.goLeft = function () {
-        this.getQuestEntityMovement().setOffset(new Pos(-1, 0));
-    };
-    MonkeyWizard.prototype.goRight = function () {
-        this.getQuestEntityMovement().setOffset(new Pos(1, 0));
-    };
-    MonkeyWizard.prototype.jump3 = function () {
-        this.jump(3);
-    };
-    return MonkeyWizard;
-})(QuestEntity);
 ///<reference path="QuestEntity.ts"/>
 var Monster = (function (_super) {
     __extends(Monster, _super);
@@ -13029,6 +12961,42 @@ var ObsidianBrick = (function (_super) {
     }
     return ObsidianBrick;
 })(QuestEntitySpell);
+///<reference path="QuestEntity.ts"/>
+var OctopusKing = (function (_super) {
+    __extends(OctopusKing, _super);
+    // Constructor
+    function OctopusKing(quest, pos) {
+        _super.call(this, quest, pos, new Naming("The Octopus King", "the Octopus King"), new RenderArea(6, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(2, 0), new Pos(2, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(4, 1)), new CollisionBox(this, new Pos(1, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(6, 1))), new QuestEntityMovement());
+        // Set gravity
+        this.getQuestEntityMovement().setGravity(true);
+        this.getQuestEntityMovement().setWormsLike(false);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(380);
+        this.setHp(380);
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
+        this.setTransparency(new RenderTransparency(" "));
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its tentacles", "its tentacles"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(8, 6))), 16));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
+    }
+    // update()
+    OctopusKing.prototype.update = function () {
+        // Go towards the player
+        this.goTowards(this.getGlobalPosition(), this.getQuest().getGame().getPlayer().getGlobalPosition(), 0, new Pos(1, 0));
+        // Call the mother class update method
+        _super.prototype.update.call(this);
+    };
+    // willDie()
+    OctopusKing.prototype.willDie = function () {
+        // Candies
+        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(4000), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
+        // The monkey wizard staff
+        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemHatOctopusKingCrown", "You found the Octopus King crown.", "You gain the Octopus King crown."));
+    };
+    return OctopusKing;
+})(QuestEntity);
 ///<reference path="EqItem.ts"/>
 var OctopusKingCrown = (function (_super) {
     __extends(OctopusKingCrown, _super);
@@ -13198,42 +13166,6 @@ var OctopusKingQuest = (function (_super) {
     };
     return OctopusKingQuest;
 })(Quest);
-///<reference path="QuestEntity.ts"/>
-var OctopusKing = (function (_super) {
-    __extends(OctopusKing, _super);
-    // Constructor
-    function OctopusKing(quest, pos) {
-        _super.call(this, quest, pos, new Naming("The Octopus King", "the Octopus King"), new RenderArea(6, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(2, 0), new Pos(2, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(4, 1)), new CollisionBox(this, new Pos(1, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(6, 1))), new QuestEntityMovement());
-        // Set gravity
-        this.getQuestEntityMovement().setGravity(true);
-        this.getQuestEntityMovement().setWormsLike(false);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(380);
-        this.setHp(380);
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
-        this.setTransparency(new RenderTransparency(" "));
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its tentacles", "its tentacles"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(8, 6))), 16));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
-    }
-    // update()
-    OctopusKing.prototype.update = function () {
-        // Go towards the player
-        this.goTowards(this.getGlobalPosition(), this.getQuest().getGame().getPlayer().getGlobalPosition(), 0, new Pos(1, 0));
-        // Call the mother class update method
-        _super.prototype.update.call(this);
-    };
-    // willDie()
-    OctopusKing.prototype.willDie = function () {
-        // Candies
-        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(4000), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
-        // The monkey wizard staff
-        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemHatOctopusKingCrown", "You found the Octopus King crown.", "You gain the Octopus King crown."));
-    };
-    return OctopusKing;
-})(QuestEntity);
 ///<reference path="Place.ts"/>
 var OutsideTheHole = (function (_super) {
     __extends(OutsideTheHole, _super);
@@ -13396,247 +13328,6 @@ var Plant = (function (_super) {
         }
     }
     return Plant;
-})(QuestEntity);
-///<reference path="QuestEntityWeapon.ts"/>
-var PlayerBludgeon = (function (_super) {
-    __extends(PlayerBludgeon, _super);
-    function PlayerBludgeon() {
-        _super.apply(this, arguments);
-    }
-    // Public methods
-    PlayerBludgeon.prototype.getRealDamage = function () {
-        return Random.between(12, 16);
-    };
-    PlayerBludgeon.prototype.getRealDamageText = function () {
-        return "12-16";
-    };
-    return PlayerBludgeon;
-})(QuestEntityWeapon);
-var PlayerCharacterType;
-(function (PlayerCharacterType) {
-    PlayerCharacterType[PlayerCharacterType["CANDYBOX"] = 0] = "CANDYBOX";
-    PlayerCharacterType[PlayerCharacterType["MEDIUM"] = 1] = "MEDIUM";
-    PlayerCharacterType[PlayerCharacterType["CANDYBOX_SQUEEZED"] = 2] = "CANDYBOX_SQUEEZED";
-    PlayerCharacterType[PlayerCharacterType["MEDIUM_SQUEEZED"] = 3] = "MEDIUM_SQUEEZED";
-})(PlayerCharacterType || (PlayerCharacterType = {}));
-///<reference path="QuestEntity.ts"/>
-var PlayerCloneCandyBox = (function (_super) {
-    __extends(PlayerCloneCandyBox, _super);
-    // Constructor
-    function PlayerCloneCandyBox(quest, pos) {
-        _super.call(this, quest, pos, new Naming("A clone", "a clone"), new RenderArea(3, 1), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1))), new QuestEntityMovement());
-        // Set the team
-        this.setTeam(QuestEntityTeam.PLAYER);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(quest.getGame().getPlayer().getHp());
-        this.setHp(quest.getGame().getPlayer().getHp());
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawString("\\o/");
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its fists", "its fists"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(5, 3))), 3));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
-    }
-    return PlayerCloneCandyBox;
-})(QuestEntity);
-///<reference path="QuestEntity.ts"/>
-var PlayerCloneMedium = (function (_super) {
-    __extends(PlayerCloneMedium, _super);
-    // Constructor
-    function PlayerCloneMedium(quest, pos) {
-        _super.call(this, quest, pos, new Naming("A clone", "a clone"), new RenderArea(11, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(11, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(9, 1)), new CollisionBox(this, new Pos(2, 2), new Pos(7, 1)), new CollisionBox(this, new Pos(4, 3), new Pos(3, 1))), new QuestEntityMovement());
-        // Set the team
-        this.setTeam(QuestEntityTeam.PLAYER);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(quest.getGame().getPlayer().getHp());
-        this.setHp(quest.getGame().getPlayer().getHp());
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawArray(Database.getAscii("players/medium"));
-        this.setTransparency(new RenderTransparency(" ", "%"));
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its fists", "its fists"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(13, 6))), 3));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
-    }
-    return PlayerCloneMedium;
-})(QuestEntity);
-///<reference path="QuestEntitySpell.ts"/>
-var PlayerSummonedDemon = (function (_super) {
-    __extends(PlayerSummonedDemon, _super);
-    // Constructor
-    function PlayerSummonedDemon(quest, globalPosition, damage) {
-        _super.call(this, quest, globalPosition, new Naming("A demon", "a demon"));
-        // Set the damage
-        this.damage = damage;
-        // Create the damage reason
-        this.damageReason = new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY, QuestEntityDamageReasonWhatType.SPELL);
-        this.damageReason.setQuestEntity(this.getQuest().getGame().getPlayer(), QuestEntityTeam.NATURE);
-        this.damageReason.setSpellNaming(this.getRandomNaming());
-        // Create the collision box collection
-        this.damageCollisionBoxCollection = new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(8, 4)));
-        // Add the demon colors randomly
-        this.addRandomQuestEntitySpellColors();
-        // Add the quest entity movement
-        this.setQuestEntityMovement(new QuestEntityMovement(new Pos(3, 0)));
-    }
-    // Public methods
-    PlayerSummonedDemon.prototype.update = function () {
-        // Handle damage
-        this.handleDamage();
-        // Update
-        _super.prototype.update.call(this);
-    };
-    // Private generation methods
-    PlayerSummonedDemon.prototype.addRandomQuestEntitySpellColors = function () {
-        // Array of 4*4 used to decide of the colors to add
-        var arr = [];
-        // Fill the array with false values
-        for (var i = 0; i < 4; i++) {
-            arr.push([]);
-            for (var j = 0; j < 4; j++) {
-                arr[i].push(false);
-            }
-        }
-        // Fill the array with some true values
-        switch (Random.upTo(1)) {
-            // Symmetrical demon (vertical symmetry)
-            case 0:
-                for (var i = 0; i < 2; i++) {
-                    for (var j = 0; j < 4; j++) {
-                        if (Random.flipACoin()) {
-                            arr[i][j] = true;
-                            arr[3 - i][j] = true;
-                        }
-                    }
-                }
-                break;
-            // Symmetrical demon (horizontal symmetry)
-            case 1:
-                for (var i = 0; i < 4; i++) {
-                    for (var j = 0; j < 2; j++) {
-                        if (Random.flipACoin()) {
-                            arr[i][j] = true;
-                            arr[i][3 - j] = true;
-                        }
-                    }
-                }
-                break;
-        }
-        // Add the colors depending on the array's content
-        for (var i = 0; i < 4; i++) {
-            for (var j = 0; j < 4; j++) {
-                // If we should add a color here, we do so
-                if (arr[i][j])
-                    this.addColor(new QuestEntitySpellColor(this.getQuest(), new Pos(i * 2, j), new Pos(2, 1), new Color(ColorType.PLAYER_SUMMONED_DEMON, true)));
-            }
-        }
-    };
-    PlayerSummonedDemon.prototype.getRandomNaming = function () {
-        // The final name in a string
-        var finalName = "";
-        // How many syllables?
-        var howManySyllables;
-        if (Random.flipACoin())
-            howManySyllables = 3; // a lot of chance
-        else if (Random.oneChanceOutOf(10))
-            howManySyllables = 4; // small chance
-        else if (Random.oneChanceOutOf(10))
-            howManySyllables = 1; // small chance
-        else
-            howManySyllables = 2; // a lot of chance, a but still a little bit less chance then 3 syllables
-        // The syllables array
-        var syllablesArray = [];
-        // Add the syllables to the array
-        for (var i = 0; i < howManySyllables; i++) {
-            syllablesArray.push(Random.fromArray(["lael", "ezek", "bal", "sen", "zen", "aps", "hir", "ta", "ozn", "eres", "non", "enon", "cesti", "mal", "aser", "oex", "nax", "arir", "nikon", "taor", "rael", "mael", "sael", "epit", "uer", "pod", "ehon", "edeo", "xa"]));
-        }
-        // Turn the first letter of the firsy syllable into upper case
-        syllablesArray[0] = syllablesArray[0].charAt(0).toUpperCase() + syllablesArray[0].slice(1);
-        // Create the final name from the syllables
-        for (var i = 0; i < syllablesArray.length; i++) {
-            finalName += syllablesArray[i];
-        }
-        // Finally return the naming
-        return new Naming("the demon " + finalName);
-    };
-    // Other private methods
-    PlayerSummonedDemon.prototype.handleDamage = function () {
-        // We iterate over entities
-        for (var i = 0; i < this.getQuest().getEntities().length; i++) {
-            // If it is destructible
-            if (this.getQuest().getEntities()[i].getDestructible()) {
-                // If it has a collision box collection
-                if (this.getQuest().getEntities()[i].getCbc() != null) {
-                    // If this collision box collection collides with ours
-                    if (this.getQuest().getEntities()[i].getCbc().collidesWith(this.damageCollisionBoxCollection)) {
-                        // We inflict the damage
-                        this.getQuest().getEntities()[i].inflictDamage(this.damage, this.damageReason);
-                    }
-                }
-            }
-        }
-    };
-    return PlayerSummonedDemon;
-})(QuestEntitySpell);
-///<reference path="QuestEntity.ts"/>
-var PlayerSummonedOctopusKing = (function (_super) {
-    __extends(PlayerSummonedOctopusKing, _super);
-    // Constructor
-    function PlayerSummonedOctopusKing(quest, pos) {
-        _super.call(this, quest, pos, new Naming("An Octopus King", "an Octopus King"), new RenderArea(6, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(2, 0), new Pos(2, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(4, 1)), new CollisionBox(this, new Pos(1, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(6, 1))), new QuestEntityMovement());
-        // Set gravity
-        this.getQuestEntityMovement().setGravity(true);
-        this.getQuestEntityMovement().setWormsLike(true);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(380);
-        this.setHp(380);
-        // Set the team
-        this.setTeam(QuestEntityTeam.PLAYER);
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
-        this.setTransparency(new RenderTransparency(" "));
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its tentacles", "its tentacles"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(8, 6))), 16));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
-    }
-    // update()
-    PlayerSummonedOctopusKing.prototype.update = function () {
-        // Go towards the player
-        this.goTowards(this.getGlobalPosition(), this.getQuest().getGame().getPlayer().getGlobalPosition(), 0, new Pos(1, 0));
-        // Call the mother class update method
-        _super.prototype.update.call(this);
-    };
-    return PlayerSummonedOctopusKing;
-})(QuestEntity);
-///<reference path="QuestEntity.ts"/>
-var PlayerSummonedTribeWarrior = (function (_super) {
-    __extends(PlayerSummonedTribeWarrior, _super);
-    // Constructor
-    function PlayerSummonedTribeWarrior(quest, pos) {
-        _super.call(this, quest, pos, new Naming("A tribe warrior", "a tribe warrior"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(1, 1)), new CollisionBox(this, new Pos(0, 1), new Pos(4, 3))), new QuestEntityMovement());
-        // Set gravity and worms like
-        this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
-        this.getQuestEntityMovement().setGravity(true);
-        this.getQuestEntityMovement().setWormsLike(true);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(25);
-        this.setHp(25);
-        // Set the team
-        this.setTeam(QuestEntityTeam.PLAYER);
-        // Set the ascii art and the transparent character
-        this.getRenderArea().drawArray(Database.getAscii("places/quests/theHole/lostTribeWarrior"));
-        this.setTransparency(new RenderTransparency(" "));
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("A tribal spear", "a tribal spear"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(6, 6))), 8));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(2);
-    }
-    // update()
-    PlayerSummonedTribeWarrior.prototype.update = function () {
-        _super.prototype.update.call(this);
-    };
-    return PlayerSummonedTribeWarrior;
 })(QuestEntity);
 ///<reference path="QuestEntity.ts"/>
 // Register our hp
@@ -14067,6 +13758,247 @@ var Player = (function (_super) {
     };
     return Player;
 })(QuestEntity);
+///<reference path="QuestEntityWeapon.ts"/>
+var PlayerBludgeon = (function (_super) {
+    __extends(PlayerBludgeon, _super);
+    function PlayerBludgeon() {
+        _super.apply(this, arguments);
+    }
+    // Public methods
+    PlayerBludgeon.prototype.getRealDamage = function () {
+        return Random.between(12, 16);
+    };
+    PlayerBludgeon.prototype.getRealDamageText = function () {
+        return "12-16";
+    };
+    return PlayerBludgeon;
+})(QuestEntityWeapon);
+var PlayerCharacterType;
+(function (PlayerCharacterType) {
+    PlayerCharacterType[PlayerCharacterType["CANDYBOX"] = 0] = "CANDYBOX";
+    PlayerCharacterType[PlayerCharacterType["MEDIUM"] = 1] = "MEDIUM";
+    PlayerCharacterType[PlayerCharacterType["CANDYBOX_SQUEEZED"] = 2] = "CANDYBOX_SQUEEZED";
+    PlayerCharacterType[PlayerCharacterType["MEDIUM_SQUEEZED"] = 3] = "MEDIUM_SQUEEZED";
+})(PlayerCharacterType || (PlayerCharacterType = {}));
+///<reference path="QuestEntity.ts"/>
+var PlayerCloneCandyBox = (function (_super) {
+    __extends(PlayerCloneCandyBox, _super);
+    // Constructor
+    function PlayerCloneCandyBox(quest, pos) {
+        _super.call(this, quest, pos, new Naming("A clone", "a clone"), new RenderArea(3, 1), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1))), new QuestEntityMovement());
+        // Set the team
+        this.setTeam(QuestEntityTeam.PLAYER);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(quest.getGame().getPlayer().getHp());
+        this.setHp(quest.getGame().getPlayer().getHp());
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawString("\\o/");
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its fists", "its fists"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(5, 3))), 3));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
+    }
+    return PlayerCloneCandyBox;
+})(QuestEntity);
+///<reference path="QuestEntity.ts"/>
+var PlayerCloneMedium = (function (_super) {
+    __extends(PlayerCloneMedium, _super);
+    // Constructor
+    function PlayerCloneMedium(quest, pos) {
+        _super.call(this, quest, pos, new Naming("A clone", "a clone"), new RenderArea(11, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(11, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(9, 1)), new CollisionBox(this, new Pos(2, 2), new Pos(7, 1)), new CollisionBox(this, new Pos(4, 3), new Pos(3, 1))), new QuestEntityMovement());
+        // Set the team
+        this.setTeam(QuestEntityTeam.PLAYER);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(quest.getGame().getPlayer().getHp());
+        this.setHp(quest.getGame().getPlayer().getHp());
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawArray(Database.getAscii("players/medium"));
+        this.setTransparency(new RenderTransparency(" ", "%"));
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its fists", "its fists"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(13, 6))), 3));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
+    }
+    return PlayerCloneMedium;
+})(QuestEntity);
+///<reference path="QuestEntitySpell.ts"/>
+var PlayerSummonedDemon = (function (_super) {
+    __extends(PlayerSummonedDemon, _super);
+    // Constructor
+    function PlayerSummonedDemon(quest, globalPosition, damage) {
+        _super.call(this, quest, globalPosition, new Naming("A demon", "a demon"));
+        // Set the damage
+        this.damage = damage;
+        // Create the damage reason
+        this.damageReason = new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY, QuestEntityDamageReasonWhatType.SPELL);
+        this.damageReason.setQuestEntity(this.getQuest().getGame().getPlayer(), QuestEntityTeam.NATURE);
+        this.damageReason.setSpellNaming(this.getRandomNaming());
+        // Create the collision box collection
+        this.damageCollisionBoxCollection = new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(8, 4)));
+        // Add the demon colors randomly
+        this.addRandomQuestEntitySpellColors();
+        // Add the quest entity movement
+        this.setQuestEntityMovement(new QuestEntityMovement(new Pos(3, 0)));
+    }
+    // Public methods
+    PlayerSummonedDemon.prototype.update = function () {
+        // Handle damage
+        this.handleDamage();
+        // Update
+        _super.prototype.update.call(this);
+    };
+    // Private generation methods
+    PlayerSummonedDemon.prototype.addRandomQuestEntitySpellColors = function () {
+        // Array of 4*4 used to decide of the colors to add
+        var arr = [];
+        // Fill the array with false values
+        for (var i = 0; i < 4; i++) {
+            arr.push([]);
+            for (var j = 0; j < 4; j++) {
+                arr[i].push(false);
+            }
+        }
+        // Fill the array with some true values
+        switch (Random.upTo(1)) {
+            // Symmetrical demon (vertical symmetry)
+            case 0:
+                for (var i = 0; i < 2; i++) {
+                    for (var j = 0; j < 4; j++) {
+                        if (Random.flipACoin()) {
+                            arr[i][j] = true;
+                            arr[3 - i][j] = true;
+                        }
+                    }
+                }
+                break;
+            // Symmetrical demon (horizontal symmetry)
+            case 1:
+                for (var i = 0; i < 4; i++) {
+                    for (var j = 0; j < 2; j++) {
+                        if (Random.flipACoin()) {
+                            arr[i][j] = true;
+                            arr[i][3 - j] = true;
+                        }
+                    }
+                }
+                break;
+        }
+        // Add the colors depending on the array's content
+        for (var i = 0; i < 4; i++) {
+            for (var j = 0; j < 4; j++) {
+                // If we should add a color here, we do so
+                if (arr[i][j])
+                    this.addColor(new QuestEntitySpellColor(this.getQuest(), new Pos(i * 2, j), new Pos(2, 1), new Color(ColorType.PLAYER_SUMMONED_DEMON, true)));
+            }
+        }
+    };
+    PlayerSummonedDemon.prototype.getRandomNaming = function () {
+        // The final name in a string
+        var finalName = "";
+        // How many syllables?
+        var howManySyllables;
+        if (Random.flipACoin())
+            howManySyllables = 3; // a lot of chance
+        else if (Random.oneChanceOutOf(10))
+            howManySyllables = 4; // small chance
+        else if (Random.oneChanceOutOf(10))
+            howManySyllables = 1; // small chance
+        else
+            howManySyllables = 2; // a lot of chance, a but still a little bit less chance then 3 syllables
+        // The syllables array
+        var syllablesArray = [];
+        // Add the syllables to the array
+        for (var i = 0; i < howManySyllables; i++) {
+            syllablesArray.push(Random.fromArray(["lael", "ezek", "bal", "sen", "zen", "aps", "hir", "ta", "ozn", "eres", "non", "enon", "cesti", "mal", "aser", "oex", "nax", "arir", "nikon", "taor", "rael", "mael", "sael", "epit", "uer", "pod", "ehon", "edeo", "xa"]));
+        }
+        // Turn the first letter of the firsy syllable into upper case
+        syllablesArray[0] = syllablesArray[0].charAt(0).toUpperCase() + syllablesArray[0].slice(1);
+        // Create the final name from the syllables
+        for (var i = 0; i < syllablesArray.length; i++) {
+            finalName += syllablesArray[i];
+        }
+        // Finally return the naming
+        return new Naming("the demon " + finalName);
+    };
+    // Other private methods
+    PlayerSummonedDemon.prototype.handleDamage = function () {
+        // We iterate over entities
+        for (var i = 0; i < this.getQuest().getEntities().length; i++) {
+            // If it is destructible
+            if (this.getQuest().getEntities()[i].getDestructible()) {
+                // If it has a collision box collection
+                if (this.getQuest().getEntities()[i].getCbc() != null) {
+                    // If this collision box collection collides with ours
+                    if (this.getQuest().getEntities()[i].getCbc().collidesWith(this.damageCollisionBoxCollection)) {
+                        // We inflict the damage
+                        this.getQuest().getEntities()[i].inflictDamage(this.damage, this.damageReason);
+                    }
+                }
+            }
+        }
+    };
+    return PlayerSummonedDemon;
+})(QuestEntitySpell);
+///<reference path="QuestEntity.ts"/>
+var PlayerSummonedOctopusKing = (function (_super) {
+    __extends(PlayerSummonedOctopusKing, _super);
+    // Constructor
+    function PlayerSummonedOctopusKing(quest, pos) {
+        _super.call(this, quest, pos, new Naming("An Octopus King", "an Octopus King"), new RenderArea(6, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(2, 0), new Pos(2, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(4, 1)), new CollisionBox(this, new Pos(1, 2), new Pos(4, 1)), new CollisionBox(this, new Pos(0, 3), new Pos(6, 1))), new QuestEntityMovement());
+        // Set gravity
+        this.getQuestEntityMovement().setGravity(true);
+        this.getQuestEntityMovement().setWormsLike(true);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(380);
+        this.setHp(380);
+        // Set the team
+        this.setTeam(QuestEntityTeam.PLAYER);
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
+        this.setTransparency(new RenderTransparency(" "));
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("Its tentacles", "its tentacles"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(8, 6))), 16));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3);
+    }
+    // update()
+    PlayerSummonedOctopusKing.prototype.update = function () {
+        // Go towards the player
+        this.goTowards(this.getGlobalPosition(), this.getQuest().getGame().getPlayer().getGlobalPosition(), 0, new Pos(1, 0));
+        // Call the mother class update method
+        _super.prototype.update.call(this);
+    };
+    return PlayerSummonedOctopusKing;
+})(QuestEntity);
+///<reference path="QuestEntity.ts"/>
+var PlayerSummonedTribeWarrior = (function (_super) {
+    __extends(PlayerSummonedTribeWarrior, _super);
+    // Constructor
+    function PlayerSummonedTribeWarrior(quest, pos) {
+        _super.call(this, quest, pos, new Naming("A tribe warrior", "a tribe warrior"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(1, 1)), new CollisionBox(this, new Pos(0, 1), new Pos(4, 3))), new QuestEntityMovement());
+        // Set gravity and worms like
+        this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1, 0)));
+        this.getQuestEntityMovement().setGravity(true);
+        this.getQuestEntityMovement().setWormsLike(true);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(25);
+        this.setHp(25);
+        // Set the team
+        this.setTeam(QuestEntityTeam.PLAYER);
+        // Set the ascii art and the transparent character
+        this.getRenderArea().drawArray(Database.getAscii("places/quests/theHole/lostTribeWarrior"));
+        this.setTransparency(new RenderTransparency(" "));
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("A tribal spear", "a tribal spear"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(6, 6))), 8));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(2);
+    }
+    // update()
+    PlayerSummonedTribeWarrior.prototype.update = function () {
+        _super.prototype.update.call(this);
+    };
+    return PlayerSummonedTribeWarrior;
+})(QuestEntity);
 ///<reference path="EqItem.ts"/>
 var PolishedSilverSword = (function (_super) {
     __extends(PolishedSilverSword, _super);
@@ -14323,12 +14255,6 @@ var QuestEntityDamageReasonWhoType;
     QuestEntityDamageReasonWhoType[QuestEntityDamageReasonWhoType["NATURE"] = 0] = "NATURE";
     QuestEntityDamageReasonWhoType[QuestEntityDamageReasonWhoType["ENTITY"] = 1] = "ENTITY";
 })(QuestEntityDamageReasonWhoType || (QuestEntityDamageReasonWhoType = {}));
-var QuestEntityHealthBarPositionType;
-(function (QuestEntityHealthBarPositionType) {
-    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["RELATIVE"] = 0] = "RELATIVE";
-    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["FIXED"] = 1] = "FIXED";
-    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["FIXED_ON_PAGE"] = 2] = "FIXED_ON_PAGE"; // The position of the bar is fixd in the quest and not affected by scrolling
-})(QuestEntityHealthBarPositionType || (QuestEntityHealthBarPositionType = {}));
 var QuestEntityHealthBar = (function () {
     // Constructor
     function QuestEntityHealthBar(questEntity, barSize, position, // By default, the bar will be above the entity
@@ -14399,6 +14325,12 @@ var QuestEntityHealthBar = (function () {
     };
     return QuestEntityHealthBar;
 })();
+var QuestEntityHealthBarPositionType;
+(function (QuestEntityHealthBarPositionType) {
+    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["RELATIVE"] = 0] = "RELATIVE";
+    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["FIXED"] = 1] = "FIXED";
+    QuestEntityHealthBarPositionType[QuestEntityHealthBarPositionType["FIXED_ON_PAGE"] = 2] = "FIXED_ON_PAGE"; // The position of the bar is fixd in the quest and not affected by scrolling
+})(QuestEntityHealthBarPositionType || (QuestEntityHealthBarPositionType = {}));
 var QuestEntityMovement = (function () {
     // Constructor
     function QuestEntityMovement(offset, intervalTime, currentTime) {
@@ -14646,38 +14578,6 @@ var QuestItemFound = (function () {
     };
     return QuestItemFound;
 })();
-var QuestLogMessage = (function () {
-    // Constructor
-    function QuestLogMessage(left, right, bold) {
-        if (right === void 0) { right = null; }
-        if (bold === void 0) { bold = false; }
-        // Strings
-        this.left = null;
-        this.right = null;
-        // Set the parameters
-        this.left = left;
-        this.right = right;
-        this.bold = bold;
-        // If the left string is too big
-        if (this.left.length > 100 - (this.right != null ? this.right.length : 0)) {
-            this.left = this.left.substr(0, 100 - (this.right != null ? this.right.length : 0) - 7) + " (...)";
-        }
-    }
-    // Public methods
-    QuestLogMessage.prototype.draw = function (renderArea, pos, width) {
-        if (this.left != null) {
-            renderArea.drawString(this.left, pos.x, pos.y);
-            if (this.bold)
-                renderArea.addBold(pos.x, pos.x + this.left.length, pos.y);
-        }
-        if (this.right != null) {
-            renderArea.drawString(this.right, pos.x + width - this.right.length, pos.y);
-            if (this.bold)
-                renderArea.addBold(pos.x + width - this.right.length, width, pos.y);
-        }
-    };
-    return QuestLogMessage;
-})();
 var QuestLog = (function () {
     // Constructor
     function QuestLog() {
@@ -14712,13 +14612,38 @@ var QuestLog = (function () {
     };
     return QuestLog;
 })();
-var QuestPlayerSpellCountdownType;
-(function (QuestPlayerSpellCountdownType) {
-    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["SPELLS"] = 0] = "SPELLS";
-    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["POTIONS"] = 1] = "POTIONS";
-    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["ITEM_CAPACITIES"] = 2] = "ITEM_CAPACITIES";
-    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["BLACKHOLE"] = 3] = "BLACKHOLE";
-})(QuestPlayerSpellCountdownType || (QuestPlayerSpellCountdownType = {}));
+var QuestLogMessage = (function () {
+    // Constructor
+    function QuestLogMessage(left, right, bold) {
+        if (right === void 0) { right = null; }
+        if (bold === void 0) { bold = false; }
+        // Strings
+        this.left = null;
+        this.right = null;
+        // Set the parameters
+        this.left = left;
+        this.right = right;
+        this.bold = bold;
+        // If the left string is too big
+        if (this.left.length > 100 - (this.right != null ? this.right.length : 0)) {
+            this.left = this.left.substr(0, 100 - (this.right != null ? this.right.length : 0) - 7) + " (...)";
+        }
+    }
+    // Public methods
+    QuestLogMessage.prototype.draw = function (renderArea, pos, width) {
+        if (this.left != null) {
+            renderArea.drawString(this.left, pos.x, pos.y);
+            if (this.bold)
+                renderArea.addBold(pos.x, pos.x + this.left.length, pos.y);
+        }
+        if (this.right != null) {
+            renderArea.drawString(this.right, pos.x + width - this.right.length, pos.y);
+            if (this.bold)
+                renderArea.addBold(pos.x + width - this.right.length, width, pos.y);
+        }
+    };
+    return QuestLogMessage;
+})();
 // Potions
 Saving.registerBool("questPlayerSpellHealthPotionHasSpell", false);
 Saving.registerBool("questPlayerSpellTurtlePotionHasSpell", false);
@@ -14830,6 +14755,13 @@ var QuestPlayerSpell = (function () {
     };
     return QuestPlayerSpell;
 })();
+var QuestPlayerSpellCountdownType;
+(function (QuestPlayerSpellCountdownType) {
+    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["SPELLS"] = 0] = "SPELLS";
+    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["POTIONS"] = 1] = "POTIONS";
+    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["ITEM_CAPACITIES"] = 2] = "ITEM_CAPACITIES";
+    QuestPlayerSpellCountdownType[QuestPlayerSpellCountdownType["BLACKHOLE"] = 3] = "BLACKHOLE";
+})(QuestPlayerSpellCountdownType || (QuestPlayerSpellCountdownType = {}));
 var Random;
 (function (Random) {
     function between(a, b) {
@@ -15203,6 +15135,75 @@ var RocketBoots = (function (_super) {
     };
     return RocketBoots;
 })(EqItem);
+///<reference path="Game.ts"/>
+///<reference path="./../../libs/jquery.d.ts"/>
+var Main;
+(function (Main) {
+    // The game
+    var game = null;
+    // Information about loading
+    var loadingType = MainLoadingType.NONE;
+    var loadingString = null;
+    // Information about the game mode
+    var gameMode = null;
+    // Public functions    
+    function documentIsReady() {
+        Keyboard.execute(); // Execute the Kayboard jquery stuff
+        start(); // Start the game
+    }
+    Main.documentIsReady = documentIsReady;
+    function reloadEverythingFromFile(fileContent) {
+        // Clear intervals for the current game
+        game.clearAllIntervals();
+        // Set the loading type
+        loadingType = MainLoadingType.FILE;
+        // Set the loading string
+        loadingString = fileContent;
+        // Set the gamemode (null so that it is set from loading)
+        gameMode = null;
+        // We can't register anymore
+        Saving.canRegister = false;
+        // Finally start (this will erase the current game)
+        start();
+    }
+    Main.reloadEverythingFromFile = reloadEverythingFromFile;
+    function setUrlData(urlData) {
+        // Create some variables
+        var beforeEqual;
+        var afterEqual;
+        // If there's something in the url and we can find an equal sign and this equal sign isn't the last character of the string
+        if (urlData != "" && urlData.indexOf("=") != -1 && urlData.indexOf("=") < urlData.length - 1) {
+            // Strip the question mark
+            urlData = urlData.substr(1);
+            // Separate the data in two parts : before and after the equal sign
+            beforeEqual = urlData.substr(0, urlData.indexOf("="));
+            afterEqual = urlData.substr(urlData.indexOf("=") + 1);
+            // Do different things depending on the value of beforeEqual
+            switch (beforeEqual) {
+                // If we're trying to load a local slot
+                case "slot":
+                    loadingType = MainLoadingType.LOCAL;
+                    loadingString = "slot" + afterEqual;
+                    break;
+                // If we're trying to launch a new game with a special mode
+                case "gamemode":
+                    gameMode = afterEqual;
+                    break;
+            }
+        }
+    }
+    Main.setUrlData = setUrlData;
+    function start() {
+        game = new Game(gameMode);
+        Keyboard.setGame(game);
+        Saving.load(game, loadingType, loadingString);
+        game.postLoad();
+    }
+})(Main || (Main = {}));
+$(document).ready(function () {
+    Main.setUrlData(window.location.search);
+    Main.documentIsReady();
+});
 ///<reference path="Place.ts"/>
 ///<reference path="main.ts"/>
 var Save = (function (_super) {
@@ -15527,45 +15528,6 @@ var Scythe = (function (_super) {
     return Scythe;
 })(EqItem);
 ///<reference path="QuestEntity.ts"/>
-var Seahorse = (function (_super) {
-    __extends(Seahorse, _super);
-    // Constructor
-    function Seahorse(quest, pos, intendedXPosition) {
-        _super.call(this, quest, pos, new Naming("A magical seahorse", "a magical seahorse"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(3, 1)), new CollisionBox(this, new Pos(2, 2), new Pos(1, 1)), new CollisionBox(this, new Pos(2, 3), new Pos(1, 1))), new QuestEntityMovement(new Pos(-1, 0)));
-        // Set the intended x position
-        this.intendedXPosition = intendedXPosition;
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(20);
-        this.setHp(20);
-        // Set the ascii art
-        this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/seahorse"));
-        // Set the transparency
-        this.setTransparency(new RenderTransparency(" "));
-        // Add a spell caster
-        this.addQuestEntitySpellCaster(new QuestEntitySpellCaster(new CallbackCollection(this.castWaterBall.bind(this))));
-        this.getLastQuestEntitySpellCaster().getDelay().setFixedDelay(30, Random.upTo(30));
-    }
-    // Public methods
-    Seahorse.prototype.tryToGoToIntendedXPosition = function (baseX) {
-        this.goTowards(this.getGlobalPosition(), new Pos(baseX + this.intendedXPosition, this.getGlobalPosition().y), 0, new Pos(1, 0));
-    };
-    // Private methods
-    Seahorse.prototype.castWaterBall = function () {
-        // Create the waterBall
-        var waterBall = new Fireball(this.getQuest(), this.getGlobalPosition().plus(new Pos(-2, 0)), new Naming("A magical water ball", "a magical water ball"), new Color(ColorType.SEAHORSE_WATER_BALL), new Pos(2, 1), 70, this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("A magical water ball", "a magical water ball")));
-        // No target
-        waterBall.setTargetTypeNoTarget(new Pos(-2, 0));
-        // Add the entity
-        this.getQuest().addEntity(waterBall);
-    };
-    // willDie()
-    Seahorse.prototype.willDie = function () {
-        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(150), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
-    };
-    return Seahorse;
-})(QuestEntity);
-///<reference path="QuestEntity.ts"/>
 var SeaSnake = (function (_super) {
     __extends(SeaSnake, _super);
     // Constructor
@@ -15637,6 +15599,45 @@ var SeaSnake = (function (_super) {
         }
     };
     return SeaSnake;
+})(QuestEntity);
+///<reference path="QuestEntity.ts"/>
+var Seahorse = (function (_super) {
+    __extends(Seahorse, _super);
+    // Constructor
+    function Seahorse(quest, pos, intendedXPosition) {
+        _super.call(this, quest, pos, new Naming("A magical seahorse", "a magical seahorse"), new RenderArea(4, 4), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1)), new CollisionBox(this, new Pos(1, 1), new Pos(3, 1)), new CollisionBox(this, new Pos(2, 2), new Pos(1, 1)), new CollisionBox(this, new Pos(2, 3), new Pos(1, 1))), new QuestEntityMovement(new Pos(-1, 0)));
+        // Set the intended x position
+        this.intendedXPosition = intendedXPosition;
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(20);
+        this.setHp(20);
+        // Set the ascii art
+        this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/seahorse"));
+        // Set the transparency
+        this.setTransparency(new RenderTransparency(" "));
+        // Add a spell caster
+        this.addQuestEntitySpellCaster(new QuestEntitySpellCaster(new CallbackCollection(this.castWaterBall.bind(this))));
+        this.getLastQuestEntitySpellCaster().getDelay().setFixedDelay(30, Random.upTo(30));
+    }
+    // Public methods
+    Seahorse.prototype.tryToGoToIntendedXPosition = function (baseX) {
+        this.goTowards(this.getGlobalPosition(), new Pos(baseX + this.intendedXPosition, this.getGlobalPosition().y), 0, new Pos(1, 0));
+    };
+    // Private methods
+    Seahorse.prototype.castWaterBall = function () {
+        // Create the waterBall
+        var waterBall = new Fireball(this.getQuest(), this.getGlobalPosition().plus(new Pos(-2, 0)), new Naming("A magical water ball", "a magical water ball"), new Color(ColorType.SEAHORSE_WATER_BALL), new Pos(2, 1), 70, this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("A magical water ball", "a magical water ball")));
+        // No target
+        waterBall.setTargetTypeNoTarget(new Pos(-2, 0));
+        // Add the entity
+        this.getQuest().addEntity(waterBall);
+    };
+    // willDie()
+    Seahorse.prototype.willDie = function () {
+        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(150), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
+    };
+    return Seahorse;
 })(QuestEntity);
 ///<reference path="House.ts"/>
 // Lollipops
@@ -16158,88 +16159,6 @@ var Sponge = (function (_super) {
     };
     return Sponge;
 })(QuestEntity);
-var StatusBarTab = (function () {
-    // Constructor
-    function StatusBarTab(statusBar, type, xPos, text1, text2, text3, tabIndexWhenSelected, callbackCollectionWhenSelected) {
-        if (tabIndexWhenSelected === void 0) { tabIndexWhenSelected = -1; }
-        if (callbackCollectionWhenSelected === void 0) { callbackCollectionWhenSelected = new CallbackCollection(); }
-        // Set the status bar
-        this.statusBar = statusBar;
-        // Set teh type
-        this.type = type;
-        // Set xPos
-        this.xPos = xPos;
-        // Add the three strings to our 3 strings array
-        this.setText(text1, text2, text3);
-        // Set the rest
-        this.tabIndexWhenSelected = tabIndexWhenSelected;
-        this.callbackCollectionWhenSelected = callbackCollectionWhenSelected;
-    }
-    // Public methods
-    StatusBarTab.prototype.clicked = function () {
-        this.callbackCollectionWhenSelected.fire();
-        this.statusBar.selectTab(this.tabIndexWhenSelected);
-    };
-    StatusBarTab.prototype.render = function (renderArea, x, y, selected) {
-        // We draw the borders
-        renderArea.drawVerticalLine("|", x + this.xPos - 1, y, 3);
-        renderArea.drawVerticalLine("|", x + this.xPos + this.width, y, 3);
-        // We draw the text
-        for (var i = 0; i < 3; i++) {
-            // We draw the string
-            renderArea.drawString(this.text[i], x + this.xPos + 1, y + i);
-            // If the tab is selected, we add a special color
-            if (selected)
-                renderArea.addBackgroundColor(x + this.xPos, x + this.xPos + this.width, y + i, new Color(ColorType.STATUS_BAR_SELECTED_TAB, true));
-        }
-        // If the tab isn't selected, we add a button to click it !
-        if (selected == false) {
-            renderArea.addMultipleAsciiButtons("statusBarTabButton" + this.tabIndexWhenSelected, x + this.xPos, x + this.xPos + this.width, y, x + this.xPos, x + this.xPos + this.width, y + 1, x + this.xPos, x + this.xPos + this.width, y + 2);
-            renderArea.addLinkCall(".statusBarTabButton" + this.tabIndexWhenSelected, new CallbackCollection(this.clicked.bind(this)));
-        }
-    };
-    // Public getters
-    StatusBarTab.prototype.getType = function () {
-        return this.type;
-    };
-    StatusBarTab.prototype.getWidth = function () {
-        return this.width;
-    };
-    // Private methods
-    StatusBarTab.prototype.calculateWidth = function () {
-        this.width = 0;
-        for (var i = 0; i < 3; i++) {
-            if (this.text[i].length > this.width)
-                this.width = this.text[i].length;
-        }
-        // We add two ! (because a tab has two spaces on left and right
-        this.width += 2;
-    };
-    StatusBarTab.prototype.setText = function (text1, text2, text3) {
-        // We empty the text array
-        this.text = [];
-        // We add the three strings given in parameters
-        this.text.push(text1);
-        this.text.push(text2);
-        this.text.push(text3);
-        // We re-calculate the tab's width
-        this.calculateWidth();
-    };
-    return StatusBarTab;
-})();
-var StatusBarTabType;
-(function (StatusBarTabType) {
-    StatusBarTabType[StatusBarTabType["CANDY_BOX"] = 0] = "CANDY_BOX";
-    StatusBarTabType[StatusBarTabType["INVENTORY"] = 1] = "INVENTORY";
-    StatusBarTabType[StatusBarTabType["MAP"] = 2] = "MAP";
-    StatusBarTabType[StatusBarTabType["FARM"] = 3] = "FARM";
-    StatusBarTabType[StatusBarTabType["CAULDRON"] = 4] = "CAULDRON";
-    StatusBarTabType[StatusBarTabType["INSIDE_YOUR_BOX"] = 5] = "INSIDE_YOUR_BOX";
-    StatusBarTabType[StatusBarTabType["THE_COMPUTER"] = 6] = "THE_COMPUTER";
-    StatusBarTabType[StatusBarTabType["THE_ARENA"] = 7] = "THE_ARENA";
-    StatusBarTabType[StatusBarTabType["SAVE"] = 8] = "SAVE";
-    StatusBarTabType[StatusBarTabType["CFG"] = 9] = "CFG";
-})(StatusBarTabType || (StatusBarTabType = {}));
 // Saving stuff related to the status bar itself
 Saving.registerBool("statusBarUnlocked", false);
 // Saving stuff related to unlocked tabs
@@ -16463,6 +16382,88 @@ var StatusBar = (function () {
     };
     return StatusBar;
 })();
+var StatusBarTab = (function () {
+    // Constructor
+    function StatusBarTab(statusBar, type, xPos, text1, text2, text3, tabIndexWhenSelected, callbackCollectionWhenSelected) {
+        if (tabIndexWhenSelected === void 0) { tabIndexWhenSelected = -1; }
+        if (callbackCollectionWhenSelected === void 0) { callbackCollectionWhenSelected = new CallbackCollection(); }
+        // Set the status bar
+        this.statusBar = statusBar;
+        // Set teh type
+        this.type = type;
+        // Set xPos
+        this.xPos = xPos;
+        // Add the three strings to our 3 strings array
+        this.setText(text1, text2, text3);
+        // Set the rest
+        this.tabIndexWhenSelected = tabIndexWhenSelected;
+        this.callbackCollectionWhenSelected = callbackCollectionWhenSelected;
+    }
+    // Public methods
+    StatusBarTab.prototype.clicked = function () {
+        this.callbackCollectionWhenSelected.fire();
+        this.statusBar.selectTab(this.tabIndexWhenSelected);
+    };
+    StatusBarTab.prototype.render = function (renderArea, x, y, selected) {
+        // We draw the borders
+        renderArea.drawVerticalLine("|", x + this.xPos - 1, y, 3);
+        renderArea.drawVerticalLine("|", x + this.xPos + this.width, y, 3);
+        // We draw the text
+        for (var i = 0; i < 3; i++) {
+            // We draw the string
+            renderArea.drawString(this.text[i], x + this.xPos + 1, y + i);
+            // If the tab is selected, we add a special color
+            if (selected)
+                renderArea.addBackgroundColor(x + this.xPos, x + this.xPos + this.width, y + i, new Color(ColorType.STATUS_BAR_SELECTED_TAB, true));
+        }
+        // If the tab isn't selected, we add a button to click it !
+        if (selected == false) {
+            renderArea.addMultipleAsciiButtons("statusBarTabButton" + this.tabIndexWhenSelected, x + this.xPos, x + this.xPos + this.width, y, x + this.xPos, x + this.xPos + this.width, y + 1, x + this.xPos, x + this.xPos + this.width, y + 2);
+            renderArea.addLinkCall(".statusBarTabButton" + this.tabIndexWhenSelected, new CallbackCollection(this.clicked.bind(this)));
+        }
+    };
+    // Public getters
+    StatusBarTab.prototype.getType = function () {
+        return this.type;
+    };
+    StatusBarTab.prototype.getWidth = function () {
+        return this.width;
+    };
+    // Private methods
+    StatusBarTab.prototype.calculateWidth = function () {
+        this.width = 0;
+        for (var i = 0; i < 3; i++) {
+            if (this.text[i].length > this.width)
+                this.width = this.text[i].length;
+        }
+        // We add two ! (because a tab has two spaces on left and right
+        this.width += 2;
+    };
+    StatusBarTab.prototype.setText = function (text1, text2, text3) {
+        // We empty the text array
+        this.text = [];
+        // We add the three strings given in parameters
+        this.text.push(text1);
+        this.text.push(text2);
+        this.text.push(text3);
+        // We re-calculate the tab's width
+        this.calculateWidth();
+    };
+    return StatusBarTab;
+})();
+var StatusBarTabType;
+(function (StatusBarTabType) {
+    StatusBarTabType[StatusBarTabType["CANDY_BOX"] = 0] = "CANDY_BOX";
+    StatusBarTabType[StatusBarTabType["INVENTORY"] = 1] = "INVENTORY";
+    StatusBarTabType[StatusBarTabType["MAP"] = 2] = "MAP";
+    StatusBarTabType[StatusBarTabType["FARM"] = 3] = "FARM";
+    StatusBarTabType[StatusBarTabType["CAULDRON"] = 4] = "CAULDRON";
+    StatusBarTabType[StatusBarTabType["INSIDE_YOUR_BOX"] = 5] = "INSIDE_YOUR_BOX";
+    StatusBarTabType[StatusBarTabType["THE_COMPUTER"] = 6] = "THE_COMPUTER";
+    StatusBarTabType[StatusBarTabType["THE_ARENA"] = 7] = "THE_ARENA";
+    StatusBarTabType[StatusBarTabType["SAVE"] = 8] = "SAVE";
+    StatusBarTabType[StatusBarTabType["CFG"] = 9] = "CFG";
+})(StatusBarTabType || (StatusBarTabType = {}));
 ///<reference path="EqItem.ts"/>
 var SummoningTribalSpear = (function (_super) {
     __extends(SummoningTribalSpear, _super);
@@ -16502,356 +16503,6 @@ var SummoningTribalSpear = (function (_super) {
     };
     return SummoningTribalSpear;
 })(EqItem);
-var SuperRPGFloorStep;
-(function (SuperRPGFloorStep) {
-    SuperRPGFloorStep[SuperRPGFloorStep["SHOP"] = 0] = "SHOP";
-    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER1"] = 1] = "MONSTER1";
-    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER2"] = 2] = "MONSTER2";
-    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER3"] = 3] = "MONSTER3";
-})(SuperRPGFloorStep || (SuperRPGFloorStep = {}));
-var SuperRPGMenuEntry = (function () {
-    // Constructor
-    function SuperRPGMenuEntry(text, callbackCollection) {
-        this.text = text;
-        this.callbackCollection = callbackCollection;
-    }
-    // Public methods
-    SuperRPGMenuEntry.prototype.draw = function (renderArea, x, y, selected, width) {
-        // Create a var which will contain the text to draw
-        var textToDraw;
-        // Set the text to draw
-        if (selected)
-            textToDraw = "> " + this.text + " <";
-        else
-            textToDraw = this.text;
-        // Draw the text to draw
-        renderArea.drawString(textToDraw, x + Math.floor((width - textToDraw.length) / 2), y);
-    };
-    // Public getters
-    SuperRPGMenuEntry.prototype.getCallbackCollection = function () {
-        return this.callbackCollection;
-    };
-    return SuperRPGMenuEntry;
-})();
-var SuperRPGMenu = (function () {
-    // Constructor
-    function SuperRPGMenu(superRPG, asciiName, currentlySelectedEntryIndex) {
-        // Menu entries
-        this.entries = [];
-        // Set from parameters
-        this.superRPG = superRPG;
-        this.asciiName = asciiName;
-        this.currentlySelectedEntryIndex = currentlySelectedEntryIndex;
-    }
-    // Public methods
-    SuperRPGMenu.prototype.addEntry = function (entry) {
-        this.entries.push(entry);
-    };
-    SuperRPGMenu.prototype.draw = function (renderArea) {
-        // Draw the separating line
-        renderArea.drawVerticalLine("|", 26, 3, 11);
-        // Draw the ascii art on the left
-        renderArea.drawArray(Database.getAscii(this.asciiName), 0 + Math.floor((26 - Database.getAsciiWidth(this.asciiName)) / 2), 2 + Math.floor((10 - Database.getAsciiHeight(this.asciiName)) / 2));
-        // Draw the entries
-        for (var i = 0; i < this.entries.length; i++) {
-            this.entries[i].draw(renderArea, 27, 3 + Math.floor((10 - (this.entries.length * 2)) / 2) + i * 2, (this.currentlySelectedEntryIndex == i), 26);
-        }
-    };
-    SuperRPGMenu.prototype.pressedDownButton = function () {
-        this.currentlySelectedEntryIndex += 1;
-        if (this.currentlySelectedEntryIndex >= this.entries.length)
-            this.currentlySelectedEntryIndex = this.entries.length - 1;
-    };
-    SuperRPGMenu.prototype.pressedSpaceButton = function () {
-        this.entries[this.currentlySelectedEntryIndex].getCallbackCollection().fire();
-    };
-    SuperRPGMenu.prototype.pressedUpButton = function () {
-        this.currentlySelectedEntryIndex -= 1;
-        if (this.currentlySelectedEntryIndex < 0)
-            this.currentlySelectedEntryIndex = 0;
-    };
-    // Public getters
-    SuperRPGMenu.prototype.getSuperRPG = function () {
-        return this.superRPG;
-    };
-    // Public setters
-    SuperRPGMenu.prototype.setAsciiName = function (asciiName) {
-        this.asciiName = asciiName;
-    };
-    SuperRPGMenu.prototype.setEntries = function () {
-        var entries = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            entries[_i - 0] = arguments[_i];
-        }
-        this.entries = entries;
-    };
-    return SuperRPGMenu;
-})();
-///<reference path="SuperRPGMenu.ts"/>
-var SuperRPGMenu_Ingame = (function (_super) {
-    __extends(SuperRPGMenu_Ingame, _super);
-    function SuperRPGMenu_Ingame() {
-        _super.apply(this, arguments);
-    }
-    // Public methods
-    SuperRPGMenu_Ingame.prototype.draw = function (renderArea) {
-        // First status bar line
-        // Floor
-        renderArea.drawString("Floor " + this.getSuperRPG().getFloor(), 0, 0);
-        // Separation bar
-        renderArea.drawString("|", 10, 0);
-        // Shop / 1st monster / etc
-        switch (this.getSuperRPG().getFloorStep()) {
-            case SuperRPGFloorStep.SHOP:
-                renderArea.drawString("shop", 15, 0);
-                break;
-            case SuperRPGFloorStep.MONSTER1:
-                renderArea.drawString("1st monster", 12, 0);
-                break;
-            case SuperRPGFloorStep.MONSTER2:
-                renderArea.drawString("2nd monster", 12, 0);
-                break;
-            case SuperRPGFloorStep.MONSTER3:
-                renderArea.drawString("3rd monster", 12, 0);
-                break;
-        }
-        // Separation bar
-        renderArea.drawString("|", 24, 0);
-        // Hp and max hp
-        renderArea.drawString("HP " + this.getSuperRPG().getHp().toString() + "/" + this.getSuperRPG().getMaxHp().toString(), 26, 0);
-        // Separation bar
-        renderArea.drawString("|", 39, 0);
-        // Coins
-        renderArea.drawString("Coins " + this.getSuperRPG().getCoins(), 41, 0);
-        // Second status bar line
-        // ATK + weapon + damage
-        renderArea.drawString("ATK " + this.getSuperRPG().getWeapon() + " (" + this.getSuperRPG().getDamage() + ")", 0, 1);
-        // Separation bar
-        renderArea.drawString("|", 24, 1);
-        // DEF + defense item + defense
-        renderArea.drawString("DEF " + this.getSuperRPG().getDefenseItem() + " (" + this.getSuperRPG().getDefense() + ")", 26, 1);
-        // Call the mother class draw method
-        _super.prototype.draw.call(this, renderArea);
-    };
-    return SuperRPGMenu_Ingame;
-})(SuperRPGMenu);
-///<reference path="SuperRPGMenu.ts"/>
-var SuperRPGMenu_Main = (function (_super) {
-    __extends(SuperRPGMenu_Main, _super);
-    // Constructor
-    function SuperRPGMenu_Main(superRPG) {
-        _super.call(this, superRPG, "places/village/thirdHouseGames/SuperRPG/mainMenu", 0);
-        this.addEntry(new SuperRPGMenuEntry("Start", new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(), false))));
-        if (Saving.loadBool("SuperRPGUnlockedHardmode"))
-            this.addEntry(new SuperRPGMenuEntry("Start (hardmode)", new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(), true))));
-        this.addEntry(new SuperRPGMenuEntry("Exit", new CallbackCollection(this.getSuperRPG().exitGame.bind(this.getSuperRPG()))));
-    }
-    // Public methods
-    SuperRPGMenu_Main.prototype.draw = function (renderArea) {
-        // Draw the "main menu" text
-        renderArea.drawString("Main menu", 22, 0);
-        // Mother class draw method
-        _super.prototype.draw.call(this, renderArea);
-    };
-    return SuperRPGMenu_Main;
-})(SuperRPGMenu);
-///<reference path="SuperRPGMenu_Ingame.ts"/>
-var SuperRPGMenu_Monster = (function (_super) {
-    __extends(SuperRPGMenu_Monster, _super);
-    // Constructor
-    function SuperRPGMenu_Monster(superRPG) {
-        _super.call(this, superRPG, "", 0);
-    }
-    // Public methods
-    SuperRPGMenu_Monster.prototype.addUsualEntries = function () {
-        this.addEntry(new SuperRPGMenuEntry("Attack", new CallbackCollection(this.playerAttacks.bind(this))));
-    };
-    SuperRPGMenu_Monster.prototype.draw = function (renderArea) {
-        // Draw the monster damage
-        renderArea.drawString("ATK " + this.damage, 0, 11);
-        // Draw the monster defense
-        renderArea.drawString("DEF " + this.defense, 7, 11);
-        // Draw the monster hp and max hp
-        renderArea.drawString("HP " + this.hp + "/" + this.maxHp, 14, 11);
-        // Call the mother class draw method
-        _super.prototype.draw.call(this, renderArea);
-    };
-    SuperRPGMenu_Monster.prototype.setAbstract = function (atk, def, coins, hp) {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/" + Random.fromArray(["cross", "mobius", "triforce", "randomShape", "circle", "dna", "hive", "star"]), atk, def, coins, hp);
-    };
-    SuperRPGMenu_Monster.prototype.setBabyVampire = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/babyVampire", 10, 2, 8, 30);
-    };
-    SuperRPGMenu_Monster.prototype.setBlob = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/blob", Random.between(1, 3), 0, Random.between(5, 8), 3);
-    };
-    SuperRPGMenu_Monster.prototype.setBomb = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/bomb", 99, 0, 0, 12);
-    };
-    SuperRPGMenu_Monster.prototype.setChest = function (coins) {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/chest", 0, 0, coins, 10);
-    };
-    SuperRPGMenu_Monster.prototype.setCorpse1 = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse1", 0, 0, (Random.flipACoin() ? 0 : Random.between(1, 300)), 0);
-    };
-    SuperRPGMenu_Monster.prototype.setCorpse2 = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse2", 0, 0, (Random.flipACoin() ? 0 : Random.between(1, 300)), 0);
-    };
-    SuperRPGMenu_Monster.prototype.setDragon = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/dragon", Random.between(28, 32), Random.between(7, 9), 1000, Random.fromArray([45, 50, 55]));
-    };
-    SuperRPGMenu_Monster.prototype.setFerociousBlob = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousBlob", Random.between(2, 4), 0, Random.between(7, 10), 2);
-    };
-    SuperRPGMenu_Monster.prototype.setFerociousGoblin = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousGoblin", 5, 3, 20, 5);
-    };
-    SuperRPGMenu_Monster.prototype.setFerociousSkeleton = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton", 8, 1, 40, 10);
-    };
-    SuperRPGMenu_Monster.prototype.setGoblin = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/goblin", 4, 1, 15, 5);
-    };
-    SuperRPGMenu_Monster.prototype.setSkeletonOrBillGatesSkeleton = function () {
-        // Bill gates skeleton
-        if (Random.oneChanceOutOf(10))
-            this.setMonster("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton", 6, 1, 50, 7);
-        else
-            this.setMonster("places/village/thirdHouseGames/SuperRPG/skeleton", 6, 1, 25, 7);
-    };
-    SuperRPGMenu_Monster.prototype.setSpider = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/spider", 10, 5, Random.between(100, 200), 25);
-    };
-    SuperRPGMenu_Monster.prototype.setSpiders = function () {
-        this.setMonster("places/village/thirdHouseGames/SuperRPG/spiders", 9, 2, 9, 15);
-    };
-    SuperRPGMenu_Monster.prototype.setThing = function () {
-        switch (Random.between(0, 2)) {
-            case 0:
-                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 20, 3, 120, 10);
-                break;
-            case 1:
-                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 12, 6, 120, 30);
-                break;
-            case 2:
-                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 14, 4, 120, 20);
-                break;
-        }
-    };
-    // Private methods
-    SuperRPGMenu_Monster.prototype.playerAttacks = function () {
-        // Variable used for damage calculation
-        var damage;
-        // We lose hp
-        damage = this.getSuperRPG().getDamage() - this.defense;
-        if (damage > 0) {
-            this.hp -= damage;
-            // If we have 0 or less hp, we get the coins, go to the next floor step and return
-            if (this.hp <= 0) {
-                this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() + this.coins);
-                this.getSuperRPG().nextFloorStep();
-                return;
-            }
-        }
-        // We didn't return : it means we're still alive : we counter attack
-        damage = this.damage - this.getSuperRPG().getDefense();
-        if (damage > 0) {
-            this.getSuperRPG().setHp(this.getSuperRPG().getHp() - damage);
-        }
-    };
-    SuperRPGMenu_Monster.prototype.setMonster = function (asciiName, damage, defense, coins, hp, maxHp) {
-        if (maxHp === void 0) { maxHp = null; }
-        // Set from the parameters
-        this.setAsciiName(asciiName);
-        this.damage = (this.getSuperRPG().getHardmode() ? Math.floor(damage * 1.2) : damage);
-        this.defense = (this.getSuperRPG().getHardmode() ? Math.floor(defense * 1.2) : defense);
-        this.coins = (this.getSuperRPG().getHardmode() ? Math.ceil(coins * 0.8) : coins);
-        this.hp = (this.getSuperRPG().getHardmode() ? Math.floor(hp * 1.2) : hp);
-        if (maxHp == null)
-            this.maxHp = this.hp;
-        else
-            this.maxHp = (this.getSuperRPG().getHardmode() ? Math.floor(maxHp * 1.2) : maxHp);
-    };
-    return SuperRPGMenu_Monster;
-})(SuperRPGMenu_Ingame);
-///<reference path="SuperRPGMenu_Ingame.ts"/>
-var SuperRPGMenu_Shop = (function (_super) {
-    __extends(SuperRPGMenu_Shop, _super);
-    // Constructor
-    function SuperRPGMenu_Shop(superRPG) {
-        _super.call(this, superRPG, "places/village/thirdHouseGames/SuperRPG/shop", 0);
-    }
-    // Public methods
-    SuperRPGMenu_Shop.prototype.addBuyingDefenseItem = function (defenseItem, defense, price) {
-        this.addEntry(new SuperRPGMenuEntry(defenseItem + " (" + price + ")", new CallbackCollection(this.buyDefenseItem.bind(this, defenseItem, defense, price))));
-    };
-    SuperRPGMenu_Shop.prototype.addBuyingHealthCrystal = function () {
-        this.addEntry(new SuperRPGMenuEntry("Health crystal (100)", new CallbackCollection(this.buyHealthCrystal.bind(this))));
-    };
-    SuperRPGMenu_Shop.prototype.addBuyingHealthPendant = function () {
-        this.addEntry(new SuperRPGMenuEntry("Health pendant (30)", new CallbackCollection(this.buyHealthPendant.bind(this))));
-    };
-    SuperRPGMenu_Shop.prototype.addBuyingHealthPotion = function () {
-        this.addEntry(new SuperRPGMenuEntry("Health potion (5)", new CallbackCollection(this.buyHealthPotion.bind(this))));
-    };
-    SuperRPGMenu_Shop.prototype.addBuyingSuperHealthPotion = function () {
-        this.addEntry(new SuperRPGMenuEntry("Health potion ++ (25)", new CallbackCollection(this.buySuperHealthPotion.bind(this))));
-    };
-    SuperRPGMenu_Shop.prototype.addBuyingWeapon = function (weapon, damage, price) {
-        this.addEntry(new SuperRPGMenuEntry(weapon + " (" + price + ")", new CallbackCollection(this.buyWeapon.bind(this, weapon, damage, price))));
-    };
-    SuperRPGMenu_Shop.prototype.addQuitTheShop = function () {
-        this.addEntry(new SuperRPGMenuEntry("Quit the shop", new CallbackCollection(this.getSuperRPG().nextFloorStep.bind(this.getSuperRPG()))));
-    };
-    // Private methods
-    SuperRPGMenu_Shop.prototype.buyDefenseItem = function (defenseItem, defense, price) {
-        if (this.getSuperRPG().getCoins() >= price && this.getSuperRPG().getDefense() < defense) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - price);
-            this.getSuperRPG().setDefenseItem(defenseItem);
-            this.getSuperRPG().setDefense(defense);
-        }
-    };
-    SuperRPGMenu_Shop.prototype.buyHealthCrystal = function () {
-        if (this.getSuperRPG().getCoins() >= 100) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 100);
-            this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp() + 20);
-            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 20);
-        }
-    };
-    SuperRPGMenu_Shop.prototype.buyHealthPendant = function () {
-        if (this.getSuperRPG().getCoins() >= 30) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 30);
-            this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp() + 5);
-            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 5);
-        }
-    };
-    SuperRPGMenu_Shop.prototype.buyHealthPotion = function () {
-        if (this.getSuperRPG().getCoins() >= 5 && this.getSuperRPG().getHp() < this.getSuperRPG().getMaxHp()) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 5);
-            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 8);
-        }
-    };
-    SuperRPGMenu_Shop.prototype.buySuperHealthPotion = function () {
-        if (this.getSuperRPG().getCoins() >= 25 && this.getSuperRPG().getHp() < this.getSuperRPG().getMaxHp()) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 25);
-            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 50);
-        }
-    };
-    SuperRPGMenu_Shop.prototype.buyWeapon = function (weapon, damage, price) {
-        if (this.getSuperRPG().getCoins() >= price && this.getSuperRPG().getDamage() < damage) {
-            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - price);
-            this.getSuperRPG().setWeapon(weapon);
-            this.getSuperRPG().setDamage(damage);
-        }
-    };
-    return SuperRPGMenu_Shop;
-})(SuperRPGMenu_Ingame);
-var SuperRPGStep;
-(function (SuperRPGStep) {
-    SuperRPGStep[SuperRPGStep["SPLASH_SCREEN"] = 0] = "SPLASH_SCREEN";
-    SuperRPGStep[SuperRPGStep["GAME"] = 1] = "GAME";
-    SuperRPGStep[SuperRPGStep["LOSE"] = 2] = "LOSE";
-})(SuperRPGStep || (SuperRPGStep = {}));
 ///<reference path="ThirdHouseGame.ts"/>
 Saving.registerBool("SuperRPGReward1", false);
 Saving.registerBool("SuperRPGReward2", false);
@@ -17333,6 +16984,356 @@ var SuperRPG = (function (_super) {
     };
     return SuperRPG;
 })(ThirdHouseGame);
+var SuperRPGFloorStep;
+(function (SuperRPGFloorStep) {
+    SuperRPGFloorStep[SuperRPGFloorStep["SHOP"] = 0] = "SHOP";
+    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER1"] = 1] = "MONSTER1";
+    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER2"] = 2] = "MONSTER2";
+    SuperRPGFloorStep[SuperRPGFloorStep["MONSTER3"] = 3] = "MONSTER3";
+})(SuperRPGFloorStep || (SuperRPGFloorStep = {}));
+var SuperRPGMenu = (function () {
+    // Constructor
+    function SuperRPGMenu(superRPG, asciiName, currentlySelectedEntryIndex) {
+        // Menu entries
+        this.entries = [];
+        // Set from parameters
+        this.superRPG = superRPG;
+        this.asciiName = asciiName;
+        this.currentlySelectedEntryIndex = currentlySelectedEntryIndex;
+    }
+    // Public methods
+    SuperRPGMenu.prototype.addEntry = function (entry) {
+        this.entries.push(entry);
+    };
+    SuperRPGMenu.prototype.draw = function (renderArea) {
+        // Draw the separating line
+        renderArea.drawVerticalLine("|", 26, 3, 11);
+        // Draw the ascii art on the left
+        renderArea.drawArray(Database.getAscii(this.asciiName), 0 + Math.floor((26 - Database.getAsciiWidth(this.asciiName)) / 2), 2 + Math.floor((10 - Database.getAsciiHeight(this.asciiName)) / 2));
+        // Draw the entries
+        for (var i = 0; i < this.entries.length; i++) {
+            this.entries[i].draw(renderArea, 27, 3 + Math.floor((10 - (this.entries.length * 2)) / 2) + i * 2, (this.currentlySelectedEntryIndex == i), 26);
+        }
+    };
+    SuperRPGMenu.prototype.pressedDownButton = function () {
+        this.currentlySelectedEntryIndex += 1;
+        if (this.currentlySelectedEntryIndex >= this.entries.length)
+            this.currentlySelectedEntryIndex = this.entries.length - 1;
+    };
+    SuperRPGMenu.prototype.pressedSpaceButton = function () {
+        this.entries[this.currentlySelectedEntryIndex].getCallbackCollection().fire();
+    };
+    SuperRPGMenu.prototype.pressedUpButton = function () {
+        this.currentlySelectedEntryIndex -= 1;
+        if (this.currentlySelectedEntryIndex < 0)
+            this.currentlySelectedEntryIndex = 0;
+    };
+    // Public getters
+    SuperRPGMenu.prototype.getSuperRPG = function () {
+        return this.superRPG;
+    };
+    // Public setters
+    SuperRPGMenu.prototype.setAsciiName = function (asciiName) {
+        this.asciiName = asciiName;
+    };
+    SuperRPGMenu.prototype.setEntries = function () {
+        var entries = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            entries[_i - 0] = arguments[_i];
+        }
+        this.entries = entries;
+    };
+    return SuperRPGMenu;
+})();
+var SuperRPGMenuEntry = (function () {
+    // Constructor
+    function SuperRPGMenuEntry(text, callbackCollection) {
+        this.text = text;
+        this.callbackCollection = callbackCollection;
+    }
+    // Public methods
+    SuperRPGMenuEntry.prototype.draw = function (renderArea, x, y, selected, width) {
+        // Create a var which will contain the text to draw
+        var textToDraw;
+        // Set the text to draw
+        if (selected)
+            textToDraw = "> " + this.text + " <";
+        else
+            textToDraw = this.text;
+        // Draw the text to draw
+        renderArea.drawString(textToDraw, x + Math.floor((width - textToDraw.length) / 2), y);
+    };
+    // Public getters
+    SuperRPGMenuEntry.prototype.getCallbackCollection = function () {
+        return this.callbackCollection;
+    };
+    return SuperRPGMenuEntry;
+})();
+///<reference path="SuperRPGMenu.ts"/>
+var SuperRPGMenu_Ingame = (function (_super) {
+    __extends(SuperRPGMenu_Ingame, _super);
+    function SuperRPGMenu_Ingame() {
+        _super.apply(this, arguments);
+    }
+    // Public methods
+    SuperRPGMenu_Ingame.prototype.draw = function (renderArea) {
+        // First status bar line
+        // Floor
+        renderArea.drawString("Floor " + this.getSuperRPG().getFloor(), 0, 0);
+        // Separation bar
+        renderArea.drawString("|", 10, 0);
+        // Shop / 1st monster / etc
+        switch (this.getSuperRPG().getFloorStep()) {
+            case SuperRPGFloorStep.SHOP:
+                renderArea.drawString("shop", 15, 0);
+                break;
+            case SuperRPGFloorStep.MONSTER1:
+                renderArea.drawString("1st monster", 12, 0);
+                break;
+            case SuperRPGFloorStep.MONSTER2:
+                renderArea.drawString("2nd monster", 12, 0);
+                break;
+            case SuperRPGFloorStep.MONSTER3:
+                renderArea.drawString("3rd monster", 12, 0);
+                break;
+        }
+        // Separation bar
+        renderArea.drawString("|", 24, 0);
+        // Hp and max hp
+        renderArea.drawString("HP " + this.getSuperRPG().getHp().toString() + "/" + this.getSuperRPG().getMaxHp().toString(), 26, 0);
+        // Separation bar
+        renderArea.drawString("|", 39, 0);
+        // Coins
+        renderArea.drawString("Coins " + this.getSuperRPG().getCoins(), 41, 0);
+        // Second status bar line
+        // ATK + weapon + damage
+        renderArea.drawString("ATK " + this.getSuperRPG().getWeapon() + " (" + this.getSuperRPG().getDamage() + ")", 0, 1);
+        // Separation bar
+        renderArea.drawString("|", 24, 1);
+        // DEF + defense item + defense
+        renderArea.drawString("DEF " + this.getSuperRPG().getDefenseItem() + " (" + this.getSuperRPG().getDefense() + ")", 26, 1);
+        // Call the mother class draw method
+        _super.prototype.draw.call(this, renderArea);
+    };
+    return SuperRPGMenu_Ingame;
+})(SuperRPGMenu);
+///<reference path="SuperRPGMenu.ts"/>
+var SuperRPGMenu_Main = (function (_super) {
+    __extends(SuperRPGMenu_Main, _super);
+    // Constructor
+    function SuperRPGMenu_Main(superRPG) {
+        _super.call(this, superRPG, "places/village/thirdHouseGames/SuperRPG/mainMenu", 0);
+        this.addEntry(new SuperRPGMenuEntry("Start", new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(), false))));
+        if (Saving.loadBool("SuperRPGUnlockedHardmode"))
+            this.addEntry(new SuperRPGMenuEntry("Start (hardmode)", new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(), true))));
+        this.addEntry(new SuperRPGMenuEntry("Exit", new CallbackCollection(this.getSuperRPG().exitGame.bind(this.getSuperRPG()))));
+    }
+    // Public methods
+    SuperRPGMenu_Main.prototype.draw = function (renderArea) {
+        // Draw the "main menu" text
+        renderArea.drawString("Main menu", 22, 0);
+        // Mother class draw method
+        _super.prototype.draw.call(this, renderArea);
+    };
+    return SuperRPGMenu_Main;
+})(SuperRPGMenu);
+///<reference path="SuperRPGMenu_Ingame.ts"/>
+var SuperRPGMenu_Monster = (function (_super) {
+    __extends(SuperRPGMenu_Monster, _super);
+    // Constructor
+    function SuperRPGMenu_Monster(superRPG) {
+        _super.call(this, superRPG, "", 0);
+    }
+    // Public methods
+    SuperRPGMenu_Monster.prototype.addUsualEntries = function () {
+        this.addEntry(new SuperRPGMenuEntry("Attack", new CallbackCollection(this.playerAttacks.bind(this))));
+    };
+    SuperRPGMenu_Monster.prototype.draw = function (renderArea) {
+        // Draw the monster damage
+        renderArea.drawString("ATK " + this.damage, 0, 11);
+        // Draw the monster defense
+        renderArea.drawString("DEF " + this.defense, 7, 11);
+        // Draw the monster hp and max hp
+        renderArea.drawString("HP " + this.hp + "/" + this.maxHp, 14, 11);
+        // Call the mother class draw method
+        _super.prototype.draw.call(this, renderArea);
+    };
+    SuperRPGMenu_Monster.prototype.setAbstract = function (atk, def, coins, hp) {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/" + Random.fromArray(["cross", "mobius", "triforce", "randomShape", "circle", "dna", "hive", "star"]), atk, def, coins, hp);
+    };
+    SuperRPGMenu_Monster.prototype.setBabyVampire = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/babyVampire", 10, 2, 8, 30);
+    };
+    SuperRPGMenu_Monster.prototype.setBlob = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/blob", Random.between(1, 3), 0, Random.between(5, 8), 3);
+    };
+    SuperRPGMenu_Monster.prototype.setBomb = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/bomb", 99, 0, 0, 12);
+    };
+    SuperRPGMenu_Monster.prototype.setChest = function (coins) {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/chest", 0, 0, coins, 10);
+    };
+    SuperRPGMenu_Monster.prototype.setCorpse1 = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse1", 0, 0, (Random.flipACoin() ? 0 : Random.between(1, 300)), 0);
+    };
+    SuperRPGMenu_Monster.prototype.setCorpse2 = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse2", 0, 0, (Random.flipACoin() ? 0 : Random.between(1, 300)), 0);
+    };
+    SuperRPGMenu_Monster.prototype.setDragon = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/dragon", Random.between(28, 32), Random.between(7, 9), 1000, Random.fromArray([45, 50, 55]));
+    };
+    SuperRPGMenu_Monster.prototype.setFerociousBlob = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousBlob", Random.between(2, 4), 0, Random.between(7, 10), 2);
+    };
+    SuperRPGMenu_Monster.prototype.setFerociousGoblin = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousGoblin", 5, 3, 20, 5);
+    };
+    SuperRPGMenu_Monster.prototype.setFerociousSkeleton = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton", 8, 1, 40, 10);
+    };
+    SuperRPGMenu_Monster.prototype.setGoblin = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/goblin", 4, 1, 15, 5);
+    };
+    SuperRPGMenu_Monster.prototype.setSkeletonOrBillGatesSkeleton = function () {
+        // Bill gates skeleton
+        if (Random.oneChanceOutOf(10))
+            this.setMonster("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton", 6, 1, 50, 7);
+        else
+            this.setMonster("places/village/thirdHouseGames/SuperRPG/skeleton", 6, 1, 25, 7);
+    };
+    SuperRPGMenu_Monster.prototype.setSpider = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/spider", 10, 5, Random.between(100, 200), 25);
+    };
+    SuperRPGMenu_Monster.prototype.setSpiders = function () {
+        this.setMonster("places/village/thirdHouseGames/SuperRPG/spiders", 9, 2, 9, 15);
+    };
+    SuperRPGMenu_Monster.prototype.setThing = function () {
+        switch (Random.between(0, 2)) {
+            case 0:
+                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 20, 3, 120, 10);
+                break;
+            case 1:
+                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 12, 6, 120, 30);
+                break;
+            case 2:
+                this.setMonster("places/village/thirdHouseGames/SuperRPG/thing", 14, 4, 120, 20);
+                break;
+        }
+    };
+    // Private methods
+    SuperRPGMenu_Monster.prototype.playerAttacks = function () {
+        // Variable used for damage calculation
+        var damage;
+        // We lose hp
+        damage = this.getSuperRPG().getDamage() - this.defense;
+        if (damage > 0) {
+            this.hp -= damage;
+            // If we have 0 or less hp, we get the coins, go to the next floor step and return
+            if (this.hp <= 0) {
+                this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() + this.coins);
+                this.getSuperRPG().nextFloorStep();
+                return;
+            }
+        }
+        // We didn't return : it means we're still alive : we counter attack
+        damage = this.damage - this.getSuperRPG().getDefense();
+        if (damage > 0) {
+            this.getSuperRPG().setHp(this.getSuperRPG().getHp() - damage);
+        }
+    };
+    SuperRPGMenu_Monster.prototype.setMonster = function (asciiName, damage, defense, coins, hp, maxHp) {
+        if (maxHp === void 0) { maxHp = null; }
+        // Set from the parameters
+        this.setAsciiName(asciiName);
+        this.damage = (this.getSuperRPG().getHardmode() ? Math.floor(damage * 1.2) : damage);
+        this.defense = (this.getSuperRPG().getHardmode() ? Math.floor(defense * 1.2) : defense);
+        this.coins = (this.getSuperRPG().getHardmode() ? Math.ceil(coins * 0.8) : coins);
+        this.hp = (this.getSuperRPG().getHardmode() ? Math.floor(hp * 1.2) : hp);
+        if (maxHp == null)
+            this.maxHp = this.hp;
+        else
+            this.maxHp = (this.getSuperRPG().getHardmode() ? Math.floor(maxHp * 1.2) : maxHp);
+    };
+    return SuperRPGMenu_Monster;
+})(SuperRPGMenu_Ingame);
+///<reference path="SuperRPGMenu_Ingame.ts"/>
+var SuperRPGMenu_Shop = (function (_super) {
+    __extends(SuperRPGMenu_Shop, _super);
+    // Constructor
+    function SuperRPGMenu_Shop(superRPG) {
+        _super.call(this, superRPG, "places/village/thirdHouseGames/SuperRPG/shop", 0);
+    }
+    // Public methods
+    SuperRPGMenu_Shop.prototype.addBuyingDefenseItem = function (defenseItem, defense, price) {
+        this.addEntry(new SuperRPGMenuEntry(defenseItem + " (" + price + ")", new CallbackCollection(this.buyDefenseItem.bind(this, defenseItem, defense, price))));
+    };
+    SuperRPGMenu_Shop.prototype.addBuyingHealthCrystal = function () {
+        this.addEntry(new SuperRPGMenuEntry("Health crystal (100)", new CallbackCollection(this.buyHealthCrystal.bind(this))));
+    };
+    SuperRPGMenu_Shop.prototype.addBuyingHealthPendant = function () {
+        this.addEntry(new SuperRPGMenuEntry("Health pendant (30)", new CallbackCollection(this.buyHealthPendant.bind(this))));
+    };
+    SuperRPGMenu_Shop.prototype.addBuyingHealthPotion = function () {
+        this.addEntry(new SuperRPGMenuEntry("Health potion (5)", new CallbackCollection(this.buyHealthPotion.bind(this))));
+    };
+    SuperRPGMenu_Shop.prototype.addBuyingSuperHealthPotion = function () {
+        this.addEntry(new SuperRPGMenuEntry("Health potion ++ (25)", new CallbackCollection(this.buySuperHealthPotion.bind(this))));
+    };
+    SuperRPGMenu_Shop.prototype.addBuyingWeapon = function (weapon, damage, price) {
+        this.addEntry(new SuperRPGMenuEntry(weapon + " (" + price + ")", new CallbackCollection(this.buyWeapon.bind(this, weapon, damage, price))));
+    };
+    SuperRPGMenu_Shop.prototype.addQuitTheShop = function () {
+        this.addEntry(new SuperRPGMenuEntry("Quit the shop", new CallbackCollection(this.getSuperRPG().nextFloorStep.bind(this.getSuperRPG()))));
+    };
+    // Private methods
+    SuperRPGMenu_Shop.prototype.buyDefenseItem = function (defenseItem, defense, price) {
+        if (this.getSuperRPG().getCoins() >= price && this.getSuperRPG().getDefense() < defense) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - price);
+            this.getSuperRPG().setDefenseItem(defenseItem);
+            this.getSuperRPG().setDefense(defense);
+        }
+    };
+    SuperRPGMenu_Shop.prototype.buyHealthCrystal = function () {
+        if (this.getSuperRPG().getCoins() >= 100) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 100);
+            this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp() + 20);
+            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 20);
+        }
+    };
+    SuperRPGMenu_Shop.prototype.buyHealthPendant = function () {
+        if (this.getSuperRPG().getCoins() >= 30) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 30);
+            this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp() + 5);
+            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 5);
+        }
+    };
+    SuperRPGMenu_Shop.prototype.buyHealthPotion = function () {
+        if (this.getSuperRPG().getCoins() >= 5 && this.getSuperRPG().getHp() < this.getSuperRPG().getMaxHp()) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 5);
+            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 8);
+        }
+    };
+    SuperRPGMenu_Shop.prototype.buySuperHealthPotion = function () {
+        if (this.getSuperRPG().getCoins() >= 25 && this.getSuperRPG().getHp() < this.getSuperRPG().getMaxHp()) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - 25);
+            this.getSuperRPG().setHp(this.getSuperRPG().getHp() + 50);
+        }
+    };
+    SuperRPGMenu_Shop.prototype.buyWeapon = function (weapon, damage, price) {
+        if (this.getSuperRPG().getCoins() >= price && this.getSuperRPG().getDamage() < damage) {
+            this.getSuperRPG().setCoins(this.getSuperRPG().getCoins() - price);
+            this.getSuperRPG().setWeapon(weapon);
+            this.getSuperRPG().setDamage(damage);
+        }
+    };
+    return SuperRPGMenu_Shop;
+})(SuperRPGMenu_Ingame);
+var SuperRPGStep;
+(function (SuperRPGStep) {
+    SuperRPGStep[SuperRPGStep["SPLASH_SCREEN"] = 0] = "SPLASH_SCREEN";
+    SuperRPGStep[SuperRPGStep["GAME"] = 1] = "GAME";
+    SuperRPGStep[SuperRPGStep["LOSE"] = 2] = "LOSE";
+})(SuperRPGStep || (SuperRPGStep = {}));
 ///<reference path="QuestEntity.ts"/>
 var Teapot = (function (_super) {
     __extends(Teapot, _super);
@@ -17367,49 +17368,6 @@ var Teapot = (function (_super) {
     };
     return Teapot;
 })(QuestEntity);
-var TheArenaModuleQuest = (function () {
-    // Constructor
-    function TheArenaModuleQuest(questFolderName, specialCallback) {
-        // Set from parameters
-        this.questFolderName = questFolderName;
-        this.specialCallback = specialCallback;
-    }
-    // Public methods
-    TheArenaModuleQuest.prototype.drawLogo = function (renderArea, x, y, game) {
-        // Draw the logo ascii art
-        renderArea.drawArray(Database.getAscii("arena/" + this.questFolderName + "/logo"), x + 1, y + 1);
-        // Add the button and the link
-        renderArea.addMultipleAsciiButtons("theArenaQuest" + this.questFolderName, x + 1, x + 19, y + 1, x + 1, x + 19, y + 2, x + 1, x + 19, y + 3, x + 1, x + 19, y + 4);
-        renderArea.addLinkCall(".theArenaQuest" + this.questFolderName, new CallbackCollection(this.launchQuest.bind(this, game)));
-    };
-    // Public getters
-    TheArenaModuleQuest.prototype.getQuestFolderName = function () {
-        return this.questFolderName;
-    };
-    // Private methods
-    TheArenaModuleQuest.prototype.launchQuest = function (game) {
-        if (game.canStartQuest()) {
-            game.getStatusBar().selectTabByType(StatusBarTabType.MAP);
-            game.goToMap();
-            game.setPlace(this.specialCallback(game));
-        }
-    };
-    return TheArenaModuleQuest;
-})();
-var TheArenaModule;
-(function (TheArenaModule) {
-    var quests = {};
-    // Add a quest
-    function addQuest(quest) {
-        quests[quest.getQuestFolderName()] = quest;
-    }
-    TheArenaModule.addQuest = addQuest;
-    // Get a quest
-    function getQuest(questFolderName) {
-        return quests[questFolderName];
-    }
-    TheArenaModule.getQuest = getQuest;
-})(TheArenaModule || (TheArenaModule = {}));
 ///<reference path="Place.ts"/>
 var TheArena = (function (_super) {
     __extends(TheArena, _super);
@@ -17468,6 +17426,257 @@ var TheArena = (function (_super) {
         this.renderArea.addHtmlLink(80, 15, "create_quest.html", "follow the guide");
     };
     return TheArena;
+})(Place);
+var TheArenaModule;
+(function (TheArenaModule) {
+    var quests = {};
+    // Add a quest
+    function addQuest(quest) {
+        quests[quest.getQuestFolderName()] = quest;
+    }
+    TheArenaModule.addQuest = addQuest;
+    // Get a quest
+    function getQuest(questFolderName) {
+        return quests[questFolderName];
+    }
+    TheArenaModule.getQuest = getQuest;
+})(TheArenaModule || (TheArenaModule = {}));
+var TheArenaModuleQuest = (function () {
+    // Constructor
+    function TheArenaModuleQuest(questFolderName, specialCallback) {
+        // Set from parameters
+        this.questFolderName = questFolderName;
+        this.specialCallback = specialCallback;
+    }
+    // Public methods
+    TheArenaModuleQuest.prototype.drawLogo = function (renderArea, x, y, game) {
+        // Draw the logo ascii art
+        renderArea.drawArray(Database.getAscii("arena/" + this.questFolderName + "/logo"), x + 1, y + 1);
+        // Add the button and the link
+        renderArea.addMultipleAsciiButtons("theArenaQuest" + this.questFolderName, x + 1, x + 19, y + 1, x + 1, x + 19, y + 2, x + 1, x + 19, y + 3, x + 1, x + 19, y + 4);
+        renderArea.addLinkCall(".theArenaQuest" + this.questFolderName, new CallbackCollection(this.launchQuest.bind(this, game)));
+    };
+    // Public getters
+    TheArenaModuleQuest.prototype.getQuestFolderName = function () {
+        return this.questFolderName;
+    };
+    // Private methods
+    TheArenaModuleQuest.prototype.launchQuest = function (game) {
+        if (game.canStartQuest()) {
+            game.getStatusBar().selectTabByType(StatusBarTabType.MAP);
+            game.goToMap();
+            game.setPlace(this.specialCallback(game));
+        }
+    };
+    return TheArenaModuleQuest;
+})();
+///<reference path="Place.ts"/>
+var TheCave = (function (_super) {
+    __extends(TheCave, _super);
+    // Constructor
+    function TheCave(game) {
+        _super.call(this, game);
+        // The render area
+        this.renderArea = new RenderArea();
+        // Last moves chosen
+        this.lastMoves = [];
+        // Database text names for the first sentence below
+        this.firstSentence = null;
+        // Pattern currently in use
+        this.pattern = null;
+        // Add the additional characters to the array
+        this.createAdditionalCharactersPossible();
+        // Add the additional characters positions to the array
+        this.createAdditionalCharactersPositionsPossible();
+        // Create the current way
+        this.createWay();
+        // Resize & update
+        this.renderArea.resizeFromArray(Database.getAscii("places/theCave/ways"), 42, 7); // 3 for the return to map button + 4 for the two sentences = 7
+        this.update();
+    }
+    // getRenderArea()
+    TheCave.prototype.getRenderArea = function () {
+        return this.renderArea;
+    };
+    // Public methods
+    TheCave.prototype.aPatternNeedsUpdating = function () {
+        this.update();
+        this.getGame().updatePlace();
+    };
+    // Public getters
+    TheCave.prototype.getAdditionalCharactersPositionsPossible = function () {
+        return this.additionalCharactersPositionsPossible;
+    };
+    TheCave.prototype.getAdditionalCharactersPossible = function () {
+        return this.additionalCharactersPossible;
+    };
+    // Private methods
+    TheCave.prototype.createAdditionalCharactersPositionsPossible = function () {
+        // Reset the array
+        this.additionalCharactersPositionsPossible = [];
+        // Add positions
+        this.additionalCharactersPositionsPossible.push(new Pos(20, 6));
+        this.additionalCharactersPositionsPossible.push(new Pos(19, 9));
+        this.additionalCharactersPositionsPossible.push(new Pos(17, 13));
+        this.additionalCharactersPositionsPossible.push(new Pos(20, 18));
+        this.additionalCharactersPositionsPossible.push(new Pos(17, 24));
+        this.additionalCharactersPositionsPossible.push(new Pos(41, 19));
+        this.additionalCharactersPositionsPossible.push(new Pos(56, 16));
+        this.additionalCharactersPositionsPossible.push(new Pos(52, 22));
+        this.additionalCharactersPositionsPossible.push(new Pos(31, 23));
+        this.additionalCharactersPositionsPossible.push(new Pos(64, 28));
+        this.additionalCharactersPositionsPossible.push(new Pos(64, 12));
+        this.additionalCharactersPositionsPossible.push(new Pos(75, 5));
+        this.additionalCharactersPositionsPossible.push(new Pos(80, 12));
+        this.additionalCharactersPositionsPossible.push(new Pos(77, 17));
+        this.additionalCharactersPositionsPossible.push(new Pos(80, 20));
+        this.additionalCharactersPositionsPossible.push(new Pos(78, 26));
+    };
+    TheCave.prototype.createAdditionalCharactersPossible = function () {
+        // Reset the array
+        this.additionalCharactersPossible = [];
+        // Add characters
+        this.additionalCharactersPossible.push("V");
+        this.additionalCharactersPossible.push("\\");
+        this.additionalCharactersPossible.push("/");
+        this.additionalCharactersPossible.push("'");
+        this.additionalCharactersPossible.push("`");
+        this.additionalCharactersPossible.push("~");
+        this.additionalCharactersPossible.push(")");
+        this.additionalCharactersPossible.push("(");
+        this.additionalCharactersPossible.push("}");
+        this.additionalCharactersPossible.push("{");
+        this.additionalCharactersPossible.push("@");
+        this.additionalCharactersPossible.push(">");
+        this.additionalCharactersPossible.push("^");
+    };
+    TheCave.prototype.createWay = function (moveType) {
+        if (moveType === void 0) { moveType = null; }
+        // A variable used in the loop choosing the new pattern
+        var cont;
+        // Reset the additional characters array
+        this.additionalCharacters = [];
+        // Set the first sentence
+        switch (moveType) {
+            case TheCaveMoveType.STRAIGHT:
+                this.firstSentence = "theCaveFirstSentenceWentStraight";
+                break;
+            case TheCaveMoveType.LEFT:
+                this.firstSentence = "theCaveFirstSentenceWentLeft";
+                break;
+            case TheCaveMoveType.RIGHT:
+                this.firstSentence = "theCaveFirstSentenceWentRight";
+                break;
+            case null:
+                this.firstSentence = "theCaveFirstSentenceYouAre";
+                break;
+        }
+        // If there's a pattern, we possibly set it to null
+        if (this.pattern != null) {
+            // If this pattern should end, there's no pattern anymore
+            if (this.pattern.ended()) {
+                this.pattern = null;
+            }
+        }
+        // If there's no pattern (and we moved at least once)
+        if (this.pattern == null && this.lastMoves.length > 0) {
+            // One chance out of two to use a new one
+            if (Random.flipACoin()) {
+                cont = 10;
+                while (cont > 0 && this.pattern == null) {
+                    cont -= 1;
+                    switch (Random.upTo(4)) {
+                        case 0:
+                            if (Saving.loadBool("gridItemPossessedHeartPlug") == false)
+                                this.pattern = new TheCavePattern_ArrowsToHeartPlug(this);
+                            break;
+                        case 1:
+                            if (Saving.loadBool("TheCavePattern_ChocolateBarNowGotTheBar") == false)
+                                this.pattern = new TheCavePattern_ChocolateBarNow(this);
+                            break;
+                        case 2:
+                            if (Saving.loadBool("TheCavePattern_TreasureMapFoundTreasure") == false)
+                                this.pattern = new TheCavePattern_TreasureMap(this);
+                            break;
+                        case 3:
+                            this.pattern = new TheCavePattern_MonkeyWizard(this);
+                            break;
+                        case 4:
+                            this.pattern = new TheCavePattern_OctopusKing(this);
+                            break;
+                    }
+                }
+            }
+        }
+        // Add some additional characters
+        for (var i = 0; i < 10; i++) {
+            this.additionalCharacters.push(new TheCaveAdditionalCharacter(this));
+        }
+    };
+    TheCave.prototype.drawWays = function (x, y) {
+        if (x === void 0) { x = 0; }
+        if (y === void 0) { y = 3; }
+        // Draw the background
+        this.renderArea.drawArray(Database.getAscii("places/theCave/ways"), x + 21, y);
+        // Draw additional characters
+        for (var i = 0; i < this.additionalCharacters.length; i++) {
+            this.renderArea.drawString(this.additionalCharacters[i].getString(), x + this.additionalCharacters[i].getPosition().x, y + this.additionalCharacters[i].getPosition().y);
+        }
+        // Draw the sentences
+        if (this.firstSentence != null) {
+            this.renderArea.drawString(Database.getText(this.firstSentence), x + 23, y + 32);
+            this.renderArea.drawString(Database.getTranslatedText(this.firstSentence), x + 23, y + 33, true);
+        }
+        if (this.pattern != null && this.pattern.getSentence() != null) {
+            this.renderArea.drawString(Database.getText(this.pattern.getSentence()), x + 23, y + 34);
+            this.renderArea.drawString(Database.getTranslatedText(this.pattern.getSentence()), x + 23, y + 35, true);
+        }
+        // If there's a pattern, draw pattern related stuff
+        if (this.pattern != null)
+            this.pattern.draw(this.renderArea, x, y);
+        // Add the black background color
+        for (var i = 0; i <= 4; i++) {
+            this.renderArea.addBackgroundColor(x + 46, x + 54, y + 1 + i, new Color(ColorType.THECAVE_BACKGROUND_COLOR));
+        }
+        // Add the button to go left
+        this.renderArea.addMultipleAsciiButtons("theCaveGoLeftButton", x + 30, x + 32, y + 5, x + 29, x + 33, y + 6, x + 27, x + 33, y + 7, x + 26, x + 32, y + 8, x + 26, x + 32, y + 9, x + 26, x + 32, y + 10, x + 25, x + 32, y + 11, x + 24, x + 32, y + 12, x + 25, x + 31, y + 13, x + 25, x + 31, y + 14, x + 25, x + 32, y + 15, x + 25, x + 32, y + 16, x + 25, x + 32, y + 17, x + 25, x + 32, y + 18, x + 24, x + 32, y + 19, x + 24, x + 31, y + 20, x + 25, x + 30, y + 21, x + 26, x + 29, y + 22, x + 26, x + 28, y + 23, x + 25, x + 27, y + 24, x + 25, x + 26, y + 25);
+        this.renderArea.addLinkCall(".theCaveGoLeftButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.LEFT)));
+        // Add the button to go right
+        this.renderArea.addMultipleAsciiButtons("theCaveGoRightButton", x + 68, x + 70, y + 6, x + 68, x + 72, y + 7, x + 68, x + 73, y + 8, x + 68, x + 73, y + 9, x + 69, x + 74, y + 10, x + 69, x + 74, y + 11, x + 69, x + 74, y + 12, x + 69, x + 75, y + 13, x + 69, x + 75, y + 14, x + 68, x + 74, y + 15, x + 68, x + 74, y + 16, x + 68, x + 74, y + 17, x + 68, x + 74, y + 18, x + 68, x + 74, y + 19, x + 69, x + 74, y + 20, x + 70, x + 74, y + 21, x + 71, x + 74, y + 22, x + 72, x + 73, y + 23);
+        this.renderArea.addLinkCall(".theCaveGoRightButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.RIGHT)));
+        // Add the button to go straight
+        this.renderArea.addMultipleAsciiButtons("theCaveGoStraightButton", x + 46, x + 54, y + 1, x + 46, x + 54, y + 2, x + 46, x + 54, y + 3, x + 46, x + 54, y + 4, x + 46, x + 54, y + 5);
+        this.renderArea.addLinkCall(".theCaveGoStraightButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.STRAIGHT)));
+    };
+    TheCave.prototype.goToTheCaveExit = function () {
+        Saving.saveBool("mainMapDoneCaveEntrance", true);
+        this.getGame().setPlace(new TheCaveExit(this.getGame()));
+    };
+    TheCave.prototype.move = function (type) {
+        // If we made more than 12 moves and there's no pattern, we reach the exit
+        if (this.lastMoves.length > 12 && this.pattern == null) {
+            this.goToTheCaveExit();
+        }
+        // If there's a pattern, we call its move method
+        if (this.pattern != null)
+            this.pattern.move(type);
+        // Add this move to the last moves
+        this.lastMoves.push(type);
+        // Create the new way
+        this.createWay(type);
+        // Update
+        this.update();
+        this.getGame().updatePlace();
+    };
+    TheCave.prototype.update = function () {
+        // Erase everything
+        this.renderArea.resetAllButSize();
+        // Back to the map button
+        this.addBackToMainMapButton(this.renderArea, "theCaveBackToTheMapButton");
+        // Draw the ways
+        this.drawWays();
+    };
+    return TheCave;
 })(Place);
 var TheCaveAdditionalCharacter = (function () {
     // Constructor
@@ -17776,283 +17985,6 @@ var TheCavePattern_TreasureMap = (function (_super) {
     };
     return TheCavePattern_TreasureMap;
 })(TheCavePattern);
-///<reference path="Place.ts"/>
-var TheCave = (function (_super) {
-    __extends(TheCave, _super);
-    // Constructor
-    function TheCave(game) {
-        _super.call(this, game);
-        // The render area
-        this.renderArea = new RenderArea();
-        // Last moves chosen
-        this.lastMoves = [];
-        // Database text names for the first sentence below
-        this.firstSentence = null;
-        // Pattern currently in use
-        this.pattern = null;
-        // Add the additional characters to the array
-        this.createAdditionalCharactersPossible();
-        // Add the additional characters positions to the array
-        this.createAdditionalCharactersPositionsPossible();
-        // Create the current way
-        this.createWay();
-        // Resize & update
-        this.renderArea.resizeFromArray(Database.getAscii("places/theCave/ways"), 42, 7); // 3 for the return to map button + 4 for the two sentences = 7
-        this.update();
-    }
-    // getRenderArea()
-    TheCave.prototype.getRenderArea = function () {
-        return this.renderArea;
-    };
-    // Public methods
-    TheCave.prototype.aPatternNeedsUpdating = function () {
-        this.update();
-        this.getGame().updatePlace();
-    };
-    // Public getters
-    TheCave.prototype.getAdditionalCharactersPositionsPossible = function () {
-        return this.additionalCharactersPositionsPossible;
-    };
-    TheCave.prototype.getAdditionalCharactersPossible = function () {
-        return this.additionalCharactersPossible;
-    };
-    // Private methods
-    TheCave.prototype.createAdditionalCharactersPositionsPossible = function () {
-        // Reset the array
-        this.additionalCharactersPositionsPossible = [];
-        // Add positions
-        this.additionalCharactersPositionsPossible.push(new Pos(20, 6));
-        this.additionalCharactersPositionsPossible.push(new Pos(19, 9));
-        this.additionalCharactersPositionsPossible.push(new Pos(17, 13));
-        this.additionalCharactersPositionsPossible.push(new Pos(20, 18));
-        this.additionalCharactersPositionsPossible.push(new Pos(17, 24));
-        this.additionalCharactersPositionsPossible.push(new Pos(41, 19));
-        this.additionalCharactersPositionsPossible.push(new Pos(56, 16));
-        this.additionalCharactersPositionsPossible.push(new Pos(52, 22));
-        this.additionalCharactersPositionsPossible.push(new Pos(31, 23));
-        this.additionalCharactersPositionsPossible.push(new Pos(64, 28));
-        this.additionalCharactersPositionsPossible.push(new Pos(64, 12));
-        this.additionalCharactersPositionsPossible.push(new Pos(75, 5));
-        this.additionalCharactersPositionsPossible.push(new Pos(80, 12));
-        this.additionalCharactersPositionsPossible.push(new Pos(77, 17));
-        this.additionalCharactersPositionsPossible.push(new Pos(80, 20));
-        this.additionalCharactersPositionsPossible.push(new Pos(78, 26));
-    };
-    TheCave.prototype.createAdditionalCharactersPossible = function () {
-        // Reset the array
-        this.additionalCharactersPossible = [];
-        // Add characters
-        this.additionalCharactersPossible.push("V");
-        this.additionalCharactersPossible.push("\\");
-        this.additionalCharactersPossible.push("/");
-        this.additionalCharactersPossible.push("'");
-        this.additionalCharactersPossible.push("`");
-        this.additionalCharactersPossible.push("~");
-        this.additionalCharactersPossible.push(")");
-        this.additionalCharactersPossible.push("(");
-        this.additionalCharactersPossible.push("}");
-        this.additionalCharactersPossible.push("{");
-        this.additionalCharactersPossible.push("@");
-        this.additionalCharactersPossible.push(">");
-        this.additionalCharactersPossible.push("^");
-    };
-    TheCave.prototype.createWay = function (moveType) {
-        if (moveType === void 0) { moveType = null; }
-        // A variable used in the loop choosing the new pattern
-        var cont;
-        // Reset the additional characters array
-        this.additionalCharacters = [];
-        // Set the first sentence
-        switch (moveType) {
-            case TheCaveMoveType.STRAIGHT:
-                this.firstSentence = "theCaveFirstSentenceWentStraight";
-                break;
-            case TheCaveMoveType.LEFT:
-                this.firstSentence = "theCaveFirstSentenceWentLeft";
-                break;
-            case TheCaveMoveType.RIGHT:
-                this.firstSentence = "theCaveFirstSentenceWentRight";
-                break;
-            case null:
-                this.firstSentence = "theCaveFirstSentenceYouAre";
-                break;
-        }
-        // If there's a pattern, we possibly set it to null
-        if (this.pattern != null) {
-            // If this pattern should end, there's no pattern anymore
-            if (this.pattern.ended()) {
-                this.pattern = null;
-            }
-        }
-        // If there's no pattern (and we moved at least once)
-        if (this.pattern == null && this.lastMoves.length > 0) {
-            // One chance out of two to use a new one
-            if (Random.flipACoin()) {
-                cont = 10;
-                while (cont > 0 && this.pattern == null) {
-                    cont -= 1;
-                    switch (Random.upTo(4)) {
-                        case 0:
-                            if (Saving.loadBool("gridItemPossessedHeartPlug") == false)
-                                this.pattern = new TheCavePattern_ArrowsToHeartPlug(this);
-                            break;
-                        case 1:
-                            if (Saving.loadBool("TheCavePattern_ChocolateBarNowGotTheBar") == false)
-                                this.pattern = new TheCavePattern_ChocolateBarNow(this);
-                            break;
-                        case 2:
-                            if (Saving.loadBool("TheCavePattern_TreasureMapFoundTreasure") == false)
-                                this.pattern = new TheCavePattern_TreasureMap(this);
-                            break;
-                        case 3:
-                            this.pattern = new TheCavePattern_MonkeyWizard(this);
-                            break;
-                        case 4:
-                            this.pattern = new TheCavePattern_OctopusKing(this);
-                            break;
-                    }
-                }
-            }
-        }
-        // Add some additional characters
-        for (var i = 0; i < 10; i++) {
-            this.additionalCharacters.push(new TheCaveAdditionalCharacter(this));
-        }
-    };
-    TheCave.prototype.drawWays = function (x, y) {
-        if (x === void 0) { x = 0; }
-        if (y === void 0) { y = 3; }
-        // Draw the background
-        this.renderArea.drawArray(Database.getAscii("places/theCave/ways"), x + 21, y);
-        // Draw additional characters
-        for (var i = 0; i < this.additionalCharacters.length; i++) {
-            this.renderArea.drawString(this.additionalCharacters[i].getString(), x + this.additionalCharacters[i].getPosition().x, y + this.additionalCharacters[i].getPosition().y);
-        }
-        // Draw the sentences
-        if (this.firstSentence != null) {
-            this.renderArea.drawString(Database.getText(this.firstSentence), x + 23, y + 32);
-            this.renderArea.drawString(Database.getTranslatedText(this.firstSentence), x + 23, y + 33, true);
-        }
-        if (this.pattern != null && this.pattern.getSentence() != null) {
-            this.renderArea.drawString(Database.getText(this.pattern.getSentence()), x + 23, y + 34);
-            this.renderArea.drawString(Database.getTranslatedText(this.pattern.getSentence()), x + 23, y + 35, true);
-        }
-        // If there's a pattern, draw pattern related stuff
-        if (this.pattern != null)
-            this.pattern.draw(this.renderArea, x, y);
-        // Add the black background color
-        for (var i = 0; i <= 4; i++) {
-            this.renderArea.addBackgroundColor(x + 46, x + 54, y + 1 + i, new Color(ColorType.THECAVE_BACKGROUND_COLOR));
-        }
-        // Add the button to go left
-        this.renderArea.addMultipleAsciiButtons("theCaveGoLeftButton", x + 30, x + 32, y + 5, x + 29, x + 33, y + 6, x + 27, x + 33, y + 7, x + 26, x + 32, y + 8, x + 26, x + 32, y + 9, x + 26, x + 32, y + 10, x + 25, x + 32, y + 11, x + 24, x + 32, y + 12, x + 25, x + 31, y + 13, x + 25, x + 31, y + 14, x + 25, x + 32, y + 15, x + 25, x + 32, y + 16, x + 25, x + 32, y + 17, x + 25, x + 32, y + 18, x + 24, x + 32, y + 19, x + 24, x + 31, y + 20, x + 25, x + 30, y + 21, x + 26, x + 29, y + 22, x + 26, x + 28, y + 23, x + 25, x + 27, y + 24, x + 25, x + 26, y + 25);
-        this.renderArea.addLinkCall(".theCaveGoLeftButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.LEFT)));
-        // Add the button to go right
-        this.renderArea.addMultipleAsciiButtons("theCaveGoRightButton", x + 68, x + 70, y + 6, x + 68, x + 72, y + 7, x + 68, x + 73, y + 8, x + 68, x + 73, y + 9, x + 69, x + 74, y + 10, x + 69, x + 74, y + 11, x + 69, x + 74, y + 12, x + 69, x + 75, y + 13, x + 69, x + 75, y + 14, x + 68, x + 74, y + 15, x + 68, x + 74, y + 16, x + 68, x + 74, y + 17, x + 68, x + 74, y + 18, x + 68, x + 74, y + 19, x + 69, x + 74, y + 20, x + 70, x + 74, y + 21, x + 71, x + 74, y + 22, x + 72, x + 73, y + 23);
-        this.renderArea.addLinkCall(".theCaveGoRightButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.RIGHT)));
-        // Add the button to go straight
-        this.renderArea.addMultipleAsciiButtons("theCaveGoStraightButton", x + 46, x + 54, y + 1, x + 46, x + 54, y + 2, x + 46, x + 54, y + 3, x + 46, x + 54, y + 4, x + 46, x + 54, y + 5);
-        this.renderArea.addLinkCall(".theCaveGoStraightButton", new CallbackCollection(this.move.bind(this, TheCaveMoveType.STRAIGHT)));
-    };
-    TheCave.prototype.goToTheCaveExit = function () {
-        Saving.saveBool("mainMapDoneCaveEntrance", true);
-        this.getGame().setPlace(new TheCaveExit(this.getGame()));
-    };
-    TheCave.prototype.move = function (type) {
-        // If we made more than 12 moves and there's no pattern, we reach the exit
-        if (this.lastMoves.length > 12 && this.pattern == null) {
-            this.goToTheCaveExit();
-        }
-        // If there's a pattern, we call its move method
-        if (this.pattern != null)
-            this.pattern.move(type);
-        // Add this move to the last moves
-        this.lastMoves.push(type);
-        // Create the new way
-        this.createWay(type);
-        // Update
-        this.update();
-        this.getGame().updatePlace();
-    };
-    TheCave.prototype.update = function () {
-        // Erase everything
-        this.renderArea.resetAllButSize();
-        // Back to the map button
-        this.addBackToMainMapButton(this.renderArea, "theCaveBackToTheMapButton");
-        // Draw the ways
-        this.drawWays();
-    };
-    return TheCave;
-})(Place);
-var TheComputerLine = (function () {
-    // Constructor
-    function TheComputerLine(type, text) {
-        // Set the type
-        this.type = type;
-        // Set the lines of text depending on the text given in parameter
-        this.setLinesFromText(text);
-    }
-    // Public methods
-    TheComputerLine.prototype.draw = function (renderArea, pos, minY) {
-        // Draw our lines of text
-        for (var i = this.linesOfText.length - 1; i >= 0; i--) {
-            // If the line isn't out of the screen
-            if (pos.y - (this.linesOfText.length - 1 - i) >= minY) {
-                // If our type isn't "CENTER"
-                if (this.type != TheComputerLineType.CENTER) {
-                    // We draw it
-                    renderArea.drawString(this.linesOfText[i], pos.x, pos.y - (this.linesOfText.length - 1 - i));
-                }
-                else {
-                    // We draw it centered
-                    renderArea.drawString(this.linesOfText[i], pos.x + 16 - Math.floor(this.linesOfText[i].length / 2), pos.y - (this.linesOfText.length - 1 - i));
-                }
-            }
-        }
-        // We return the extra lines we took to draw
-        return this.linesOfText.length - 1;
-    };
-    TheComputerLine.prototype.setLinesFromText = function (text) {
-        // Set the first line, empty
-        this.linesOfText = [""];
-        // Possibly change the text given in parameter, depending on the type
-        switch (this.type) {
-            case TheComputerLineType.COMMAND:
-                text = " > " + text;
-                break;
-        }
-        // Create the array of words
-        var words = text.split(" ");
-        // Add the words one by one to our lines
-        for (var i = 0; i < words.length; i++) {
-            // If we can add this word to the line OR the word is way too big to fit in any line anyway
-            if (words[i].length + this.linesOfText[this.linesOfText.length - 1].length < 32 || words[i].length > 30) {
-                // We add the word
-                this.linesOfText[this.linesOfText.length - 1] = this.linesOfText[this.linesOfText.length - 1] + words[i] + " ";
-            }
-            else {
-                // We add a new line
-                this.linesOfText.push(words[i] + " ");
-            }
-        }
-    };
-    // Public getters
-    TheComputerLine.prototype.getType = function () {
-        return this.type;
-    };
-    return TheComputerLine;
-})();
-var TheComputerLineType;
-(function (TheComputerLineType) {
-    TheComputerLineType[TheComputerLineType["TEXT"] = 0] = "TEXT";
-    TheComputerLineType[TheComputerLineType["COMMAND"] = 1] = "COMMAND";
-    TheComputerLineType[TheComputerLineType["CENTER"] = 2] = "CENTER"; // Centered text
-})(TheComputerLineType || (TheComputerLineType = {}));
-var TheComputerState;
-(function (TheComputerState) {
-    TheComputerState[TheComputerState["WAITING_FOR_RETURN"] = 0] = "WAITING_FOR_RETURN";
-    TheComputerState[TheComputerState["WAITING_FOR_COMMAND"] = 1] = "WAITING_FOR_COMMAND";
-})(TheComputerState || (TheComputerState = {}));
 ///<reference path="Place.ts"/>
 var TheComputer = (function (_super) {
     __extends(TheComputer, _super);
@@ -18469,6 +18401,75 @@ var TheComputer = (function (_super) {
     };
     return TheComputer;
 })(Place);
+var TheComputerLine = (function () {
+    // Constructor
+    function TheComputerLine(type, text) {
+        // Set the type
+        this.type = type;
+        // Set the lines of text depending on the text given in parameter
+        this.setLinesFromText(text);
+    }
+    // Public methods
+    TheComputerLine.prototype.draw = function (renderArea, pos, minY) {
+        // Draw our lines of text
+        for (var i = this.linesOfText.length - 1; i >= 0; i--) {
+            // If the line isn't out of the screen
+            if (pos.y - (this.linesOfText.length - 1 - i) >= minY) {
+                // If our type isn't "CENTER"
+                if (this.type != TheComputerLineType.CENTER) {
+                    // We draw it
+                    renderArea.drawString(this.linesOfText[i], pos.x, pos.y - (this.linesOfText.length - 1 - i));
+                }
+                else {
+                    // We draw it centered
+                    renderArea.drawString(this.linesOfText[i], pos.x + 16 - Math.floor(this.linesOfText[i].length / 2), pos.y - (this.linesOfText.length - 1 - i));
+                }
+            }
+        }
+        // We return the extra lines we took to draw
+        return this.linesOfText.length - 1;
+    };
+    TheComputerLine.prototype.setLinesFromText = function (text) {
+        // Set the first line, empty
+        this.linesOfText = [""];
+        // Possibly change the text given in parameter, depending on the type
+        switch (this.type) {
+            case TheComputerLineType.COMMAND:
+                text = " > " + text;
+                break;
+        }
+        // Create the array of words
+        var words = text.split(" ");
+        // Add the words one by one to our lines
+        for (var i = 0; i < words.length; i++) {
+            // If we can add this word to the line OR the word is way too big to fit in any line anyway
+            if (words[i].length + this.linesOfText[this.linesOfText.length - 1].length < 32 || words[i].length > 30) {
+                // We add the word
+                this.linesOfText[this.linesOfText.length - 1] = this.linesOfText[this.linesOfText.length - 1] + words[i] + " ";
+            }
+            else {
+                // We add a new line
+                this.linesOfText.push(words[i] + " ");
+            }
+        }
+    };
+    // Public getters
+    TheComputerLine.prototype.getType = function () {
+        return this.type;
+    };
+    return TheComputerLine;
+})();
+var TheComputerLineType;
+(function (TheComputerLineType) {
+    TheComputerLineType[TheComputerLineType["TEXT"] = 0] = "TEXT";
+    TheComputerLineType[TheComputerLineType["COMMAND"] = 1] = "COMMAND";
+    TheComputerLineType[TheComputerLineType["CENTER"] = 2] = "CENTER"; // Centered text
+})(TheComputerLineType || (TheComputerLineType = {}));
+var TheComputerState;
+(function (TheComputerState) {
+    TheComputerState[TheComputerState["WAITING_FOR_RETURN"] = 0] = "WAITING_FOR_RETURN";
+    TheComputerState[TheComputerState["WAITING_FOR_COMMAND"] = 1] = "WAITING_FOR_COMMAND";
+})(TheComputerState || (TheComputerState = {}));
 ///<reference path="Quest.ts"/>
 // To know if the player found the chests
 Saving.registerBool("theHoleFirstChestFound", false);
@@ -18689,656 +18690,6 @@ var TheHole = (function (_super) {
     };
     return TheHole;
 })(Quest);
-var TheSeaFloor = (function () {
-    // Constructor
-    function TheSeaFloor(type, height, previousFloor) {
-        if (previousFloor === void 0) { previousFloor = null; }
-        // Does this floor have a plant on it ?
-        this.hasAPlant = false;
-        this.type = type;
-        this.height = height;
-        // If the previous floor is null or has a different type
-        if (previousFloor == null || previousFloor.getType() != this.type) {
-            // There's no floor of the same type before
-            this.howManyFloorsOfTheSameTypeBefore = 0;
-        }
-        else {
-            // We take the howManyFloorsOfTheSameTypeBefore of the previous floor and we add one
-            this.howManyFloorsOfTheSameTypeBefore = previousFloor.howManyFloorsOfTheSameTypeBefore + 1;
-        }
-        // Special character stuff
-        if (Random.oneChanceOutOf(3) && (previousFloor == null || previousFloor.getHasSpecialCharacter() == false)) {
-            // We will have a special character
-            this.hasSpecialCharacter = true;
-            // Set the height
-            this.specialCharacterHeight = Random.between(0, this.height - 1);
-            // Set the character
-            if (Random.oneChanceOutOf(4)) {
-                this.specialCharacter = "^";
-            }
-            else {
-                this.specialCharacter = "-";
-            }
-        }
-        else {
-            // We won't have a special character
-            this.hasSpecialCharacter = false;
-        }
-    }
-    // Public methods
-    TheSeaFloor.prototype.draw = function (renderArea, floorPosition, xPosition) {
-        // We can draw different characters for the floor, depending on the type
-        switch (this.type) {
-            case TheSeaFloorType.NORMAL:
-                renderArea.drawString("_", xPosition, floorPosition - this.height);
-                break;
-            case TheSeaFloorType.GOING_DOWN:
-                renderArea.drawString("\\", xPosition, floorPosition - this.height);
-                break;
-            case TheSeaFloorType.GOING_UP:
-                renderArea.drawString("/", xPosition, floorPosition - this.height);
-                break;
-        }
-        // If we have a special character
-        if (this.hasSpecialCharacter) {
-            // We draw it
-            renderArea.drawString(this.specialCharacter, xPosition, floorPosition - this.specialCharacterHeight);
-        }
-    };
-    // Pubic getters
-    TheSeaFloor.prototype.getHasAPlant = function () {
-        return this.hasAPlant;
-    };
-    TheSeaFloor.prototype.getHasSpecialCharacter = function () {
-        return this.hasSpecialCharacter;
-    };
-    TheSeaFloor.prototype.getHeight = function () {
-        return this.height;
-    };
-    TheSeaFloor.prototype.getHowManyFloorsOfTheSameTypeBefore = function () {
-        return this.howManyFloorsOfTheSameTypeBefore;
-    };
-    TheSeaFloor.prototype.getType = function () {
-        return this.type;
-    };
-    // Public setters
-    TheSeaFloor.prototype.setHasAPlant = function (hasAPlant) {
-        this.hasAPlant = hasAPlant;
-    };
-    return TheSeaFloor;
-})();
-var TheSeaFloorType;
-(function (TheSeaFloorType) {
-    TheSeaFloorType[TheSeaFloorType["NORMAL"] = 0] = "NORMAL";
-    TheSeaFloorType[TheSeaFloorType["GOING_DOWN"] = 1] = "GOING_DOWN";
-    TheSeaFloorType[TheSeaFloorType["GOING_UP"] = 2] = "GOING_UP";
-})(TheSeaFloorType || (TheSeaFloorType = {}));
-var TheSeaPattern = (function () {
-    // Constructor
-    function TheSeaPattern(theSea, initialDistance) {
-        this.theSea = theSea;
-        this.initialDistance = initialDistance;
-    }
-    // Public methods
-    TheSeaPattern.prototype.isPatternDone = function () {
-        return false;
-    };
-    TheSeaPattern.prototype.run = function (x1, x2) {
-    };
-    // Public getters
-    TheSeaPattern.prototype.getInitialDistance = function () {
-        return this.initialDistance;
-    };
-    TheSeaPattern.prototype.getTheSea = function () {
-        return this.theSea;
-    };
-    return TheSeaPattern;
-})();
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_BigSharks = (function (_super) {
-    __extends(TheSeaPattern_BigSharks, _super);
-    // Constructor
-    function TheSeaPattern_BigSharks(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-    }
-    // Public methods
-    TheSeaPattern_BigSharks.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 125)
-            return true;
-        return false;
-    };
-    TheSeaPattern_BigSharks.prototype.run = function (x1, x2) {
-        if (this.getTheSea().getDistance() % 60 == 0)
-            this.getTheSea().addBigShark(new Pos(x2, Random.fromArray([2, 6])));
-    };
-    return TheSeaPattern_BigSharks;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_Boss0_Shapes = (function (_super) {
-    __extends(TheSeaPattern_Boss0_Shapes, _super);
-    // Constructor
-    function TheSeaPattern_Boss0_Shapes(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-        // Fishes of the squares
-        this.fishes = [];
-        // Did we add the fishes already ?
-        this.fishesAdded = false;
-        // Are fishes moving right now ?
-        this.fishesAreMoving = true;
-        // Set the shape type
-        this.shapeType = Random.upTo(2);
-    }
-    // Public methods    
-    TheSeaPattern_Boss0_Shapes.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 50)
-            return true;
-        return false;
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.run = function (x1, x2) {
-        // If it's time to add the fishes
-        if (this.fishesAdded == false && this.getTheSea().getDistance() > this.getInitialDistance() + 30) {
-            this.fishesAdded = true;
-            this.addShape(x1, 1);
-            this.addShape(x1, 8);
-            this.addShape(x1, 15);
-            this.addShape(x1 + 15, 0);
-            this.addShape(x1 + 15, 7);
-            this.addShape(x1 + 15, 14);
-            this.addShape(x1 + 30, 1);
-            this.addShape(x1 + 30, 8);
-            this.addShape(x1 + 30, 15);
-        }
-        // Handle fishes movement (to make them stop if the player stop moving)
-        this.handleFishesMovement();
-    };
-    // Private methods
-    TheSeaPattern_Boss0_Shapes.prototype.addFish = function (smallestFish) {
-        if (smallestFish != null)
-            this.fishes.push(smallestFish);
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.addCross = function (x, y) {
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x, y + 1)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 3, y + 2)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 6, y + 3)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, y + 4)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x, y + 4)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 3, y + 3)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 6, y + 2)));
-        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, y + 1)));
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.addLines = function (x, y) {
-        for (var i = x; i <= x + 9; i += 3) {
-            for (var j = y; j <= y + 4; j += 2) {
-                this.addFish(this.getTheSea().addSmallestFish(new Pos(i, j)));
-            }
-        }
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.addShape = function (x, y) {
-        // Call a random shape method
-        switch (this.shapeType) {
-            case 0:
-                this.addSquare(x, y);
-                break;
-            case 1:
-                this.addLines(x, y);
-                break;
-            case 2:
-                this.addCross(x, y);
-                break;
-        }
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.addSquare = function (x, y) {
-        // Top & bottom
-        for (var i = x; i <= x + 9; i += 3) {
-            // Top of the square
-            this.addFish(this.getTheSea().addSmallestFish(new Pos(i, y)));
-            // Bottom of the square
-            this.addFish(this.getTheSea().addSmallestFish(new Pos(i, y + 5)));
-        }
-        // Left & right
-        for (var j = y; j <= y + 4; j++) {
-            // Left of the square
-            this.addFish(this.getTheSea().addSmallestFish(new Pos(x, j)));
-            // Right of the square
-            this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, j)));
-        }
-    };
-    TheSeaPattern_Boss0_Shapes.prototype.handleFishesMovement = function () {
-        // If fishes are moving but shouldn't be
-        if (this.fishesAreMoving == true && this.getTheSea().getLastPlayerMovement().x == 0 && this.getTheSea().getGame().getPlayer().getGlobalPosition().y >= 20) {
-            // Fishes are not moving any more
-            this.fishesAreMoving = false;
-            for (var i = 0; i < this.fishes.length; i++) {
-                this.fishes[i].setQuestEntityMovement(new QuestEntityMovement(new Pos(0, 0)));
-            }
-        }
-        else if (this.fishesAreMoving == false && (this.getTheSea().getLastPlayerMovement().x > 0 || this.getTheSea().getGame().getPlayer().getGlobalPosition().y < 20)) {
-            // Fishes are now moving
-            this.fishesAreMoving = true;
-            for (var i = 0; i < this.fishes.length; i++) {
-                this.fishes[i].setQuestEntityMovement(new QuestEntityMovement(new Pos(-1, 0)));
-            }
-        }
-    };
-    return TheSeaPattern_Boss0_Shapes;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_Boss1_Seahorses = (function (_super) {
-    __extends(TheSeaPattern_Boss1_Seahorses, _super);
-    // Constructor
-    function TheSeaPattern_Boss1_Seahorses(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-        // Variables
-        this.seahorses = [];
-        this.seahorsesAdded = false;
-        this.seaHorsesStopped = false;
-        // The special seahorse wandering
-        this.seahorseWandering = null;
-        this.seahorseWanderingIsGoingUp = false;
-        // The special seahorse following player
-        this.seahorseFollowingPlayer = null;
-    }
-    // Public methods
-    TheSeaPattern_Boss1_Seahorses.prototype.addSeahorse = function (seahorse) {
-        if (seahorse != null) {
-            this.seahorses.push(seahorse);
-            return seahorse;
-        }
-        return null;
-    };
-    TheSeaPattern_Boss1_Seahorses.prototype.isPatternDone = function () {
-        // Return false if seahorses aren't added yet
-        if (this.seahorsesAdded == false)
-            return false;
-        // Return false if any of the seahorses is still alive
-        for (var i = 0; i < this.seahorses.length; i++) {
-            if (this.seahorses[i].getDead() == false)
-                return false;
-        }
-        return true;
-    };
-    TheSeaPattern_Boss1_Seahorses.prototype.run = function (x1, x2) {
-        // If we didn't add seahorses already (and we're far enough), we do so
-        if (this.seahorsesAdded == false && this.getTheSea().getDistance() > this.getInitialDistance() + 30) {
-            this.seahorsesAdded = true;
-            // First column
-            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1, 2), 75));
-            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1, 12), 75));
-            // Second column
-            this.seahorseWandering = this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 7, 10), 81));
-            // Third Column
-            this.seahorseFollowingPlayer = this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 14, 10), 87));
-            // Fourth column
-            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 21, 7), 93));
-            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 21, 17), 93));
-        }
-        // If we already added seahorses, we increase the moving counter
-        if (this.seahorsesAdded == true && this.seaHorsesStopped == false) {
-            // Find the seahorse which is the most on the left and store its x position
-            var mostLeftX = 500;
-            for (var i = 0; i < this.seahorses.length; i++) {
-                if (this.seahorses[i].getGlobalPosition().x < mostLeftX)
-                    mostLeftX = this.seahorses[i].getGlobalPosition().x;
-            }
-            // If this mostLeftX is <= 75
-            if (mostLeftX - this.getTheSea().getGame().getPlayer().getGlobalPosition().x <= 75) {
-                // We stop the seahorses
-                this.seaHorsesStopped = true;
-                for (var i = 0; i < this.seahorses.length; i++) {
-                    this.seahorses[i].getQuestEntityMovement().setOffset(new Pos(0, 0));
-                }
-            }
-        }
-        // If the sea horses are stopped, we adjust their movement so that they swim with the player
-        if (this.seaHorsesStopped) {
-            for (var i = 0; i < this.seahorses.length; i++) {
-                this.seahorses[i].tryToGoToIntendedXPosition(this.getTheSea().getGame().getPlayer().getGlobalPosition().x);
-            }
-        }
-        // We handle the special seahorse wandering
-        if (this.seahorseWandering != null) {
-            if (this.seahorseWanderingIsGoingUp) {
-                this.seahorseWandering.getQuestEntityMovement().getOffset().y = -1;
-                if (this.seahorseWandering.getGlobalPosition().y <= 0)
-                    this.seahorseWanderingIsGoingUp = false;
-            }
-            else {
-                this.seahorseWandering.getQuestEntityMovement().getOffset().y = 1;
-                if (this.seahorseWandering.getGlobalPosition().y >= 16)
-                    this.seahorseWanderingIsGoingUp = true;
-            }
-        }
-        // We handle the special seahorse following the player
-        if (this.seahorseFollowingPlayer != null) {
-            // By default we don't move
-            this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = 0;
-            // If the player is above
-            if (this.getTheSea().getGame().getPlayer().getGlobalPosition().y < this.seahorseFollowingPlayer.getGlobalPosition().y - 1) {
-                // If we're not too high
-                if (this.seahorseFollowingPlayer.getGlobalPosition().y > 0)
-                    // We go up
-                    this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = -1;
-            }
-            else if (this.getTheSea().getGame().getPlayer().getGlobalPosition().y > this.seahorseFollowingPlayer.getGlobalPosition().y - 1) {
-                // If we're not too low
-                if (this.seahorseFollowingPlayer.getGlobalPosition().y < 17)
-                    // We go down
-                    this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = +1;
-            }
-        }
-    };
-    return TheSeaPattern_Boss1_Seahorses;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_JellyFishStorm = (function (_super) {
-    __extends(TheSeaPattern_JellyFishStorm, _super);
-    // Constructor
-    function TheSeaPattern_JellyFishStorm(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-    }
-    // Public methods
-    TheSeaPattern_JellyFishStorm.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
-            return true;
-        return false;
-    };
-    TheSeaPattern_JellyFishStorm.prototype.run = function (x1, x2) {
-        if (Random.oneChanceOutOf(10))
-            this.getTheSea().addJellyFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 6)));
-    };
-    return TheSeaPattern_JellyFishStorm;
-})(TheSeaPattern);
-var TheSeaPatternLevel = (function () {
-    // Constructor
-    function TheSeaPatternLevel(theSea) {
-        // How many patterns launched already ?
-        this.howManyPatterns = 0;
-        this.theSea = theSea;
-    }
-    // Public methods
-    TheSeaPatternLevel.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel(this.theSea);
-    };
-    TheSeaPatternLevel.prototype.getPattern = function (initialDistance) {
-        return new TheSeaPattern(this.theSea, initialDistance);
-    };
-    TheSeaPatternLevel.prototype.increaseHowManyPatterns = function () {
-        this.howManyPatterns += 1;
-    };
-    TheSeaPatternLevel.prototype.isLevelDone = function () {
-        return false;
-    };
-    // Public getters
-    TheSeaPatternLevel.prototype.getHowManyPatterns = function () {
-        return this.howManyPatterns;
-    };
-    TheSeaPatternLevel.prototype.getTheSea = function () {
-        return this.theSea;
-    };
-    return TheSeaPatternLevel;
-})();
-///<reference path="TheSeaPatternLevel.ts"/>
-var TheSeaPatternLevel_Boss0 = (function (_super) {
-    __extends(TheSeaPatternLevel_Boss0, _super);
-    // Constructor
-    function TheSeaPatternLevel_Boss0(theSea) {
-        _super.call(this, theSea);
-    }
-    // Public methods
-    TheSeaPatternLevel_Boss0.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel_Level1(this.getTheSea());
-    };
-    TheSeaPatternLevel_Boss0.prototype.getPattern = function (initialDistance) {
-        this.increaseHowManyPatterns();
-        return new TheSeaPattern_Boss0_Shapes(this.getTheSea(), initialDistance);
-    };
-    TheSeaPatternLevel_Boss0.prototype.isLevelDone = function () {
-        if (this.getHowManyPatterns() >= 1)
-            return true;
-        return false;
-    };
-    return TheSeaPatternLevel_Boss0;
-})(TheSeaPatternLevel);
-///<reference path="TheSeaPatternLevel.ts"/>
-var TheSeaPatternLevel_Boss1 = (function (_super) {
-    __extends(TheSeaPatternLevel_Boss1, _super);
-    // Constructor
-    function TheSeaPatternLevel_Boss1(theSea) {
-        _super.call(this, theSea);
-    }
-    // Public methods
-    TheSeaPatternLevel_Boss1.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel_Level2(this.getTheSea());
-    };
-    TheSeaPatternLevel_Boss1.prototype.getPattern = function (initialDistance) {
-        this.increaseHowManyPatterns();
-        return new TheSeaPattern_Boss1_Seahorses(this.getTheSea(), initialDistance);
-    };
-    TheSeaPatternLevel_Boss1.prototype.isLevelDone = function () {
-        if (this.getHowManyPatterns() >= 1)
-            return true;
-        return false;
-    };
-    return TheSeaPatternLevel_Boss1;
-})(TheSeaPatternLevel);
-///<reference path="TheSeaPatternLevel.ts"/>
-var TheSeaPatternLevel_Level0 = (function (_super) {
-    __extends(TheSeaPatternLevel_Level0, _super);
-    // Constructor
-    function TheSeaPatternLevel_Level0(theSea) {
-        _super.call(this, theSea);
-    }
-    // Public methods
-    TheSeaPatternLevel_Level0.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel_Boss0(this.getTheSea());
-    };
-    TheSeaPatternLevel_Level0.prototype.getPattern = function (initialDistance) {
-        this.increaseHowManyPatterns();
-        switch (Random.upTo(2)) {
-            case 0:
-                return new TheSeaPattern_MaybeOneSmallestFish(this.getTheSea(), initialDistance);
-                break;
-            case 1:
-                return new TheSeaPattern_OneSmallestFish(this.getTheSea(), initialDistance);
-                break;
-            case 2:
-                return new TheSeaPattern_MaybeOneMediumFish(this.getTheSea(), initialDistance);
-                break;
-        }
-    };
-    TheSeaPatternLevel_Level0.prototype.isLevelDone = function () {
-        if (this.getHowManyPatterns() >= 2)
-            return true;
-        return false;
-    };
-    return TheSeaPatternLevel_Level0;
-})(TheSeaPatternLevel);
-///<reference path="TheSeaPatternLevel.ts"/>
-var TheSeaPatternLevel_Level1 = (function (_super) {
-    __extends(TheSeaPatternLevel_Level1, _super);
-    // Constructor
-    function TheSeaPatternLevel_Level1(theSea) {
-        _super.call(this, theSea);
-    }
-    // Public methods
-    TheSeaPatternLevel_Level1.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel_Boss1(this.getTheSea());
-    };
-    TheSeaPatternLevel_Level1.prototype.getPattern = function (initialDistance) {
-        this.increaseHowManyPatterns();
-        switch (Random.upTo(1)) {
-            case 0:
-                return new TheSeaPattern_LotOfMiniSharks(this.getTheSea(), initialDistance);
-                break;
-            case 1:
-                return new TheSeaPattern_JellyFishStorm(this.getTheSea(), initialDistance);
-                break;
-        }
-    };
-    TheSeaPatternLevel_Level1.prototype.isLevelDone = function () {
-        if (this.getHowManyPatterns() >= 2)
-            return true;
-        return false;
-    };
-    return TheSeaPatternLevel_Level1;
-})(TheSeaPatternLevel);
-///<reference path="TheSeaPatternLevel.ts"/>
-var TheSeaPatternLevel_Level2 = (function (_super) {
-    __extends(TheSeaPatternLevel_Level2, _super);
-    // Constructor
-    function TheSeaPatternLevel_Level2(theSea) {
-        _super.call(this, theSea);
-    }
-    // Public methods
-    TheSeaPatternLevel_Level2.prototype.getNextLevel = function () {
-        return new TheSeaPatternLevel_Level2(this.getTheSea());
-    };
-    TheSeaPatternLevel_Level2.prototype.getPattern = function (initialDistance) {
-        this.increaseHowManyPatterns();
-        // If this is the first pattern, then we return the big sharks pattern
-        if (this.getHowManyPatterns() == 1)
-            return new TheSeaPattern_BigSharks(this.getTheSea(), initialDistance);
-        else
-            return new TheSeaPattern_SeaSnakesForever(this.getTheSea(), initialDistance);
-    };
-    TheSeaPatternLevel_Level2.prototype.isLevelDone = function () {
-        return false;
-    };
-    return TheSeaPatternLevel_Level2;
-})(TheSeaPatternLevel);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_LotOfMiniSharks = (function (_super) {
-    __extends(TheSeaPattern_LotOfMiniSharks, _super);
-    // Constructor
-    function TheSeaPattern_LotOfMiniSharks(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-        // Variables
-        this.sharksAdded = false;
-    }
-    // Public methods
-    TheSeaPattern_LotOfMiniSharks.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 60)
-            return true;
-        return false;
-    };
-    TheSeaPattern_LotOfMiniSharks.prototype.run = function (x1, x2) {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 30 && this.sharksAdded == false) {
-            this.sharksAdded = true;
-            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 2));
-            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 8));
-            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 14));
-        }
-    };
-    return TheSeaPattern_LotOfMiniSharks;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_MaybeOneMediumFish = (function (_super) {
-    __extends(TheSeaPattern_MaybeOneMediumFish, _super);
-    // Constructor
-    function TheSeaPattern_MaybeOneMediumFish(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-    }
-    // Public methods
-    TheSeaPattern_MaybeOneMediumFish.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
-            return true;
-        return false;
-    };
-    TheSeaPattern_MaybeOneMediumFish.prototype.run = function (x1, x2) {
-        if (Random.oneChanceOutOf(5)) {
-            this.getTheSea().addMediumFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 4)));
-        }
-    };
-    return TheSeaPattern_MaybeOneMediumFish;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_MaybeOneSmallestFish = (function (_super) {
-    __extends(TheSeaPattern_MaybeOneSmallestFish, _super);
-    // Constructor
-    function TheSeaPattern_MaybeOneSmallestFish(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-    }
-    // Public methods
-    TheSeaPattern_MaybeOneSmallestFish.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
-            return true;
-        return false;
-    };
-    TheSeaPattern_MaybeOneSmallestFish.prototype.run = function (x1, x2) {
-        if (Random.flipACoin()) {
-            this.getTheSea().addSmallestFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 2)));
-        }
-    };
-    return TheSeaPattern_MaybeOneSmallestFish;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_OneSmallestFish = (function (_super) {
-    __extends(TheSeaPattern_OneSmallestFish, _super);
-    // Constructor
-    function TheSeaPattern_OneSmallestFish(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-    }
-    // Public methods
-    TheSeaPattern_OneSmallestFish.prototype.isPatternDone = function () {
-        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
-            return true;
-        return false;
-    };
-    TheSeaPattern_OneSmallestFish.prototype.run = function (x1, x2) {
-        this.getTheSea().addSmallestFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 2)));
-    };
-    return TheSeaPattern_OneSmallestFish;
-})(TheSeaPattern);
-///<reference path="TheSeaPattern.ts"/>
-var TheSeaPattern_SeaSnakesForever = (function (_super) {
-    __extends(TheSeaPattern_SeaSnakesForever, _super);
-    // Constructor
-    function TheSeaPattern_SeaSnakesForever(theSea, initialDistance) {
-        _super.call(this, theSea, initialDistance);
-        // Variables
-        this.addedRedSharkFin = false;
-        this.addedGreenSharkFin = false;
-        this.addedPurpleSharkFin = false;
-        this.nextSnakeIn = 0;
-        this.nextSharkIn = Random.between(0, 50);
-    }
-    // Public methods
-    TheSeaPattern_SeaSnakesForever.prototype.isPatternDone = function () {
-        return false;
-    };
-    TheSeaPattern_SeaSnakesForever.prototype.run = function (x1, x2) {
-        // Possibly add a snake
-        this.nextSnakeIn -= 1;
-        if (this.nextSnakeIn <= 0) {
-            this.getTheSea().addSeaSnake(new Pos(x2, Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 12)));
-            this.nextSnakeIn = 85 - Math.ceil((1 - Math.exp(-(this.getTheSea().getDistance() - this.getInitialDistance()) / 1500)) * 83);
-        }
-        // Possibly add a shark
-        this.nextSharkIn -= 1;
-        if (this.nextSharkIn <= 0) {
-            // Store the shark
-            var shark = this.getTheSea().addBigShark(new Pos(x2, Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 10)));
-            // If a shark was added
-            if (shark != null) {
-                if (Saving.loadBool("gridItemPossessedRedSharkFin") == false && this.addedRedSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 150) {
-                    shark.hasFin(BigSharkFinType.RED);
-                    this.addedRedSharkFin = true;
-                }
-                else if (Saving.loadBool("gridItemPossessedGreenSharkFin") == false && this.addedGreenSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 700) {
-                    shark.hasFin(BigSharkFinType.GREEN);
-                    this.addedGreenSharkFin = true;
-                }
-                else if (Saving.loadBool("gridItemPossessedPurpleSharkFin") == false && this.addedPurpleSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 2500) {
-                    shark.hasFin(BigSharkFinType.PURPLE);
-                    this.addedPurpleSharkFin = true;
-                }
-            }
-            // Set the next shark in
-            this.nextSharkIn = 60 - Math.ceil((1 - Math.exp(-(this.getTheSea().getDistance() - this.getInitialDistance()) / 1500)) * 55);
-        }
-    };
-    return TheSeaPattern_SeaSnakesForever;
-})(TheSeaPattern);
 ///<reference path="Quest.ts"/>
 var TheSea = (function (_super) {
     __extends(TheSea, _super);
@@ -19775,6 +19126,656 @@ var TheSea = (function (_super) {
     };
     return TheSea;
 })(Quest);
+var TheSeaFloor = (function () {
+    // Constructor
+    function TheSeaFloor(type, height, previousFloor) {
+        if (previousFloor === void 0) { previousFloor = null; }
+        // Does this floor have a plant on it ?
+        this.hasAPlant = false;
+        this.type = type;
+        this.height = height;
+        // If the previous floor is null or has a different type
+        if (previousFloor == null || previousFloor.getType() != this.type) {
+            // There's no floor of the same type before
+            this.howManyFloorsOfTheSameTypeBefore = 0;
+        }
+        else {
+            // We take the howManyFloorsOfTheSameTypeBefore of the previous floor and we add one
+            this.howManyFloorsOfTheSameTypeBefore = previousFloor.howManyFloorsOfTheSameTypeBefore + 1;
+        }
+        // Special character stuff
+        if (Random.oneChanceOutOf(3) && (previousFloor == null || previousFloor.getHasSpecialCharacter() == false)) {
+            // We will have a special character
+            this.hasSpecialCharacter = true;
+            // Set the height
+            this.specialCharacterHeight = Random.between(0, this.height - 1);
+            // Set the character
+            if (Random.oneChanceOutOf(4)) {
+                this.specialCharacter = "^";
+            }
+            else {
+                this.specialCharacter = "-";
+            }
+        }
+        else {
+            // We won't have a special character
+            this.hasSpecialCharacter = false;
+        }
+    }
+    // Public methods
+    TheSeaFloor.prototype.draw = function (renderArea, floorPosition, xPosition) {
+        // We can draw different characters for the floor, depending on the type
+        switch (this.type) {
+            case TheSeaFloorType.NORMAL:
+                renderArea.drawString("_", xPosition, floorPosition - this.height);
+                break;
+            case TheSeaFloorType.GOING_DOWN:
+                renderArea.drawString("\\", xPosition, floorPosition - this.height);
+                break;
+            case TheSeaFloorType.GOING_UP:
+                renderArea.drawString("/", xPosition, floorPosition - this.height);
+                break;
+        }
+        // If we have a special character
+        if (this.hasSpecialCharacter) {
+            // We draw it
+            renderArea.drawString(this.specialCharacter, xPosition, floorPosition - this.specialCharacterHeight);
+        }
+    };
+    // Pubic getters
+    TheSeaFloor.prototype.getHasAPlant = function () {
+        return this.hasAPlant;
+    };
+    TheSeaFloor.prototype.getHasSpecialCharacter = function () {
+        return this.hasSpecialCharacter;
+    };
+    TheSeaFloor.prototype.getHeight = function () {
+        return this.height;
+    };
+    TheSeaFloor.prototype.getHowManyFloorsOfTheSameTypeBefore = function () {
+        return this.howManyFloorsOfTheSameTypeBefore;
+    };
+    TheSeaFloor.prototype.getType = function () {
+        return this.type;
+    };
+    // Public setters
+    TheSeaFloor.prototype.setHasAPlant = function (hasAPlant) {
+        this.hasAPlant = hasAPlant;
+    };
+    return TheSeaFloor;
+})();
+var TheSeaFloorType;
+(function (TheSeaFloorType) {
+    TheSeaFloorType[TheSeaFloorType["NORMAL"] = 0] = "NORMAL";
+    TheSeaFloorType[TheSeaFloorType["GOING_DOWN"] = 1] = "GOING_DOWN";
+    TheSeaFloorType[TheSeaFloorType["GOING_UP"] = 2] = "GOING_UP";
+})(TheSeaFloorType || (TheSeaFloorType = {}));
+var TheSeaPattern = (function () {
+    // Constructor
+    function TheSeaPattern(theSea, initialDistance) {
+        this.theSea = theSea;
+        this.initialDistance = initialDistance;
+    }
+    // Public methods
+    TheSeaPattern.prototype.isPatternDone = function () {
+        return false;
+    };
+    TheSeaPattern.prototype.run = function (x1, x2) {
+    };
+    // Public getters
+    TheSeaPattern.prototype.getInitialDistance = function () {
+        return this.initialDistance;
+    };
+    TheSeaPattern.prototype.getTheSea = function () {
+        return this.theSea;
+    };
+    return TheSeaPattern;
+})();
+var TheSeaPatternLevel = (function () {
+    // Constructor
+    function TheSeaPatternLevel(theSea) {
+        // How many patterns launched already ?
+        this.howManyPatterns = 0;
+        this.theSea = theSea;
+    }
+    // Public methods
+    TheSeaPatternLevel.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel(this.theSea);
+    };
+    TheSeaPatternLevel.prototype.getPattern = function (initialDistance) {
+        return new TheSeaPattern(this.theSea, initialDistance);
+    };
+    TheSeaPatternLevel.prototype.increaseHowManyPatterns = function () {
+        this.howManyPatterns += 1;
+    };
+    TheSeaPatternLevel.prototype.isLevelDone = function () {
+        return false;
+    };
+    // Public getters
+    TheSeaPatternLevel.prototype.getHowManyPatterns = function () {
+        return this.howManyPatterns;
+    };
+    TheSeaPatternLevel.prototype.getTheSea = function () {
+        return this.theSea;
+    };
+    return TheSeaPatternLevel;
+})();
+///<reference path="TheSeaPatternLevel.ts"/>
+var TheSeaPatternLevel_Boss0 = (function (_super) {
+    __extends(TheSeaPatternLevel_Boss0, _super);
+    // Constructor
+    function TheSeaPatternLevel_Boss0(theSea) {
+        _super.call(this, theSea);
+    }
+    // Public methods
+    TheSeaPatternLevel_Boss0.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel_Level1(this.getTheSea());
+    };
+    TheSeaPatternLevel_Boss0.prototype.getPattern = function (initialDistance) {
+        this.increaseHowManyPatterns();
+        return new TheSeaPattern_Boss0_Shapes(this.getTheSea(), initialDistance);
+    };
+    TheSeaPatternLevel_Boss0.prototype.isLevelDone = function () {
+        if (this.getHowManyPatterns() >= 1)
+            return true;
+        return false;
+    };
+    return TheSeaPatternLevel_Boss0;
+})(TheSeaPatternLevel);
+///<reference path="TheSeaPatternLevel.ts"/>
+var TheSeaPatternLevel_Boss1 = (function (_super) {
+    __extends(TheSeaPatternLevel_Boss1, _super);
+    // Constructor
+    function TheSeaPatternLevel_Boss1(theSea) {
+        _super.call(this, theSea);
+    }
+    // Public methods
+    TheSeaPatternLevel_Boss1.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel_Level2(this.getTheSea());
+    };
+    TheSeaPatternLevel_Boss1.prototype.getPattern = function (initialDistance) {
+        this.increaseHowManyPatterns();
+        return new TheSeaPattern_Boss1_Seahorses(this.getTheSea(), initialDistance);
+    };
+    TheSeaPatternLevel_Boss1.prototype.isLevelDone = function () {
+        if (this.getHowManyPatterns() >= 1)
+            return true;
+        return false;
+    };
+    return TheSeaPatternLevel_Boss1;
+})(TheSeaPatternLevel);
+///<reference path="TheSeaPatternLevel.ts"/>
+var TheSeaPatternLevel_Level0 = (function (_super) {
+    __extends(TheSeaPatternLevel_Level0, _super);
+    // Constructor
+    function TheSeaPatternLevel_Level0(theSea) {
+        _super.call(this, theSea);
+    }
+    // Public methods
+    TheSeaPatternLevel_Level0.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel_Boss0(this.getTheSea());
+    };
+    TheSeaPatternLevel_Level0.prototype.getPattern = function (initialDistance) {
+        this.increaseHowManyPatterns();
+        switch (Random.upTo(2)) {
+            case 0:
+                return new TheSeaPattern_MaybeOneSmallestFish(this.getTheSea(), initialDistance);
+                break;
+            case 1:
+                return new TheSeaPattern_OneSmallestFish(this.getTheSea(), initialDistance);
+                break;
+            case 2:
+                return new TheSeaPattern_MaybeOneMediumFish(this.getTheSea(), initialDistance);
+                break;
+        }
+    };
+    TheSeaPatternLevel_Level0.prototype.isLevelDone = function () {
+        if (this.getHowManyPatterns() >= 2)
+            return true;
+        return false;
+    };
+    return TheSeaPatternLevel_Level0;
+})(TheSeaPatternLevel);
+///<reference path="TheSeaPatternLevel.ts"/>
+var TheSeaPatternLevel_Level1 = (function (_super) {
+    __extends(TheSeaPatternLevel_Level1, _super);
+    // Constructor
+    function TheSeaPatternLevel_Level1(theSea) {
+        _super.call(this, theSea);
+    }
+    // Public methods
+    TheSeaPatternLevel_Level1.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel_Boss1(this.getTheSea());
+    };
+    TheSeaPatternLevel_Level1.prototype.getPattern = function (initialDistance) {
+        this.increaseHowManyPatterns();
+        switch (Random.upTo(1)) {
+            case 0:
+                return new TheSeaPattern_LotOfMiniSharks(this.getTheSea(), initialDistance);
+                break;
+            case 1:
+                return new TheSeaPattern_JellyFishStorm(this.getTheSea(), initialDistance);
+                break;
+        }
+    };
+    TheSeaPatternLevel_Level1.prototype.isLevelDone = function () {
+        if (this.getHowManyPatterns() >= 2)
+            return true;
+        return false;
+    };
+    return TheSeaPatternLevel_Level1;
+})(TheSeaPatternLevel);
+///<reference path="TheSeaPatternLevel.ts"/>
+var TheSeaPatternLevel_Level2 = (function (_super) {
+    __extends(TheSeaPatternLevel_Level2, _super);
+    // Constructor
+    function TheSeaPatternLevel_Level2(theSea) {
+        _super.call(this, theSea);
+    }
+    // Public methods
+    TheSeaPatternLevel_Level2.prototype.getNextLevel = function () {
+        return new TheSeaPatternLevel_Level2(this.getTheSea());
+    };
+    TheSeaPatternLevel_Level2.prototype.getPattern = function (initialDistance) {
+        this.increaseHowManyPatterns();
+        // If this is the first pattern, then we return the big sharks pattern
+        if (this.getHowManyPatterns() == 1)
+            return new TheSeaPattern_BigSharks(this.getTheSea(), initialDistance);
+        else
+            return new TheSeaPattern_SeaSnakesForever(this.getTheSea(), initialDistance);
+    };
+    TheSeaPatternLevel_Level2.prototype.isLevelDone = function () {
+        return false;
+    };
+    return TheSeaPatternLevel_Level2;
+})(TheSeaPatternLevel);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_BigSharks = (function (_super) {
+    __extends(TheSeaPattern_BigSharks, _super);
+    // Constructor
+    function TheSeaPattern_BigSharks(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+    }
+    // Public methods
+    TheSeaPattern_BigSharks.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 125)
+            return true;
+        return false;
+    };
+    TheSeaPattern_BigSharks.prototype.run = function (x1, x2) {
+        if (this.getTheSea().getDistance() % 60 == 0)
+            this.getTheSea().addBigShark(new Pos(x2, Random.fromArray([2, 6])));
+    };
+    return TheSeaPattern_BigSharks;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_Boss0_Shapes = (function (_super) {
+    __extends(TheSeaPattern_Boss0_Shapes, _super);
+    // Constructor
+    function TheSeaPattern_Boss0_Shapes(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+        // Fishes of the squares
+        this.fishes = [];
+        // Did we add the fishes already ?
+        this.fishesAdded = false;
+        // Are fishes moving right now ?
+        this.fishesAreMoving = true;
+        // Set the shape type
+        this.shapeType = Random.upTo(2);
+    }
+    // Public methods    
+    TheSeaPattern_Boss0_Shapes.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 50)
+            return true;
+        return false;
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.run = function (x1, x2) {
+        // If it's time to add the fishes
+        if (this.fishesAdded == false && this.getTheSea().getDistance() > this.getInitialDistance() + 30) {
+            this.fishesAdded = true;
+            this.addShape(x1, 1);
+            this.addShape(x1, 8);
+            this.addShape(x1, 15);
+            this.addShape(x1 + 15, 0);
+            this.addShape(x1 + 15, 7);
+            this.addShape(x1 + 15, 14);
+            this.addShape(x1 + 30, 1);
+            this.addShape(x1 + 30, 8);
+            this.addShape(x1 + 30, 15);
+        }
+        // Handle fishes movement (to make them stop if the player stop moving)
+        this.handleFishesMovement();
+    };
+    // Private methods
+    TheSeaPattern_Boss0_Shapes.prototype.addFish = function (smallestFish) {
+        if (smallestFish != null)
+            this.fishes.push(smallestFish);
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.addCross = function (x, y) {
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x, y + 1)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 3, y + 2)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 6, y + 3)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, y + 4)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x, y + 4)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 3, y + 3)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 6, y + 2)));
+        this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, y + 1)));
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.addLines = function (x, y) {
+        for (var i = x; i <= x + 9; i += 3) {
+            for (var j = y; j <= y + 4; j += 2) {
+                this.addFish(this.getTheSea().addSmallestFish(new Pos(i, j)));
+            }
+        }
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.addShape = function (x, y) {
+        // Call a random shape method
+        switch (this.shapeType) {
+            case 0:
+                this.addSquare(x, y);
+                break;
+            case 1:
+                this.addLines(x, y);
+                break;
+            case 2:
+                this.addCross(x, y);
+                break;
+        }
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.addSquare = function (x, y) {
+        // Top & bottom
+        for (var i = x; i <= x + 9; i += 3) {
+            // Top of the square
+            this.addFish(this.getTheSea().addSmallestFish(new Pos(i, y)));
+            // Bottom of the square
+            this.addFish(this.getTheSea().addSmallestFish(new Pos(i, y + 5)));
+        }
+        // Left & right
+        for (var j = y; j <= y + 4; j++) {
+            // Left of the square
+            this.addFish(this.getTheSea().addSmallestFish(new Pos(x, j)));
+            // Right of the square
+            this.addFish(this.getTheSea().addSmallestFish(new Pos(x + 9, j)));
+        }
+    };
+    TheSeaPattern_Boss0_Shapes.prototype.handleFishesMovement = function () {
+        // If fishes are moving but shouldn't be
+        if (this.fishesAreMoving == true && this.getTheSea().getLastPlayerMovement().x == 0 && this.getTheSea().getGame().getPlayer().getGlobalPosition().y >= 20) {
+            // Fishes are not moving any more
+            this.fishesAreMoving = false;
+            for (var i = 0; i < this.fishes.length; i++) {
+                this.fishes[i].setQuestEntityMovement(new QuestEntityMovement(new Pos(0, 0)));
+            }
+        }
+        else if (this.fishesAreMoving == false && (this.getTheSea().getLastPlayerMovement().x > 0 || this.getTheSea().getGame().getPlayer().getGlobalPosition().y < 20)) {
+            // Fishes are now moving
+            this.fishesAreMoving = true;
+            for (var i = 0; i < this.fishes.length; i++) {
+                this.fishes[i].setQuestEntityMovement(new QuestEntityMovement(new Pos(-1, 0)));
+            }
+        }
+    };
+    return TheSeaPattern_Boss0_Shapes;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_Boss1_Seahorses = (function (_super) {
+    __extends(TheSeaPattern_Boss1_Seahorses, _super);
+    // Constructor
+    function TheSeaPattern_Boss1_Seahorses(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+        // Variables
+        this.seahorses = [];
+        this.seahorsesAdded = false;
+        this.seaHorsesStopped = false;
+        // The special seahorse wandering
+        this.seahorseWandering = null;
+        this.seahorseWanderingIsGoingUp = false;
+        // The special seahorse following player
+        this.seahorseFollowingPlayer = null;
+    }
+    // Public methods
+    TheSeaPattern_Boss1_Seahorses.prototype.addSeahorse = function (seahorse) {
+        if (seahorse != null) {
+            this.seahorses.push(seahorse);
+            return seahorse;
+        }
+        return null;
+    };
+    TheSeaPattern_Boss1_Seahorses.prototype.isPatternDone = function () {
+        // Return false if seahorses aren't added yet
+        if (this.seahorsesAdded == false)
+            return false;
+        // Return false if any of the seahorses is still alive
+        for (var i = 0; i < this.seahorses.length; i++) {
+            if (this.seahorses[i].getDead() == false)
+                return false;
+        }
+        return true;
+    };
+    TheSeaPattern_Boss1_Seahorses.prototype.run = function (x1, x2) {
+        // If we didn't add seahorses already (and we're far enough), we do so
+        if (this.seahorsesAdded == false && this.getTheSea().getDistance() > this.getInitialDistance() + 30) {
+            this.seahorsesAdded = true;
+            // First column
+            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1, 2), 75));
+            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1, 12), 75));
+            // Second column
+            this.seahorseWandering = this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 7, 10), 81));
+            // Third Column
+            this.seahorseFollowingPlayer = this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 14, 10), 87));
+            // Fourth column
+            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 21, 7), 93));
+            this.addSeahorse(this.getTheSea().addSeahorse(new Pos(x1 + 21, 17), 93));
+        }
+        // If we already added seahorses, we increase the moving counter
+        if (this.seahorsesAdded == true && this.seaHorsesStopped == false) {
+            // Find the seahorse which is the most on the left and store its x position
+            var mostLeftX = 500;
+            for (var i = 0; i < this.seahorses.length; i++) {
+                if (this.seahorses[i].getGlobalPosition().x < mostLeftX)
+                    mostLeftX = this.seahorses[i].getGlobalPosition().x;
+            }
+            // If this mostLeftX is <= 75
+            if (mostLeftX - this.getTheSea().getGame().getPlayer().getGlobalPosition().x <= 75) {
+                // We stop the seahorses
+                this.seaHorsesStopped = true;
+                for (var i = 0; i < this.seahorses.length; i++) {
+                    this.seahorses[i].getQuestEntityMovement().setOffset(new Pos(0, 0));
+                }
+            }
+        }
+        // If the sea horses are stopped, we adjust their movement so that they swim with the player
+        if (this.seaHorsesStopped) {
+            for (var i = 0; i < this.seahorses.length; i++) {
+                this.seahorses[i].tryToGoToIntendedXPosition(this.getTheSea().getGame().getPlayer().getGlobalPosition().x);
+            }
+        }
+        // We handle the special seahorse wandering
+        if (this.seahorseWandering != null) {
+            if (this.seahorseWanderingIsGoingUp) {
+                this.seahorseWandering.getQuestEntityMovement().getOffset().y = -1;
+                if (this.seahorseWandering.getGlobalPosition().y <= 0)
+                    this.seahorseWanderingIsGoingUp = false;
+            }
+            else {
+                this.seahorseWandering.getQuestEntityMovement().getOffset().y = 1;
+                if (this.seahorseWandering.getGlobalPosition().y >= 16)
+                    this.seahorseWanderingIsGoingUp = true;
+            }
+        }
+        // We handle the special seahorse following the player
+        if (this.seahorseFollowingPlayer != null) {
+            // By default we don't move
+            this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = 0;
+            // If the player is above
+            if (this.getTheSea().getGame().getPlayer().getGlobalPosition().y < this.seahorseFollowingPlayer.getGlobalPosition().y - 1) {
+                // If we're not too high
+                if (this.seahorseFollowingPlayer.getGlobalPosition().y > 0)
+                    // We go up
+                    this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = -1;
+            }
+            else if (this.getTheSea().getGame().getPlayer().getGlobalPosition().y > this.seahorseFollowingPlayer.getGlobalPosition().y - 1) {
+                // If we're not too low
+                if (this.seahorseFollowingPlayer.getGlobalPosition().y < 17)
+                    // We go down
+                    this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y = +1;
+            }
+        }
+    };
+    return TheSeaPattern_Boss1_Seahorses;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_JellyFishStorm = (function (_super) {
+    __extends(TheSeaPattern_JellyFishStorm, _super);
+    // Constructor
+    function TheSeaPattern_JellyFishStorm(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+    }
+    // Public methods
+    TheSeaPattern_JellyFishStorm.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
+            return true;
+        return false;
+    };
+    TheSeaPattern_JellyFishStorm.prototype.run = function (x1, x2) {
+        if (Random.oneChanceOutOf(10))
+            this.getTheSea().addJellyFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 6)));
+    };
+    return TheSeaPattern_JellyFishStorm;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_LotOfMiniSharks = (function (_super) {
+    __extends(TheSeaPattern_LotOfMiniSharks, _super);
+    // Constructor
+    function TheSeaPattern_LotOfMiniSharks(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+        // Variables
+        this.sharksAdded = false;
+    }
+    // Public methods
+    TheSeaPattern_LotOfMiniSharks.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 60)
+            return true;
+        return false;
+    };
+    TheSeaPattern_LotOfMiniSharks.prototype.run = function (x1, x2) {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 30 && this.sharksAdded == false) {
+            this.sharksAdded = true;
+            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 2));
+            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 8));
+            this.getTheSea().addMiniShark(new Pos(x1 + Random.upTo(6), 14));
+        }
+    };
+    return TheSeaPattern_LotOfMiniSharks;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_MaybeOneMediumFish = (function (_super) {
+    __extends(TheSeaPattern_MaybeOneMediumFish, _super);
+    // Constructor
+    function TheSeaPattern_MaybeOneMediumFish(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+    }
+    // Public methods
+    TheSeaPattern_MaybeOneMediumFish.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
+            return true;
+        return false;
+    };
+    TheSeaPattern_MaybeOneMediumFish.prototype.run = function (x1, x2) {
+        if (Random.oneChanceOutOf(5)) {
+            this.getTheSea().addMediumFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 4)));
+        }
+    };
+    return TheSeaPattern_MaybeOneMediumFish;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_MaybeOneSmallestFish = (function (_super) {
+    __extends(TheSeaPattern_MaybeOneSmallestFish, _super);
+    // Constructor
+    function TheSeaPattern_MaybeOneSmallestFish(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+    }
+    // Public methods
+    TheSeaPattern_MaybeOneSmallestFish.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
+            return true;
+        return false;
+    };
+    TheSeaPattern_MaybeOneSmallestFish.prototype.run = function (x1, x2) {
+        if (Random.flipACoin()) {
+            this.getTheSea().addSmallestFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 2)));
+        }
+    };
+    return TheSeaPattern_MaybeOneSmallestFish;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_OneSmallestFish = (function (_super) {
+    __extends(TheSeaPattern_OneSmallestFish, _super);
+    // Constructor
+    function TheSeaPattern_OneSmallestFish(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+    }
+    // Public methods
+    TheSeaPattern_OneSmallestFish.prototype.isPatternDone = function () {
+        if (this.getTheSea().getDistance() > this.getInitialDistance() + 100)
+            return true;
+        return false;
+    };
+    TheSeaPattern_OneSmallestFish.prototype.run = function (x1, x2) {
+        this.getTheSea().addSmallestFish(new Pos(Random.between(x1, x2), Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 2)));
+    };
+    return TheSeaPattern_OneSmallestFish;
+})(TheSeaPattern);
+///<reference path="TheSeaPattern.ts"/>
+var TheSeaPattern_SeaSnakesForever = (function (_super) {
+    __extends(TheSeaPattern_SeaSnakesForever, _super);
+    // Constructor
+    function TheSeaPattern_SeaSnakesForever(theSea, initialDistance) {
+        _super.call(this, theSea, initialDistance);
+        // Variables
+        this.addedRedSharkFin = false;
+        this.addedGreenSharkFin = false;
+        this.addedPurpleSharkFin = false;
+        this.nextSnakeIn = 0;
+        this.nextSharkIn = Random.between(0, 50);
+    }
+    // Public methods
+    TheSeaPattern_SeaSnakesForever.prototype.isPatternDone = function () {
+        return false;
+    };
+    TheSeaPattern_SeaSnakesForever.prototype.run = function (x1, x2) {
+        // Possibly add a snake
+        this.nextSnakeIn -= 1;
+        if (this.nextSnakeIn <= 0) {
+            this.getTheSea().addSeaSnake(new Pos(x2, Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 12)));
+            this.nextSnakeIn = 85 - Math.ceil((1 - Math.exp(-(this.getTheSea().getDistance() - this.getInitialDistance()) / 1500)) * 83);
+        }
+        // Possibly add a shark
+        this.nextSharkIn -= 1;
+        if (this.nextSharkIn <= 0) {
+            // Store the shark
+            var shark = this.getTheSea().addBigShark(new Pos(x2, Random.between(0, this.getTheSea().getRealQuestSize().y - this.getTheSea().getFloorMaxHeight() - 10)));
+            // If a shark was added
+            if (shark != null) {
+                if (Saving.loadBool("gridItemPossessedRedSharkFin") == false && this.addedRedSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 150) {
+                    shark.hasFin(BigSharkFinType.RED);
+                    this.addedRedSharkFin = true;
+                }
+                else if (Saving.loadBool("gridItemPossessedGreenSharkFin") == false && this.addedGreenSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 700) {
+                    shark.hasFin(BigSharkFinType.GREEN);
+                    this.addedGreenSharkFin = true;
+                }
+                else if (Saving.loadBool("gridItemPossessedPurpleSharkFin") == false && this.addedPurpleSharkFin == false && this.getTheSea().getDistance() - this.getInitialDistance() > 2500) {
+                    shark.hasFin(BigSharkFinType.PURPLE);
+                    this.addedPurpleSharkFin = true;
+                }
+            }
+            // Set the next shark in
+            this.nextSharkIn = 60 - Math.ceil((1 - Math.exp(-(this.getTheSea().getDistance() - this.getInitialDistance()) / 1500)) * 55);
+        }
+    };
+    return TheSeaPattern_SeaSnakesForever;
+})(TheSeaPattern);
 ///<reference path="House.ts"/>
 var ThirdHouse = (function (_super) {
     __extends(ThirdHouse, _super);
@@ -20049,21 +20050,6 @@ var TripodCamel = (function (_super) {
     };
     return TripodCamel;
 })(QuestEntity);
-///<reference path="EqItem.ts"/>
-var TrollBludgeon = (function (_super) {
-    __extends(TrollBludgeon, _super);
-    // Constructor
-    function TrollBludgeon() {
-        _super.call(this, "eqItemWeaponTrollBludgeon", "eqItemWeaponTrollBludgeonName", "eqItemWeaponTrollBludgeonDescription", "eqItems/weapons/trollBludgeon");
-    }
-    // Public getters
-    TrollBludgeon.prototype.getQuestEntityWeapon = function (quest, player) {
-        var qew = new PlayerBludgeon(quest, player, new Naming("The troll's bludgeon", "the troll's bludgeon"), player.getClassicCollisionBoxCollection());
-        qew.getCloseCombatDelay().setFixedDelay(6);
-        return qew;
-    };
-    return TrollBludgeon;
-})(EqItem);
 ///<reference path="QuestEntity.ts"/>
 var Troll = (function (_super) {
     __extends(Troll, _super);
@@ -20096,6 +20082,21 @@ var Troll = (function (_super) {
     };
     return Troll;
 })(QuestEntity);
+///<reference path="EqItem.ts"/>
+var TrollBludgeon = (function (_super) {
+    __extends(TrollBludgeon, _super);
+    // Constructor
+    function TrollBludgeon() {
+        _super.call(this, "eqItemWeaponTrollBludgeon", "eqItemWeaponTrollBludgeonName", "eqItemWeaponTrollBludgeonDescription", "eqItems/weapons/trollBludgeon");
+    }
+    // Public getters
+    TrollBludgeon.prototype.getQuestEntityWeapon = function (quest, player) {
+        var qew = new PlayerBludgeon(quest, player, new Naming("The troll's bludgeon", "the troll's bludgeon"), player.getClassicCollisionBoxCollection());
+        qew.getCloseCombatDelay().setFixedDelay(6);
+        return qew;
+    };
+    return TrollBludgeon;
+})(EqItem);
 ///<reference path="GridItem.ts"/>
 var UnicornHorn = (function (_super) {
     __extends(UnicornHorn, _super);
@@ -20711,17 +20712,6 @@ var WoodenSword = (function (_super) {
     };
     return WoodenSword;
 })(EqItem);
-///<reference path="GridItem.ts"/>
-var XinopherydonClaw = (function (_super) {
-    __extends(XinopherydonClaw, _super);
-    function XinopherydonClaw() {
-        _super.apply(this, arguments);
-    }
-    XinopherydonClaw.prototype.hit = function (player, quest, questEntity, damage, reason) {
-        return damage * 2;
-    };
-    return XinopherydonClaw;
-})(GridItem);
 ///<reference path="QuestEntity.ts"/>
 var Xinopherydon = (function (_super) {
     __extends(Xinopherydon, _super);
@@ -20759,80 +20749,17 @@ var Xinopherydon = (function (_super) {
     };
     return Xinopherydon;
 })(QuestEntity);
-///<reference path="QuestEntity.ts"/>
-var YourselfEntity = (function (_super) {
-    __extends(YourselfEntity, _super);
-    // Constructor
-    function YourselfEntity(quest, pos) {
-        _super.call(this, quest, pos, new Naming("Yourself", "yourself"), new RenderArea(3, 1), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1))), new QuestEntityMovement(new Pos(-1, 0)));
-        // Set gravity
-        this.getQuestEntityMovement().setGravity(true);
-        // Set destructible
-        this.setDestructible(true);
-        this.setMaxHp(this.getQuest().getGame().getPlayer().getMaxHp());
-        this.setHp(this.getQuest().getGame().getPlayer().getHp());
-        // Set the ascii art
-        this.getRenderArea().drawString("\\o/");
-        // Set the weapon and its delay
-        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("The same weapon as yours", "the same weapon as yours"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(5, 3))), 0));
-        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay();
+///<reference path="GridItem.ts"/>
+var XinopherydonClaw = (function (_super) {
+    __extends(XinopherydonClaw, _super);
+    function XinopherydonClaw() {
+        _super.apply(this, arguments);
     }
-    // setHp()
-    YourselfEntity.prototype.setHp = function (hp) {
-        // If we don't have the crown
-        if (this.getQuest().getGame().isEquipped("hat", "eqItemHatOctopusKingCrown") == false) {
-            // When anyone want to change our hp, we change the player's hp first :)
-            this.getQuest().getGame().getPlayer().setHp(hp);
-        }
-        else {
-            // When anyone want to change our hp, we change the player's hp first :) (but here we keep it over 0!)
-            if (hp > 0)
-                this.getQuest().getGame().getPlayer().setHp(hp);
-            else
-                this.getQuest().getGame().getPlayer().setHp(1);
-        }
-        _super.prototype.setHp.call(this, hp);
+    XinopherydonClaw.prototype.hit = function (player, quest, questEntity, damage, reason) {
+        return damage * 2;
     };
-    // willDie()
-    YourselfEntity.prototype.willDie = function () {
-        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(Math.floor(this.getQuest().getGame().getCandies().getCurrent() / 10)), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
-        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemBootsBootsOfIntrospection", "You found the boots of introspection", "You gain the boots of introspection"));
-    };
-    return YourselfEntity;
-})(QuestEntity);
-var YourselfSentence = (function () {
-    // Constructor
-    function YourselfSentence(quest, text, isGoingRight, y) {
-        // Set from parameters
-        this.quest = quest;
-        this.text = text;
-        this.isGoingRight = isGoingRight;
-        // Set the position
-        if (this.isGoingRight)
-            this.position = new Pos(-this.text.length, y);
-        else
-            this.position = new Pos(100, y);
-    }
-    // Public methods
-    YourselfSentence.prototype.draw = function (renderArea) {
-        renderArea.drawString(this.text, this.quest.getRealQuestPosition().x + this.quest.getGlobalDrawingOffset().x + this.position.x, this.quest.getRealQuestPosition().y + this.quest.getGlobalDrawingOffset().y + this.position.y);
-    };
-    YourselfSentence.prototype.update = function () {
-        if (this.isGoingRight) {
-            this.position.x += 1;
-            if (this.position.x > 100)
-                return true; // Delete the sentence
-        }
-        else {
-            this.position.x -= 1;
-            if (this.position.x < -this.text.length)
-                return true; // Delete the sentence
-        }
-        // We don't delete the sentence : we return false
-        return false;
-    };
-    return YourselfSentence;
-})();
+    return XinopherydonClaw;
+})(GridItem);
 ///<reference path="Quest.ts"/>
 var Yourself = (function (_super) {
     __extends(Yourself, _super);
@@ -20988,6 +20915,80 @@ var Yourself = (function (_super) {
     };
     return Yourself;
 })(Quest);
+///<reference path="QuestEntity.ts"/>
+var YourselfEntity = (function (_super) {
+    __extends(YourselfEntity, _super);
+    // Constructor
+    function YourselfEntity(quest, pos) {
+        _super.call(this, quest, pos, new Naming("Yourself", "yourself"), new RenderArea(3, 1), new Pos(0, 0), new CollisionBoxCollection(new CollisionBox(this, new Pos(0, 0), new Pos(3, 1))), new QuestEntityMovement(new Pos(-1, 0)));
+        // Set gravity
+        this.getQuestEntityMovement().setGravity(true);
+        // Set destructible
+        this.setDestructible(true);
+        this.setMaxHp(this.getQuest().getGame().getPlayer().getMaxHp());
+        this.setHp(this.getQuest().getGame().getPlayer().getHp());
+        // Set the ascii art
+        this.getRenderArea().drawString("\\o/");
+        // Set the weapon and its delay
+        this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(), this, new Naming("The same weapon as yours", "the same weapon as yours"), new CollisionBoxCollection(new CollisionBox(this, new Pos(-1, -1), new Pos(5, 3))), 0));
+        this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay();
+    }
+    // setHp()
+    YourselfEntity.prototype.setHp = function (hp) {
+        // If we don't have the crown
+        if (this.getQuest().getGame().isEquipped("hat", "eqItemHatOctopusKingCrown") == false) {
+            // When anyone want to change our hp, we change the player's hp first :)
+            this.getQuest().getGame().getPlayer().setHp(hp);
+        }
+        else {
+            // When anyone want to change our hp, we change the player's hp first :) (but here we keep it over 0!)
+            if (hp > 0)
+                this.getQuest().getGame().getPlayer().setHp(hp);
+            else
+                this.getQuest().getGame().getPlayer().setHp(1);
+        }
+        _super.prototype.setHp.call(this, hp);
+    };
+    // willDie()
+    YourselfEntity.prototype.willDie = function () {
+        this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage() + " (and found " + Algo.pluralFormat(this.getQuest().foundCandies(Math.floor(this.getQuest().getGame().getCandies().getCurrent() / 10)), " candy", " candies") + ")", this.getQuest().getCandiesFoundMessage()));
+        this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(), "eqItemBootsBootsOfIntrospection", "You found the boots of introspection", "You gain the boots of introspection"));
+    };
+    return YourselfEntity;
+})(QuestEntity);
+var YourselfSentence = (function () {
+    // Constructor
+    function YourselfSentence(quest, text, isGoingRight, y) {
+        // Set from parameters
+        this.quest = quest;
+        this.text = text;
+        this.isGoingRight = isGoingRight;
+        // Set the position
+        if (this.isGoingRight)
+            this.position = new Pos(-this.text.length, y);
+        else
+            this.position = new Pos(100, y);
+    }
+    // Public methods
+    YourselfSentence.prototype.draw = function (renderArea) {
+        renderArea.drawString(this.text, this.quest.getRealQuestPosition().x + this.quest.getGlobalDrawingOffset().x + this.position.x, this.quest.getRealQuestPosition().y + this.quest.getGlobalDrawingOffset().y + this.position.y);
+    };
+    YourselfSentence.prototype.update = function () {
+        if (this.isGoingRight) {
+            this.position.x += 1;
+            if (this.position.x > 100)
+                return true; // Delete the sentence
+        }
+        else {
+            this.position.x -= 1;
+            if (this.position.x < -this.text.length)
+                return true; // Delete the sentence
+        }
+        // We don't delete the sentence : we return false
+        return false;
+    };
+    return YourselfSentence;
+})();
 Database.addAscii("arena/hardcorePlatformer/background", 240, 12, [
     "",
     "",

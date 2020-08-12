@@ -27,24 +27,9 @@
  *
  */
 
-var Algo;(function(i){function b(k){if(k<0){return 0}return k}i.correctIfUnderZero=b;
-function j(){return 9007199254740992}i.getMaximumJavascriptInt=j;function e(k){var l=new Pos();
-l.x=Random.between(-k,k);if(l.x!=0){l.y=Random.between(-k,k)}else{if(Random.flipACoin()){l.y=Random.between(-k,-1)
-}else{l.y=Random.between(1,k)}}if(Random.flipACoin()){l.invert()}return l}i.getRandomNotImmobileDirectionUpToThisSpeed=e;
-function a(k,l){if(l!=-1){return k.slice(0,l)+"<u>"+k.charAt(l)+"</u>"+k.slice(l+1,k.length)
-}else{return k}}i.makeUnderlinedLetter=a;function f(m){var l=m.toString();if(m<j()){if(l.length>3){for(var k=Math.floor(l.length/3);
-k>0;k--){if(k*3!=l.length){l=l.addAt(l.length-k*3," ")}}}}return l}i.numberToStringButNicely=f;
-function d(m,l,k){if(m==1){return m.toString()+l}return m.toString()+k}i.pluralFormat=d;
-function h(m,l,k){if(m==1){return f(m)+l}return f(m)+k}i.pluralFormatNicely=h;function c(k){return k.toLowerCase().replace(/[^\w]|_/g,"")
-}i.simplifyString=c;function g(l,k){if(l>k){return l}return k}i.takeBiggest=g})(Algo||(Algo={}));
-var ATreeTicTacToeMinimaxReturnValue=(function(){function a(){this.bestPosition=null;
-this.bestScore=null}return a})();var ATreeTicTacToeSign;(function(a){a[a.NO_SIGN=0]="NO_SIGN";
-a[a.X=1]="X";a[a.O=2]="O"})(ATreeTicTacToeSign||(ATreeTicTacToeSign={}));var ATreeTicTacToeStep;
-(function(a){a[a.PLAYING=0]="PLAYING";a[a.NOBODY_WINS=1]="NOBODY_WINS";a[a.YOU_LOSE=2]="YOU_LOSE"
-})(ATreeTicTacToeStep||(ATreeTicTacToeStep={}));var Place=(function(){function a(b){this.game=b
-}a.prototype.addBackToButton=function(e,d,g,f,c,h,b){if(h===void 0){h=0}if(b===void 0){b=-1
-}if(b<0){b=e.getWidth()/2-g.length/2}e.addAsciiRealButton(g,b,h,c,f,true);e.addLinkCall("."+c,d)
-};a.prototype.addBackToMainMapButton=function(d,b,c){if(c===void 0){c="buttonBackToTheMap"
+var Place=(function(){function a(b){this.game=b}a.prototype.addBackToButton=function(e,d,g,f,c,h,b){if(h===void 0){h=0
+}if(b===void 0){b=-1}if(b<0){b=e.getWidth()/2-g.length/2}e.addAsciiRealButton(g,b,h,c,f,true);
+e.addLinkCall("."+c,d)};a.prototype.addBackToMainMapButton=function(d,b,c){if(c===void 0){c="buttonBackToTheMap"
 }this.addBackToButton(d,new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),Database.getText(c),Database.getTranslatedText(c),b)
 };a.prototype.getDefaultScroll=function(){return 0};a.prototype.getGame=function(){return this.game
 };a.prototype.getGap=function(){return 0};a.prototype.getRenderArea=function(){return new RenderArea()
@@ -78,11 +63,10 @@ function p(w){if(Bugs.getUltimateBugLevel()>=2){d(w,Random.flipACoin())}if(w in 
 }console.log("Error : trying to save the unknown number "+w+".")}u.saveNumber=b;function a(w,x,y){if(y===void 0){y=false
 }if(w in g||y){g[w]=x;return}console.log("Error : trying to save the unknown string "+w+".")
 }u.saveString=a})(Saving||(Saving={}));var __extends=(this&&this.__extends)||function(f,a){for(var e in a){if(a.hasOwnProperty(e)){f[e]=a[e]
-}}function c(){this.constructor=f}f.prototype=a===null?Object.create(a):(c.prototype=a.prototype,new c())
-};Saving.registerNumber("aTreeStep",0);var ATree=(function(b){__extends(a,b);function a(c){b.call(this,c);
-this.renderArea=new RenderArea();this.ticTacToeStep=null;this.ticTacToeBoard=null;
-if(Saving.loadNumber("aTreeStep")==7){this.startTicTacToe()}if(Saving.loadNumber("aTreeStep")==8){this.nextStep()
-}this.renderArea.resizeFromArray(Database.getAscii("places/aTree/background"),17,3);
+}}function c(){this.constructor=f}c.prototype=a.prototype;f.prototype=new c()};Saving.registerNumber("aTreeStep",0);
+var ATree=(function(b){__extends(a,b);function a(c){b.call(this,c);this.renderArea=new RenderArea();
+this.ticTacToeStep=null;this.ticTacToeBoard=null;if(Saving.loadNumber("aTreeStep")==7){this.startTicTacToe()
+}if(Saving.loadNumber("aTreeStep")==8){this.nextStep()}this.renderArea.resizeFromArray(Database.getAscii("places/aTree/background"),17,3);
 this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.addEnigma=function(d,g,f,e,c){if(e===void 0){e=""
 }if(c===void 0){c="Wrong"}this.renderArea.addEnigma(21,41,24,d,g,f,e,c)};a.prototype.drawSpeech=function(e,d,c){if(c===void 0){c=59
 }this.renderArea.drawSpeech(e,4,38,c,"aTreeSpeech",d)};a.prototype.drawTicTacToeBoard=function(h,c,g){if(h===void 0){h=true
@@ -162,8 +146,23 @@ this.renderArea.addLinkCall(".mapATreeTicTacToeTryAgainButton",new CallbackColle
 this.drawTicTacToeBoard(false);this.renderArea.addAsciiRealButton(Database.getText("mapATreeTicTacToeAnymoreSweet"),21,24,"mapATreeTicTacToeAnymoreSweet",Database.getTranslatedText("mapATreeTicTacToeAnymoreSweet"),true);
 this.renderArea.addLinkCall(".mapATreeTicTacToeAnymoreSweet",new CallbackCollection(this.nextStep.bind(this)));
 break;case 9:this.drawSpeech(Database.getText("mapATreeNoMoreChallenge"),Database.getTranslatedText("mapATreeNoMoreChallenge"));
-break}};return a})(Place);var BarType;(function(a){a[a.SIMPLE=0]="SIMPLE";a[a.HEALTH=1]="HEALTH";
-a[a.UNICOLOR_HEALTH=2]="UNICOLOR_HEALTH"})(BarType||(BarType={}));var RenderLink=(function(){function a(){}a.prototype.run=function(){};
+break}};return a})(Place);var ATreeTicTacToeMinimaxReturnValue=(function(){function a(){this.bestPosition=null;
+this.bestScore=null}return a})();var ATreeTicTacToeSign;(function(a){a[a.NO_SIGN=0]="NO_SIGN";
+a[a.X=1]="X";a[a.O=2]="O"})(ATreeTicTacToeSign||(ATreeTicTacToeSign={}));var ATreeTicTacToeStep;
+(function(a){a[a.PLAYING=0]="PLAYING";a[a.NOBODY_WINS=1]="NOBODY_WINS";a[a.YOU_LOSE=2]="YOU_LOSE"
+})(ATreeTicTacToeStep||(ATreeTicTacToeStep={}));var Algo;(function(i){function b(k){if(k<0){return 0
+}return k}i.correctIfUnderZero=b;function j(){return 9007199254740992}i.getMaximumJavascriptInt=j;
+function e(k){var l=new Pos();l.x=Random.between(-k,k);if(l.x!=0){l.y=Random.between(-k,k)
+}else{if(Random.flipACoin()){l.y=Random.between(-k,-1)}else{l.y=Random.between(1,k)
+}}if(Random.flipACoin()){l.invert()}return l}i.getRandomNotImmobileDirectionUpToThisSpeed=e;
+function a(k,l){if(l!=-1){return k.slice(0,l)+"<u>"+k.charAt(l)+"</u>"+k.slice(l+1,k.length)
+}else{return k}}i.makeUnderlinedLetter=a;function f(m){var l=m.toString();if(m<j()){if(l.length>3){for(var k=Math.floor(l.length/3);
+k>0;k--){if(k*3!=l.length){l=l.addAt(l.length-k*3," ")}}}}return l}i.numberToStringButNicely=f;
+function d(m,l,k){if(m==1){return m.toString()+l}return m.toString()+k}i.pluralFormat=d;
+function h(m,l,k){if(m==1){return f(m)+l}return f(m)+k}i.pluralFormatNicely=h;function c(k){return k.toLowerCase().replace(/[^\w]|_/g,"")
+}i.simplifyString=c;function g(l,k){if(l>k){return l}return k}i.takeBiggest=g})(Algo||(Algo={}));
+var BarType;(function(a){a[a.SIMPLE=0]="SIMPLE";a[a.HEALTH=1]="HEALTH";a[a.UNICOLOR_HEALTH=2]="UNICOLOR_HEALTH"
+})(BarType||(BarType={}));var RenderLink=(function(){function a(){}a.prototype.run=function(){};
 return a})();var RenderTag=(function(){function a(c,b){this.x=c;this.tagString=b}a.prototype.clone=function(){return new a(this.x,this.tagString)
 };a.prototype.draw=function(b){return b.addAt(this.x,this.tagString)};a.prototype.getString=function(){return this.tagString
 };a.prototype.getX=function(){return this.x};a.prototype.setX=function(b){this.x=b;
@@ -302,9 +301,7 @@ f<=j;f++){this.drawHorizontalLine(this.contentCharacter,(d?1:0),c,f)}}if(e){this
 }switch(this.type){case BarType.HEALTH:case BarType.UNICOLOR_HEALTH:if(this.type==BarType.HEALTH){if(h<0.2){g=ColorType.HEALTH_RED
 }else{if(h<0.5){g=ColorType.HEALTH_ORANGE}else{g=ColorType.HEALTH_GREEN}}}else{g=ColorType.HEALTH_UNICOLOR
 }if(c>0){for(var f=l;f<=j;f++){this.addBackgroundColor((d?1:0),(d?1:0)+c,f,new Color(g))
-}}break}return true};return a})(RenderArea);var BigSharkFinType;(function(a){a[a.RED=0]="RED";
-a[a.GREEN=1]="GREEN";a[a.PURPLE=2]="PURPLE"})(BigSharkFinType||(BigSharkFinType={}));
-var QuestEntity=(function(){function a(d,f,i,g,e,h,c,b){if(i===void 0){i=new Naming("???","???")
+}}break}return true};return a})(RenderArea);var QuestEntity=(function(){function a(d,f,i,g,e,h,c,b){if(i===void 0){i=new Naming("???","???")
 }if(g===void 0){g=null}if(e===void 0){e=new Pos(0,0)}if(h===void 0){h=null}if(c===void 0){c=null
 }if(b===void 0){b=null}this.dead=false;this.outOfArea=false;this.destructible=false;
 this.healthBar=null;this.transparency=null;this.noMovementLastUpdate=true;this.questEntityWeapons=[];
@@ -423,11 +420,12 @@ break}}};a.prototype.hasFin=function(c){this.finType=c};a.prototype.drawFinColor
 d.addBackgroundColor(this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+13,this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+15,this.getGlobalPosition().y+this.getQuest().getRealQuestPosition().y+this.getRenderAreaPosition().y+this.getQuest().getGlobalDrawingOffset().y+1,new Color(c));
 d.addBackgroundColor(this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+12,this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+16,this.getGlobalPosition().y+this.getQuest().getRealQuestPosition().y+this.getRenderAreaPosition().y+this.getQuest().getGlobalDrawingOffset().y+2,new Color(c));
 d.addBackgroundColor(this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+11,this.getGlobalPosition().x+this.getQuest().getRealQuestPosition().x+this.getRenderAreaPosition().x+this.getQuest().getGlobalDrawingOffset().x+18,this.getGlobalPosition().y+this.getQuest().getRealQuestPosition().y+this.getRenderAreaPosition().y+this.getQuest().getGlobalDrawingOffset().y+3,new Color(c))
-}};return a})(QuestEntity);var QuestEntitySpell=(function(b){__extends(a,b);function a(e,j,i,g,f,h,d,c){if(g===void 0){g=null
-}if(f===void 0){f=new Pos(0,0)}if(h===void 0){h=null}if(d===void 0){d=null}if(c===void 0){c=null
-}b.call(this,e,j,i,g,f,h,d,c);this.colors=[];this.setIsASpell(true)}a.prototype.addColor=function(c){this.colors.push(c)
-};a.prototype.draw=function(d){b.prototype.draw.call(this,d);for(var c=0;c<this.colors.length;
-c++){this.colors[c].draw(d,this.getQuest().getRealQuestPosition().plus(this.getGlobalPosition()).plus(this.getQuest().getGlobalDrawingOffset()))
+}};return a})(QuestEntity);var BigSharkFinType;(function(a){a[a.RED=0]="RED";a[a.GREEN=1]="GREEN";
+a[a.PURPLE=2]="PURPLE"})(BigSharkFinType||(BigSharkFinType={}));var QuestEntitySpell=(function(b){__extends(a,b);
+function a(e,j,i,g,f,h,d,c){if(g===void 0){g=null}if(f===void 0){f=new Pos(0,0)}if(h===void 0){h=null
+}if(d===void 0){d=null}if(c===void 0){c=null}b.call(this,e,j,i,g,f,h,d,c);this.colors=[];
+this.setIsASpell(true)}a.prototype.addColor=function(c){this.colors.push(c)};a.prototype.draw=function(d){b.prototype.draw.call(this,d);
+for(var c=0;c<this.colors.length;c++){this.colors[c].draw(d,this.getQuest().getRealQuestPosition().plus(this.getGlobalPosition()).plus(this.getQuest().getGlobalDrawingOffset()))
 }};a.prototype.removeColors=function(){this.colors=[]};return a})(QuestEntity);var Blackhole=(function(b){__extends(a,b);
 function a(c,f,d,e){b.call(this,c,f,new Naming("A blackhole","a blackhole"));this.damage=d;
 this.questEntityDamageReason=e;this.cbcDamage=new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-3),new Pos(2,1)),new CollisionBox(this,new Pos(-3,-2),new Pos(6,1)),new CollisionBox(this,new Pos(-4,-1),new Pos(8,1)),new CollisionBox(this,new Pos(-5,0),new Pos(10,1)),new CollisionBox(this,new Pos(-4,1),new Pos(8,1)),new CollisionBox(this,new Pos(-3,2),new Pos(6,1)),new CollisionBox(this,new Pos(-1,3),new Pos(2,1)));
@@ -547,8 +545,8 @@ c="You gain 600 health points.";break;case 3:d=this.getGame().getPlayer().getMax
 this.getGame().getPlayer().heal(d);c="You gain "+d+" health points.";break;case 4:d=this.getGame().getPlayer().getMaxHp()*65/100;
 this.getGame().getPlayer().heal(d);c="You gain "+d+" health points.";break;case 5:d=this.getGame().getPlayer().getMaxHp()*80/100;
 this.getGame().getPlayer().heal(d);c="You gain "+d+" health points.";break;case 6:this.getGame().getPlayer().heal(10);
-c="You gain 10 health points.";break;case 7:this.getGame().getPlayer().heal(10);c="You gain 7 health points.";
-break;case 8:this.getGame().getPlayer().heal(10);c="You gain 3 health points.";break
+c="You gain 10 health points.";break;case 7:this.getGame().getPlayer().heal(7);c="You gain 7 health points.";
+break;case 8:this.getGame().getPlayer().heal(3);c="You gain 3 health points.";break
 }}else{if(Random.oneChanceOutOf(Math.ceil((this.howManyPPotions+1)/2))){d=this.getGame().getPlayer().getMaxHp()*(Random.flipACoin()?20:30)/100;
 if(Random.oneChanceOutOf(3)){this.getGame().getPlayer().heal(-d);c="You lose "+d+" health points."
 }else{this.getGame().getPlayer().heal(d);c="You gain "+d+" health points."}}else{if(Random.oneChanceOutOf(Math.ceil((this.howManyPPotions+1)/6))){switch(Random.between(0,3)){case 0:this.getGame().getPlayer().stop(Random.between(30,100));
@@ -698,15 +696,28 @@ this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(5,7)}b.pro
 };return b})(QuestEntity);var StatusBarResource=(function(b){__extends(a,b);function a(c,d){b.call(this,d);
 this.game=c}a.prototype.setCurrent=function(d,c){if(c===void 0){c=false}b.prototype.setCurrent.call(this,d);
 if(c){this.game.getPlayer().reCalcMaxHp()}else{this.game.updateStatusBar()}};return a
-})(Resource);var CandiesEaten=(function(a){__extends(b,a);function b(c,d){a.call(this,c,d)
+})(Resource);var Candies=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d)
+}a.prototype.getCurrentAsString=function(c){if(c===void 0){c=10}var i=this.getCurrent();
+var d=c;var f="";var e="";var g="";var h="";if(i<0){return"What, negative candies?!"
+}else{if(i==1){return"You have 1 candy"}else{if(i==1337){f="leet"}else{f=Algo.numberToStringButNicely(i)
+}}}d=c-f.length;if(d>=8){g=" candies";d=c-f.length-g.length;if(d>=9){e="You have "
+}else{if(d>=3){e="-> "}}}else{if(d>=4){g=" cnd"}else{if(d>=2){g=" c"}}}d=c-f.length-e.length-g.length;
+if(i==42&&d>=4){h=" \\o/"}else{if((i==65535||i==314159)&&d>=1){h="!"}}return e+f+g+h
+};return a})(StatusBarResource);var CandiesEaten=(function(a){__extends(b,a);function b(c,d){a.call(this,c,d)
 }b.prototype.getCurrentAsString=function(){var c=this.getCurrent();if(c<0){return"You have eaten negative candies ?!"
 }else{if(c==1){return"You have eaten 1 candy"}else{return"You have eaten "+Algo.numberToStringButNicely(c)+" candies"
 }}};b.prototype.setCurrent=function(c){a.prototype.setCurrent.call(this,c,true)};
-return b})(StatusBarResource);var CandiesThrownSmileyCaveObject=(function(){function a(c,b){this.str=c;
-this.position=b}a.prototype.getPosition=function(){return this.position};a.prototype.getStr=function(){return this.str
-};return a})();var CandiesThrownSmileyCaveStep;(function(a){a[a.FIRST_ROOM=0]="FIRST_ROOM";
-a[a.SECOND_ROOM=1]="SECOND_ROOM";a[a.THIRD_ROOM=2]="THIRD_ROOM"})(CandiesThrownSmileyCaveStep||(CandiesThrownSmileyCaveStep={}));
-var CandiesThrownSmiley=(function(){function a(){}a.prototype.draw=function(c,b,e,d){return 0
+return b})(StatusBarResource);Saving.registerBool("candiesThrownGotChocolateBar",false);
+var CandiesThrown=(function(a){__extends(b,a);function b(c,d){a.call(this,d);this.smileys=[new CandiesThrownSmileyFirstLine("."),new CandiesThrownSmileyFirstLine("..."),new CandiesThrownSmileyFirstLine("...?"),new CandiesThrownSmileyFirstLine("...? :|"),new CandiesThrownSmileyFirstLine("...? :/"),new CandiesThrownSmileyFirstLine("...? :("),new CandiesThrownSmileyFirstLine("...? :["),new CandiesThrownSmileyFirstLine("...? :{"),new CandiesThrownSmileyFirstLine("...? :'("),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?  (;_;)"),new CandiesThrownSmileyFirstLine("...?   (;_;)"),new CandiesThrownSmileyFirstLine("...?    (;_;)"),new CandiesThrownSmileyFirstLine("...?   (;_;)"),new CandiesThrownSmileyFirstLine("...?  (;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;__;)"),new CandiesThrownSmileyFirstLine("...? (;___;)"),new CandiesThrownSmileyFirstLine("...? (;__;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;.;)"),new CandiesThrownSmileyFirstLine("...? (:.:)"),new CandiesThrownSmileyFirstLine("...? (:_:)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;) come"),new CandiesThrownSmileyFirstLine("...? (;_;) come on"),new CandiesThrownSmileyFirstLine("...? (-_-) come on"),new CandiesThrownSmileyFirstLine("...? (-_-)"),new CandiesThrownSmileyFirstLine("...? (-_-) why are you throwing candies like that?"),new CandiesThrownSmileyFirstLine("...? (o_o)"),new CandiesThrownSmileyFirstLine("...? (o_o) I'm gonna destroy something if you don't stop!!"),new CandiesThrownSmileyFirstLine("...? (o_o)"),new CandiesThrownSmileyFirstLine("...?  (o_o)"),new CandiesThrownSmileyFirstLine("...?   (o_o)"),new CandiesThrownSmileyFirstLine("...?    (o_o)"),new CandiesThrownSmileyFirstLine("...?     (o_o)"),new CandiesThrownSmileyFirstLine("...?      (o_o)"),new CandiesThrownSmileyFirstLine("...?       (o_o)"),new CandiesThrownSmileyFirstLine("...?       (O_O)"),new CandiesThrownSmileyFirstLine("...?      (O_O)"),new CandiesThrownSmileyFirstLine("...?     (O_O)"),new CandiesThrownSmileyFirstLine("...?    (O_O)"),new CandiesThrownSmileyFirstLine("...?   (O_O)"),new CandiesThrownSmileyFirstLine("...?  (O_O)"),new CandiesThrownSmileyFirstLine("...? (O_O)"),new CandiesThrownSmileyFirstLine("...?(O_O)"),new CandiesThrownSmileyFirstLine("...(O_O)"),new CandiesThrownSmileyFirstLine("..(O_O)"),new CandiesThrownSmileyFirstLine(".(O_O)"),new CandiesThrownSmileyFirstLine("(O_O)"),new CandiesThrownSmileyFirstLine(" (O_O)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o) stop!!"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (;_;)"),new CandiesThrownSmileyFirstLine(" (;_;) well."),new CandiesThrownSmileyFirstLine(" (;_;) I guess I'll just leave, then."),new CandiesThrownSmileyFirstLine("  (;_;)"),new CandiesThrownSmileyFirstLine("   (;_;)"),new CandiesThrownSmileyFirstLine("    (;_;)"),new CandiesThrownSmileyFirstLine("     (;_;)"),new CandiesThrownSmileyFirstLine("      (;_;)"),new CandiesThrownSmileyFirstLine("       (;_;)"),new CandiesThrownSmileyFirstLine("        (;_;)"),new CandiesThrownSmileyFirstLine("         (;_;)"),new CandiesThrownSmileyFirstLine("          (;_;)"),new CandiesThrownSmileyFirstLine("           (;_;)"),new CandiesThrownSmileyFirstLine("            (;_;)"),new CandiesThrownSmileyFirstLine("             (;_;)"),new CandiesThrownSmileyFirstLine("              (;_;)"),new CandiesThrownSmileyFirstLine("               (;_;)"),new CandiesThrownSmileyFirstLine("                (;_;)"),new CandiesThrownSmileyFirstLine("                 (;_;)"),new CandiesThrownSmileyFirstLine("                  (;_;)"),new CandiesThrownSmileyFirstLine("                   (;_;)"),new CandiesThrownSmileyFirstLine("                    (;_;)"),new CandiesThrownSmileyFirstLine("                     (;_;)"),new CandiesThrownSmileyFirstLine("                      (;_;)"),new CandiesThrownSmileyFirstLine("                      (;_;)|"),new CandiesThrownSmileyFirstLine("                      (o_o)|"),new CandiesThrownSmileyFirstLine("                 crap (o_o)|"),new CandiesThrownSmileyFirstLine("               a wall (o_o)|"),new CandiesThrownSmileyFirstLine("                      (._.)|"),new CandiesThrownSmileyFirstLine("     I'm trapped here (._.)|"),new CandiesThrownSmileyFirstLine("    maybe...          (._.)|"),new CandiesThrownSmileyFirstLine("    maybe I could dig (._.)|"),new CandiesThrownSmileyFirstLine("    dig in the ground (._.)|"),new CandiesThrownSmileyFirstLine("                      (._.)|"),new CandiesThrownSmileyFirstLine("                *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyCave("(O_O)",new Pos(57,1)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,2)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,3)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,4)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,5)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,6)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)).addObject(new CandiesThrownSmileyCaveObject("wow.",new Pos(52,5))),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)).addObject(new CandiesThrownSmileyCaveObject("I didn't expect that.",new Pos(35,5))),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(55,7)),new CandiesThrownSmileyCave("(._.)",new Pos(53,7)),new CandiesThrownSmileyCave("(._.)",new Pos(51,7)),new CandiesThrownSmileyCave("(._.)",new Pos(49,7)),new CandiesThrownSmileyCave("(._.)",new Pos(47,7)),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)).addObject(new CandiesThrownSmileyCaveObject("what's this place?",new Pos(39,5))),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)),new CandiesThrownSmileyCave("(._.)",new Pos(43,7)),new CandiesThrownSmileyCave("(._.)",new Pos(41,7)),new CandiesThrownSmileyCave("(._.)",new Pos(39,7)),new CandiesThrownSmileyCave("(._.)",new Pos(37,7)),new CandiesThrownSmileyCave("(._.)",new Pos(35,7)),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)).addObject(new CandiesThrownSmileyCaveObject("it looks like a cave",new Pos(26,5))),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)),new CandiesThrownSmileyCave("(._.)",new Pos(31,7)),new CandiesThrownSmileyCave("(._.)",new Pos(29,7)),new CandiesThrownSmileyCave("(._.)",new Pos(27,7)),new CandiesThrownSmileyCave("(._.)",new Pos(25,7)),new CandiesThrownSmileyCave("(._.)",new Pos(23,7)),new CandiesThrownSmileyCave("(._.)",new Pos(21,7)),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)).addObject(new CandiesThrownSmileyCaveObject("oh! there's a chest over there!",new Pos(8,5))),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)),new CandiesThrownSmileyCave("(._.)",new Pos(17,7)),new CandiesThrownSmileyCave("(._.)",new Pos(15,7)),new CandiesThrownSmileyCave("(._.)",new Pos(13,7)),new CandiesThrownSmileyCave("(._.)",new Pos(11,7)),new CandiesThrownSmileyCave("(._.)",new Pos(9,7)),new CandiesThrownSmileyCave("(._.)",new Pos(7,7)),new CandiesThrownSmileyCave("(._.)",new Pos(5,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I guess I should open it",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).openChest(),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("!!!",new Pos(5,5))).openChest(),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I found a chocolate bar!",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("...",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("hey, listen",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I'll give you the chocolate bar",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("if you swear to stop throwing candies",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("okay?",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("throw 10 last candies to let me know if you agree",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("good. here's the bar. no more throwing!!",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("Hey?!",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("You're still throwing candies!",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("Candies are precious, you know.",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("...",new Pos(5,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I'm out of here.",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,8),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,9),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,10),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,11),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,12),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,13),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,14),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(6,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(8,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(10,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(12,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,14),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,13),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,12),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(13,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(15,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(17,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("this is...",new Pos(13,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("a room...",new Pos(13,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("FULL OF GIANT CANDIES!",new Pos(33,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("well",new Pos(16,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("don't worry about the candies you threw",new Pos(6,7))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("just let me eat those candies and you're forgiven",new Pos(6,7))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("<3",new Pos(17,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(20,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(22,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(22,10),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(23,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(25,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(27,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(29,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(31,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(33,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(34,10),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(34,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(36,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(38,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(40,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(42,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM)];
+this.nomNomSmileys=[new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(40,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(41,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(42,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(43,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(44,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(45,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(46,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom* *nom*",new Pos(40,9)))];
+this.nomNomSmileyIndex=0;this.game=c}b.prototype.add=function(d){var c=a.prototype.add.call(this,d);
+if(Saving.loadBool("candiesThrownGotChocolateBar")==false&&Math.floor(this.getCurrent()/10)-1==162){this.game.getChocolateBars().add(1);
+Saving.saveBool("candiesThrownGotChocolateBar",true)}this.nomNomSmileyIndex=Random.between(0,this.nomNomSmileys.length-1);
+return c};b.prototype.draw=function(d,c,h){var g=this.getCurrent();var f;var e;if(g<0){e="You threw negative candies ?!"
+}else{if(g==1){e="You threw 1 candy on the ground"}else{e="You threw "+Algo.numberToStringButNicely(g)+" candies on the ground"
+}}f=Math.floor(g/10)-1;if(f>=0&&f<this.smileys.length){return this.smileys[f].draw(d,c,h,e)
+}else{if(f<0){d.drawString(e,c,h);return 0}else{return this.nomNomSmileys[this.nomNomSmileyIndex].draw(d,c,h,e)
+}}};return b})(Resource);var CandiesThrownSmiley=(function(){function a(){}a.prototype.draw=function(c,b,e,d){return 0
 };return a})();var CandiesThrownSmileyCave=(function(b){__extends(a,b);function a(d,e,c){if(c===void 0){c=CandiesThrownSmileyCaveStep.FIRST_ROOM
 }b.call(this);this.objects=[];this.chestOpened=false;this.smiley=d;this.smileyPosition=e;
 this.step=c}a.prototype.draw=function(e,c,g,f){e.drawString(f,c,g);e.drawVerticalLine("|",0,g+2,g+8);
@@ -721,29 +732,17 @@ break}e.drawString("|_|",1,g+7);if(this.chestOpened==false){e.drawString("_",2,g
 for(var d=0;d<this.objects.length;d++){e.drawString(this.objects[d].getStr(),c+this.objects[d].getPosition().x,g+this.objects[d].getPosition().y)
 }switch(this.step){case CandiesThrownSmileyCaveStep.FIRST_ROOM:return 8;break;case CandiesThrownSmileyCaveStep.SECOND_ROOM:case CandiesThrownSmileyCaveStep.THIRD_ROOM:return 16;
 break}};a.prototype.addObject=function(c){this.objects.push(c);return this};a.prototype.openChest=function(){this.chestOpened=true;
-return this};return a})(CandiesThrownSmiley);var CandiesThrownSmileyFirstLine=(function(b){__extends(a,b);
-function a(c){b.call(this);this.line=c}a.prototype.draw=function(d,c,f,e){d.drawString(e+this.line,c,f);
-return 0};return a})(CandiesThrownSmiley);Saving.registerBool("candiesThrownGotChocolateBar",false);
-var CandiesThrown=(function(a){__extends(b,a);function b(c,d){a.call(this,d);this.smileys=[new CandiesThrownSmileyFirstLine("."),new CandiesThrownSmileyFirstLine("..."),new CandiesThrownSmileyFirstLine("...?"),new CandiesThrownSmileyFirstLine("...? :|"),new CandiesThrownSmileyFirstLine("...? :/"),new CandiesThrownSmileyFirstLine("...? :("),new CandiesThrownSmileyFirstLine("...? :["),new CandiesThrownSmileyFirstLine("...? :{"),new CandiesThrownSmileyFirstLine("...? :'("),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?  (;_;)"),new CandiesThrownSmileyFirstLine("...?   (;_;)"),new CandiesThrownSmileyFirstLine("...?    (;_;)"),new CandiesThrownSmileyFirstLine("...?   (;_;)"),new CandiesThrownSmileyFirstLine("...?  (;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;__;)"),new CandiesThrownSmileyFirstLine("...? (;___;)"),new CandiesThrownSmileyFirstLine("...? (;__;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;.;)"),new CandiesThrownSmileyFirstLine("...? (:.:)"),new CandiesThrownSmileyFirstLine("...? (:_:)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...?(;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;)"),new CandiesThrownSmileyFirstLine("...? (;_;) come"),new CandiesThrownSmileyFirstLine("...? (;_;) come on"),new CandiesThrownSmileyFirstLine("...? (-_-) come on"),new CandiesThrownSmileyFirstLine("...? (-_-)"),new CandiesThrownSmileyFirstLine("...? (-_-) why are you throwing candies like that?"),new CandiesThrownSmileyFirstLine("...? (o_o)"),new CandiesThrownSmileyFirstLine("...? (o_o) I'm gonna destroy something if you don't stop!!"),new CandiesThrownSmileyFirstLine("...? (o_o)"),new CandiesThrownSmileyFirstLine("...?  (o_o)"),new CandiesThrownSmileyFirstLine("...?   (o_o)"),new CandiesThrownSmileyFirstLine("...?    (o_o)"),new CandiesThrownSmileyFirstLine("...?     (o_o)"),new CandiesThrownSmileyFirstLine("...?      (o_o)"),new CandiesThrownSmileyFirstLine("...?       (o_o)"),new CandiesThrownSmileyFirstLine("...?       (O_O)"),new CandiesThrownSmileyFirstLine("...?      (O_O)"),new CandiesThrownSmileyFirstLine("...?     (O_O)"),new CandiesThrownSmileyFirstLine("...?    (O_O)"),new CandiesThrownSmileyFirstLine("...?   (O_O)"),new CandiesThrownSmileyFirstLine("...?  (O_O)"),new CandiesThrownSmileyFirstLine("...? (O_O)"),new CandiesThrownSmileyFirstLine("...?(O_O)"),new CandiesThrownSmileyFirstLine("...(O_O)"),new CandiesThrownSmileyFirstLine("..(O_O)"),new CandiesThrownSmileyFirstLine(".(O_O)"),new CandiesThrownSmileyFirstLine("(O_O)"),new CandiesThrownSmileyFirstLine(" (O_O)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o) stop!!"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (o_o)"),new CandiesThrownSmileyFirstLine(" (;_;)"),new CandiesThrownSmileyFirstLine(" (;_;) well."),new CandiesThrownSmileyFirstLine(" (;_;) I guess I'll just leave, then."),new CandiesThrownSmileyFirstLine("  (;_;)"),new CandiesThrownSmileyFirstLine("   (;_;)"),new CandiesThrownSmileyFirstLine("    (;_;)"),new CandiesThrownSmileyFirstLine("     (;_;)"),new CandiesThrownSmileyFirstLine("      (;_;)"),new CandiesThrownSmileyFirstLine("       (;_;)"),new CandiesThrownSmileyFirstLine("        (;_;)"),new CandiesThrownSmileyFirstLine("         (;_;)"),new CandiesThrownSmileyFirstLine("          (;_;)"),new CandiesThrownSmileyFirstLine("           (;_;)"),new CandiesThrownSmileyFirstLine("            (;_;)"),new CandiesThrownSmileyFirstLine("             (;_;)"),new CandiesThrownSmileyFirstLine("              (;_;)"),new CandiesThrownSmileyFirstLine("               (;_;)"),new CandiesThrownSmileyFirstLine("                (;_;)"),new CandiesThrownSmileyFirstLine("                 (;_;)"),new CandiesThrownSmileyFirstLine("                  (;_;)"),new CandiesThrownSmileyFirstLine("                   (;_;)"),new CandiesThrownSmileyFirstLine("                    (;_;)"),new CandiesThrownSmileyFirstLine("                     (;_;)"),new CandiesThrownSmileyFirstLine("                      (;_;)"),new CandiesThrownSmileyFirstLine("                      (;_;)|"),new CandiesThrownSmileyFirstLine("                      (o_o)|"),new CandiesThrownSmileyFirstLine("                 crap (o_o)|"),new CandiesThrownSmileyFirstLine("               a wall (o_o)|"),new CandiesThrownSmileyFirstLine("                      (._.)|"),new CandiesThrownSmileyFirstLine("     I'm trapped here (._.)|"),new CandiesThrownSmileyFirstLine("    maybe...          (._.)|"),new CandiesThrownSmileyFirstLine("    maybe I could dig (._.)|"),new CandiesThrownSmileyFirstLine("    dig in the ground (._.)|"),new CandiesThrownSmileyFirstLine("                      (._.)|"),new CandiesThrownSmileyFirstLine("                *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyFirstLine("                    (._.)|"),new CandiesThrownSmileyFirstLine("              *dig* (._.)|"),new CandiesThrownSmileyCave("(O_O)",new Pos(57,1)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,2)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,3)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,4)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,5)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,6)),new CandiesThrownSmileyCave("(O_O)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)).addObject(new CandiesThrownSmileyCaveObject("wow.",new Pos(52,5))),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)).addObject(new CandiesThrownSmileyCaveObject("I didn't expect that.",new Pos(35,5))),new CandiesThrownSmileyCave("(._.)",new Pos(57,7)),new CandiesThrownSmileyCave("(._.)",new Pos(55,7)),new CandiesThrownSmileyCave("(._.)",new Pos(53,7)),new CandiesThrownSmileyCave("(._.)",new Pos(51,7)),new CandiesThrownSmileyCave("(._.)",new Pos(49,7)),new CandiesThrownSmileyCave("(._.)",new Pos(47,7)),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)).addObject(new CandiesThrownSmileyCaveObject("what's this place?",new Pos(39,5))),new CandiesThrownSmileyCave("(._.)",new Pos(45,7)),new CandiesThrownSmileyCave("(._.)",new Pos(43,7)),new CandiesThrownSmileyCave("(._.)",new Pos(41,7)),new CandiesThrownSmileyCave("(._.)",new Pos(39,7)),new CandiesThrownSmileyCave("(._.)",new Pos(37,7)),new CandiesThrownSmileyCave("(._.)",new Pos(35,7)),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)).addObject(new CandiesThrownSmileyCaveObject("it looks like a cave",new Pos(26,5))),new CandiesThrownSmileyCave("(._.)",new Pos(33,7)),new CandiesThrownSmileyCave("(._.)",new Pos(31,7)),new CandiesThrownSmileyCave("(._.)",new Pos(29,7)),new CandiesThrownSmileyCave("(._.)",new Pos(27,7)),new CandiesThrownSmileyCave("(._.)",new Pos(25,7)),new CandiesThrownSmileyCave("(._.)",new Pos(23,7)),new CandiesThrownSmileyCave("(._.)",new Pos(21,7)),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)).addObject(new CandiesThrownSmileyCaveObject("oh! there's a chest over there!",new Pos(8,5))),new CandiesThrownSmileyCave("(._.)",new Pos(19,7)),new CandiesThrownSmileyCave("(._.)",new Pos(17,7)),new CandiesThrownSmileyCave("(._.)",new Pos(15,7)),new CandiesThrownSmileyCave("(._.)",new Pos(13,7)),new CandiesThrownSmileyCave("(._.)",new Pos(11,7)),new CandiesThrownSmileyCave("(._.)",new Pos(9,7)),new CandiesThrownSmileyCave("(._.)",new Pos(7,7)),new CandiesThrownSmileyCave("(._.)",new Pos(5,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I guess I should open it",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).openChest(),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("!!!",new Pos(5,5))).openChest(),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I found a chocolate bar!",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("...",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("hey, listen",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I'll give you the chocolate bar",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("if you swear to stop throwing candies",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("okay?",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("throw 10 last candies to let me know if you agree",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("good. here's the bar. no more throwing!!",new Pos(3,5))),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)),new CandiesThrownSmileyCave("(._.)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("Hey?!",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("You're still throwing candies!",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("Candies are precious, you know.",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("...",new Pos(5,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("I'm out of here.",new Pos(3,5))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)),new CandiesThrownSmileyCave("(;_;)",new Pos(4,7)).addObject(new CandiesThrownSmileyCaveObject("*dig*",new Pos(10,7))),new CandiesThrownSmileyCave("(;_;)",new Pos(4,8),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,9),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,10),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,11),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,12),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,13),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,14),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(4,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(6,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(8,15),CandiesThrownSmileyCaveStep.SECOND_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(10,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(;_;)",new Pos(12,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,15),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,14),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,13),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(12,12),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(13,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(15,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(17,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(o_o)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("this is...",new Pos(13,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("a room...",new Pos(13,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("FULL OF GIANT CANDIES!",new Pos(33,9))),new CandiesThrownSmileyCave("(O_O)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("well",new Pos(16,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("don't worry about the candies you threw",new Pos(6,7))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("just let me eat those candies and you're forgiven",new Pos(6,7))),new CandiesThrownSmileyCave("(^_^)",new Pos(18,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("<3",new Pos(17,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(20,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(22,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(22,10),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(23,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(25,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(27,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(29,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(31,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(33,9),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(34,10),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(34,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(36,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(38,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(40,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(42,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM)];
-this.nomNomSmileys=[new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(40,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(41,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(42,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(43,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(44,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(45,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom*",new Pos(46,9))),new CandiesThrownSmileyCave("(^_^)",new Pos(43,11),CandiesThrownSmileyCaveStep.THIRD_ROOM).addObject(new CandiesThrownSmileyCaveObject("*nom* *nom*",new Pos(40,9)))];
-this.nomNomSmileyIndex=0;this.game=c}b.prototype.add=function(d){var c=a.prototype.add.call(this,d);
-if(Saving.loadBool("candiesThrownGotChocolateBar")==false&&Math.floor(this.getCurrent()/10)-1==162){this.game.getChocolateBars().add(1);
-Saving.saveBool("candiesThrownGotChocolateBar",true)}this.nomNomSmileyIndex=Random.between(0,this.nomNomSmileys.length-1);
-return c};b.prototype.draw=function(d,c,h){var g=this.getCurrent();var f;var e;if(g<0){e="You threw negative candies ?!"
-}else{if(g==1){e="You threw 1 candy on the ground"}else{e="You threw "+Algo.numberToStringButNicely(g)+" candies on the ground"
-}}f=Math.floor(g/10)-1;if(f>=0&&f<this.smileys.length){return this.smileys[f].draw(d,c,h,e)
-}else{if(f<0){d.drawString(e,c,h);return 0}else{return this.nomNomSmileys[this.nomNomSmileyIndex].draw(d,c,h,e)
-}}};return b})(Resource);var Candies=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d)
-}a.prototype.getCurrentAsString=function(c){if(c===void 0){c=10}var i=this.getCurrent();
-var d=c;var f="";var e="";var g="";var h="";if(i<0){return"What, negative candies?!"
-}else{if(i==1){return"You have 1 candy"}else{if(i==1337){f="leet"}else{f=Algo.numberToStringButNicely(i)
-}}}d=c-f.length;if(d>=8){g=" candies";d=c-f.length-g.length;if(d>=9){e="You have "
-}else{if(d>=3){e="-> "}}}else{if(d>=4){g=" cnd"}else{if(d>=2){g=" c"}}}d=c-f.length-e.length-g.length;
-if(i==42&&d>=4){h=" \\o/"}else{if((i==65535||i==314159)&&d>=1){h="!"}}return e+f+g+h
-};return a})(StatusBarResource);Saving.registerBool("candyBoxBoxOpened",false);var CandyBox=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.eatButtonShown=false;
-this.throwButtonShown=false;this.requestFeatureButtonShown=false;this.renderArea.resize(100,40);
-this.update()}a.prototype.willBeDisplayed=function(){this.checkCandies();this.getGame().getCandies().getCallbackCollection().addCallback(this.checkCandies.bind(this));
+return this};return a})(CandiesThrownSmiley);var CandiesThrownSmileyCaveObject=(function(){function a(c,b){this.str=c;
+this.position=b}a.prototype.getPosition=function(){return this.position};a.prototype.getStr=function(){return this.str
+};return a})();var CandiesThrownSmileyCaveStep;(function(a){a[a.FIRST_ROOM=0]="FIRST_ROOM";
+a[a.SECOND_ROOM=1]="SECOND_ROOM";a[a.THIRD_ROOM=2]="THIRD_ROOM"})(CandiesThrownSmileyCaveStep||(CandiesThrownSmileyCaveStep={}));
+var CandiesThrownSmileyFirstLine=(function(b){__extends(a,b);function a(c){b.call(this);
+this.line=c}a.prototype.draw=function(d,c,f,e){d.drawString(e+this.line,c,f);return 0
+};return a})(CandiesThrownSmiley);Saving.registerBool("candyBoxBoxOpened",false);
+var CandyBox=(function(b){__extends(a,b);function a(c){b.call(this,c);this.renderArea=new RenderArea();
+this.eatButtonShown=false;this.throwButtonShown=false;this.requestFeatureButtonShown=false;
+this.renderArea.resize(100,40);this.update()}a.prototype.willBeDisplayed=function(){this.checkCandies();
+this.getGame().getCandies().getCallbackCollection().addCallback(this.checkCandies.bind(this));
 this.getGame().addHotkey(new Hotkey("e",new CallbackCollection(this.clickedEatCandiesButton.bind(this))));
 this.getGame().addHotkey(new Hotkey("t",new CallbackCollection(this.clickedThrowCandiesButton.bind(this))))
 };a.prototype.update=function(){var c=0;this.renderArea.resetAllButSize();if(Saving.loadBool("lonelyHouseTakeTheBoxDone")){if(Saving.loadBool("candyBoxBoxOpened")==true){this.renderArea.drawArray(Database.getAscii("general/openBox"),68,4)
@@ -825,7 +824,52 @@ this.getGame().gainItem("eqItemHatMerchantHat")};b.prototype.canBeClicked=functi
 function a(){b.apply(this,arguments)}a.prototype.buy=function(){b.prototype.buy.call(this);
 this.getGame().gainItem("gridItemPossessedTimeRing")};a.prototype.canBeShown=function(){if(b.prototype.canBeShown.call(this)==false){return false
 }if(Saving.loadBool("statusBarUnlockedInventory")==false){return false}return true
-};return a})(CandyMerchantItem);var CastleRoom=(function(a){__extends(b,a);function b(c){a.call(this,c)
+};return a})(CandyMerchantItem);Saving.registerBool("castleKilledNougatMonster",false);
+var Castle=(function(a){__extends(b,a);function b(c){a.call(this,c);this.renderArea=new RenderArea();
+this.renderArea.resizeFromArray(Database.getAscii("places/castle/map"),0,5);this.update()
+}b.prototype.getRenderArea=function(){return this.renderArea};b.prototype.drawBigRoom=function(c,d){this.renderArea.addMultipleAsciiButtons("castleBigRoomButton",c,c+1,d,c,c+1,d+1);
+this.renderArea.addFullComment(c-9,d,Database.getText("castleBigRoomComment"),Database.getTranslatedText("castleBigRoomComment"),"castleBigRoomComment");
+this.renderArea.addLinkOver(".castleBigRoomButton, .castleBigRoomComment",".castleBigRoomComment");
+this.renderArea.addLinkCall(".castleBigRoomButton",new CallbackCollection(this.goToBigRoom.bind(this)))
+};b.prototype.drawCastleEntrance=function(c,d){this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton",c,c+2,d);
+this.renderArea.addFullComment(c+1,d+1,Database.getText("castleCastleEntranceComment"),Database.getTranslatedText("castleCastleEntranceComment"),"castleCastleEntranceComment");
+this.renderArea.addLinkOver(".castleCastleEntranceButton, .castleCastleEntranceComment",".castleCastleEntranceComment")
+};b.prototype.drawNougatMonster=function(c,d){this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton",c+1,c+8,d,c,c+10,d+1,c,c+10,d+2,c+1,c+8,d+3);
+this.renderArea.addFullComment(c+5,d-2,Database.getText("castleNougatMonsterComment"),Database.getTranslatedText("castleNougatMonsterComment"),"castleNougatMonsterComment");
+this.renderArea.addLinkOver(".castleNougatMonsterButton, .castleNougatMonsterComment",".castleNougatMonsterComment");
+this.renderArea.addLinkCall(".castleNougatMonsterButton",new CallbackCollection(this.goToNougatMonster.bind(this)))
+};b.prototype.drawRoom1=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom1Button",c,c+1,d,c,c+1,d+1);
+this.renderArea.addFullComment(c-6,d,Database.getText("castleARoomComment"),Database.getTranslatedText("castleARoomComment"),"castleRoom1Comment");
+this.renderArea.addLinkOver(".castleRoom1Button, .castleRoom1Comment",".castleRoom1Comment");
+this.renderArea.addLinkCall(".castleRoom1Button, .castleRoom1Comment",new CallbackCollection(this.goToRoom1.bind(this)))
+};b.prototype.drawRoom2=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom2Button",c,c+1,d,c,c+1,d+1);
+this.renderArea.addFullComment(c-6,d,Database.getText("castleADarkRoomComment"),Database.getTranslatedText("castleADarkRoomComment"),"castleRoom2Comment");
+this.renderArea.addLinkOver(".castleRoom2Button, .castleRoom2Comment",".castleRoom2Comment");
+this.renderArea.addLinkCall(".castleRoom2Button, .castleRoom2Comment",new CallbackCollection(this.goToRoom2.bind(this)))
+};b.prototype.drawRoom3=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom3Button",c,c+1,d,c,c+1,d+1);
+this.renderArea.addFullComment(c-6,d,Database.getText("castleARoomComment"),Database.getTranslatedText("castleARoomComment"),"castleRoom3Comment");
+this.renderArea.addLinkOver(".castleRoom3Button, .castleRoom3Comment",".castleRoom3Comment");
+this.renderArea.addLinkCall(".castleRoom3Button, .castleRoom3Comment",new CallbackCollection(this.goToRoom3.bind(this)))
+};b.prototype.drawStairs=function(c,d){this.renderArea.addMultipleAsciiButtons("castleStairsButton",c,c+4,d,c,c+4,d+1,c,c+4,d+2,c,c+4,d+3,c,c+4,d+4);
+this.renderArea.addFullComment(c+10,d+2,Database.getText("castleStairsComment"),Database.getTranslatedText("castleStairsComment"),"castleStairsComment");
+this.renderArea.addLinkOver(".castleStairsButton, .castleStairsComment",".castleStairsComment");
+this.renderArea.addLinkCall(".castleStairsButton",new CallbackCollection(this.goToStairs.bind(this)))
+};b.prototype.drawTowerEntrance=function(c,d){this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton",c,c+1,d,c,c+1,d+1);
+this.renderArea.addFullComment(c+12,d,Database.getText("castleTowerEntranceComment"),Database.getTranslatedText("castleTowerEntranceComment"),"castleTowerEntranceComment");
+this.renderArea.addLinkOver(".castleTowerEntranceButton, .castleTowerEntranceComment",".castleTowerEntranceComment");
+this.renderArea.addLinkCall(".castleTowerEntranceButton",new CallbackCollection(this.goToTowerEntrance.bind(this)))
+};b.prototype.goToBigRoom=function(){this.getGame().setPlace(new CastleBigRoom(this.getGame()))
+};b.prototype.goToNougatMonster=function(){this.getGame().setPlace(new GiantNougatMonsterQuest(this.getGame()))
+};b.prototype.goToRoom1=function(){this.getGame().setPlace(new CastleRoom1(this.getGame()))
+};b.prototype.goToRoom2=function(){this.getGame().setPlace(new CastleRoom2(this.getGame()))
+};b.prototype.goToRoom3=function(){this.getGame().setPlace(new CastleRoom3(this.getGame()))
+};b.prototype.goToStairs=function(){this.getGame().setPlace(new Dragon(this.getGame()))
+};b.prototype.goToTowerEntrance=function(){this.getGame().setPlace(new CastleTower(this.getGame()))
+};b.prototype.update=function(){this.renderArea.resetAllButSize();this.addBackToMainMapButton(this.renderArea,"castleBackToTheMapButton");
+this.renderArea.drawArray(Database.getAscii("places/castle/map"),0,3);this.drawCastleEntrance(43,36);
+this.drawBigRoom(57,19);this.drawRoom1(15,27);this.drawRoom2(15,21);this.drawRoom3(15,15);
+this.drawNougatMonster(68,15);this.drawStairs(32,3);if(Saving.loadBool("castleKilledNougatMonster")){this.drawTowerEntrance(84,16)
+}};return b})(Place);var CastleRoom=(function(a){__extends(b,a);function b(c){a.call(this,c)
 }b.prototype.addBackToTheCastleButton=function(d,c){this.addBackToButton(d,new CallbackCollection(this.getGame().goToCastle.bind(this.getGame())),Database.getText("buttonBackToTheCastle"),Database.getTranslatedText("buttonBackToTheCastle"),c)
 };return b})(Place);Saving.registerBool("castleBigRoomHovenHappy",false);var CastleBigRoom=(function(a){__extends(b,a);
 function b(c){a.call(this,c);this.renderArea=new RenderArea();this.hovenWaiting=true;
@@ -971,58 +1015,7 @@ this.drawStone("gridItemPossessedY","castleTowerYStoneDone","gridItems/y",new Po
 this.getGame().gainItem("gridItemPossessedTalkingCandy");this.update();this.getGame().updatePlace()
 };a.prototype.update=function(){this.renderArea.resetAllButSize();this.addBackToTheCastleButton(this.renderArea,"castleTowerBackToTheCastleButton");
 this.drawBackground();this.drawStones();this.drawTalkingCandy()};return a})(CastleRoom);
-Saving.registerBool("castleKilledNougatMonster",false);var Castle=(function(a){__extends(b,a);
-function b(c){a.call(this,c);this.renderArea=new RenderArea();this.renderArea.resizeFromArray(Database.getAscii("places/castle/map"),0,5);
-this.update()}b.prototype.getRenderArea=function(){return this.renderArea};b.prototype.drawBigRoom=function(c,d){this.renderArea.addMultipleAsciiButtons("castleBigRoomButton",c,c+1,d,c,c+1,d+1);
-this.renderArea.addFullComment(c-9,d,Database.getText("castleBigRoomComment"),Database.getTranslatedText("castleBigRoomComment"),"castleBigRoomComment");
-this.renderArea.addLinkOver(".castleBigRoomButton, .castleBigRoomComment",".castleBigRoomComment");
-this.renderArea.addLinkCall(".castleBigRoomButton",new CallbackCollection(this.goToBigRoom.bind(this)))
-};b.prototype.drawCastleEntrance=function(c,d){this.renderArea.addMultipleAsciiNinjaButtons("castleCastleEntranceButton",c,c+2,d);
-this.renderArea.addFullComment(c+1,d+1,Database.getText("castleCastleEntranceComment"),Database.getTranslatedText("castleCastleEntranceComment"),"castleCastleEntranceComment");
-this.renderArea.addLinkOver(".castleCastleEntranceButton, .castleCastleEntranceComment",".castleCastleEntranceComment")
-};b.prototype.drawNougatMonster=function(c,d){this.renderArea.addMultipleAsciiButtons("castleNougatMonsterButton",c+1,c+8,d,c,c+10,d+1,c,c+10,d+2,c+1,c+8,d+3);
-this.renderArea.addFullComment(c+5,d-2,Database.getText("castleNougatMonsterComment"),Database.getTranslatedText("castleNougatMonsterComment"),"castleNougatMonsterComment");
-this.renderArea.addLinkOver(".castleNougatMonsterButton, .castleNougatMonsterComment",".castleNougatMonsterComment");
-this.renderArea.addLinkCall(".castleNougatMonsterButton",new CallbackCollection(this.goToNougatMonster.bind(this)))
-};b.prototype.drawRoom1=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom1Button",c,c+1,d,c,c+1,d+1);
-this.renderArea.addFullComment(c-6,d,Database.getText("castleARoomComment"),Database.getTranslatedText("castleARoomComment"),"castleRoom1Comment");
-this.renderArea.addLinkOver(".castleRoom1Button, .castleRoom1Comment",".castleRoom1Comment");
-this.renderArea.addLinkCall(".castleRoom1Button, .castleRoom1Comment",new CallbackCollection(this.goToRoom1.bind(this)))
-};b.prototype.drawRoom2=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom2Button",c,c+1,d,c,c+1,d+1);
-this.renderArea.addFullComment(c-6,d,Database.getText("castleADarkRoomComment"),Database.getTranslatedText("castleADarkRoomComment"),"castleRoom2Comment");
-this.renderArea.addLinkOver(".castleRoom2Button, .castleRoom2Comment",".castleRoom2Comment");
-this.renderArea.addLinkCall(".castleRoom2Button, .castleRoom2Comment",new CallbackCollection(this.goToRoom2.bind(this)))
-};b.prototype.drawRoom3=function(c,d){this.renderArea.addMultipleAsciiButtons("castleRoom3Button",c,c+1,d,c,c+1,d+1);
-this.renderArea.addFullComment(c-6,d,Database.getText("castleARoomComment"),Database.getTranslatedText("castleARoomComment"),"castleRoom3Comment");
-this.renderArea.addLinkOver(".castleRoom3Button, .castleRoom3Comment",".castleRoom3Comment");
-this.renderArea.addLinkCall(".castleRoom3Button, .castleRoom3Comment",new CallbackCollection(this.goToRoom3.bind(this)))
-};b.prototype.drawStairs=function(c,d){this.renderArea.addMultipleAsciiButtons("castleStairsButton",c,c+4,d,c,c+4,d+1,c,c+4,d+2,c,c+4,d+3,c,c+4,d+4);
-this.renderArea.addFullComment(c+10,d+2,Database.getText("castleStairsComment"),Database.getTranslatedText("castleStairsComment"),"castleStairsComment");
-this.renderArea.addLinkOver(".castleStairsButton, .castleStairsComment",".castleStairsComment");
-this.renderArea.addLinkCall(".castleStairsButton",new CallbackCollection(this.goToStairs.bind(this)))
-};b.prototype.drawTowerEntrance=function(c,d){this.renderArea.addMultipleAsciiButtons("castleTowerEntranceButton",c,c+1,d,c,c+1,d+1);
-this.renderArea.addFullComment(c+12,d,Database.getText("castleTowerEntranceComment"),Database.getTranslatedText("castleTowerEntranceComment"),"castleTowerEntranceComment");
-this.renderArea.addLinkOver(".castleTowerEntranceButton, .castleTowerEntranceComment",".castleTowerEntranceComment");
-this.renderArea.addLinkCall(".castleTowerEntranceButton",new CallbackCollection(this.goToTowerEntrance.bind(this)))
-};b.prototype.goToBigRoom=function(){this.getGame().setPlace(new CastleBigRoom(this.getGame()))
-};b.prototype.goToNougatMonster=function(){this.getGame().setPlace(new GiantNougatMonsterQuest(this.getGame()))
-};b.prototype.goToRoom1=function(){this.getGame().setPlace(new CastleRoom1(this.getGame()))
-};b.prototype.goToRoom2=function(){this.getGame().setPlace(new CastleRoom2(this.getGame()))
-};b.prototype.goToRoom3=function(){this.getGame().setPlace(new CastleRoom3(this.getGame()))
-};b.prototype.goToStairs=function(){this.getGame().setPlace(new Dragon(this.getGame()))
-};b.prototype.goToTowerEntrance=function(){this.getGame().setPlace(new CastleTower(this.getGame()))
-};b.prototype.update=function(){this.renderArea.resetAllButSize();this.addBackToMainMapButton(this.renderArea,"castleBackToTheMapButton");
-this.renderArea.drawArray(Database.getAscii("places/castle/map"),0,3);this.drawCastleEntrance(43,36);
-this.drawBigRoom(57,19);this.drawRoom1(15,27);this.drawRoom2(15,21);this.drawRoom3(15,15);
-this.drawNougatMonster(68,15);this.drawStairs(32,3);if(Saving.loadBool("castleKilledNougatMonster")){this.drawTowerEntrance(84,16)
-}};return b})(Place);var CauldronActionLogEntry=(function(){function a(c,d,b,e){this.action=c;
-this.time=d;this.candies=b;this.lollipops=e}a.prototype.getAction=function(){return this.action
-};a.prototype.getCandies=function(){return this.candies};a.prototype.getLollipops=function(){return this.lollipops
-};a.prototype.getTime=function(){return this.time};return a})();var CauldronAction;
-(function(a){a[a.NOTHING=0]="NOTHING";a[a.MIXING=1]="MIXING";a[a.BOILING=2]="BOILING"
-})(CauldronAction||(CauldronAction={}));var CauldronFlame=(function(){function a(c,b){this.pos=c;
-this.character=b}a.prototype.draw=function(c,b,d){c.drawString(this.character,b+this.pos.x,d+this.pos.y)
-};return a})();Saving.registerNumber("cauldronBookCurrentPage",0);var Cauldron=(function(b){__extends(a,b);
+Saving.registerNumber("cauldronBookCurrentPage",0);var Cauldron=(function(b){__extends(a,b);
 function a(c){b.call(this,c);this.renderArea=new RenderArea();this.maxPage=10;this.candiesInput="";
 this.lollipopsInput="";this.candiesInputComment=null;this.lollipopsInputComment=null;
 this.currentAction=CauldronAction.NOTHING;this.timerTime=0;this.actionLog=[null,null,null,null,null];
@@ -1126,7 +1119,13 @@ var e;var c=14;var m;var l;var k;e=14-this.timerTime;if(e<5){e=5}m=this.timerTim
 if(m>200){m=200}this.resetFlamesArray();if(this.currentAction=CauldronAction.BOILING){for(var h=0;
 h<m;h++){k=null;for(var g=c;g>e;g--){if(Random.oneChanceOutOf(3)){k=g;break}}if(k==null){k=c
 }l=Random.between(f+(14-k),d-(14-k));this.flames.push(new CauldronFlame(new Pos(l,k),Random.fromArray([")","(","`","'","."])))
-}}};return a})(Place);Saving.registerBool("cellarDone",false);var Cellar=(function(b){__extends(a,b);
+}}};return a})(Place);var CauldronAction;(function(a){a[a.NOTHING=0]="NOTHING";a[a.MIXING=1]="MIXING";
+a[a.BOILING=2]="BOILING"})(CauldronAction||(CauldronAction={}));var CauldronActionLogEntry=(function(){function a(c,d,b,e){this.action=c;
+this.time=d;this.candies=b;this.lollipops=e}a.prototype.getAction=function(){return this.action
+};a.prototype.getCandies=function(){return this.candies};a.prototype.getLollipops=function(){return this.lollipops
+};a.prototype.getTime=function(){return this.time};return a})();var CauldronFlame=(function(){function a(c,b){this.pos=c;
+this.character=b}a.prototype.draw=function(c,b,d){c.drawString(this.character,b+this.pos.x,d+this.pos.y)
+};return a})();Saving.registerBool("cellarDone",false);var Cellar=(function(b){__extends(a,b);
 function a(c){b.call(this,c);this.resizeQuest(100,3);this.addPlayerCollisionBoxes(true,false,true,true);
 this.getGame().getPlayer().loadCandyBoxCharacter(this);this.getGame().getPlayer().setGlobalPosition(new Pos(0,2));
 this.getGame().getPlayer().setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));
@@ -1191,21 +1190,21 @@ var d=c;var f="";var e="";var g="";if(h<0){return"What, negative chocolate bars?
 }else{if(h==1){return"You have 1 chocolate bar"}else{f=Algo.numberToStringButNicely(h)
 }}d=c-f.length;if(d>=15){g=" chocolate bars";d=c-f.length-g.length;if(d>=9){e="You have "
 }else{if(d>=3){e="-> "}}}else{if(d>=3){g=" cb"}}d=c-f.length-e.length-g.length;return e+f+g
-};return b})(StatusBarResource);var CollisionBoxCollection=(function(){function a(){var b=[];
-for(var c=0;c<arguments.length;c++){b[c-0]=arguments[c]}this.boxes=b}a.prototype.addCollisionBox=function(b){this.boxes.push(b)
-};a.prototype.collidesWith=function(c,e){if(e===void 0){e=new Pos(0,0)}for(var d=0;
-d<this.boxes.length;d++){for(var b=0;b<c.getBoxes().length;b++){if(this.boxes[d].collidesWith(c.getBoxes()[b],e)){return true
-}}}return false};a.prototype.move=function(c){for(var b=0;b<this.boxes.length;b++){this.boxes[b].move(c)
-}};a.prototype.removeBoxes=function(){this.boxes=[]};a.prototype.getBoxes=function(){return this.boxes
-};return a})();var CollisionBox=(function(){function a(d,b,c){this.questEntity=d;
+};return b})(StatusBarResource);var CollisionBox=(function(){function a(d,b,c){this.questEntity=d;
 this.position=b;this.size=c}a.prototype.collidesWith=function(b,c){if(c===void 0){c=new Pos(0,0)
 }if(b.questEntity.getGlobalPosition().x+b.position.x+b.size.x<=this.questEntity.getGlobalPosition().x+this.position.plus(c).x){return false
 }if(b.questEntity.getGlobalPosition().x+b.position.x>=this.questEntity.getGlobalPosition().x+this.position.plus(c).x+this.size.x){return false
 }if(b.questEntity.getGlobalPosition().y+b.position.y+b.size.y<=this.questEntity.getGlobalPosition().y+this.position.plus(c).y){return false
 }if(b.questEntity.getGlobalPosition().y+b.position.y>=this.questEntity.getGlobalPosition().y+this.position.plus(c).y+this.size.y){return false
 }return true};a.prototype.move=function(b){this.position.add(b)};a.prototype.getPosition=function(){return this.position
-};a.prototype.getSize=function(){return this.size};return a})();var Color=(function(){function a(c,b){if(b===void 0){b=false
-}this.setColorType(c);this.shouldInvert=b}a.prototype.getColorString=function(){if(Saving.loadBool("gameInvertedColors")==false||this.shouldInvert==false){return this.colorString
+};a.prototype.getSize=function(){return this.size};return a})();var CollisionBoxCollection=(function(){function a(){var b=[];
+for(var c=0;c<arguments.length;c++){b[c-0]=arguments[c]}this.boxes=b}a.prototype.addCollisionBox=function(b){this.boxes.push(b)
+};a.prototype.collidesWith=function(c,e){if(e===void 0){e=new Pos(0,0)}for(var d=0;
+d<this.boxes.length;d++){for(var b=0;b<c.getBoxes().length;b++){if(this.boxes[d].collidesWith(c.getBoxes()[b],e)){return true
+}}}return false};a.prototype.move=function(c){for(var b=0;b<this.boxes.length;b++){this.boxes[b].move(c)
+}};a.prototype.removeBoxes=function(){this.boxes=[]};a.prototype.getBoxes=function(){return this.boxes
+};return a})();var Color=(function(){function a(c,b){if(b===void 0){b=false}this.setColorType(c);
+this.shouldInvert=b}a.prototype.getColorString=function(){if(Saving.loadBool("gameInvertedColors")==false||this.shouldInvert==false){return this.colorString
 }else{return this.invertedColorString}};a.prototype.setColorType=function(b){this.colorType=b;
 switch(this.colorType){case ColorType.HEALTH_GREEN:this.setRGB(20,212,0);break;case ColorType.HEALTH_ORANGE:this.setRGB(255,128,0);
 break;case ColorType.HEALTH_RED:this.setRGB(230,15,0);break;case ColorType.HEALTH_UNICOLOR:this.setRGB(20,212,0);
@@ -1292,16 +1291,11 @@ break}}a.prototype.update=function(){this.goTowards(this.getRenderAreaCenter(),t
 if(Math.abs(this.getRenderAreaCenter().x-this.getQuest().getGame().getPlayer().getRenderAreaCenter().x)>5){this.jump(3)
 }b.prototype.update.call(this)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(5+Random.upTo(5))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
 };return a})(QuestEntity);var DemonType;(function(a){a[a.CUBE=0]="CUBE";a[a.EYES=1]="EYES";
-a[a.BUBBLES=2]="BUBBLES"})(DemonType||(DemonType={}));var DesertBird=(function(b){__extends(a,b);
-function a(d,e,c){b.call(this,d,e,new Naming("A desert bird","a desert bird"),new RenderArea(9,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(9,4))));
-if(c){this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));this.setQuestEntityAnimation(new QuestEntityAnimation(3,Random.upTo(2),Random.upTo(1),"places/quests/desert/birdRightUp","places/quests/desert/birdRightDown"))
-}else{this.setQuestEntityMovement(new QuestEntityMovement(new Pos(-1,0)));this.setQuestEntityAnimation(new QuestEntityAnimation(3,Random.upTo(2),Random.upTo(1),"places/quests/desert/birdLeftUp","places/quests/desert/birdLeftDown"))
-}this.setDestructible(true);this.setMaxHp(6);this.setHp(6)}a.prototype.willDie=function(){b.prototype.willDie.call(this);
-this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"gridItemPossessedFeather","You found a desert bird feather!","You gain a desert bird feather"))
-};return a})(QuestEntity);var Desert=(function(a){__extends(b,a);function b(c){a.call(this,c);
-this.resizeQuest(149,30);this.addPlayerCollisionBoxes(true,false,true,true);this.getGame().getPlayer().loadCandyBoxCharacter(this);
-this.getGame().getPlayer().setGlobalPosition(new Pos(0,26));this.configPlayerOrClone(this.getGame().getPlayer());
-this.addEntity(this.getGame().getPlayer());this.addGround(0,3,1,4,12,0,13,18,1,19,24,2,25,30,3,31,36,2,37,42,1,43,51,0,52,57,1,58,62,2,63,68,3,69,75,2,76,82,1,83,92,0,93,97,1,98,101,2,102,107,3,108,113,2,114,119,1,120,128,0,129,134,1,135,139,2,140,145,3,146,148,2);
+a[a.BUBBLES=2]="BUBBLES"})(DemonType||(DemonType={}));var Desert=(function(a){__extends(b,a);
+function b(c){a.call(this,c);this.resizeQuest(149,30);this.addPlayerCollisionBoxes(true,false,true,true);
+this.getGame().getPlayer().loadCandyBoxCharacter(this);this.getGame().getPlayer().setGlobalPosition(new Pos(0,26));
+this.configPlayerOrClone(this.getGame().getPlayer());this.addEntity(this.getGame().getPlayer());
+this.addGround(0,3,1,4,12,0,13,18,1,19,24,2,25,30,3,31,36,2,37,42,1,43,51,0,52,57,1,58,62,2,63,68,3,69,75,2,76,82,1,83,92,0,93,97,1,98,101,2,102,107,3,108,113,2,114,119,1,120,128,0,129,134,1,135,139,2,140,145,3,146,148,2);
 this.currentBirdTime=0;this.setNextBirdAt();this.addCamel(new Pos(44,24));this.addCamel(new Pos(65,26));
 this.addCamel(new Pos(84,24));this.addCamel(new Pos(106,26));this.addCamel(new Pos(118,24));
 this.addCamel(new Pos(144,26));this.getGame().getQuestLog().addMessage(new QuestLogMessage("You enter the desert, camels and palm trees as far as the eye can see."))
@@ -1325,12 +1319,33 @@ this.addEntity(c)};b.prototype.addGround=function(){var d=[];for(var f=0;f<argum
 f++){d[f-0]=arguments[f]}this.addEntity(new Wall(this,new Pos(0,26)));var c=(this.getLastEntity());
 for(var e=0;e<d.length/3;e++){c.addBox(new Pos(d[e*3],d[e*3+2]),new Pos(d[e*3+1]-d[e*3]+1,4-d[e*3+2]))
 }};b.prototype.setNextBirdAt=function(){this.nextBirdAt=20+Random.upTo(30)};b.prototype.thePlayerWon=function(){if(this.getGame().getPlayer().getGlobalPosition().x>=149){return true
-}return false};return b})(Quest);var DeveloperEntityText=(function(){function a(c,b,d,e){this.damage=c;
-this.text=e;this.textPos=b;this.timeToLive=d;this.xPos=0}a.prototype.update=function(b){for(var c=0;
-c<this.text.length;c++){if(this.xPos<this.text[c].length&&this.text[c][this.xPos]!=" "){switch(this.text[c][this.xPos]){case"B":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_BLUE);
-break;case"Y":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_YELLOW);
-break;case"O":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_ORANGE);
-break}}}this.xPos+=1};return a})();var DeveloperEntity=(function(b){__extends(a,b);
+}return false};return b})(Quest);var DesertBird=(function(b){__extends(a,b);function a(d,e,c){b.call(this,d,e,new Naming("A desert bird","a desert bird"),new RenderArea(9,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(9,4))));
+if(c){this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));this.setQuestEntityAnimation(new QuestEntityAnimation(3,Random.upTo(2),Random.upTo(1),"places/quests/desert/birdRightUp","places/quests/desert/birdRightDown"))
+}else{this.setQuestEntityMovement(new QuestEntityMovement(new Pos(-1,0)));this.setQuestEntityAnimation(new QuestEntityAnimation(3,Random.upTo(2),Random.upTo(1),"places/quests/desert/birdLeftUp","places/quests/desert/birdLeftDown"))
+}this.setDestructible(true);this.setMaxHp(6);this.setHp(6)}a.prototype.willDie=function(){b.prototype.willDie.call(this);
+this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"gridItemPossessedFeather","You found a desert bird feather!","You gain a desert bird feather"))
+};return a})(QuestEntity);var Developer=(function(b){__extends(a,b);function a(c){b.call(this,c);
+this.resizeQuest(100,34);this.addPlayerCollisionBoxes(true,true,true,true);this.getGame().getPlayer().loadCandyBoxCharacter(this);
+this.getGame().getPlayer().setGlobalPosition(new Pos(0,33));this.configPlayerOrClone(this.getGame().getPlayer());
+this.addEntity(this.getGame().getPlayer());this.addDeveloperEntity(new Pos(57,0));
+this.getGame().getQuestLog().addMessage(new QuestLogMessage("You're attacking the developer."))
+}a.prototype.castPlayerBlackDemons=function(){b.prototype.castPlayerBlackDemons.call(this);
+this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerBlackhole=function(){b.prototype.castPlayerBlackhole.call(this);
+this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerEraseMagic=function(){b.prototype.castPlayerEraseMagic.call(this);
+this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerObsidianWall=function(){b.prototype.castPlayerObsidianWall.call(this);
+this.developerEntity.playerUsedBlackMagic()};a.prototype.configPlayerOrClone=function(c){c.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));
+c.getQuestEntityMovement().setGravity(true);c.getQuestEntityMovement().setWormsLike(true)
+};a.prototype.endQuest=function(c){if(c){this.getGame().getQuestLog().addMessage(new QuestLogMessage("You managed to beat me. Congratulations :)"))
+}else{this.getGame().getQuestLog().addMessage(new QuestLogMessage("You died fighting the developer. Eh, he made this game after all!"))
+}b.prototype.endQuest.call(this,c)};a.prototype.update=function(){if(this.getQuestEnded()==false){if(this.thePlayerWon()){this.endQuest(true);
+return}if(this.getGame().getPlayer().shouldDie()){this.endQuest(false);return}this.updateEntities()
+}this.preDraw();this.drawEntities();this.drawAroundQuest();if(this.getQuestEnded()==false){this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestNoKeeping")
+}else{if(this.getQuestEndedAndWeWon()==false){this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestNoKeepingBecauseLose")
+}else{this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestKeeping")
+}}this.postDraw()};a.prototype.addDeveloperEntity=function(c){this.developerEntity=new DeveloperEntity(this,c);
+this.developerEntity.setHealthBar(new QuestEntityHealthBar(this.developerEntity,new Pos(100,1),new Pos(0,0),QuestEntityHealthBarPositionType.FIXED_ON_PAGE,true,true,BarType.HEALTH));
+this.addEntity(this.developerEntity)};a.prototype.thePlayerWon=function(){if(this.developerEntity.shouldDie()){return true
+}return false};return a})(Quest);var DeveloperEntity=(function(b){__extends(a,b);
 function a(c,d){b.call(this,c,d,new Naming("The developer","the developer"),new RenderArea(43,34),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(20,0),new Pos(6,1)),new CollisionBox(this,new Pos(16,1),new Pos(12,1)),new CollisionBox(this,new Pos(15,2),new Pos(14,1)),new CollisionBox(this,new Pos(12,3),new Pos(18,1)),new CollisionBox(this,new Pos(11,4),new Pos(20,1)),new CollisionBox(this,new Pos(10,5),new Pos(22,1)),new CollisionBox(this,new Pos(9,6),new Pos(24,2)),new CollisionBox(this,new Pos(9,8),new Pos(25,1)),new CollisionBox(this,new Pos(9,9),new Pos(26,2)),new CollisionBox(this,new Pos(9,11),new Pos(27,3)),new CollisionBox(this,new Pos(9,14),new Pos(28,1)),new CollisionBox(this,new Pos(8,15),new Pos(29,3)),new CollisionBox(this,new Pos(7,18),new Pos(30,4)),new CollisionBox(this,new Pos(7,22),new Pos(31,2)),new CollisionBox(this,new Pos(6,24),new Pos(32,4)),new CollisionBox(this,new Pos(5,28),new Pos(33,1)),new CollisionBox(this,new Pos(5,29),new Pos(34,1)),new CollisionBox(this,new Pos(4,30),new Pos(35,1)),new CollisionBox(this,new Pos(2,31),new Pos(38,1)),new CollisionBox(this,new Pos(1,32),new Pos(40,1)),new CollisionBox(this,new Pos(0,33),new Pos(43,1))),new QuestEntityMovement());
 this.timeSpent=0;this.createTexts();this.getQuestEntityMovement().setGravity(false);
 this.setDestructible(true);this.setMaxHp(1000000000);this.setHp(1000000000);this.getRenderArea().drawArray(Database.getAscii("places/quests/developer/me"));
@@ -1346,7 +1361,12 @@ this.indexOfCurrentText=0;this.texts.push(new DeveloperEntityText(20,new Pos(3,3
 this.texts.push(new DeveloperEntityText(32,new Pos(3,3),150,Database.getAscii("places/quests/developer/imgladyoumadeitsofar")));
 this.texts.push(new DeveloperEntityText(9999999999999,new Pos(8,10),100,Database.getAscii("places/quests/developer/love")))
 };a.prototype.playerUsedBlackMagic=function(){this.getQuest().addEntity(new Blackhole(this.getQuest(),this.getQuest().getGame().getPlayer().getRenderAreaCenter(),5000,new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY,QuestEntityDamageReasonWhatType.SPELL).setQuestEntity(this).setSpellNaming(new Naming("A blackhole","a blackhole"))))
-};return a})(QuestEntity);var Fireball=(function(b){__extends(a,b);function a(d,i,h,c,e,f,g){b.call(this,d,i,h);
+};return a})(QuestEntity);var DeveloperEntityText=(function(){function a(c,b,d,e){this.damage=c;
+this.text=e;this.textPos=b;this.timeToLive=d;this.xPos=0}a.prototype.update=function(b){for(var c=0;
+c<this.text.length;c++){if(this.xPos<this.text[c].length&&this.text[c][this.xPos]!=" "){switch(this.text[c][this.xPos]){case"B":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_BLUE);
+break;case"Y":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_YELLOW);
+break;case"O":b.addMagicBall(this.textPos.plus(new Pos(this.xPos,c)),this.damage,this.timeToLive-this.xPos,ColorType.DEVELOPER_ORANGE);
+break}}}this.xPos+=1};return a})();var Fireball=(function(b){__extends(a,b);function a(d,i,h,c,e,f,g){b.call(this,d,i,h);
 this.targetType=FireballTargetType.NO_TARGET;this.size=e;this.damage=f;this.questEntityDamageReason=g;
 this.damageCollisionBoxCollection=new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),this.size));
 this.addColor(new QuestEntitySpellColor(this.getQuest(),new Pos(0,0),this.size,c));
@@ -1369,28 +1389,7 @@ c++){if(this.questEntityDamageReason.getQuestEntityTeam()!=this.getQuest().getEn
 function a(d,j,i,c,e,f,h,g){b.call(this,d,j,i,c,e,f,h);this.playerTargeted=false;
 this.timeToLive=g}a.prototype.update=function(){if(this.playerTargeted==false){if(this.timeToLive<=0){this.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer(),null,new Pos(2,1))
 }else{this.timeToLive-=1}}b.prototype.update.call(this)};a.prototype.willDie=function(){};
-return a})(Fireball);var Developer=(function(b){__extends(a,b);function a(c){b.call(this,c);
-this.resizeQuest(100,34);this.addPlayerCollisionBoxes(true,true,true,true);this.getGame().getPlayer().loadCandyBoxCharacter(this);
-this.getGame().getPlayer().setGlobalPosition(new Pos(0,33));this.configPlayerOrClone(this.getGame().getPlayer());
-this.addEntity(this.getGame().getPlayer());this.addDeveloperEntity(new Pos(57,0));
-this.getGame().getQuestLog().addMessage(new QuestLogMessage("You're attacking the developer."))
-}a.prototype.castPlayerBlackDemons=function(){b.prototype.castPlayerBlackDemons.call(this);
-this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerBlackhole=function(){b.prototype.castPlayerBlackhole.call(this);
-this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerEraseMagic=function(){b.prototype.castPlayerEraseMagic.call(this);
-this.developerEntity.playerUsedBlackMagic()};a.prototype.castPlayerObsidianWall=function(){b.prototype.castPlayerObsidianWall.call(this);
-this.developerEntity.playerUsedBlackMagic()};a.prototype.configPlayerOrClone=function(c){c.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));
-c.getQuestEntityMovement().setGravity(true);c.getQuestEntityMovement().setWormsLike(true)
-};a.prototype.endQuest=function(c){if(c){this.getGame().getQuestLog().addMessage(new QuestLogMessage("You managed to beat me. Congratulations :)"))
-}else{this.getGame().getQuestLog().addMessage(new QuestLogMessage("You died fighting the developer. Eh, he made this game after all!"))
-}b.prototype.endQuest.call(this,c)};a.prototype.update=function(){if(this.getQuestEnded()==false){if(this.thePlayerWon()){this.endQuest(true);
-return}if(this.getGame().getPlayer().shouldDie()){this.endQuest(false);return}this.updateEntities()
-}this.preDraw();this.drawEntities();this.drawAroundQuest();if(this.getQuestEnded()==false){this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestNoKeeping")
-}else{if(this.getQuestEndedAndWeWon()==false){this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestNoKeepingBecauseLose")
-}else{this.addExitQuestButton(new CallbackCollection(this.getGame().goToMainMap.bind(this.getGame())),"buttonExitQuestKeeping")
-}}this.postDraw()};a.prototype.addDeveloperEntity=function(c){this.developerEntity=new DeveloperEntity(this,c);
-this.developerEntity.setHealthBar(new QuestEntityHealthBar(this.developerEntity,new Pos(100,1),new Pos(0,0),QuestEntityHealthBarPositionType.FIXED_ON_PAGE,true,true,BarType.HEALTH));
-this.addEntity(this.developerEntity)};a.prototype.thePlayerWon=function(){if(this.developerEntity.shouldDie()){return true
-}return false};return a})(Quest);var Devil=(function(a){__extends(b,a);function b(c,f,e,d){a.call(this,c,f,new Naming("The devil","the devil"),new RenderArea(16,16),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(4,0),new Pos(8,5))),new QuestEntityMovement());
+return a})(Fireball);var Devil=(function(a){__extends(b,a);function b(c,f,e,d){a.call(this,c,f,new Naming("The devil","the devil"),new RenderArea(16,16),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(4,0),new Pos(8,5))),new QuestEntityMovement());
 this.minY=e;this.maxY=d;this.setGoingDown(true);this.flames=[];this.getQuestEntityMovement().setGravity(false);
 this.setDestructible(true);this.setMaxHp(666);this.setHp(666);this.setTransparency(new RenderTransparency(" ","%"));
 this.reDraw();this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Evilness","evilness"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(18,18))),500));
@@ -1412,9 +1411,6 @@ if(h>=this.flames.length){this.flames.push(k)}else{this.flames[h]=k}}}};b.protot
 for(var c=0;c<this.flames.length;c++){this.flames[c].draw(this.getRenderArea(),0,0)
 }};b.prototype.setGoingDown=function(c){this.goingDown=c;if(this.goingDown){this.getQuestEntityMovement().setOffset(new Pos(0,1))
 }else{this.getQuestEntityMovement().setOffset(new Pos(0,-1))}};return b})(QuestEntity);
-var DragonStep;(function(a){a[a.PLAYER_MOVING=0]="PLAYER_MOVING";a[a.PLAYER_ATTACKING=1]="PLAYER_ATTACKING";
-a[a.STOP_TICKLING=2]="STOP_TICKLING";a[a.TALKING=3]="TALKING";a[a.TALKING_CHALLENGE=4]="TALKING_CHALLENGE";
-a[a.TALKING_FAME=5]="TALKING_FAME";a[a.TALKING_CANDIES=6]="TALKING_CANDIES"})(DragonStep||(DragonStep={}));
 Saving.registerBool("dragonDone",false);Saving.registerBool("dragonUnlockedCyclops",false);
 var Dragon=(function(b){__extends(a,b);function a(c){b.call(this,c);this.renderArea=new RenderArea();
 if(Saving.loadBool("dragonDone")==false){this.step=DragonStep.PLAYER_MOVING;this.playerPos=0
@@ -1457,7 +1453,10 @@ this.renderArea.addLinkCall(".dragonTalkingFameAnswer",new CallbackCollection(th
 break;case DragonStep.TALKING_CANDIES:this.drawPlayer(this.playerPos);this.renderArea.drawSpeech(Database.getText("dragonTalkingCandiesSpeech"),5,50,78,"dragonTalkingCandiesSpeech",Database.getTranslatedText("dragonTalkingCandiesSpeech"));
 this.renderArea.addAsciiRealButton(Database.getText("dragonTalkingCandiesAnswer"),82,9,"dragonTalkingCandiesAnswer",Database.getTranslatedText("dragonTalkingCandiesAnswer"));
 this.renderArea.addLinkCall(".dragonTalkingCandiesAnswer",new CallbackCollection(this.getGame().goToCastle.bind(this.getGame())));
-break}};return a})(CastleRoom);var Egg=(function(b){__extends(a,b);function a(d,e,c){b.call(this,d,e,new Naming("An egg","an egg"),new RenderArea(2,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(2,1))),new QuestEntityMovement());
+break}};return a})(CastleRoom);var DragonStep;(function(a){a[a.PLAYER_MOVING=0]="PLAYER_MOVING";
+a[a.PLAYER_ATTACKING=1]="PLAYER_ATTACKING";a[a.STOP_TICKLING=2]="STOP_TICKLING";a[a.TALKING=3]="TALKING";
+a[a.TALKING_CHALLENGE=4]="TALKING_CHALLENGE";a[a.TALKING_FAME=5]="TALKING_FAME";a[a.TALKING_CANDIES=6]="TALKING_CANDIES"
+})(DragonStep||(DragonStep={}));var Egg=(function(b){__extends(a,b);function a(d,e,c){b.call(this,d,e,new Naming("An egg","an egg"),new RenderArea(2,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(2,1))),new QuestEntityMovement());
 this.callbackWhenDying=c;this.getQuestEntityMovement().setGravity(true);this.setDestructible(true);
 this.setMaxHp(4);this.setHp(4);this.getRenderArea().drawArray(Database.getAscii("places/quests/castle/room3/egg"))
 }a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage("An egg was destroyed."));
@@ -1476,17 +1475,17 @@ function a(){b.call(this,"eqItemWeaponEnchantedMonkeyWizardStaff","eqItemWeaponE
 this.timer=0}a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("The monkey wizard staff (enchanted)","the monkey wizard staff (enchanted)"),e.getClassicCollisionBoxCollection(),2);
 d.getCloseCombatDelay().setFixedDelay(0);return d};a.prototype.update=function(d,c){if(this.timer<4){this.timer+=1
 }else{this.timer=0;var e=this.getRandomEnemy(d,c);if(e!=null){this.castPurpleBall(d,c,e)
-}}};return a})(MonkeyWizardStaffMotherClass);var EnchantmentItem=(function(){function a(b,d,c){this.game=b;
-this.savingName=d;this.type=c}a.prototype.getText=function(){var b=Database.getText(this.game.getEqItemFromEqItemType(this.savingName,this.type).getDatabaseName());
-if(Database.isTranslated()){b+=" ("+Database.getTranslatedText(this.game.getEqItemFromEqItemType(this.savingName,this.type).getDatabaseName())+")"
-}return b};a.prototype.isPossessed=function(){return Saving.loadBool(this.savingName)
-};a.prototype.unequipIfEquipped=function(){this.game.unequipIfEquipped(this.savingName,this.type)
-};a.prototype.getSavingName=function(){return this.savingName};return a})();var Enchantment=(function(){function a(b,c){this.beforeItem=b;
+}}};return a})(MonkeyWizardStaffMotherClass);var Enchantment=(function(){function a(b,c){this.beforeItem=b;
 this.afterItem=c}a.prototype.enchant=function(){this.beforeItem.unequipIfEquipped();
 Saving.saveBool(this.beforeItem.getSavingName(),false);Saving.saveBool(this.afterItem.getSavingName(),true)
 };a.prototype.isPossible=function(){if(this.beforeItem.isPossessed()==true&&this.afterItem.isPossessed()==false){return true
 }return false};a.prototype.getAfterItem=function(){return this.afterItem};a.prototype.getBeforeItem=function(){return this.beforeItem
-};return a})();var EnigmaAnswer=(function(){function a(){}a.prototype.isRight=function(b){return false
+};return a})();var EnchantmentItem=(function(){function a(b,d,c){this.game=b;this.savingName=d;
+this.type=c}a.prototype.getText=function(){var b=Database.getText(this.game.getEqItemFromEqItemType(this.savingName,this.type).getDatabaseName());
+if(Database.isTranslated()){b+=" ("+Database.getTranslatedText(this.game.getEqItemFromEqItemType(this.savingName,this.type).getDatabaseName())+")"
+}return b};a.prototype.isPossessed=function(){return Saving.loadBool(this.savingName)
+};a.prototype.unequipIfEquipped=function(){this.game.unequipIfEquipped(this.savingName,this.type)
+};a.prototype.getSavingName=function(){return this.savingName};return a})();var EnigmaAnswer=(function(){function a(){}a.prototype.isRight=function(b){return false
 };return a})();var EnigmaAnswerCandies=(function(b){__extends(a,b);function a(c){b.call(this);
 this.game=c}a.prototype.isRight=function(c){if(Algo.simplifyString(c)==this.game.getCandies().getCurrent().toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()+1).toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()+2).toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()+3).toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()-1).toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()-2).toString()||Algo.simplifyString(c)==(this.game.getCandies().getCurrent()-3).toString()){return true
 }return false};return a})(EnigmaAnswer);var EnigmaAnswerStrings=(function(b){__extends(a,b);
@@ -1677,16 +1676,14 @@ Saving.saveBool("fourthHouseFoundLollipopOnCupboard",true);this.update();this.ge
 }};b.prototype.update=function(){this.renderArea.resetAllButSize();this.addBackToTheVillageButton(this.renderArea,"fourthHouseBackToTheVillageButton");
 this.renderArea.drawArray(Database.getAscii("places/village/fourthHouse"),0,3);this.drawLollipopOnCupboardStuff(35,11);
 this.drawOpenCupboardStuff(35,14);this.drawCarpetStuff(41,32)};return b})(House);
-var GalacticWarsStep;(function(a){a[a.SPLASH_SCREEN=0]="SPLASH_SCREEN";a[a.GAME=1]="GAME";
-a[a.LOSE=2]="LOSE"})(GalacticWarsStep||(GalacticWarsStep={}));var ThirdHouseGame=(function(){function a(b){this.thirdHouse=b;
-this.renderArea=new RenderArea(53,12);this.thirdHouse.getGame().setQuestSlowedDown(false);
-this.thirdHouse.getGame().setQuestSpeedUp(0)}a.prototype.pressedDownButton=function(){};
-a.prototype.pressedSpaceButton=function(){};a.prototype.pressedUpButton=function(){};
-a.prototype.run=function(){return true};a.prototype.getRenderArea=function(){return this.renderArea
-};a.prototype.getThirdHouse=function(){return this.thirdHouse};return a})();Saving.registerNumber("galacticWarsBestScore",0);
-var GalacticWars=(function(b){__extends(a,b);function a(){b.apply(this,arguments);
-this.step=GalacticWarsStep.SPLASH_SCREEN;this.splashScreenTimer=47;this.asteroids=[];
-this.exitGame=false}a.prototype.run=function(){var c=false;if(this.exitGame){return true
+var ThirdHouseGame=(function(){function a(b){this.thirdHouse=b;this.renderArea=new RenderArea(53,12);
+this.thirdHouse.getGame().setQuestSlowedDown(false);this.thirdHouse.getGame().setQuestSpeedUp(0)
+}a.prototype.pressedDownButton=function(){};a.prototype.pressedSpaceButton=function(){};
+a.prototype.pressedUpButton=function(){};a.prototype.run=function(){return true};
+a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.getThirdHouse=function(){return this.thirdHouse
+};return a})();Saving.registerNumber("galacticWarsBestScore",0);var GalacticWars=(function(b){__extends(a,b);
+function a(){b.apply(this,arguments);this.step=GalacticWarsStep.SPLASH_SCREEN;this.splashScreenTimer=47;
+this.asteroids=[];this.exitGame=false}a.prototype.run=function(){var c=false;if(this.exitGame){return true
 }this.getRenderArea().resetAllButSize();switch(this.step){case GalacticWarsStep.SPLASH_SCREEN:this.drawSplashScreen();
 c=this.runSplashScreen();break;case GalacticWarsStep.GAME:this.drawGame();c=this.runGame();
 break;case GalacticWarsStep.LOSE:this.drawLose();c=false;break}return c};a.prototype.addAsteroids=function(){var j=Math.floor(this.score/100)%4;
@@ -1733,8 +1730,10 @@ if(this.power<this.maxPower){this.power+=1}if(this.checkCollisionWithAsteroids()
 }return false};a.prototype.runSplashScreen=function(){if(this.splashScreenTimer>=0){this.splashScreenTimer-=1
 }else{this.goToGame()}return false};a.prototype.shipCollidesWithThisPos=function(c){if(c.x<0){return false
 }if(c.x>10){return false}if(c.y<this.shipYPosition){return false}if(c.y>this.shipYPosition+1){return false
-}return true};return a})(ThirdHouseGame);var RenderLocation=(function(){function a(b,c){if(c===void 0){c=false
-}this.scrolling=null;this.setLocationString(b);this.setScrolling(c)}a.prototype.render=function(b){$(this.locationString).html(b.getForRendering());
+}return true};return a})(ThirdHouseGame);var GalacticWarsStep;(function(a){a[a.SPLASH_SCREEN=0]="SPLASH_SCREEN";
+a[a.GAME=1]="GAME";a[a.LOSE=2]="LOSE"})(GalacticWarsStep||(GalacticWarsStep={}));
+var RenderLocation=(function(){function a(b,c){if(c===void 0){c=false}this.scrolling=null;
+this.setLocationString(b);this.setScrolling(c)}a.prototype.render=function(b){$(this.locationString).html(b.getForRendering());
 b.runLinks()};a.prototype.setContentGap=function(e){var c,d,b=0;d=$(this.locationString).outerWidth();
 c=this.getRealExValueFromTheStatusBar();if(d>$(window).width()){b=-(d-$(window).width())/2
 }$(this.locationString).css({left:((e/2)*c+b).toString()+"px"})};a.prototype.setLocationString=function(b){this.locationString=b
@@ -1922,7 +1921,20 @@ this.candiesThrown.getCallbackCollection().reset();this.oneSecondCallbackCollect
 this.questCallbackCollection.reset()};a.prototype.saveCurrentMapPlace=function(){if(this.savedPlace==null){this.savedPlace=this.place
 }};a.prototype.setDefaultLocalAutosaveTime=function(){this.localAutosaveTime=600};
 a.prototype.setPlaceFromSavedMapPlace=function(){if(this.savedPlace!=null){this.setPlace(this.savedPlace);
-this.savedPlace=null}};return a})();var GiantNougatMonsterQuest=(function(a){__extends(b,a);
+this.savedPlace=null}};return a})();var GiantNougatMonster=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d,new Naming("The giant nougat monster","the giant nougat monster"),new RenderArea(15,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(1,0),new Pos(12,1)),new CollisionBox(this,new Pos(0,1),new Pos(15,2)),new CollisionBox(this,new Pos(1,3),new Pos(12,1))),new QuestEntityMovement());
+this.step=GiantNougatMonsterStep.ASLEEP;this.getQuestEntityMovement().setGravity(true);
+this.setDestructible(true);this.setMaxHp(2000);this.setHp(2000);this.reDrawAscii();
+this.setTransparency(new RenderTransparency(" ","%"))}b.prototype.update=function(){switch(this.step){case GiantNougatMonsterStep.ASLEEP:if(this.getHp()<1577){this.step=GiantNougatMonsterStep.AWAKE;
+this.reDrawAscii();this.addWeapon()}break;case GiantNougatMonsterStep.AWAKE:if(this.getHp()<500){this.step=GiantNougatMonsterStep.ANGRY;
+this.reDrawAscii()}this.goTowards(this.getGlobalPosition().plus(new Pos(6,2)),this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1,0)),0,new Pos(1,0));
+break;case GiantNougatMonsterStep.ANGRY:this.goTowards(this.getGlobalPosition().plus(new Pos(6,2)),this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1,0)),0,new Pos(3,0));
+break}a.prototype.update.call(this)};b.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(Random.upTo(123456))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
+};b.prototype.addWeapon=function(){this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Nougat","nougat"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(17,6))),3000));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(20,40)};b.prototype.reDrawAscii=function(){switch(this.step){case GiantNougatMonsterStep.ASLEEP:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monster"));
+break;case GiantNougatMonsterStep.AWAKE:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAwake"));
+break;case GiantNougatMonsterStep.ANGRY:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAngry"));
+break}};return b})(QuestEntity);var GiantNougatMonsterQuest=(function(a){__extends(b,a);
 function b(c){a.call(this,c);this.resizeQuest(100,20);this.addPlayerCollisionBoxes(true,true,true,true);
 this.getGame().getPlayer().loadCandyBoxCharacter(this);this.getGame().getPlayer().setGlobalPosition(new Pos(0,19));
 this.configPlayerOrClone(this.getGame().getPlayer());this.addEntity(this.getGame().getPlayer());
@@ -1942,25 +1954,12 @@ this.addEntity(this.giantNougatMonster)};b.prototype.addWalls=function(){var c=n
 c.addBox(new Pos(0,0),new Pos(140,1));this.addEntity(c)};b.prototype.thePlayerWon=function(){if(this.giantNougatMonster.shouldDie()){return true
 }return false};return b})(Quest);var GiantNougatMonsterStep;(function(a){a[a.ASLEEP=0]="ASLEEP";
 a[a.AWAKE=1]="AWAKE";a[a.ANGRY=2]="ANGRY"})(GiantNougatMonsterStep||(GiantNougatMonsterStep={}));
-var GiantNougatMonster=(function(a){__extends(b,a);function b(c,d){a.call(this,c,d,new Naming("The giant nougat monster","the giant nougat monster"),new RenderArea(15,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(1,0),new Pos(12,1)),new CollisionBox(this,new Pos(0,1),new Pos(15,2)),new CollisionBox(this,new Pos(1,3),new Pos(12,1))),new QuestEntityMovement());
-this.step=GiantNougatMonsterStep.ASLEEP;this.getQuestEntityMovement().setGravity(true);
-this.setDestructible(true);this.setMaxHp(2000);this.setHp(2000);this.reDrawAscii();
-this.setTransparency(new RenderTransparency(" ","%"))}b.prototype.update=function(){switch(this.step){case GiantNougatMonsterStep.ASLEEP:if(this.getHp()<1577){this.step=GiantNougatMonsterStep.AWAKE;
-this.reDrawAscii();this.addWeapon()}break;case GiantNougatMonsterStep.AWAKE:if(this.getHp()<500){this.step=GiantNougatMonsterStep.ANGRY;
-this.reDrawAscii()}this.goTowards(this.getGlobalPosition().plus(new Pos(6,2)),this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1,0)),0,new Pos(1,0));
-break;case GiantNougatMonsterStep.ANGRY:this.goTowards(this.getGlobalPosition().plus(new Pos(6,2)),this.getQuest().getGame().getPlayer().getGlobalPosition().plus(new Pos(1,0)),0,new Pos(3,0));
-break}a.prototype.update.call(this)};b.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(Random.upTo(123456))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
-};b.prototype.addWeapon=function(){this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Nougat","nougat"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(17,6))),3000));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(20,40)};b.prototype.reDrawAscii=function(){switch(this.step){case GiantNougatMonsterStep.ASLEEP:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monster"));
-break;case GiantNougatMonsterStep.AWAKE:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAwake"));
-break;case GiantNougatMonsterStep.ANGRY:this.getRenderArea().drawArray(Database.getAscii("places/quests/giantNougatMonster/monsterAngry"));
-break}};return b})(QuestEntity);var GiantSpoonOfDoom=(function(b){__extends(a,b);
+var GiantSpoon=(function(a){__extends(b,a);function b(){a.call(this,"eqItemWeaponGiantSpoon","eqItemWeaponGiantSpoonName","eqItemWeaponGiantSpoonDescription","eqItems/weapons/giantSpoon")
+}b.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A giant spoon","a giant spoon"),e.getClassicCollisionBoxCollection(),70);
+d.getCloseCombatDelay().setFixedDelay(7,0);return d};return b})(EqItem);var GiantSpoonOfDoom=(function(b){__extends(a,b);
 function a(){b.call(this,"eqItemWeaponGiantSpoonOfDoom","eqItemWeaponGiantSpoonOfDoomName","eqItemWeaponGiantSpoonOfDoomDescription","eqItems/weapons/giantSpoonOfDoom")
 }a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("The giant Spoon of Doom","the giant Spoon of Doom"),e.getClassicCollisionBoxCollection(),315);
-d.getCloseCombatDelay().setFixedDelay(14,0);return d};return a})(EqItem);var GiantSpoon=(function(a){__extends(b,a);
-function b(){a.call(this,"eqItemWeaponGiantSpoon","eqItemWeaponGiantSpoonName","eqItemWeaponGiantSpoonDescription","eqItems/weapons/giantSpoon")
-}b.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A giant spoon","a giant spoon"),e.getClassicCollisionBoxCollection(),70);
-d.getCloseCombatDelay().setFixedDelay(7,0);return d};return b})(EqItem);var Hell=(function(b){__extends(a,b);
+d.getCloseCombatDelay().setFixedDelay(14,0);return d};return a})(EqItem);var Hell=(function(b){__extends(a,b);
 function a(c){b.call(this,c);this.resizeQuest(150,30);this.addPlayerCollisionBoxes(true,true,true,true);
 this.getGame().getPlayer().loadCandyBoxCharacter(this);this.getGame().getPlayer().setGlobalPosition(new Pos(0,23));
 this.configPlayerOrClone(this.getGame().getPlayer());this.addEntity(this.getGame().getPlayer());
@@ -2018,18 +2017,18 @@ this.renderArea.drawString(Database.getTranslatedText("fortressInsideText0"),22,
 this.renderArea.drawString(Database.getTranslatedText("fortressInsideText1"),22,34,true);
 this.renderArea.drawString(Database.getTranslatedText("fortressInsideText2"),22,35,true);
 this.addFirstDoorButton(8,10);this.addSecondDoorButton(42,8);this.addThirdDoorButton(78,10)
-};return b})(Place);var InsideYourBoxSweet=(function(){function a(){this.asciiArt="general/insideYourBox/"+Random.between(0,10);
-this.pos=new Pos(-Database.getAsciiWidth(this.asciiArt)+Random.between(0,99+Database.getAsciiWidth(this.asciiArt)),-Database.getAsciiHeight(this.asciiArt));
-this.speed=Random.between(1,3)}a.prototype.draw=function(b){b.drawArray(Database.getAscii(this.asciiArt),this.pos.x,this.pos.y)
-};a.prototype.update=function(){if(this.pos.y>=40){return true}this.speed+=0.3;this.pos.y+=Math.floor(this.speed)
-};return a})();var InsideYourBox=(function(b){__extends(a,b);function a(c){b.call(this,c);
+};return b})(Place);var InsideYourBox=(function(b){__extends(a,b);function a(c){b.call(this,c);
 this.renderArea=new RenderArea();this.sweets=[];this.intervalID=setInterval(this.actionInterval.bind(this),100);
 this.renderArea.resize(100,40);this.update()}a.prototype.getRenderArea=function(){return this.renderArea
 };a.prototype.willStopBeingDisplayed=function(){clearInterval(this.intervalID)};a.prototype.actionInterval=function(){this.update();
 this.getGame().updatePlace()};a.prototype.update=function(){this.renderArea.resetAllButSize();
 this.sweets.push(new InsideYourBoxSweet());for(var c=0;c<this.sweets.length;c++){if(this.sweets[c].update()){this.sweets.splice(c,1);
 c--}}for(var c=0;c<this.sweets.length;c++){this.sweets[c].draw(this.renderArea)}this.renderArea.drawArray(Database.getAscii("general/insideYourBox/text"),0,5,new RenderTransparency(" ","%"))
-};return a})(Place);var Inventory=(function(b){__extends(a,b);function a(c){b.call(this,c);
+};return a})(Place);var InsideYourBoxSweet=(function(){function a(){this.asciiArt="general/insideYourBox/"+Random.between(0,10);
+this.pos=new Pos(-Database.getAsciiWidth(this.asciiArt)+Random.between(0,99+Database.getAsciiWidth(this.asciiArt)),-Database.getAsciiHeight(this.asciiArt));
+this.speed=Random.between(1,3)}a.prototype.draw=function(b){b.drawArray(Database.getAscii(this.asciiArt),this.pos.x,this.pos.y)
+};a.prototype.update=function(){if(this.pos.y>=40){return true}this.speed+=0.3;this.pos.y+=Math.floor(this.speed)
+};return a})();var Inventory=(function(b){__extends(a,b);function a(c){b.call(this,c);
 this.renderArea=new RenderArea();this.renderArea.resize(99,136);this.update()}a.prototype.update=function(){var c=0;
 this.renderArea.resetAllButSize();this.renderArea.drawArray(Database.getAscii("general/inventoryTop"));
 this.drawEquipment();c+=this.drawStats(0,52);this.renderArea.drawArray(Database.getAscii("general/inventoryBottom"),0,55+c);
@@ -2110,10 +2109,7 @@ j++){if(k.which==b.getSpecialHotkeys()[j].getKey()){if(b.getSpecialHotkeys()[j].
 }k.preventDefault();return false}}}});$(document).keyup(function(h){for(var g in b.getHotkeys()){if(h.which==b.getHotkeys()[g].getKey()){b.getHotkeys()[g].setPressed(false)
 }}})}a.execute=c;function f(){if($(":focus").hasClass("noHotkeys")){return false}return true
 }function e(g){return b.getHotkeys()[g].getPressed()}a.isKeyPressed=e})(Keyboard||(Keyboard={}));
-var KnightBodyArmour=(function(b){__extends(a,b);function a(){b.call(this,"eqItemBodyArmoursKnightBodyArmour","eqItemBodyArmoursKnightBodyArmourName","eqItemBodyArmoursKnightBodyArmourDescription","eqItems/bodyArmours/knightBodyArmour")
-}a.prototype.getSpecialAbility=function(){return"Damage taken reduced by 30% (knight body armour)"
-};a.prototype.inflictDamage=function(d,c,e,f){return Math.ceil(e-e*30/100)};return a
-})(EqItem);var Knight=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A knight","a knight"),new RenderArea(15,6),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(3,1),new Pos(1,1)),new CollisionBox(this,new Pos(6,1),new Pos(3,1)),new CollisionBox(this,new Pos(0,2),new Pos(9,1)),new CollisionBox(this,new Pos(2,3),new Pos(13,1)),new CollisionBox(this,new Pos(3,4),new Pos(9,1)),new CollisionBox(this,new Pos(4,5),new Pos(2,1)),new CollisionBox(this,new Pos(9,5),new Pos(2,1))),new QuestEntityMovement(new Pos(0,0)));
+var Knight=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A knight","a knight"),new RenderArea(15,6),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(3,1),new Pos(1,1)),new CollisionBox(this,new Pos(6,1),new Pos(3,1)),new CollisionBox(this,new Pos(0,2),new Pos(9,1)),new CollisionBox(this,new Pos(2,3),new Pos(13,1)),new CollisionBox(this,new Pos(3,4),new Pos(9,1)),new CollisionBox(this,new Pos(4,5),new Pos(2,1)),new CollisionBox(this,new Pos(9,5),new Pos(2,1))),new QuestEntityMovement(new Pos(0,0)));
 this.moving=false;this.currentAsciiNumber=1;this.getQuestEntityMovement().setGravity(true);
 this.setDestructible(true);this.setMaxHp(150);this.setHp(150);this.reDrawAscii();
 this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("A sword","a sword"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,0),new Pos(17,7))),70));
@@ -2124,12 +2120,80 @@ this.getQuestEntityMovement().setOffset(new Pos(0,0));this.currentAsciiNumber=1;
 }this.reDrawAscii()}}b.prototype.update.call(this)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(800+Random.upTo(15)*100)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
 if(Random.oneChanceOutOf(5)){this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemBodyArmoursKnightBodyArmour","You found a body armour on a knight","You gain a knight body armour"))
 }};a.prototype.reDrawAscii=function(){this.getRenderArea().drawArray(Database.getAscii("places/quests/castleEntrance/knight"+this.currentAsciiNumber.toString()))
-};return a})(QuestEntity);var Lava=(function(b){__extends(a,b);function a(c,e,d){b.call(this,c,e,new Naming("Lava","lava"));
+};return a})(QuestEntity);var KnightBodyArmour=(function(b){__extends(a,b);function a(){b.call(this,"eqItemBodyArmoursKnightBodyArmour","eqItemBodyArmoursKnightBodyArmourName","eqItemBodyArmoursKnightBodyArmourDescription","eqItems/bodyArmours/knightBodyArmour")
+}a.prototype.getSpecialAbility=function(){return"Damage taken reduced by 30% (knight body armour)"
+};a.prototype.inflictDamage=function(d,c,e,f){return Math.ceil(e-e*30/100)};return a
+})(EqItem);var Lava=(function(b){__extends(a,b);function a(c,e,d){b.call(this,c,e,new Naming("Lava","lava"));
 this.setTeam(QuestEntityTeam.NATURE);this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Fire","fire"),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),d)),1000));
 this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(0)}return a})(QuestEntity);
 var LeatherBoots=(function(b){__extends(a,b);function a(){b.call(this,"eqItemBootsLeatherBoots","eqItemBootsLeatherBootsName","eqItemBootsLeatherBootsDescription","eqItems/boots/leatherBoots")
 }return a})(EqItem);var LeatherGloves=(function(a){__extends(b,a);function b(){a.call(this,"eqItemGlovesLeatherGloves","eqItemGlovesLeatherGlovesName","eqItemGlovesLeatherGlovesDescription","eqItems/gloves/leatherGloves")
-}return b})(EqItem);var LighthousePuzzlePart=(function(){function a(f,d,b,c,e){if(e===void 0){e=false
+}return b})(EqItem);Saving.registerBool("lighthousePuzzleDone",false);var Lighthouse=(function(b){__extends(a,b);
+function a(c){b.call(this,c);this.renderArea=new RenderArea();this.selectedQuestionId="lighthouseQuestionWho";
+this.speechId=null;this.showPuzzle=false;this.puzzle=null;this.createQuestionsArray();
+this.renderArea.resizeFromArray(Database.getAscii("places/lighthouse/lighthouse"),0,4);
+this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.update=function(){this.renderArea.resetAllButSize();
+this.addBackToMainMapButton(this.renderArea,"lighthouseBackToTheMapButton");this.renderArea.drawArray(Database.getAscii("places/lighthouse/lighthouse"),0,3);
+this.renderArea.addList(1,55,7,"lighthouseQuestionsList",new CallbackCollection(this.questionSelected.bind(this)),this.questionsArray);
+this.renderArea.addAsciiRealButton(Database.getText("lighthouseAskButton"),5,10,"lighthouseAskButton",Database.getTranslatedText("lighthouseAskButton"));
+this.renderArea.addLinkCall(".lighthouseAskButton",new CallbackCollection(this.ask.bind(this)));
+if(this.speechId!=null){this.renderArea.drawSpeech(Database.getText(this.speechId),17,75,99,"lighthouseSpeech",Database.getTranslatedText(this.speechId))
+}if(this.showPuzzle){if(this.puzzle==null){this.puzzle=new LighthousePuzzle(this)
+}this.puzzle.draw(this.renderArea,new Pos(2,12));this.renderArea.addAsciiRealButton(Database.getText("lighthousePuzzleResetButton"),2,34,"lighthousePuzzleResetButton",Database.getTranslatedText("lighthousePuzzleResetButton"));
+this.renderArea.addLinkCall(".lighthousePuzzleResetButton",new CallbackCollection(this.resetPuzzle.bind(this)))
+}this.renderArea.addLinkCallbackCollection(new CallbackCollection(this.selectRightQuestion.bind(this)))
+};a.prototype.getPuzzle=function(){return this.puzzle};a.prototype.setSpeechId=function(c){this.speechId=c
+};a.prototype.addQuestion=function(e,d,c){if(c===void 0){c=null}this.questionsArray.push(e);
+if(c==null){this.questionsArray.push(d)}else{this.questionsArray.push(d+(c!=""?" ("+c+")":""))
+}};a.prototype.ask=function(){this.speechId=this.selectedQuestionId+"Speech";if(this.selectedQuestionId=="lighthouseQuestionDragon"){this.showPuzzle=true
+}else{this.showPuzzle=false}this.update();this.getGame().updatePlace()};a.prototype.createQuestionsArray=function(){this.questionsArray=[];
+this.addQuestion("lighthouseQuestionWho",Database.getText("lighthouseQuestionWho"),Database.getTranslatedText("lighthouseQuestionWho"));
+this.addQuestion("lighthouseQuestionWhat",Database.getText("lighthouseQuestionWhat"),Database.getTranslatedText("lighthouseQuestionWhat"));
+this.addQuestion("lighthouseQuestionWhyEatCandies",Database.getText("lighthouseQuestionWhyEatCandies"),Database.getTranslatedText("lighthouseQuestionWhyEatCandies"));
+this.addQuestion("lighthouseQuestionCandyBox",Database.getText("lighthouseQuestionCandyBox"),Database.getTranslatedText("lighthouseQuestionCandyBox"));
+if(Saving.loadBool("dragonUnlockedCyclops")){this.addQuestion("lighthouseQuestionDragon",Database.getText("lighthouseQuestionDragon"),Database.getTranslatedText("lighthouseQuestionDragon"))
+}};a.prototype.questionSelected=function(){this.selectedQuestionId=$("#lighthouseQuestionsList").find(":selected").attr("id");
+this.update();this.getGame().updatePlace()};a.prototype.resetPuzzle=function(){this.puzzle=new LighthousePuzzle(this);
+this.update();this.getGame().updatePlace()};a.prototype.selectRightQuestion=function(){$("#"+this.selectedQuestionId).prop("selected",true)
+};return a})(Place);var LighthousePuzzle=(function(){function a(b){this.createParts(b)
+}a.prototype.draw=function(d,e){for(var c=0;c<7;c++){for(var b=4;b>=0;b--){if(this.parts[c][b]!=null){this.parts[c][b].draw(d,e.plus(new Pos(c*7,b*4)))
+}}}};a.prototype.getParts=function(){return this.parts};a.prototype.createParts=function(d){this.parts=[];
+for(var c=0;c<7;c++){this.parts[c]=[];for(var b=0;b<5;b++){this.parts[c][b]=null}}this.parts[3][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_AROUND,3,new Pos(3,2),true);
+this.parts[3][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(3,1),false);
+this.parts[4][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(4,1),false);
+this.parts[4][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT,5,new Pos(4,2),false);
+this.parts[3][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(3,3),false);
+this.parts[5][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(5,2),false);
+this.parts[4][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(4,3),false);
+this.parts[3][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT_RIGHT,2,new Pos(3,4),false);
+this.parts[4][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(4,4),false);
+this.parts[5][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(5,4),false);
+this.parts[6][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(6,4),false);
+this.parts[0][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,3),false);
+this.parts[6][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(6,2),false);
+this.parts[6][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(6,1),false);
+this.parts[5][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(5,1),false);
+this.parts[2][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(2,4),false);
+this.parts[1][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(1,4),false);
+this.parts[0][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT,0,new Pos(0,4),false);
+this.parts[0][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(0,0),false);
+this.parts[0][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,1),false);
+this.parts[0][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,2),false);
+this.parts[1][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,0,new Pos(1,0),false);
+this.parts[1][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_LEFT_LINE_ABOVE,0,new Pos(1,1),false);
+this.parts[1][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(1,2),false);
+this.parts[2][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(2,0),false);
+this.parts[2][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(2,1),false);
+this.parts[2][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(2,2),false);
+this.parts[3][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(3,0),false);
+this.parts[4][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(4,0),false);
+this.parts[5][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(5,0),false);
+this.parts[6][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.WHAT,0,new Pos(6,0),true);
+this.parts[1][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(1,3),false);
+this.parts[2][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.NOTHING_HERE,0,new Pos(2,3),false);
+this.parts[5][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(5,3),false);
+this.parts[6][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(6,3),false)
+};return a})();var LighthousePuzzlePart=(function(){function a(f,d,b,c,e){if(e===void 0){e=false
 }this.lighthouse=f;this.type=d;this.lives=b;this.arrayPos=c;this.shown=e}a.prototype.addLives=function(b){this.lives+=b;
 if(this.lives>5){this.lives=5}};a.prototype.draw=function(c,d){if(this.shown){switch(this.type){case LighthousePuzzlePartType.BLANK:c.drawArray(Database.getAscii("places/lighthouse/puzzle/blankPart"),d.x,d.y);
 break;case LighthousePuzzlePartType.SHOW_AROUND:c.drawArray(Database.getAscii("places/lighthouse/puzzle/showAroundPart"),d.x,d.y);
@@ -2180,72 +2244,8 @@ a[a.SHOW_LEFT=2]="SHOW_LEFT";a[a.SHOW_BELOW=3]="SHOW_BELOW";a[a.SHOW_ABOVE=4]="S
 a[a.SHOW_RIGHT=5]="SHOW_RIGHT";a[a.MOVE_BELOW_LINE_TO_THE_RIGHT=6]="MOVE_BELOW_LINE_TO_THE_RIGHT";
 a[a.MOVE_LEFT_LINE_ABOVE=7]="MOVE_LEFT_LINE_ABOVE";a[a.LIVES=8]="LIVES";a[a.NOTHING_HERE=9]="NOTHING_HERE";
 a[a.WHAT=10]="WHAT";a[a.SHOW_LEFT_RIGHT=11]="SHOW_LEFT_RIGHT";a[a.STONE=12]="STONE"
-})(LighthousePuzzlePartType||(LighthousePuzzlePartType={}));var LighthousePuzzle=(function(){function a(b){this.createParts(b)
-}a.prototype.draw=function(d,e){for(var c=0;c<7;c++){for(var b=4;b>=0;b--){if(this.parts[c][b]!=null){this.parts[c][b].draw(d,e.plus(new Pos(c*7,b*4)))
-}}}};a.prototype.getParts=function(){return this.parts};a.prototype.createParts=function(d){this.parts=[];
-for(var c=0;c<7;c++){this.parts[c]=[];for(var b=0;b<5;b++){this.parts[c][b]=null}}this.parts[3][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_AROUND,3,new Pos(3,2),true);
-this.parts[3][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(3,1),false);
-this.parts[4][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(4,1),false);
-this.parts[4][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT,5,new Pos(4,2),false);
-this.parts[3][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(3,3),false);
-this.parts[5][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(5,2),false);
-this.parts[4][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(4,3),false);
-this.parts[3][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT_RIGHT,2,new Pos(3,4),false);
-this.parts[4][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(4,4),false);
-this.parts[5][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(5,4),false);
-this.parts[6][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(6,4),false);
-this.parts[0][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,3),false);
-this.parts[6][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(6,2),false);
-this.parts[6][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(6,1),false);
-this.parts[5][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(5,1),false);
-this.parts[2][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(2,4),false);
-this.parts[1][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(1,4),false);
-this.parts[0][4]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_BELOW_LINE_TO_THE_RIGHT,0,new Pos(0,4),false);
-this.parts[0][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_RIGHT,1,new Pos(0,0),false);
-this.parts[0][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,1),false);
-this.parts[0][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(0,2),false);
-this.parts[1][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,0,new Pos(1,0),false);
-this.parts[1][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.MOVE_LEFT_LINE_ABOVE,0,new Pos(1,1),false);
-this.parts[1][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(1,2),false);
-this.parts[2][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.LIVES,1,new Pos(2,0),false);
-this.parts[2][1]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(2,1),false);
-this.parts[2][2]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_ABOVE,1,new Pos(2,2),false);
-this.parts[3][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(3,0),false);
-this.parts[4][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(4,0),false);
-this.parts[5][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_BELOW,1,new Pos(5,0),false);
-this.parts[6][0]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.WHAT,0,new Pos(6,0),true);
-this.parts[1][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(1,3),false);
-this.parts[2][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.NOTHING_HERE,0,new Pos(2,3),false);
-this.parts[5][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.SHOW_LEFT,1,new Pos(5,3),false);
-this.parts[6][3]=new LighthousePuzzlePart(d,LighthousePuzzlePartType.BLANK,0,new Pos(6,3),false)
-};return a})();Saving.registerBool("lighthousePuzzleDone",false);var Lighthouse=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.selectedQuestionId="lighthouseQuestionWho";
-this.speechId=null;this.showPuzzle=false;this.puzzle=null;this.createQuestionsArray();
-this.renderArea.resizeFromArray(Database.getAscii("places/lighthouse/lighthouse"),0,4);
-this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.update=function(){this.renderArea.resetAllButSize();
-this.addBackToMainMapButton(this.renderArea,"lighthouseBackToTheMapButton");this.renderArea.drawArray(Database.getAscii("places/lighthouse/lighthouse"),0,3);
-this.renderArea.addList(1,55,7,"lighthouseQuestionsList",new CallbackCollection(this.questionSelected.bind(this)),this.questionsArray);
-this.renderArea.addAsciiRealButton(Database.getText("lighthouseAskButton"),5,10,"lighthouseAskButton",Database.getTranslatedText("lighthouseAskButton"));
-this.renderArea.addLinkCall(".lighthouseAskButton",new CallbackCollection(this.ask.bind(this)));
-if(this.speechId!=null){this.renderArea.drawSpeech(Database.getText(this.speechId),17,75,99,"lighthouseSpeech",Database.getTranslatedText(this.speechId))
-}if(this.showPuzzle){if(this.puzzle==null){this.puzzle=new LighthousePuzzle(this)
-}this.puzzle.draw(this.renderArea,new Pos(2,12));this.renderArea.addAsciiRealButton(Database.getText("lighthousePuzzleResetButton"),2,34,"lighthousePuzzleResetButton",Database.getTranslatedText("lighthousePuzzleResetButton"));
-this.renderArea.addLinkCall(".lighthousePuzzleResetButton",new CallbackCollection(this.resetPuzzle.bind(this)))
-}this.renderArea.addLinkCallbackCollection(new CallbackCollection(this.selectRightQuestion.bind(this)))
-};a.prototype.getPuzzle=function(){return this.puzzle};a.prototype.setSpeechId=function(c){this.speechId=c
-};a.prototype.addQuestion=function(e,d,c){if(c===void 0){c=null}this.questionsArray.push(e);
-if(c==null){this.questionsArray.push(d)}else{this.questionsArray.push(d+(c!=""?" ("+c+")":""))
-}};a.prototype.ask=function(){this.speechId=this.selectedQuestionId+"Speech";if(this.selectedQuestionId=="lighthouseQuestionDragon"){this.showPuzzle=true
-}else{this.showPuzzle=false}this.update();this.getGame().updatePlace()};a.prototype.createQuestionsArray=function(){this.questionsArray=[];
-this.addQuestion("lighthouseQuestionWho",Database.getText("lighthouseQuestionWho"),Database.getTranslatedText("lighthouseQuestionWho"));
-this.addQuestion("lighthouseQuestionWhat",Database.getText("lighthouseQuestionWhat"),Database.getTranslatedText("lighthouseQuestionWhat"));
-this.addQuestion("lighthouseQuestionWhyEatCandies",Database.getText("lighthouseQuestionWhyEatCandies"),Database.getTranslatedText("lighthouseQuestionWhyEatCandies"));
-this.addQuestion("lighthouseQuestionCandyBox",Database.getText("lighthouseQuestionCandyBox"),Database.getTranslatedText("lighthouseQuestionCandyBox"));
-if(Saving.loadBool("dragonUnlockedCyclops")){this.addQuestion("lighthouseQuestionDragon",Database.getText("lighthouseQuestionDragon"),Database.getTranslatedText("lighthouseQuestionDragon"))
-}};a.prototype.questionSelected=function(){this.selectedQuestionId=$("#lighthouseQuestionsList").find(":selected").attr("id");
-this.update();this.getGame().updatePlace()};a.prototype.resetPuzzle=function(){this.puzzle=new LighthousePuzzle(this);
-this.update();this.getGame().updatePlace()};a.prototype.selectRightQuestion=function(){$("#"+this.selectedQuestionId).prop("selected",true)
-};return a})(Place);var LightweightBodyArmour=(function(b){__extends(a,b);function a(){b.call(this,"eqItemBodyArmoursLightweightBodyArmour","eqItemBodyArmoursLightweightBodyArmourName","eqItemBodyArmoursLightweightBodyArmourDescription","eqItems/bodyArmours/lightweightBodyArmour")
+})(LighthousePuzzlePartType||(LighthousePuzzlePartType={}));var LightweightBodyArmour=(function(b){__extends(a,b);
+function a(){b.call(this,"eqItemBodyArmoursLightweightBodyArmour","eqItemBodyArmoursLightweightBodyArmourName","eqItemBodyArmoursLightweightBodyArmourDescription","eqItems/bodyArmours/lightweightBodyArmour")
 }a.prototype.getSpecialAbility=function(){return"Damage taken reduced by 15% (lightweight body armour)"
 };a.prototype.inflictDamage=function(d,c,e,f){return Math.ceil(e-e*15/100)};return a
 })(EqItem);var LocalSaving;(function(a){function c(j){if(g(j)==null){return"empty"
@@ -2518,14 +2518,7 @@ this.renderArea.addLinkCall(".mapVillageButton, .mapVillageComment",new Callback
 this.renderArea.addFullComment(c+1,d+1,Database.getText("mapWishingWellComment"),Database.getTranslatedText("mapWishingWellComment"),"mapWishingWellComment");
 this.renderArea.addLinkOver(".mapWishingWellButton, .mapWishingWellComment",".mapWishingWellComment");
 this.renderArea.addLinkCall(".mapWishingWellButton, .mapWishingWellComment",new CallbackCollection(this.goToWishingWell.bind(this)))
-};return b})(Place);var Main;(function(g){var i=null;var a=MainLoadingType.NONE;var b=null;
-var h=null;function e(){Keyboard.execute();c()}g.documentIsReady=e;function d(j){i.clearAllIntervals();
-a=MainLoadingType.FILE;b=j;h=null;Saving.canRegister=false;c()}g.reloadEverythingFromFile=d;
-function f(j){var k;var l;if(j!=""&&j.indexOf("=")!=-1&&j.indexOf("=")<j.length-1){j=j.substr(1);
-k=j.substr(0,j.indexOf("="));l=j.substr(j.indexOf("=")+1);switch(k){case"slot":a=MainLoadingType.LOCAL;
-b="slot"+l;break;case"gamemode":h=l;break}}}g.setUrlData=f;function c(){i=new Game(h);
-Keyboard.setGame(i);Saving.load(i,a,b);i.postLoad()}})(Main||(Main={}));$(document).ready(function(){Main.setUrlData(window.location.search);
-Main.documentIsReady()});var MediumFish=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A fish","a fish"),new RenderArea(8,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(1,1),new Pos(7,1)),new CollisionBox(this,new Pos(0,2),new Pos(8,1)),new CollisionBox(this,new Pos(1,3),new Pos(7,1))),new QuestEntityMovement(new Pos(-1,0)));
+};return b})(Place);var MediumFish=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A fish","a fish"),new RenderArea(8,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(1,1),new Pos(7,1)),new CollisionBox(this,new Pos(0,2),new Pos(8,1)),new CollisionBox(this,new Pos(1,3),new Pos(7,1))),new QuestEntityMovement(new Pos(-1,0)));
 this.setDestructible(true);this.setMaxHp(30);this.setHp(30);this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/mediumFish"));
 this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its fins","its fins"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(10,6))),3));
 this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(4)}a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(15)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
@@ -2536,7 +2529,27 @@ function a(c,d){b.call(this,c,d,new Naming("A dangerous fish","a dangerous fish"
 this.setDestructible(true);this.setMaxHp(70);this.setHp(70);this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/miniShark"));
 this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its teeth","its teeth"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(21,7))),8));
 this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(2)}a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(50+10*Random.upTo(5))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
-};return a})(QuestEntity);var MonkeyWizardMagicalPurpleBall=(function(a){__extends(b,a);
+};return a})(QuestEntity);var MonkeyWizard=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A monkey wizard","a monkey wizard"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(3,0),new Pos(1,1)),new CollisionBox(this,new Pos(1,1),new Pos(3,1)),new CollisionBox(this,new Pos(0,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(4,1))),new QuestEntityMovement());
+this.timer=0;this.bigTimer=0;this.goingLeft=true;this.getQuestEntityMovement().setGravity(true);
+this.getQuestEntityMovement().setWormsLike(false);this.setDestructible(true);this.setMaxHp(300);
+this.setHp(300);this.getRenderArea().drawArray(Database.getAscii("places/quests/monkeyWizard/monkeyWizard"));
+this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its staff","its staff"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(6,6))),3));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(1)}a.prototype.update=function(){b.prototype.update.call(this);
+var d=(this.getHp()<70?true:false);var c=this.getQuest().getGame().getPlayer().getGlobalPosition();
+if(this.timer<80){this.timer+=1}else{this.timer=0}if(this.bigTimer<350){this.bigTimer+=1
+}else{this.bigTimer=0}if(this.timer==80||this.timer==12||this.timer==24||this.timer==36||this.timer==48||(d&&this.timer==6)||(d&&this.timer==18)||(d&&this.timer==30)||(d&&this.timer==42)||(d&&this.timer==54)){this.castSpell(false)
+}else{if(this.timer==60||this.timer==64||this.timer==68||this.timer==72||this.timer==76&&this.bigTimer<300){this.castSpell(true)
+}}if(Math.abs(c.x-this.getGlobalPosition().x)<9){this.jump3()}if(Math.abs(c.x-this.getGlobalPosition().x)<15){if(this.goingLeft){if(this.getGlobalPosition().x>25){this.goLeft()
+}else{this.goRight();this.goingLeft=false}}else{if(c.x<this.getGlobalPosition().x){if(this.getGlobalPosition().x<75){this.goRight()
+}else{this.goLeft();this.goingLeft=true}}else{if(this.getGlobalPosition().x>25){this.goLeft()
+}else{this.dontMove()}}}}else{this.dontMove()}};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(1000)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
+this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemWeaponMonkeyWizardStaff","You found a staff.","You gain the monkey wizard staff."))
+};a.prototype.castSpell=function(c){var d=new MonkeyWizardMagicalPurpleBall(this.getQuest(),this.getGlobalPosition().plus(new Pos(3,0)),new Naming("An magical purple ball","a magical purple ball"),(c?new Color(ColorType.MONKEY_WIZARD_BALL_STORED):new Color(ColorType.MONKEY_WIZARD_BALL)),new Pos(2,1),15,this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("An magical purple ball","a magical purple ball")),(c?350-this.bigTimer:null));
+if(c==false){d.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer())}else{d.setTargetTypeTargetPosition(new Pos(Random.between(1,99),Random.between(4,9)))
+}this.getQuest().addEntity(d)};a.prototype.dontMove=function(){this.getQuestEntityMovement().setOffset(new Pos(0,0))
+};a.prototype.goLeft=function(){this.getQuestEntityMovement().setOffset(new Pos(-1,0))
+};a.prototype.goRight=function(){this.getQuestEntityMovement().setOffset(new Pos(1,0))
+};a.prototype.jump3=function(){this.jump(3)};return a})(QuestEntity);var MonkeyWizardMagicalPurpleBall=(function(a){__extends(b,a);
 function b(d,j,h,c,e,f,g,i){a.call(this,d,j,h,c,e,f,g);this.timer=i}b.prototype.update=function(){if(this.timer!=null){if(this.timer>0){this.timer-=1
 }else{this.timer=null;this.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer())
 }}a.prototype.update.call(this)};return b})(Fireball);var MonkeyWizardQuest=(function(a){__extends(b,a);
@@ -2561,28 +2574,7 @@ function a(){b.call(this,"eqItemWeaponMonkeyWizardStaff","eqItemWeaponMonkeyWiza
 this.timer=0}a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("The monkey wizard staff","the monkey wizard staff"),e.getClassicCollisionBoxCollection(),2);
 d.getCloseCombatDelay().setFixedDelay(1);return d};a.prototype.update=function(d,c){if(this.timer<10){this.timer+=1
 }else{this.timer=0;var e=this.getRandomEnemy(d,c);if(e!=null){this.castPurpleBall(d,c,e)
-}}};return a})(MonkeyWizardStaffMotherClass);var MonkeyWizard=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d,new Naming("A monkey wizard","a monkey wizard"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(3,0),new Pos(1,1)),new CollisionBox(this,new Pos(1,1),new Pos(3,1)),new CollisionBox(this,new Pos(0,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(4,1))),new QuestEntityMovement());
-this.timer=0;this.bigTimer=0;this.goingLeft=true;this.getQuestEntityMovement().setGravity(true);
-this.getQuestEntityMovement().setWormsLike(false);this.setDestructible(true);this.setMaxHp(300);
-this.setHp(300);this.getRenderArea().drawArray(Database.getAscii("places/quests/monkeyWizard/monkeyWizard"));
-this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its staff","its staff"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(6,6))),3));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(1)}a.prototype.update=function(){b.prototype.update.call(this);
-var d=(this.getHp()<70?true:false);var c=this.getQuest().getGame().getPlayer().getGlobalPosition();
-if(this.timer<80){this.timer+=1}else{this.timer=0}if(this.bigTimer<350){this.bigTimer+=1
-}else{this.bigTimer=0}if(this.timer==80||this.timer==12||this.timer==24||this.timer==36||this.timer==48||(d&&this.timer==6)||(d&&this.timer==18)||(d&&this.timer==30)||(d&&this.timer==42)||(d&&this.timer==54)){this.castSpell(false)
-}else{if(this.timer==60||this.timer==64||this.timer==68||this.timer==72||this.timer==76&&this.bigTimer<300){this.castSpell(true)
-}}if(Math.abs(c.x-this.getGlobalPosition().x)<9){this.jump3()}if(Math.abs(c.x-this.getGlobalPosition().x)<15){if(this.goingLeft){if(this.getGlobalPosition().x>25){this.goLeft()
-}else{this.goRight();this.goingLeft=false}}else{if(c.x<this.getGlobalPosition().x){if(this.getGlobalPosition().x<75){this.goRight()
-}else{this.goLeft();this.goingLeft=true}}else{if(this.getGlobalPosition().x>25){this.goLeft()
-}else{this.dontMove()}}}}else{this.dontMove()}};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(1000)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
-this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemWeaponMonkeyWizardStaff","You found a staff.","You gain the monkey wizard staff."))
-};a.prototype.castSpell=function(c){var d=new MonkeyWizardMagicalPurpleBall(this.getQuest(),this.getGlobalPosition().plus(new Pos(3,0)),new Naming("An magical purple ball","a magical purple ball"),(c?new Color(ColorType.MONKEY_WIZARD_BALL_STORED):new Color(ColorType.MONKEY_WIZARD_BALL)),new Pos(2,1),15,this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("An magical purple ball","a magical purple ball")),(c?350-this.bigTimer:null));
-if(c==false){d.setTargetTypeTargetEntity(this.getQuest().getGame().getPlayer())}else{d.setTargetTypeTargetPosition(new Pos(Random.between(1,99),Random.between(4,9)))
-}this.getQuest().addEntity(d)};a.prototype.dontMove=function(){this.getQuestEntityMovement().setOffset(new Pos(0,0))
-};a.prototype.goLeft=function(){this.getQuestEntityMovement().setOffset(new Pos(-1,0))
-};a.prototype.goRight=function(){this.getQuestEntityMovement().setOffset(new Pos(1,0))
-};a.prototype.jump3=function(){this.jump(3)};return a})(QuestEntity);var Monster=(function(b){__extends(a,b);
+}}};return a})(MonkeyWizardStaffMotherClass);var Monster=(function(b){__extends(a,b);
 function a(c,d){b.call(this,c,d,new Naming("The monster","the monster"),new RenderArea(13,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(13,1)),new CollisionBox(this,new Pos(1,0),new Pos(11,1)),new CollisionBox(this,new Pos(2,0),new Pos(9,1)),new CollisionBox(this,new Pos(3,0),new Pos(7,1))),new QuestEntityMovement());
 this.anEggWasDestroyed=false;this.getRenderArea().drawArray(Database.getAscii("places/quests/castle/room3/monster"));
 this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("??","??"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(15,6))),10000));
@@ -2613,7 +2605,14 @@ this.renderArea.drawString(Database.getTranslatedText("mountainsText1"),19,28,tr
 function b(c,e,d){a.call(this,c,e,new Naming("An obsidian brick","an obsidian brick"),null,new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(2,1))),new QuestEntityMovement());
 this.getQuestEntityMovement().setGravity(true);this.setDestructible(true);this.setMaxHp(d);
 this.setHp(d);this.addColor(new QuestEntitySpellColor(this.getQuest(),new Pos(0,0),new Pos(2,1),new Color(ColorType.PLAYER_OBSIDIAN_BRICK)))
-}return b})(QuestEntitySpell);var OctopusKingCrown=(function(b){__extends(a,b);function a(){b.call(this,"eqItemHatOctopusKingCrown","eqItemHatOctopusKingCrownName","eqItemHatOctopusKingCrownDescription","eqItems/hats/octopusKingCrown")
+}return b})(QuestEntitySpell);var OctopusKing=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("The Octopus King","the Octopus King"),new RenderArea(6,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(2,0),new Pos(2,1)),new CollisionBox(this,new Pos(1,1),new Pos(4,1)),new CollisionBox(this,new Pos(1,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(6,1))),new QuestEntityMovement());
+this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(false);
+this.setDestructible(true);this.setMaxHp(380);this.setHp(380);this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
+this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its tentacles","its tentacles"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(8,6))),16));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}a.prototype.update=function(){this.goTowards(this.getGlobalPosition(),this.getQuest().getGame().getPlayer().getGlobalPosition(),0,new Pos(1,0));
+b.prototype.update.call(this)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(4000)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
+this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemHatOctopusKingCrown","You found the Octopus King crown.","You gain the Octopus King crown."))
+};return a})(QuestEntity);var OctopusKingCrown=(function(b){__extends(a,b);function a(){b.call(this,"eqItemHatOctopusKingCrown","eqItemHatOctopusKingCrownName","eqItemHatOctopusKingCrownDescription","eqItems/hats/octopusKingCrown")
 }a.prototype.getSpecialAbility=function(){return"You are a lot more confident."};
 return a})(EqItem);var OctopusKingCrownWithJaspers=(function(a){__extends(b,a);function b(){a.call(this,"eqItemHatOctopusKingCrownWithJaspers","eqItemHatOctopusKingCrownWithJaspersName","eqItemHatOctopusKingCrownWithJaspersDescription","eqItems/hats/octopusKingCrownWithJaspers");
 this.currentTimer=0;this.maxTimer=3}b.prototype.getSpecialAbility=function(){return"Randomly cast powerful fireballs around you (Octopus King crown with jaspers)."
@@ -2643,16 +2642,8 @@ this.addEntity(c)};a.prototype.addRoofAndFloor=function(){var c=new Wall(this,ne
 c.addBox(new Pos(0,0),new Pos(100,2));c.addBox(new Pos(0,2),new Pos(7,1));c.addBox(new Pos(18,2),new Pos(50,1));
 c.addBox(new Pos(71,2),new Pos(29,1));c.addBox(new Pos(0,3),new Pos(2,1));c.addBox(new Pos(24,3),new Pos(21,1));
 c.addBox(new Pos(83,3),new Pos(17,1));c.addBox(new Pos(0,4),new Pos(1,1));c.addBox(new Pos(99,4),new Pos(1,1));
-c.addBox(new Pos(-20,20),new Pos(120,1));this.addEntity(c)};return a})(Quest);var OctopusKing=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d,new Naming("The Octopus King","the Octopus King"),new RenderArea(6,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(2,0),new Pos(2,1)),new CollisionBox(this,new Pos(1,1),new Pos(4,1)),new CollisionBox(this,new Pos(1,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(6,1))),new QuestEntityMovement());
-this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(false);
-this.setDestructible(true);this.setMaxHp(380);this.setHp(380);this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
-this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its tentacles","its tentacles"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(8,6))),16));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}a.prototype.update=function(){this.goTowards(this.getGlobalPosition(),this.getQuest().getGame().getPlayer().getGlobalPosition(),0,new Pos(1,0));
-b.prototype.update.call(this)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(4000)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
-this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemHatOctopusKingCrown","You found the Octopus King crown.","You gain the Octopus King crown."))
-};return a})(QuestEntity);var OutsideTheHole=(function(b){__extends(a,b);function a(c){b.call(this,c);
-this.renderArea=new RenderArea();this.renderArea.resizeFromArray(Database.getAscii("places/outsideTheHole"),0,4);
+c.addBox(new Pos(-20,20),new Pos(120,1));this.addEntity(c)};return a})(Quest);var OutsideTheHole=(function(b){__extends(a,b);
+function a(c){b.call(this,c);this.renderArea=new RenderArea();this.renderArea.resizeFromArray(Database.getAscii("places/outsideTheHole"),0,4);
 this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.jump=function(){this.getGame().setPlace(new TheHole(this.getGame()))
 };a.prototype.update=function(){this.renderArea.resetAllButSize();this.addBackToMainMapButton(this.renderArea,"theHoleBackToTheMapButton");
 this.renderArea.drawArray(Database.getAscii("places/outsideTheHole"),0,3);this.renderArea.addAsciiRealButton(Database.getText("outsideTheHoleButton"),34,23,"outsideTheHoleButton",Database.getTranslatedText("outsideTheHoleButton"),true);
@@ -2682,55 +2673,8 @@ var g=h;g.add(new Pos(0,-Database.getAsciiHeight(c)+1));b.call(this,e,g,new Nami
 this.getRenderArea().resizeFromArray(Database.getAscii(c));this.getRenderArea().drawArray(Database.getAscii(c));
 if(c=="places/quests/theSea/plant0"||c=="places/quests/theSea/plant8"||c=="places/quests/theSea/plant9"||c=="places/quests/theSea/plant10"){this.setTransparency(new RenderTransparency(" ","%"))
 }else{this.setTransparency(new RenderTransparency(" "))}}return a})(QuestEntity);
-var PlayerBludgeon=(function(a){__extends(b,a);function b(){a.apply(this,arguments)
-}b.prototype.getRealDamage=function(){return Random.between(12,16)};b.prototype.getRealDamageText=function(){return"12-16"
-};return b})(QuestEntityWeapon);var PlayerCharacterType;(function(a){a[a.CANDYBOX=0]="CANDYBOX";
-a[a.MEDIUM=1]="MEDIUM";a[a.CANDYBOX_SQUEEZED=2]="CANDYBOX_SQUEEZED";a[a.MEDIUM_SQUEEZED=3]="MEDIUM_SQUEEZED"
-})(PlayerCharacterType||(PlayerCharacterType={}));var PlayerCloneCandyBox=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d,new Naming("A clone","a clone"),new RenderArea(3,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1))),new QuestEntityMovement());
-this.setTeam(QuestEntityTeam.PLAYER);this.setDestructible(true);this.setMaxHp(c.getGame().getPlayer().getHp());
-this.setHp(c.getGame().getPlayer().getHp());this.getRenderArea().drawString("\\o/");
-this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its fists","its fists"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(5,3))),3));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}return a})(QuestEntity);
-var PlayerCloneMedium=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A clone","a clone"),new RenderArea(11,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(11,1)),new CollisionBox(this,new Pos(1,1),new Pos(9,1)),new CollisionBox(this,new Pos(2,2),new Pos(7,1)),new CollisionBox(this,new Pos(4,3),new Pos(3,1))),new QuestEntityMovement());
-this.setTeam(QuestEntityTeam.PLAYER);this.setDestructible(true);this.setMaxHp(c.getGame().getPlayer().getHp());
-this.setHp(c.getGame().getPlayer().getHp());this.getRenderArea().drawArray(Database.getAscii("players/medium"));
-this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its fists","its fists"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(13,6))),3));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}return a})(QuestEntity);
-var PlayerSummonedDemon=(function(a){__extends(b,a);function b(c,e,d){a.call(this,c,e,new Naming("A demon","a demon"));
-this.damage=d;this.damageReason=new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY,QuestEntityDamageReasonWhatType.SPELL);
-this.damageReason.setQuestEntity(this.getQuest().getGame().getPlayer(),QuestEntityTeam.NATURE);
-this.damageReason.setSpellNaming(this.getRandomNaming());this.damageCollisionBoxCollection=new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(8,4)));
-this.addRandomQuestEntitySpellColors();this.setQuestEntityMovement(new QuestEntityMovement(new Pos(3,0)))
-}b.prototype.update=function(){this.handleDamage();a.prototype.update.call(this)};
-b.prototype.addRandomQuestEntitySpellColors=function(){var c=[];for(var e=0;e<4;e++){c.push([]);
-for(var d=0;d<4;d++){c[e].push(false)}}switch(Random.upTo(1)){case 0:for(var e=0;
-e<2;e++){for(var d=0;d<4;d++){if(Random.flipACoin()){c[e][d]=true;c[3-e][d]=true}}}break;
-case 1:for(var e=0;e<4;e++){for(var d=0;d<2;d++){if(Random.flipACoin()){c[e][d]=true;
-c[e][3-d]=true}}}break}for(var e=0;e<4;e++){for(var d=0;d<4;d++){if(c[e][d]){this.addColor(new QuestEntitySpellColor(this.getQuest(),new Pos(e*2,d),new Pos(2,1),new Color(ColorType.PLAYER_SUMMONED_DEMON,true)))
-}}}};b.prototype.getRandomNaming=function(){var d="";var f;if(Random.flipACoin()){f=3
-}else{if(Random.oneChanceOutOf(10)){f=4}else{if(Random.oneChanceOutOf(10)){f=1}else{f=2
-}}}var e=[];for(var c=0;c<f;c++){e.push(Random.fromArray(["lael","ezek","bal","sen","zen","aps","hir","ta","ozn","eres","non","enon","cesti","mal","aser","oex","nax","arir","nikon","taor","rael","mael","sael","epit","uer","pod","ehon","edeo","xa"]))
-}e[0]=e[0].charAt(0).toUpperCase()+e[0].slice(1);for(var c=0;c<e.length;c++){d+=e[c]
-}return new Naming("the demon "+d)};b.prototype.handleDamage=function(){for(var c=0;
-c<this.getQuest().getEntities().length;c++){if(this.getQuest().getEntities()[c].getDestructible()){if(this.getQuest().getEntities()[c].getCbc()!=null){if(this.getQuest().getEntities()[c].getCbc().collidesWith(this.damageCollisionBoxCollection)){this.getQuest().getEntities()[c].inflictDamage(this.damage,this.damageReason)
-}}}}};return b})(QuestEntitySpell);var PlayerSummonedOctopusKing=(function(a){__extends(b,a);
-function b(c,d){a.call(this,c,d,new Naming("An Octopus King","an Octopus King"),new RenderArea(6,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(2,0),new Pos(2,1)),new CollisionBox(this,new Pos(1,1),new Pos(4,1)),new CollisionBox(this,new Pos(1,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(6,1))),new QuestEntityMovement());
-this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(true);
-this.setDestructible(true);this.setMaxHp(380);this.setHp(380);this.setTeam(QuestEntityTeam.PLAYER);
-this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
-this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its tentacles","its tentacles"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(8,6))),16));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}b.prototype.update=function(){this.goTowards(this.getGlobalPosition(),this.getQuest().getGame().getPlayer().getGlobalPosition(),0,new Pos(1,0));
-a.prototype.update.call(this)};return b})(QuestEntity);var PlayerSummonedTribeWarrior=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d,new Naming("A tribe warrior","a tribe warrior"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(1,1)),new CollisionBox(this,new Pos(0,1),new Pos(4,3))),new QuestEntityMovement());
-this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));this.getQuestEntityMovement().setGravity(true);
-this.getQuestEntityMovement().setWormsLike(true);this.setDestructible(true);this.setMaxHp(25);
-this.setHp(25);this.setTeam(QuestEntityTeam.PLAYER);this.getRenderArea().drawArray(Database.getAscii("places/quests/theHole/lostTribeWarrior"));
-this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("A tribal spear","a tribal spear"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(6,6))),8));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(2)}a.prototype.update=function(){b.prototype.update.call(this)
-};return a})(QuestEntity);Saving.registerNumber("playerHp",100);var Player=(function(b){__extends(a,b);
-function a(c){b.call(this,null,new Pos(0,0),new Naming("You","you"));this.game=c;
-this.setDestructible(true)}a.prototype.beginBerserk=function(c){if(b.prototype.beginBerserk.call(this,c)){this.drawOnRenderArea();
+Saving.registerNumber("playerHp",100);var Player=(function(b){__extends(a,b);function a(c){b.call(this,null,new Pos(0,0),new Naming("You","you"));
+this.game=c;this.setDestructible(true)}a.prototype.beginBerserk=function(c){if(b.prototype.beginBerserk.call(this,c)){this.drawOnRenderArea();
 return true}return false};a.prototype.beginTurtle=function(c){if(b.prototype.beginTurtle.call(this,c)){this.drawOnRenderArea();
 return true}return false};a.prototype.canJumpInMidAir=function(){if(this.game.isEquipped("boots","eqItemBootsRocketBoots")){return true
 }return false};a.prototype.checkCollision=function(c){if(c===void 0){c=new Pos(0,0)
@@ -2812,8 +2756,54 @@ case PlayerCharacterType.MEDIUM_SQUEEZED:if(this.getTurtle()&&this.getBerserk())
 }else{if(this.getTurtle()){this.getRenderArea().drawArray(Database.getAscii("players/mediumSqueezedTurtle"))
 }else{if(this.getBerserk()){this.getRenderArea().drawArray(Database.getAscii("players/mediumSqueezedBerserk"))
 }else{this.getRenderArea().drawArray(Database.getAscii("players/mediumSqueezed"))
-}}}break}};return a})(QuestEntity);var PolishedSilverSword=(function(b){__extends(a,b);
-function a(){b.call(this,"eqItemWeaponPolishedSilverSword","eqItemWeaponPolishedSilverSwordName","eqItemWeaponPolishedSilverSwordDescription","eqItems/weapons/polishedSilverSword")
+}}}break}};return a})(QuestEntity);var PlayerBludgeon=(function(a){__extends(b,a);
+function b(){a.apply(this,arguments)}b.prototype.getRealDamage=function(){return Random.between(12,16)
+};b.prototype.getRealDamageText=function(){return"12-16"};return b})(QuestEntityWeapon);
+var PlayerCharacterType;(function(a){a[a.CANDYBOX=0]="CANDYBOX";a[a.MEDIUM=1]="MEDIUM";
+a[a.CANDYBOX_SQUEEZED=2]="CANDYBOX_SQUEEZED";a[a.MEDIUM_SQUEEZED=3]="MEDIUM_SQUEEZED"
+})(PlayerCharacterType||(PlayerCharacterType={}));var PlayerCloneCandyBox=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d,new Naming("A clone","a clone"),new RenderArea(3,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1))),new QuestEntityMovement());
+this.setTeam(QuestEntityTeam.PLAYER);this.setDestructible(true);this.setMaxHp(c.getGame().getPlayer().getHp());
+this.setHp(c.getGame().getPlayer().getHp());this.getRenderArea().drawString("\\o/");
+this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its fists","its fists"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(5,3))),3));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}return a})(QuestEntity);
+var PlayerCloneMedium=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A clone","a clone"),new RenderArea(11,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(11,1)),new CollisionBox(this,new Pos(1,1),new Pos(9,1)),new CollisionBox(this,new Pos(2,2),new Pos(7,1)),new CollisionBox(this,new Pos(4,3),new Pos(3,1))),new QuestEntityMovement());
+this.setTeam(QuestEntityTeam.PLAYER);this.setDestructible(true);this.setMaxHp(c.getGame().getPlayer().getHp());
+this.setHp(c.getGame().getPlayer().getHp());this.getRenderArea().drawArray(Database.getAscii("players/medium"));
+this.setTransparency(new RenderTransparency(" ","%"));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its fists","its fists"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(13,6))),3));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}return a})(QuestEntity);
+var PlayerSummonedDemon=(function(a){__extends(b,a);function b(c,e,d){a.call(this,c,e,new Naming("A demon","a demon"));
+this.damage=d;this.damageReason=new QuestEntityDamageReason(QuestEntityDamageReasonWhoType.ENTITY,QuestEntityDamageReasonWhatType.SPELL);
+this.damageReason.setQuestEntity(this.getQuest().getGame().getPlayer(),QuestEntityTeam.NATURE);
+this.damageReason.setSpellNaming(this.getRandomNaming());this.damageCollisionBoxCollection=new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(8,4)));
+this.addRandomQuestEntitySpellColors();this.setQuestEntityMovement(new QuestEntityMovement(new Pos(3,0)))
+}b.prototype.update=function(){this.handleDamage();a.prototype.update.call(this)};
+b.prototype.addRandomQuestEntitySpellColors=function(){var c=[];for(var e=0;e<4;e++){c.push([]);
+for(var d=0;d<4;d++){c[e].push(false)}}switch(Random.upTo(1)){case 0:for(var e=0;
+e<2;e++){for(var d=0;d<4;d++){if(Random.flipACoin()){c[e][d]=true;c[3-e][d]=true}}}break;
+case 1:for(var e=0;e<4;e++){for(var d=0;d<2;d++){if(Random.flipACoin()){c[e][d]=true;
+c[e][3-d]=true}}}break}for(var e=0;e<4;e++){for(var d=0;d<4;d++){if(c[e][d]){this.addColor(new QuestEntitySpellColor(this.getQuest(),new Pos(e*2,d),new Pos(2,1),new Color(ColorType.PLAYER_SUMMONED_DEMON,true)))
+}}}};b.prototype.getRandomNaming=function(){var d="";var f;if(Random.flipACoin()){f=3
+}else{if(Random.oneChanceOutOf(10)){f=4}else{if(Random.oneChanceOutOf(10)){f=1}else{f=2
+}}}var e=[];for(var c=0;c<f;c++){e.push(Random.fromArray(["lael","ezek","bal","sen","zen","aps","hir","ta","ozn","eres","non","enon","cesti","mal","aser","oex","nax","arir","nikon","taor","rael","mael","sael","epit","uer","pod","ehon","edeo","xa"]))
+}e[0]=e[0].charAt(0).toUpperCase()+e[0].slice(1);for(var c=0;c<e.length;c++){d+=e[c]
+}return new Naming("the demon "+d)};b.prototype.handleDamage=function(){for(var c=0;
+c<this.getQuest().getEntities().length;c++){if(this.getQuest().getEntities()[c].getDestructible()){if(this.getQuest().getEntities()[c].getCbc()!=null){if(this.getQuest().getEntities()[c].getCbc().collidesWith(this.damageCollisionBoxCollection)){this.getQuest().getEntities()[c].inflictDamage(this.damage,this.damageReason)
+}}}}};return b})(QuestEntitySpell);var PlayerSummonedOctopusKing=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d,new Naming("An Octopus King","an Octopus King"),new RenderArea(6,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(2,0),new Pos(2,1)),new CollisionBox(this,new Pos(1,1),new Pos(4,1)),new CollisionBox(this,new Pos(1,2),new Pos(4,1)),new CollisionBox(this,new Pos(0,3),new Pos(6,1))),new QuestEntityMovement());
+this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(true);
+this.setDestructible(true);this.setMaxHp(380);this.setHp(380);this.setTeam(QuestEntityTeam.PLAYER);
+this.getRenderArea().drawArray(Database.getAscii("places/quests/octopusKing/octopusKing"));
+this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its tentacles","its tentacles"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(8,6))),16));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(3)}b.prototype.update=function(){this.goTowards(this.getGlobalPosition(),this.getQuest().getGame().getPlayer().getGlobalPosition(),0,new Pos(1,0));
+a.prototype.update.call(this)};return b})(QuestEntity);var PlayerSummonedTribeWarrior=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d,new Naming("A tribe warrior","a tribe warrior"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(1,1)),new CollisionBox(this,new Pos(0,1),new Pos(4,3))),new QuestEntityMovement());
+this.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));this.getQuestEntityMovement().setGravity(true);
+this.getQuestEntityMovement().setWormsLike(true);this.setDestructible(true);this.setMaxHp(25);
+this.setHp(25);this.setTeam(QuestEntityTeam.PLAYER);this.getRenderArea().drawArray(Database.getAscii("places/quests/theHole/lostTribeWarrior"));
+this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("A tribal spear","a tribal spear"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(6,6))),8));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(2)}a.prototype.update=function(){b.prototype.update.call(this)
+};return a})(QuestEntity);var PolishedSilverSword=(function(b){__extends(a,b);function a(){b.call(this,"eqItemWeaponPolishedSilverSword","eqItemWeaponPolishedSilverSwordName","eqItemWeaponPolishedSilverSwordDescription","eqItems/weapons/polishedSilverSword")
 }a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A polished silver sword","a polished silver sword"),e.getClassicCollisionBoxCollection(),7);
 d.getCloseCombatDelay().setFixedDelay(4,0);return d};return a})(EqItem);var PondLine=(function(){function a(c,b){this.isUsed=false;
 this.x1=c;this.x2=b}a.prototype.getIsUsed=function(){return this.isUsed};a.prototype.getX1=function(){return this.x1
@@ -2859,8 +2849,6 @@ if(b==null){this.questEntityTeam=c.getTeam()}else{this.questEntityTeam=b}return 
 })();var QuestEntityDamageReasonWhatType;(function(a){a[a.WEAPON=0]="WEAPON";a[a.SPELL=1]="SPELL"
 })(QuestEntityDamageReasonWhatType||(QuestEntityDamageReasonWhatType={}));var QuestEntityDamageReasonWhoType;
 (function(a){a[a.NATURE=0]="NATURE";a[a.ENTITY=1]="ENTITY"})(QuestEntityDamageReasonWhoType||(QuestEntityDamageReasonWhoType={}));
-var QuestEntityHealthBarPositionType;(function(a){a[a.RELATIVE=0]="RELATIVE";a[a.FIXED=1]="FIXED";
-a[a.FIXED_ON_PAGE=2]="FIXED_ON_PAGE"})(QuestEntityHealthBarPositionType||(QuestEntityHealthBarPositionType={}));
 var QuestEntityHealthBar=(function(){function a(d,f,b,h,e,c,g){if(b===void 0){b=new Pos(0,-1)
 }if(h===void 0){h=QuestEntityHealthBarPositionType.RELATIVE}if(e===void 0){e=false
 }if(c===void 0){c=false}if(g===void 0){g=BarType.UNICOLOR_HEALTH}this.bar=new Bar(g);
@@ -2872,7 +2860,9 @@ break;case QuestEntityHealthBarPositionType.RELATIVE:if(this.questEntity.getQues
 }else{this.shouldBeDrawn=false}if(this.shouldBeDrawn){if(this.showText==false){this.bar.update(this.questEntity.getHp()/this.questEntity.getMaxHp(),this.questEntity.getHp().toString())
 }else{this.bar.update(this.questEntity.getHp()/this.questEntity.getMaxHp(),this.questEntity.getNaming().getBeginning()+" : "+this.questEntity.getHp().toString()+"/"+this.questEntity.getMaxHp().toString())
 }}};a.prototype.setBarSize=function(b){this.barSize=b;this.bar.resize(this.barSize.x,this.barSize.y)
-};a.prototype.setDrawEvenIfFull=function(b){this.drawEvenIfFull=b};return a})();var QuestEntityMovement=(function(){function a(d,b,c){if(d===void 0){d=new Pos(0,0)
+};a.prototype.setDrawEvenIfFull=function(b){this.drawEvenIfFull=b};return a})();var QuestEntityHealthBarPositionType;
+(function(a){a[a.RELATIVE=0]="RELATIVE";a[a.FIXED=1]="FIXED";a[a.FIXED_ON_PAGE=2]="FIXED_ON_PAGE"
+})(QuestEntityHealthBarPositionType||(QuestEntityHealthBarPositionType={}));var QuestEntityMovement=(function(){function a(d,b,c){if(d===void 0){d=new Pos(0,0)
 }if(b===void 0){b=0}if(c===void 0){c=0}this.gravity=false;this.wormsLike=false;this.offset=d;
 this.intervalTime=b;this.currentTime=c}a.prototype.shouldMoveAtThisFrame=function(){return(this.currentTime==this.intervalTime)
 };a.prototype.update=function(){this.currentTime+=1;if(this.currentTime>this.intervalTime){this.currentTime=0
@@ -2910,20 +2900,18 @@ a[a.ONCE_THEN_WAIT=2]="ONCE_THEN_WAIT"})(QuestEntityWeaponDelayType||(QuestEntit
 var QuestItemFound=(function(){function a(d,e,c,b){this.quest=d;this.savingName=e;
 this.foundText=c;this.getText=b}a.prototype.found=function(){this.quest.getGame().getQuestLog().addMessage(new QuestLogMessage(this.foundText,null,true))
 };a.prototype.get=function(){this.quest.getGame().getQuestLog().addMessage(new QuestLogMessage(this.getText,null,true))
-};a.prototype.getSavingName=function(){return this.savingName};return a})();var QuestLogMessage=(function(){function a(d,c,b){if(c===void 0){c=null
-}if(b===void 0){b=false}this.left=null;this.right=null;this.left=d;this.right=c;this.bold=b;
-if(this.left.length>100-(this.right!=null?this.right.length:0)){this.left=this.left.substr(0,100-(this.right!=null?this.right.length:0)-7)+" (...)"
-}}a.prototype.draw=function(c,d,b){if(this.left!=null){c.drawString(this.left,d.x,d.y);
-if(this.bold){c.addBold(d.x,d.x+this.left.length,d.y)}}if(this.right!=null){c.drawString(this.right,d.x+b-this.right.length,d.y);
-if(this.bold){c.addBold(d.x+b-this.right.length,b,d.y)}}};return a})();var QuestLog=(function(){function a(){this.messages=[]
+};a.prototype.getSavingName=function(){return this.savingName};return a})();var QuestLog=(function(){function a(){this.messages=[]
 }a.prototype.addDelimiter=function(){this.messages.push(new QuestLogMessage("----------------------------------------------------------------------------------------------------"));
 this.messages.push(new QuestLogMessage(""))};a.prototype.addMessage=function(b){this.messages.push(b);
 this.checkLogSize()};a.prototype.draw=function(c,d){c.drawHorizontalLine("-",d.x,d.x+100,d.y);
 c.drawHorizontalLine("-",d.x,d.x+100,d.y+11);for(var b=0;b<this.messages.length;b++){this.messages[b].draw(c,new Pos(d.x,1+d.y+this.messages.length-1-b),100)
 }};a.prototype.checkLogSize=function(){if(this.messages.length>10){this.messages.splice(0,this.messages.length-10)
-}};return a})();var QuestPlayerSpellCountdownType;(function(a){a[a.SPELLS=0]="SPELLS";
-a[a.POTIONS=1]="POTIONS";a[a.ITEM_CAPACITIES=2]="ITEM_CAPACITIES";a[a.BLACKHOLE=3]="BLACKHOLE"
-})(QuestPlayerSpellCountdownType||(QuestPlayerSpellCountdownType={}));Saving.registerBool("questPlayerSpellHealthPotionHasSpell",false);
+}};return a})();var QuestLogMessage=(function(){function a(d,c,b){if(c===void 0){c=null
+}if(b===void 0){b=false}this.left=null;this.right=null;this.left=d;this.right=c;this.bold=b;
+if(this.left.length>100-(this.right!=null?this.right.length:0)){this.left=this.left.substr(0,100-(this.right!=null?this.right.length:0)-7)+" (...)"
+}}a.prototype.draw=function(c,d,b){if(this.left!=null){c.drawString(this.left,d.x,d.y);
+if(this.bold){c.addBold(d.x,d.x+this.left.length,d.y)}}if(this.right!=null){c.drawString(this.right,d.x+b-this.right.length,d.y);
+if(this.bold){c.addBold(d.x+b-this.right.length,b,d.y)}}};return a})();Saving.registerBool("questPlayerSpellHealthPotionHasSpell",false);
 Saving.registerBool("questPlayerSpellTurtlePotionHasSpell",false);Saving.registerBool("questPlayerSpellAntiGravityPotionHasSpell",false);
 Saving.registerBool("questPlayerSpellBerserkPotionHasSpell",false);Saving.registerBool("questPlayerSpellCloningPotionHasSpell",false);
 Saving.registerBool("questPlayerSpellPPotionHasSpell",false);Saving.registerBool("questPlayerSpellXPotionHasSpell",false);
@@ -2948,7 +2936,10 @@ if(this.quest.getQuestEnded()){b=false}if(b==true){switch(this.countdownType){ca
 break;case QuestPlayerSpellCountdownType.POTIONS:this.quest.increasePlayerPotionsCountdown(this.countdownTime);
 break;case QuestPlayerSpellCountdownType.BLACKHOLE:this.countdownTime-=1;break;default:break
 }if(this.numberIdWichLimitsQuantity!=null){Saving.saveNumber(this.numberIdWichLimitsQuantity,Saving.loadNumber(this.numberIdWichLimitsQuantity)-1)
-}this.callbackCollection.fire()}};return a})();var Random;(function(f){function e(i,h){if(Bugs.getUltimateBugLevel()>=2){return h
+}this.callbackCollection.fire()}};return a})();var QuestPlayerSpellCountdownType;
+(function(a){a[a.SPELLS=0]="SPELLS";a[a.POTIONS=1]="POTIONS";a[a.ITEM_CAPACITIES=2]="ITEM_CAPACITIES";
+a[a.BLACKHOLE=3]="BLACKHOLE"})(QuestPlayerSpellCountdownType||(QuestPlayerSpellCountdownType={}));
+var Random;(function(f){function e(i,h){if(Bugs.getUltimateBugLevel()>=2){return h
 }return Math.floor(Math.random()*(h-i+1))+i}f.between=e;function g(){if(Bugs.getUltimateBugLevel()>=2){return true
 }if(Math.random()<0.5){return false}return true}f.flipACoin=g;function b(h){if(Bugs.getUltimateBugLevel()>=4){return b(["a","b","c","d",-852,null,"aniwey","ilovebugs","42",42])
 }return h[d(h.length-1)]}f.fromArray=b;function c(h){if(Bugs.getUltimateBugLevel()>=3){return new Pos(-h.x,-h.y)
@@ -2999,7 +2990,14 @@ var RenderTagLt=(function(b){__extends(a,b);function a(c){b.call(this,c,"")}a.pr
 };a.prototype.getMetaAlphaCharacter=function(){return this.metaAlphaCharacter};return a
 })();var RocketBoots=(function(a){__extends(b,a);function b(){a.call(this,"eqItemBootsRocketBoots","eqItemBootsRocketBootsName","eqItemBootsRocketBootsDescription","eqItems/boots/rocketBoots")
 }b.prototype.getSpecialAbility=function(){return"Jump in mid-air without limit (rocket boots)."
-};return b})(EqItem);var Save=(function(b){__extends(a,b);function a(c){b.call(this,c);
+};return b})(EqItem);var Main;(function(g){var i=null;var a=MainLoadingType.NONE;
+var b=null;var h=null;function e(){Keyboard.execute();c()}g.documentIsReady=e;function d(j){i.clearAllIntervals();
+a=MainLoadingType.FILE;b=j;h=null;Saving.canRegister=false;c()}g.reloadEverythingFromFile=d;
+function f(j){var k;var l;if(j!=""&&j.indexOf("=")!=-1&&j.indexOf("=")<j.length-1){j=j.substr(1);
+k=j.substr(0,j.indexOf("="));l=j.substr(j.indexOf("=")+1);switch(k){case"slot":a=MainLoadingType.LOCAL;
+b="slot"+l;break;case"gamemode":h=l;break}}}g.setUrlData=f;function c(){i=new Game(h);
+Keyboard.setGame(i);Saving.load(i,a,b);i.postLoad()}})(Main||(Main={}));$(document).ready(function(){Main.setUrlData(window.location.search);
+Main.documentIsReady()});var Save=(function(b){__extends(a,b);function a(c){b.call(this,c);
 this.renderArea=new RenderArea();this.selectedSlot="slot1";this.lastLocalAutosaveMinute=null;
 this.showFileSaveWarning=false;this.fileSaveTextareaContent=null;this.resize();this.createSlotsArray();
 this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.willBeDisplayed=function(){this.resize();
@@ -3076,16 +3074,8 @@ c+=this.drawLocalSave(0,c+7);c+=this.drawFileSave(0,c+21);this.renderArea.drawAr
 c+=this.drawLocalLoad(0,c+47);c+=this.drawFileLoad(0,c+59);this.renderArea.addLinkCallbackCollection(new CallbackCollection(this.selectRightSlot.bind(this)))
 };return a})(Place);var Scythe=(function(b){__extends(a,b);function a(){b.call(this,"eqItemWeaponScythe","eqItemWeaponScytheName","eqItemWeaponScytheDescription","eqItems/weapons/scythe")
 }a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A scythe","a scythe"),e.getClassicCollisionBoxCollection(),21);
-d.getCloseCombatDelay().setFixedDelay(0);return d};return a})(EqItem);var Seahorse=(function(b){__extends(a,b);
-function a(c,e,d){b.call(this,c,e,new Naming("A magical seahorse","a magical seahorse"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1)),new CollisionBox(this,new Pos(1,1),new Pos(3,1)),new CollisionBox(this,new Pos(2,2),new Pos(1,1)),new CollisionBox(this,new Pos(2,3),new Pos(1,1))),new QuestEntityMovement(new Pos(-1,0)));
-this.intendedXPosition=d;this.setDestructible(true);this.setMaxHp(20);this.setHp(20);
-this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/seahorse"));
-this.setTransparency(new RenderTransparency(" "));this.addQuestEntitySpellCaster(new QuestEntitySpellCaster(new CallbackCollection(this.castWaterBall.bind(this))));
-this.getLastQuestEntitySpellCaster().getDelay().setFixedDelay(30,Random.upTo(30))
-}a.prototype.tryToGoToIntendedXPosition=function(c){this.goTowards(this.getGlobalPosition(),new Pos(c+this.intendedXPosition,this.getGlobalPosition().y),0,new Pos(1,0))
-};a.prototype.castWaterBall=function(){var c=new Fireball(this.getQuest(),this.getGlobalPosition().plus(new Pos(-2,0)),new Naming("A magical water ball","a magical water ball"),new Color(ColorType.SEAHORSE_WATER_BALL),new Pos(2,1),70,this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("A magical water ball","a magical water ball")));
-c.setTargetTypeNoTarget(new Pos(-2,0));this.getQuest().addEntity(c)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(150)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
-};return a})(QuestEntity);var SeaSnake=(function(a){__extends(b,a);function b(c,d){a.call(this,c,d,new Naming("A sea snake","a sea snake"),new RenderArea(78,11),new Pos(0,0));
+d.getCloseCombatDelay().setFixedDelay(0);return d};return a})(EqItem);var SeaSnake=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d,new Naming("A sea snake","a sea snake"),new RenderArea(78,11),new Pos(0,0));
 this.setQuestEntityMovement(new QuestEntityMovement(new Pos(-Random.between(3,5),0)));
 this.setQuestEntityAnimation(new QuestEntityAnimation(0,0,Random.upTo(11),"places/quests/theSea/seaSnake/1","places/quests/theSea/seaSnake/2","places/quests/theSea/seaSnake/3","places/quests/theSea/seaSnake/4","places/quests/theSea/seaSnake/5","places/quests/theSea/seaSnake/6","places/quests/theSea/seaSnake/7","places/quests/theSea/seaSnake/8","places/quests/theSea/seaSnake/9","places/quests/theSea/seaSnake/10","places/quests/theSea/seaSnake/11","places/quests/theSea/seaSnake/12"));
 this.setTransparency(new RenderTransparency(" ","%"));this.setDestructible(false)
@@ -3096,12 +3086,20 @@ this.getQuest().addEntity(c)};b.prototype.getYCastingOffset=function(){switch(th
 break;case 1:return 5;break;case 2:return 6;break;case 3:return 7;break;case 4:return 8;
 break;case 5:return 9;break;case 6:return 10;break;case 7:return 9;break;case 8:return 8;
 break;case 9:return 7;break;case 10:return 6;break;case 11:return 5;break}};return b
-})(QuestEntity);Saving.registerBool("secondHouseLollipop1Bought",false);Saving.registerBool("secondHouseLollipop2Bought",false);
-Saving.registerBool("secondHouseLollipop3Bought",false);Saving.registerBool("secondHouseLeatherBootsBought",false);
-Saving.registerBool("secondHouseChocolateBarBought",false);Saving.registerBool("secondHouseMerchantHatBought",false);
-Saving.registerBool("secondHouseTimeRingBought",false);var SecondHouse=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.items=[];this.selectedItemIndex=null;
-this.shouldDrawIntroSpeech=true;this.addItem(new CandyMerchantItem_Lollipop(this.getGame(),"secondHouseLollipop1Bought","places/village/candyMerchantItems/lollipopRight",new Pos(14,22),"secondHouseLollipop1Speech",60,"secondHouseLollipopButtonText","secondHouseLollipop1Button"));
+})(QuestEntity);var Seahorse=(function(b){__extends(a,b);function a(c,e,d){b.call(this,c,e,new Naming("A magical seahorse","a magical seahorse"),new RenderArea(4,4),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1)),new CollisionBox(this,new Pos(1,1),new Pos(3,1)),new CollisionBox(this,new Pos(2,2),new Pos(1,1)),new CollisionBox(this,new Pos(2,3),new Pos(1,1))),new QuestEntityMovement(new Pos(-1,0)));
+this.intendedXPosition=d;this.setDestructible(true);this.setMaxHp(20);this.setHp(20);
+this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/seahorse"));
+this.setTransparency(new RenderTransparency(" "));this.addQuestEntitySpellCaster(new QuestEntitySpellCaster(new CallbackCollection(this.castWaterBall.bind(this))));
+this.getLastQuestEntitySpellCaster().getDelay().setFixedDelay(30,Random.upTo(30))
+}a.prototype.tryToGoToIntendedXPosition=function(c){this.goTowards(this.getGlobalPosition(),new Pos(c+this.intendedXPosition,this.getGlobalPosition().y),0,new Pos(1,0))
+};a.prototype.castWaterBall=function(){var c=new Fireball(this.getQuest(),this.getGlobalPosition().plus(new Pos(-2,0)),new Naming("A magical water ball","a magical water ball"),new Color(ColorType.SEAHORSE_WATER_BALL),new Pos(2,1),70,this.getAndPossiblyCreateSpellCastingDamageReason(new Naming("A magical water ball","a magical water ball")));
+c.setTargetTypeNoTarget(new Pos(-2,0));this.getQuest().addEntity(c)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(150)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
+};return a})(QuestEntity);Saving.registerBool("secondHouseLollipop1Bought",false);
+Saving.registerBool("secondHouseLollipop2Bought",false);Saving.registerBool("secondHouseLollipop3Bought",false);
+Saving.registerBool("secondHouseLeatherBootsBought",false);Saving.registerBool("secondHouseChocolateBarBought",false);
+Saving.registerBool("secondHouseMerchantHatBought",false);Saving.registerBool("secondHouseTimeRingBought",false);
+var SecondHouse=(function(b){__extends(a,b);function a(c){b.call(this,c);this.renderArea=new RenderArea();
+this.items=[];this.selectedItemIndex=null;this.shouldDrawIntroSpeech=true;this.addItem(new CandyMerchantItem_Lollipop(this.getGame(),"secondHouseLollipop1Bought","places/village/candyMerchantItems/lollipopRight",new Pos(14,22),"secondHouseLollipop1Speech",60,"secondHouseLollipopButtonText","secondHouseLollipop1Button"));
 this.addItem(new CandyMerchantItem_Lollipop(this.getGame(),"secondHouseLollipop2Bought","places/village/candyMerchantItems/lollipopLeft",new Pos(12,23),"secondHouseLollipop2Speech",60,"secondHouseLollipopButtonText","secondHouseLollipop2Button"));
 this.addItem(new CandyMerchantItem_Lollipop(this.getGame(),"secondHouseLollipop3Bought","places/village/candyMerchantItems/lollipopRight",new Pos(18,24),"secondHouseLollipop3Speech",60,"secondHouseLollipopButtonText","secondHouseLollipop3Button"));
 this.addItem(new CandyMerchantItem_LeatherBoots(this.getGame(),"eqItemBootsLeatherBoots","places/village/candyMerchantItems/boots",new Pos(5,25),"secondHouseLeatherBootsSpeech",300,"secondHouseLeatherBootsButtonText","secondHouseLeatherBootsButton"));
@@ -3210,31 +3208,14 @@ this.setDestructible(true);this.setMaxHp(40);this.setHp(40);this.setTeam(QuestEn
 this.getRenderArea().resizeFromArray(Database.getAscii("places/quests/theSea/sponge"));
 this.getRenderArea().drawArray(Database.getAscii("places/quests/theSea/sponge"))}b.prototype.willDie=function(){a.prototype.willDie.call(this);
 this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"gridItemPossessedSponge","You found a sponge.","You gain a sponge."))
-};return b})(QuestEntity);var StatusBarTab=(function(){function a(b,e,i,h,f,d,g,c){if(g===void 0){g=-1
-}if(c===void 0){c=new CallbackCollection()}this.statusBar=b;this.type=e;this.xPos=i;
-this.setText(h,f,d);this.tabIndexWhenSelected=g;this.callbackCollectionWhenSelected=c
-}a.prototype.clicked=function(){this.callbackCollectionWhenSelected.fire();this.statusBar.selectTab(this.tabIndexWhenSelected)
-};a.prototype.render=function(e,b,f,d){e.drawVerticalLine("|",b+this.xPos-1,f,3);
-e.drawVerticalLine("|",b+this.xPos+this.width,f,3);for(var c=0;c<3;c++){e.drawString(this.text[c],b+this.xPos+1,f+c);
-if(d){e.addBackgroundColor(b+this.xPos,b+this.xPos+this.width,f+c,new Color(ColorType.STATUS_BAR_SELECTED_TAB,true))
-}}if(d==false){e.addMultipleAsciiButtons("statusBarTabButton"+this.tabIndexWhenSelected,b+this.xPos,b+this.xPos+this.width,f,b+this.xPos,b+this.xPos+this.width,f+1,b+this.xPos,b+this.xPos+this.width,f+2);
-e.addLinkCall(".statusBarTabButton"+this.tabIndexWhenSelected,new CallbackCollection(this.clicked.bind(this)))
-}};a.prototype.getType=function(){return this.type};a.prototype.getWidth=function(){return this.width
-};a.prototype.calculateWidth=function(){this.width=0;for(var b=0;b<3;b++){if(this.text[b].length>this.width){this.width=this.text[b].length
-}}this.width+=2};a.prototype.setText=function(d,c,b){this.text=[];this.text.push(d);
-this.text.push(c);this.text.push(b);this.calculateWidth()};return a})();var StatusBarTabType;
-(function(a){a[a.CANDY_BOX=0]="CANDY_BOX";a[a.INVENTORY=1]="INVENTORY";a[a.MAP=2]="MAP";
-a[a.FARM=3]="FARM";a[a.CAULDRON=4]="CAULDRON";a[a.INSIDE_YOUR_BOX=5]="INSIDE_YOUR_BOX";
-a[a.THE_COMPUTER=6]="THE_COMPUTER";a[a.THE_ARENA=7]="THE_ARENA";a[a.SAVE=8]="SAVE";
-a[a.CFG=9]="CFG"})(StatusBarTabType||(StatusBarTabType={}));Saving.registerBool("statusBarUnlocked",false);
-Saving.registerBool("statusBarUnlockedCfg",false);Saving.registerBool("statusBarUnlockedSave",false);
-Saving.registerBool("statusBarUnlockedMap",false);Saving.registerBool("statusBarUnlockedInventory",false);
-Saving.registerBool("statusBarUnlockedLollipopFarm",false);Saving.registerBool("statusBarUnlockedCauldron",false);
-Saving.registerBool("statusBarUnlockedInsideYourBox",false);Saving.registerBool("statusBarUnlockedTheComputer",false);
-Saving.registerBool("statusBarUnlockedTheArena",false);Saving.registerBool("statusBarUnlockedHealthBar",false);
-Saving.registerNumber("statusBarCornerStep",0);var StatusBar=(function(){function a(b,c){this.playerHealthBar=null;
-this.renderArea=new RenderArea(100,6," ");this.tabs=[];this.game=b;this.selectedTabIndex=c;
-this.deleteAndReAddEverything()}a.prototype.deleteAndReAddEverything=function(){this.tabs=[];
+};return b})(QuestEntity);Saving.registerBool("statusBarUnlocked",false);Saving.registerBool("statusBarUnlockedCfg",false);
+Saving.registerBool("statusBarUnlockedSave",false);Saving.registerBool("statusBarUnlockedMap",false);
+Saving.registerBool("statusBarUnlockedInventory",false);Saving.registerBool("statusBarUnlockedLollipopFarm",false);
+Saving.registerBool("statusBarUnlockedCauldron",false);Saving.registerBool("statusBarUnlockedInsideYourBox",false);
+Saving.registerBool("statusBarUnlockedTheComputer",false);Saving.registerBool("statusBarUnlockedTheArena",false);
+Saving.registerBool("statusBarUnlockedHealthBar",false);Saving.registerNumber("statusBarCornerStep",0);
+var StatusBar=(function(){function a(b,c){this.playerHealthBar=null;this.renderArea=new RenderArea(100,6," ");
+this.tabs=[];this.game=b;this.selectedTabIndex=c;this.deleteAndReAddEverything()}a.prototype.deleteAndReAddEverything=function(){this.tabs=[];
 this.game.resetSpecialHotkeys();this.playerHealthBar=null;if(Saving.loadBool("statusBarUnlockedHealthBar")){this.playerHealthBar=new Bar(BarType.HEALTH);
 this.playerHealthBar.resize(72,1)}if(Saving.loadBool("statusBarUnlocked")){this.addTab(StatusBarTabType.CANDY_BOX,0," THE","CANDY"," BOX",new CallbackCollection(this.game.goToCandyBox.bind(this.game)))
 }if(Saving.loadBool("statusBarUnlockedInventory")){this.addTab(StatusBarTabType.INVENTORY,8,"INV"," ENT","ORY",new CallbackCollection(this.game.goToInventory.bind(this.game)))
@@ -3278,95 +3259,34 @@ for(var b=0;b<this.tabs.length;b++){this.tabs[b].render(this.renderArea,29,1,(th
 };a.prototype.previousTab=function(){if(this.selectedTabIndex-1>=0){this.tabs[this.selectedTabIndex-1].clicked()
 }};a.prototype.nextTab=function(){if(this.game.getIsStatusBarAllowedToUseTheNKey()){if(this.selectedTabIndex+1<this.tabs.length){this.tabs[this.selectedTabIndex+1].clicked()
 }else{this.tabs[0].clicked()}}};a.prototype.setNextCornerStep=function(){var b=Saving.loadNumber("statusBarCornerStep");
-b+=1;if(b>6){b=0}Saving.saveNumber("statusBarCornerStep",b)};return a})();var SummoningTribalSpear=(function(b){__extends(a,b);
+b+=1;if(b>6){b=0}Saving.saveNumber("statusBarCornerStep",b)};return a})();var StatusBarTab=(function(){function a(b,e,i,h,f,d,g,c){if(g===void 0){g=-1
+}if(c===void 0){c=new CallbackCollection()}this.statusBar=b;this.type=e;this.xPos=i;
+this.setText(h,f,d);this.tabIndexWhenSelected=g;this.callbackCollectionWhenSelected=c
+}a.prototype.clicked=function(){this.callbackCollectionWhenSelected.fire();this.statusBar.selectTab(this.tabIndexWhenSelected)
+};a.prototype.render=function(e,b,f,d){e.drawVerticalLine("|",b+this.xPos-1,f,3);
+e.drawVerticalLine("|",b+this.xPos+this.width,f,3);for(var c=0;c<3;c++){e.drawString(this.text[c],b+this.xPos+1,f+c);
+if(d){e.addBackgroundColor(b+this.xPos,b+this.xPos+this.width,f+c,new Color(ColorType.STATUS_BAR_SELECTED_TAB,true))
+}}if(d==false){e.addMultipleAsciiButtons("statusBarTabButton"+this.tabIndexWhenSelected,b+this.xPos,b+this.xPos+this.width,f,b+this.xPos,b+this.xPos+this.width,f+1,b+this.xPos,b+this.xPos+this.width,f+2);
+e.addLinkCall(".statusBarTabButton"+this.tabIndexWhenSelected,new CallbackCollection(this.clicked.bind(this)))
+}};a.prototype.getType=function(){return this.type};a.prototype.getWidth=function(){return this.width
+};a.prototype.calculateWidth=function(){this.width=0;for(var b=0;b<3;b++){if(this.text[b].length>this.width){this.width=this.text[b].length
+}}this.width+=2};a.prototype.setText=function(d,c,b){this.text=[];this.text.push(d);
+this.text.push(c);this.text.push(b);this.calculateWidth()};return a})();var StatusBarTabType;
+(function(a){a[a.CANDY_BOX=0]="CANDY_BOX";a[a.INVENTORY=1]="INVENTORY";a[a.MAP=2]="MAP";
+a[a.FARM=3]="FARM";a[a.CAULDRON=4]="CAULDRON";a[a.INSIDE_YOUR_BOX=5]="INSIDE_YOUR_BOX";
+a[a.THE_COMPUTER=6]="THE_COMPUTER";a[a.THE_ARENA=7]="THE_ARENA";a[a.SAVE=8]="SAVE";
+a[a.CFG=9]="CFG"})(StatusBarTabType||(StatusBarTabType={}));var SummoningTribalSpear=(function(b){__extends(a,b);
 function a(){b.call(this,"eqItemWeaponSummoningTribalSpear","eqItemWeaponSummoningTribalSpearName","eqItemWeaponSummoningTribalSpearDescription","eqItems/weapons/summoningTribalSpear");
 this.timeSinceSummon=0}a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A summoning tribal spear","a summoning tribal spear"),e.getClassicCollisionBoxCollection(),10);
 d.getCloseCombatDelay().setFixedDelay(2);return d};a.prototype.getSpecialAbility=function(){return"Frequently summons tribe warriors fighting on your side (summoning tribal spear)."
 };a.prototype.update=function(d,c){this.timeSinceSummon+=1;if(this.timeSinceSummon>35){this.summon(d,c)
 }};a.prototype.summon=function(d,c){var e=new PlayerSummonedTribeWarrior(c,d.getSpellCastingPosition().plus(new Pos(1,-3)));
 e.setHealthBar(new QuestEntityHealthBar(e,new Pos(4,1)));c.addEntity(e);this.timeSinceSummon=0
-};return a})(EqItem);var SuperRPGFloorStep;(function(a){a[a.SHOP=0]="SHOP";a[a.MONSTER1=1]="MONSTER1";
-a[a.MONSTER2=2]="MONSTER2";a[a.MONSTER3=3]="MONSTER3"})(SuperRPGFloorStep||(SuperRPGFloorStep={}));
-var SuperRPGMenuEntry=(function(){function a(c,b){this.text=c;this.callbackCollection=b
-}a.prototype.draw=function(e,b,g,d,c){var f;if(d){f="> "+this.text+" <"}else{f=this.text
-}e.drawString(f,b+Math.floor((c-f.length)/2),g)};a.prototype.getCallbackCollection=function(){return this.callbackCollection
-};return a})();var SuperRPGMenu=(function(){function a(b,c,d){this.entries=[];this.superRPG=b;
-this.asciiName=c;this.currentlySelectedEntryIndex=d}a.prototype.addEntry=function(b){this.entries.push(b)
-};a.prototype.draw=function(c){c.drawVerticalLine("|",26,3,11);c.drawArray(Database.getAscii(this.asciiName),0+Math.floor((26-Database.getAsciiWidth(this.asciiName))/2),2+Math.floor((10-Database.getAsciiHeight(this.asciiName))/2));
-for(var b=0;b<this.entries.length;b++){this.entries[b].draw(c,27,3+Math.floor((10-(this.entries.length*2))/2)+b*2,(this.currentlySelectedEntryIndex==b),26)
-}};a.prototype.pressedDownButton=function(){this.currentlySelectedEntryIndex+=1;if(this.currentlySelectedEntryIndex>=this.entries.length){this.currentlySelectedEntryIndex=this.entries.length-1
-}};a.prototype.pressedSpaceButton=function(){this.entries[this.currentlySelectedEntryIndex].getCallbackCollection().fire()
-};a.prototype.pressedUpButton=function(){this.currentlySelectedEntryIndex-=1;if(this.currentlySelectedEntryIndex<0){this.currentlySelectedEntryIndex=0
-}};a.prototype.getSuperRPG=function(){return this.superRPG};a.prototype.setAsciiName=function(b){this.asciiName=b
-};a.prototype.setEntries=function(){var b=[];for(var c=0;c<arguments.length;c++){b[c-0]=arguments[c]
-}this.entries=b};return a})();var SuperRPGMenu_Ingame=(function(b){__extends(a,b);
-function a(){b.apply(this,arguments)}a.prototype.draw=function(c){c.drawString("Floor "+this.getSuperRPG().getFloor(),0,0);
-c.drawString("|",10,0);switch(this.getSuperRPG().getFloorStep()){case SuperRPGFloorStep.SHOP:c.drawString("shop",15,0);
-break;case SuperRPGFloorStep.MONSTER1:c.drawString("1st monster",12,0);break;case SuperRPGFloorStep.MONSTER2:c.drawString("2nd monster",12,0);
-break;case SuperRPGFloorStep.MONSTER3:c.drawString("3rd monster",12,0);break}c.drawString("|",24,0);
-c.drawString("HP "+this.getSuperRPG().getHp().toString()+"/"+this.getSuperRPG().getMaxHp().toString(),26,0);
-c.drawString("|",39,0);c.drawString("Coins "+this.getSuperRPG().getCoins(),41,0);
-c.drawString("ATK "+this.getSuperRPG().getWeapon()+" ("+this.getSuperRPG().getDamage()+")",0,1);
-c.drawString("|",24,1);c.drawString("DEF "+this.getSuperRPG().getDefenseItem()+" ("+this.getSuperRPG().getDefense()+")",26,1);
-b.prototype.draw.call(this,c)};return a})(SuperRPGMenu);var SuperRPGMenu_Main=(function(b){__extends(a,b);
-function a(c){b.call(this,c,"places/village/thirdHouseGames/SuperRPG/mainMenu",0);
-this.addEntry(new SuperRPGMenuEntry("Start",new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(),false))));
-if(Saving.loadBool("SuperRPGUnlockedHardmode")){this.addEntry(new SuperRPGMenuEntry("Start (hardmode)",new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(),true))))
-}this.addEntry(new SuperRPGMenuEntry("Exit",new CallbackCollection(this.getSuperRPG().exitGame.bind(this.getSuperRPG()))))
-}a.prototype.draw=function(c){c.drawString("Main menu",22,0);b.prototype.draw.call(this,c)
-};return a})(SuperRPGMenu);var SuperRPGMenu_Monster=(function(b){__extends(a,b);function a(c){b.call(this,c,"",0)
-}a.prototype.addUsualEntries=function(){this.addEntry(new SuperRPGMenuEntry("Attack",new CallbackCollection(this.playerAttacks.bind(this))))
-};a.prototype.draw=function(c){c.drawString("ATK "+this.damage,0,11);c.drawString("DEF "+this.defense,7,11);
-c.drawString("HP "+this.hp+"/"+this.maxHp,14,11);b.prototype.draw.call(this,c)};a.prototype.setAbstract=function(d,f,c,e){this.setMonster("places/village/thirdHouseGames/SuperRPG/"+Random.fromArray(["cross","mobius","triforce","randomShape","circle","dna","hive","star"]),d,f,c,e)
-};a.prototype.setBabyVampire=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/babyVampire",10,2,8,30)
-};a.prototype.setBlob=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/blob",Random.between(1,3),0,Random.between(5,8),3)
-};a.prototype.setBomb=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/bomb",99,0,0,12)
-};a.prototype.setChest=function(c){this.setMonster("places/village/thirdHouseGames/SuperRPG/chest",0,0,c,10)
-};a.prototype.setCorpse1=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse1",0,0,(Random.flipACoin()?0:Random.between(1,300)),0)
-};a.prototype.setCorpse2=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse2",0,0,(Random.flipACoin()?0:Random.between(1,300)),0)
-};a.prototype.setDragon=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/dragon",Random.between(28,32),Random.between(7,9),1000,Random.fromArray([45,50,55]))
-};a.prototype.setFerociousBlob=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousBlob",Random.between(2,4),0,Random.between(7,10),2)
-};a.prototype.setFerociousGoblin=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousGoblin",5,3,20,5)
-};a.prototype.setFerociousSkeleton=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton",8,1,40,10)
-};a.prototype.setGoblin=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/goblin",4,1,15,5)
-};a.prototype.setSkeletonOrBillGatesSkeleton=function(){if(Random.oneChanceOutOf(10)){this.setMonster("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton",6,1,50,7)
-}else{this.setMonster("places/village/thirdHouseGames/SuperRPG/skeleton",6,1,25,7)
-}};a.prototype.setSpider=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/spider",10,5,Random.between(100,200),25)
-};a.prototype.setSpiders=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/spiders",9,2,9,15)
-};a.prototype.setThing=function(){switch(Random.between(0,2)){case 0:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",20,3,120,10);
-break;case 1:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",12,6,120,30);
-break;case 2:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",14,4,120,20);
-break}};a.prototype.playerAttacks=function(){var c;c=this.getSuperRPG().getDamage()-this.defense;
-if(c>0){this.hp-=c;if(this.hp<=0){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()+this.coins);
-this.getSuperRPG().nextFloorStep();return}}c=this.damage-this.getSuperRPG().getDefense();
-if(c>0){this.getSuperRPG().setHp(this.getSuperRPG().getHp()-c)}};a.prototype.setMonster=function(g,f,e,c,h,d){if(d===void 0){d=null
-}this.setAsciiName(g);this.damage=(this.getSuperRPG().getHardmode()?Math.floor(f*1.2):f);
-this.defense=(this.getSuperRPG().getHardmode()?Math.floor(e*1.2):e);this.coins=(this.getSuperRPG().getHardmode()?Math.ceil(c*0.8):c);
-this.hp=(this.getSuperRPG().getHardmode()?Math.floor(h*1.2):h);if(d==null){this.maxHp=this.hp
-}else{this.maxHp=(this.getSuperRPG().getHardmode()?Math.floor(d*1.2):d)}};return a
-})(SuperRPGMenu_Ingame);var SuperRPGMenu_Shop=(function(b){__extends(a,b);function a(c){b.call(this,c,"places/village/thirdHouseGames/SuperRPG/shop",0)
-}a.prototype.addBuyingDefenseItem=function(d,c,e){this.addEntry(new SuperRPGMenuEntry(d+" ("+e+")",new CallbackCollection(this.buyDefenseItem.bind(this,d,c,e))))
-};a.prototype.addBuyingHealthCrystal=function(){this.addEntry(new SuperRPGMenuEntry("Health crystal (100)",new CallbackCollection(this.buyHealthCrystal.bind(this))))
-};a.prototype.addBuyingHealthPendant=function(){this.addEntry(new SuperRPGMenuEntry("Health pendant (30)",new CallbackCollection(this.buyHealthPendant.bind(this))))
-};a.prototype.addBuyingHealthPotion=function(){this.addEntry(new SuperRPGMenuEntry("Health potion (5)",new CallbackCollection(this.buyHealthPotion.bind(this))))
-};a.prototype.addBuyingSuperHealthPotion=function(){this.addEntry(new SuperRPGMenuEntry("Health potion ++ (25)",new CallbackCollection(this.buySuperHealthPotion.bind(this))))
-};a.prototype.addBuyingWeapon=function(c,d,e){this.addEntry(new SuperRPGMenuEntry(c+" ("+e+")",new CallbackCollection(this.buyWeapon.bind(this,c,d,e))))
-};a.prototype.addQuitTheShop=function(){this.addEntry(new SuperRPGMenuEntry("Quit the shop",new CallbackCollection(this.getSuperRPG().nextFloorStep.bind(this.getSuperRPG()))))
-};a.prototype.buyDefenseItem=function(d,c,e){if(this.getSuperRPG().getCoins()>=e&&this.getSuperRPG().getDefense()<c){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-e);
-this.getSuperRPG().setDefenseItem(d);this.getSuperRPG().setDefense(c)}};a.prototype.buyHealthCrystal=function(){if(this.getSuperRPG().getCoins()>=100){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-100);
-this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp()+20);this.getSuperRPG().setHp(this.getSuperRPG().getHp()+20)
-}};a.prototype.buyHealthPendant=function(){if(this.getSuperRPG().getCoins()>=30){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-30);
-this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp()+5);this.getSuperRPG().setHp(this.getSuperRPG().getHp()+5)
-}};a.prototype.buyHealthPotion=function(){if(this.getSuperRPG().getCoins()>=5&&this.getSuperRPG().getHp()<this.getSuperRPG().getMaxHp()){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-5);
-this.getSuperRPG().setHp(this.getSuperRPG().getHp()+8)}};a.prototype.buySuperHealthPotion=function(){if(this.getSuperRPG().getCoins()>=25&&this.getSuperRPG().getHp()<this.getSuperRPG().getMaxHp()){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-25);
-this.getSuperRPG().setHp(this.getSuperRPG().getHp()+50)}};a.prototype.buyWeapon=function(c,d,e){if(this.getSuperRPG().getCoins()>=e&&this.getSuperRPG().getDamage()<d){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-e);
-this.getSuperRPG().setWeapon(c);this.getSuperRPG().setDamage(d)}};return a})(SuperRPGMenu_Ingame);
-var SuperRPGStep;(function(a){a[a.SPLASH_SCREEN=0]="SPLASH_SCREEN";a[a.GAME=1]="GAME";
-a[a.LOSE=2]="LOSE"})(SuperRPGStep||(SuperRPGStep={}));Saving.registerBool("SuperRPGReward1",false);
-Saving.registerBool("SuperRPGReward2",false);Saving.registerBool("SuperRPGReward3",false);
-Saving.registerBool("SuperRPGReward4",false);Saving.registerBool("SuperRPGUnlockedHardmode",false);
-var SuperRPG=(function(b){__extends(a,b);function a(){b.apply(this,arguments);this.step=SuperRPGStep.SPLASH_SCREEN;
-this.splashScreenTimer=39;this.menu=null;this.shouldExitGame=false}a.prototype.exitGame=function(){this.shouldExitGame=true
+};return a})(EqItem);Saving.registerBool("SuperRPGReward1",false);Saving.registerBool("SuperRPGReward2",false);
+Saving.registerBool("SuperRPGReward3",false);Saving.registerBool("SuperRPGReward4",false);
+Saving.registerBool("SuperRPGUnlockedHardmode",false);var SuperRPG=(function(b){__extends(a,b);
+function a(){b.apply(this,arguments);this.step=SuperRPGStep.SPLASH_SCREEN;this.splashScreenTimer=39;
+this.menu=null;this.shouldExitGame=false}a.prototype.exitGame=function(){this.shouldExitGame=true
 };a.prototype.nextFloorStep=function(){switch(this.floorStep){case SuperRPGFloorStep.SHOP:this.floorStep=SuperRPGFloorStep.MONSTER1;
 this.goToMonster();break;case SuperRPGFloorStep.MONSTER1:this.floorStep=SuperRPGFloorStep.MONSTER2;
 this.goToMonster();break;case SuperRPGFloorStep.MONSTER2:this.floorStep=SuperRPGFloorStep.MONSTER3;
@@ -3449,7 +3369,84 @@ break}c.addQuitTheShop();this.menu=c};a.prototype.pressedDownButton=function(){i
 }};a.prototype.pressedSpaceButton=function(){if(this.step==SuperRPGStep.LOSE){this.shouldExitGame=true
 }if(this.menu!=null){this.menu.pressedSpaceButton()}};a.prototype.pressedUpButton=function(){if(this.menu!=null){this.menu.pressedUpButton()
 }};a.prototype.runGame=function(){return false};a.prototype.runSplashScreen=function(){if(this.splashScreenTimer>=0){this.splashScreenTimer-=1
-}else{this.goToMainMenu()}return false};return a})(ThirdHouseGame);var Teapot=(function(b){__extends(a,b);
+}else{this.goToMainMenu()}return false};return a})(ThirdHouseGame);var SuperRPGFloorStep;
+(function(a){a[a.SHOP=0]="SHOP";a[a.MONSTER1=1]="MONSTER1";a[a.MONSTER2=2]="MONSTER2";
+a[a.MONSTER3=3]="MONSTER3"})(SuperRPGFloorStep||(SuperRPGFloorStep={}));var SuperRPGMenu=(function(){function a(b,c,d){this.entries=[];
+this.superRPG=b;this.asciiName=c;this.currentlySelectedEntryIndex=d}a.prototype.addEntry=function(b){this.entries.push(b)
+};a.prototype.draw=function(c){c.drawVerticalLine("|",26,3,11);c.drawArray(Database.getAscii(this.asciiName),0+Math.floor((26-Database.getAsciiWidth(this.asciiName))/2),2+Math.floor((10-Database.getAsciiHeight(this.asciiName))/2));
+for(var b=0;b<this.entries.length;b++){this.entries[b].draw(c,27,3+Math.floor((10-(this.entries.length*2))/2)+b*2,(this.currentlySelectedEntryIndex==b),26)
+}};a.prototype.pressedDownButton=function(){this.currentlySelectedEntryIndex+=1;if(this.currentlySelectedEntryIndex>=this.entries.length){this.currentlySelectedEntryIndex=this.entries.length-1
+}};a.prototype.pressedSpaceButton=function(){this.entries[this.currentlySelectedEntryIndex].getCallbackCollection().fire()
+};a.prototype.pressedUpButton=function(){this.currentlySelectedEntryIndex-=1;if(this.currentlySelectedEntryIndex<0){this.currentlySelectedEntryIndex=0
+}};a.prototype.getSuperRPG=function(){return this.superRPG};a.prototype.setAsciiName=function(b){this.asciiName=b
+};a.prototype.setEntries=function(){var b=[];for(var c=0;c<arguments.length;c++){b[c-0]=arguments[c]
+}this.entries=b};return a})();var SuperRPGMenuEntry=(function(){function a(c,b){this.text=c;
+this.callbackCollection=b}a.prototype.draw=function(e,b,g,d,c){var f;if(d){f="> "+this.text+" <"
+}else{f=this.text}e.drawString(f,b+Math.floor((c-f.length)/2),g)};a.prototype.getCallbackCollection=function(){return this.callbackCollection
+};return a})();var SuperRPGMenu_Ingame=(function(b){__extends(a,b);function a(){b.apply(this,arguments)
+}a.prototype.draw=function(c){c.drawString("Floor "+this.getSuperRPG().getFloor(),0,0);
+c.drawString("|",10,0);switch(this.getSuperRPG().getFloorStep()){case SuperRPGFloorStep.SHOP:c.drawString("shop",15,0);
+break;case SuperRPGFloorStep.MONSTER1:c.drawString("1st monster",12,0);break;case SuperRPGFloorStep.MONSTER2:c.drawString("2nd monster",12,0);
+break;case SuperRPGFloorStep.MONSTER3:c.drawString("3rd monster",12,0);break}c.drawString("|",24,0);
+c.drawString("HP "+this.getSuperRPG().getHp().toString()+"/"+this.getSuperRPG().getMaxHp().toString(),26,0);
+c.drawString("|",39,0);c.drawString("Coins "+this.getSuperRPG().getCoins(),41,0);
+c.drawString("ATK "+this.getSuperRPG().getWeapon()+" ("+this.getSuperRPG().getDamage()+")",0,1);
+c.drawString("|",24,1);c.drawString("DEF "+this.getSuperRPG().getDefenseItem()+" ("+this.getSuperRPG().getDefense()+")",26,1);
+b.prototype.draw.call(this,c)};return a})(SuperRPGMenu);var SuperRPGMenu_Main=(function(b){__extends(a,b);
+function a(c){b.call(this,c,"places/village/thirdHouseGames/SuperRPG/mainMenu",0);
+this.addEntry(new SuperRPGMenuEntry("Start",new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(),false))));
+if(Saving.loadBool("SuperRPGUnlockedHardmode")){this.addEntry(new SuperRPGMenuEntry("Start (hardmode)",new CallbackCollection(this.getSuperRPG().startGame.bind(this.getSuperRPG(),true))))
+}this.addEntry(new SuperRPGMenuEntry("Exit",new CallbackCollection(this.getSuperRPG().exitGame.bind(this.getSuperRPG()))))
+}a.prototype.draw=function(c){c.drawString("Main menu",22,0);b.prototype.draw.call(this,c)
+};return a})(SuperRPGMenu);var SuperRPGMenu_Monster=(function(b){__extends(a,b);function a(c){b.call(this,c,"",0)
+}a.prototype.addUsualEntries=function(){this.addEntry(new SuperRPGMenuEntry("Attack",new CallbackCollection(this.playerAttacks.bind(this))))
+};a.prototype.draw=function(c){c.drawString("ATK "+this.damage,0,11);c.drawString("DEF "+this.defense,7,11);
+c.drawString("HP "+this.hp+"/"+this.maxHp,14,11);b.prototype.draw.call(this,c)};a.prototype.setAbstract=function(d,f,c,e){this.setMonster("places/village/thirdHouseGames/SuperRPG/"+Random.fromArray(["cross","mobius","triforce","randomShape","circle","dna","hive","star"]),d,f,c,e)
+};a.prototype.setBabyVampire=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/babyVampire",10,2,8,30)
+};a.prototype.setBlob=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/blob",Random.between(1,3),0,Random.between(5,8),3)
+};a.prototype.setBomb=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/bomb",99,0,0,12)
+};a.prototype.setChest=function(c){this.setMonster("places/village/thirdHouseGames/SuperRPG/chest",0,0,c,10)
+};a.prototype.setCorpse1=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse1",0,0,(Random.flipACoin()?0:Random.between(1,300)),0)
+};a.prototype.setCorpse2=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/corpse2",0,0,(Random.flipACoin()?0:Random.between(1,300)),0)
+};a.prototype.setDragon=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/dragon",Random.between(28,32),Random.between(7,9),1000,Random.fromArray([45,50,55]))
+};a.prototype.setFerociousBlob=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousBlob",Random.between(2,4),0,Random.between(7,10),2)
+};a.prototype.setFerociousGoblin=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousGoblin",5,3,20,5)
+};a.prototype.setFerociousSkeleton=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/ferociousSkeleton",8,1,40,10)
+};a.prototype.setGoblin=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/goblin",4,1,15,5)
+};a.prototype.setSkeletonOrBillGatesSkeleton=function(){if(Random.oneChanceOutOf(10)){this.setMonster("places/village/thirdHouseGames/SuperRPG/billGatesSkeleton",6,1,50,7)
+}else{this.setMonster("places/village/thirdHouseGames/SuperRPG/skeleton",6,1,25,7)
+}};a.prototype.setSpider=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/spider",10,5,Random.between(100,200),25)
+};a.prototype.setSpiders=function(){this.setMonster("places/village/thirdHouseGames/SuperRPG/spiders",9,2,9,15)
+};a.prototype.setThing=function(){switch(Random.between(0,2)){case 0:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",20,3,120,10);
+break;case 1:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",12,6,120,30);
+break;case 2:this.setMonster("places/village/thirdHouseGames/SuperRPG/thing",14,4,120,20);
+break}};a.prototype.playerAttacks=function(){var c;c=this.getSuperRPG().getDamage()-this.defense;
+if(c>0){this.hp-=c;if(this.hp<=0){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()+this.coins);
+this.getSuperRPG().nextFloorStep();return}}c=this.damage-this.getSuperRPG().getDefense();
+if(c>0){this.getSuperRPG().setHp(this.getSuperRPG().getHp()-c)}};a.prototype.setMonster=function(g,f,e,c,h,d){if(d===void 0){d=null
+}this.setAsciiName(g);this.damage=(this.getSuperRPG().getHardmode()?Math.floor(f*1.2):f);
+this.defense=(this.getSuperRPG().getHardmode()?Math.floor(e*1.2):e);this.coins=(this.getSuperRPG().getHardmode()?Math.ceil(c*0.8):c);
+this.hp=(this.getSuperRPG().getHardmode()?Math.floor(h*1.2):h);if(d==null){this.maxHp=this.hp
+}else{this.maxHp=(this.getSuperRPG().getHardmode()?Math.floor(d*1.2):d)}};return a
+})(SuperRPGMenu_Ingame);var SuperRPGMenu_Shop=(function(b){__extends(a,b);function a(c){b.call(this,c,"places/village/thirdHouseGames/SuperRPG/shop",0)
+}a.prototype.addBuyingDefenseItem=function(d,c,e){this.addEntry(new SuperRPGMenuEntry(d+" ("+e+")",new CallbackCollection(this.buyDefenseItem.bind(this,d,c,e))))
+};a.prototype.addBuyingHealthCrystal=function(){this.addEntry(new SuperRPGMenuEntry("Health crystal (100)",new CallbackCollection(this.buyHealthCrystal.bind(this))))
+};a.prototype.addBuyingHealthPendant=function(){this.addEntry(new SuperRPGMenuEntry("Health pendant (30)",new CallbackCollection(this.buyHealthPendant.bind(this))))
+};a.prototype.addBuyingHealthPotion=function(){this.addEntry(new SuperRPGMenuEntry("Health potion (5)",new CallbackCollection(this.buyHealthPotion.bind(this))))
+};a.prototype.addBuyingSuperHealthPotion=function(){this.addEntry(new SuperRPGMenuEntry("Health potion ++ (25)",new CallbackCollection(this.buySuperHealthPotion.bind(this))))
+};a.prototype.addBuyingWeapon=function(c,d,e){this.addEntry(new SuperRPGMenuEntry(c+" ("+e+")",new CallbackCollection(this.buyWeapon.bind(this,c,d,e))))
+};a.prototype.addQuitTheShop=function(){this.addEntry(new SuperRPGMenuEntry("Quit the shop",new CallbackCollection(this.getSuperRPG().nextFloorStep.bind(this.getSuperRPG()))))
+};a.prototype.buyDefenseItem=function(d,c,e){if(this.getSuperRPG().getCoins()>=e&&this.getSuperRPG().getDefense()<c){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-e);
+this.getSuperRPG().setDefenseItem(d);this.getSuperRPG().setDefense(c)}};a.prototype.buyHealthCrystal=function(){if(this.getSuperRPG().getCoins()>=100){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-100);
+this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp()+20);this.getSuperRPG().setHp(this.getSuperRPG().getHp()+20)
+}};a.prototype.buyHealthPendant=function(){if(this.getSuperRPG().getCoins()>=30){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-30);
+this.getSuperRPG().setMaxHp(this.getSuperRPG().getMaxHp()+5);this.getSuperRPG().setHp(this.getSuperRPG().getHp()+5)
+}};a.prototype.buyHealthPotion=function(){if(this.getSuperRPG().getCoins()>=5&&this.getSuperRPG().getHp()<this.getSuperRPG().getMaxHp()){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-5);
+this.getSuperRPG().setHp(this.getSuperRPG().getHp()+8)}};a.prototype.buySuperHealthPotion=function(){if(this.getSuperRPG().getCoins()>=25&&this.getSuperRPG().getHp()<this.getSuperRPG().getMaxHp()){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-25);
+this.getSuperRPG().setHp(this.getSuperRPG().getHp()+50)}};a.prototype.buyWeapon=function(c,d,e){if(this.getSuperRPG().getCoins()>=e&&this.getSuperRPG().getDamage()<d){this.getSuperRPG().setCoins(this.getSuperRPG().getCoins()-e);
+this.getSuperRPG().setWeapon(c);this.getSuperRPG().setDamage(d)}};return a})(SuperRPGMenu_Ingame);
+var SuperRPGStep;(function(a){a[a.SPLASH_SCREEN=0]="SPLASH_SCREEN";a[a.GAME=1]="GAME";
+a[a.LOSE=2]="LOSE"})(SuperRPGStep||(SuperRPGStep={}));var Teapot=(function(b){__extends(a,b);
 function a(c,d){b.call(this,c,d,new Naming("A teapot","a teapot"),new RenderArea(19,6),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,1),new Pos(3,1)),new CollisionBox(this,new Pos(6,1),new Pos(8,1)),new CollisionBox(this,new Pos(1,2),new Pos(18,1)),new CollisionBox(this,new Pos(2,3),new Pos(17,1)),new CollisionBox(this,new Pos(3,4),new Pos(16,1)),new CollisionBox(this,new Pos(5,5),new Pos(12,1))),new QuestEntityMovement());
 this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(true);
 this.setDestructible(true);this.setMaxHp(1000000);this.setHp(1000000);this.getRenderArea().drawArray(Database.getAscii("places/quests/fortress/teapot"));
@@ -3457,16 +3454,9 @@ this.setTransparency(new RenderTransparency(" ","%"))}a.prototype.update=functio
 console.log(this.getHp());if(this.getQuest().getGame().getPlayer().getGlobalPosition().x<this.getGlobalPosition().x-50){this.heal(50)
 }};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()));
 this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemWeaponGiantSpoon","You found a giant spoon inside the teapot.","You gain a giant spoon."))
-};return a})(QuestEntity);var TheArenaModuleQuest=(function(){function a(b,c){this.questFolderName=b;
-this.specialCallback=c}a.prototype.drawLogo=function(d,b,e,c){d.drawArray(Database.getAscii("arena/"+this.questFolderName+"/logo"),b+1,e+1);
-d.addMultipleAsciiButtons("theArenaQuest"+this.questFolderName,b+1,b+19,e+1,b+1,b+19,e+2,b+1,b+19,e+3,b+1,b+19,e+4);
-d.addLinkCall(".theArenaQuest"+this.questFolderName,new CallbackCollection(this.launchQuest.bind(this,c)))
-};a.prototype.getQuestFolderName=function(){return this.questFolderName};a.prototype.launchQuest=function(b){if(b.canStartQuest()){b.getStatusBar().selectTabByType(StatusBarTabType.MAP);
-b.goToMap();b.setPlace(this.specialCallback(b))}};return a})();var TheArenaModule;
-(function(a){var d={};function b(e){d[e.getQuestFolderName()]=e}a.addQuest=b;function c(e){return d[e]
-}a.getQuest=c})(TheArenaModule||(TheArenaModule={}));var TheArena=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.renderArea.resize(100,20);
-this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.drawQuestLogo=function(d,c,e){if(d!=null){if(TheArenaModule.getQuest(d)==null){console.log("Trying to draw the arena quest "+d+" which wasn't added to the arena module.")
+};return a})(QuestEntity);var TheArena=(function(b){__extends(a,b);function a(c){b.call(this,c);
+this.renderArea=new RenderArea();this.renderArea.resize(100,20);this.update()}a.prototype.getRenderArea=function(){return this.renderArea
+};a.prototype.drawQuestLogo=function(d,c,e){if(d!=null){if(TheArenaModule.getQuest(d)==null){console.log("Trying to draw the arena quest "+d+" which wasn't added to the arena module.")
 }else{TheArenaModule.getQuest(d).drawLogo(this.renderArea,c,e,this.getGame())}}this.renderArea.drawHorizontalLine("-",c,c+19,e);
 this.renderArea.drawHorizontalLine("-",c,c+19,e+5);this.renderArea.drawVerticalLine("|",c,e,e+5);
 this.renderArea.drawVerticalLine("|",c+19,e,e+5)};a.prototype.update=function(){this.renderArea.resetAllButSize();
@@ -3478,6 +3468,65 @@ this.drawQuestLogo(null,59,8);this.drawQuestLogo(null,78,8);this.renderArea.draw
 this.renderArea.addHtmlLink(63,17,"http://candybox2.github.io/?gamemode=hard","http://candybox2.github.io/?gamemode=hard");
 this.renderArea.drawString("If you're a programmer and you want to create a quest,                     and                 !",1,15);
 this.renderArea.addHtmlLink(56,15,"source_code.html","get the source code");this.renderArea.addHtmlLink(80,15,"create_quest.html","follow the guide")
+};return a})(Place);var TheArenaModule;(function(a){var d={};function b(e){d[e.getQuestFolderName()]=e
+}a.addQuest=b;function c(e){return d[e]}a.getQuest=c})(TheArenaModule||(TheArenaModule={}));
+var TheArenaModuleQuest=(function(){function a(b,c){this.questFolderName=b;this.specialCallback=c
+}a.prototype.drawLogo=function(d,b,e,c){d.drawArray(Database.getAscii("arena/"+this.questFolderName+"/logo"),b+1,e+1);
+d.addMultipleAsciiButtons("theArenaQuest"+this.questFolderName,b+1,b+19,e+1,b+1,b+19,e+2,b+1,b+19,e+3,b+1,b+19,e+4);
+d.addLinkCall(".theArenaQuest"+this.questFolderName,new CallbackCollection(this.launchQuest.bind(this,c)))
+};a.prototype.getQuestFolderName=function(){return this.questFolderName};a.prototype.launchQuest=function(b){if(b.canStartQuest()){b.getStatusBar().selectTabByType(StatusBarTabType.MAP);
+b.goToMap();b.setPlace(this.specialCallback(b))}};return a})();var TheCave=(function(b){__extends(a,b);
+function a(c){b.call(this,c);this.renderArea=new RenderArea();this.lastMoves=[];this.firstSentence=null;
+this.pattern=null;this.createAdditionalCharactersPossible();this.createAdditionalCharactersPositionsPossible();
+this.createWay();this.renderArea.resizeFromArray(Database.getAscii("places/theCave/ways"),42,7);
+this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.aPatternNeedsUpdating=function(){this.update();
+this.getGame().updatePlace()};a.prototype.getAdditionalCharactersPositionsPossible=function(){return this.additionalCharactersPositionsPossible
+};a.prototype.getAdditionalCharactersPossible=function(){return this.additionalCharactersPossible
+};a.prototype.createAdditionalCharactersPositionsPossible=function(){this.additionalCharactersPositionsPossible=[];
+this.additionalCharactersPositionsPossible.push(new Pos(20,6));this.additionalCharactersPositionsPossible.push(new Pos(19,9));
+this.additionalCharactersPositionsPossible.push(new Pos(17,13));this.additionalCharactersPositionsPossible.push(new Pos(20,18));
+this.additionalCharactersPositionsPossible.push(new Pos(17,24));this.additionalCharactersPositionsPossible.push(new Pos(41,19));
+this.additionalCharactersPositionsPossible.push(new Pos(56,16));this.additionalCharactersPositionsPossible.push(new Pos(52,22));
+this.additionalCharactersPositionsPossible.push(new Pos(31,23));this.additionalCharactersPositionsPossible.push(new Pos(64,28));
+this.additionalCharactersPositionsPossible.push(new Pos(64,12));this.additionalCharactersPositionsPossible.push(new Pos(75,5));
+this.additionalCharactersPositionsPossible.push(new Pos(80,12));this.additionalCharactersPositionsPossible.push(new Pos(77,17));
+this.additionalCharactersPositionsPossible.push(new Pos(80,20));this.additionalCharactersPositionsPossible.push(new Pos(78,26))
+};a.prototype.createAdditionalCharactersPossible=function(){this.additionalCharactersPossible=[];
+this.additionalCharactersPossible.push("V");this.additionalCharactersPossible.push("\\");
+this.additionalCharactersPossible.push("/");this.additionalCharactersPossible.push("'");
+this.additionalCharactersPossible.push("`");this.additionalCharactersPossible.push("~");
+this.additionalCharactersPossible.push(")");this.additionalCharactersPossible.push("(");
+this.additionalCharactersPossible.push("}");this.additionalCharactersPossible.push("{");
+this.additionalCharactersPossible.push("@");this.additionalCharactersPossible.push(">");
+this.additionalCharactersPossible.push("^")};a.prototype.createWay=function(e){if(e===void 0){e=null
+}var c;this.additionalCharacters=[];switch(e){case TheCaveMoveType.STRAIGHT:this.firstSentence="theCaveFirstSentenceWentStraight";
+break;case TheCaveMoveType.LEFT:this.firstSentence="theCaveFirstSentenceWentLeft";
+break;case TheCaveMoveType.RIGHT:this.firstSentence="theCaveFirstSentenceWentRight";
+break;case null:this.firstSentence="theCaveFirstSentenceYouAre";break}if(this.pattern!=null){if(this.pattern.ended()){this.pattern=null
+}}if(this.pattern==null&&this.lastMoves.length>0){if(Random.flipACoin()){c=10;while(c>0&&this.pattern==null){c-=1;
+switch(Random.upTo(4)){case 0:if(Saving.loadBool("gridItemPossessedHeartPlug")==false){this.pattern=new TheCavePattern_ArrowsToHeartPlug(this)
+}break;case 1:if(Saving.loadBool("TheCavePattern_ChocolateBarNowGotTheBar")==false){this.pattern=new TheCavePattern_ChocolateBarNow(this)
+}break;case 2:if(Saving.loadBool("TheCavePattern_TreasureMapFoundTreasure")==false){this.pattern=new TheCavePattern_TreasureMap(this)
+}break;case 3:this.pattern=new TheCavePattern_MonkeyWizard(this);break;case 4:this.pattern=new TheCavePattern_OctopusKing(this);
+break}}}}for(var d=0;d<10;d++){this.additionalCharacters.push(new TheCaveAdditionalCharacter(this))
+}};a.prototype.drawWays=function(c,e){if(c===void 0){c=0}if(e===void 0){e=3}this.renderArea.drawArray(Database.getAscii("places/theCave/ways"),c+21,e);
+for(var d=0;d<this.additionalCharacters.length;d++){this.renderArea.drawString(this.additionalCharacters[d].getString(),c+this.additionalCharacters[d].getPosition().x,e+this.additionalCharacters[d].getPosition().y)
+}if(this.firstSentence!=null){this.renderArea.drawString(Database.getText(this.firstSentence),c+23,e+32);
+this.renderArea.drawString(Database.getTranslatedText(this.firstSentence),c+23,e+33,true)
+}if(this.pattern!=null&&this.pattern.getSentence()!=null){this.renderArea.drawString(Database.getText(this.pattern.getSentence()),c+23,e+34);
+this.renderArea.drawString(Database.getTranslatedText(this.pattern.getSentence()),c+23,e+35,true)
+}if(this.pattern!=null){this.pattern.draw(this.renderArea,c,e)}for(var d=0;d<=4;d++){this.renderArea.addBackgroundColor(c+46,c+54,e+1+d,new Color(ColorType.THECAVE_BACKGROUND_COLOR))
+}this.renderArea.addMultipleAsciiButtons("theCaveGoLeftButton",c+30,c+32,e+5,c+29,c+33,e+6,c+27,c+33,e+7,c+26,c+32,e+8,c+26,c+32,e+9,c+26,c+32,e+10,c+25,c+32,e+11,c+24,c+32,e+12,c+25,c+31,e+13,c+25,c+31,e+14,c+25,c+32,e+15,c+25,c+32,e+16,c+25,c+32,e+17,c+25,c+32,e+18,c+24,c+32,e+19,c+24,c+31,e+20,c+25,c+30,e+21,c+26,c+29,e+22,c+26,c+28,e+23,c+25,c+27,e+24,c+25,c+26,e+25);
+this.renderArea.addLinkCall(".theCaveGoLeftButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.LEFT)));
+this.renderArea.addMultipleAsciiButtons("theCaveGoRightButton",c+68,c+70,e+6,c+68,c+72,e+7,c+68,c+73,e+8,c+68,c+73,e+9,c+69,c+74,e+10,c+69,c+74,e+11,c+69,c+74,e+12,c+69,c+75,e+13,c+69,c+75,e+14,c+68,c+74,e+15,c+68,c+74,e+16,c+68,c+74,e+17,c+68,c+74,e+18,c+68,c+74,e+19,c+69,c+74,e+20,c+70,c+74,e+21,c+71,c+74,e+22,c+72,c+73,e+23);
+this.renderArea.addLinkCall(".theCaveGoRightButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.RIGHT)));
+this.renderArea.addMultipleAsciiButtons("theCaveGoStraightButton",c+46,c+54,e+1,c+46,c+54,e+2,c+46,c+54,e+3,c+46,c+54,e+4,c+46,c+54,e+5);
+this.renderArea.addLinkCall(".theCaveGoStraightButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.STRAIGHT)))
+};a.prototype.goToTheCaveExit=function(){Saving.saveBool("mainMapDoneCaveEntrance",true);
+this.getGame().setPlace(new TheCaveExit(this.getGame()))};a.prototype.move=function(c){if(this.lastMoves.length>12&&this.pattern==null){this.goToTheCaveExit()
+}if(this.pattern!=null){this.pattern.move(c)}this.lastMoves.push(c);this.createWay(c);
+this.update();this.getGame().updatePlace()};a.prototype.update=function(){this.renderArea.resetAllButSize();
+this.addBackToMainMapButton(this.renderArea,"theCaveBackToTheMapButton");this.drawWays()
 };return a})(Place);var TheCaveAdditionalCharacter=(function(){function a(b,c,d){if(c===void 0){c=null
 }if(d===void 0){d=null}this.theCave=b;if(c!=null){this.characterString=c}else{this.characterString=this.theCave.getAdditionalCharactersPossible()[Random.upTo(this.theCave.getAdditionalCharactersPossible().length-1)]
 }if(d!=null){this.characterPosition=d}else{this.characterPosition=this.theCave.getAdditionalCharactersPositionsPossible()[Random.upTo(this.theCave.getAdditionalCharactersPositionsPossible().length-1)]
@@ -3529,71 +3578,9 @@ Saving.registerBool("TheCavePattern_TreasureMapFoundTreasure",false);var TheCave
 function b(c){a.call(this,c);Saving.saveBool("TheCavePattern_TreasureMapSawMap",true)
 }b.prototype.draw=function(d,c,e){d.drawArray(Database.getAscii("places/theCave/treasureMap"),c+38,e+22)
 };b.prototype.ended=function(){return true};b.prototype.getSentence=function(){return"theCavePattern_TreasureMapSentence"
-};return b})(TheCavePattern);var TheCave=(function(b){__extends(a,b);function a(c){b.call(this,c);
-this.renderArea=new RenderArea();this.lastMoves=[];this.firstSentence=null;this.pattern=null;
-this.createAdditionalCharactersPossible();this.createAdditionalCharactersPositionsPossible();
-this.createWay();this.renderArea.resizeFromArray(Database.getAscii("places/theCave/ways"),42,7);
-this.update()}a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.aPatternNeedsUpdating=function(){this.update();
-this.getGame().updatePlace()};a.prototype.getAdditionalCharactersPositionsPossible=function(){return this.additionalCharactersPositionsPossible
-};a.prototype.getAdditionalCharactersPossible=function(){return this.additionalCharactersPossible
-};a.prototype.createAdditionalCharactersPositionsPossible=function(){this.additionalCharactersPositionsPossible=[];
-this.additionalCharactersPositionsPossible.push(new Pos(20,6));this.additionalCharactersPositionsPossible.push(new Pos(19,9));
-this.additionalCharactersPositionsPossible.push(new Pos(17,13));this.additionalCharactersPositionsPossible.push(new Pos(20,18));
-this.additionalCharactersPositionsPossible.push(new Pos(17,24));this.additionalCharactersPositionsPossible.push(new Pos(41,19));
-this.additionalCharactersPositionsPossible.push(new Pos(56,16));this.additionalCharactersPositionsPossible.push(new Pos(52,22));
-this.additionalCharactersPositionsPossible.push(new Pos(31,23));this.additionalCharactersPositionsPossible.push(new Pos(64,28));
-this.additionalCharactersPositionsPossible.push(new Pos(64,12));this.additionalCharactersPositionsPossible.push(new Pos(75,5));
-this.additionalCharactersPositionsPossible.push(new Pos(80,12));this.additionalCharactersPositionsPossible.push(new Pos(77,17));
-this.additionalCharactersPositionsPossible.push(new Pos(80,20));this.additionalCharactersPositionsPossible.push(new Pos(78,26))
-};a.prototype.createAdditionalCharactersPossible=function(){this.additionalCharactersPossible=[];
-this.additionalCharactersPossible.push("V");this.additionalCharactersPossible.push("\\");
-this.additionalCharactersPossible.push("/");this.additionalCharactersPossible.push("'");
-this.additionalCharactersPossible.push("`");this.additionalCharactersPossible.push("~");
-this.additionalCharactersPossible.push(")");this.additionalCharactersPossible.push("(");
-this.additionalCharactersPossible.push("}");this.additionalCharactersPossible.push("{");
-this.additionalCharactersPossible.push("@");this.additionalCharactersPossible.push(">");
-this.additionalCharactersPossible.push("^")};a.prototype.createWay=function(e){if(e===void 0){e=null
-}var c;this.additionalCharacters=[];switch(e){case TheCaveMoveType.STRAIGHT:this.firstSentence="theCaveFirstSentenceWentStraight";
-break;case TheCaveMoveType.LEFT:this.firstSentence="theCaveFirstSentenceWentLeft";
-break;case TheCaveMoveType.RIGHT:this.firstSentence="theCaveFirstSentenceWentRight";
-break;case null:this.firstSentence="theCaveFirstSentenceYouAre";break}if(this.pattern!=null){if(this.pattern.ended()){this.pattern=null
-}}if(this.pattern==null&&this.lastMoves.length>0){if(Random.flipACoin()){c=10;while(c>0&&this.pattern==null){c-=1;
-switch(Random.upTo(4)){case 0:if(Saving.loadBool("gridItemPossessedHeartPlug")==false){this.pattern=new TheCavePattern_ArrowsToHeartPlug(this)
-}break;case 1:if(Saving.loadBool("TheCavePattern_ChocolateBarNowGotTheBar")==false){this.pattern=new TheCavePattern_ChocolateBarNow(this)
-}break;case 2:if(Saving.loadBool("TheCavePattern_TreasureMapFoundTreasure")==false){this.pattern=new TheCavePattern_TreasureMap(this)
-}break;case 3:this.pattern=new TheCavePattern_MonkeyWizard(this);break;case 4:this.pattern=new TheCavePattern_OctopusKing(this);
-break}}}}for(var d=0;d<10;d++){this.additionalCharacters.push(new TheCaveAdditionalCharacter(this))
-}};a.prototype.drawWays=function(c,e){if(c===void 0){c=0}if(e===void 0){e=3}this.renderArea.drawArray(Database.getAscii("places/theCave/ways"),c+21,e);
-for(var d=0;d<this.additionalCharacters.length;d++){this.renderArea.drawString(this.additionalCharacters[d].getString(),c+this.additionalCharacters[d].getPosition().x,e+this.additionalCharacters[d].getPosition().y)
-}if(this.firstSentence!=null){this.renderArea.drawString(Database.getText(this.firstSentence),c+23,e+32);
-this.renderArea.drawString(Database.getTranslatedText(this.firstSentence),c+23,e+33,true)
-}if(this.pattern!=null&&this.pattern.getSentence()!=null){this.renderArea.drawString(Database.getText(this.pattern.getSentence()),c+23,e+34);
-this.renderArea.drawString(Database.getTranslatedText(this.pattern.getSentence()),c+23,e+35,true)
-}if(this.pattern!=null){this.pattern.draw(this.renderArea,c,e)}for(var d=0;d<=4;d++){this.renderArea.addBackgroundColor(c+46,c+54,e+1+d,new Color(ColorType.THECAVE_BACKGROUND_COLOR))
-}this.renderArea.addMultipleAsciiButtons("theCaveGoLeftButton",c+30,c+32,e+5,c+29,c+33,e+6,c+27,c+33,e+7,c+26,c+32,e+8,c+26,c+32,e+9,c+26,c+32,e+10,c+25,c+32,e+11,c+24,c+32,e+12,c+25,c+31,e+13,c+25,c+31,e+14,c+25,c+32,e+15,c+25,c+32,e+16,c+25,c+32,e+17,c+25,c+32,e+18,c+24,c+32,e+19,c+24,c+31,e+20,c+25,c+30,e+21,c+26,c+29,e+22,c+26,c+28,e+23,c+25,c+27,e+24,c+25,c+26,e+25);
-this.renderArea.addLinkCall(".theCaveGoLeftButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.LEFT)));
-this.renderArea.addMultipleAsciiButtons("theCaveGoRightButton",c+68,c+70,e+6,c+68,c+72,e+7,c+68,c+73,e+8,c+68,c+73,e+9,c+69,c+74,e+10,c+69,c+74,e+11,c+69,c+74,e+12,c+69,c+75,e+13,c+69,c+75,e+14,c+68,c+74,e+15,c+68,c+74,e+16,c+68,c+74,e+17,c+68,c+74,e+18,c+68,c+74,e+19,c+69,c+74,e+20,c+70,c+74,e+21,c+71,c+74,e+22,c+72,c+73,e+23);
-this.renderArea.addLinkCall(".theCaveGoRightButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.RIGHT)));
-this.renderArea.addMultipleAsciiButtons("theCaveGoStraightButton",c+46,c+54,e+1,c+46,c+54,e+2,c+46,c+54,e+3,c+46,c+54,e+4,c+46,c+54,e+5);
-this.renderArea.addLinkCall(".theCaveGoStraightButton",new CallbackCollection(this.move.bind(this,TheCaveMoveType.STRAIGHT)))
-};a.prototype.goToTheCaveExit=function(){Saving.saveBool("mainMapDoneCaveEntrance",true);
-this.getGame().setPlace(new TheCaveExit(this.getGame()))};a.prototype.move=function(c){if(this.lastMoves.length>12&&this.pattern==null){this.goToTheCaveExit()
-}if(this.pattern!=null){this.pattern.move(c)}this.lastMoves.push(c);this.createWay(c);
-this.update();this.getGame().updatePlace()};a.prototype.update=function(){this.renderArea.resetAllButSize();
-this.addBackToMainMapButton(this.renderArea,"theCaveBackToTheMapButton");this.drawWays()
-};return a})(Place);var TheComputerLine=(function(){function a(b,c){this.type=b;this.setLinesFromText(c)
-}a.prototype.draw=function(c,e,d){for(var b=this.linesOfText.length-1;b>=0;b--){if(e.y-(this.linesOfText.length-1-b)>=d){if(this.type!=TheComputerLineType.CENTER){c.drawString(this.linesOfText[b],e.x,e.y-(this.linesOfText.length-1-b))
-}else{c.drawString(this.linesOfText[b],e.x+16-Math.floor(this.linesOfText[b].length/2),e.y-(this.linesOfText.length-1-b))
-}}}return this.linesOfText.length-1};a.prototype.setLinesFromText=function(d){this.linesOfText=[""];
-switch(this.type){case TheComputerLineType.COMMAND:d=" > "+d;break}var c=d.split(" ");
-for(var b=0;b<c.length;b++){if(c[b].length+this.linesOfText[this.linesOfText.length-1].length<32||c[b].length>30){this.linesOfText[this.linesOfText.length-1]=this.linesOfText[this.linesOfText.length-1]+c[b]+" "
-}else{this.linesOfText.push(c[b]+" ")}}};a.prototype.getType=function(){return this.type
-};return a})();var TheComputerLineType;(function(a){a[a.TEXT=0]="TEXT";a[a.COMMAND=1]="COMMAND";
-a[a.CENTER=2]="CENTER"})(TheComputerLineType||(TheComputerLineType={}));var TheComputerState;
-(function(a){a[a.WAITING_FOR_RETURN=0]="WAITING_FOR_RETURN";a[a.WAITING_FOR_COMMAND=1]="WAITING_FOR_COMMAND"
-})(TheComputerState||(TheComputerState={}));var TheComputer=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.lines=[];this.currentCommandText="";
-this.hotkeysAdded=false;this.renderArea.resize(100,40);this.update()}a.prototype.getRenderArea=function(){return this.renderArea
+};return b})(TheCavePattern);var TheComputer=(function(b){__extends(a,b);function a(c){b.call(this,c);
+this.renderArea=new RenderArea();this.lines=[];this.currentCommandText="";this.hotkeysAdded=false;
+this.renderArea.resize(100,40);this.update()}a.prototype.getRenderArea=function(){return this.renderArea
 };a.prototype.willStopBeingDisplayed=function(){this.getGame().setIsStatusBarAllowedToUseTheNKey(true)
 };a.prototype.addHotkeys=function(){this.hotkeysAdded=true;this.getGame().addHotkey(new Hotkey("enter",new CallbackCollection(this.pressedEnter.bind(this))));
 for(var c=97;c<=122;c++){this.getGame().addHotkey(new Hotkey(String.fromCharCode(c),new CallbackCollection(this.pressedKey.bind(this,String.fromCharCode(c)))))
@@ -3680,7 +3667,18 @@ this.state=TheComputerState.WAITING_FOR_RETURN;this.getGame().setIsStatusBarAllo
 if(this.hotkeysAdded==false){this.addHotkeys()}}this.update();this.getGame().updatePlace()
 };a.prototype.update=function(){if(this.lines.length>12){this.lines.splice(0,this.lines.length-12)
 }if(this.lines.length>0&&this.lines[this.lines.length-1].getType()==TheComputerLineType.COMMAND){this.lines[this.lines.length-1].setLinesFromText(this.currentCommandText)
-}this.draw()};return a})(Place);Saving.registerBool("theHoleFirstChestFound",false);
+}this.draw()};return a})(Place);var TheComputerLine=(function(){function a(b,c){this.type=b;
+this.setLinesFromText(c)}a.prototype.draw=function(c,e,d){for(var b=this.linesOfText.length-1;
+b>=0;b--){if(e.y-(this.linesOfText.length-1-b)>=d){if(this.type!=TheComputerLineType.CENTER){c.drawString(this.linesOfText[b],e.x,e.y-(this.linesOfText.length-1-b))
+}else{c.drawString(this.linesOfText[b],e.x+16-Math.floor(this.linesOfText[b].length/2),e.y-(this.linesOfText.length-1-b))
+}}}return this.linesOfText.length-1};a.prototype.setLinesFromText=function(d){this.linesOfText=[""];
+switch(this.type){case TheComputerLineType.COMMAND:d=" > "+d;break}var c=d.split(" ");
+for(var b=0;b<c.length;b++){if(c[b].length+this.linesOfText[this.linesOfText.length-1].length<32||c[b].length>30){this.linesOfText[this.linesOfText.length-1]=this.linesOfText[this.linesOfText.length-1]+c[b]+" "
+}else{this.linesOfText.push(c[b]+" ")}}};a.prototype.getType=function(){return this.type
+};return a})();var TheComputerLineType;(function(a){a[a.TEXT=0]="TEXT";a[a.COMMAND=1]="COMMAND";
+a[a.CENTER=2]="CENTER"})(TheComputerLineType||(TheComputerLineType={}));var TheComputerState;
+(function(a){a[a.WAITING_FOR_RETURN=0]="WAITING_FOR_RETURN";a[a.WAITING_FOR_COMMAND=1]="WAITING_FOR_COMMAND"
+})(TheComputerState||(TheComputerState={}));Saving.registerBool("theHoleFirstChestFound",false);
 Saving.registerBool("theHoleSecondChestFound",false);Saving.registerBool("theHoleThirdChestFound",false);
 Saving.registerBool("theHoleFourthChestFound",false);var TheHole=(function(a){__extends(b,a);
 function b(c){a.call(this,c,"You can move with the left and right arrow keys!");this.firstChestOpened=false;
@@ -3735,121 +3733,7 @@ this.getGame().getQuestLog().addMessage(new QuestLogMessage("You opened a chest 
 };b.prototype.moveHorizontally=function(){var d=Keyboard.isKeyPressed("left");var c=Keyboard.isKeyPressed("right");
 if(d&&!c){this.getGame().getPlayer().move(new Pos(-1,0));this.isGoingRight=false}else{if(c&&!d){this.getGame().getPlayer().move(new Pos(1,0));
 this.isGoingRight=true}}};b.prototype.thePlayerWon=function(){if(this.getGame().getPlayer().getGlobalPosition().y>=134){return true
-}return false};return b})(Quest);var TheSeaFloor=(function(){function a(d,c,b){if(b===void 0){b=null
-}this.hasAPlant=false;this.type=d;this.height=c;if(b==null||b.getType()!=this.type){this.howManyFloorsOfTheSameTypeBefore=0
-}else{this.howManyFloorsOfTheSameTypeBefore=b.howManyFloorsOfTheSameTypeBefore+1}if(Random.oneChanceOutOf(3)&&(b==null||b.getHasSpecialCharacter()==false)){this.hasSpecialCharacter=true;
-this.specialCharacterHeight=Random.between(0,this.height-1);if(Random.oneChanceOutOf(4)){this.specialCharacter="^"
-}else{this.specialCharacter="-"}}else{this.hasSpecialCharacter=false}}a.prototype.draw=function(c,b,d){switch(this.type){case TheSeaFloorType.NORMAL:c.drawString("_",d,b-this.height);
-break;case TheSeaFloorType.GOING_DOWN:c.drawString("\\",d,b-this.height);break;case TheSeaFloorType.GOING_UP:c.drawString("/",d,b-this.height);
-break}if(this.hasSpecialCharacter){c.drawString(this.specialCharacter,d,b-this.specialCharacterHeight)
-}};a.prototype.getHasAPlant=function(){return this.hasAPlant};a.prototype.getHasSpecialCharacter=function(){return this.hasSpecialCharacter
-};a.prototype.getHeight=function(){return this.height};a.prototype.getHowManyFloorsOfTheSameTypeBefore=function(){return this.howManyFloorsOfTheSameTypeBefore
-};a.prototype.getType=function(){return this.type};a.prototype.setHasAPlant=function(b){this.hasAPlant=b
-};return a})();var TheSeaFloorType;(function(a){a[a.NORMAL=0]="NORMAL";a[a.GOING_DOWN=1]="GOING_DOWN";
-a[a.GOING_UP=2]="GOING_UP"})(TheSeaFloorType||(TheSeaFloorType={}));var TheSeaPattern=(function(){function a(b,c){this.theSea=b;
-this.initialDistance=c}a.prototype.isPatternDone=function(){return false};a.prototype.run=function(c,b){};
-a.prototype.getInitialDistance=function(){return this.initialDistance};a.prototype.getTheSea=function(){return this.theSea
-};return a})();var TheSeaPattern_BigSharks=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d)
-}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+125){return true
-}return false};a.prototype.run=function(d,c){if(this.getTheSea().getDistance()%60==0){this.getTheSea().addBigShark(new Pos(c,Random.fromArray([2,6])))
-}};return a})(TheSeaPattern);var TheSeaPattern_Boss0_Shapes=(function(a){__extends(b,a);
-function b(c,d){a.call(this,c,d);this.fishes=[];this.fishesAdded=false;this.fishesAreMoving=true;
-this.shapeType=Random.upTo(2)}b.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+50){return true
-}return false};b.prototype.run=function(d,c){if(this.fishesAdded==false&&this.getTheSea().getDistance()>this.getInitialDistance()+30){this.fishesAdded=true;
-this.addShape(d,1);this.addShape(d,8);this.addShape(d,15);this.addShape(d+15,0);this.addShape(d+15,7);
-this.addShape(d+15,14);this.addShape(d+30,1);this.addShape(d+30,8);this.addShape(d+30,15)
-}this.handleFishesMovement()};b.prototype.addFish=function(c){if(c!=null){this.fishes.push(c)
-}};b.prototype.addCross=function(c,d){this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d+1)));
-this.addFish(this.getTheSea().addSmallestFish(new Pos(c+3,d+2)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c+6,d+3)));
-this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d+4)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d+4)));
-this.addFish(this.getTheSea().addSmallestFish(new Pos(c+3,d+3)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c+6,d+2)));
-this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d+1)))};b.prototype.addLines=function(c,f){for(var e=c;
-e<=c+9;e+=3){for(var d=f;d<=f+4;d+=2){this.addFish(this.getTheSea().addSmallestFish(new Pos(e,d)))
-}}};b.prototype.addShape=function(c,d){switch(this.shapeType){case 0:this.addSquare(c,d);
-break;case 1:this.addLines(c,d);break;case 2:this.addCross(c,d);break}};b.prototype.addSquare=function(c,f){for(var e=c;
-e<=c+9;e+=3){this.addFish(this.getTheSea().addSmallestFish(new Pos(e,f)));this.addFish(this.getTheSea().addSmallestFish(new Pos(e,f+5)))
-}for(var d=f;d<=f+4;d++){this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d)));
-this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d)))}};b.prototype.handleFishesMovement=function(){if(this.fishesAreMoving==true&&this.getTheSea().getLastPlayerMovement().x==0&&this.getTheSea().getGame().getPlayer().getGlobalPosition().y>=20){this.fishesAreMoving=false;
-for(var c=0;c<this.fishes.length;c++){this.fishes[c].setQuestEntityMovement(new QuestEntityMovement(new Pos(0,0)))
-}}else{if(this.fishesAreMoving==false&&(this.getTheSea().getLastPlayerMovement().x>0||this.getTheSea().getGame().getPlayer().getGlobalPosition().y<20)){this.fishesAreMoving=true;
-for(var c=0;c<this.fishes.length;c++){this.fishes[c].setQuestEntityMovement(new QuestEntityMovement(new Pos(-1,0)))
-}}}};return b})(TheSeaPattern);var TheSeaPattern_Boss1_Seahorses=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d);this.seahorses=[];this.seahorsesAdded=false;this.seaHorsesStopped=false;
-this.seahorseWandering=null;this.seahorseWanderingIsGoingUp=false;this.seahorseFollowingPlayer=null
-}a.prototype.addSeahorse=function(c){if(c!=null){this.seahorses.push(c);return c}return null
-};a.prototype.isPatternDone=function(){if(this.seahorsesAdded==false){return false
-}for(var c=0;c<this.seahorses.length;c++){if(this.seahorses[c].getDead()==false){return false
-}}return true};a.prototype.run=function(d,c){if(this.seahorsesAdded==false&&this.getTheSea().getDistance()>this.getInitialDistance()+30){this.seahorsesAdded=true;
-this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d,2),75));this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d,12),75));
-this.seahorseWandering=this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+7,10),81));
-this.seahorseFollowingPlayer=this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+14,10),87));
-this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+21,7),93));this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+21,17),93))
-}if(this.seahorsesAdded==true&&this.seaHorsesStopped==false){var f=500;for(var e=0;
-e<this.seahorses.length;e++){if(this.seahorses[e].getGlobalPosition().x<f){f=this.seahorses[e].getGlobalPosition().x
-}}if(f-this.getTheSea().getGame().getPlayer().getGlobalPosition().x<=75){this.seaHorsesStopped=true;
-for(var e=0;e<this.seahorses.length;e++){this.seahorses[e].getQuestEntityMovement().setOffset(new Pos(0,0))
-}}}if(this.seaHorsesStopped){for(var e=0;e<this.seahorses.length;e++){this.seahorses[e].tryToGoToIntendedXPosition(this.getTheSea().getGame().getPlayer().getGlobalPosition().x)
-}}if(this.seahorseWandering!=null){if(this.seahorseWanderingIsGoingUp){this.seahorseWandering.getQuestEntityMovement().getOffset().y=-1;
-if(this.seahorseWandering.getGlobalPosition().y<=0){this.seahorseWanderingIsGoingUp=false
-}}else{this.seahorseWandering.getQuestEntityMovement().getOffset().y=1;if(this.seahorseWandering.getGlobalPosition().y>=16){this.seahorseWanderingIsGoingUp=true
-}}}if(this.seahorseFollowingPlayer!=null){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=0;
-if(this.getTheSea().getGame().getPlayer().getGlobalPosition().y<this.seahorseFollowingPlayer.getGlobalPosition().y-1){if(this.seahorseFollowingPlayer.getGlobalPosition().y>0){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=-1
-}}else{if(this.getTheSea().getGame().getPlayer().getGlobalPosition().y>this.seahorseFollowingPlayer.getGlobalPosition().y-1){if(this.seahorseFollowingPlayer.getGlobalPosition().y<17){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=+1
-}}}}};return a})(TheSeaPattern);var TheSeaPattern_JellyFishStorm=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d)}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
-}return false};a.prototype.run=function(d,c){if(Random.oneChanceOutOf(10)){this.getTheSea().addJellyFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-6)))
-}};return a})(TheSeaPattern);var TheSeaPatternLevel=(function(){function a(b){this.howManyPatterns=0;
-this.theSea=b}a.prototype.getNextLevel=function(){return new a(this.theSea)};a.prototype.getPattern=function(b){return new TheSeaPattern(this.theSea,b)
-};a.prototype.increaseHowManyPatterns=function(){this.howManyPatterns+=1};a.prototype.isLevelDone=function(){return false
-};a.prototype.getHowManyPatterns=function(){return this.howManyPatterns};a.prototype.getTheSea=function(){return this.theSea
-};return a})();var TheSeaPatternLevel_Boss0=(function(b){__extends(a,b);function a(c){b.call(this,c)
-}a.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Level1(this.getTheSea())
-};a.prototype.getPattern=function(c){this.increaseHowManyPatterns();return new TheSeaPattern_Boss0_Shapes(this.getTheSea(),c)
-};a.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=1){return true
-}return false};return a})(TheSeaPatternLevel);var TheSeaPatternLevel_Boss1=(function(a){__extends(b,a);
-function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Level2(this.getTheSea())
-};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();return new TheSeaPattern_Boss1_Seahorses(this.getTheSea(),c)
-};b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=1){return true
-}return false};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level0=(function(a){__extends(b,a);
-function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Boss0(this.getTheSea())
-};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();switch(Random.upTo(2)){case 0:return new TheSeaPattern_MaybeOneSmallestFish(this.getTheSea(),c);
-break;case 1:return new TheSeaPattern_OneSmallestFish(this.getTheSea(),c);break;case 2:return new TheSeaPattern_MaybeOneMediumFish(this.getTheSea(),c);
-break}};b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=2){return true
-}return false};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level1=(function(a){__extends(b,a);
-function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Boss1(this.getTheSea())
-};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();switch(Random.upTo(1)){case 0:return new TheSeaPattern_LotOfMiniSharks(this.getTheSea(),c);
-break;case 1:return new TheSeaPattern_JellyFishStorm(this.getTheSea(),c);break}};
-b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=2){return true}return false
-};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level2=(function(b){__extends(a,b);
-function a(c){b.call(this,c)}a.prototype.getNextLevel=function(){return new a(this.getTheSea())
-};a.prototype.getPattern=function(c){this.increaseHowManyPatterns();if(this.getHowManyPatterns()==1){return new TheSeaPattern_BigSharks(this.getTheSea(),c)
-}else{return new TheSeaPattern_SeaSnakesForever(this.getTheSea(),c)}};a.prototype.isLevelDone=function(){return false
-};return a})(TheSeaPatternLevel);var TheSeaPattern_LotOfMiniSharks=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d);this.sharksAdded=false}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+60){return true
-}return false};a.prototype.run=function(d,c){if(this.getTheSea().getDistance()>this.getInitialDistance()+30&&this.sharksAdded==false){this.sharksAdded=true;
-this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),2));this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),8));
-this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),14))}};return a})(TheSeaPattern);
-var TheSeaPattern_MaybeOneMediumFish=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d)
-}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
-}return false};a.prototype.run=function(d,c){if(Random.oneChanceOutOf(5)){this.getTheSea().addMediumFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-4)))
-}};return a})(TheSeaPattern);var TheSeaPattern_MaybeOneSmallestFish=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d)}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
-}return false};a.prototype.run=function(d,c){if(Random.flipACoin()){this.getTheSea().addSmallestFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-2)))
-}};return a})(TheSeaPattern);var TheSeaPattern_OneSmallestFish=(function(a){__extends(b,a);
-function b(c,d){a.call(this,c,d)}b.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
-}return false};b.prototype.run=function(d,c){this.getTheSea().addSmallestFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-2)))
-};return b})(TheSeaPattern);var TheSeaPattern_SeaSnakesForever=(function(a){__extends(b,a);
-function b(c,d){a.call(this,c,d);this.addedRedSharkFin=false;this.addedGreenSharkFin=false;
-this.addedPurpleSharkFin=false;this.nextSnakeIn=0;this.nextSharkIn=Random.between(0,50)
-}b.prototype.isPatternDone=function(){return false};b.prototype.run=function(e,d){this.nextSnakeIn-=1;
-if(this.nextSnakeIn<=0){this.getTheSea().addSeaSnake(new Pos(d,Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-12)));
-this.nextSnakeIn=85-Math.ceil((1-Math.exp(-(this.getTheSea().getDistance()-this.getInitialDistance())/1500))*83)
-}this.nextSharkIn-=1;if(this.nextSharkIn<=0){var c=this.getTheSea().addBigShark(new Pos(d,Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-10)));
-if(c!=null){if(Saving.loadBool("gridItemPossessedRedSharkFin")==false&&this.addedRedSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>150){c.hasFin(BigSharkFinType.RED);
-this.addedRedSharkFin=true}else{if(Saving.loadBool("gridItemPossessedGreenSharkFin")==false&&this.addedGreenSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>700){c.hasFin(BigSharkFinType.GREEN);
-this.addedGreenSharkFin=true}else{if(Saving.loadBool("gridItemPossessedPurpleSharkFin")==false&&this.addedPurpleSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>2500){c.hasFin(BigSharkFinType.PURPLE);
-this.addedPurpleSharkFin=true}}}}this.nextSharkIn=60-Math.ceil((1-Math.exp(-(this.getTheSea().getDistance()-this.getInitialDistance())/1500))*55)
-}};return b})(TheSeaPattern);var TheSea=(function(b){__extends(a,b);function a(c){b.call(this,c,"You can move with the down and up arrow keys!");
+}return false};return b})(Quest);var TheSea=(function(b){__extends(a,b);function a(c){b.call(this,c,"You can move with the down and up arrow keys!");
 this.floors=[];this.generationProjection=10;this.distance=0;this.floorMinHeight=3;
 this.floorMaxHeight=8;this.currentPattern=null;this.currentPatternLevel=null;this.lastPlayerMovement=new Pos(0,0);
 this.spongeGenerated=false;this.shellPowderGenerated=false;this.resizeQuest(100,30);
@@ -3927,9 +3811,122 @@ this.scrollFloor(-c);this.generate(100+c+this.generationProjection,99+this.gener
 if(c&&!d){this.getGame().getPlayer().move(new Pos(0,-1));this.lastPlayerMovement.y=-1
 }else{if(d&&!c){this.getGame().getPlayer().move(new Pos(0,1));this.lastPlayerMovement.y=1
 }}};a.prototype.scrollFloor=function(d){for(var c=d;c<=99+this.generationProjection;
-c++){this.floors[c-d]=this.floors[c]}};return a})(Quest);var ThirdHouse=(function(a){__extends(b,a);
-function b(c){a.call(this,c);this.renderArea=new RenderArea();this.gameRunning=null;
-this.renderArea.resizeFromArray(Database.getAscii("places/village/thirdHouse"),0,3);
+c++){this.floors[c-d]=this.floors[c]}};return a})(Quest);var TheSeaFloor=(function(){function a(d,c,b){if(b===void 0){b=null
+}this.hasAPlant=false;this.type=d;this.height=c;if(b==null||b.getType()!=this.type){this.howManyFloorsOfTheSameTypeBefore=0
+}else{this.howManyFloorsOfTheSameTypeBefore=b.howManyFloorsOfTheSameTypeBefore+1}if(Random.oneChanceOutOf(3)&&(b==null||b.getHasSpecialCharacter()==false)){this.hasSpecialCharacter=true;
+this.specialCharacterHeight=Random.between(0,this.height-1);if(Random.oneChanceOutOf(4)){this.specialCharacter="^"
+}else{this.specialCharacter="-"}}else{this.hasSpecialCharacter=false}}a.prototype.draw=function(c,b,d){switch(this.type){case TheSeaFloorType.NORMAL:c.drawString("_",d,b-this.height);
+break;case TheSeaFloorType.GOING_DOWN:c.drawString("\\",d,b-this.height);break;case TheSeaFloorType.GOING_UP:c.drawString("/",d,b-this.height);
+break}if(this.hasSpecialCharacter){c.drawString(this.specialCharacter,d,b-this.specialCharacterHeight)
+}};a.prototype.getHasAPlant=function(){return this.hasAPlant};a.prototype.getHasSpecialCharacter=function(){return this.hasSpecialCharacter
+};a.prototype.getHeight=function(){return this.height};a.prototype.getHowManyFloorsOfTheSameTypeBefore=function(){return this.howManyFloorsOfTheSameTypeBefore
+};a.prototype.getType=function(){return this.type};a.prototype.setHasAPlant=function(b){this.hasAPlant=b
+};return a})();var TheSeaFloorType;(function(a){a[a.NORMAL=0]="NORMAL";a[a.GOING_DOWN=1]="GOING_DOWN";
+a[a.GOING_UP=2]="GOING_UP"})(TheSeaFloorType||(TheSeaFloorType={}));var TheSeaPattern=(function(){function a(b,c){this.theSea=b;
+this.initialDistance=c}a.prototype.isPatternDone=function(){return false};a.prototype.run=function(c,b){};
+a.prototype.getInitialDistance=function(){return this.initialDistance};a.prototype.getTheSea=function(){return this.theSea
+};return a})();var TheSeaPatternLevel=(function(){function a(b){this.howManyPatterns=0;
+this.theSea=b}a.prototype.getNextLevel=function(){return new a(this.theSea)};a.prototype.getPattern=function(b){return new TheSeaPattern(this.theSea,b)
+};a.prototype.increaseHowManyPatterns=function(){this.howManyPatterns+=1};a.prototype.isLevelDone=function(){return false
+};a.prototype.getHowManyPatterns=function(){return this.howManyPatterns};a.prototype.getTheSea=function(){return this.theSea
+};return a})();var TheSeaPatternLevel_Boss0=(function(b){__extends(a,b);function a(c){b.call(this,c)
+}a.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Level1(this.getTheSea())
+};a.prototype.getPattern=function(c){this.increaseHowManyPatterns();return new TheSeaPattern_Boss0_Shapes(this.getTheSea(),c)
+};a.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=1){return true
+}return false};return a})(TheSeaPatternLevel);var TheSeaPatternLevel_Boss1=(function(a){__extends(b,a);
+function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Level2(this.getTheSea())
+};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();return new TheSeaPattern_Boss1_Seahorses(this.getTheSea(),c)
+};b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=1){return true
+}return false};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level0=(function(a){__extends(b,a);
+function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Boss0(this.getTheSea())
+};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();switch(Random.upTo(2)){case 0:return new TheSeaPattern_MaybeOneSmallestFish(this.getTheSea(),c);
+break;case 1:return new TheSeaPattern_OneSmallestFish(this.getTheSea(),c);break;case 2:return new TheSeaPattern_MaybeOneMediumFish(this.getTheSea(),c);
+break}};b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=2){return true
+}return false};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level1=(function(a){__extends(b,a);
+function b(c){a.call(this,c)}b.prototype.getNextLevel=function(){return new TheSeaPatternLevel_Boss1(this.getTheSea())
+};b.prototype.getPattern=function(c){this.increaseHowManyPatterns();switch(Random.upTo(1)){case 0:return new TheSeaPattern_LotOfMiniSharks(this.getTheSea(),c);
+break;case 1:return new TheSeaPattern_JellyFishStorm(this.getTheSea(),c);break}};
+b.prototype.isLevelDone=function(){if(this.getHowManyPatterns()>=2){return true}return false
+};return b})(TheSeaPatternLevel);var TheSeaPatternLevel_Level2=(function(b){__extends(a,b);
+function a(c){b.call(this,c)}a.prototype.getNextLevel=function(){return new a(this.getTheSea())
+};a.prototype.getPattern=function(c){this.increaseHowManyPatterns();if(this.getHowManyPatterns()==1){return new TheSeaPattern_BigSharks(this.getTheSea(),c)
+}else{return new TheSeaPattern_SeaSnakesForever(this.getTheSea(),c)}};a.prototype.isLevelDone=function(){return false
+};return a})(TheSeaPatternLevel);var TheSeaPattern_BigSharks=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d)}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+125){return true
+}return false};a.prototype.run=function(d,c){if(this.getTheSea().getDistance()%60==0){this.getTheSea().addBigShark(new Pos(c,Random.fromArray([2,6])))
+}};return a})(TheSeaPattern);var TheSeaPattern_Boss0_Shapes=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d);this.fishes=[];this.fishesAdded=false;this.fishesAreMoving=true;
+this.shapeType=Random.upTo(2)}b.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+50){return true
+}return false};b.prototype.run=function(d,c){if(this.fishesAdded==false&&this.getTheSea().getDistance()>this.getInitialDistance()+30){this.fishesAdded=true;
+this.addShape(d,1);this.addShape(d,8);this.addShape(d,15);this.addShape(d+15,0);this.addShape(d+15,7);
+this.addShape(d+15,14);this.addShape(d+30,1);this.addShape(d+30,8);this.addShape(d+30,15)
+}this.handleFishesMovement()};b.prototype.addFish=function(c){if(c!=null){this.fishes.push(c)
+}};b.prototype.addCross=function(c,d){this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d+1)));
+this.addFish(this.getTheSea().addSmallestFish(new Pos(c+3,d+2)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c+6,d+3)));
+this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d+4)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d+4)));
+this.addFish(this.getTheSea().addSmallestFish(new Pos(c+3,d+3)));this.addFish(this.getTheSea().addSmallestFish(new Pos(c+6,d+2)));
+this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d+1)))};b.prototype.addLines=function(c,f){for(var e=c;
+e<=c+9;e+=3){for(var d=f;d<=f+4;d+=2){this.addFish(this.getTheSea().addSmallestFish(new Pos(e,d)))
+}}};b.prototype.addShape=function(c,d){switch(this.shapeType){case 0:this.addSquare(c,d);
+break;case 1:this.addLines(c,d);break;case 2:this.addCross(c,d);break}};b.prototype.addSquare=function(c,f){for(var e=c;
+e<=c+9;e+=3){this.addFish(this.getTheSea().addSmallestFish(new Pos(e,f)));this.addFish(this.getTheSea().addSmallestFish(new Pos(e,f+5)))
+}for(var d=f;d<=f+4;d++){this.addFish(this.getTheSea().addSmallestFish(new Pos(c,d)));
+this.addFish(this.getTheSea().addSmallestFish(new Pos(c+9,d)))}};b.prototype.handleFishesMovement=function(){if(this.fishesAreMoving==true&&this.getTheSea().getLastPlayerMovement().x==0&&this.getTheSea().getGame().getPlayer().getGlobalPosition().y>=20){this.fishesAreMoving=false;
+for(var c=0;c<this.fishes.length;c++){this.fishes[c].setQuestEntityMovement(new QuestEntityMovement(new Pos(0,0)))
+}}else{if(this.fishesAreMoving==false&&(this.getTheSea().getLastPlayerMovement().x>0||this.getTheSea().getGame().getPlayer().getGlobalPosition().y<20)){this.fishesAreMoving=true;
+for(var c=0;c<this.fishes.length;c++){this.fishes[c].setQuestEntityMovement(new QuestEntityMovement(new Pos(-1,0)))
+}}}};return b})(TheSeaPattern);var TheSeaPattern_Boss1_Seahorses=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d);this.seahorses=[];this.seahorsesAdded=false;this.seaHorsesStopped=false;
+this.seahorseWandering=null;this.seahorseWanderingIsGoingUp=false;this.seahorseFollowingPlayer=null
+}a.prototype.addSeahorse=function(c){if(c!=null){this.seahorses.push(c);return c}return null
+};a.prototype.isPatternDone=function(){if(this.seahorsesAdded==false){return false
+}for(var c=0;c<this.seahorses.length;c++){if(this.seahorses[c].getDead()==false){return false
+}}return true};a.prototype.run=function(d,c){if(this.seahorsesAdded==false&&this.getTheSea().getDistance()>this.getInitialDistance()+30){this.seahorsesAdded=true;
+this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d,2),75));this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d,12),75));
+this.seahorseWandering=this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+7,10),81));
+this.seahorseFollowingPlayer=this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+14,10),87));
+this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+21,7),93));this.addSeahorse(this.getTheSea().addSeahorse(new Pos(d+21,17),93))
+}if(this.seahorsesAdded==true&&this.seaHorsesStopped==false){var f=500;for(var e=0;
+e<this.seahorses.length;e++){if(this.seahorses[e].getGlobalPosition().x<f){f=this.seahorses[e].getGlobalPosition().x
+}}if(f-this.getTheSea().getGame().getPlayer().getGlobalPosition().x<=75){this.seaHorsesStopped=true;
+for(var e=0;e<this.seahorses.length;e++){this.seahorses[e].getQuestEntityMovement().setOffset(new Pos(0,0))
+}}}if(this.seaHorsesStopped){for(var e=0;e<this.seahorses.length;e++){this.seahorses[e].tryToGoToIntendedXPosition(this.getTheSea().getGame().getPlayer().getGlobalPosition().x)
+}}if(this.seahorseWandering!=null){if(this.seahorseWanderingIsGoingUp){this.seahorseWandering.getQuestEntityMovement().getOffset().y=-1;
+if(this.seahorseWandering.getGlobalPosition().y<=0){this.seahorseWanderingIsGoingUp=false
+}}else{this.seahorseWandering.getQuestEntityMovement().getOffset().y=1;if(this.seahorseWandering.getGlobalPosition().y>=16){this.seahorseWanderingIsGoingUp=true
+}}}if(this.seahorseFollowingPlayer!=null){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=0;
+if(this.getTheSea().getGame().getPlayer().getGlobalPosition().y<this.seahorseFollowingPlayer.getGlobalPosition().y-1){if(this.seahorseFollowingPlayer.getGlobalPosition().y>0){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=-1
+}}else{if(this.getTheSea().getGame().getPlayer().getGlobalPosition().y>this.seahorseFollowingPlayer.getGlobalPosition().y-1){if(this.seahorseFollowingPlayer.getGlobalPosition().y<17){this.seahorseFollowingPlayer.getQuestEntityMovement().getOffset().y=+1
+}}}}};return a})(TheSeaPattern);var TheSeaPattern_JellyFishStorm=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d)}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
+}return false};a.prototype.run=function(d,c){if(Random.oneChanceOutOf(10)){this.getTheSea().addJellyFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-6)))
+}};return a})(TheSeaPattern);var TheSeaPattern_LotOfMiniSharks=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d);this.sharksAdded=false}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+60){return true
+}return false};a.prototype.run=function(d,c){if(this.getTheSea().getDistance()>this.getInitialDistance()+30&&this.sharksAdded==false){this.sharksAdded=true;
+this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),2));this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),8));
+this.getTheSea().addMiniShark(new Pos(d+Random.upTo(6),14))}};return a})(TheSeaPattern);
+var TheSeaPattern_MaybeOneMediumFish=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d)
+}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
+}return false};a.prototype.run=function(d,c){if(Random.oneChanceOutOf(5)){this.getTheSea().addMediumFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-4)))
+}};return a})(TheSeaPattern);var TheSeaPattern_MaybeOneSmallestFish=(function(b){__extends(a,b);
+function a(c,d){b.call(this,c,d)}a.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
+}return false};a.prototype.run=function(d,c){if(Random.flipACoin()){this.getTheSea().addSmallestFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-2)))
+}};return a})(TheSeaPattern);var TheSeaPattern_OneSmallestFish=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d)}b.prototype.isPatternDone=function(){if(this.getTheSea().getDistance()>this.getInitialDistance()+100){return true
+}return false};b.prototype.run=function(d,c){this.getTheSea().addSmallestFish(new Pos(Random.between(d,c),Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-2)))
+};return b})(TheSeaPattern);var TheSeaPattern_SeaSnakesForever=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d);this.addedRedSharkFin=false;this.addedGreenSharkFin=false;
+this.addedPurpleSharkFin=false;this.nextSnakeIn=0;this.nextSharkIn=Random.between(0,50)
+}b.prototype.isPatternDone=function(){return false};b.prototype.run=function(e,d){this.nextSnakeIn-=1;
+if(this.nextSnakeIn<=0){this.getTheSea().addSeaSnake(new Pos(d,Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-12)));
+this.nextSnakeIn=85-Math.ceil((1-Math.exp(-(this.getTheSea().getDistance()-this.getInitialDistance())/1500))*83)
+}this.nextSharkIn-=1;if(this.nextSharkIn<=0){var c=this.getTheSea().addBigShark(new Pos(d,Random.between(0,this.getTheSea().getRealQuestSize().y-this.getTheSea().getFloorMaxHeight()-10)));
+if(c!=null){if(Saving.loadBool("gridItemPossessedRedSharkFin")==false&&this.addedRedSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>150){c.hasFin(BigSharkFinType.RED);
+this.addedRedSharkFin=true}else{if(Saving.loadBool("gridItemPossessedGreenSharkFin")==false&&this.addedGreenSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>700){c.hasFin(BigSharkFinType.GREEN);
+this.addedGreenSharkFin=true}else{if(Saving.loadBool("gridItemPossessedPurpleSharkFin")==false&&this.addedPurpleSharkFin==false&&this.getTheSea().getDistance()-this.getInitialDistance()>2500){c.hasFin(BigSharkFinType.PURPLE);
+this.addedPurpleSharkFin=true}}}}this.nextSharkIn=60-Math.ceil((1-Math.exp(-(this.getTheSea().getDistance()-this.getInitialDistance())/1500))*55)
+}};return b})(TheSeaPattern);var ThirdHouse=(function(a){__extends(b,a);function b(c){a.call(this,c);
+this.renderArea=new RenderArea();this.gameRunning=null;this.renderArea.resizeFromArray(Database.getAscii("places/village/thirdHouse"),0,3);
 this.update()}b.prototype.getRenderArea=function(){return this.renderArea};b.prototype.willBeDisplayed=function(){this.getGame().getQuestCallbackCollection().addCallback(this.runGame.bind(this));
 this.getGame().addHotkey(new Hotkey("up",new CallbackCollection(this.pressedUpButton.bind(this))));
 this.getGame().addHotkey(new Hotkey("down",new CallbackCollection(this.pressedDownButton.bind(this))));
@@ -3981,10 +3978,7 @@ this.setHp(7);if(Random.flipACoin()){this.getRenderArea().drawArray(Database.get
 }else{this.getRenderArea().drawArray(Database.getAscii("places/quests/desert/tripodCamel2"))
 }this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its long neck","its long neck"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,0),new Pos(3,3))),5));
 this.getLastQuestEntityWeapon().getCloseCombatDelay().setBetweenDelay(6,8)}a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(20+Random.upTo(12))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()))
-};return a})(QuestEntity);var TrollBludgeon=(function(a){__extends(b,a);function b(){a.call(this,"eqItemWeaponTrollBludgeon","eqItemWeaponTrollBludgeonName","eqItemWeaponTrollBludgeonDescription","eqItems/weapons/trollBludgeon")
-}b.prototype.getQuestEntityWeapon=function(c,e){var d=new PlayerBludgeon(c,e,new Naming("The troll's bludgeon","the troll's bludgeon"),e.getClassicCollisionBoxCollection());
-d.getCloseCombatDelay().setFixedDelay(6);return d};return b})(EqItem);var Troll=(function(b){__extends(a,b);
-function a(c,d){b.call(this,c,d,new Naming("A troll","a troll"),new RenderArea(15,10),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(11,0),new Pos(2,1)),new CollisionBox(this,new Pos(4,1),new Pos(3,3)),new CollisionBox(this,new Pos(9,1),new Pos(6,2)),new CollisionBox(this,new Pos(0,4),new Pos(8,4)),new CollisionBox(this,new Pos(2,8),new Pos(5,2)),new CollisionBox(this,new Pos(8,4),new Pos(4,2)),new CollisionBox(this,new Pos(11,3),new Pos(2,4))),new QuestEntityMovement());
+};return a})(QuestEntity);var Troll=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("A troll","a troll"),new RenderArea(15,10),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(11,0),new Pos(2,1)),new CollisionBox(this,new Pos(4,1),new Pos(3,3)),new CollisionBox(this,new Pos(9,1),new Pos(6,2)),new CollisionBox(this,new Pos(0,4),new Pos(8,4)),new CollisionBox(this,new Pos(2,8),new Pos(5,2)),new CollisionBox(this,new Pos(8,4),new Pos(4,2)),new CollisionBox(this,new Pos(11,3),new Pos(2,4))),new QuestEntityMovement());
 this.getQuestEntityMovement().setGravity(true);this.setDestructible(true);this.setMaxHp(80);
 this.setHp(80);this.getRenderArea().drawArray(Database.getAscii("places/quests/bridge/troll"));
 this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new Bludgeon(this.getQuest(),this,new Naming("Its bludgeon","its bludgeon"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(17,11))),15));
@@ -3992,9 +3986,12 @@ this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(6)}a.prototy
 c.addTag(new RenderTagLt(this.getQuest().getRealQuestPosition().x+this.getGlobalPosition().x+this.getRenderAreaPosition().x+9),this.getQuest().getRealQuestPosition().y+this.getGlobalPosition().y+this.getRenderAreaPosition().y+1)
 };a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(500)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
 this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemWeaponTrollBludgeon","You picked up the troll's bludgeon from the floor","You gain the troll's bludgeon"))
-};return a})(QuestEntity);var UnicornHorn=(function(b){__extends(a,b);function a(){b.apply(this,arguments)
-}a.prototype.update=function(d,c){d.heal(3)};return a})(GridItem);var Village=(function(b){__extends(a,b);
-function a(c){b.call(this,c);this.renderArea=new RenderArea();this.smokes=[new Smoke(8,26,1,3,1,3),new Smoke(64,26,2,4,0,0),new Smoke(80,26,1,3,1,3),new Smoke(59,42,1,3,1,3)];
+};return a})(QuestEntity);var TrollBludgeon=(function(a){__extends(b,a);function b(){a.call(this,"eqItemWeaponTrollBludgeon","eqItemWeaponTrollBludgeonName","eqItemWeaponTrollBludgeonDescription","eqItems/weapons/trollBludgeon")
+}b.prototype.getQuestEntityWeapon=function(c,e){var d=new PlayerBludgeon(c,e,new Naming("The troll's bludgeon","the troll's bludgeon"),e.getClassicCollisionBoxCollection());
+d.getCloseCombatDelay().setFixedDelay(6);return d};return b})(EqItem);var UnicornHorn=(function(b){__extends(a,b);
+function a(){b.apply(this,arguments)}a.prototype.update=function(d,c){d.heal(3)};
+return a})(GridItem);var Village=(function(b){__extends(a,b);function a(c){b.call(this,c);
+this.renderArea=new RenderArea();this.smokes=[new Smoke(8,26,1,3,1,3),new Smoke(64,26,2,4,0,0),new Smoke(80,26,1,3,1,3),new Smoke(59,42,1,3,1,3)];
 this.renderArea.resizeFromArray(Database.getAscii("places/village/village"),0,3);
 this.update()}a.prototype.willBeDisplayed=function(){this.getGame().getOneSecondCallbackCollection().addCallback(this.actionSmokes.bind(this));
 this.update()};a.prototype.getRenderArea=function(){return this.renderArea};a.prototype.actionSmokes=function(){for(var c=0;
@@ -4139,9 +4136,8 @@ this.updateQuestEntityMovementOffset();this.reDrawArea()}};a.prototype.updateQue
 }else{this.getQuestEntityMovement().setOffset(new Pos(this.getRunningSpeed(),0))}};
 return a})(QuestEntity);var WoodenSword=(function(b){__extends(a,b);function a(){b.call(this,"eqItemWeaponWoodenSword","eqItemWeaponWoodenSwordName","eqItemWeaponWoodenSwordDescription","eqItems/weapons/woodenSword")
 }a.prototype.getQuestEntityWeapon=function(c,e){var d=new QuestEntityWeapon(c,e,new Naming("A wooden sword","a wooden sword"),e.getClassicCollisionBoxCollection(),1);
-d.getCloseCombatDelay().setFixedDelay(4,0);return d};return a})(EqItem);var XinopherydonClaw=(function(a){__extends(b,a);
-function b(){a.apply(this,arguments)}b.prototype.hit=function(e,c,d,f,g){return f*2
-};return b})(GridItem);var Xinopherydon=(function(a){__extends(b,a);function b(c,d){a.call(this,c,d,new Naming("A xinopherydon","a xinopherydon"),new RenderArea(17,6),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,1),new Pos(5,1)),new CollisionBox(this,new Pos(0,2),new Pos(9,1)),new CollisionBox(this,new Pos(12,2),new Pos(5,1)),new CollisionBox(this,new Pos(3,3),new Pos(14,1)),new CollisionBox(this,new Pos(4,4),new Pos(5,1)),new CollisionBox(this,new Pos(10,4),new Pos(5,1)),new CollisionBox(this,new Pos(5,5),new Pos(3,1)),new CollisionBox(this,new Pos(11,5),new Pos(3,1))),new QuestEntityMovement());
+d.getCloseCombatDelay().setFixedDelay(4,0);return d};return a})(EqItem);var Xinopherydon=(function(a){__extends(b,a);
+function b(c,d){a.call(this,c,d,new Naming("A xinopherydon","a xinopherydon"),new RenderArea(17,6),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,1),new Pos(5,1)),new CollisionBox(this,new Pos(0,2),new Pos(9,1)),new CollisionBox(this,new Pos(12,2),new Pos(5,1)),new CollisionBox(this,new Pos(3,3),new Pos(14,1)),new CollisionBox(this,new Pos(4,4),new Pos(5,1)),new CollisionBox(this,new Pos(10,4),new Pos(5,1)),new CollisionBox(this,new Pos(5,5),new Pos(3,1)),new CollisionBox(this,new Pos(11,5),new Pos(3,1))),new QuestEntityMovement());
 this.getQuestEntityMovement().setGravity(true);this.getQuestEntityMovement().setWormsLike(true);
 this.setDestructible(true);this.setMaxHp(5000);this.setHp(5000);this.getRenderArea().drawArray(Database.getAscii("places/quests/fortress/xinopherydon"));
 this.setTransparency(new RenderTransparency(" "));this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("Its huge body","its huge body"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(19,8))),800));
@@ -4149,24 +4145,12 @@ this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay(20)}b.protot
 console.log(this.getHp());if(this.getQuest().getGame().getPlayer().getGlobalPosition().x<this.getGlobalPosition().x-50){this.heal(50)
 }};b.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(30000)," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
 this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"gridItemPossessedXinopherydonClaw","You found a strange claw on the xinopherydon's corpse.","You gain a strange claw."))
-};return b})(QuestEntity);var YourselfEntity=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("Yourself","yourself"),new RenderArea(3,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1))),new QuestEntityMovement(new Pos(-1,0)));
-this.getQuestEntityMovement().setGravity(true);this.setDestructible(true);this.setMaxHp(this.getQuest().getGame().getPlayer().getMaxHp());
-this.setHp(this.getQuest().getGame().getPlayer().getHp());this.getRenderArea().drawString("\\o/");
-this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("The same weapon as yours","the same weapon as yours"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(5,3))),0));
-this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay()}a.prototype.setHp=function(c){if(this.getQuest().getGame().isEquipped("hat","eqItemHatOctopusKingCrown")==false){this.getQuest().getGame().getPlayer().setHp(c)
-}else{if(c>0){this.getQuest().getGame().getPlayer().setHp(c)}else{this.getQuest().getGame().getPlayer().setHp(1)
-}}b.prototype.setHp.call(this,c)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(Math.floor(this.getQuest().getGame().getCandies().getCurrent()/10))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
-this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemBootsBootsOfIntrospection","You found the boots of introspection","You gain the boots of introspection"))
-};return a})(QuestEntity);var YourselfSentence=(function(){function a(b,c,e,d){this.quest=b;
-this.text=c;this.isGoingRight=e;if(this.isGoingRight){this.position=new Pos(-this.text.length,d)
-}else{this.position=new Pos(100,d)}}a.prototype.draw=function(b){b.drawString(this.text,this.quest.getRealQuestPosition().x+this.quest.getGlobalDrawingOffset().x+this.position.x,this.quest.getRealQuestPosition().y+this.quest.getGlobalDrawingOffset().y+this.position.y)
-};a.prototype.update=function(){if(this.isGoingRight){this.position.x+=1;if(this.position.x>100){return true
-}}else{this.position.x-=1;if(this.position.x<-this.text.length){return true}}return false
-};return a})();var Yourself=(function(b){__extends(a,b);function a(c){b.call(this,c);
-this.sentences=[];this.sentencesTimer=30;this.resizeQuest(100,20);this.addPlayerCollisionBoxes(true,true,true,true);
-this.getGame().getPlayer().loadCandyBoxCharacter(this);this.getGame().getPlayer().setGlobalPosition(new Pos(0,19));
-this.configPlayerOrClone(this.getGame().getPlayer());this.addEntity(this.getGame().getPlayer());
-this.addYourself();this.addWalls();this.getGame().getQuestLog().addMessage(new QuestLogMessage("You are now fighting yourself."))
+};return b})(QuestEntity);var XinopherydonClaw=(function(a){__extends(b,a);function b(){a.apply(this,arguments)
+}b.prototype.hit=function(e,c,d,f,g){return f*2};return b})(GridItem);var Yourself=(function(b){__extends(a,b);
+function a(c){b.call(this,c);this.sentences=[];this.sentencesTimer=30;this.resizeQuest(100,20);
+this.addPlayerCollisionBoxes(true,true,true,true);this.getGame().getPlayer().loadCandyBoxCharacter(this);
+this.getGame().getPlayer().setGlobalPosition(new Pos(0,19));this.configPlayerOrClone(this.getGame().getPlayer());
+this.addEntity(this.getGame().getPlayer());this.addYourself();this.addWalls();this.getGame().getQuestLog().addMessage(new QuestLogMessage("You are now fighting yourself."))
 }a.prototype.configPlayerOrClone=function(c){c.setQuestEntityMovement(new QuestEntityMovement(new Pos(1,0)));
 c.getQuestEntityMovement().setGravity(true)};a.prototype.endQuest=function(c){if(c){this.getGame().getQuestLog().addMessage(new QuestLogMessage("You managed to beat yourself!"));
 Saving.saveBool("mainMapDoneDesert",true)}else{this.getGame().getQuestLog().addMessage(new QuestLogMessage("You died trying to beat yourself."))
@@ -4185,7 +4169,20 @@ c<this.sentences.length;c++){this.sentences[c].draw(this.getRenderArea())}};a.pr
 }}else{if(this.sentences.length==0||Random.oneChanceOutOf(20)){this.sentences.push(new YourselfSentence(this,Random.fromArray(["You are very self-confident."]),Random.flipACoin(),Random.between(1,12)))
 }}}else{this.sentencesTimer-=1}for(var c=0;c<this.sentences.length;c++){if(this.sentences[c].update()){this.sentences.splice(c,1);
 c--}}};a.prototype.thePlayerWon=function(){if(this.yourself.shouldDie()){return true
-}return false};return a})(Quest);Database.addAscii("arena/hardcorePlatformer/background",240,12,["","","","","","","","","________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",""," Good luck!                                                                     That wasn't so hard, was it?                                      Wow. Good job. But now it's going to be serious.                                       Yay!!","________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"]);
+}return false};return a})(Quest);var YourselfEntity=(function(b){__extends(a,b);function a(c,d){b.call(this,c,d,new Naming("Yourself","yourself"),new RenderArea(3,1),new Pos(0,0),new CollisionBoxCollection(new CollisionBox(this,new Pos(0,0),new Pos(3,1))),new QuestEntityMovement(new Pos(-1,0)));
+this.getQuestEntityMovement().setGravity(true);this.setDestructible(true);this.setMaxHp(this.getQuest().getGame().getPlayer().getMaxHp());
+this.setHp(this.getQuest().getGame().getPlayer().getHp());this.getRenderArea().drawString("\\o/");
+this.addQuestEntityWeapon(new QuestEntityWeapon(this.getQuest(),this,new Naming("The same weapon as yours","the same weapon as yours"),new CollisionBoxCollection(new CollisionBox(this,new Pos(-1,-1),new Pos(5,3))),0));
+this.getLastQuestEntityWeapon().getCloseCombatDelay().setFixedDelay()}a.prototype.setHp=function(c){if(this.getQuest().getGame().isEquipped("hat","eqItemHatOctopusKingCrown")==false){this.getQuest().getGame().getPlayer().setHp(c)
+}else{if(c>0){this.getQuest().getGame().getPlayer().setHp(c)}else{this.getQuest().getGame().getPlayer().setHp(1)
+}}b.prototype.setHp.call(this,c)};a.prototype.willDie=function(){this.getQuest().getGame().getQuestLog().addMessage(new QuestLogMessage(this.getDeathMessage()+" (and found "+Algo.pluralFormat(this.getQuest().foundCandies(Math.floor(this.getQuest().getGame().getCandies().getCurrent()/10))," candy"," candies")+")",this.getQuest().getCandiesFoundMessage()));
+this.getQuest().foundGridOrEqItem(new QuestItemFound(this.getQuest(),"eqItemBootsBootsOfIntrospection","You found the boots of introspection","You gain the boots of introspection"))
+};return a})(QuestEntity);var YourselfSentence=(function(){function a(b,c,e,d){this.quest=b;
+this.text=c;this.isGoingRight=e;if(this.isGoingRight){this.position=new Pos(-this.text.length,d)
+}else{this.position=new Pos(100,d)}}a.prototype.draw=function(b){b.drawString(this.text,this.quest.getRealQuestPosition().x+this.quest.getGlobalDrawingOffset().x+this.position.x,this.quest.getRealQuestPosition().y+this.quest.getGlobalDrawingOffset().y+this.position.y)
+};a.prototype.update=function(){if(this.isGoingRight){this.position.x+=1;if(this.position.x>100){return true
+}}else{this.position.x-=1;if(this.position.x<-this.text.length){return true}}return false
+};return a})();Database.addAscii("arena/hardcorePlatformer/background",240,12,["","","","","","","","","________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",""," Good luck!                                                                     That wasn't so hard, was it?                                      Wow. Good job. But now it's going to be serious.                                       Yay!!","________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________"]);
 Database.addAscii("arena/hardcorePlatformer/logo",18,4,[" HARDCORE","     PLATFORMER","","_/\\/\\__\\o/____/\\/\\"]);
 Database.addAscii("arena/peacefulForest/logo",16,4,[" ||| \\o/|||  |||","","   The peaceful","      forest"]);
 Database.addAscii("eqItems/bodyArmours/enchantedKnightBodyArmour",13,8,[" \\\\       //"," |*'-._.-' |"," |     *  *|","/   *       \\","|*     *  * |","\\           /"," '. *  *  .'","   '-._.-'"]);
