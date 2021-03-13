@@ -9,15 +9,15 @@ command -v 7za >/dev/null 2>&1 || { echo >&2 "7zip is not installed"; exit 1; }
 ### Update the version written in the cacheManifest.mf file to force update of the whole game (see https://developer.mozilla.org/en-US/docs/HTML/Using_the_application_cache )
 
 cd pythonScripts
-python updateCacheManifestVersion.py
+python3 updateCacheManifestVersion.py
 cd ..
 
 ### Generate genAscii.ts and genText.ts from the ascii and text files
 ### They will be added in the code/gen dir
 
 cd pythonScripts
-python genAscii.py
-python genText.py
+python3 genAscii.py
+python3 genText.py
 cd ..
 
 ### Compile the game using tsc
