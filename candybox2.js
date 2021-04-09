@@ -2257,7 +2257,7 @@ function i(j){if(g(j)==null){return false}for(var k in Saving.getAllBools()){Sav
 }for(var l in Saving.getAllNumbers()){localStorage.setItem(j+"."+l,Saving.numberToString(Saving.getAllNumbers()[l]))
 }for(var l in Saving.getAllStrings()){localStorage.setItem(j+"."+l,Saving.getAllStrings()[l])
 }}catch(k){if(k==DOMException.QUOTA_EXCEEDED_ERR){console.log("Quota exceeded error : we're trying to save some data through HTML5's web storage, but we don't have enough space to save what we want.")
-}return false}return true}a.save=f;function h(){if("localStorage" in window&&window.localStorage!==null&&"applicationCache" in window&&window.applicationCache!==null){return true
+}return false}return true}a.save=f;function h(){if("localStorage" in window&&window.localStorage!==null){return true
 }return false}a.supportsLocalSaving=h;function d(){var j=new Date();return(j.getDate()<10?"0":"")+j.getDate()+"/"+(j.getMonth()+1<10?"0":"")+(j.getMonth()+1)+"/"+j.getFullYear()+" @ "+(j.getHours()<10?"0":"")+j.getHours()+":"+(j.getMinutes()<10?"0":"")+j.getMinutes()+":"+(j.getSeconds()<10?"0":"")+j.getSeconds()
 }function b(j){return Saving.stringToBool(localStorage.getItem(j))}a.loadBool=b;function e(j){return Saving.stringToNumber(localStorage.getItem(j))
 }a.loadNumber=e;function g(j){return localStorage.getItem(j)}a.loadString=g})(LocalSaving||(LocalSaving={}));

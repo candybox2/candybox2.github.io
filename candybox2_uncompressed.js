@@ -11504,7 +11504,7 @@ var LocalSaving;
     }
     LocalSaving.save = save;
     function supportsLocalSaving() {
-        if ('localStorage' in window && window['localStorage'] !== null && 'applicationCache' in window && window['applicationCache'] !== null)
+        if ('localStorage' in window && window['localStorage'] !== null)
             return true;
         return false;
     }
