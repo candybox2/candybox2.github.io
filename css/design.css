@@ -4,6 +4,7 @@ body{
     margin: 0; /* No margin ! */
     overflow-y: scroll; /* In order to always show the vertical scrolling bar */
     text-align: center;
+    user-select: none;
 }
 
 #aroundStatusBar{
@@ -68,10 +69,10 @@ pre{
     border-width: 1px;
     border-style: solid;
     border-color: #464c54;
-    
+
     /* Grey background color */
     background-color: #dcdad5;
-    
+
     /* Position absolute inside the aroundRealButton span */
     position: absolute;
     user-select: none;
@@ -105,7 +106,7 @@ pre{
 /* Select */
 
 .aroundSelect{
-   
+
 }
 
 .asciiSelect{
@@ -114,13 +115,13 @@ pre{
 }
 
 .asciiSelectOption{
-     
+
 }
 
 /* Text input */
 
 .aroundTextInput{
-    
+
 }
 
 .asciiTextInput{
@@ -160,7 +161,7 @@ pre{
 }
 
 .asciiCheckbox{
-    
+
 }
 
 /* Textareas */
