@@ -91,7 +91,7 @@ Ponte
 br.mapFarmComment
 Fazenda de pirulitos
 br.mapCaveEntranceComment
-br.rada da caverna
+Entrada da caverna
 br.mapLighthouseComment
 Farol
 br.mapPierComment
